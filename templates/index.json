@@ -226,10 +226,13 @@
         "1ee69049-e857-4944-aea9-6f2d8fc5456c": {
           "type": "tabs-content",
           "settings": {
+            "image_one": "shopify:\/\/shop_images\/Lavendar.png",
             "heading_one": "01. Lavender",
             "text_one": "<p>Our fragrant lavender burns smoothly and produces a sweet floral scent for a perfectly relaxing moment of aromatherapy.<\/p>",
+            "image_two": "shopify:\/\/shop_images\/Lobelia.png",
             "heading_two": "02. Lobelia",
             "text_two": "<p>Native to the luscious valleys of North America, Lobelia is also known as Indian Tobacco and is sometimes used as an alternative to nicotine. <\/p>",
+            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
             "button_label": "Explore Products",
