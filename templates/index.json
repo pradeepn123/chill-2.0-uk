@@ -297,7 +297,7 @@
           "type": "collection-image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Smokes.jpg",
-            "collection": "cbd-smokes",
+            "collection": "all-smokes",
             "title": ""
           }
         },
@@ -305,7 +305,7 @@
           "type": "collection-image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Vape.jpg",
-            "collection": "coming-soon",
+            "collection": "lip-balm",
             "title": "Coming Soon"
           }
         }
