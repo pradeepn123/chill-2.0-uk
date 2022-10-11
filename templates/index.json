@@ -280,6 +280,7 @@
         "685e6031-5b34-4a0f-83f0-79e29a6ed09f": {
           "type": "collection-image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
             "collection": "cbd-gummies",
             "title": ""
           }
@@ -287,6 +288,7 @@
         "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
           "type": "collection-image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Collections-Pouch.jpg",
             "collection": "cool-mint",
             "title": ""
           }
@@ -294,6 +296,7 @@
         "3b6372a0-4677-429a-bf82-20402b224607": {
           "type": "collection-image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Collections-Smokes.jpg",
             "collection": "cbd-smokes",
             "title": ""
           }
@@ -301,6 +304,7 @@
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
           "type": "collection-image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Collections-Vape.jpg",
             "collection": "coming-soon",
             "title": "Coming Soon"
           }
