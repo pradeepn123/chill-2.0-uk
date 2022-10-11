@@ -112,17 +112,17 @@
         "ff939e5f-1db8-421d-879a-25e42fd00657": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_7553.png",
-            "title": "<p><strong>Freedom<\/strong><\/p>",
-            "text": "<p>Chill believes we can freely turn away from stress, anxiety and conflict. Only when we choose freedom can we experience a full and balanced life.<\/p>"
+            "image": "shopify:\/\/shop_images\/Group_7754-min_3f03125c-bfdd-47ab-8d0e-f15fb7dbdc16.png",
+            "title": "<p><strong>Peace<\/strong><\/p>",
+            "text": "<p>Chill exists to help people enjoy more of the moments they love. It’s only by slowing down and taking some time for ourselves that can we achieve real peace of mind.<\/p>"
           }
         },
         "2ab9437c-34a0-499f-8541-828ec3b8eaf8": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_7554.png",
-            "title": "<p><strong>Choice<\/strong><\/p>",
-            "text": "<p>Choice is best made when we are free and can engage in the moment. In a Chill State of Mind we concentrate, think clearly and process the world in a way that creates relationship with one another.<\/p>"
+            "image": "shopify:\/\/shop_images\/Group_7753-min_c04d387b-4776-4b73-ad48-762f17b04a6c.png",
+            "title": "<p><strong>Love<\/strong><\/p>",
+            "text": "<p>All our products are crafted with care from thoughtfully sourced ingredients so you can show some real love to your mind and body. In our busy modern world, self care is the new cool.<\/p>"
           }
         },
         "bb7ddb24-1486-4583-85ec-12d1702a811c": {
@@ -158,7 +158,6 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b&background=1&autoplay=0",
-            "placeholder_image": "shopify:\/\/shop_images\/Highline-in-colarado.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701396581?h=becb463383",
             "video_heading": "Highline in colarado",
             "video_subHeading": "<p>Reaching a Chill State of Mind even in life’s most…<\/p>",
@@ -169,7 +168,6 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403328?h=f2e3ac9e64&background=1&autoplay=0",
-            "placeholder_image": "shopify:\/\/shop_images\/Screenshot_2022-09-05_at_4.55.30_PM.png",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701399368?h=9ae311877b",
             "video_heading": "Learning to Slackline",
             "video_subHeading": "<p>Learning new things<\/p>",
@@ -180,7 +178,6 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701797123?h=f6dff18608&background=1&autoplay=1",
-            "placeholder_image": "shopify:\/\/shop_images\/Screenshot_2022-09-05_at_4.50.54_PM.png",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701795868?h=5b6a50ff81",
             "video_heading": "Paramotor & Chill",
             "video_subHeading": "<p>Chill State of Mind<\/p>",
@@ -191,7 +188,6 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403502?h=cda287f9e3&background=1&autoplay=1",
-            "placeholder_image": "shopify:\/\/shop_images\/Colorado-gambler.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701396366?h=dbe771507b",
             "video_heading": "Colorado gambler",
             "video_subHeading": "<p>Colorado gambler<\/p>",
@@ -202,7 +198,6 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403564?h=35952ce15f&background=1&autoplay=1",
-            "placeholder_image": "shopify:\/\/shop_images\/Screenshot_2022-09-05_at_8.24.40_PM.png",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701400977?h=db9dc6e32f",
             "video_heading": "Mini Bike Race",
             "video_subHeading": "<p>Tim in the mini bike race<\/p>",
@@ -213,7 +208,6 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701804548?h=ff05130736&background=1&autoplay=1",
-            "placeholder_image": "shopify:\/\/shop_images\/Skatepark_Madness.png",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701803219?h=50a41ce592",
             "video_heading": "Skatepark Madness",
             "video_subHeading": "<p>Chill and enjoy whatever you love outside<\/p>",
@@ -225,7 +219,6 @@
           "disabled": true,
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403328?h=f2e3ac9e6&background=1&autoplay=1",
-            "placeholder_image": "shopify:\/\/shop_images\/Slacklining_Practice.png",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b",
             "video_heading": "Slacklining Practice",
             "video_subHeading": "<p>Preparing for the highline<\/p>",
@@ -270,7 +263,7 @@
         "title": "Keep Chilling",
         "subheading": "<p>Stay in the loop + get <a href=\"http:\/\/127.0.0.1:9292\/#\" title=\"#\"><strong>20% off <\/strong><\/a>your first order<\/p>",
         "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a> and <a href=\"\/pages\/terms-of-service\" title=\"Terms of service\">terms of service<\/a> for details.<\/p>",
-        "bg_image": "shopify:\/\/shop_images\/footer_background_op.jpg",
+        "bg_image": "shopify:\/\/shop_images\/footer_background.jpg",
         "color_bg": "#ffffff"
       }
     }
