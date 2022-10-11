@@ -1,0 +1,88 @@
+<div class="product_ingredients_section">
+    <div class="product_ingredients_sec_wrapper">
+        <div class="tab-content">
+            <div class="tab-heading">
+                <ul class='product-tabs'>
+                    {%- for block in product.metafields.settings.product_ingredients.value['ingredients_tab']  -%}
+                        {% if block.tab_id != blank %} <a href="#{{block.tab_id}}" class="{% if forloop.first %}active{% endif %}"> {% endif %}
+                            {% if block.tab_id == blank %}<li class='{% if forloop.first %}active{% endif %}' data-tab-id='tab{{ forloop.index }}'>{% endif %}
+                                    {{ block.tab_title}}
+                            {% if block.tab_id == blank %}</li>{% endif %}                            
+                        {% if block.tab_id != blank %} </a> {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class='content-section'>
+                {%- for block in product.metafields.settings.product_ingredients_tabs.value['tab_main'] -%}
+                    {% assign tab_id = tab_id | plus:1 %}
+                    <div id='tab{{tab_id}}' class='content {% if tab_id == 1 %}active{% endif %}'>
+                        {% if block.heading != blank %}
+                            <div class="heading_text align-center">
+                                {% if section.settings.heading != blank %}
+                                    <h3>{{section.settings.heading}}</h3>
+                                {% endif %}
+                                <p>{{ block.description}}</p>
+                            </div>
+                        {% endif %}                        
+                        {% assign sub_block_value = block['tab_content']%}
+                        {% if sub_block_value != blank%}
+                            <div class="tab-content-list">
+                                {%- for sub_block in block['tab_content']  -%}
+                                    {% if sub_block.image != blank and sub_block.subtitle != blank and sub_block.subdescription != blank %}
+                                        <div class="tab-content-item">
+                                            <img src="{{ sub_block.image }}" alt="">
+                                            <h3>{{sub_block.subtitle}}</h3>
+                                            <p>{{sub_block.subdescription}}</p>
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%}
+                            </div>
+                        {% endif %}
+                        {% if block.para1 != blank or block.para2 != blank or block.para3 != blank or block.para4 != blank or block.direction_heading != blank or block.para5 != blank  %}
+                            <div class="direction_to_use">
+                                <h3 class="align-center">{{ block.direction_heading }}</h3>
+                                <p>{{ block.para1 }}</p>
+                                <p>{{ block.para2 }}</p>
+                                <p>{{ block.para3 }}</p>
+                                <p>{{ block.para4 }}</p>
+                                <p>{{ block.para5 }}</p>
+                            </div>
+                        {% endif %}
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Product ingredients",
+    "class": "product_ingredients_sec",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Show/Hide Section",
+        "default": true
+      },
+      {
+        "type": "richtext",
+        "id": "direction",
+        "label": "Direction to use"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Ingrediant Heading"
+      }
+    ],
+    "presets": [
+        {
+            "name": "Product ingredients",
+            "settings": {}     
+        }
+    ]
+  }
+{% endschema %}

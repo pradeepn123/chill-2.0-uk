@@ -1,0 +1,182 @@
+.template-collection .page-header:not(.page-header--with-background) .pagetitle:last-child{
+    margin-bottom: 6px !important;
+    @media(min-width:768px){
+        margin-bottom: -25px !important;
+    }
+}
+.custom_collection_main{
+    background: #F2F2F3;
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+.subcollection_section{
+    margin: 60px 0 12px 0;
+    @media(min-width:1200px){
+        margin: 40px 0;
+    }
+    .subcollection_slider{
+        & .slick-slide.slick-active.slider-wrapper.active-collection .slider-wrap-image{
+            border: 4px solid #9792E4;
+        }
+        .slick-track{
+            margin: 0 auto;
+            .slick-slide{
+                padding: 0 10px;
+                @media(min-width:1200px){
+                    padding: 0 16px;
+                }
+            }
+        }        
+        .slider-wrapper{
+            text-align: center;
+            &.slick-slide.slick-active:hover .slider-wrap-image{
+                border: 4px solid #9792E4;
+                transition: all 0.5s;
+            }
+            .slider-wrap-image{
+                margin-bottom: 16px;
+                border-radius: 50%;
+                transition: all 0.5s;
+                .image-parent-wrapper{
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+            }
+            h4{
+                font-size: 16px;
+                color: #000000;
+                font-weight: 500;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+
+.filter_coll{
+    .utility-bar-main{
+        border-top: 1px solid #909090;
+        border-bottom: 1px solid #909090;
+        margin-bottom: 40px;
+        .utility-bar{
+            padding: 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            @media(min-width:768px){
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+        .page-header{
+            text-align: left;
+            h1{
+                font-size: 26px;
+                color: #000000;
+                font-weight: 900;
+                line-height: 1;
+                font-family: 'Open Sans', sans-serif;
+                @media(min-width:1200px){
+                    font-size: 42px;
+                }
+            }
+        }
+        .utility-bar__left, .utility-bar__right{
+            @media(min-width:1200px){
+                flex: 2 0 50%;
+            }
+        }
+        .utility-bar__right{
+            .utility-bar__item{
+                .link-dropdown{
+                    .link-dropdown__button{
+                        display: none;
+                    }
+                    .link-dropdown__options{
+                        opacity: 1;
+                        visibility: visible;
+                        padding-top: 0;
+                        box-shadow: none;
+                        background: transparent;
+                        display: flex;
+                        align-items: center;
+                        padding-bottom: 0;
+                        top: -18px;
+                        left: -18px;
+                        right: unset;
+                        @media(min-width:768px){
+                            top: -18px;
+                            left: inherit;
+                            right: -10px;
+                        }
+                        @media(min-width:1200px){                            
+                            top: -18px;
+                        }
+                        .link-dropdown__options_wrapper{
+                            width: 300px;
+                            display: flex;
+                            @media(min-width:375px){
+                                width: 360px;
+                            }
+                            @media(min-width:425px){
+                                width: 420px;
+                            }
+                            @media(min-width:768px){
+                                width: 300px;
+                            }
+                            @media(min-width:1200px){
+                                width: 600px;
+                            }                            
+                            .link-dropdown__link_wrapper{
+                                overflow: scroll;
+                                display: flex;
+                                &::-webkit-scrollbar {
+                                    width: 0;
+                                    background: transparent;
+                                }                        
+                                &::-webkit-scrollbar-thumb {
+                                    background: transparent;
+                                }
+                            }
+                        }
+                        #sort-dropdown-heading{
+                            font-size: 16px;
+                            color: #000000;
+                            font-weight: 900;
+                            text-transform: uppercase;
+                            font-family: 'Open Sans', sans-serif;
+                            &:hover{
+                                background: transparent;
+                            }
+                        }
+                        .link-dropdown__link{
+                            padding: 6px 12px;
+                            padding-inline-end: 12px;
+                            font-size: 16px;
+                            color: #000000;
+                            font-weight: 400;
+                            font-family: 'Open Sans', sans-serif;
+                            &.link-dropdown__link--active{
+                                background: none;
+                                border-bottom: 3px solid #000000;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    } 
+}
+.collection-listing{         
+    .product-list--per-row-4{
+        .product-block{
+            @media(min-width:768px) and (max-width:1024px){
+                width: 50% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+
+/* footer css here */
+#pagefooter{
+    .section-footer__row{
+        &.section-footer__row--block{
+            @media(min-width:768px){
+                padding-bottom: 45px;
+            }
+        }
+        .section-footer__row__col{
+            display: flex;
+            flex-direction: column;
+            &.section-footer__text-block{
+                .section-footer__text-block__social{
+                    margin-top: auto;
+                }
+                .section-footer__title{
+                    text-transform: inherit;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 40px;
+                    @media(min-width:1200px){
+                        margin-bottom: 10px;
+                    }
+                }
+                .section-footer__text-block__image{
+                    margin-bottom: 28px;
+                }
+            }
+            &.section-footer__menu-block{
+                flex: 0 1 50%;
+                @media(min-width:1200px){
+                    flex: inherit;
+                }
+                .section-footer__title{
+                    font-weight: bold;
+                    font-size: 22px;                    
+                }
+                .section-footer__menu-block__menu{
+                    li{
+                        a{
+                            font-size: 18px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_wrapper_middle {
+        text-align: center;
+        padding: 28px;
+        margin: 0 auto 30px;
+        border: 1px solid #707070;
+        @media(min-width:1200px){
+            margin: 0 auto 70px;
+        }
+        .section-footer__text{
+            margin-bottom: 0;
+        }
+        p{
+            width: 100%;
+            margin: 0 auto 1em;
+            font-size: 16px;
+            @media(min-width:1200px){
+                width: 80%;
+            }
+        }
+    }
+    .footer-bottom{
+        background-color: #E9E9F3;
+        .section-footer__row-lower{
+            align-items: center;
+            @media (min-width: 768px){
+                padding-top: 20px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+        .section-footer__payment-icons{
+            margin-bottom: 0;
+        }
+        .copyright{
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}

@@ -1,0 +1,368 @@
+<table class="responsive-table_rewards">
+    <tbody>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'reward-table-heading' %}
+                        <th class="table_title" style="font-size: {{ block.settings.title_font_size }}px">{{ block.settings.title | upcase }}</th>
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'text1' %}
+                    <td>
+                        {{ block.settings.row_1}}
+                    </td> 
+                    {% style %}
+                        @media(max-width: 640px){
+                            td{
+                                font-size: {{ block.settings.row1_font_size_mobile }}px
+                            }
+                        }
+                        @media(min-width: 641px){
+                            td{
+                                font-size: {{ block.settings.row1_font_size }}px
+                            }
+                        }
+                    {% endstyle %}                               
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'text2' %}
+                    <td>
+                        {{ block.settings.row_2}}
+                    </td>
+                    {% style %}
+                        @media(max-width: 640px){
+                            td{
+                                font-size: {{ block.settings.row2_font_size_mobile }}px
+                            }
+                        }
+                        @media(min-width: 641px){
+                            td{
+                                font-size: {{ block.settings.row2_font_size }}px
+                            }
+                        }
+                    {% endstyle %} 
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'text3' %}
+                    <td>
+                        {{ block.settings.row_3}}
+                    </td>
+                    {% style %}
+                        @media(max-width: 640px){
+                            td{
+                                font-size: {{ block.settings.row3_font_size_mobile }}px
+                            }
+                        }
+                        @media(min-width: 641px){
+                            td{
+                                font-size: {{ block.settings.row3_font_size }}px
+                            }
+                        }
+                    {% endstyle %} 
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'text4' %}
+                    <td>
+                        {{ block.settings.row_4}}
+                    </td>
+                    {% style %}
+                        @media(max-width: 640px){
+                            td{
+                                font-size: {{ block.settings.row4_font_size_mobile }}px
+                            }
+                        }
+                        @media(min-width: 641px){
+                            td{
+                                font-size: {{ block.settings.row4_font_size }}px
+                            }
+                        }
+                    {% endstyle %} 
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'text5' %}
+                    <td>
+                        {{ block.settings.row_5}}
+                    </td>
+                    {% style %}
+                        @media(max-width: 640px){
+                            td{
+                                font-size: {{ block.settings.row5_font_size_mobile }}px
+                            }
+                        }
+                        @media(min-width: 641px){
+                            td{
+                                font-size: {{ block.settings.row5_font_size }}px
+                            }
+                        }
+                    {% endstyle %} 
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+        <tr>
+            {%- for block in section.blocks -%}
+                {% case block.type %}
+                    {% when 'text6' %}
+                    <td>
+                        {{ block.settings.row_6}}
+                    </td>
+                    {% style %}
+                        @media(max-width: 640px){
+                            td{
+                                font-size: {{ block.settings.row6_font_size_mobile }}px
+                            }
+                        }
+                        @media(min-width: 641px){
+                            td{
+                                font-size: {{ block.settings.row6_font_size }}px
+                            }
+                        }
+                    {% endstyle %} 
+                {% endcase %}
+            {%- endfor -%}
+        </tr>
+    </tbody>
+</table>
+
+{% schema %}
+{
+    "name": "Add Column new",
+    "class": "section-table",
+    "blocks": [
+        {
+            "type": "reward-table-heading",
+            "name": "Table title",
+            "settings": [                
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading",
+                    "default": "Icon title"
+                },
+                {
+                    "type": "range",
+                    "id": "title_font_size",
+                    "label": "Title font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }                          
+            ]
+        },
+        {
+            "type": "text1",
+            "name": "Row 1",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "row_1",
+                    "label": "Row 1"
+                },
+                {
+                    "type": "range",
+                    "id": "row1_font_size",
+                    "label": "Row-1 font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 30
+                },
+                {
+                    "type": "range",
+                    "id": "row1_font_size_mobile",
+                    "label": "Row-1 font size in Mobile",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }              
+            ]
+        },
+        {
+            "type": "text2",
+            "name": "Row 2",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "row_2",
+                    "label": "Row 2"
+                },
+                {
+                    "type": "range",
+                    "id": "row2_font_size",
+                    "label": "Row-2 font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 30
+                },
+                {
+                    "type": "range",
+                    "id": "row2_font_size_mobile",
+                    "label": "Row-2 font size in Mobile",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }               
+            ]
+        },
+        {
+            "type": "text3",
+            "name": "Row 3",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "row_3",
+                    "label": "Row 3"
+                },
+                {
+                    "type": "range",
+                    "id": "row3_font_size",
+                    "label": "Row-3 font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 30
+                },
+                {
+                    "type": "range",
+                    "id": "row3_font_size_mobile",
+                    "label": "Row-3 font size in Mobile",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }                  
+            ]
+        },
+        {
+            "type": "text4",
+            "name": "Row 4",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "row_4",
+                    "label": "Row 4"
+                },
+                {
+                    "type": "range",
+                    "id": "row4_font_size",
+                    "label": "Row-4 font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 30
+                },
+                {
+                    "type": "range",
+                    "id": "row4_font_size_mobile",
+                    "label": "Row-4 font size in Mobile",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }                 
+            ]
+        },
+        {
+            "type": "text5",
+            "name": "Row 5",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "row_5",
+                    "label": "Row 5"
+                },
+                {
+                    "type": "range",
+                    "id": "row5_font_size",
+                    "label": "Row-5 font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 30
+                },
+                {
+                    "type": "range",
+                    "id": "row5_font_size_mobile",
+                    "label": "Row-5 font size in Mobile",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }                
+            ]
+        },
+        {
+            "type": "text6",
+            "name": "Row 6",
+            "settings": [
+                {
+                    "type": "richtext",
+                    "id": "row_6",
+                    "label": "Row 6"
+                },
+                {
+                    "type": "range",
+                    "id": "row6_font_size",
+                    "label": "Row-6 font size",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 30
+                },
+                {
+                    "type": "range",
+                    "id": "row6_font_size_mobile",
+                    "label": "Row-6 font size in Mobile",
+                    "min": 0,
+                    "max": 72,
+                    "step": 2,
+                    "unit": "px",
+                    "default": 18
+                }                 
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Add column",
+        "settings": {
+        }
+      }
+    ]
+}
+{% endschema %}

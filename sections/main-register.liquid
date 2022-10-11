@@ -1,0 +1,98 @@
+  <div id="template" class="account_register" data-cc-animate>
+    <div class="account_img">
+      <img src="{{ section.settings.side_image | img_url: 'master'}}" alt="chill account" width="100px" height="100px">
+    </div>
+    <div class="small-form">
+      <div id="customer">
+        <!-- Create Customer -->
+        <div id="create-customer">
+          <div class="template_header">
+            <h2 class="title register_title">{{ 'customer.register.title' | t }}</h2>
+            {{ section.settings.register_subtitle }}
+            <!-- <p class="register_sub-title" style="color: #000">{{ section.settings.register_subtitle }}</p> -->
+          </div>
+  
+          {% form 'create_customer' %}
+            {{ form.errors | default_errors }}
+  
+            <!-- <div class="input-row">
+              <label for="first_name" class="login">{{ 'customer.register.first_name' | t }}</label>
+              <input type="text" value="" name="customer[first_name]" id="first_name" class="large" size="30" />
+            </div>
+  
+            <div class="input-row">
+              <label for="last_name" class="login">{{ 'customer.register.last_name' | t }}</label>
+              <input type="text" value="" name="customer[last_name]" id="last_name" class="large" size="30" />
+            </div> -->
+  
+            <div class="input-row" id="register_email">
+              <label for="email" class="login">{{ 'customer.register.email' | t }}</label>
+              <input type="email" value="" name="customer[email]" id="email" class="large" size="30" />
+            </div>
+  
+            <div class="input-row" id="register_password">
+              <label for="password" class="login">{{ 'customer.register.password' | t }}</label>
+              <input type="password" value="" name="customer[password]" id="password" class="large password" size="30" />
+            </div>
+  
+            <div class="action_bottom">
+              <button class="register_btn btn" type="submit" style="font-size: {{ section.settings.register_font_size}}px; background: {{ section.settings.register_btn_color}}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.register.submit' | t | upcase }}</button>
+              <span class="note">Already have an account? <a href="{{ routes.account_login_url }}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.register.log_in' | t }}</a>
+                <!-- {{ 'customer.general.or' | t }}
+                <a href="{{ routes.root_url }}">{{ 'customer.register.cancel' | t }}</a> -->
+              </span>
+            </div>
+          {% endform %}
+        </div><!-- /#create-customer -->
+      </div>
+    </div>
+    
+  </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    $('#coverScreen').hide();
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "Customer register",
+    "class": "main-login",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "side_image",
+        "label": "Pick an image"
+      },
+      {
+        "type": "richtext",
+        "id": "register_subtitle",
+        "label": "Register Sub-title",
+        "default": "<p>Please enter your e-mail and password:</p>"
+      },
+      {
+        "type": "range",
+        "id": "register_btn_font",
+        "label": "Register Button font size",
+        "min": 0,
+        "max": 25,
+        "step": 1,
+        "unit": "px",
+        "default": 20
+      },
+      {
+        "type": "color",
+        "id": "register_btn_color",
+        "label": "Sign Up Button color",
+        "default": "#6EC59F"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Customer register",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

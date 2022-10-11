@@ -1,0 +1,151 @@
+{% style %}
+    .video-container__video, .product-media--frame {
+        padding-bottom: {{ section.settings.height_mobile }}%;
+    }
+    @media (min-width: 768px) {
+        .video-container__video, .product-media--frame {
+            padding-bottom: {{ section.settings.height_desktop }}%;
+        }
+    }
+{% endstyle %}
+
+<div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}no-space{% endif %}" data-section-type="video" id="">
+    <div class="">
+      <div class="flexible-layout valign-middle">
+        <div class="column column--full {% if section.settings.video_position == 'right' %}column--order-push-desktop{% endif %}">
+  
+          {% if section.settings.video != blank %}
+            <div class="video-container image-overlay image-overlay--bg-no_background"
+              data-video-url="{{ section.settings.video | escape }}"
+              data-video-autoplay="{% if section.settings.autoplay %}true{% else %}false{% endif %}"
+              data-video-loop="true"
+              data-cc-animate>
+              <div class="video-container__video"></div>
+  
+              {% unless section.settings.autoplay %}
+                <div class="video-container__cover">
+                  {%- if section.settings.placeholder_image == blank -%}
+                    <div class="placeholder-image placeholder--banner dark">
+                      {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
+                    </div>
+                  {%- else -%}
+                    <div class="rimage-outer-wrapper rimage-background lazyload fade-in"
+                        data-bgset="{% render 'bgset', image: section.settings.placeholder_image %}"
+                        data-sizes="auto"
+                        data-parent-fit="cover">
+                      <noscript>
+                        <div class="rimage-wrapper" style="padding-top:{{ 1 | divided_by: section.settings.placeholder_image.aspect_ratio | times: 100 }}%">
+                          <img src="{{ section.settings.placeholder_image | img_url: '1024x1024' }}" alt="{{ section.settings.placeholder_image.alt | escape }}" class="rimage__image">
+                        </div>
+                      </noscript>
+                    </div>
+                  {%- endif -%}
+                </div>
+                <div class="overlay-text overlay-text--for-banner overlay--v-center overlay--h-center image-overlay__over">
+                  <div class="overlay-text__inner">
+                    <div class="overlay-text__text">
+                        <a href="#" class="video-container__play" aria-label="{{ 'general.accessibility_labels.video_play' | t | escape }}">
+                            {% render 'svg-play-button' %}
+                            <div class="play-now-text">
+                                {% render 'svg-play-button-text' %}
+                            </div>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+  
+              {% elsif section.settings.placeholder_image %}
+                <div class="video-container__fallback rimage-outer-wrapper rimage-background lazyload fade-in"
+                  data-bgset="{% render 'bgset', image: section.settings.placeholder_image %}"
+                  data-sizes="auto"
+                  data-parent-fit="cover">
+                  <noscript>
+                    <div class="rimage-wrapper" style="padding-top:{{ 1 | divided_by: section.settings.placeholder_image.aspect_ratio | times: 100 }}%">
+                      <img src="{{ section.settings.placeholder_image | img_url: '1024x1024' }}" alt="{{ section.settings.placeholder_image.alt | escape }}" class="rimage__image">
+                    </div>
+                  </noscript>
+                </div>
+              {% endunless %}
+            </div>
+          {% endif %}
+        </div>        
+      </div>
+    </div>
+  </div>
+  
+  
+  {% schema %}
+    {
+      "name": "Featured Background Video",
+      "class": "section-featured-background-video",
+      "settings": [
+        {
+          "id": "video",
+          "type": "text",
+          "label": "Video link",
+          "info": "Supports mp4, YouTube and Vimeo. Please read documentation before using. [Read more](https://cleancanvas.co.uk/support/general/background-video)",
+          "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Autoplay",
+          "default": false
+        },
+        {
+          "id": "placeholder_image",
+          "type": "image_picker",
+          "label": "Placeholder image",
+          "info": "Required. Shows while the video is loading, or if it cannot autoplay."
+        },     
+        {
+          "type": "select",
+          "id": "video_position",
+          "label": "Video alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },        
+        {
+          "type": "checkbox",
+          "id": "use_alt_bg",
+          "label": "Use alternate section color",
+          "default": false
+        },
+        {
+            "type": "range",
+            "id": "height_desktop",
+            "min": 28,
+            "max": 100,
+            "step": 2,
+            "unit": "%",
+            "label": "Desktop fixed height",
+            "default": 56
+        },
+        {
+            "type": "range",
+            "id": "height_mobile",
+            "min": 28,
+            "max": 100,
+            "step": 2,
+            "unit": "%",
+            "label": "Mobile fixed height",
+            "default": 56
+        }
+      ],
+      "presets": [
+        {
+          "name": "Featured Background Video",
+          "settings": {}
+        }
+      ]
+    }
+  {% endschema %}
+  

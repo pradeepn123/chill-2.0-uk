@@ -1,0 +1,37 @@
+.rewards_wrapper, .get_started_wrapper{
+    margin: 5.56rem 12.688rem 50px 12.688rem;
+    @media (max-width: 640px){
+        margin: 13.75rem 20px 50px 20px;
+    }
+    @media (min-width: 641px) and (max-width: 1023px){
+        margin: 64px 90px 50px 90px;
+    }
+    h1{
+        text-transform: none !important;
+        p{
+            margin-bottom: 20px;
+        }
+    }
+    .rewards_description{
+        font-size: 20px;
+        color: black;
+        max-width: 46.563rem;
+        @media (max-width: 640px){
+            font-size: 16px;
+        }
+    }
+    .rewards_button{
+        border: none;
+        border-radius: 31px;
+        font-weight: 800;
+        width: 15rem;
+        a{
+            color: #fff;
+        }
+    }
+}
+.get_started_wrapper{
+    @media (max-width: 640px){
+        margin: 80px 20px 50px 20px;
+    }
+}

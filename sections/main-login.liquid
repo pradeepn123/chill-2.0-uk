@@ -1,0 +1,196 @@
+<div class="account_login">
+  <div class="account_img">
+    <img src="{{ section.settings.side_image | img_url: 'master'}}" alt="chill account">
+  </div>
+  <div class="small-form">
+    <div id="template" class="{% if shop.checkout.guest_login %} flexible-layout{% endif %}" data-cc-animate>
+      <!-- <div class="{% if shop.checkout.guest_login %}column column--half{% else %}small-form{% endif %}"> -->
+        <div id="customer">
+          <div class="template_header">
+            <h2 class="title account_login_title">{{ 'customer.login.title' | t }}</h2>
+            {{ section.settings.account_subtitle }}
+            <!-- <p class="account_login_sub-title" style="color: #000">{{ section.settings.account_subtitle }}</p> -->
+          </div>
+
+          {% form 'customer_login' %}
+          {{ form.errors | default_errors }}
+
+          <div id="login_email" class="input-row">
+            <label for="customer_email" class="login" >{{ 'customer.login.email' | t }}</label>
+            <input type="email" value="" name="customer[email]" id="customer_email" class="large" size="30" />
+          </div>
+
+          {% if form.password_needed %}
+
+          {% comment %}
+          Customer Account Login
+          {% endcomment %}
+
+          <div id="login_password" class="input-row">
+            <label for="customer_password" class="login">{{ 'customer.login.password' | t }}</label>
+            <div class="text-over-input">
+              <input type="password" value="" name="customer[password]" id="customer_password" class="large password" size="16" />
+              <div id="forgot_password" class="text-over-input__text">
+                <a href="#" onclick="showRecoverPasswordForm();return false;" style="text-decoration: underline; color: #000;">{{ 'customer.login.forgot_password' | t }}</a>
+              </div>
+            </div>
+          </div>
+
+          {% endif %}
+
+          <div class="action_bottom">
+            <div class="opposing-items">
+              <button class="login_btn btn" type="submit" style="font-size: {{ section.settings.login_btn_font_size }}px; background: {{ section.settings.button_color}};" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.login.title' | t | upcase }}</button>
+              <div>Don't have an account?<a href="{{ routes.account_register_url }}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';"> {{ 'customer.login.register' | t }}</a></div>
+            </div>
+          </div>
+          {% endform %}
+        </div>
+
+        {% comment %}
+        Recover Password Form
+        {% endcomment %}
+
+        <div id="recover-password" style='display:none'>
+          {% form 'recover_customer_password' %}
+          {% if form.posted_successfully? %}
+          {% assign reset_success = true %}
+          {% endif %}
+          
+
+
+          {{ form.errors | default_errors }}
+
+          {% if reset_success %}
+
+          <div class="action_bottom">
+            <p style="font-size: 20px;">{{ 'customer.recover_password.success' | t }}</p>
+            <span class="note"><a href="#" onclick="hideRecoverPasswordForm();return false;">{{ 'customer.login.sign_in' | t }}</a></span>
+          </div>
+
+          {% else %}
+          <div class="template_header">
+            <h2 class="title account_recoverPassword_title">{{ 'customer.recover_password.title' | t }}</h2>
+            <p class="account_recoverPassword_sub-title" style="color: #000">{{ section.settings.account_recoverPassword_subtitle }}</p>
+            
+          </div>
+          <div id="recover_email" class="input-row">
+            <label for="email" class="large">{{ 'customer.recover_password.email' | t }}</label>
+            <input type="email" value="" size="30" name="email" id="recover-email" class="large" />
+          </div>
+          <div class="action_bottom">
+              <button class="recover_password_btn btn" type="submit" style="font-size: {{ section.settings.password_recovery_btn_font_size }}px; background: {{ section.settings.recover_button_color}};" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.recover_password.submit' | t | upcase }}</button>
+              {% unless reset_success %}
+                <!-- <p>{{ 'customer.recover_password.subtext' | t }}</p> -->
+                <p class="note">An email with a link to reset your password will be sent to you.</p>
+              {% endunless %}
+            <span class="note">Remember your password? <a href="#" onclick="hideRecoverPasswordForm();return false;">{{ 'customer.recover_password.cancel' | t }}</a></span>
+          </div>
+
+          {% endif %}
+
+          {% endform %}
+        </div>
+      <!-- </div>/layout-column-half-left" -->
+
+      {% comment %}
+      Guest Login form for shops with optional customer accounts. This form is displayed only when users click on the checkout link
+      on the cart page.
+      {% endcomment %}
+
+      {% if shop.checkout.guest_login %}
+      <div id="guest" class="column column--half">
+        <div class="template_header">
+          <h3 class="title">{{ 'customer.login.guest_title' | t }}</h3>
+        </div>
+        {% form 'guest_login' %}
+          <button class="btn" type="submit" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.login.guest_continue' | t }}</button>
+        {% endform %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function showRecoverPasswordForm() {
+    document.getElementById('recover-password').style.display = 'block';
+    document.getElementById('customer').style.display='none';
+  }
+
+  function hideRecoverPasswordForm() {
+    document.getElementById('recover-password').style.display = 'none';
+    document.getElementById('customer').style.display = 'block';
+  }
+  document.addEventListener("DOMContentLoaded", function(event) {
+    $('#coverScreen').hide();
+  })
+
+  {% if reset_success %}showRecoverPasswordForm();{% endif %}
+  if (window.location.hash == '#recover') { showRecoverPasswordForm() }
+</script>
+
+{% schema %}
+  {
+    "name": "Customer login",
+    "class": "main-login",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "side_image",
+        "label": "Pick an image"
+      },
+      {
+        "type": "richtext",
+        "id": "account_subtitle",
+        "label": "Sub-title",
+        "default": "<p>Please enter your e-mail and password:</p>"
+      },
+      {
+        "type": "range",
+        "id": "login_btn_font_size",
+        "label": "Login button font size",
+        "min": 0,
+        "max": 25,
+        "step": 1,
+        "unit":"px",
+        "default": 20
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Color",
+        "default": "#6EC59F"
+      },
+      {
+        "type": "text",
+        "id": "account_recoverPassword_subtitle",
+        "label": "Recover password sub-title"
+      },
+      {
+        "type": "range",
+        "id": "password_recovery_btn_font_size",
+        "label": "Password Recovery button font size",
+        "min": 0,
+        "max": 25,
+        "step": 1,
+        "unit":"px",
+        "default": 20
+      },
+      {
+        "type": "color",
+        "id": "recover_button_color",
+        "label": "Password Recovery Button Color",
+        "default": "#6EC59F"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Customer login",
+        "settings": {
+        }
+      }
+    ]
+  }
+
+{% endschema %}

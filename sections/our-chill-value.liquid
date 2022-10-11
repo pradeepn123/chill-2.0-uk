@@ -1,0 +1,159 @@
+{% style%}
+    .chill-story-value-section{
+        background: {{ section.settings.bg_color }};
+    }
+    .chill-story-value-section .chill-story-value-section-wrapper .chill-story-value-left-sec,
+    .chill-story-value-section .chill-story-value-section-wrapper .chill-story-value-right-sec{
+        color: {{ section.settings.text_color }};
+    }
+ 
+{% endstyle%}
+
+<div class="chill-story-value-section {% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}no-space{% endif %}">    
+    <div class="container">
+        <div class="chill-story-value-section-wrapper">
+            <div class="ourstory-value-section">
+                <div class="ourstory-value-pos js">
+                    <div class="faq-index__sticky-container">
+                        <div class="faq-index__item-container">
+                            <div class="chill-story-value-left-sec">
+                                <div class="value-index-item">
+                                    <div class="h2 title">
+                                        {{ section.settings.title }}
+                                    </div>
+                                    <div class="sub_heading">
+                                        {{ section.settings.text }}
+                                    </div>
+                                    <a href="{{ section.settings.link_url }}">
+                                        {{ section.settings.link_heading }}
+                                        {% render 'svg-up-icon' %}
+                                    </a>
+                                    <div class="svg-story-icon">
+                                        {{ section.settings.svg_icon }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chill-story-value-block-section">
+                <div class="chill-story-value-block-list">
+                    {% for block in section.blocks %}
+                        <div class="chill-story-value-block-item">
+                            <div class="image_wrap">
+                                {% if block.settings.image != blank %}
+                                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="image">
+                                {% endif %}
+                            </div>
+                            <div class="text_wrap">
+                                <div class="h1 heading">
+                                    {{ block.settings.title }}
+                                </div>
+                                <div class="sub_heading text">
+                                    {{ block.settings.text }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Chill Story Values",
+  "class": "section-story-value",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section Background Color"      
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Section Text Color"      
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "<p>The Chill Story</p>"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "Descritpion"
+    },
+    {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Left Heading font Size",
+        "min": 40,
+        "max": 112,
+        "step": 2,
+        "unit": "px",
+        "default": 80
+    },
+    {
+        "type": "text",
+        "id": "link_heading",
+        "label": "Link Heading"
+    },
+    {
+        "type": "url",
+        "id": "link_url",
+        "label": "Choose Link"
+    },
+    {
+        "type": "html",
+        "id": "svg_icon",
+        "label": "Add svg code to reflact in frontend"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image and Text Block",
+      "settings": [
+        {
+            "id": "image",
+            "type": "image_picker",
+            "label": "Choose Image"
+        },
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Heading"            
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Descritpion",
+            "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Chill Story Values",
+      "settings": {
+      },
+      "blocks": [
+      ]
+    }
+  ]
+}
+{% endschema %}

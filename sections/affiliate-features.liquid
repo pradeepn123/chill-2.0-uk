@@ -1,0 +1,138 @@
+<div class="features_wrapper">
+  <div class="features_header">
+    <h1 class="desktop" style="font-size: {{ section.settings.heading_font_size}}px">{{ section.settings.title }}
+    </h1>
+    <h1 class="mobile" style="font-size: {{ section.settings.heading_font_size_mobile}}px">{{ section.settings.mobile_title }}
+    </h1>
+  </div>
+  <div class="block_wrapper">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'select'%}
+          <div class="feature_blocks">
+            {% if block.settings.feature_image != blank %}
+              <img src="{{ block.settings.feature_image | img_url: 'master' }}" alt="feature_image" class="feature_images">
+            {% else %}
+              <div class="feature_icon">{{ block.settings.svg_code }}
+              </div>
+            {% endif %}
+            <p class="feature_text">{{ block.settings.feature_text }}
+            </p>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+<div class="join_program">
+  <div class="join_text">{{ section.settings.join_text }}
+  </div>
+  <a href="{{ section.settings.join_btn_link }}" target="_blank">
+    <button class="join_btn" style="background: {{ section.settings.join_btn_color }}; font-size: {{ section.settings.join_btn_font }}">
+      {{ section.settings.join_btn_text }}
+    </button>
+  </a>
+</div>
+<!-- "max_blocks": 8, -->
+{% schema %}
+  {
+    "name": "AffiliateFeatures",
+
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "Heading",
+        "default": "<p>Affiliate Program Features</p>"
+      },
+      {
+        "type": "range",
+        "id": "heading_font_size",
+        "label": "Heading font size",
+        "min": 0,
+        "max": 70,
+        "step": 2,
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "richtext",
+        "id": "join_text",
+        "label": "Join Text",
+        "default": "<p>Join the chill Affiliate Program On ShareASale today!</p>"
+      },
+      {
+        "type": "text",
+        "id": "join_btn_text",
+        "label": "Join button Text"
+      }, {
+        "type": "color",
+        "id": "join_btn_color",
+        "label": "Join Button Color",
+        "default": "#6EC59F"
+      }, {
+        "type": "range",
+        "id": "join_btn_font",
+        "label": "Join Button font size",
+        "min": 0,
+        "max": 26,
+        "step": 2,
+        "unit": "px",
+        "default": 20
+      }, {
+        "type": "url",
+        "id": "join_btn_link",
+        "label": "Add link to join button"
+      }, {
+        "type": "richtext",
+        "id": "mobile_title",
+        "label": "Mobile Heading",
+        "default": "<p>#Teamchill Affiliate Program Features</p>"
+      }, {
+        "type": "range",
+        "id": "heading_font_size_mobile",
+        "label": "Heading font size in Mobile",
+        "min": 0,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "default": 36
+      }
+    ],
+    "blocks": [
+      {
+        "type": "select",
+        "name": "select",
+        "settings": [
+          {
+            "id": "feature_image",
+            "type": "image_picker",
+            "label": "Image for feature"
+          }, {
+            "type": "html",
+            "id": "svg_code",
+            "label": "Add SVG code"
+          }, {
+            "id": "feature_text",
+            "type": "text",
+            "label": "Feature Text",
+            "default": "feature"
+          }
+
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "AffiliateFeatures",
+        "settings": {},
+        "blocks": [
+          {
+            "type": "select"
+          }, {
+            "type": "select"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

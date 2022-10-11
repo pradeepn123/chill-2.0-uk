@@ -1,0 +1,112 @@
+.account_login, .account_register{
+    display: flex;
+    flex-direction: row;
+    .small-form{
+        margin: auto;
+        p{
+            color: #000;
+        }
+        // @media (max-width: 1023px){
+        //     margin: auto 20px;
+        // }
+        @media (max-width: 767px){
+            margin: 150px 20px !important;
+        }
+        @media (max-width: 1023px){
+            margin: 150px auto;
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    .account_img{
+        flex-basis: 50%;
+        img{
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: -6px;
+        }
+    }
+    @media (max-width: 1023px){
+        .account_img{
+            display: none;
+        }
+    }
+    .account_login_title, .account_recoverPassword_title, .register_title{
+        color: #000;
+        font-size: 42px;
+        font-weight: 800;
+        text-align: left !important;
+        text-transform: none;
+        @media (max-width: 641px){
+            font-size: 36px;
+        }
+    }
+    #login_email, #login_password, #recover_email,#register_email, #register_password{
+        input{
+            border-radius: 30px;
+            background-color: #fff !important;
+        }
+        @media (max-width: 640px){
+            label, input{
+                font-size: 16px;
+            }
+        }
+    }
+    .opposing-items, .action_bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+        gap: 16px;
+        // white-space: pre;
+        p, span{
+            color: #000;
+            margin: 0 !important;
+            @media (min-width: 319px){
+                font-size: 16px;
+            }
+        }
+        a{
+            text-decoration: underline;
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .login_btn, .recover_password_btn, .register_btn{
+            border: 1px solid #6EC59F;
+            border-radius: 30px;
+            width: 13.063rem;
+            font-weight: 800;
+        }
+        div{
+            color: #000;
+        }
+    }
+    
+}
+
+#guest{
+    padding-left:0;
+    margin-top: 16px;
+    .template_header{
+        margin: 10px 0 20px;
+        .title{
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    #customer_login_guest{
+        .btn{
+            background: #9792E3;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 4rem;
+            border: 0;
+            width: 100%;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}

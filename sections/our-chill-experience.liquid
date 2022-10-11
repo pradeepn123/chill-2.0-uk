@@ -1,0 +1,178 @@
+{% style%}
+  .chill-experience-section{
+      background: {{ section.settings.bg_color }};
+  }
+  .chill-experience-section .chill-experience-wrapper .majortitle{
+      font-size: {{ section.settings.text_font_size }}px;
+  }
+{% endstyle %}
+
+<div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium{% else %}no-space{% endif %}">
+    <div class="chill-experience-section">
+        <div class="container">
+            <div class="chill-experience-wrapper">
+                <div class="majortitle in-content align-{{ section.settings.text_alignment }}">
+                    {{ section.settings.title }}
+                </div>
+
+                <div class="chill-videos-list" data-section-type="video">
+                    {% for block in section.blocks %}
+                        {% case block.type %}
+                            {% when 'image-video'%}
+                            <div class="chill-videos-item">
+                                {%- if block.settings.video != blank -%}
+                                <div class="video_content">
+                                    <iframe id="player-{{forloop.index}}" class="play-video mobile-video" src="{{ block.settings.video }}&background=1&autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"  style="position:absolute; width:100%; height:100%;" title="Chill Adventure Series: The Gambler 500"></iframe>                                    
+                                </div>
+                                {%- endif -%}
+
+                                {%- if  block.settings.placeholder_image -%}
+                                    <div class="video_overlay_image">
+                                        <div class="video_image_container video_blocks_image">
+                                            <img class="play_image" src="{{ block.settings.placeholder_image |  img_url: '1920x' }}" alt="image">
+                                        </div>
+                                        <div class="play_overlay">
+                                          {% if block.settings.video_popup != blank %}<a data-fancybox href="{{ block.settings.video_popup }}&background=1&autoplay=1"> {% endif %}
+                                            {% render 'svg-play-button' %}
+                                            <div class="video_popup" style="display:none;">
+                                              <iframe id="player-{{forloop.index}}" class="play-video mobile-video" src="{{ block.settings.video_popup }}&background=1&autoplay=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"  style="position:absolute; width:100%; height:100%;" title="Chill Adventure Series: The Gambler 500"></iframe>                                    
+                                            </div>
+                                          {% if block.settings.video_popup != blank %}</a>{% endif %}
+                                        </div>
+                                    </div>
+                                {%- endif -%}                                
+                                <div class="video-detail-container">
+                                    <div class="video_details">
+                                        {%- if block.settings.video_heading -%} 
+                                            <div class="video-heading">{{ block.settings.video_heading }}</div>
+                                        {%- endif -%}  
+                                        {%- if block.settings.video_subHeading -%} 
+                                            <div class="video_subHeading">{{ block.settings.video_subHeading }}</div>
+                                        {%- endif -%}
+                                        <div class="video_details_wrapper">
+                                            <div class="video_type">{{ block.settings.video_type }}</div>
+                                            <div class="video-length"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endcase %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Chill Experience",
+  "class": "section-chill-experience",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section Background Color"      
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Section Text Color"      
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Heading",
+      "default": "<p>The Chill Experience</p>"
+    },    
+    {
+        "type": "range",
+        "id": "text_font_size",
+        "label": "Left Heading font Size",
+        "min": 20,
+        "max": 90,
+        "step": 2,
+        "unit": "px",
+        "default": 50
+    },
+    {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate section color",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image-video",
+      "name": "Image and Video Section",
+      "settings": [
+        {
+            "id": "video",
+            "type": "text",
+            "label": "Video link",
+            "default": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b"
+        },        
+        {
+            "id": "placeholder_image",
+            "type": "image_picker",
+            "label": "Placeholder image"
+        },
+        {
+          "id": "video_popup",
+          "type": "text",
+          "label": "Video Popup link",
+          "default": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b"
+        },
+        {
+            "type": "text",
+            "id": "video_heading",
+            "label": "Heading",
+            "default": "Heading"
+        },
+        {
+            "type": "richtext",
+            "id": "video_subHeading",
+            "label": "Descritpion",
+            "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+            "type": "text",
+            "id": "video_type",
+            "label": "Video Type Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Chill Experience",
+      "settings": {
+      },
+      "blocks": [
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,175 @@
+{% style %}
+    .home-stress-effect-section{
+        background: {{ section.settings.color_bg }};
+    }   
+    .heading-main {
+        color: {{ section.settings.text_color }};
+    }
+    {%- for block in section.blocks -%}
+        {% case block.type %}                        
+            {% when 'image' %}
+            .text_wrapper .rte{
+                color: {{ block.settings.text_color }};
+            }
+        {% endcase %}
+    {%- endfor -%}
+{% endstyle %}
+
+<div class="home-stress-effect-section">
+    <div class="container">
+        <div class="stress-effect-wrapper">
+            <div class="heading-main align-{{ section.settings.text_alignment }}">
+                {{ section.settings.text }}
+            </div>
+            <div class="stress-effect-block-list">
+                <div class="stress-list-item">
+                    <div class="fixed-layout">
+                        {%- for block in section.blocks -%}
+                            {% case block.type %}
+                                {% when 'image' %}
+                                    {% assign mod = forloop.index | modulo: 2 %}                                    
+                                    <div class="column--half pos-rel {% if mod == 0 %}even{%else%}odd{%endif %}">
+                                        <div class="text_wrapper mobile-only">
+                                            <div class="rte align-{{ block.settings.text_alignment }}">
+                                                {{ block.settings.text }}
+                                            </div>
+                                        </div>
+                                        <div class="image_wrapper">
+                                            <div class="normal_img">
+                                                {% if block.settings.icon_image != blank%}
+                                                    <img src="{{ block.settings.icon_image | img_url: '1920x'}}" alt="" />
+                                                {% endif%}
+                                            </div>
+                                            <div class="svg_animation">
+                                                {% if block.settings.animate_image != blank%}
+                                                    <img src="{{ block.settings.animate_image | img_url: '1920x'}}" alt="" />
+                                                {% endif%}                                               
+                                            </div>
+                                        </div>
+                                        <div class="text_wrapper">
+                                            <div class="rte align-{{ block.settings.text_alignment }}">
+                                                <span class="desktop-only">{{ block.settings.text }}</span>
+                                                {{ block.settings.text_ordered_list }}
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                            {% endcase %}
+                        {%- endfor -%}
+                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+        "name": "Home Stress Effect",
+        "class": "section-stress-effect",
+        "settings": [
+            {
+                "type": "color",
+                "id": "color_bg",
+                "label": "Background color",
+                "default": "#9792E4"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Richtext Content"
+            },
+            {
+                "type": "color",
+                "id": "text_color",
+                "label": "heading color",
+                "default": "#fff"
+            },
+            {
+                "type": "select",
+                "id": "text_alignment",
+                "label": "Text alignment",
+                "default": "center",
+                "options": [
+                  {
+                    "value": "left",
+                    "label": "Left"
+                  },
+                  {
+                    "value": "center",
+                    "label": "Center"
+                  },
+                  {
+                    "value": "right",
+                    "label": "Right"
+                  }
+                ]
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image",
+                "name": "Image",
+                "settings": [
+                    {
+                        "id": "icon_image",
+                        "type": "image_picker",
+                        "label": "Choose image"
+                    },
+                    {
+                        "id": "animate_image",
+                        "type": "image_picker",
+                        "label": "Choose animation image"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text",
+                        "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
+                    },
+                    {
+                        "type": "html",
+                        "id": "text_ordered_list",
+                        "label": "Text with ordered list"                        
+                    },
+                    {
+                        "type": "color",
+                        "id": "text_color",
+                        "label": "heading color",
+                        "default": "#fff"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_alignment",
+                        "label": "Text alignment",
+                        "default": "center",
+                        "options": [
+                          {
+                            "value": "left",
+                            "label": "Left"
+                          },
+                          {
+                            "value": "center",
+                            "label": "Center"
+                          },
+                          {
+                            "value": "right",
+                            "label": "Right"
+                          }
+                        ]
+                    }
+                ]
+            }         
+        ],
+        "presets": [
+            {
+                "name": "Home Stress Effect",
+                "settings": {},
+                "blocks": [
+                    {
+                        "type": "image"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

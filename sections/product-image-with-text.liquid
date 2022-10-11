@@ -1,0 +1,43 @@
+{% if section.settings.enable != false and product.metafields.setting.image_with_text.value != blank %}
+    <div class="product-image-with-text-section">
+        <div class="product-image-text-section-wrapper">
+            <div class="product-image-text-list">
+                {% for block in product.metafields.setting.image_with_text.value['image_text'] %}
+                    <div class="product-image-text-item">
+                        {% if block.image_url != blank%}
+                            <div class="image_wrapper">
+                                <img src="{{ block.image_url }}" alt="" />
+                            </div>
+                        {% endif %}
+                        {% if block.title != blank %}
+                            <div class="text_wrapper">
+                                {{block.title}}
+                            </div>
+                        {% endif %}
+                    </div>
+                {% endfor%}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Product Image With Text",
+    "class": "product_image_text_section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Show/Hide Section",
+        "default": true
+      }      
+    ],
+    "presets": [
+        {
+            "name": "Product Image With Text",
+            "settings": {}     
+        }
+    ]
+  }
+{% endschema %}

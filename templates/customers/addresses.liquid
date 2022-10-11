@@ -1,0 +1,586 @@
+<div class="account-section" data-section-type="account">
+  <div class="account_banner">
+    <div class="account_banner_text">
+      <h5 class="customer_name">Hello, {{ customer.first_name | capitalize }}</h5>
+      <a href="{{ routes.account_logout_url }}" class="logout_btn" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'layout.customer.log_out' | t }}</a>
+    </div>
+  </div>
+  <div class="account_content">
+    <div class="account_sidebar">
+      <ul class="sidebar_content">
+        <a href="{{ routes.account_url }}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
+          <li class="sidebar_element order_history_nav_desktop">
+            {% render 'icon', icon: 'order-history', size: 'small' %} Order History
+          </li>
+        </a>
+        <a href="#" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
+          <li class="sidebar_element order_history_nav_mobile" style="display: none;">
+            {% render 'icon', icon: 'order-history', size: 'small' %} Order History
+          </li>
+        </a>
+        <a href="#">
+          <li class="sidebar_element subscriptions_nav">
+            {% render 'icon', icon: 'subscriptions', size: 'medium' %} Subscriptions
+          </li>
+        </a>
+        <a href="{{ routes.account_url }}#account_details_section" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
+          <li class="sidebar_element account_details_nav">
+            {% render 'icon', icon: 'account-details' %} Account details
+          </li>
+        </a>
+        <a href="{{ routes.account_addresses_url }}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
+          <li class="sidebar_element addresses_nav active">
+            {% render 'icon', icon: 'addresses' %} Addresses
+          </li>
+        </a>
+        <li class="sidebar_help">
+          {% render 'icon', icon: 'help' %}Need help? <a href="/pages/new-contact-us"  onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">Contact Us</a>
+        </li>
+      </ul>  
+    </div>
+    <div class="account_addresses">
+      <div class="action_top account_addresses_header">
+        
+        <h1 class="addresses_title">
+          <a href={{ routes.account_url }} class="back_arrow" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8.863" height="14.898" viewBox="0 0 8.863 14.898">
+              <path id="Path_10248" data-name="Path 10248" d="M9463.4-21920.516l-1.414-1.414,6.035-6.035-6.035-6.035,1.414-1.414,7.449,7.449Z" transform="translate(9470.851 -21920.516) rotate(180)"/>
+            </svg>
+          </a>
+          {{ 'customer.addresses.title' | t }}</h1>
+        <div id="action" class="action_link action_add note add_address_btn">
+          <a href="#" class="button altcolour">{{ 'customer.addresses.add_new' | t | upcase }}</a>
+        </div>
+      </div>
+      {% for address in customer.addresses %}
+        {% if address == customer.default_address %}
+            <div class="view_address lightly-spaced-row customer_account_address">
+              <div>{{ address.first_name }} {{address.last_name }}</div>
+              <div>{{ address.company }}</div>
+              <div>{{ address.street }}</div>
+              <div>{{ address.city }} {% if address.province_code %}, {{ address.province_code }}{% endif %}</div>
+              <div>{{ address.country }} {{ address.zip }}</div>
+              <div class="address-phone">{{ address.phone }}</div>
+              <div class="default_display">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <g>
+                    <g>
+                      <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M219.429,367.932    L108.606,257.108l38.789-38.789l72.033,72.035L355.463,154.32l38.789,38.789L219.429,367.932z"/>
+                    </g>
+                  </g>
+                </svg>
+                Default Address</div>
+              <p class="address_actions">
+                <span class="action_link action_edit">
+                  <a href="#"
+                    class="address-edit-toggle"
+                    data-form-id="{{ address.id }}"
+                    aria-owns="edit_address_{{ address.id }}"
+                    aria-expanded="false"
+                  >
+                    {{ 'customer.addresses.edit' | t }}
+                  </a>
+                </span>
+                |
+                <span class="action_link action_delete">
+                  <a href="#"
+                    class="address-delete"
+                    onclick="openPopup({{ address.id }})"
+                    data-target="{{ address.id }}"
+                    data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                  >
+                    {{ 'customer.addresses.delete' | t }}
+                </a>
+                </span>
+              </p>
+              
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% for address in customer.addresses %}
+          {% if address != customer.default_address %}
+            <div class="view_address lightly-spaced-row customer_account_address">
+              <div>{{ address.first_name }} {{address.last_name }}</div>
+              <div>{{ address.company }}</div>
+              <div>{{ address.street }}</div>
+              <div>{{ address.city }} {% if address.province_code %}, {{ address.province_code }}{% endif %}</div>
+              <div>{{ address.country }} {{ address.zip }}</div>
+              <div class="address-phone">{{ address.phone }}</div>
+              <p class="address_actions">
+                <span class="action_link action_edit">
+                  <a href="#"
+                    class="address-edit-toggle"
+                    data-form-id="{{ address.id }}"
+                    aria-owns="edit_address_{{ address.id }}"
+                    aria-expanded="false"
+                  >
+                    {{ 'customer.addresses.edit' | t }}
+                  </a>
+                </span>
+                |
+                <span class="action_link action_delete">
+                  <a href="#"
+                    class="address-delete"
+                    onclick="openPopup({{ address.id }})"
+                    data-target="{{ address.id }}"
+                    data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                  >
+                    {{ 'customer.addresses.delete' | t }}
+                </a>
+                </span>
+              </p>
+            </div>
+          {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Delete popup -->
+    {% for address in customer.addresses %}
+    <div id="popup_delete_{{ address.id }}" class="overlay_delete" style="display: none;" data-target="{{ address.id }}">
+      <div class="delete_popup_block">
+        <div class="template_header">
+          <h1>{{ 'Confirm Deletion' | upcase }}</h1>
+          <div class="close_delete_popup" onclick="closePopup({{ address.id }})">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path id="cancel_FILL0_wght400_GRAD0_opsz48" d="M11.5,21.76l4.5-4.5,4.5,4.5,1.26-1.26L17.26,16l4.5-4.5L20.5,10.24,16,14.74l-4.5-4.5L10.24,11.5l4.5,4.5-4.5,4.5ZM16,28a11.611,11.611,0,0,1-4.65-.945,12.09,12.09,0,0,1-6.4-6.4,11.987,11.987,0,0,1,0-9.33,11.993,11.993,0,0,1,2.58-3.81A12.3,12.3,0,0,1,11.35,4.945a11.987,11.987,0,0,1,9.33,0,11.981,11.981,0,0,1,6.375,6.375,11.987,11.987,0,0,1,0,9.33,12.3,12.3,0,0,1-2.565,3.825,11.992,11.992,0,0,1-3.81,2.58A11.685,11.685,0,0,1,16,28Zm0-1.8a9.815,9.815,0,0,0,7.23-2.985A9.855,9.855,0,0,0,26.2,16a9.84,9.84,0,0,0-2.97-7.23A9.84,9.84,0,0,0,16,5.8,9.855,9.855,0,0,0,8.785,8.77,9.815,9.815,0,0,0,5.8,16a9.83,9.83,0,0,0,2.985,7.215A9.829,9.829,0,0,0,16,26.2ZM16,16Z" transform="translate(-4 -4)"/>
+            </svg>
+          </div>
+        </div>
+        
+        
+        <div class="popup_content">
+          <!-- <h1>Confirm Deletion</h1> -->
+          <div class="action_bottom">
+            <p class="delete_text note">Are you sure you want to delete this address?</p>
+              <form class="address-delete-form"
+                  method="post"
+                  action="/account/addresses/{{ address.id }}">
+                <input type="hidden" name="_method" value="delete">
+                <button type="submit" class="delete_btn" data-delete = {{ address.id }} onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'Delete Address' }}</button>
+              </form>
+            <!-- >Delete Address</button> -->
+            <button class="delete_cancel_btn" onclick="closePopup({{ address.id }})">{{ 'Cancel'}}</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+    <!-- edit address -->
+    <div class="form_div" style="display: none;">
+      {% for address in customer.addresses %}
+        {% form 'customer_address', address %}
+          <div id="edit_address_{{ address.id }}" class="customer_address edit_address small-form hidden">
+            <h1>
+              <span class="note">
+                <a href="{{ routes.account_addresses_url }}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="8.863" height="14.898" viewBox="0 0 8.863 14.898">
+                    <path id="Path_10248" data-name="Path 10248" d="M9463.4-21920.516l-1.414-1.414,6.035-6.035-6.035-6.035,1.414-1.414,7.449,7.449Z" transform="translate(9470.851 -21920.516) rotate(180)"/>
+                  </svg>
+                  {{ 'customer.addresses.edit_address' | t | upcase }}
+                </a>
+              </span>
+              
+            </h1>
+            <div class="edit_form_wrapper">
+                <div class="edit_group">
+                  <div class="input-row">
+                    <label for="address_first_name_{{form.id}}">{{ 'customer.addresses.first_name' | t }} *</label>
+                    <input type="text" id="address_first_name_{{form.id}}" class="address_form" name="address[first_name]" value="{{form.first_name}}" size="40" required/>
+                  </div>
+                  <div class="input-row">
+                    <label for="address_last_name_{{form.id}}">{{ 'customer.addresses.last_name' | t }}</label>
+                    <input type="text" id="address_last_name_{{form.id}}" class="address_form" name="address[last_name]" value="{{form.last_name}}" size="40" />
+                  </div>
+                </div>
+                <div class="edit_group">
+                    <div class="input-row">
+                      <label for="address_phone_{{form.id}}">{{ "Phone number" }} *</label>
+                      <input type="tel" id="address_phone_{{form.id}}" class="address_form" name="address[phone]" value="{{form.phone}}" size="40" required/>
+                    </div>
+                    <div class="input-row">
+                      <label for="address_company_{{form.id}}">{{ 'Company/ Organisation' }}</label>
+                      <input type="text" id="address_company_{{form.id}}" class="address_form" name="address[company]" value="{{form.company}}" size="40" />
+                    </div>
+                </div>
+                <div class="edit_group">
+                  <div class="input-row">
+                    <label for="address_country_{{form.id}}">{{ 'customer.addresses.country' | t }} *</label>
+                    <!-- <span class="lightly-styled-select"> -->
+                      <select id="address_country_{{form.id}}" name="address[country]" data-default="{{form.country}}" value="{{form.country}}" required>{{ all_country_option_tags }}</select>
+                    <!-- </span> -->
+                  </div>
+                  <div class="input-row">
+                    <label for="address_address1_{{form.id}}">{{ 'Address' }} *</label>
+                    <input type="text" id="address_address1_{{form.id}}" class="address_form" name="address[address1]" value="{{form.address1}}" size="40" required/>
+                  </div>
+                </div>
+                <div class="edit_group">
+                  <div class="input-row">
+                    <label for="address_city_{{form.id}}">{{ 'customer.addresses.city' | t }} *</label>
+                    <input type="text" id="address_city_{{form.id}}" class="address_form" name="address[city]" value="{{form.city}}" size="40" required/>
+                  </div>
+                  
+                  <div id="address_province_container_{{form.id}}" class="input-row" style="display:none">
+                    <label for="address_province_{{form.id}}">State / Province / Region *</label>
+                    <!-- <span class="lightly-styled-select"> -->
+                      <select id="address_province_{{form.id}}" class="address_form" name="address[province]" data-default="{{form.province}}" value="{{form.province}}" required></select>
+                    <!-- </span> -->
+                  </div>
+                </div>
+                <div class="edit_group">
+                  <div class="input-row">
+                    <label for="address_zip_{{form.id}}">{{ 'Zip/ Postal code' }} *</label>
+                    <input type="text" id="address_zip_{{form.id}}" class="address_form" name="address[zip]" value="{{form.zip}}" size="40" required/>
+                  </div>
+                </div>
+                
+                <div class="input-row">
+                  <label>
+                    {{ form.set_as_default_checkbox }} {{ 'customer.addresses.set_default' | t }}
+                  </label>
+                </div>
+                <div class="action_bottom">
+                  <button class="btn update_btn" type="submit" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.addresses.update' | t | upcase }}</button>
+                  <!-- <p><span class="note"><a href="#" onclick="$(this).closest('.edit_address').toggleClass('hidden'); return false;">{{ 'customer.addresses.cancel' | t }}</a></span></p> -->
+                  <!-- <p><span class="note"><a href="{{ routes.account_addresses__url }}">{{ 'customer.addresses.cancel' | t }}</a></span></p> -->
+                  <button class="btn delete_btn" type="delete" onclick="openPopup({{ address.id }})" data-target="{{ address.id }}">{{ "Delete address" | upcase }}</button>
+                </div>
+            </div>
+          </div>
+        {% endform %}
+      {% endfor %}
+    </div>
+
+
+    <!-- New Address -->
+    <div class="add_new_form_div" style="display: none;">
+      <div id="add_address" class="customer_address new_address small-form">
+        <h1 id="add_address_title">
+          <span class="note">
+            <a href="{{ routes.account_addresses__url }}" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8.863" height="14.898" viewBox="0 0 8.863 14.898">
+                <path id="Path_10248" data-name="Path 10248" d="M9463.4-21920.516l-1.414-1.414,6.035-6.035-6.035-6.035,1.414-1.414,7.449,7.449Z" transform="translate(9470.851 -21920.516) rotate(180)"/>
+              </svg>
+              {{ 'customer.addresses.add_new' | t | upcase }}
+            </a>
+        </span>
+          </h1>
+        {% form 'customer_address', customer.new_address %}
+          
+          <div class="new_form_wrapper">
+              <div class="new_group">
+                <div class="input-row">
+                  <label for="address_first_name_new">{{ 'customer.addresses.first_name' | t }} *</label>
+                  <input type="text" id="address_first_name_new" class="address_form" name="address[first_name]" value="{{form.first_name}}" size="40" required/>
+                </div>
+                <div class="input-row">
+                  <label for="address_last_name_new">{{ 'customer.addresses.last_name' | t }}</label>
+                  <input type="text" id="address_last_name_new" class="address_form" name="address[last_name]" value="{{form.last_name}}" size="40" />
+                </div>
+              </div>
+              <div class="new_group">
+                <div class="input-row">
+                  <label for="address_phone_new">{{ "Phone number" }} *</label>
+                  <input type="tel" id="address_phone_new" class="address_form" name="address[phone]" value="{{form.phone}}" size="40" required/>
+                </div>
+                <div class="input-row">
+                  <label for="address_company_new">{{ 'Company/ Organisation' }}</label>
+                  <input type="text" id="address_company_new" class="address_form" name="address[company]" value="{{form.company}}" size="40" />
+                </div>
+              </div>
+              <div class="new_group">
+                <div class="input-row">
+                  <label for="address_country_new">{{ 'customer.addresses.country' | t }} *</label>
+                  <!-- <span class="lightly-styled-select"> -->
+                    <select id="address_country_new" name="address[country]" data-default="{{form.country}}" value="{{form.country}}" required>{{ all_country_option_tags }}</select>
+                  <!-- </span> -->
+                </div>
+                <div class="input-row">
+                  <label for="address_address1_new">{{ 'Address' }} *</label>
+                  <input type="text" id="address_address1_new" class="address_form" name="address[address1]" value="{{form.address1}}" size="40" required/>
+                </div>
+              </div>
+              <div class="new_group">
+                <div class="input-row">
+                  <label for="address_city_new">{{ 'customer.addresses.city' | t }} *</label>
+                  <input type="text" id="address_city_new" class="address_form" name="address[city]" value="{{form.city}}" size="40" required/>
+                </div>
+                <div id="address_province_container_new" class="input-row" style="display:none">
+                  <label for="address_province_new">{{ "State/ Province/ Region" }} *</label>
+                  <!-- <span class="lightly-styled-select"> -->
+                    <select id="address_province_new" class="address_form" name="address[province]" data-default="{{form.province}}" value="{{form.province}}" required></select>
+                  <!-- </span> -->
+                </div>
+              </div>
+              <div class="new_group">
+                <div class="input-row">
+                  <label for="address_zip_new">{{ 'Zip/ Postal code' }} *</label>
+                  <input type="text" id="address_zip_new" class="address_form" name="address[zip]" value="{{form.zip}}" size="40" required/>
+                </div>
+              </div>
+              <div class="input-row">
+                <label>
+                  {{ form.set_as_default_checkbox }} {{ 'customer.addresses.set_default' | t }}
+                </label>
+              </div>
+              <div class="action_bottom">
+                  <button class="btn add_btn" type="submit" onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">{{ 'customer.addresses.add' | t | upcase }}</button>
+                <!-- <span class="note"><a href="#" onclick="$('#add_address').toggleClass('hidden'); return false;">{{ 'customer.addresses.cancel' | t }}</a></span> -->
+              </div>
+          </div>
+        {% endform %}
+    </div>
+  </div> 
+
+
+
+
+
+
+
+<!-- <div id="admin_header" data-cc-animate>
+  <div class="action_link action_return note" id='return_to_account'><a href="{{ routes.account_url }}">{{ 'customer.account.return' | t }}</a></div>
+  <h2 class="title">{{ 'customer.addresses.title' | t }}</h2>
+  <div class="action_top">
+    <div id="action" class="action_link action_add note"><a href="#" class="button altcolour" onclick="$('#add_address').toggleClass('hidden'); return false;">{{ 'customer.addresses.add_new' | t }}</a></div>
+  </div>
+</div>
+
+<div id="add_address" class="customer_address edit_address small-form hidden">
+  {% form 'customer_address', customer.new_address %}
+    <h4 id="add_address_title">{{ 'customer.addresses.add_new' | t }}</h4>
+
+      <div class="input-row">
+        <label for="address_first_name_new">{{ 'customer.addresses.first_name' | t }}</label>
+        <input type="text" id="address_first_name_new" class="address_form" name="address[first_name]" value="{{form.first_name}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_last_name_new">{{ 'customer.addresses.last_name' | t }}</label>
+        <input type="text" id="address_last_name_new" class="address_form" name="address[last_name]" value="{{form.last_name}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_company_new">{{ 'customer.addresses.company' | t }}</label>
+        <input type="text" id="address_company_new" class="address_form" name="address[company]" value="{{form.company}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_address1_new">{{ 'customer.addresses.address1' | t }}</label>
+        <input type="text" id="address_address1_new" class="address_form" name="address[address1]" value="{{form.address1}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_address2_new">{{ 'customer.addresses.address2' | t }}</label>
+        <input type="text" id="address_address2_new" class="address_form" name="address[address2]" value="{{form.address2}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_city_new">{{ 'customer.addresses.city' | t }}</label>
+        <input type="text" id="address_city_new" class="address_form" name="address[city]" value="{{form.city}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_country_new">{{ 'customer.addresses.country' | t }}</label>
+        <span class="lightly-styled-select">
+          <select id="address_country_new" name="address[country]" data-default="{{form.country}}">{{ all_country_option_tags }}</select>
+        </span>
+      </div>
+      <div id="address_province_container_new" class="input-row" style="display:none">
+        <label for="address_province_new">{{ 'customer.addresses.province' | t }}</label>
+        <span class="lightly-styled-select">
+          <select id="address_province_new" class="address_form" name="address[province]" data-default="{{form.province}}"></select>
+        </span>
+      </div>
+      <div class="input-row">
+        <label for="address_zip_new">{{ 'customer.addresses.zip' | t }}</label>
+        <input type="text" id="address_zip_new" class="address_form" name="address[zip]" value="{{form.zip}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label for="address_phone_new">{{ 'customer.addresses.phone' | t }}</label>
+        <input type="tel" id="address_phone_new" class="address_form" name="address[phone]" value="{{form.phone}}" size="40" />
+      </div>
+      <div class="input-row">
+        <label>
+          {{ form.set_as_default_checkbox }} {{ 'customer.addresses.set_default' | t }}
+        </label>
+      </div>
+    <div class="action_bottom">
+      <p>
+        <button class="btn" type="submit">{{ 'customer.addresses.add' | t }}</button>
+      </p>
+      <span class="note"><a href="#" onclick="$('#add_address').toggleClass('hidden'); return false;">{{ 'customer.addresses.cancel' | t }}</a></span>
+    </div>
+  {% endform %}
+</div>
+
+<div id="address_tables" data-cc-animate>
+{% paginate customer.addresses by 10 %}
+
+  {% for address in customer.addresses %}
+  <div class="address_table spaced-row">
+    <div id="view_address_{{address.id}}" class="customer_address">
+      <h4 class="address_title">
+        {{ address.street }}
+        {% if address == customer.default_address %}<span class="default_address note">({{ 'customer.addresses.default' | t }})</span>{% endif %}
+      </h4>
+      <div class="view_address lightly-spaced-row">
+        <div>{{ address.first_name }} {{address.last_name }}</div>
+        <div>{{ address.company }}</div>
+        <div>{{ address.street }}</div>
+        <div>{{ address.city }} {% if address.province_code %}, {{ address.province_code }}{% endif %}</div>
+        <div>{{ address.country }} {{ address.zip }}</div>
+        <div class="address-phone">{{ address.phone }}</div>
+      </div>
+      <p class="address_actions">
+        <span class="action_link action_edit">
+          <a href="#"
+            class="address-edit-toggle"
+            data-form-id="{{ address.id }}"
+            aria-owns="edit_address_{{ address.id }}"
+            aria-expanded="false"
+          >
+            {{ 'customer.addresses.edit' | t }}
+          </a>
+        </span>
+        <span class="action_link action_delete">
+          <a href="#"
+            class="address-delete"
+            data-target="{{ address.url }}"
+            data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+          >
+            {{ 'customer.addresses.delete' | t }}
+        </a>
+        </span>
+      </p>
+    </div>
+    <div id="edit_address_{{ address.id }}" class="customer_address edit_address small-form hidden">
+      <h4>{{ 'customer.addresses.edit_address' | t }}</h4>
+
+      {% form 'customer_address', address %}
+
+          <div class="input-row">
+            <label for="address_first_name_{{form.id}}">{{ 'customer.addresses.first_name' | t }}</label>
+            <input type="text" id="address_first_name_{{form.id}}" class="address_form" name="address[first_name]" value="{{form.first_name}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_last_name_{{form.id}}">{{ 'customer.addresses.last_name' | t }}</label>
+            <input type="text" id="address_last_name_{{form.id}}" class="address_form" name="address[last_name]" value="{{form.last_name}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_company_{{form.id}}">{{ 'customer.addresses.company' | t }}</label>
+            <input type="text" id="address_company_{{form.id}}" class="address_form" name="address[company]" value="{{form.company}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_address1_{{form.id}}">{{ 'customer.addresses.address1' | t }}</label>
+            <input type="text" id="address_address1_{{form.id}}" class="address_form" name="address[address1]" value="{{form.address1}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_address2_{{form.id}}">{{ 'customer.addresses.address2' | t }}</label>
+            <input type="text" id="address_address2_{{form.id}}" class="address_form" name="address[address2]" value="{{form.address2}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_city_{{form.id}}">{{ 'customer.addresses.city' | t }}</label>
+            <input type="text" id="address_city_{{form.id}}" class="address_form" name="address[city]" value="{{form.city}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_country_{{form.id}}">{{ 'customer.addresses.country' | t }}</label>
+            <span class="lightly-styled-select">
+              <select id="address_country_{{form.id}}" name="address[country]" data-default="{{form.country}}">{{ all_country_option_tags }}</select>
+            </span>
+          </div>
+          <div id="address_province_container_{{form.id}}" class="input-row" style="display:none">
+            <label for="address_province_{{form.id}}">{{ 'customer.addresses.province' | t }}</label>
+            <span class="lightly-styled-select">
+              <select id="address_province_{{form.id}}" class="address_form" name="address[province]" data-default="{{form.province}}"></select>
+            </span>
+          </div>
+          <div class="input-row">
+            <label for="address_zip_{{form.id}}">{{ 'customer.addresses.zip' | t }}</label>
+            <input type="text" id="address_zip_{{form.id}}" class="address_form" name="address[zip]" value="{{form.zip}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label for="address_phone_{{form.id}}">{{ 'customer.addresses.phone' | t }}</label>
+            <input type="tel" id="address_phone_{{form.id}}" class="address_form" name="address[phone]" value="{{form.phone}}" size="40" />
+          </div>
+          <div class="input-row">
+            <label>
+              {{ form.set_as_default_checkbox }} {{ 'customer.addresses.set_default' | t }}
+            </label>
+          </div>
+        <div class="action_bottom">
+          <p><button class="btn" type="submit">{{ 'customer.addresses.update' | t }}</button></p>
+          <p><span class="note"><a href="#" onclick="$(this).closest('.edit_address').toggleClass('hidden'); return false;">{{ 'customer.addresses.cancel' | t }}</a></span></p>
+        </div>
+      {% endform %}
+    </div>
+  </div> -->
+  <!-- end .address_table -->
+  <!-- {% endfor %} -->
+
+  <!-- <div id="address_pagination">{{ paginate | default_pagination }}</div>
+{% endpaginate %}
+</div> -->
+<!-- end #address_tables -->
+
+<script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script>
+<script type="text/javascript" charset="utf-8">
+
+function openPopup(address_id){
+    document.querySelectorAll('.address-delete').forEach(function(e){
+      if(e.getAttribute('data-target') == address_id){
+        document.getElementById('popup_delete_' + address_id).style.display = 'block';
+      }
+    })
+  }
+  function closePopup(address_id){
+    document.getElementById('popup_delete_' + address_id).style.display = 'none';
+  }
+  if(window.screen.width <= 1024){
+    document.querySelector('.account_sidebar').style.display = 'none';
+    document.querySelector('.back_arrow').style.display = 'block';
+  }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  $('#coverScreen').hide();
+  // $('.address-delete').on('click', function(evt) {
+  //   evt.preventDefault();
+  //   var $el = $(this);
+  //   var target = $el.data('target');
+  //   var confirmMessage = $el.data('confirm-message');
+
+  //   if (
+  //     confirm(confirmMessage || 'Are you sure you wish to delete this address?')
+  //   ) {
+  //     Shopify.postLink(target, {
+  //       parameters: { _method: 'delete' }
+  //     });
+  //   }
+  // });
+
+  // $('.add_new_form_div').hide();
+  // $('#new_address_btn').click(() => {
+  //   $('.add_new_form_div').show();
+  //   $('.address_tabs#shipping_address').addClass("hidden");
+  // })
+  $('.add_address_btn').click(() => {
+    $('.add_new_form_div').show();
+    $('.account_addresses').hide();
+  })
+
+  $('.address-edit-toggle').on('click', function(evt) {
+    evt.preventDefault();
+    var formId = $(this).data('form-id');
+    var $editButton = $(this);
+    var $editAddress = $('#edit_address_' + formId);
+    var isExpanded = $editButton.attr('aria-expanded') === 'true';
+    $('.account_addresses').hide();
+    $('.form_div').show();
+    $editAddress.toggleClass('hidden');
+    $editButton.attr('aria-expanded', !isExpanded).focus();
+  });
+
+  // initialize observers on address selectors
+  new Shopify.CountryProvinceSelector('address_country_new', 'address_province_new', {hideElement: 'address_province_container_new'});
+  {% for address in customer.addresses %}
+    new Shopify.CountryProvinceSelector('address_country_{{address.id}}', 'address_province_{{address.id}}', {hideElement: 'address_province_container_{{address.id}}'});
+  {% endfor %}
+});
+</script>

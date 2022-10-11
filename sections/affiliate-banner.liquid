@@ -1,0 +1,219 @@
+
+<div class="banner_wrapper" data-section-type="affiliate-banner">
+    {% if section.settings.banner-image_mobile != blank %}
+      {% style %}
+        @media (max-width: 640px){
+          .banner_wrapper{
+            background: url('{{ section.settings.banner-image_mobile | img_url: 'master' }}'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center right;
+          }
+        }
+        @media (min-width: 641px){
+          .banner_wrapper{
+            background: url('{{ section.settings.banner-image | img_url: 'master' }}'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center right;
+          }
+        }
+      {% endstyle %}
+    {% endif %}
+    
+    <div class="banner_text">
+        <h1 class="desktop" style="font-size: {{ section.settings.title_font_size }}px; color: {{ section.settings.title_color }} !important; ">{{ section.settings.title }}</h1>
+        <h1 class="mobile" style="font-size: {{ section.settings.title_font_size_mobile }}px; color: {{ section.settings.title_color_mobile }} !important;">{{ section.settings.mobile_title }}</h1>
+        {% if section.settings.sub_title != blank %}
+          <h3 class="desktop" style="font-size: {{ section.settings.sub_title_font_size }}px; color: {{ section.settings.subtitle_color }};">{{ section.settings.sub_title }}</h3>
+          <h3 class="mobile" style="font-size: {{ section.settings.sub_title_font_size_mobile }}px; color: {{ section.settings.subtitle_color_mobile }};">{{ section.settings.sub_title_mobile }}</h3>
+        {% endif %}
+        {% if section.settings.join_now_btn %}
+          <a href="{{ section.settings.banner_btn_url }}" target="_blank" style="color: {{ section.settings.banner_btn_text_color }}"><button class="banner_btn">{{ section.settings.banner_btn_content }}</button></a>
+        {% endif %}
+        
+        {% style %}
+        @media (max-width: 1023px){
+          .banner_btn{
+            background: {{ section.settings.banner_btn_color_mobile }};
+            font-size: {{ section.settings.banner_btn_font_size_mobile }}px;
+          }
+        }
+        @media (min-width: 1024px){
+          .banner_btn{
+            background: {{ section.settings.banner_btn_color}};
+            font-size: {{ section.settings.banner_btn_font_size }}px;
+          }
+        }
+        {% endstyle %}
+    </div>
+</div> 
+
+
+{% schema %}
+  {
+    "name": "Affiliate Banner",
+    "class": "section-affiliate-banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "banner-image",
+        "label": "Custom Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "banner-image_mobile",
+        "label": "Custom Background Image for mobile"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#fff"
+      },
+      {
+        "type": "richtext",
+        "id": "title",
+        "label": "Title",
+        "default": "<p>Join the Chill Affiliate program on Shareasale!</p>"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size",
+        "label": "Title font size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "richtext",
+        "id": "sub_title",
+        "label": "Subtitle",
+        "default": "<p>Buy Chill products. Earn Rewards.</p>"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Subtitle Color",
+        "default": "#fff"
+      },
+      {
+        "type": "range",
+        "id": "sub_title_font_size",
+        "label": "Subtitle font size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "checkbox",
+        "id": "join_now_btn",
+        "label": "Show banner button",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "banner_btn_content",
+        "label": "Banner button content"
+      },
+      {
+        "type": "url",
+        "id": "banner_btn_url",
+        "label": "Add link to banner button"
+      },
+      {
+        "type": "color",
+        "id": "banner_btn_text_color",
+        "label": "Banner button text color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "banner_btn_color",
+        "label": "Banner button color",
+        "default": "#FFAC9A"
+      },
+      {
+        "type": "range",
+        "id": "banner_btn_font_size",
+        "label": "Banner button font size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "richtext",
+        "id": "mobile_title",
+        "label": "Mobile Title",
+        "default": "<p>Join the Chill Affiliate program on Shareasale!</p>"
+      },
+      {
+        "type": "color",
+        "id": "title_color_mobile",
+        "label": "Title Color in Mobile",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "title_font_size_mobile",
+        "label": "Title font size in Mobile",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "richtext",
+        "id": "sub_title_mobile",
+        "label": "Subtitle in Mobile",
+        "default": "<p>Buy Chill products. Earn Rewards.</p>"
+      },
+      {
+        "type": "color",
+        "id": "subtitle_color_mobile",
+        "label": "Subtitle Color in Mobile",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "sub_title_font_size_mobile",
+        "label": "Subtitle font size in Mobile",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "color",
+        "id": "banner_btn_color_mobile",
+        "label": "Banner button color in Mobile",
+        "default": "#FFAC9A"
+      },
+      {
+        "type": "range",
+        "id": "banner_btn_font_size_mobile",
+        "label": "Banner button font size",
+        "min": 0,
+        "max": 72,
+        "step": 2,
+        "unit": "px",
+        "default": 16
+      }
+    ],
+    "presets": [
+      {
+        "name": "Affiliate Banner",
+        "settings": {
+        }
+      }
+    ]
+  }
+  {% endschema %}

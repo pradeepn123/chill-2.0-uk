@@ -1,0 +1,91 @@
+<div class="home_collection_section fully-spaced-row--medium">
+    <div class="container">
+        <div class="collection_section_wrapper">
+            <div class="collection_heading">
+                {%- if section.settings.text -%}
+                    <h3>{{ section.settings.text }}</h3>
+                {%- endif -%}
+                {%- if section.settings.show_view_all -%}
+                    <div class="view-all align-center" data-cc-animate data-cc-animate-delay="0.3s">
+                        <a class="small-feature-link collection_shop_all" href="{{ collection.url }}">{{ 'collections.general.view_all' | t }}{% render 'svg-up-icon' %}</a>
+                    </div>
+                {%- endif -%}
+            </div>
+
+            <div class="flexbox-images">
+                {%- for block in section.blocks -%}
+                    {%- assign collection_block = collections[block.settings.collection] -%}
+                    {% if collection_block != blank%}                        
+                        {%- assign collection_image = block.settings.image | default: collection_block.products.featured_image -%}
+                        <div class="image-wrapper">
+                            {%- assign img_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                            <img class="rimage__image lazyload{% if manual_image_load %}--manual{% endif %} fade-in {% if local_cover %}cover{% endif %}"
+                                data-src="{{ img_url }}"
+                                data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                data-aspectratio="{{ image.aspect_ratio }}"
+                                data-sizes="auto"
+                                alt="{{ collection_image.alt | escape }}">
+                            <div class="image_title">
+                                {%- assign collection_title = block.settings.title | default: collection_block.title -%}
+                                <h4>{{ collection_title }}</h4>
+                                <a class="small-feature-link shop_all" href="{{ collection_block.url }}">{{ 'collections.general.view_all' | t }}{% render 'svg-up-icon' %}</a>
+                            </div>
+                        </div>                        
+                    {% endif %}
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+    "name": "Home Collections",
+    "class": "section-home-collections",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Richtext Content",
+            "default": "<p>Our Collections</p>"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_view_all",
+            "label": "Show 'View all' link",
+            "default": true
+        }
+    ],
+    "blocks": [
+        {
+            "type": "collection-image",
+            "name": "Image with Text media",
+            "settings": [
+                {
+                    "id": "image",
+                    "type": "image_picker",
+                    "label": "Choose image"
+                },
+                {
+                    "type": "collection",
+                    "id": "collection",
+                    "label": "Collection"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Heading"                    
+                }              
+            ]
+        }            
+    ],
+    "presets": [
+        {
+            "name": "Home Collections",
+            "settings": {}
+        }
+    ]
+}
+{% endschema %}

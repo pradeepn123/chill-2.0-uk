@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "side_image": "shopify:\/\/shop_images\/SIGN_UP_IMAGE.jpg",
+        "register_subtitle": "<p>Please enter your <strong>e-mail <\/strong>and <strong>password<\/strong>:<\/p>",
+        "register_btn_font": 20,
+        "register_btn_color": "#6ec59f"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

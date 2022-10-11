@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "side_image": "shopify:\/\/shop_images\/SIGN_UP_IMAGE.jpg",
+        "account_subtitle": "<p>Please enter your <strong>e-mail <\/strong>and <strong>password<\/strong>:<\/p>",
+        "login_btn_font_size": 20,
+        "button_color": "#6ec59f",
+        "account_recoverPassword_subtitle": "Enter your registered e-mail ID",
+        "password_recovery_btn_font_size": 20,
+        "recover_button_color": "#6ec59f"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
