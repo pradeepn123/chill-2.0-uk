@@ -244,10 +244,13 @@
         "9b1ac47c-d8ea-46b5-be0b-334854a78afe": {
           "type": "tabs-content",
           "settings": {
+            "image_one": "shopify:\/\/shop_images\/monk_fruit.png",
             "heading_one": "01. Monk fruit",
             "text_one": "<p>This subtly sweet exotic fruit extract contains natural sugars and a unique antioxidant profile that elevates the delicious flavors of our chew pouches. <\/p>",
+            "image_two": "shopify:\/\/shop_images\/Coconut.png",
             "heading_two": "02. Coconut Fiber",
             "text_two": "<p>Often known as coconut coir, this CBD-infused filler provides an unbeatable smooth flavor for a satisfying chew like no other. <\/p>",
+            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects.<\/p>",
             "button_label": "Explore Products",
