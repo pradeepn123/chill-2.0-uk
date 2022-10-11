@@ -208,10 +208,13 @@
         "8aba5ceb-18a7-4f8c-88c4-1088045b910c": {
           "type": "tabs-content",
           "settings": {
+            "image_one": "shopify:\/\/shop_images\/Tapioca.jpg",
             "heading_one": "01. Tapioca Syrup",
             "text_one": "<p>Organic Tapioca Syrup is what makes our gummies so special. It’s this natural, vegan-friendly binding agent that gives that signature chewy texture.<\/p>",
+            "image_two": "shopify:\/\/shop_images\/Pineapple.png",
             "heading_two": "02. Natural Pineapple",
             "text_two": "<p>This delicious and nutrient-rich tropical fruit is the sweet sensation that lends its fresh, juicy flavor to our vegan friendly CBD gummies.<\/p>",
+            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
             "button_label": "Explore Products",
