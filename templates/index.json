@@ -66,7 +66,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Our <strong> Trending Products <\/strong>",
-        "collection": "cbd-pouches",
+        "collection": "all-smokes",
         "show_vendor": true,
         "enable_carousel": false,
         "grid": 4,
@@ -140,7 +140,6 @@
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6b93734907174f5488731bbe7e2968f6.mp4",
         "autoplay": false,
-        "placeholder_image": "shopify:\/\/shop_images\/Homepage_second_video.jpg",
         "video_position": "left",
         "use_alt_bg": false,
         "height_desktop": 44,
@@ -153,8 +152,6 @@
         "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
           "type": "image",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Body.png",
-            "animate_image": "shopify:\/\/shop_images\/The_body.png",
             "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
             "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
             "text_color": "#ffffff",
@@ -164,8 +161,6 @@
         "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
           "type": "image",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Mind.png",
-            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
             "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
             "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
             "text_color": "#ffffff",
@@ -208,13 +203,10 @@
         "8aba5ceb-18a7-4f8c-88c4-1088045b910c": {
           "type": "tabs-content",
           "settings": {
-            "image_one": "shopify:\/\/shop_images\/Tapioca-min.png",
             "heading_one": "01. Tapioca Syrup",
             "text_one": "<p>Organic Tapioca Syrup is what makes our gummies so special. It’s this natural, vegan-friendly binding agent that gives that signature chewy texture.<\/p>",
-            "image_two": "shopify:\/\/shop_images\/Pineapple-min.png",
             "heading_two": "02. Natural Pineapple",
             "text_two": "<p>This delicious and nutrient-rich tropical fruit is the sweet sensation that lends its fresh, juicy flavor to our vegan friendly CBD gummies.<\/p>",
-            "image_three": "shopify:\/\/shop_images\/CBD-min.png",
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
             "button_label": "Explore Products",
@@ -226,13 +218,10 @@
         "1ee69049-e857-4944-aea9-6f2d8fc5456c": {
           "type": "tabs-content",
           "settings": {
-            "image_one": "shopify:\/\/shop_images\/Lavender-min.png",
             "heading_one": "01. Lavender",
             "text_one": "<p>Our fragrant lavender burns smoothly and produces a sweet floral scent for a perfectly relaxing moment of aromatherapy.<\/p>",
-            "image_two": "shopify:\/\/shop_images\/Lobelia-min.png",
             "heading_two": "02. Lobelia",
             "text_two": "<p>Native to the luscious valleys of North America, Lobelia is also known as Indian Tobacco and is sometimes used as an alternative to nicotine. <\/p>",
-            "image_three": "shopify:\/\/shop_images\/CBD-min.png",
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
             "button_label": "Explore Products",
@@ -244,13 +233,10 @@
         "9b1ac47c-d8ea-46b5-be0b-334854a78afe": {
           "type": "tabs-content",
           "settings": {
-            "image_one": "shopify:\/\/shop_images\/Monk-min.png",
             "heading_one": "01. Monk fruit",
             "text_one": "<p>This subtly sweet exotic fruit extract contains natural sugars and a unique antioxidant profile that elevates the delicious flavors of our chew pouches. <\/p>",
-            "image_two": "shopify:\/\/shop_images\/Coconut_fiber-min.png",
             "heading_two": "02. Coconut Fiber",
             "text_two": "<p>Often known as coconut coir, this CBD-infused filler provides an unbeatable smooth flavor for a satisfying chew like no other. <\/p>",
-            "image_three": "shopify:\/\/shop_images\/CBD-min.png",
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects.<\/p>",
             "button_label": "Explore Products",
@@ -280,7 +266,6 @@
         "685e6031-5b34-4a0f-83f0-79e29a6ed09f": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
             "collection": "cbd-gummies",
             "title": ""
           }
@@ -288,7 +273,6 @@
         "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Pouch.jpg",
             "collection": "cool-mint",
             "title": ""
           }
@@ -296,7 +280,6 @@
         "3b6372a0-4677-429a-bf82-20402b224607": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Smokes.jpg",
             "collection": "cbd-smokes",
             "title": ""
           }
@@ -304,7 +287,6 @@
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/US_-Collections_-_Coming_Soon.jpg",
             "collection": "coming-soon",
             "title": "Coming Soon"
           }
@@ -331,7 +313,6 @@
             "testimonial": "“ Love these CBD pouches! I started off using the Cool Mint and loved it! So I thought I'd try some new flavors. The peach is nice and my new fave is Rich Vanilla! I pop one in about 45 minutes before bed and it helps me relax and sleep better. Plus, they help with feeling better after a workout. The oils are good as well but you should give these a try!”",
             "author": "Joe N.",
             "author_designation": "09\/29\/2022",
-            "image": "shopify:\/\/shop_images\/Shop-Products-PouchesBundle2.jpg",
             "link": ""
           }
         },
@@ -342,7 +323,6 @@
             "testimonial": "“ A must have product! I love using these gummies when i'm trying to relax. chill or sleep”",
             "author": "Tyleen",
             "author_designation": "02\/09\/2022",
-            "image": "shopify:\/\/shop_images\/6407987561299968-1.jpg",
             "link": ""
           }
         },
@@ -353,7 +333,6 @@
             "testimonial": "“ Chill smokes are great and I'm so glad you can buy them in a carton of 10. It's really convenient. Delivery is quick and they really are a smooth smoke!”",
             "author": "Dan O.",
             "author_designation": "12\/15\/2021",
-            "image": "shopify:\/\/shop_images\/6G5A7906-min.jpg",
             "link": ""
           }
         },
@@ -364,7 +343,6 @@
             "testimonial": "“ I've tried a lot of gummies and these are some of the best on the market. They taste great and always help me to feel a little more me and a litte more Chill”",
             "author": "Chantelle",
             "author_designation": "10\/5\/2022",
-            "image": "shopify:\/\/shop_images\/IMG_6764-min.jpg",
             "link": ""
           }
         },
@@ -375,7 +353,6 @@
             "testimonial": "“ As a non-smoker I was a little apprehensive to try, but I had read how smokes can be a good way to get the benefits of CBD. \n\nI’ve tried various CBD tinctures and CBD gummies without any noticeable benefits. The first night after smoking two, I scored my first ever excellent for sleep on my Fitbit! It could have been a coincidence but the second night I had a great sleep too! Will have to try the mint ones next!”",
             "author": "Rich",
             "author_designation": "07\/06\/2021",
-            "image": "shopify:\/\/shop_images\/4_-_Chill-Shop-Smokes-Mint.jpg",
             "link": ""
           }
         },
@@ -386,7 +363,6 @@
             "testimonial": "“ Absolutely love these gummies! They taste amazing, they're vegan but mostly they really work. Really helps with my anxiety and love to take one before bed for a better nights sleep”",
             "author": "Tom K.",
             "author_designation": "05\/27\/2022",
-            "image": "shopify:\/\/shop_images\/IMG_2129_2-min.jpg",
             "link": ""
           }
         },
@@ -397,7 +373,6 @@
             "testimonial": "“Really smooth and love the biodegradable filters”",
             "author": "Chantelle",
             "author_designation": "04\/22\/2022",
-            "image": "shopify:\/\/shop_images\/IMG_6703.jpg",
             "link": ""
           }
         }
@@ -425,7 +400,6 @@
         "15de9db7-b491-41e3-9563-da240363bc42": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Forbes.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -434,7 +408,6 @@
         "2480c483-cdf3-4a28-9dc9-1d7241f07066": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Self.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -443,7 +416,6 @@
         "9da7e8a5-a103-4b3a-a1f4-f5fe927e5b0a": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/thinng_a8cdc76a-9a65-4e79-b0ed-85d32e7e670d.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -452,7 +424,6 @@
         "ae304b3b-fcd7-48ae-9842-5eacbc124d74": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Trendhunter.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -461,7 +432,6 @@
         "9ff6370d-ec5c-4109-964b-471a3e4aabdb": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hypebae.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -470,7 +440,6 @@
         "97b2dc03-0af6-4b4a-8d86-1b97f4fca109": {
           "type": "logo",
           "settings": {
-            "image": "shopify:\/\/shop_images\/quality_edit.png",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -536,7 +505,6 @@
         "title": "Keep Chilling",
         "subheading": "<p>Stay in the loop + get <a href=\"#\" title=\"#\"><strong>20% off<\/strong><\/a><strong> <\/strong>your first order<\/p>",
         "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a> and <a href=\"\/pages\/terms-of-service\" title=\"Terms of service\">terms of service<\/a> for details.<\/p>",
-        "bg_image": "shopify:\/\/shop_images\/footer_background_op.jpg",
         "color_bg": "#ffffff"
       }
     }
