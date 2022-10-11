@@ -138,8 +138,9 @@
     "1661495934a2300196": {
       "type": "featured-background-video",
       "settings": {
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6b93734907174f5488731bbe7e2968f6.mp4",
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/958373a1806a401dafbda9250db149ac.mp4",
         "autoplay": false,
+        "placeholder_image": "shopify:\/\/shop_images\/Homepage_second_video.webp",
         "video_position": "left",
         "use_alt_bg": false,
         "height_desktop": 44,
