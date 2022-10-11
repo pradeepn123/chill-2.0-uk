@@ -153,6 +153,7 @@
         "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
           "type": "image",
           "settings": {
+            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
             "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
             "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
             "text_color": "#ffffff",
