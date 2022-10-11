@@ -1075,7 +1075,6 @@
           "55dfc561-5ebf-4ef6-8975-0757fbd445b6"
         ],
         "settings": {
-          "logo": "shopify:\/\/shop_images\/Screen_Shot_2022-08-17_at_3.04.20_PM.png",
           "logo_img_width_int": 190,
           "mobile_logo_img_width_int": 100,
           "logo_h1": true,
@@ -1085,7 +1084,7 @@
           "mega_collection_heading": "By Collection",
           "shop_text": "Shop all",
           "shop_link": "",
-          "menu_linklist": "new-main-menu",
+          "menu_linklist": "",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-left",
           "nav_featured_link": "Sale",
@@ -1164,21 +1163,21 @@
             "type": "menu",
             "settings": {
               "title": "About",
-              "menu": "new-about"
+              "menu": ""
             }
           },
           "da48b0a2-76c5-48ad-8408-466f85f5c9b6": {
             "type": "menu",
             "settings": {
               "title": "Shop By",
-              "menu": "new-shop-by-footer"
+              "menu": ""
             }
           },
           "2d0ee29b-4c80-463c-89d8-952071761c9c": {
             "type": "menu",
             "settings": {
               "title": "Contact Us",
-              "menu": "new-contact-us"
+              "menu": ""
             }
           }
         },
