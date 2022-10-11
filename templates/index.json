@@ -164,6 +164,7 @@
         "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
           "type": "image",
           "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Mind.png",
             "animate_image": "shopify:\/\/shop_images\/The_mind.png",
             "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
             "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
