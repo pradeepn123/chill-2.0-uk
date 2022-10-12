@@ -24,6 +24,10 @@
   <div class="cc-accordion-item__panel">
     <div class="cc-accordion-item__content{{ content_class }}">
       {{- content -}}
+      {%- if test_results != blank -%}
+        See our test results
+        <a href="{{ test_results }}">here</a>.
+      {%- endif -%}
     </div>
   </div>
 </details>
