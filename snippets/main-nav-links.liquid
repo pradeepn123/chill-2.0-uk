@@ -1,44 +1,44 @@
 {%- liquid
-                                                         assign current_variant = product.selected_or_first_available_variant
-                                                         assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media  
-                                                       -%}
+  assign current_variant = product.selected_or_first_available_variant
+  assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media  
+-%}
 <ul class="navigation__tier-1">
   {% for link in linklists[link_list].links %}
     {%- liquid
-                                                             assign has_dropdown = false
-                                                             assign use_columns = false
-                                                             assign small_promo_count = 0
-                                                             assign link_title_sanitised = link.title | downcase | strip
-                                                       
-                                                             if link.links != blank
-                                                               assign has_dropdown = true
-                                                             endif
-                                                       
-                                                             if link.levels >= 2
-                                                               assign use_columns = true
-                                                             else
-                                                               for block in section.blocks
-                                                                 assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip
-                                                                 if dropdown_link_title_sanitised == link_title_sanitised
-                                                                   assign use_columns = true
-                                                                   assign has_dropdown = true
-                                                                 endif
-                                                               endfor
-                                                             endif
-                                                       
-                                                             for block in section.blocks
-                                                               assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip
-                                                               if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-small'
-                                                                 assign small_promo_count = small_promo_count | plus: 1
-                                                               endif
-                                                             endfor
-                                                       
-                                                             if use_columns and link.levels == 1
-                                                               assign column_count = 1 | plus: small_promo_count
-                                                             else
-                                                               assign column_count = link.links.size | plus: small_promo_count
-                                                             endif
-                                                           -%}
+      assign has_dropdown = false
+      assign use_columns = false
+      assign small_promo_count = 0
+      assign link_title_sanitised = link.title | downcase | strip
+
+      if link.links != blank
+        assign has_dropdown = true
+      endif
+
+      if link.levels >= 2
+        assign use_columns = true
+      else
+        for block in section.blocks
+          assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip
+          if dropdown_link_title_sanitised == link_title_sanitised
+            assign use_columns = true
+            assign has_dropdown = true
+          endif
+        endfor
+      endif
+
+      for block in section.blocks
+        assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip
+        if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-small'
+          assign small_promo_count = small_promo_count | plus: 1
+        endif
+      endfor
+
+      if use_columns and link.levels == 1
+        assign column_count = 1 | plus: small_promo_count
+      else
+        assign column_count = link.links.size | plus: small_promo_count
+      endif
+    -%}
     <li class="navigation__item{% if has_dropdown %} navigation__item--with-children {% if use_columns %}navigation__item--with-mega-menu{% else %}navigation__item--with-small-menu{% endif %}{% endif %}{% if featured_links contains link.title %} featured-link{% endif %}{% if link.active %} navigation__item--active{% endif %}">
       <a href="{{ link.url }}" class="navigation__link" {% if has_dropdown %}aria-haspopup="true"aria-expanded="false"aria-controls="NavigationTier2-{{ forloop.index }}{% if mobile %}-mob{% endif %}"{% endif %}>
         {{- link.title | escape -}}

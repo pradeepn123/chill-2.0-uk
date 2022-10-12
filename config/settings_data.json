@@ -1048,7 +1048,7 @@
           "721b392b-54e3-4cd9-ae56-3cddef5b2b48": {
             "type": "menu-promotion-large",
             "settings": {
-              "dropdown_link_title": "SHOP",
+              "dropdown_link_title": "shop",
               "collection": "cbd-gummies",
               "text_alignment": "center"
             }
@@ -1326,7 +1326,7 @@
           "apply_btn_text": "Apply",
           "apply_btn_color": "#9792e4",
           "apply_btn_font": 20,
-          "apply_btn_link": "",
+          "apply_btn_link": "shopify:\/\/pages\/new-collab-with-us-form",
           "mobile_title": "<p>Do you love <strong>Chill <\/strong>and want to get <strong>more involved?<\/strong><\/p>",
           "heading_font_size_mobile": 36
         }
