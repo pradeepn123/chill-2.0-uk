@@ -6,24 +6,31 @@
     </h1>
   </div>
   <div class="block_wrapper">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'select'%}
-          <div class="feature_blocks">
-            {% if block.settings.feature_image != blank %}
-              <img src="{{ block.settings.feature_image | img_url: 'master' }}" alt="feature_image" class="feature_images">
-            {% else %}
-              <div class="feature_icon">{{ block.settings.svg_code }}
-              </div>
-            {% endif %}
-            <p class="feature_text">{{ block.settings.feature_text }}
-            </p>
-          </div>
-      {% endcase %}
-    {% endfor %}
+    <div class="redirection_text">
+      <p>{{ section.settings.sub_text }}</p>
+      <a href="{{ section.settings.apply_btn_link }}"><button class="join_btn" style="background: {{ section.settings.apply_btn_color }}; font-size: {{ section.settings.apply_btn_font }}px;">{{ section.settings.apply_btn_text }}</button></a>
+    </div>
+    <div>
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'select'%}
+            <div class="feature_blocks">
+              {% if block.settings.feature_image != blank %}
+                <img src="{{ block.settings.feature_image | img_url: 'master' }}" alt="feature_image" class="feature_images">
+              {% else %}
+                <div class="feature_icon">{{ block.settings.svg_code }}
+                </div>
+              {% endif %}
+              <p class="feature_text">{{ block.settings.feature_text }}
+              </p>
+            </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    
   </div>
 </div>
-<div class="join_program">
+{%- comment -%} <div class="join_program">
   <div class="join_text">{{ section.settings.join_text }}
   </div>
   <a href="{{ section.settings.join_btn_link }}" target="_blank">
@@ -31,7 +38,7 @@
       {{ section.settings.join_btn_text }}
     </button>
   </a>
-</div>
+</div> {%- endcomment -%}
 <!-- "max_blocks": 8, -->
 {% schema %}
   {
@@ -56,23 +63,23 @@
       },
       {
         "type": "richtext",
-        "id": "join_text",
-        "label": "Join Text",
-        "default": "<p>Join the chill Affiliate Program On ShareASale today!</p>"
+        "id": "sub_text",
+        "label": "SubText",
+        "default": "<p>Hit apply and let's talk</p>"
       },
       {
         "type": "text",
-        "id": "join_btn_text",
-        "label": "Join button Text"
+        "id": "apply_btn_text",
+        "label": "Apply button Text"
       }, {
         "type": "color",
-        "id": "join_btn_color",
-        "label": "Join Button Color",
+        "id": "apply_btn_color",
+        "label": "Apply Button Color",
         "default": "#6EC59F"
       }, {
         "type": "range",
-        "id": "join_btn_font",
-        "label": "Join Button font size",
+        "id": "apply_btn_font",
+        "label": "Apply Button font size",
         "min": 0,
         "max": 26,
         "step": 2,
@@ -80,8 +87,8 @@
         "default": 20
       }, {
         "type": "url",
-        "id": "join_btn_link",
-        "label": "Add link to join button"
+        "id": "apply_btn_link",
+        "label": "Add link to Apply button"
       }, {
         "type": "richtext",
         "id": "mobile_title",
