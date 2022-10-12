@@ -1,7 +1,7 @@
 
 <script>
 
-[]
+
     const webRedirectUtil = (function() {
     
         const _helperVar =  {
@@ -12,6 +12,7 @@
             storeUrl : {
                 'GB': 'https://thechillwayuk.com?preview_theme_id=130418311323',
                 'US': 'https://chill.com?theme?preview_theme_id=132168417438'
+    
             }
         }
     
@@ -115,6 +116,11 @@
         
                                     })
                         }
+                    }
+                    else{
+                        // If location is present in url param
+                        let location = isLocation_inURL().locationName;
+                        _helperFunc.setItem_InSession(_helperVar.storedLocationKey, location);
                     }
                 
         }
