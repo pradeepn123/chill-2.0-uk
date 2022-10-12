@@ -102,7 +102,6 @@
         },
         "f631a81f-1f59-4f8f-9ed7-0d2e00bed3f1": {
           "type": "accordion",
-          "disabled": true,
           "settings": {
             "title": "Product test results",
             "icon": "",
