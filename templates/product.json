@@ -94,8 +94,7 @@
           "settings": {
             "title": "Product test results",
             "icon": "",
-            "content": "<p>See our test results here.{{ product.metafields.settings.product_test_result | metafield_tag }}<\/p>",
-            "test_result_link": "{{ product.metafields.settings.test_result.value }}",
+            "content": "<p>See our test results here.<\/p>",            
             "page": "",
             "open": false,
             "show_in_quickbuy": false
