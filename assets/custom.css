@@ -2976,6 +2976,9 @@ body {
     margin: 0 auto;
   }
 }
+.product_ingredients_section .product_ingredients_sec_wrapper .content-section #tab2 .tab-content-list {
+  padding-top: 0;
+}
 .product_ingredients_section .product_ingredients_sec_wrapper .content-section .content {
   display: none;
   opacity: 0;
@@ -3646,7 +3649,7 @@ body {
 }
 @media (max-width: 640px) {
   .features_wrapper {
-    margin: 20.06rem 20px 0 20px;
+    margin: 13.06rem 20px 0 20px;
   }
 }
 @media (min-width: 641px) and (max-width: 1023px) {
@@ -3656,27 +3659,29 @@ body {
 }
 .features_wrapper .features_header h1 {
   text-transform: none;
+  max-width: 50%;
 }
 @media (min-width: 641px) and (max-width: 1023px) {
   .features_wrapper .features_header h1 {
     font-size: 32px;
     margin-bottom: 50px;
+    max-width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .features_wrapper .features_header h1 {
+    max-width: 100%;
   }
 }
 .features_wrapper .block_wrapper {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 8.875rem;
   margin-bottom: 40px;
 }
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .features_wrapper .block_wrapper {
     grid-template-columns: auto;
-  }
-}
-@media (min-width: 641px) and (max-width: 1023px) {
-  .features_wrapper .block_wrapper {
-    grid-column-gap: 3.125rem;
   }
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
@@ -3684,9 +3689,26 @@ body {
     grid-column-gap: 6.25rem;
   }
 }
+.features_wrapper .block_wrapper .redirection_text p {
+  color: #000;
+  font-size: 20px;
+}
+.features_wrapper .block_wrapper .redirection_text .join_btn {
+  width: 15rem;
+  height: 3.75rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+@media (max-width: 1023px) {
+  .features_wrapper .block_wrapper .redirection_text {
+    margin-bottom: 40px;
+  }
+}
 .features_wrapper .block_wrapper .feature_blocks {
   display: flex;
-  margin-bottom: 70px;
 }
 @media (max-width: 640px) {
   .features_wrapper .block_wrapper .feature_blocks {
@@ -3694,14 +3716,14 @@ body {
   }
 }
 .features_wrapper .block_wrapper .feature_blocks .feature_icon {
-  margin: auto 40px 0 0;
+  margin: 40px 40px 0 0;
 }
 .features_wrapper .block_wrapper .feature_blocks .feature_icon svg {
   width: 7.813rem;
   height: 7.813rem;
 }
 .features_wrapper .block_wrapper .feature_blocks .feature_text {
-  font-size: 26px;
+  font-size: 16px;
   color: #000;
   font-weight: bold;
   margin: auto 0;

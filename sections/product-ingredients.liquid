@@ -18,9 +18,7 @@
                     <div id='tab{{tab_id}}' class='content {% if tab_id == 1 %}active{% endif %}'>
                         {% if block.heading != blank %}
                             <div class="heading_text align-center">
-                                {% if section.settings.heading != blank %}
-                                    <h3>{{section.settings.heading}}</h3>
-                                {% endif %}
+                                <h3>{{ block.heading }}</h3>
                                 <p>{{ block.description}}</p>
                             </div>
                         {% endif %}                        

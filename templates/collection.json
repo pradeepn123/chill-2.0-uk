@@ -6,45 +6,39 @@
         "4161a433-5a21-44b6-8fac-d99b2395f5c0": {
           "type": "collection",
           "settings": {
-            "collection": "cbd-gummies",
-            "image": "shopify:\/\/shop_images\/Gummies.png"
+            "collection": "cbd-gummies"
           }
         },
         "d89c5169-3a01-4a49-a9bb-cdfcb55b50bc": {
           "type": "collection",
           "settings": {
-            "collection": "cool-mint",
-            "image": "shopify:\/\/shop_images\/Pouches.png"
+            "collection": "calm"
           }
         },
         "1f5dbd86-c82c-42e1-8bbb-74c1bbe4e2f6": {
           "type": "collection",
           "settings": {
-            "collection": "cbd-smokes",
-            "image": "shopify:\/\/shop_images\/Smokes.png"
+            "collection": "cbd-smokes"
           }
         },
         "c2e8b43c-d70c-454d-ac6b-8094dc1e1890": {
           "type": "collection",
           "disabled": true,
           "settings": {
-            "collection": "chill-apparel",
-            "image": "shopify:\/\/shop_images\/Apparel.png"
+            "collection": "chill-apparel"
           }
         },
         "0bf2c311-14b7-4a60-9a8f-ab213f5e86ed": {
           "type": "collection",
           "disabled": true,
           "settings": {
-            "collection": "chill-flavoured-drops",
-            "image": "shopify:\/\/shop_images\/Tinctures.png"
+            "collection": "chill-flavoured-drops"
           }
         },
         "7080a5e5-4a58-4f1d-8efc-c920fa6cc3a1": {
           "type": "collection",
           "settings": {
-            "collection": "shop",
-            "image": "shopify:\/\/shop_images\/All.png"
+            "collection": "shop"
           }
         }
       },
@@ -94,7 +88,7 @@
         "title": "Keep Chilling",
         "subheading": "<p>Stay in the loop + get <strong>20% off <\/strong>your first order!<\/p>",
         "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a> and <a href=\"\/pages\/terms-of-service\" title=\"Terms of service\">terms of service<\/a> for details.<\/p>",
-        "bg_image": "shopify:\/\/shop_images\/footer_background_op.jpg",
+        "bg_image": "shopify:\/\/shop_images\/footer_background.jpg",
         "color_bg": "#ffffff"
       }
     }

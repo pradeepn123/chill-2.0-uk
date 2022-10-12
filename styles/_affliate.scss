@@ -97,47 +97,71 @@
 .features_wrapper{
     margin: 6.875rem 10% 0 10%;
     @media (max-width: 640px){
-        margin: 20.06rem 20px 0 20px;
+        margin: 13.06rem 20px 0 20px;
     }
     @media (min-width: 641px) and (max-width: 1023px){
         margin: 65px 5% 0 5%;
     }
     .features_header h1{
         text-transform: none;
+        max-width: 50%;
         @media (min-width: 641px) and (max-width: 1023px){
             font-size: 32px;
             margin-bottom: 50px;
+            max-width: 70%;
         }
+        @media(max-width: 767px){
+            max-width: 100%;
+        }
+
     }
     .block_wrapper{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 8.875rem;
         margin-bottom: 40px;
-        @media (max-width: 640px){
+        @media (max-width: 1023px){
             grid-template-columns: auto;
         }
-        @media (min-width: 641px) and (max-width: 1023px){
-            grid-column-gap: 3.125rem;
-        }
+        // @media (min-width: 641px) and (max-width: 1023px){
+        //     grid-column-gap: 3.125rem;
+        // }
         @media (min-width: 1024px) and (max-width: 1280px){
             grid-column-gap: 6.25rem;
         }
+        .redirection_text{
+            p{
+                color: #000;
+                font-size: 20px;
+            }
+            .join_btn{
+                width: 15rem;
+                height: 3.75rem;
+                border-radius: 30px;
+                border: none;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: bolder;
+            }
+            @media (max-width: 1023px){
+                margin-bottom: 40px;
+            }
+        }
         .feature_blocks{
             display: flex;
-            margin-bottom: 70px;
+            // margin-bottom: 40px;
             @media (max-width: 640px){
                 margin-bottom: 60px;
             }
             .feature_icon{
-                margin: auto 40px 0 0;
+                margin: 40px 40px 0 0;
                 svg{
                     width: 7.813rem;
                     height: 7.813rem;
                 }
             }
             .feature_text{
-                font-size: 26px;
+                font-size: 16px;
                 color: #000;
                 font-weight: bold;
                 margin: auto 0;

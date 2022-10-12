@@ -18,7 +18,7 @@
         "title_size_mobile": 46,
         "title_weight_mobile": 800,
         "use_h1": false,
-        "text": "<p>Have questions or comments? We'd love to hear from you. Get in touch via the form below and we'll get back to you as soon as we can!<\/p>",
+        "text": "<p>Have questions or comments? We love to hear from you. Get in touch via the form below. <br\/>A member of our team will get back to you as soon as we can<\/p>",
         "enlarge_text": true,
         "button_label_1": "",
         "button_url_1": "",
@@ -95,7 +95,6 @@
         "title": "Keep Chilling",
         "subheading": "<p>Stay in the loop + get <strong>20% off<\/strong> your first order!<\/p>",
         "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See <a href=\"\/pages\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a> and <a href=\"\/pages\/terms-of-service\" title=\"Terms of service\">terms of service<\/a> for details.<\/p>",
-        "bg_image": "shopify:\/\/shop_images\/footer_background_op.jpg",
         "color_bg": "#ffffff"
       }
     }
