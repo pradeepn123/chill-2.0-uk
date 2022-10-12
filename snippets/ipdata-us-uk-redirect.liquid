@@ -1,0 +1,132 @@
+
+<script>
+
+
+const webRedirectUtil = (function() {
+
+    const _helperVar =  {
+        apiUrl: 'https://api.ipdata.co/?api-key=c67faaddcd3d2ce24bc8307631f45cfd2e92fd764a9e54659e753459',
+        storedLocationKey: 'location',
+        storedUserRedirectionKey: 'userAlreadyRedirected',
+        urlLocationKey: 'location',
+        storeUrl : {
+            'GB': 'https://thechillwayuk.com',
+            'US': 'https://chill.com'
+        }
+    }
+
+    const _helperFunc = {
+            
+        setItem_InSession(key, value){
+            sessionStorage.setItem(key, value);       
+        },
+    }
+
+    const isUserAlreadyRedirected = function(){
+        return sessionStorage.getItem(_helperVar.storedUserRedirectionKey);
+    }
+
+    // Check in local storage if location is present
+    const isLocationStored_inSession = function(){
+        let getLocation = sessionStorage.getItem(_helperVar.storedLocationKey);
+        return {
+            hasLocation: getLocation ? true : false,
+            locationName: getLocation
+        }
+    }
+
+    const isLocation_inURL = function(){
+        let url = new URL(window.location.href);
+        let urlParams = new URLSearchParams(url.search);
+        let checkForKey = urlParams.has(_helperVar.urlLocationKey);
+        let getLocationParam = urlParams.get(_helperVar.urlLocationKey);
+        
+        return {
+            hasLocation: checkForKey,
+            locationName: getLocationParam
+        }
+
+    }
+
+    const redirecUserAsPerLocation = function(locationName){
+        let updatedLocation = locationName == 'GB' ? locationName : 'US';
+        let ifDomainIsSame =  _helperVar.storeUrl[updatedLocation] == window.location.href;
+        if(!ifDomainIsSame){
+            switch(updatedLocation){
+                case 'UK':
+                    window.location.href =  _helperVar.storeUrl[updatedLocation];
+                    break;
+                default:
+                    window.location.href = _helperVar.storeUrl[updatedLocation];
+            }
+        }
+    }
+
+    const  fetchUserLocationData = (cb) => {
+        var request = new XMLHttpRequest();
+        request.responseType = 'json'
+        request.open('GET', _helperVar.apiUrl);
+
+        request.setRequestHeader('Accept', 'application/json');
+
+        request.onreadystatechange = function () {
+        if (this.readyState === 4) {
+            // console.log(this.responseText);
+            cb(this.response)
+        }
+        };
+
+        request.send();
+    }
+
+    const init = () => {
+
+                // check for url param for location
+                // Check in URL param for 'location' 
+                // if(isLocation_inURL().hasLocation){
+                //         //Redirect to that page
+                //         let location = isLocation_inURL().locationName
+                //         redirecUserAsPerLocation(location);
+                // }
+                // else{
+                //         // Check in session storage for location
+                //         if(!isLocationStored_inSession().hasLocation){
+                //             console.log('Fetch location from API')
+                //             fetchUserLocationData( data => {
+                //                 let location = data.country_code;
+
+                //                 console.log("Set location in session storage");
+
+                //                 _helperFunc.setItem_InSession(_helperVar.storedLocationKey, location);
+
+                //                 redirecUserAsPerLocation(location);
+
+                //             })
+                //         }
+                // }  
+                if(!isLocation_inURL().hasLocation || !isLocationStored_inSession().hasLocation){
+                            fetchUserLocationData( data => {
+                                let location = data.country_code;
+
+                                _helperFunc.setItem_InSession(_helperVar.storedLocationKey, location);
+
+                                redirecUserAsPerLocation(location);
+
+                            })
+                        }
+            
+    }
+
+    return {
+    init: init   
+    }
+})();
+
+
+
+
+webRedirectUtil.init();
+</script>
+
+
+

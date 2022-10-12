@@ -1349,5 +1349,16 @@
         "default": false
       }
     ]
+  },
+  {
+    "name": "Enable website redirect US/UK",
+    "settings":[
+        {
+          "type": "checkbox",
+          "id": "enable_domain_redirect",
+          "label": "Enable domain redirect",
+          "default": true
+      }
+    ]
   }
 ]
