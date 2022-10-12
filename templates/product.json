@@ -105,8 +105,8 @@
           "settings": {
             "title": "Product test results",
             "icon": "",
-            "content": "<p>See our test results here.<\/p>",
-            "test_result_link": "",
+            "content": "<p>See our test results here.{{ product.metafields.custom.test_result_description | metafield_tag }}<\/p>",
+            "test_result_link": "{{ product.metafields.product_accordion.product_custom_url.value }}",
             "page": "",
             "open": false,
             "show_in_quickbuy": false
