@@ -1403,7 +1403,7 @@
       "age-verification": {
         "type": "age-verification",
         "settings": {
-          "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2b03935476ed4ed3b8d21f58c8e1b472.mp4",
+          "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6fd1ada03a624f6ca18e1ce7a4134de1.mp4",
           "verification_block_header": "Are you over the age of 21?",
           "verification_block_description": "Please verify that you are 21 years of age or older to enter this site.",
           "button_text": "YES I’M 21+",
