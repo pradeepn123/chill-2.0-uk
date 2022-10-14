@@ -1055,6 +1055,7 @@
           },
           "1b792ef3-cee8-4951-be61-e8cc8c94491c": {
             "type": "menu-promotion-large",
+            "disabled": true,
             "settings": {
               "dropdown_link_title": "shop",
               "collection": "all-pouches",

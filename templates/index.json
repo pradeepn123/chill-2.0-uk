@@ -281,32 +281,32 @@
           "type": "collection-image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
-            "collection": "cbd-gummies",
-            "title": ""
+            "collection": "berry-grape",
+            "title": "Chill Gummies"
           }
         },
         "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Pouch.jpg",
+            "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
             "collection": "cool-mint",
-            "title": ""
+            "title": "Chill Smokes"
           }
         },
         "3b6372a0-4677-429a-bf82-20402b224607": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Smokes.jpg",
-            "collection": "all-smokes",
-            "title": ""
+            "image": "shopify:\/\/shop_images\/UK_-Collections-_Gummies_Bundle.jpg",
+            "collection": "newcbd-gummies",
+            "title": "Gummies Bundle"
           }
         },
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
           "type": "collection-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Vape.jpg",
-            "collection": "lip-balm",
-            "title": "Coming Soon"
+            "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
+            "collection": "all-smokes",
+            "title": "Smokes Bundle"
           }
         }
       },
