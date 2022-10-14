@@ -158,6 +158,7 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b&background=1&autoplay=0",
+            "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_3.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701396581?h=becb463383",
             "video_heading": "Highline in colarado",
             "video_subHeading": "<p>Reaching a Chill State of Mind even in life’s most…<\/p>",
@@ -168,6 +169,7 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403328?h=f2e3ac9e64&background=1&autoplay=0",
+            "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_6.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701399368?h=9ae311877b",
             "video_heading": "Learning to Slackline",
             "video_subHeading": "<p>Learning new things<\/p>",
@@ -178,6 +180,7 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701797123?h=f6dff18608&background=1&autoplay=1",
+            "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_2.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701795868?h=5b6a50ff81",
             "video_heading": "Paramotor & Chill",
             "video_subHeading": "<p>Chill State of Mind<\/p>",
@@ -188,6 +191,7 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403502?h=cda287f9e3&background=1&autoplay=1",
+            "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_1.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701396366?h=dbe771507b",
             "video_heading": "Colorado gambler",
             "video_subHeading": "<p>Colorado gambler<\/p>",
@@ -198,6 +202,7 @@
           "type": "image-video",
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403564?h=35952ce15f&background=1&autoplay=1",
+            "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701400977?h=db9dc6e32f",
             "video_heading": "Mini Bike Race",
             "video_subHeading": "<p>Tim in the mini bike race<\/p>",
@@ -207,11 +212,12 @@
         "8d77efa0-2df7-4a3f-8381-656b9dfa5093": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/701804548?h=ff05130736&background=1&autoplay=1",
-            "video_popup": "https:\/\/player.vimeo.com\/video\/701803219?h=50a41ce592",
-            "video_heading": "Skatepark Madness",
-            "video_subHeading": "<p>Chill and enjoy whatever you love outside<\/p>",
-            "video_type": "Experience"
+            "video": "https:\/\/player.vimeo.com\/video\/760082707?h=8b5c62cac0&background=1&autoplay=1",
+            "placeholder_image": "shopify:\/\/shop_images\/fest.webp",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/760082707?h=8b5c62cac0",
+            "video_heading": "Warm Up  Festival",
+            "video_subHeading": "<p>Serving up some Chill at one of the UK's coolest festivals <\/p>",
+            "video_type": "Warm Up Festival"
           }
         },
         "8d37fb21-c1d4-464d-9632-173826ea532d": {

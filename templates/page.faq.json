@@ -3,8 +3,8 @@
     "heading": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify:\/\/shop_images\/FAQ_BannerOption1.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/FAQ_BannerOption1.jpg",
+        "image": "shopify:\/\/shop_images\/FAQ_Banner.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/FAQ_Banner.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
         "height": "fixed",

@@ -520,11 +520,6 @@ body.overflow-hidden {
     display: none;
   }
 }
-@media (min-width: 1200px) {
-  div#main-nav {
-    display: none;
-  }
-}
 
 @media (min-width: 768px) {
   .navigation .navigation__tier-1 > .navigation__item {
@@ -3864,6 +3859,16 @@ body {
 }
 @media (max-width: 640px) {
   .rewards_wrapper .rewards_description, .get_started_wrapper .rewards_description {
+    font-size: 16px;
+  }
+}
+.rewards_wrapper .rewards_description_main p, .get_started_wrapper .rewards_description_main p {
+  font-size: 20px;
+  color: black;
+  max-width: 46.563rem;
+}
+@media (max-width: 640px) {
+  .rewards_wrapper .rewards_description_main p, .get_started_wrapper .rewards_description_main p {
     font-size: 16px;
   }
 }

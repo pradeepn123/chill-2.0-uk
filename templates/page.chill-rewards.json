@@ -10,12 +10,12 @@
     "166149528801bd4d3b": {
       "type": "affiliate-banner",
       "settings": {
-        "banner-image": "shopify:\/\/shop_images\/Rewards_op.jpg",
-        "banner-image_mobile": "shopify:\/\/shop_images\/Rewards_mobile_op.jpg",
+        "banner-image": "shopify:\/\/shop_images\/CHILL_COIN_Banner.jpg",
+        "banner-image_mobile": "shopify:\/\/shop_images\/CHILL_COIN_Banner.jpg",
         "title_color": "#ffffff",
-        "title": "<p>Buy <strong>Chill <\/strong>products. <\/p><p>Earn <strong>Rewards<\/strong>.<\/p>",
+        "title": "<p>Buy Products.<\/p><p>Earn <strong>Rewards<\/strong>.<\/p><p><strong>Chill<\/strong>. <\/p>",
         "title_font_size": 70,
-        "sub_title": "<p>Earn Chillcoin and redeem for savings and discounts! <\/p>",
+        "sub_title": "<p>Earn Chillcoin and save money on your favorite products!<\/p>",
         "subtitle_color": "#ffffff",
         "sub_title_font_size": 20,
         "join_now_btn": false,
@@ -24,10 +24,10 @@
         "banner_btn_text_color": "#ffffff",
         "banner_btn_color": "#ffac9a",
         "banner_btn_font_size": 16,
-        "mobile_title": "<p>Buy Chill<strong> <\/strong>products. <\/p><p><strong>Earn Rewards<\/strong>.<\/p>",
+        "mobile_title": "<p>Buy Products.<\/p><p>Earn <strong>Rewards<\/strong>.<\/p><p><strong>Chill<\/strong>. <\/p>",
         "title_color_mobile": "#000000",
         "title_font_size_mobile": 36,
-        "sub_title_mobile": "<p>Earn Chillcoin and redeem for savings and discounts! <\/p>",
+        "sub_title_mobile": "<p>Earn Chillcoin and save money on your favorite products!<\/p>",
         "subtitle_color_mobile": "#000000",
         "sub_title_font_size_mobile": 16,
         "banner_btn_color_mobile": "#ffac9a",
@@ -37,10 +37,10 @@
     "16615093664ba23608": {
       "type": "rewards-table",
       "settings": {
-        "rewards_heading": "<p><strong>Rewards you can Earn<\/strong><\/p>",
+        "rewards_heading": "<p><strong>Chill Rewards<\/strong><\/p>",
         "rewards_title_font_size": 50,
-        "rewards_description": "As you collect Chillcoin, you'll become eligible to redeem them for rewards. Here are some of the rewards you can earn",
-        "rewards_heading_mobile": "<p>Rewards <strong>you can Earn<\/strong><\/p>",
+        "rewards_description": "<p>The more you spend, the more you save! Earn Chill coin whenever you shop with us and redeem for discounts and rewards. For every pound you spend, you'll get one Chill coin to put towards future purchases.<br\/>£1 Spent = 1 Chillcoin Earned<\/p>",
+        "rewards_heading_mobile": "<p><strong>Chill Rewards<\/strong><\/p>",
         "rewards_title_font_size_mobile": 36,
         "add_button": false,
         "button_text": "Shop Now",
@@ -84,7 +84,7 @@
         "efc5b845-0c55-4d2e-ab69-fadc441b0244": {
           "type": "text1",
           "settings": {
-            "row_1": "<p><strong>$5 Off Coupon<\/strong><\/p>",
+            "row_1": "<p><strong>£5.00 Discount Coupon<\/strong><\/p>",
             "row1_font_size": 30,
             "row1_font_size_mobile": 18
           }
@@ -92,7 +92,7 @@
         "d85b69fd-f211-49ab-b29e-6afbee450336": {
           "type": "text1",
           "settings": {
-            "row_1": "<p><strong>500 Chillcoin<\/strong><\/p>",
+            "row_1": "<p><strong> 100 <\/strong><\/p>",
             "row1_font_size": 30,
             "row1_font_size_mobile": 18
           }
@@ -118,7 +118,7 @@
         "537a15c6-43e6-42a0-82f2-ca75d6735969": {
           "type": "text2",
           "settings": {
-            "row_2": "<p><strong>$10 Off Coupon<\/strong><\/p>",
+            "row_2": "<p><strong>£10.00 Discount Coupon<\/strong><\/p>",
             "row2_font_size": 30,
             "row2_font_size_mobile": 18
           }
@@ -126,7 +126,7 @@
         "c6aecabd-eb03-4e0a-840e-468502e6c8ca": {
           "type": "text2",
           "settings": {
-            "row_2": "<p><strong>1,000 Chillcoin<\/strong><\/p>",
+            "row_2": "<p><strong>200 <\/strong><\/p>",
             "row2_font_size": 30,
             "row2_font_size_mobile": 18
           }
@@ -143,7 +143,7 @@
         "2b78d8c5-7f24-44ce-8d86-dc97d72d7e1b": {
           "type": "text3",
           "settings": {
-            "row_3": "<p><strong>$20 Off Coupon<\/strong><\/p>",
+            "row_3": "<p><strong>£30.00 Discount Coupon<\/strong><\/p>",
             "row3_font_size": 30,
             "row3_font_size_mobile": 18
           }
@@ -151,7 +151,7 @@
         "d10bbb73-ce2a-4c34-bcb9-d008798bf475": {
           "type": "text3",
           "settings": {
-            "row_3": "<p><strong>3,000 Chillcoin<\/strong><\/p>",
+            "row_3": "<p><strong>300 <\/strong><\/p>",
             "row3_font_size": 30,
             "row3_font_size_mobile": 18
           }
@@ -197,7 +197,7 @@
       "settings": {
         "rewards_heading": "<p><strong>How to Get Started<\/strong><\/p>",
         "rewards_title_font_size": 50,
-        "rewards_description": "To get started, place an order! You can check your balance at any time by clicking the icon in the corner of the screen.",
+        "rewards_description": "<p>To get started, place an order! You can check your balance at any time by clicking the icon in the corner of the screen.<\/p>",
         "rewards_heading_mobile": "<p><strong>How to Get Started<\/strong><\/p>",
         "rewards_title_font_size_mobile": 42,
         "add_button": true,
@@ -211,7 +211,7 @@
       "settings": {
         "rewards_heading": "<p><strong>How to Get Started<\/strong><\/p>",
         "rewards_title_font_size": 50,
-        "rewards_description": "To get started, place an order! You can check your balance at any time by clicking the icon in the corner of the screen.",
+        "rewards_description": "<p>Simply place an order to get started with Chillcoin. You can check your balance at any time by clicking the icon in the corner of your screen.<\/p><p>*Discounts can only be redeemed on purchases with a value greater than the discount. Chillcoins are only redeemable for products. <\/p>",
         "rewards_heading_mobile": "<p><strong>How to Get Started<\/strong><\/p>",
         "rewards_title_font_size_mobile": 42,
         "add_button": true,

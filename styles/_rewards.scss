@@ -18,6 +18,16 @@
         max-width: 46.563rem;
         @media (max-width: 640px){
             font-size: 16px;
+        }        
+    }
+    .rewards_description_main{
+        p{
+            font-size: 20px;
+            color: black;
+            max-width: 46.563rem;
+            @media (max-width: 640px){
+                font-size: 16px;
+            }
         }
     }
     .rewards_button{
