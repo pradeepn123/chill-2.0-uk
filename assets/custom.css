@@ -1949,6 +1949,9 @@ body {
 }
 
 /*section-home-ingredients css here*/
+.section-home-ingredients .home-ingredients-section .ingredients-section-wrapper .heading_text {
+  border: 0 !important;
+}
 .section-home-ingredients .home-ingredients-section .ingredients-section-wrapper .heading_text h3 {
   font-size: 36px;
   font-family: "Open Sans", sans-serif;
