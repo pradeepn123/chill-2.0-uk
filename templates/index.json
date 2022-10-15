@@ -12,7 +12,7 @@
         "text": "<p>Find peace with functional products made from all-natural ingredients.<\/p>",
         "enlarge_text": true,
         "button_label_1": "SHOP NOW",
-        "button_url_1": "https:\/\/chill.com\/collections\/shop",
+        "button_url_1": "shopify:\/\/collections\/new-shop",
         "button_label_2": "",
         "button_url_2": "",
         "botton_bg": "#ffac9a",
@@ -329,17 +329,6 @@
     "16618284517e50f27f": {
       "type": "home_testimonials",
       "blocks": {
-        "1661828451bf6865ce-0": {
-          "type": "testimonial",
-          "settings": {
-            "product": "chill-cbd-isolate-chew-pouches",
-            "testimonial": "“ Love these CBD pouches! I started off using the Cool Mint and loved it! So I thought I'd try some new flavors. The peach is nice and my new fave is Rich Vanilla! I pop one in about 45 minutes before bed and it helps me relax and sleep better. Plus, they help with feeling better after a workout. The oils are good as well but you should give these a try!”",
-            "author": "Joe N.",
-            "author_designation": "09\/29\/2022",
-            "image": "shopify:\/\/shop_images\/Shop-Products-PouchesBundle2_1.jpg",
-            "link": ""
-          }
-        },
         "1661828451bf6865ce-1": {
           "type": "testimonial",
           "settings": {
@@ -351,13 +340,25 @@
             "link": ""
           }
         },
+        "1661828451bf6865ce-0": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "product": "chill-cbd-isolate-chew-pouches",
+            "testimonial": "“ Love these CBD pouches! I started off using the Cool Mint and loved it! So I thought I'd try some new flavors. The peach is nice and my new fave is Rich Vanilla! I pop one in about 45 minutes before bed and it helps me relax and sleep better. Plus, they help with feeling better after a workout. The oils are good as well but you should give these a try!”",
+            "author": "Joe N.",
+            "author_designation": "09\/29\/2022",
+            "image": "shopify:\/\/shop_images\/Shop-Products-PouchesBundle2_1.jpg",
+            "link": ""
+          }
+        },
         "66d12521-04ad-452b-9ac3-f2f734c9b3b9": {
           "type": "testimonial",
           "settings": {
             "product": "chill-cbd-smokes-mint",
             "testimonial": "“ Chill smokes are great and I'm so glad you can buy them in a carton of 10. It's really convenient. Delivery is quick and they really are a smooth smoke!”",
             "author": "Dan O.",
-            "author_designation": "12\/15\/2021",
+            "author_designation": "15\/12\/2021",
             "image": "shopify:\/\/shop_images\/Dan_O.jpg",
             "link": ""
           }
@@ -368,7 +369,7 @@
             "product": "chill-cbd-gummies-10mg-1",
             "testimonial": "“ I've tried a lot of gummies and these are some of the best on the market. They taste great and always help me to feel a little more me and a litte more Chill”",
             "author": "Chantelle",
-            "author_designation": "10\/5\/2022",
+            "author_designation": "5\/10\/2022",
             "image": "shopify:\/\/shop_images\/Chantelle.jpg",
             "link": ""
           }
@@ -379,7 +380,7 @@
             "product": "chill-cbd-smokes-mint",
             "testimonial": "“ As a non-smoker I was a little apprehensive to try, but I had read how smokes can be a good way to get the benefits of CBD. \n\nI’ve tried various CBD tinctures and CBD gummies without any noticeable benefits. The first night after smoking two, I scored my first ever excellent for sleep on my Fitbit! It could have been a coincidence but the second night I had a great sleep too! Will have to try the mint ones next!”",
             "author": "Rich",
-            "author_designation": "07\/06\/2021",
+            "author_designation": "06\/07\/2021",
             "image": "shopify:\/\/shop_images\/rich.jpg",
             "link": ""
           }
@@ -408,8 +409,8 @@
         }
       },
       "block_order": [
-        "1661828451bf6865ce-0",
         "1661828451bf6865ce-1",
+        "1661828451bf6865ce-0",
         "66d12521-04ad-452b-9ac3-f2f734c9b3b9",
         "59ecb584-0553-4021-97f2-d4749dbff8ef",
         "2ec17fa9-16ae-491a-a993-9cdd3c5d2419",
@@ -443,8 +444,8 @@
         "use_h1": false,
         "text": "",
         "enlarge_text": true,
-        "button_label_1": "Shop this",
-        "button_url_1": "",
+        "button_label_1": "Shop Gummies",
+        "button_url_1": "shopify:\/\/collections\/new-shop",
         "button_label_2": "",
         "button_url_2": "",
         "text_alignment": "bottom left",
