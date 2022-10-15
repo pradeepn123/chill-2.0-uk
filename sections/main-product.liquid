@@ -465,7 +465,7 @@
                   assign content = pages[block.settings.page].content
                 endif
               -%}
-              {%- if content != blank -%}
+              {%- if content != blank or block.settings.test_result_link != blank -%}
                 <div class="product-detail-accordion{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
                   {%- capture accordion_title -%}
                     {%- if block.settings.icon == blank -%}

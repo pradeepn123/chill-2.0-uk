@@ -1,0 +1,85 @@
+<div class="wholesalepage-section">
+    <div class="container">
+        <div class="wholesalepage-wrapper">
+            <div class="wholesale-list">
+                <div class="wholesale-item wholesale-item-image">
+                    <img src="{{ section.settings.icon_image | img_url: '1920x'}}" alt="">
+                </div>
+                <div class="wholesale-item wholesale-item-text">
+                    <h3>{{ section.settings.title }}</h3>
+                    {{ section.settings.subheading }}
+                    <div class="wholesale-button">
+                        {% if section.settings.button_url_1 != blank %}<a target="_blank" href="{{ section.settings.button_url_1 }}">{% endif %}
+                            <div class="button button-style-1">
+                                {{section.settings.button_label_1}}
+                            </div>
+                        {% if section.settings.button_url_1 != blank %}</a>{% endif %}
+                        {% if section.settings.button_url_2 != blank %}<a target="_blank" href="{{ section.settings.button_url_2 }}">{% endif %}
+                            <div class="button button-style-2">
+                                {{section.settings.button_label_2}}
+                            </div>
+                        {% if section.settings.button_url_2 != blank %}</a>{% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Wholesale page",
+        "class": "wholesale-page-main",
+        "settings": [
+            {
+                "id": "icon_image",
+                "type": "image_picker",
+                "label": "Choose image"
+            },
+            {
+                "id": "url",
+                "type": "url",
+                "label": "Choose the link"
+            },
+            {
+                "type": "richtext",
+                "id": "title",
+                "label": "Heading"                
+            },
+            {
+                "type": "richtext",
+                "id": "subheading",
+                "label": "Subheading"
+            },
+            {
+                "type": "text",
+                "id": "button_label_1",
+                "label": "Button 1 label",
+                "default": "Shop this"
+            }, 
+            {
+                "type": "url",
+                "id": "button_url_1",
+                "label": "Button 1 link"
+            }, 
+            {
+                "type": "text",
+                "id": "button_label_2",
+                "label": "Button 2 label",
+                "default": "Shop all"
+            }, 
+            {
+                "type": "url",
+                "id": "button_url_2",
+                "label": "Button 2 link"
+            }
+        ],       
+        "presets": [
+            {
+                "name": "Wholesale Section",
+                "settings": {}
+            }
+        ]
+    }
+{% endschema %}

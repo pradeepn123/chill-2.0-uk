@@ -12,12 +12,15 @@
             -o-animation: about_marquee 30s linear infinite ;
             -ms-animation: about_marquee 30s linear infinite ;
             animation: about_marquee 30s linear infinite ;
-            &:hover {
-                -webkit-animation-play-state: paused;
-                -moz-animation-play-state: paused;
-                -o-animation-play-state: paused;
-                -ms-animation-play-state: paused;
-                animation-play-state: paused;
+            // &:hover {
+            //     -webkit-animation-play-state: paused;
+            //     -moz-animation-play-state: paused;
+            //     -o-animation-play-state: paused;
+            //     -ms-animation-play-state: paused;
+            //     animation-play-state: paused;
+            // }
+            @media(min-width:768px){
+                max-width: 50%;
             }
             @media(min-width:1200px){
                 max-width: 25%;
