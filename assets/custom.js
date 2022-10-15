@@ -154,9 +154,9 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 1008,
+        breakpoint: 1112,
         settings: {
-          slidesToShow: 1.4,
+          slidesToShow: 2.2,
           slidesToScroll: 1,
           arrows: false,
         }
@@ -164,11 +164,18 @@ $(document).ready(function () {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 2.2,
           slidesToScroll: 1,
           arrows: false,
         }
-        // settings: "unslick"
+      },
+      {
+        breakpoint: 625,
+        settings: {
+          slidesToShow: 1.2,
+          slidesToScroll: 1,
+          arrows: false,
+        }        
       }
   
     ]

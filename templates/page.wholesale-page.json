@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "e9f9b082-f6f6-43c9-bcf9-a35134106419": {
+      "type": "wholesale-page",
+      "settings": {
+        "icon_image": "shopify:\/\/shop_images\/wholesale-page-img.webp",
+        "url": "",
+        "title": "<p>Interested in Wholesale?<\/p>",
+        "subheading": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label_1": "Apply for Wholesale",
+        "button_url_1": "https:\/\/the-chill-way-uk.wholesale.shopifyapps.com\/accounts\/sign_up",
+        "button_label_2": "Login to your Wholesale Store",
+        "button_url_2": "https:\/\/the-chill-way-uk.wholesale.shopifyapps.com\/accounts\/sign_in"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e9f9b082-f6f6-43c9-bcf9-a35134106419"
+  ]
+}

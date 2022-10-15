@@ -342,6 +342,18 @@ body{
                 @media(min-width:1200px){
                     padding: 0;
                 }
+                a{
+                    flex: 0 0 calc(50% - 22px);
+                    margin: 0;
+                    @media(min-width:768px){
+                        flex: 0 0 calc(25% - 20px);
+                        margin: 0 20px 30px;
+                    }
+                    @media(min-width:1200px){
+                        flex: 0 0 calc(20% - 50px);
+                        margin: 0 16px 10px;
+                    }
+                }
                 .icon-item {
                     flex: 0 0 calc(50% - 22px);
                     margin: 0;

@@ -1,0 +1,74 @@
+.wholesalepage-section{
+    margin: 40px 0;
+    @media(min-width:1200px){
+        margin: 80px 0;
+    }
+    .wholesalepage-wrapper{
+        .wholesale-list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;            
+            @media(min-width:768px){
+                display: grid;
+                flex-direction: row;
+                grid-template-columns: 50% 1fr;
+            }
+            .wholesale-item{
+                &.wholesale-item-text{
+                    @media(min-width:768px){
+                        padding-left: 40px;
+                    }
+                }
+                img{
+                    width: 100%;
+                }
+                h3{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 24px;
+                    margin-bottom: 18px;
+                    color: #000;
+                    font-weight: 800;
+                    @media(min-width:1200px){
+                        font-size: 42px;
+                    }
+                    p{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 24px;
+                        color: #000;
+                        font-weight: 800;
+                        margin-bottom: 18px;
+                        @media(min-width:1200px){
+                            font-size: 42px;
+                        }
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    color: #000;
+                    font-family: 'Open Sans', sans-serif;
+                    @media(min-width:1200px){
+                        font-size: 18px;
+                    }
+                }
+                .wholesale-button{
+                    margin-top: 20px;
+                    @media(min-width:1200px){
+                        width: 70%;
+                    }
+                    .button {
+                        width: 100%;
+                        margin-bottom: 20px;
+                        border-radius: 4rem;
+                        padding: 1rem 25px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        @media(min-width:1200px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

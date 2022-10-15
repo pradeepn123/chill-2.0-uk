@@ -47,17 +47,17 @@
     {%- endunless -%}
 
     {%- liquid
-                   assign show_overlay_text = false
-                   if section.settings.title != blank or section.settings.subheading != blank or section.settings.text != blank or section.settings.button_label_1 != blank or section.settings.button_label_2 != blank
-                     assign show_overlay_text = true
-                     assign wrap_image_with_link = true
-                     if section.settings.image_link == blank or section.settings.text contains '</a>' or section.settings.button_url_1 != blank or section.settings.button_url_2 != blank
-                       assign wrap_image_with_link = false
-                     endif
-                   elsif section.settings.image_link != blank
-                     assign wrap_image_with_link = true
-                   endif
-                 -%}
+      assign show_overlay_text = false
+      if section.settings.title != blank or section.settings.subheading != blank or section.settings.text != blank or section.settings.button_label_1 != blank or section.settings.button_label_2 != blank
+        assign show_overlay_text = true
+        assign wrap_image_with_link = true
+        if section.settings.image_link == blank or section.settings.text contains '</a>' or section.settings.button_url_1 != blank or section.settings.button_url_2 != blank
+          assign wrap_image_with_link = false
+        endif
+      elsif section.settings.image_link != blank
+        assign wrap_image_with_link = true
+      endif
+      -%}
     <div class="height--{{ section.settings.height }} image-overlay image-overlay--bg-{{ section.settings.overlay_style }} {% if section.settings.mobile_overlay_under %}overlay-text-parent--mobile-stack{% endif %}" data-cc-animate data-cc-animate-delay="0.2s">
       {%- if wrap_image_with_link -%}
         <a class="image-overlay__image-link" href="{{ section.settings.image_link }}">
