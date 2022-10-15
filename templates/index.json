@@ -423,6 +423,36 @@
         "use_alt_bg": true
       }
     },
+    "8f5264ca-7f1d-4235-b07d-2de00dd54813": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recycle_Banner.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/RECYCLE_Banner_MOBILE.jpg",
+        "image_position": "center center",
+        "mobile_image_position": "center center",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "subheading": "",
+        "title": "",
+        "title_size": 84,
+        "title_weight": 800,
+        "title_size_mobile": 46,
+        "title_weight_mobile": 800,
+        "use_h1": false,
+        "text": "",
+        "enlarge_text": true,
+        "button_label_1": "Shop this",
+        "button_url_1": "",
+        "button_label_2": "",
+        "button_url_2": "",
+        "text_alignment": "bottom left",
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
     "16607619805b81a490": {
       "type": "logo-list",
       "disabled": true,
@@ -551,6 +581,7 @@
     "1661759224933bf819",
     "16616836322167cf31",
     "16618284517e50f27f",
+    "8f5264ca-7f1d-4235-b07d-2de00dd54813",
     "16607619805b81a490",
     "3dee64a8-71bf-4655-926f-2db509dcd6a5",
     "166453148629faf25b",
