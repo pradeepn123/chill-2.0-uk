@@ -389,8 +389,14 @@ body.overflow-hidden {
                         padding: 20px;
                         font-family: 'Open Sans', sans-serif;
                     }
+                    #NavigationTier2-1-mob{
+                        .navigation__wide-promotion{
+                            padding-top: 0;
+                        }
+                    }
                 }
                 .navigation__tier-2-container{
+                    z-index: 9999999;
                     .navigation__wide-promotion{
                         .container{
                             padding-left: 0;
@@ -419,6 +425,9 @@ body.overflow-hidden {
                             right: 7%;
                             cursor: pointer;
                             transform: rotate(-90deg);
+                            @media(min-width:768px) and (max-width:1024px){
+                                right: 4%;
+                            }
                         }
                     }
                     .country_selector.active{
@@ -644,5 +653,22 @@ div#main-nav{
     @media(min-width:768px) and (max-width:1024px){
         visibility: visible !important;
         opacity: 1 !important;
+        pointer-events: auto !important;
+    }
+}
+
+.shopify-policy__container{
+    .shopify-policy__body{
+        h2{
+            font-size: 16px;
+            color: #000 !important;
+            strong{
+                color: #000 !important;
+            }
+        }
+        p{
+            color: #000;
+            font-size: 16px;
+        }
     }
 }

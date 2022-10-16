@@ -1283,6 +1283,13 @@ body{
                 @media(min-width:1024px) and (max-width:1199px){
                     top: 0px;
                 }
+                @media(min-width:1680px){
+                    top: -30px;
+                }
+                @media(min-width:1920px){
+                    top: -50px;
+                    left: 7%;
+                }
             }
         }
     }
