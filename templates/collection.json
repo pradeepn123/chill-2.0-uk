@@ -6,17 +6,20 @@
         "4161a433-5a21-44b6-8fac-d99b2395f5c0": {
           "type": "collection",
           "settings": {
-            "collection": "cbd-gummies"
+            "collection": "newcbd-gummies",
+            "image": "shopify:\/\/shop_images\/Gummies_1920x_35171147-f9af-4423-a035-45b93fe7e87e.jpg"
           }
         },
         "d89c5169-3a01-4a49-a9bb-cdfcb55b50bc": {
           "type": "collection",
           "settings": {
-            "collection": "calm"
+            "collection": "new-cbd-smokes",
+            "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg"
           }
         },
         "1f5dbd86-c82c-42e1-8bbb-74c1bbe4e2f6": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "cbd-smokes"
           }
@@ -38,7 +41,8 @@
         "7080a5e5-4a58-4f1d-8efc-c920fa6cc3a1": {
           "type": "collection",
           "settings": {
-            "collection": "shop"
+            "collection": "new-shop",
+            "image": "shopify:\/\/shop_images\/All_1920x_5dd150d9-3de5-4e64-9709-cf59d524fd1c.jpg"
           }
         }
       },

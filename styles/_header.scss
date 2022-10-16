@@ -159,9 +159,9 @@
         .navigation__item{         
             .navigation__child-tier{
                 .navigation__wide-promotion{
-                    padding-top: 60px;
+                    padding-top: 40px;
                     @media(min-width:1200px){
-                        padding-bottom: 120px;
+                        padding-bottom: 140px;
                     }
                 }
             }
@@ -230,6 +230,14 @@
                 right: -30px;
                 height: 100%;
                 border-right: 1px solid #E6E6F1;
+            }
+            .coll_shop_link{
+                @media(max-width:1024px){
+                    border: 1px solid #E6E6F1;
+                    border-left: 0;
+                    border-right: 0;
+                    padding: 20px;
+                }
             }
             li{
                 @media(min-width:1200px){
@@ -323,6 +331,8 @@
                                 img{
                                     width: 100%;
                                     max-width: 100%;
+                                    height: calc(100% - 20%);
+                                    object-fit: cover;
                                 }
                             }
                             .product_title{

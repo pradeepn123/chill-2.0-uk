@@ -66,7 +66,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Our <strong> Trending Products <\/strong>",
-        "collection": "all-smokes",
+        "collection": "new-shop",
         "show_vendor": true,
         "enable_carousel": false,
         "grid": 4,
@@ -206,6 +206,7 @@
         },
         "38100417-1c22-4345-b4ee-5ea663a04829": {
           "type": "tabs-heading",
+          "disabled": true,
           "settings": {
             "title": "Pouches"
           }
@@ -241,13 +242,14 @@
             "heading_three": "03. CBD Isolate",
             "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
             "button_label": "Explore Products",
-            "button_link": "shopify:\/\/collections\/cbd-smokes-club-chill",
+            "button_link": "shopify:\/\/collections\/new-cbd-smokes",
             "button_bg_color": "",
             "button_text_color": ""
           }
         },
         "9b1ac47c-d8ea-46b5-be0b-334854a78afe": {
           "type": "tabs-content",
+          "disabled": true,
           "settings": {
             "image_one": "shopify:\/\/shop_images\/monk_fruit.png",
             "heading_one": "01. Monk fruit",
@@ -286,7 +288,7 @@
           "type": "collection-image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
-            "collection": "berry-grape",
+            "collection": "newcbd-gummies",
             "title": "Chill Gummies"
           }
         },
@@ -294,7 +296,7 @@
           "type": "collection-image",
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
-            "collection": "cool-mint",
+            "collection": "new-cbd-smokes",
             "title": "Chill Smokes"
           }
         },
@@ -310,7 +312,7 @@
           "type": "collection-image",
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
-            "collection": "all-smokes",
+            "collection": "new-cbd-smokes",
             "title": "Smokes Bundle"
           }
         }
@@ -323,7 +325,8 @@
       ],
       "settings": {
         "text": "<p>Our <strong>Collections<\/strong><\/p>",
-        "show_view_all": true
+        "show_view_all": true,
+        "shop_all_url": "shopify:\/\/collections\/new-shop"
       }
     },
     "16618284517e50f27f": {
@@ -332,7 +335,7 @@
         "1661828451bf6865ce-1": {
           "type": "testimonial",
           "settings": {
-            "product": "chill-cbd-gummies-10mg",
+            "product": "cbd-gummies",
             "testimonial": "“ A must have product! I love using these gummies when i'm trying to relax. chill or sleep”",
             "author": "Tyleen",
             "author_designation": "02\/09\/2022",
@@ -445,7 +448,7 @@
         "text": "",
         "enlarge_text": true,
         "button_label_1": "Shop Gummies",
-        "button_url_1": "shopify:\/\/collections\/new-shop",
+        "button_url_1": "shopify:\/\/products\/cbd-gummies",
         "button_label_2": "",
         "button_url_2": "",
         "text_alignment": "bottom left",

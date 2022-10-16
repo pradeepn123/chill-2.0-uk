@@ -1049,7 +1049,7 @@
             "type": "menu-promotion-large",
             "settings": {
               "dropdown_link_title": "shop",
-              "collection": "cbd-gummies",
+              "collection": "newcbd-gummies",
               "text_alignment": "center"
             }
           },
@@ -1066,7 +1066,7 @@
             "type": "menu-promotion-large",
             "settings": {
               "dropdown_link_title": "shop",
-              "collection": "all-smokes",
+              "collection": "new-cbd-smokes",
               "text_alignment": "center"
             }
           }
@@ -1179,7 +1179,7 @@
           "2d0ee29b-4c80-463c-89d8-952071761c9c": {
             "type": "menu",
             "settings": {
-              "title": "Contact Us",
+              "title": "Store Information",
               "menu": "newcontact-us"
             }
           }
@@ -1405,9 +1405,9 @@
         "type": "age-verification",
         "settings": {
           "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6fd1ada03a624f6ca18e1ce7a4134de1.mp4",
-          "verification_block_header": "Are you over the age of 21?",
-          "verification_block_description": "Please verify that you are 21 years of age or older to enter this site.",
-          "button_text": "YES I’M 21+",
+          "verification_block_header": "Are you over the age of 18?",
+          "verification_block_description": "Please verify that you are 18 years of age or older to enter this site.",
+          "button_text": "YES I’M 18+",
           "button_color": "#6ec59f"
         }
       },

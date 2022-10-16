@@ -1,16 +1,20 @@
-<div class="features_wrapper">
-  <div class="features_header">
-    <h1 class="desktop" style="font-size: {{ section.settings.heading_font_size}}px">{{ section.settings.title }}
-    </h1>
-    <h1 class="mobile" style="font-size: {{ section.settings.heading_font_size_mobile}}px">{{ section.settings.mobile_title }}
-    </h1>
-  </div>
+<div class="features_wrapper">  
   <div class="block_wrapper">
-    <div class="redirection_text">
-      <p>{{ section.settings.sub_text }}</p>
-      <a href="{{ section.settings.apply_btn_link }}"><button class="join_btn" style="background: {{ section.settings.apply_btn_color }}; font-size: {{ section.settings.apply_btn_font }}px;">{{ section.settings.apply_btn_text }}</button></a>
+    <div class="redirection_text" style="position: relative;">
+      <div class="faq-index__sticky-container">
+        <div class="faq-index__item-container">
+          <div class="features_header">
+            <h1 class="desktop" style="font-size: {{ section.settings.heading_font_size}}px">{{ section.settings.title }}
+            </h1>
+            <h1 class="mobile" style="font-size: {{ section.settings.heading_font_size_mobile}}px">{{ section.settings.mobile_title }}
+            </h1>
+          </div>
+          <p>{{ section.settings.sub_text }}</p>
+          <a href="{{ section.settings.apply_btn_link }}"><button class="join_btn" style="background: {{ section.settings.apply_btn_color }}; font-size: {{ section.settings.apply_btn_font }}px;">{{ section.settings.apply_btn_text }}</button></a>
+        </div>
+      </div>
     </div>
-    <div>
+    <div class="featured_block_list">
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'select'%}

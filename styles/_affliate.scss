@@ -103,17 +103,25 @@
         margin: 65px 5% 0 5%;
     }
     .features_header h1{
-        text-transform: none;
-        max-width: 50%;
+        text-transform: none;        
         @media (min-width: 641px) and (max-width: 1023px){
             font-size: 32px;
-            margin-bottom: 50px;
-            max-width: 70%;
+            margin-bottom: 50px;            
         }
         @media(max-width: 767px){
             max-width: 100%;
         }
-
+        p{
+            font-size: 36px !important;
+            text-transform: none;        
+            @media (min-width: 641px) and (max-width: 1023px){
+                font-size: 32px !important;
+                margin-bottom: 50px;
+            }
+            @media(max-width: 767px){
+                max-width: 100%;
+            }
+        }
     }
     .block_wrapper{
         display: grid;
@@ -130,9 +138,17 @@
             grid-column-gap: 6.25rem;
         }
         .redirection_text{
+            .faq-index__sticky-container{
+                @media(min-width: 768px){
+                    position: relative;
+                }
+                @media(min-width: 1200px){
+                    position: absolute;
+                }
+            }
             p{
                 color: #000;
-                font-size: 20px;
+                font-size: 24px;
             }
             .join_btn{
                 width: 15rem;

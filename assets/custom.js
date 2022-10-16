@@ -18,7 +18,7 @@ function scrollAbout(){
     //our story value scoll
     const stickyContainer = document.querySelector('.faq-index__sticky-container');
     if(stickyContainer){
-        const currentElement =  document.querySelector('.chill-story-value-block-section');
+        const currentElement =  document.querySelector('.chill-story-value-block-section, .featured_block_list');
         const stickyContainerRect = stickyContainer.getBoundingClientRect();
         const currentElementRect = currentElement.getBoundingClientRect();
         stickyContainer.style.height = currentElementRect.bottom - stickyContainerRect.top + 'px';
