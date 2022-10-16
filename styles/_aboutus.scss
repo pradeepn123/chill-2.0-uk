@@ -7,11 +7,13 @@
         .slider_images {
             max-width: 100%;            
             height: 25%;
-            -webkit-animation: about_marquee 30s linear infinite ;
-            -moz-animation: about_marquee 30s linear infinite ;
-            -o-animation: about_marquee 30s linear infinite ;
-            -ms-animation: about_marquee 30s linear infinite ;
-            animation: about_marquee 30s linear infinite ;
+            list-style: none;
+            display: flex;
+            // -webkit-animation: about_marquee 30s linear infinite ;
+            // -moz-animation: about_marquee 30s linear infinite ;
+            // -o-animation: about_marquee 30s linear infinite ;
+            // -ms-animation: about_marquee 30s linear infinite ;
+            animation: none;
             // &:hover {
             //     -webkit-animation-play-state: paused;
             //     -moz-animation-play-state: paused;
@@ -24,6 +26,12 @@
             }
             @media(min-width:1200px){
                 max-width: 25%;
+            }
+            .list__item{
+                flex-grow: 0;
+                flex-shrink: 0;                
+                text-align: center;
+                width: 100%;
             }
             img {
                 width: 100%;

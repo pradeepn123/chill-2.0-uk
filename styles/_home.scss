@@ -376,10 +376,13 @@ body{
                     }
                     h3{
                         margin-top: 13px;
-                        font-size: 20px;
+                        font-size: 16px;
                         font-weight: bold;
                         text-transform: uppercase;
                         font-family: 'Open Sans', sans-serif;
+                        @media(min-width:768px){
+                            font-size: 20px;
+                        }
                     }
                     p{
                         margin-top: 8px;

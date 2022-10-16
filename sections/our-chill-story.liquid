@@ -15,11 +15,13 @@
 <div class="chill-story-section">
   <div class="chill-story-block-section">
     <div class="chill-story-block-list">
-      <div class="slider_wrapper">
-        <div class="slider_images">
+      <div class="slider_wrapper" id="containerElem">
+        <div class="slider_images" id="list">
           {% for block in section.blocks %}
             {% if block.settings.slider_image != blank %}
-              <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="slider_images">
+              <li class="list__item">
+                <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="slider_images">
+              </li>
             {% endif %}
           {% endfor %}
         </div>
