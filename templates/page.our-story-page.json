@@ -46,12 +46,6 @@
             "slider_image": "shopify:\/\/shop_images\/OurStory-Carousel4_1.jpg"
           }
         },
-        "65274730-dc6b-4c1e-bdf8-3c4ff656d7a1": {
-          "type": "image",
-          "settings": {
-            "slider_image": "shopify:\/\/shop_images\/OurStory-Carousel8_1.jpg"
-          }
-        },
         "fac87674-63b1-4d5c-b99f-89a14c55a525": {
           "type": "image",
           "settings": {
@@ -69,6 +63,12 @@
           "settings": {
             "slider_image": "shopify:\/\/shop_images\/OurStory-Carousel1_1.jpg"
           }
+        },
+        "65274730-dc6b-4c1e-bdf8-3c4ff656d7a1": {
+          "type": "image",
+          "settings": {
+            "slider_image": "shopify:\/\/shop_images\/OurStory-Carousel8_1.jpg"
+          }
         }
       },
       "block_order": [
@@ -78,10 +78,10 @@
         "223cc8e6-4742-4921-898e-9aff97ae4e1e",
         "5ab6f87d-013f-4845-93c1-a605c31591c8",
         "ec17db10-6f2c-4e67-bd36-7653c3ecb379",
-        "65274730-dc6b-4c1e-bdf8-3c4ff656d7a1",
         "fac87674-63b1-4d5c-b99f-89a14c55a525",
         "15dac98d-7166-48b1-ab53-36ec331474fa",
-        "091bf8b6-b030-402d-932e-c999f5d48dda"
+        "091bf8b6-b030-402d-932e-c999f5d48dda",
+        "65274730-dc6b-4c1e-bdf8-3c4ff656d7a1"
       ],
       "settings": {
         "bg_color": "#9792e4",
