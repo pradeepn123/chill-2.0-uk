@@ -3,7 +3,9 @@
         <div class="wholesalepage-wrapper">
             <div class="wholesale-list">
                 <div class="wholesale-item wholesale-item-image">
-                    <img src="{{ section.settings.icon_image | img_url: '1920x'}}" alt="">
+                    {% if section.settings.icon_image != blank %}
+                        <img src="{{ section.settings.icon_image | img_url: '1920x'}}" alt="">
+                    {% endif %}
                 </div>
                 <div class="wholesale-item wholesale-item-text">
                     <h3>{{ section.settings.title }}</h3>
