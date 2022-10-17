@@ -126,6 +126,17 @@
     "1662353650fc285744": {
       "type": "our-chill-experience",
       "blocks": {
+        "8d37fb21-c1d4-464d-9632-173826ea532d": {
+          "type": "image-video",
+          "settings": {
+            "video": "https:\/\/player.vimeo.com\/video\/761023894",
+            "placeholder_image": "shopify:\/\/shop_images\/fest.webp",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/761024201",
+            "video_heading": "Warm Up Festival",
+            "video_subHeading": "<p>Sharing some Chill at one of the UK's coolest festivals<\/p>",
+            "video_type": "Experience"
+          }
+        },
         "19a8757e-3702-4af2-82da-17767cea24db": {
           "type": "image-video",
           "settings": {
@@ -183,36 +194,25 @@
         },
         "8d77efa0-2df7-4a3f-8381-656b9dfa5093": {
           "type": "image-video",
-          "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/760082707?h=8b5c62cac0&background=1&autoplay=1",
-            "placeholder_image": "shopify:\/\/shop_images\/fest.webp",
-            "video_popup": "https:\/\/player.vimeo.com\/video\/760082707?h=8b5c62cac0",
-            "video_heading": "Warm Up  Festival",
-            "video_subHeading": "<p>Serving up some Chill at one of the UK's coolest festivals <\/p>",
-            "video_type": "Warm Up Festival"
-          }
-        },
-        "8d37fb21-c1d4-464d-9632-173826ea532d": {
-          "type": "image-video",
           "disabled": true,
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/761023894",
-            "placeholder_image": "shopify:\/\/shop_images\/fest.webp",
-            "video_popup": "https:\/\/player.vimeo.com\/video\/761024201",
-            "video_heading": "Warm Up Festival",
-            "video_subHeading": "<p>Sharing some Chill at one of the UK's coolest festivals<\/p>",
+            "video": "https:\/\/player.vimeo.com\/video\/761024152",
+            "placeholder_image": "shopify:\/\/shop_images\/AffiliateCarousel3.jpg",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/761024152",
+            "video_heading": "Are We Encouraged to Stress?",
+            "video_subHeading": "<p>Choose Calm<\/p>",
             "video_type": "Experience"
           }
         }
       },
       "block_order": [
+        "8d37fb21-c1d4-464d-9632-173826ea532d",
         "19a8757e-3702-4af2-82da-17767cea24db",
         "aa0e8cf1-d7d5-425c-bf91-3d727ce1646d",
         "e321885e-43b5-426b-afd4-7e9e10800c59",
         "1f5ad00b-7f17-4f10-8fc0-054fa9437247",
         "6fecb0c8-a2b6-4f63-9a63-832e14a33a02",
-        "8d77efa0-2df7-4a3f-8381-656b9dfa5093",
-        "8d37fb21-c1d4-464d-9632-173826ea532d"
+        "8d77efa0-2df7-4a3f-8381-656b9dfa5093"
       ],
       "settings": {
         "bg_color": "#f2f2f3",
