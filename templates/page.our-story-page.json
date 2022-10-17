@@ -129,7 +129,7 @@
         "8d37fb21-c1d4-464d-9632-173826ea532d": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/761023894",
+            "video": "https:\/\/player.vimeo.com\/video\/761023894?h=235aa803d8",
             "placeholder_image": "shopify:\/\/shop_images\/fest.webp",
             "video_popup": "https:\/\/player.vimeo.com\/video\/761024201",
             "video_heading": "Warm Up Festival",
@@ -203,6 +203,16 @@
             "video_subHeading": "<p>Tim in the mini bike race<\/p>",
             "video_type": "Experience"
           }
+        },
+        "ba388660-b9d4-49c1-b5f6-b47632043659": {
+          "type": "image-video",
+          "settings": {
+            "video": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b",
+            "video_heading": "Heading",
+            "video_subHeading": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.<\/p>",
+            "video_type": ""
+          }
         }
       },
       "block_order": [
@@ -212,7 +222,8 @@
         "aa0e8cf1-d7d5-425c-bf91-3d727ce1646d",
         "e321885e-43b5-426b-afd4-7e9e10800c59",
         "1f5ad00b-7f17-4f10-8fc0-054fa9437247",
-        "6fecb0c8-a2b6-4f63-9a63-832e14a33a02"
+        "6fecb0c8-a2b6-4f63-9a63-832e14a33a02",
+        "ba388660-b9d4-49c1-b5f6-b47632043659"
       ],
       "settings": {
         "bg_color": "#f2f2f3",
