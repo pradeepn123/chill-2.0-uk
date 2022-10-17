@@ -137,6 +137,17 @@
             "video_type": "Experience"
           }
         },
+        "8d77efa0-2df7-4a3f-8381-656b9dfa5093": {
+          "type": "image-video",
+          "settings": {
+            "video": "https:\/\/player.vimeo.com\/video\/761024152",
+            "placeholder_image": "shopify:\/\/shop_images\/AffiliateCarousel3.jpg",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/761024152",
+            "video_heading": "Are We Encouraged to Stress?",
+            "video_subHeading": "<p>Choose Calm<\/p>",
+            "video_type": "Experience"
+          }
+        },
         "19a8757e-3702-4af2-82da-17767cea24db": {
           "type": "image-video",
           "settings": {
@@ -172,6 +183,7 @@
         },
         "1f5ad00b-7f17-4f10-8fc0-054fa9437247": {
           "type": "image-video",
+          "disabled": true,
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403502?h=cda287f9e3&background=1&autoplay=1",
             "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_1.jpg",
@@ -191,28 +203,16 @@
             "video_subHeading": "<p>Tim in the mini bike race<\/p>",
             "video_type": "Experience"
           }
-        },
-        "8d77efa0-2df7-4a3f-8381-656b9dfa5093": {
-          "type": "image-video",
-          "disabled": true,
-          "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/761024152",
-            "placeholder_image": "shopify:\/\/shop_images\/AffiliateCarousel3.jpg",
-            "video_popup": "https:\/\/player.vimeo.com\/video\/761024152",
-            "video_heading": "Are We Encouraged to Stress?",
-            "video_subHeading": "<p>Choose Calm<\/p>",
-            "video_type": "Experience"
-          }
         }
       },
       "block_order": [
         "8d37fb21-c1d4-464d-9632-173826ea532d",
+        "8d77efa0-2df7-4a3f-8381-656b9dfa5093",
         "19a8757e-3702-4af2-82da-17767cea24db",
         "aa0e8cf1-d7d5-425c-bf91-3d727ce1646d",
         "e321885e-43b5-426b-afd4-7e9e10800c59",
         "1f5ad00b-7f17-4f10-8fc0-054fa9437247",
-        "6fecb0c8-a2b6-4f63-9a63-832e14a33a02",
-        "8d77efa0-2df7-4a3f-8381-656b9dfa5093"
+        "6fecb0c8-a2b6-4f63-9a63-832e14a33a02"
       ],
       "settings": {
         "bg_color": "#f2f2f3",
