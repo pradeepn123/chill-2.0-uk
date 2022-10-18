@@ -1066,7 +1066,7 @@
             "type": "menu-promotion-large",
             "settings": {
               "dropdown_link_title": "shop",
-              "collection": "new-cbd-smokes",
+              "collection": "cbd-smokes",
               "text_alignment": "center"
             }
           }
