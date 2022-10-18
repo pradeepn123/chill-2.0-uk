@@ -23,9 +23,27 @@
             // }
             @media(min-width:768px){
                 max-width: 50%;
+                -webkit-animation: about_marquee_tab 30s linear infinite ;
+                -moz-animation: about_marquee_tab 30s linear infinite ;
+                -o-animation: about_marquee_tab 30s linear infinite ;
+                -ms-animation: about_marquee_tab 30s linear infinite ;
+                animation: about_marquee_tab 30s linear infinite;
+            }
+            @media (min-width: 820px) and (max-width: 912px){
+                max-width: 50%;
+                -webkit-animation: about_marquee_tab2 30s linear infinite ;
+                -moz-animation: about_marquee_tab2 30s linear infinite ;
+                -o-animation: about_marquee_tab2 30s linear infinite ;
+                -ms-animation: about_marquee_tab2 30s linear infinite ;
+                animation: about_marquee_tab2 30s linear infinite;
             }
             @media(min-width:1200px){
                 max-width: 25%;
+                -webkit-animation: about_marquee 25s linear infinite ;
+                -moz-animation: about_marquee 25s linear infinite ;
+                -o-animation: about_marquee 25s linear infinite ;
+                -ms-animation: about_marquee 25s linear infinite ;
+                animation: about_marquee 25s linear infinite;
             }
             .list__item{
                 flex-grow: 0;
@@ -87,7 +105,31 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-280px * 10);
+        transform: translateX(calc(-280px * 7.5));
+    }
+}
+@keyframes about_marquee_tab{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-335px * 9));
+    }
+}
+@keyframes about_marquee_tab2{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-328px * 9));
+    }
+}
+@keyframes about_marquee_mobile{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-280px * 10));
     }
 }
 
