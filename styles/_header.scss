@@ -232,12 +232,12 @@
                 border-right: 1px solid #E6E6F1;
             }
             .coll_shop_link{
-                @media(max-width:1024px){
-                    border: 1px solid #E6E6F1;
-                    border-left: 0;
-                    border-right: 0;
-                    padding: 20px;
-                }
+                // @media(max-width:1024px){
+                //     border: 1px solid #E6E6F1;
+                //     border-left: 0;
+                //     border-right: 0;
+                //     padding: 20px;
+                // }
             }
             li{
                 @media(min-width:1200px){
