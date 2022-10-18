@@ -45,7 +45,7 @@
           "type": "button",
           "settings": {
             "button_label": "LEARN MORE",
-            "button_link": "shopify:\/\/pages\/new-about",
+            "button_link": "shopify:\/\/pages\/about-us",
             "button_style": "link"
           }
         }
