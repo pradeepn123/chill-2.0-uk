@@ -9,11 +9,11 @@
             height: 25%;
             list-style: none;
             display: flex;
-            // -webkit-animation: about_marquee 30s linear infinite ;
-            // -moz-animation: about_marquee 30s linear infinite ;
-            // -o-animation: about_marquee 30s linear infinite ;
-            // -ms-animation: about_marquee 30s linear infinite ;
-            animation: none;
+            -webkit-animation: about_marquee 30s linear infinite ;
+            -moz-animation: about_marquee 30s linear infinite ;
+            -o-animation: about_marquee 30s linear infinite ;
+            -ms-animation: about_marquee 30s linear infinite ;
+            animation: about_marquee 30s linear infinite;
             // &:hover {
             //     -webkit-animation-play-state: paused;
             //     -moz-animation-play-state: paused;
