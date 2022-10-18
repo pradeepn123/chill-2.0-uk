@@ -3211,7 +3211,11 @@ body {
   height: 25%;
   list-style: none;
   display: flex;
-  animation: none;
+  -webkit-animation: about_marquee 30s linear infinite;
+  -moz-animation: about_marquee 30s linear infinite;
+  -o-animation: about_marquee 30s linear infinite;
+  -ms-animation: about_marquee 30s linear infinite;
+  animation: about_marquee 30s linear infinite;
 }
 @media (min-width: 768px) {
   .chill-story-section .slider_wrapper .slider_images {
