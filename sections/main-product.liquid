@@ -238,7 +238,10 @@
                   
                   {% if product.available %}
                     <!-- recharge subscription -->
-                      <h4 class="subscription_main_title">CHOOSE YOUR OPTION</h4>
+                      {% assign widget_settings = shop.metafields.subscriptions %}
+                      {% if widget_settings != blank %}
+                        <h4 class="subscription_main_title">CHOOSE YOUR OPTION</h4>
+                      {% endif %}
                       {% render 'subscription-product' with product as product %}
                     <!-- recharge Subscription -->
                     <div class="input-row" {{ block.shopify_attributes }}>
