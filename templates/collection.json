@@ -7,13 +7,14 @@
           "type": "collection",
           "settings": {
             "collection": "newcbd-gummies",
-            "image": "shopify:\/\/shop_images\/Gummies_1920x_35171147-f9af-4423-a035-45b93fe7e87e.jpg"
+            "image": "shopify:\/\/shop_images\/thumbnail_001.png"
           }
         },
         "d89c5169-3a01-4a49-a9bb-cdfcb55b50bc": {
           "type": "collection",
           "settings": {
-            "collection": "new-cbd-smokes"
+            "collection": "new-cbd-smokes",
+            "image": "shopify:\/\/shop_images\/thumbnail_002_1.png"
           }
         },
         "1f5dbd86-c82c-42e1-8bbb-74c1bbe4e2f6": {

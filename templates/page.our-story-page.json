@@ -154,9 +154,9 @@
         "8d77efa0-2df7-4a3f-8381-656b9dfa5093": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/761023791?h=75d993df90",
+            "video": "https:\/\/player.vimeo.com\/video\/761024152?h=8eb2d52364&badge=0&autopause=1",
             "placeholder_image": "shopify:\/\/shop_images\/AffiliateCarousel3.jpg",
-            "video_popup": "https:\/\/player.vimeo.com\/video\/761024152",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/761023791",
             "video_heading": "Are We Encouraged to Stress?",
             "video_subHeading": "<p>Choose Calm<\/p>",
             "video_type": "Experience"
@@ -220,6 +220,7 @@
         },
         "ba388660-b9d4-49c1-b5f6-b47632043659": {
           "type": "image-video",
+          "disabled": true,
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b",
