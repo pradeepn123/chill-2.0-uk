@@ -55,7 +55,22 @@ $(document).ready(function () {
     AOS.init({
         duration: 1200,
     })
-        
+    
+    $('.readmore').click(function (event) {
+        event.preventDefault();
+        var descriptionFull = document.querySelector('.product-description-full');
+        descriptionFull.style.display = 'block';
+        var descriptionShort = document.querySelector('.product-description-short');
+        descriptionShort.style.display = 'none';
+    });
+    $('.readless').click(function (event) {
+        event.preventDefault();
+        var descriptionFull = document.querySelector('.product-description-full');
+        descriptionFull.style.display = 'none';
+        var descriptionShort = document.querySelector('.product-description-short');
+        descriptionShort.style.display = 'block';
+    });
+    
     let items = document.querySelectorAll('.menu-mega-nav li');
     items.forEach( item => item.addEventListener('mouseenter', function() {
         handleHover(this, items)
@@ -74,20 +89,7 @@ $(document).ready(function () {
         $(this).closest('.block-inner').find('.block-inner-card-info').removeClass('add_info_sub');
     });
     
-    $('.readmore').click(function (event) {
-        event.preventDefault();
-        var descriptionFull = document.querySelector('.product-description-full');
-        descriptionFull.style.display = 'block';
-        var descriptionShort = document.querySelector('.product-description-short');
-        descriptionShort.style.display = 'none';
-    });
-    $('.readless').click(function (event) {
-        event.preventDefault();
-        var descriptionFull = document.querySelector('.product-description-full');
-        descriptionFull.style.display = 'none';
-        var descriptionShort = document.querySelector('.product-description-short');
-        descriptionShort.style.display = 'block';
-    });  
+      
     
     //sub collection image
     $('.subcollection_slider').slick({
