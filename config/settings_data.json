@@ -1069,12 +1069,21 @@
               "collection": "cbd-smokes",
               "text_alignment": "center"
             }
+          },
+          "1d7d58fe-2d9c-4b8a-b029-540d37e51ff2": {
+            "type": "menu-promotion-large",
+            "settings": {
+              "dropdown_link_title": "shop",
+              "collection": "shop",
+              "text_alignment": "center"
+            }
           }
         },
         "block_order": [
           "721b392b-54e3-4cd9-ae56-3cddef5b2b48",
           "1b792ef3-cee8-4951-be61-e8cc8c94491c",
-          "55dfc561-5ebf-4ef6-8975-0757fbd445b6"
+          "55dfc561-5ebf-4ef6-8975-0757fbd445b6",
+          "1d7d58fe-2d9c-4b8a-b029-540d37e51ff2"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Chill_logo.png",
@@ -1085,8 +1094,8 @@
           "enable_transparent": false,
           "transparent_color": "#ffffff",
           "mega_collection_heading": "By Collection",
-          "shop_text": "Shop all",
-          "shop_link": "shopify:\/\/collections\/shop",
+          "shop_text": "",
+          "shop_link": "",
           "menu_linklist": "new-main-menu",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-left",
@@ -1327,7 +1336,7 @@
           "apply_btn_text": "Apply",
           "apply_btn_color": "#9792e4",
           "apply_btn_font": 20,
-          "apply_btn_link": "shopify:\/\/pages\/new-collab-with-us-form",
+          "apply_btn_link": "https:\/\/ix5toa2rmt3.typeform.com\/chill",
           "mobile_title": "<p>Do you love <strong>Chill <\/strong>and want to get <strong>more involved?<\/strong><\/p>",
           "heading_font_size_mobile": 36
         }
@@ -1404,6 +1413,9 @@
       "age-verification": {
         "type": "age-verification",
         "settings": {
+          "preloader_desktop": "",
+          "preloader_tablet": "",
+          "preloader_mobile": "",
           "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6fd1ada03a624f6ca18e1ce7a4134de1.mp4",
           "verification_block_header": "Are you over the age of 18?",
           "verification_block_description": "Please verify that you are 18 years of age or older to enter this site.",
