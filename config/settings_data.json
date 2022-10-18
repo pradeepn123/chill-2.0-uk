@@ -1041,7 +1041,7 @@
     "favicon": "shopify:\/\/shop_images\/Chill_Fevicon.png",
     "cart_type": "drawer",
     "product_currency_code_enabled": false,
-    "enable_domain_redirect": false,
+    "enable_domain_redirect": true,
     "sections": {
       "header": {
         "type": "header",
