@@ -40,7 +40,7 @@
         "7080a5e5-4a58-4f1d-8efc-c920fa6cc3a1": {
           "type": "collection",
           "settings": {
-            "collection": "new-shop",
+            "collection": "shop",
             "image": "shopify:\/\/shop_images\/All_1920x_5dd150d9-3de5-4e64-9709-cf59d524fd1c.jpg"
           }
         }
