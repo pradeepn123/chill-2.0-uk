@@ -11,6 +11,26 @@
     // height: 100%;
     // position: fixed;
     .section_content{
+        #age_verification_preloader_desktop, #age_verification_preloader_tab, #age_verification_preloader_mobile{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        @media (max-width: 767px){
+            #age_verification_preloader_desktop, #age_verification_preloader_tab{
+                display: none;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1023px){
+            #age_verification_preloader_desktop, #age_verification_preloader_mobile{
+                display: none;
+            }
+        }
         .video_container{
             width: 100vw;
             height: 100vh;
