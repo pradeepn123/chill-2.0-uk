@@ -4018,6 +4018,11 @@ body {
   }
 }
 
+#collab_with_us_gallery .slick-slide {
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+
 .rewards_wrapper, .get_started_wrapper {
   margin: 5.56rem 12.688rem 50px 12.688rem;
 }

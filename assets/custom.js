@@ -55,7 +55,35 @@ $(document).ready(function () {
     AOS.init({
         duration: 1200,
     })
-    
+
+    $('#gallery, #collab_with_us_gallery').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 6000,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+              }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1.5,
+                  slidesToScroll: 1,
+                  arrows: false,
+                }
+              }
+        ]
+    });
+
     $('.readmore').click(function (event) {
         event.preventDefault();
         var descriptionFull = document.querySelector('.product-description-full');
