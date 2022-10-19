@@ -286,3 +286,10 @@
         }
     }
 }
+
+#collab_with_us_gallery{
+    .slick-slide{
+        object-fit: cover;
+        aspect-ratio: 3/4;
+    }
+}

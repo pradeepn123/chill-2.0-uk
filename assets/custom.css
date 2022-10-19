@@ -2519,7 +2519,7 @@ body {
     width: 55%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .section-main-product .product-detail .gallery.gallery--layout-carousel-under {
     position: -webkit-sticky;
     position: sticky;
@@ -4016,6 +4016,11 @@ body {
   .slider_wrapper .slider_images {
     max-width: 31.25rem;
   }
+}
+
+#collab_with_us_gallery .slick-slide {
+  object-fit: cover;
+  aspect-ratio: 3/4;
 }
 
 .rewards_wrapper, .get_started_wrapper {
