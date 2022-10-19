@@ -152,7 +152,7 @@
   <div class="container">
     <div class="subcollection_slider">
       {% for block in section.blocks %}
-        {%- assign current_url = canonical_url | remove: "https://chill.com" -%}
+        {%- assign current_url = canonical_url | remove: "https://uk.chill.com" -%}
         {%- assign collection_block = collections[block.settings.collection] -%}                      
         {% if collection_block != blank%}
           <div class="slider-wrapper {% if collection_block.url == current_url %}active-collection{% endif %}">
