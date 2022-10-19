@@ -2519,7 +2519,7 @@ body {
     width: 55%;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .section-main-product .product-detail .gallery.gallery--layout-carousel-under {
     position: -webkit-sticky;
     position: sticky;

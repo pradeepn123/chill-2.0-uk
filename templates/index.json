@@ -4,6 +4,7 @@
       "type": "background-video",
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/00c560e103194a97b467b83ddae34b88.mp4",
+        "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
         "subheading": "",
         "title": "Cool <br> <span>Calm<\/span> &amp; <br>Carefree",
         "title_size": 112,
@@ -430,7 +431,7 @@
     "8f5264ca-7f1d-4235-b07d-2de00dd54813": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recycle_Banner.jpg",
+        "image": "shopify:\/\/shop_images\/Recycle_Banner_-_DESKTOP_1.jpg",
         "mobile_image": "shopify:\/\/shop_images\/RECYCLE_Banner_MOBILE.jpg",
         "image_position": "center center",
         "mobile_image_position": "center center",
