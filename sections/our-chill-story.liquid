@@ -13,21 +13,28 @@
   }
 {% endstyle %}
 <div class="chill-story-section">
-  <div class="chill-story-block-section">
+  <div id="gallery">
+    {% for block in section.blocks %}
+      {% if block.settings.slider_image != blank %}
+        <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="slider_images">
+      {% endif %}
+    {% endfor %}
+  </div>
+  <!-- <div class="chill-story-block-section">
     <div class="chill-story-block-list">
       <div class="slider_wrapper" id="containerElem">
         <div class="slider_images" id="list">
           {% for block in section.blocks %}
             {% if block.settings.slider_image != blank %}
-              <!-- <li class="list__item"> -->
+              <li class="list__item">
                 <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="slider_images">
-              <!-- </li> -->
+              </li>
             {% endif %}
           {% endfor %}
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="container">
     <div class="chill-story-section-wrapper">
       <div class="chill-story-left-sec">

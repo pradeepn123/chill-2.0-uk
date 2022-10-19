@@ -22,7 +22,7 @@
                 width: 55%;
             }
             &.gallery--layout-carousel-under{
-                @media(min-width:1200px){
+                @media(min-width:768px){
                     position: -webkit-sticky;
                     position: sticky;
                     top: 5rem;
