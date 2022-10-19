@@ -2519,10 +2519,12 @@ body {
     width: 55%;
   }
 }
-.section-main-product .product-detail .gallery.gallery--layout-carousel-under {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5rem;
+@media (min-width: 1200px) {
+  .section-main-product .product-detail .gallery.gallery--layout-carousel-under {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+  }
 }
 .section-main-product .product-detail .gallery .gallery__inner .main-image {
   margin: 0;
