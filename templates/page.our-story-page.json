@@ -143,7 +143,7 @@
         "8d37fb21-c1d4-464d-9632-173826ea532d": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/761024201?h=c32cf223ff",
+            "video": "https:\/\/player.vimeo.com\/video\/761024201?h=c32cf223ff&background=1&autoplay=1",
             "placeholder_image": "shopify:\/\/shop_images\/fest.webp",
             "video_popup": "https:\/\/player.vimeo.com\/video\/761023894?h=235aa803d8",
             "video_heading": "Warm Up Festival",
@@ -154,7 +154,7 @@
         "8d77efa0-2df7-4a3f-8381-656b9dfa5093": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/761024152?h=8eb2d52364&badge=0&autopause=1",
+            "video": "https:\/\/player.vimeo.com\/video\/761024152?h=8eb2d52364&background=1&autoplay=1",
             "placeholder_image": "shopify:\/\/shop_images\/AffiliateCarousel3.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/761023791",
             "video_heading": "Are We Encouraged to Stress?",
@@ -165,7 +165,7 @@
         "19a8757e-3702-4af2-82da-17767cea24db": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b&background=1&autoplay=0",
+            "video": "https:\/\/player.vimeo.com\/video\/701403418?h=b0173a7c7b&background=1&autoplay=1",
             "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_3.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701396581?h=becb463383",
             "video_heading": "Highline in colarado",
@@ -176,7 +176,7 @@
         "aa0e8cf1-d7d5-425c-bf91-3d727ce1646d": {
           "type": "image-video",
           "settings": {
-            "video": "https:\/\/player.vimeo.com\/video\/701403328?h=f2e3ac9e64&background=1&autoplay=0",
+            "video": "https:\/\/player.vimeo.com\/video\/701403328?h=f2e3ac9e64&background=1&autoplay=1",
             "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_6.jpg",
             "video_popup": "https:\/\/player.vimeo.com\/video\/701399368?h=9ae311877b",
             "video_heading": "Learning to Slackline",
@@ -189,7 +189,7 @@
           "settings": {
             "video": "https:\/\/player.vimeo.com\/video\/701797123?h=f6dff18608&background=1&autoplay=1",
             "placeholder_image": "shopify:\/\/shop_images\/ezgif.com-gif-maker_2.jpg",
-            "video_popup": "https:\/\/player.vimeo.com\/video\/701795868?h=5b6a50ff81&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+            "video_popup": "https:\/\/player.vimeo.com\/video\/701795868?h=5b6a50ff81&badge=0&autopause=0&player_id=0&app_id=58479",
             "video_heading": "Paramotor & Chill",
             "video_subHeading": "<p>Chill State of Mind<\/p>",
             "video_type": "Experience"
