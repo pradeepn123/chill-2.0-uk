@@ -13,15 +13,8 @@ body.cart-drawer-open {
 }
 
 .cart-drawer-summary {
-    z-index: 999999;
+    z-index: 9999999999;
     width: 40%;
-    @media (max-width: 1024px){
-        width: 60%;
-    }
-    @media (max-width: 560px){
-        width: 95%;
-    }
-
     background: #ffffff;
     position: fixed;
     top: 0;
@@ -31,7 +24,12 @@ body.cart-drawer-open {
     visibility: hidden;
     transition: transform .4s,opacity .4s,visibility .4s;
     will-change: transform,opacity,visibility;
-
+    @media (max-width: 1024px){
+        width: 60%;
+    }
+    @media (max-width: 560px){
+        width: 95%;
+    }
     &.cart-drawer-open {
         transform: translate3d(-100%,0,0);
         visibility: visible;

@@ -354,24 +354,24 @@ body.overflow-hidden {
 }
 
 //mobile hamburger menu
-// .logo-area .button.mobile-nav-toggle{
-//     @media(max-width: 1199.98px){
-//         display: inline-block !important;
-//     }
-// }
-// .reveal-mobile-nav .mobile-navigation-drawer{
-//     @media(max-width: 1199.98px){
-//         transform: translate(0) !important;
-//     }
-// }
-// .enable-mobile-nav-transition .mobile-navigation-drawer{
-//     @media(max-width: 1199.98px){
-//         transition: transform .5s cubic-bezier(.55,.03,.37,.96) !important;
-//     }
-// }
+.logo-area .button.mobile-nav-toggle{
+    @media(max-width: 1199.98px){
+        display: inline-block !important;
+    }
+}
+.reveal-mobile-nav .mobile-navigation-drawer{
+    @media(max-width: 1199.98px){
+        transform: translate(0) !important;
+    }
+}
+.enable-mobile-nav-transition .mobile-navigation-drawer{
+    @media(max-width: 1199.98px){
+        transition: transform .5s cubic-bezier(.55,.03,.37,.96) !important;
+    }
+}
 .mobile-navigation-drawer{
     @media(max-width: 1199.98px){
-        // display: block !important;
+        display: block !important;
     } 
     .navigation{
         .navigation__children-toggle{
@@ -626,7 +626,7 @@ body.overflow-hidden {
 
 //mega menu ipad css
 div#main-nav{
-    @media(min-width:768px) and (max-width:1024px){
+    @media(min-width:768px) and (max-width:1199px){
         display: none;  
     }
     // @media(min-width:1200px){
@@ -650,7 +650,7 @@ div#main-nav{
     }
 }
 .navigation .navigation__tier-2-container{
-    @media(min-width:768px) and (max-width:1024px){
+    @media(min-width:768px) and (max-width:1199px){
         visibility: visible !important;
         opacity: 1 !important;
         pointer-events: auto !important;
