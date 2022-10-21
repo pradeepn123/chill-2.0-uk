@@ -89,16 +89,21 @@
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     if (document.querySelector('.age_verification')) {
-      let ageVerificationModal = document.querySelector('.age_verification')
-      var isModalShown = sessionStorage.getItem('alreadyShown');
-      if (isModalShown != 'true') {
-        ageVerificationModal.style.display = '';
-        document.querySelector('body').classList.add("overflow-hidden")     
-      } else {
-        ageVerificationModal.style.display = 'none'
-      }
-      ageVerificationModal.style.height = window.innerHeight
-      ageVerificationModal.style.height = 'calc(var(--vh, 1vh) * 100)'
+    let ageVerificationModal = document.querySelector('.age_verification')      
+    var isModalShown = sessionStorage.getItem('alreadyShown');
+    let urlString = window.location.href;
+    let isResetPage = urlString.indexOf('/account/reset') > 0 ? true : false ;
+    if(isResetPage){
+      ageVerificationModal.style.display = 'none'
+    }
+    else if (!isModalShown) {
+      ageVerificationModal.style.display = '';
+      document.querySelector('body').classList.add("overflow-hidden")     
+    } else {
+      ageVerificationModal.style.display = 'none'
+    }
+    ageVerificationModal.style.height = window.innerHeight
+    ageVerificationModal.style.height = 'calc(var(--vh, 1vh) * 100)'
     }
     if (document.querySelector(".age_verification_yes")) {
       document.querySelector(".age_verification_yes").addEventListener('click', () => {

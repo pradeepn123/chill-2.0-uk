@@ -122,17 +122,17 @@
               <!-- <input type="submit" value="update"> -->
               <!-- <button class="btn update_btn" type="submit">{{ 'customer.addresses.update' | t | upcase }}</button> -->
               <!-- <button class="acc_reset_password" onclick="showRecoverPasswordPopup();return false;"> -->
-              <a href="{{ routes.account_login_url }}">
-                <button class="acc_reset_password">    
-                  {{ 'Reset password' }}
-                </button>
-            </a>
+              
+              <button type="button" class="acc_reset_password" onclick="showRecoverPasswordPopup();">
+                {{ 'Reset password' }}
+              </button>
+          
             </div>
         {% endform %}
       </div>
     </div>
         <!-- Reset password popup -->
-        <div id="recover-password" style='display:none' class="overlay_delete reset_password_popup">
+        <div id="reset-password" style='display:none' class="overlay_delete reset_password_popup">
           {% form 'recover_customer_password' %}
             {% if form.posted_successfully? %}
               {% assign reset_success = true %}
@@ -162,7 +162,7 @@
 
                 <div id="enter_email" class="input-row">
                   <label for="email" class="large">{{ 'Your registered e-mail ID' }}</label>
-                  <input type="email" size="30" name="email" id="recover-email" class="large" value="{{ customer.email }}" disabled="disabled"/>
+                  <input type="email" size="30" name="email" id="recover-email" class="large" value="{{ customer.email }}"/>
                 </div>
                 <div class="action_bottom">
                     <button class="recover_password_btn btn" type="submit">{{ 'customer.recover_password.submit' | t | upcase }}</button>
@@ -296,14 +296,14 @@
   })
   
   function closePopup(){
-    document.getElementById('recover-password').style.display = 'none';
+    document.getElementById('reset-password').style.display = 'none';
   }
   function showRecoverPasswordPopup() {
-    document.getElementById('recover-password').style.display = 'block';
+    document.getElementById('reset-password').style.display = 'block';
   }
 
   function hideRecoverPasswordPopup() {
-    document.getElementById('recover-password').style.display = 'none';
+    document.getElementById('reset-password').style.display = 'none';
   }
   
       
