@@ -45,8 +45,8 @@
         "712402e7-c723-4bbb-a1a7-d907a7abf682": {
           "type": "button",
           "settings": {
-            "button_label": "LEARN MORE",
-            "button_link": "shopify:\/\/pages\/about-us",
+            "button_label": "LEARN ABOUT CBD",
+            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
             "button_style": "link"
           }
         }
