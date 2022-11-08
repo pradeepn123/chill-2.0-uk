@@ -5768,7 +5768,7 @@
           type: 'GET',
           url: theme.routes.cart_url,
           success: function (data) {
-            var toReplace = ['.cart-item-list', '.checkout-subtotal-container__dynamic'];
+            var toReplace = ['.cart-item-list', '.checkout-subtotal-container__dynamic', '.cart__message'];
             var $newDom = $('<div>' + data + '</div>');
 
             // remove any transitions

@@ -1321,6 +1321,54 @@
           }
         ],
         "default": "message"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_show_free_shipping_threshold",
+        "label": "Show free shipping minimum amount",
+        "info": "Make sure that you have properly configured your [shipping rates](\/admin\/settings\/shipping).",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "cart_free_shipping_threshold",
+        "label": "Free shipping minimum amount",
+        "info": "Only write a number, no letters",
+        "default": "50"
+      },
+      {
+        "type": "header",
+        "content": "Free shipping message"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_free_shipping_message",
+        "label": "Show free shipping message",
+        "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "message",
+        "label": "Message",
+        "info": "Use ||amount|| to display progress towards free shipping.",
+        "default": "Spend ||amount|| more for FREE shipping."
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_limit",
+        "label": "Minimum spend for free shipping",
+        "default": "100",
+        "info": "Use round numbers. Exclude currency, symbols, and letters. [Learn more](https:\/\/presidiocreative.com\/link\/palo-alto\/docs\/free-shipping-message)"
+      },
+      {
+        "type": "header",
+        "content": "Message"
+      },
+      {
+        "type": "richtext",
+        "id": "cart_custom_message_text",
+        "label": "Text",
+        "default": "<p>New customers save 10% with code <strong>WELCOME10<\/strong><\/p>"
       }
     ]
   },

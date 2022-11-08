@@ -135,6 +135,46 @@ body.cart-drawer-open {
         }
         .cart-drawer-summary__item-list{
             flex: 1 0 auto;
+            .cart-drawer__message{
+                padding: 1em 25px;
+                &.cart__message {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    margin: 0;
+                    justify-content: flex-start;
+                    font-size: 14px;
+                    color: #000000;
+                    font-family: "Open Sans", sans-serif;
+                    @media(min-width:1200px){
+                        font-size: 15px;
+                    }
+                }
+                .cart__message__success {
+                    display: none;
+                }
+                .cart__message__progress {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    border: none;
+                    width: 100%;
+                    height: 7px;
+                    border-radius: 6px;
+                    margin-top: 6px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+                .cart__message__default.is-hidden {
+                    overflow: hidden;
+                    visibility: hidden;                    
+                    display: none;
+                    opacity: 0;
+                }
+                &.is-success .cart__message__success {
+                    display: inline;
+                }
+            }
         }
 
         .cart-drawer-summary-item-wrapper {
@@ -344,4 +384,21 @@ body.cart-drawer-open {
     .cart-drawer-summary__close {
         cursor: pointer;
     }
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+.cart__message__progress::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 6px;
+}
+  
+.cart__message__progress::-webkit-progress-value {
+    background-color: #9792E3;
+    border-radius: 6px;
+}
+  
+/* MOZILLA FIREFOX */
+.cart__message__progress::-moz-progress-bar {
+    background-color: #9792E3;
+    border-radius: 6px;
 }

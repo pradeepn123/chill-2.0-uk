@@ -1039,6 +1039,8 @@
     "live_search_show_price": false,
     "live_search_search_meta": false,
     "cart_type": "drawer",
+    "free_shipping_limit": "50",
+    "cart_custom_message_text": "",
     "product_currency_code_enabled": false,
     "enable_domain_redirect": false,
     "sections": {
