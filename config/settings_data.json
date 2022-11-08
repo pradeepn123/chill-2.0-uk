@@ -1040,6 +1040,8 @@
     "live_search_search_meta": false,
     "favicon": "shopify:\/\/shop_images\/Chill_Fevicon.png",
     "cart_type": "drawer",
+    "free_shipping_limit": "50",
+    "cart_custom_message_text": "",
     "product_currency_code_enabled": false,
     "enable_domain_redirect": true,
     "sections": {

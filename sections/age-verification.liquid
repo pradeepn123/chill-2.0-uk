@@ -11,7 +11,7 @@
           {% if section.settings.preloader_mobile != blank %}
             <img src="{{ section.settings.preloader_mobile }}" alt="preloader" id="age_verification_preloader_mobile"/>
           {% endif %}
-          <video autoplay muted loop id="myVideo">
+          <video autoplay muted playsinline loop id="myVideo">
               <source src="{{ section.settings.video | escape }}" type="video/mp4">
           </video>
           <div class="page_content">

@@ -55,7 +55,10 @@ $(document).ready(function () {
     AOS.init({
         duration: 1200,
     })
-
+    document.addEventListener("TikShop:cart:updated", function(e) {
+        document.documentElement.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }))
+    })
+    
     $('#gallery, #collab_with_us_gallery').slick({
         slidesToShow: 4,
         slidesToScroll: 1,

@@ -609,6 +609,21 @@ body.overflow-hidden {
   background-color: #9792e4 !important;
 }
 
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+.tikshop-shoptrade-wrapper .tikshop-shoptrade-header {
+  font-weight: 800 !important;
+  font-size: 2em !important;
+}
+@media (min-width: 1200px) {
+  .tikshop-shoptrade-wrapper .tikshop-shoptrade-header {
+    font-size: 52px !important;
+  }
+}
+
 /* header css here */
 .pageheader .logo-area .logo-area__left .navigation ul li a {
   font-weight: 600;
@@ -5615,6 +5630,61 @@ body {
   max-width: 65%;
   margin: auto;
 }
+.cart_page .header_wrapper {
+  align-items: center;
+}
+.cart_page .header_wrapper .cart_title {
+  display: block;
+  margin-bottom: 0;
+}
+.cart_page .cart__message {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 12px 0;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .cart_page .cart__message {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .cart_page .cart__message {
+    font-size: 15px;
+    margin: 0;
+  }
+}
+.cart_page .cart__message__success {
+  display: none;
+}
+.cart_page .cart__message__progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 7px;
+  border-radius: 6px;
+  margin-top: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cart_page .cart__message__default.is-hidden {
+  overflow: hidden;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+.cart_page .cart__message.is-success .cart__message__success {
+  display: inline;
+}
 
 .header_wrapper {
   display: flex;
@@ -6230,6 +6300,48 @@ body.cart-drawer-open {
 .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list {
   flex: 1 0 auto;
 }
+.cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message {
+  padding: 1em 25px;
+}
+.cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message.cart__message {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 1200px) {
+  .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message.cart__message {
+    font-size: 15px;
+  }
+}
+.cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message .cart__message__success {
+  display: none;
+}
+.cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message .cart__message__progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 7px;
+  border-radius: 6px;
+  margin-top: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message .cart__message__default.is-hidden {
+  overflow: hidden;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+.cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list .cart-drawer__message.is-success .cart__message__success {
+  display: inline;
+}
 .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item-wrapper {
   padding: 1em 25px;
   border-bottom: 1px solid #E9E9F3;
@@ -6440,4 +6552,21 @@ body.cart-drawer-open {
 }
 .cart-drawer-summary .cart-drawer-summary__close {
   cursor: pointer;
+}
+
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+.cart__message__progress::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+.cart__message__progress::-webkit-progress-value {
+  background-color: #9792E3;
+  border-radius: 6px;
+}
+
+/* MOZILLA FIREFOX */
+.cart__message__progress::-moz-progress-bar {
+  background-color: #9792E3;
+  border-radius: 6px;
 }
