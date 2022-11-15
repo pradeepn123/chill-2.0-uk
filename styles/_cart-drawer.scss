@@ -295,8 +295,54 @@ body.cart-drawer-open {
             color:#000000;
             margin-bottom: 1rem;
             margin-top: 0.2rem;
+            position: relative;
             @media(min-width:1200px){
                 font-size: 16px;
+            }
+            .tooltip_wrap{
+                text-decoration: underline;
+                cursor: pointer;
+                .tooltip_content{
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 120%;
+                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 1px 6px #00000029;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 18px 24px;
+                    text-align: left;
+                    z-index: 1;
+                    h4{
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    h4, p{
+                        color: #000;
+                    }
+                    &::after{
+                        content: "";
+                        width: 15px;
+                        height: 15px;
+                        transform: rotate(-45deg);
+                        background: #fff;
+                        position: absolute;
+                        box-shadow: -2px 3px 4px #00000029;
+                        z-index: -1;
+                        bottom: -7px;
+                        left: calc(25% - 20px);
+                        @media(max-width: 767px){
+                            left: calc(50% - 65px);
+                        }
+                    }
+                }
+                &:hover .tooltip_content{
+                    display: block;
+                }
             }
         }
 

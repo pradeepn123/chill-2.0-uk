@@ -1035,7 +1035,7 @@
     "social_tiktok_url": "https:\/\/www.tiktok.com\/@choose.chill",
     "search_type": "product,article,page",
     "enable_live_search": true,
-    "live_search_show_vendor": false,
+    "live_search_show_vendor": true,
     "live_search_show_price": false,
     "live_search_search_meta": false,
     "cart_type": "drawer",
@@ -1106,9 +1106,9 @@
           "enable_nav_mob_products": false,
           "nav_mob_products_title": "Best Sellers",
           "nav_mob_products_collection": "",
-          "enable_search": false,
-          "search_suggestions_title": "",
-          "search_suggestions_menu": "",
+          "enable_search": true,
+          "search_suggestions_title": "Popular Products",
+          "search_suggestions_menu": "shop",
           "icon_strategy": "icons_all",
           "cart_icon": "custom"
         }
@@ -1428,7 +1428,9 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "settings": {
-          "continue_shopping_url": ""
+          "continue_shopping_url": "",
+          "shipping_policy_title": "",
+          "shipping_policy_content": ""
         }
       }
     },

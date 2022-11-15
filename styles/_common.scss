@@ -149,10 +149,12 @@ body.overflow-hidden {
                                             .price__item_sub{
                                                 .product-price__amount{
                                                     font-weight: bold;
+                                                    margin-inline-end: 4px;
                                                 }
                                                 .product-price__compare{
                                                     opacity: 1;
                                                     font-weight: normal;
+                                                    margin-inline-end: 0;
                                                 }
                                             }
                                         }
@@ -247,7 +249,14 @@ body.overflow-hidden {
                                     font-size: 12px;
                                 }
                                 input {
-                                    display: none;
+                                    opacity: 0;
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 100%;
                                 }
                                 .radio-flex-wrapper {
                                     display: flex;
