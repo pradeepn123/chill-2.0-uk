@@ -25,6 +25,16 @@
         "overlay_style": "shadow"
       }
     },
+    "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
+      "type": "marquee",
+      "settings": {
+        "marquee_text": "FREE SHIPPING ON ORDERS OVER $50",
+        "marquee_background_color": "#9792e4",
+        "marquee_text_color": "#ffffff",
+        "marquee_text_font_size": 24,
+        "marquee_text_font_size_mobile": 16
+      }
+    },
     "1635927863703110df": {
       "type": "rich-text",
       "blocks": {
@@ -301,7 +311,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
             "collection": "cbd-gummies",
-            "title": "Chill Gummies"
+            "title": "Chill Gummies",
+            "coming_soon_link": ""
           }
         },
         "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
@@ -309,7 +320,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
             "collection": "cbd-smokes",
-            "title": "Chill Smokes"
+            "title": "Chill Smokes",
+            "coming_soon_link": ""
           }
         },
         "3b6372a0-4677-429a-bf82-20402b224607": {
@@ -317,7 +329,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Gummies_Bundle.jpg",
             "collection": "cbd-gummies",
-            "title": "Gummies Bundle"
+            "title": "Gummies Bundle",
+            "coming_soon_link": ""
           }
         },
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
@@ -325,7 +338,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
             "collection": "cbd-smokes",
-            "title": "Smokes Bundle"
+            "title": "Smokes Bundle",
+            "coming_soon_link": ""
           }
         }
       },
@@ -589,6 +603,7 @@
   },
   "order": [
     "1660761564dddf193c",
+    "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "1635927863703110df",
     "16359278676808bea5",
     "166149763181cc2acb",
