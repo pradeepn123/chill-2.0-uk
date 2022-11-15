@@ -1,0 +1,74 @@
+{%- if section.settings.marquee_text != blank -%}
+  <div class="marquee marquee--hover-pause enable-animation" style="background: {{ section.settings.marquee_background_color }};">
+    <div class="marquee__content">
+      <div class="Marquee-tag">
+        <p class="marquee_content" style="color: {{ section.settings.marquee_text_color }}; font-size: {{ section.settings.marquee_text_font_size }}px">{{ section.settings.marquee_text }}</p>
+        {% style %}
+          @media(max-width: 767px) {
+            .marquee_content {
+              font-size: {{ section.settings.marquee_text_font_size_mobile }}px
+            }
+          }
+        {% endstyle %}
+      </div>
+    </div>
+    {%- for i in (1..5) -%}
+      <div class="marquee__content" aria-hidden="true">
+        <div class="Marquee-tag">
+          <p class="marquee_content" style="color: {{ section.settings.marquee_text_color }};font-size: {{ section.settings.marquee_text_font_size }}px;">{{ section.settings.marquee_text }}</p>
+          {% style %}
+            @media(max-width: 767px) {
+              .marquee_content {
+                font-size: {{ section.settings.marquee_text_font_size_mobile }}px !important;
+              }
+            }
+          {% endstyle %}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+{%- endif -%}
+{%- schema -%}
+  {
+    "name": "Marquee",
+    "settings": [
+      {
+        "type": "text",
+        "id": "marquee_text",
+        "label": "Marquee text"
+      },
+      {
+        "type": "color",
+        "id": "marquee_background_color",
+        "label": "Marquee background color"
+      },
+      {
+        "type": "color",
+        "id": "marquee_text_color",
+        "label": "Marquee text color"
+      },
+      {
+        "type": "range",
+        "id": "marquee_text_font_size",
+        "label": "Marquee text font size",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "default": 24
+      }, {
+        "type": "range",
+        "id": "marquee_text_font_size_mobile",
+        "label": "Marquee text font size on mobile",
+        "min": 0,
+        "max": 50,
+        "step": 1,
+        "default": 16
+      }
+    ],
+    "presets": [
+      {
+        "name": "Marquee"
+      }
+    ]
+  }
+{%- endschema -%}

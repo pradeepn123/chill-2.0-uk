@@ -15,7 +15,81 @@ body{
             strong{
                 font-weight: 800;
             }
+            @media (max-width: 767px){
+                font-size: 14px;
+                padding: 12px;
+            }
         }
+    }
+}
+.country_selector{
+    padding: 15px 0;
+    width: 25%;
+    float: right;
+    .dropbtn{
+        padding: 34px 0 34px 34px;
+        position: relative;
+        img{
+            position: absolute;
+            top: 36%;
+            left: 7%;
+        }
+        svg{
+            padding-bottom: 4px;
+        }
+        span{
+            font-size: 18px;
+        }
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 2%;
+        background-color: #fff;
+        min-width: 100px;
+        top: 100%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        z-index: 1;
+        cursor: pointer;
+        a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            @media (max-width: 1023px){
+                padding: 0 16px;
+            }
+            img{
+                position: relative;
+                top: 6px;
+                right: 6px;
+            }
+            span{
+                font-size: 18px;
+            }
+            &:hover {
+                background-color: #ddd;
+              }
+          }
+          @media (max-width: 1023px){
+            position: relative;
+            border: 0;
+          }
+      }
+    &:hover {
+        .feather-chevron-down{
+            transform: rotate(180deg);
+            transition: 0.5s all;
+        }
+        .dropdown-content {
+            display: block;
+        }
+    }
+    @media (max-width: 1023px){
+        display: none;
     }
 }
 
@@ -80,6 +154,11 @@ body{
                 }
             }
         }
+    }
+}
+@media(max-width: 767px){
+    #shopify-section-template--16013750599838__1635927863703110df .fully-spaced-row--medium{
+        margin-top: 30px !important;
     }
 }
 
@@ -350,7 +429,7 @@ body{
                         margin: 0 20px 30px;
                     }
                     @media(min-width:1200px){
-                        flex: 0 0 calc(20% - 50px);
+                        flex: 0 0 calc(16% - 24px);
                         margin: 0 16px 10px;
                     }
                 }
@@ -362,7 +441,7 @@ body{
                         margin: 0 20px 30px;
                     }
                     @media(min-width:1200px){
-                        flex: 0 0 calc(20% - 50px);
+                        flex: 0 0 calc(16% - 24px);
                         margin: 0 16px 10px;
                     }
                     svg, img{

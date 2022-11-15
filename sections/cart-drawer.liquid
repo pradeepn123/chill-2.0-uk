@@ -261,7 +261,16 @@
                   {{ 'cart.general.taxes_and_shipping_at_checkout' | t }}
                 {%- endif -%}
               {%- endcapture -%}
-              <div class="cart-drawer-policies rte cart-drawer-summary__section--compact">{{ taxes_shipping_checkout }}</div>
+              <div class="cart-drawer-policies rte cart-drawer-summary__section--compact">
+                Taxes and
+                <span class="tooltip_wrap">shipping 
+                  <div class="tooltip_content">
+                    <h4>{{ section.settings.shipping_policy_title }}</h4>
+                    <p>{{ section.settings.shipping_policy_content }}</p>
+                  </div>
+                </span>
+                calculated at checkout
+              </div>
             </div>
             <div class="cart-drawer-summary__buttons cart-drawer-summary__section border-bottom">
               {%- if has_recharge_subscriptions -%}
@@ -299,6 +308,15 @@
         "type": "url",
         "id": "continue_shopping_url",
         "label": "Add url to 'Continue Shopping' button"
+      },
+      {
+        "type": "text",
+        "id": "shipping_policy_title",
+        "label": "Shipping policy title"
+      }, {
+        "type": "richtext",
+        "id": "shipping_policy_content",
+        "label": "Shipping policy content"
       }
     ]
   }

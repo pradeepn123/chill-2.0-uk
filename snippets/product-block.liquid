@@ -128,7 +128,7 @@
               <div class="product-block__title">{{ product.title }}
               </div>
 
-              {%- if section.settings.show_vendor -%}
+              {%- if settings.live_search_show_vendor -%}
                 <div class="vendor">{{ product.vendor }}
                 </div>
               {%- endif -%}
@@ -167,6 +167,7 @@
               {% render 'unit-price', variant: cheapest_variant %}
             </a>
             <div class="subscription_checkout_button">
+              {% comment %}
               <div class="dynamic_checkout_btn">
                 <button type="button" class="shopify-payment-button__button shopify-payment-button__button--unbranded js-buy-now-btn btn-has-price" data-variant-id="{{cheapest_variant.id}}" data-quantity="1" data-product-id="{{product.id}}" onclick="theme.handleBuyNow(this)">
                   <span>Buy once</span>
@@ -174,6 +175,7 @@
                   </span>
                 </button>
               </div>
+              {% endcomment %}
               <!-- custom subscription info -->
               <div class="custom_subscription_info">
                 <div class="custom_subscription_wrapper">

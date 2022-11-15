@@ -190,19 +190,16 @@
 
         <div class="logo-area__right">
           <div class="logo-area__right__inner">
-            <div class="country_selector dropdown">
-              <a class="dropbtn" href="#">
-                <img src="https://cdn.shopify.com/s/files/1/0536/9115/4590/files/UK_Flag_icon.svg?v=1665048505" alt="." width="24" height="24" loading="lazy">
-                <span>UK</span>
-                {% render 'icon-toggle-menu', stroke_width: 1.3 %}
-              </a>              
-              <div class="dropdown-content">
-                <a class="dropbtn" href="https://chill.com">
-                  <img src="https://cdn.shopify.com/s/files/1/0536/9115/4590/files/USA_Flag_icon.svg?v=1665047699" alt="." width="24" height="24" loading="lazy">
-                  <span>USA</span>                  
-                </a>
-              </div>
-            </div>
+            {% if section.settings.enable_search %}
+              <a class="show-search-link" href="{{ routes.search_url }}">
+                <span class="show-search-link__icon">
+                  {%- render 'svg-search' -%}
+                </span>
+                <span class="show-search-link__text{% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">
+                  {{- 'layout.search.open' | t -}}
+                </span>
+              </a>
+            {% endif %}
             {% if shop.customer_accounts_enabled %}
               {% if customer %}
                 <a class="header-account-link" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
@@ -220,16 +217,7 @@
                 </a>
               {% endif %}
             {% endif %}
-            {% if section.settings.enable_search %}
-              <a class="show-search-link" href="{{ routes.search_url }}">
-                <span class="show-search-link__icon">
-                  {%- render 'svg-search' -%}
-                </span>
-                <span class="show-search-link__text{% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">
-                  {{- 'layout.search.open' | t -}}
-                </span>
-              </a>
-            {% endif %}
+            
             <a href="{% if settings.cart_type != "drawer" %}{{ routes.cart_url }}{% else %}#{% endif %}" class="cart-link">
               <span class="cart-link__icon {%if section.settings.cart_icon == 'custom' %}custom_bag{% endif %}">
                 {%- if section.settings.cart_icon == 'basket' -%}
@@ -282,7 +270,7 @@
             {% if show_search_suggestions %}
               <div class="main-search__suggestions">
                 {% if section.settings.search_suggestions_title != blank %}
-                  <div class="h4-style heading-font">{{ section.settings.search_suggestions_title }}
+                  <div class="h1-style heading-font desktop-only">{{ section.settings.search_suggestions_title }}
                   </div>
                 {% endif %}
                 {% if section.settings.search_suggestions_menu != blank %}
@@ -368,25 +356,16 @@
                     endif
                   -%}
                   <div class="search-suggestions">
-                    <div class="search-suggestions__item-row">
+                    <div class="search-suggestions__item-row default_search">
                       {% for link in suggestions_menu.links %}
-                        {% if link.links != blank %}
+                        {% if link.object.products != blank %}
                           <div class="search-suggestions__item search-suggestions__item--with-row">
-                            <div class="search-suggestions__heading h5-style heading-font">
-                              <a href="{{ link.url }}">{{ link.title | escape }}
-                              </a>
-                            </div>
+                            
                             <div class="search-suggestions__item-row">
-                              {% for child_link in link.links %}
+                              {% for child_link in link.object.products limit:4 %}
                                 <div class="search-suggestions__item">
-                                  {% if child_link.type == 'collection_link' %}
-                                    {% render 'collection-block', collection: child_link.object, custom_aspect_ratio: collection_aspect_ratio, manual_image_load: true %}
-                                  {% elsif child_link.type == 'product_link' %}
-                                    {% render 'product-block', product: child_link.object, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
-                                  {% else %}
-                                    <a class="search-suggestions__link" href="{{ child_link.url }}">{{ child_link.title | escape }}
-                                    </a>
-                                  {% endif %}
+                                 
+                                  {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
                                 </div>
                               {% endfor %}
                             </div>
@@ -397,9 +376,8 @@
                               {% render 'collection-block', collection: link.object, custom_aspect_ratio: collection_aspect_ratio, manual_image_load: true %}
                             {% elsif link.type == 'product_link' %}
                               {% render 'product-block', product: link.object, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
-                            {% else %}
-                              <a class="search-suggestions__link" href="{{ link.url }}">{{ link.title | escape }}
-                              </a>
+                            
+                              
                             {% endif %}
                           </div>
                         {% endif %}
@@ -655,7 +633,7 @@
         "label": "Enable search",
         "default": true
       }, {
-        "type": "text",
+        "type": "richtext",
         "id": "search_suggestions_title",
         "label": "Suggestions title",
         "info": "Suggestions show when the search is opened."
