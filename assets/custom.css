@@ -650,7 +650,13 @@ body.overflow-hidden {
   text-transform: uppercase;
 }
 .pageheader .logo-area .logo-area__right .logo-area__right__inner .header-account-link, .pageheader .logo-area .logo-area__right .logo-area__right__inner .show-search-link, .pageheader .logo-area .logo-area__right .logo-area__right__inner .country_selector {
-  margin-inline-end: 32px;
+  margin-inline-end: 27px;
+}
+@media (max-width: 767px) {
+  .pageheader .logo-area .logo-area__right .logo-area__right__inner .header-account-link, .pageheader .logo-area .logo-area__right .logo-area__right__inner .show-search-link, .pageheader .logo-area .logo-area__right .logo-area__right__inner .country_selector {
+    margin-inline-start: 28px;
+    margin-inline-end: 0;
+  }
 }
 .pageheader .logo-area .logo-area__right .logo-area__right__inner .country_selector .dropbtn {
   padding: 34px 0 34px 34px;
