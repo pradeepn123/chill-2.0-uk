@@ -25,6 +25,16 @@
         "overlay_style": "shadow"
       }
     },
+    "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
+      "type": "marquee",
+      "settings": {
+        "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
+        "marquee_background_color": "#9792e4",
+        "marquee_text_color": "#ffffff",
+        "marquee_text_font_size": 24,
+        "marquee_text_font_size_mobile": 16
+      }
+    },
     "1635927863703110df": {
       "type": "rich-text",
       "blocks": {
@@ -129,6 +139,16 @@
             "subheading": "",
             "use_alt_bg": false
           }
+        },
+        "1e12f163-9cea-40ee-ba37-6a6536db6ba2": {
+          "type": "icon-text",
+          "settings": {
+            "icon_svg": "<svg id=\"Layer_1\" data-name=\"Layer 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 124 124\">\n  <defs>\n    <style>\n      .cls-1 {\n        fill: #6ec59f;\n      }\n    <\/style>\n  <\/defs>\n  <path class=\"cls-1\" d=\"M62,0C27.76,0,0,27.76,0,62s27.76,62,62,62,62-27.76,62-62C123.96,27.77,96.23,.04,62,0Zm0,120C29.97,120,4,94.03,4,62S29.97,4,62,4s58,25.97,58,58c-.04,32.02-25.98,57.96-58,58Z\"><\/path>\n  <g>\n    <path class=\"cls-1\" d=\"M97.78,29.58l-1.82-.15c-13.43-1.06-23.82,2.08-30.89,9.32-11.66,11.94-9.89,30.51-9.81,31.3l.32,3.11,2.69-1.6c1.96-1.16,5.02-2,8.58-2.98,12.48-3.42,31.34-8.6,30.95-37.18l-.02-1.82Zm-31.99,35.14c-1.53,.42-2.97,.82-4.31,1.24,2.06-1.85,4.02-3.82,5.86-5.89,3.16-3.41,5.92-7.16,8.22-11.2-6.67,3.05-12.72,9.05-16.38,15.75,.29-5.98,1.87-16.04,8.77-23.09,5.39-5.52,13.14-8.3,23.08-8.3,.91,0,1.83,.03,2.77,.07-.43,23.86-15.69,28.04-28.01,31.42h0Z\"><\/path>\n    <path class=\"cls-1\" d=\"M58.55,83.76c-.07-.56-1.71-13.68-11.64-20.16-6.04-3.94-13.72-4.52-22.84-1.72l-1.74,.53,.37,1.79c4.15,19.88,17.98,20.55,27.14,21,2.05,0,4.1,.23,6.1,.69l2.97,.98-.36-3.11h0Zm-8.52-2.56c-8.53-.41-19.08-.93-22.99-16.01,7.12-1.84,13.05-1.25,17.66,1.75,4.98,3.24,7.53,8.7,8.77,12.62-3.67-4.46-9.07-7.15-14.84-7.4,2.1,2.55,4.64,4.7,7.5,6.35,1.83,1.11,3.76,2.05,5.77,2.79-.6-.04-1.22-.07-1.87-.1h0Z\"><\/path>\n    <path class=\"cls-1\" d=\"M59.2,103.5h-4.01c-.54-14.17,0-35.96,.02-36.12l4,.11c0,.17-.57,21.8,0,36.01h0Z\"><\/path>\n  <\/g>\n<\/svg>",
+            "url": "",
+            "title": "Vegan Friendly",
+            "subheading": "",
+            "use_alt_bg": false
+          }
         }
       },
       "block_order": [
@@ -136,7 +156,8 @@
         "a8f289bf-bad4-4f48-b2c7-ce924e25c5ea",
         "ff2f3196-56e6-4f2a-b990-402ac55fb2ab",
         "4db701d6-7208-489c-833f-cd1456d7bfae",
-        "7f7e7769-88ff-4784-8d7e-3e04b13844d6"
+        "7f7e7769-88ff-4784-8d7e-3e04b13844d6",
+        "1e12f163-9cea-40ee-ba37-6a6536db6ba2"
       ],
       "settings": {
       }
@@ -290,7 +311,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
             "collection": "cbd-gummies",
-            "title": "Chill Gummies"
+            "title": "Chill Gummies",
+            "coming_soon_link": ""
           }
         },
         "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
@@ -298,7 +320,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
             "collection": "cbd-smokes",
-            "title": "Chill Smokes"
+            "title": "Chill Smokes",
+            "coming_soon_link": ""
           }
         },
         "3b6372a0-4677-429a-bf82-20402b224607": {
@@ -306,7 +329,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Gummies_Bundle.jpg",
             "collection": "cbd-gummies",
-            "title": "Gummies Bundle"
+            "title": "Gummies Bundle",
+            "coming_soon_link": ""
           }
         },
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
@@ -314,7 +338,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
             "collection": "cbd-smokes",
-            "title": "Smokes Bundle"
+            "title": "Smokes Bundle",
+            "coming_soon_link": ""
           }
         }
       },
@@ -578,6 +603,7 @@
   },
   "order": [
     "1660761564dddf193c",
+    "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "1635927863703110df",
     "16359278676808bea5",
     "166149763181cc2acb",

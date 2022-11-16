@@ -28,6 +28,7 @@
                             <div class="image_title">
                                 {%- assign collection_title = block.settings.title | default: collection_block.title -%}
                                 <h4>{{ collection_title }}</h4>
+                                <h5 class="small-feature-link shop_all">{{ block.settings.coming_soon_link }}</h5>
                                 <a class="small-feature-link shop_all" href="{{ collection_block.url }}">{{ 'collections.general.view_all' | t }}{% render 'svg-up-icon' %}</a>
                             </div>
                         </div>                        
@@ -82,6 +83,11 @@
                     "type": "text",
                     "id": "title",
                     "label": "Heading"                    
+                },
+                {
+                    "type": "text",
+                    "id": "coming_soon_link",
+                    "label": "Coming soon"
                 }              
             ]
         }            

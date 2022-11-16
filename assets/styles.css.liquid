@@ -1797,6 +1797,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media(max-width:1023px){
+  .announcement-bar .container{
+    flex-direction: column;
+    padding: 10px 0 5px;
+  }
+}
 .announcement-bar:not(.announcement-bar--with-announcement) .announcement-bar__left {
   flex: 0 0 auto;
 }
@@ -3124,7 +3130,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
   flex: 0 0 auto;
   white-space: nowrap;
 }
-.logo-area__right .show-search-link {
+.logo-area__left .show-search-link {
   display: none;
   margin-inline-end: 20px;
 }
@@ -4050,7 +4056,7 @@ input[type=text].main-search__input {
 }
 @media (min-width: 768px) {
   .testimonial__text .testimonial__blockquote {
-    padding-inline-end: 40px;
+    padding-inline-end: 50px;
   }
 }
 .testimonial__text .testimonial__blockquote::before {

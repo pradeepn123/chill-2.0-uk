@@ -1016,6 +1016,7 @@
     "prod_thumb_hover_image": true,
     "quickbuy_style": "off",
     "prod_block_label_loc": "top left",
+    "prod_reduction_show": false,
     "prod_reduction_type": "percent",
     "prod_stock_warn_show": true,
     "prod_stock_warn_limit_int": 10,
@@ -1033,9 +1034,9 @@
     "social_linkedin_url": "https:\/\/www.linkedin.com\/company\/chill-brands\/",
     "social_instagram_url": "https:\/\/www.instagram.com\/chill_cbd\/",
     "social_tiktok_url": "https:\/\/www.tiktok.com\/@choose.chill",
-    "search_type": "product,article,page",
+    "search_type": "product",
     "enable_live_search": true,
-    "live_search_show_vendor": false,
+    "live_search_show_vendor": true,
     "live_search_show_price": false,
     "live_search_search_meta": false,
     "favicon": "shopify:\/\/shop_images\/Chill_Fevicon.png",
@@ -1107,9 +1108,9 @@
           "enable_nav_mob_products": false,
           "nav_mob_products_title": "Best Sellers",
           "nav_mob_products_collection": "",
-          "enable_search": false,
-          "search_suggestions_title": "",
-          "search_suggestions_menu": "",
+          "enable_search": true,
+          "search_suggestions_title": "<p>Popular <strong>Products<\/strong><\/p>",
+          "search_suggestions_menu": "shop",
           "icon_strategy": "icons_all",
           "cart_icon": "custom"
         }
@@ -1217,7 +1218,7 @@
           "1478526632860": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Get 20% off on your first order <a href=\"\/collections\/new-shop\" title=\"[New] Shop\">GET IT NOW<\/a><\/p>"
+              "text": "<p>Get 20% off on your first order <a href=\"\/collections\/shop\" title=\"Shop\">GET IT NOW<\/a><\/p>"
             }
           },
           "1478526632861": {
@@ -1429,7 +1430,9 @@
       "cart-drawer": {
         "type": "cart-drawer",
         "settings": {
-          "continue_shopping_url": ""
+          "continue_shopping_url": "",
+          "shipping_policy_title": "Shipping Hours",
+          "shipping_policy_content": "<p>Fulfilment Centre operates <strong>8am-4pm M-F<\/strong> and <strong>8-12pm  Saturday<\/strong>.  <strong>Closed Sundays.<\/strong>  All orders processed prior to 12noon will be shipped that day for delivery between 1-3 days UK (dependant on service and area)<\/p><p>All orders in other countries & inquiries please email <a href=\"mailto:info@chill.com\" target=\"_blank\">info@chill.com<\/a><\/p><p>You will receive an email containing your Tracking Number once your package has been shipped from our distribution center.<\/p>"
         }
       }
     },
