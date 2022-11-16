@@ -8,10 +8,10 @@
         "grid": 4,
         "enable_filtering": false,
         "collapse_tag_sidebar_by_default": false,
-        "collapse_filters_method": "over-12",
+        "collapse_filters_method": "none",
         "show_filter_counts": false,
         "show_disabled_filters": true,
-        "ajax_products": true,
+        "ajax_products": false,
         "enable_sticky_filter": true,
         "filter_two_columns": false,
         "coll_show_sort": true

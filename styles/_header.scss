@@ -26,7 +26,11 @@
                     text-transform: uppercase;
                 }
                 .header-account-link, .show-search-link, .country_selector{
-                    margin-inline-end: 32px;
+                    margin-inline-end: 27px;
+                    @media (max-width: 767px){
+                        margin-inline-start: 28px;
+                        margin-inline-end: 0;
+                    }
                 }
                 .country_selector{
                     .dropbtn{
