@@ -1217,12 +1217,23 @@
           "1478526632860": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Get 20% off on your first order <a href=\"\/collections\/shop\" title=\"Shop\">GET IT NOW<\/a><\/p>"
+              "text": "<p>Spend over £25 get 15% off, all products + 1 Free 10mg gummies<\/p>"
             }
           },
           "1478526632861": {
             "type": "announcement",
-            "disabled": true,
+            "settings": {
+              "text": "<p>Spend over £50 get 25% off, all products + 2 Free 10mg gummies<\/p>"
+            }
+          },
+          "809db54c-4cb6-48e9-9dfc-06633ed5217e": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>Spend over £100 get 50% off, all products + 3 Free 10mg gummies<\/p>"
+            }
+          },
+          "408d1fba-a178-46cb-8bec-5764f6158239": {
+            "type": "announcement",
             "settings": {
               "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
             }
@@ -1230,11 +1241,15 @@
         },
         "block_order": [
           "1478526632860",
-          "1478526632861"
+          "1478526632861",
+          "809db54c-4cb6-48e9-9dfc-06633ed5217e",
+          "408d1fba-a178-46cb-8bec-5764f6158239"
         ],
         "settings": {
+          "fixed_text": "🔥 Black Friday Deals",
           "announcement_bar_col": "#000000",
           "announcement_text_col": "#ffffff",
+          "sliding_text_col": "#fff",
           "message_font_size": 14,
           "show_social_icons": false,
           "menu": "",
