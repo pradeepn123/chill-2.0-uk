@@ -202,6 +202,13 @@ body.cart-drawer-open {
             .cart-drawer-summary-item__detail {
                 flex: 1 0 auto;
                 max-width: 75%;
+                .cart-drawer-discount-list{
+                    margin: 0;
+                    li{
+                        list-style: none;
+                        color: #000;
+                    }
+                }
                 .cart-drawer-summary-item_title_price_total{
                     display: flex;
                     justify-content: space-between;
@@ -256,8 +263,8 @@ body.cart-drawer-open {
 
             .cart-drawer-summary-item__price { 
                 display: flex;
-                flex-direction: column;
-
+                align-items: center;
+                column-gap: 0.4rem;
                 .theme-money {
                     font-size: 16px;
                     font-weight: 600;

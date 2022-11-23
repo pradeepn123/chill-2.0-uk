@@ -91,10 +91,19 @@
       </p>
     </div>
   {% else %}
-    <form action="{{ routes.cart_url }}" method="post" id="cartform">
-      <!-- Begin Recharge code -->
-      {% render 'subscription-cart-footer' %}
-      <!-- End Recharge code -->
+      {% assign has_recharge_subscriptions = false %}
+      {% for i in cart.items %}
+        {% for p in i.properties %}
+          {% if p.first == 'shipping_interval_frequency' %}
+            {% assign has_recharge_subscriptions = true %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <form action="{{ routes.cart_url }}" method="post" id="cartform" class="cart-form--checkout"
+        data-has_recharge_subscriptions="{{has_recharge_subscriptions}}"
+        data-checkout-domain="{{ shop.metafields.subscriptions.checkout_domain | default: 'checkout.rechargeapps.com' }}"
+        data-permanent-domain="{{ shop.permanent_domain }}"
+      >
       <div class="cart-item-list content-divider">
         <div class="cart-item-list__head cart_list_header" data-cc-animate>
           <div class="cart-item-list-heading cart-item-list-heading--product">{{ 'cart.label.product' | t }}
@@ -189,7 +198,9 @@
                         {% render 'price', price: finalDiscountedPrice, disable_currency_code: true %}
                       </span>
                     {% else %}
-                      {% if item.variant.compare_at_price > item.variant.price %}
+                      {% if item.final_line_price == 0 %}
+                        <span class="cart-drawer-summary-item__price-current theme-money">FREE</span>
+                      {% elsif item.variant.compare_at_price > item.variant.price %}
                         <div class="struck-out-price">
                           <span class="theme-money">{{ item.variant.compare_at_price | money }}
                           </span>
