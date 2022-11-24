@@ -110,7 +110,7 @@
           "type": "richtext",
           "settings": {
             "custom_class_product_page": "black_friday_sale_text",
-            "richtext": "<p>Rich text block<\/p>",
+            "richtext": "<p>Spend over £100 get 50% off, all products + 3 Free 10mg gummies<\/p>",
             "icon": "",
             "icon_size": "small",
             "enable_box": false,
