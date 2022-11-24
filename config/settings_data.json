@@ -1253,7 +1253,7 @@
           "fixed_text": "🔥 Black Friday Deals",
           "announcement_bar_col": "#000000",
           "announcement_text_col": "#ffffff",
-          "sliding_text_col": "#fff",
+          "sliding_text_col": "#ffffff",
           "message_font_size": 14,
           "show_social_icons": false,
           "menu": "",
@@ -1447,10 +1447,37 @@
       },
       "cart-drawer": {
         "type": "cart-drawer",
+        "blocks": {
+          "5d546e3a-5c93-4445-885b-3e31f6919abf": {
+            "type": "promotion-25",
+            "settings": {
+              "product-1": "chill-cbd-gummies"
+            }
+          },
+          "ee179cdc-b20e-42e5-b181-a3023c325131": {
+            "type": "promotion-50",
+            "settings": {
+              "product-2": "chill-cbd-gummies"
+            }
+          },
+          "4edb3d68-39a0-45c5-a5c2-ba76bee84412": {
+            "type": "promotion-100",
+            "settings": {
+              "product-1": "tropical-cbd-gummies",
+              "product-2": "chill-cbd-gummies"
+            }
+          }
+        },
+        "block_order": [
+          "5d546e3a-5c93-4445-885b-3e31f6919abf",
+          "ee179cdc-b20e-42e5-b181-a3023c325131",
+          "4edb3d68-39a0-45c5-a5c2-ba76bee84412"
+        ],
         "settings": {
           "continue_shopping_url": "",
           "shipping_policy_title": "Shipping Hours",
-          "shipping_policy_content": "<p>Fulfilment Centre operates <strong>8am-4pm M-F<\/strong> and <strong>8-12pm  Saturday<\/strong>.  <strong>Closed Sundays.<\/strong>  All orders processed prior to 12noon will be shipped that day for delivery between 1-3 days UK (dependant on service and area)<\/p><p>All orders in other countries & inquiries please email <a href=\"mailto:info@chill.com\" target=\"_blank\">info@chill.com<\/a><\/p><p>You will receive an email containing your Tracking Number once your package has been shipped from our distribution center.<\/p>"
+          "shipping_policy_content": "<p>Fulfilment Centre operates <strong>8am-4pm M-F<\/strong> and <strong>8-12pm  Saturday<\/strong>.  <strong>Closed Sundays.<\/strong>  All orders processed prior to 12noon will be shipped that day for delivery between 1-3 days UK (dependant on service and area)<\/p><p>All orders in other countries & inquiries please email <a href=\"mailto:info@chill.com\" target=\"_blank\">info@chill.com<\/a><\/p><p>You will receive an email containing your Tracking Number once your package has been shipped from our distribution center.<\/p>",
+          "enable_promotion": true
         }
       }
     },
