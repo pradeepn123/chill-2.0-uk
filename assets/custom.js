@@ -673,7 +673,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const AnnouncementBarSlider = function () {
   $(".Newannouncement-slider").slick({
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 5000,
     speed: 600,
     draggable: true,
     infinite: true,
