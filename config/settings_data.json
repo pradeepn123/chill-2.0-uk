@@ -104,6 +104,7 @@
           "settings": {
             "announcement_bar_col": "#f7f1f0",
             "announcement_text_col": "#212121",
+            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -321,6 +322,7 @@
           "settings": {
             "announcement_bar_col": "#202020",
             "announcement_text_col": "#ffffff",
+            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -665,6 +667,7 @@
           "settings": {
             "announcement_bar_col": "#001d7c",
             "announcement_text_col": "#ffffff",
+            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -796,6 +799,7 @@
           "settings": {
             "announcement_bar_col": "#000000",
             "announcement_text_col": "#ffffff",
+            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -1235,7 +1239,7 @@
           "408d1fba-a178-46cb-8bec-5764f6158239": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
+              "text": "<p>Free shipping only for orders over £50 (after discount)<\/p>"
             }
           }
         },
@@ -1249,7 +1253,7 @@
           "fixed_text": "🔥 Black Friday Deals",
           "announcement_bar_col": "#000000",
           "announcement_text_col": "#ffffff",
-          "sliding_text_col": "#fff",
+          "sliding_text_col": "#ffffff",
           "message_font_size": 14,
           "show_social_icons": false,
           "menu": "",

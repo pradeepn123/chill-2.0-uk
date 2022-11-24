@@ -667,7 +667,7 @@ body.overflow-hidden {
   color: white;
 }
 
-.announcement-bar .slick-prev:before {
+.announcement-bar .slick-prev:after {
   color: #fff;
   font-family: initial;
   font-size: 15px;
