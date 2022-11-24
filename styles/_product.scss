@@ -811,4 +811,7 @@
     align-items: center;
     color: red;
     font-style: italic;
+    &:last-child{
+        margin-bottom: 25px;
+    }
 }

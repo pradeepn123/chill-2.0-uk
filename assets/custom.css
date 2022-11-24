@@ -3501,6 +3501,9 @@ body {
   color: red;
   font-style: italic;
 }
+.black_friday_sale_text:last-child {
+  margin-bottom: 25px;
+}
 
 .chill-story-section .slider_wrapper {
   width: 100%;
@@ -6642,11 +6645,6 @@ body.cart-drawer-open {
 @media (min-width: 768px) {
   .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item .cart-drawer-summary-item__detail .cart-drawer-summary-item_title_price_total {
     flex-direction: row;
-  }
-}
-@media (min-width: 1200px) {
-  .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item .cart-drawer-summary-item__detail .cart-drawer-summary-item_title_price_total .cart-drawer-summary-item__title {
-    width: 70%;
   }
 }
 .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item .cart-drawer-summary-item__detail .cart-drawer-summary-item__title {

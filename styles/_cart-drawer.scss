@@ -217,11 +217,6 @@ body.cart-drawer-open {
                     @media(min-width:768px){
                         flex-direction: row;
                     }
-                    .cart-drawer-summary-item__title{
-                        @media(min-width:1200px){
-                            width: 70%;
-                        }
-                    }
                 }
                 .cart-drawer-summary-item__title {
                     font-size: 16px;
