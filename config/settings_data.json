@@ -1239,7 +1239,7 @@
           "408d1fba-a178-46cb-8bec-5764f6158239": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Announce <a href=\"#\">something<\/a> here<\/p>"
+              "text": "<p>Free shipping only for orders over £50 (after discount)<\/p>"
             }
           }
         },

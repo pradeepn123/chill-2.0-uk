@@ -667,7 +667,7 @@ body.overflow-hidden {
   color: white;
 }
 
-.announcement-bar .slick-prev:before {
+.announcement-bar .slick-prev:after {
   color: #fff;
   font-family: initial;
   font-size: 15px;
@@ -2981,6 +2981,11 @@ body {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
 }
+@media screen and (max-width: 480px) {
+  .section-main-product .product-detail .detail .product-form .buy-buttons-row {
+    margin-bottom: 0;
+  }
+}
 .section-main-product .product-detail .detail .product-form .buy-buttons-row .subscription_main_title {
   font-size: 16px;
   color: #000000;
@@ -3072,6 +3077,11 @@ body {
 @media (min-width: 768px) {
   .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit {
     margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit {
+    margin-bottom: 20px;
   }
 }
 .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit .button {
@@ -3482,13 +3492,17 @@ body {
 
 .black_friday_sale_text {
   border-radius: 4rem;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 900;
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   color: red;
+  font-style: italic;
+}
+.black_friday_sale_text:last-child {
+  margin-bottom: 25px;
 }
 
 .chill-story-section .slider_wrapper {
@@ -6631,11 +6645,6 @@ body.cart-drawer-open {
 @media (min-width: 768px) {
   .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item .cart-drawer-summary-item__detail .cart-drawer-summary-item_title_price_total {
     flex-direction: row;
-  }
-}
-@media (min-width: 1200px) {
-  .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item .cart-drawer-summary-item__detail .cart-drawer-summary-item_title_price_total .cart-drawer-summary-item__title {
-    width: 70%;
   }
 }
 .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary-item .cart-drawer-summary-item__detail .cart-drawer-summary-item__title {
