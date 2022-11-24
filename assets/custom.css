@@ -6058,6 +6058,10 @@ body {
     padding-inline-end: 60px;
   }
 }
+.cart_container .cart-item__description .cart-discount-list .cart-discount {
+  display: flex;
+  column-gap: 2px;
+}
 .cart_container .cart-item__description .cart_item_description_container {
   display: flex;
   flex-direction: column;
