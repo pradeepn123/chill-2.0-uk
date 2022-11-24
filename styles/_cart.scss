@@ -242,6 +242,10 @@
             .cart-item__quantity-input{
                 padding: 10px 0;
             }
+            .visibility-hidden {
+                visibility: hidden;
+                pointer-events: none;
+            }
         }
         @media (max-width: 767px){
             margin-top: 1em;

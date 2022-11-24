@@ -519,7 +519,7 @@
 
             {% when 'richtext' %}
               {% if block.settings.richtext != blank %}
-                <div class="lightly-spaced-row{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}" {{ block.shopify_attributes }}>
+                <div class="lightly-spaced-row{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %} {{ block.settings.custom_class_product_page }}" {{ block.shopify_attributes }}>
                   {%- liquid
                     if block.settings.enable_box
                       assign box_color_brightness = block.settings.box_color | color_brightness
@@ -1704,6 +1704,11 @@
         "type": "richtext",
         "name": "Rich text",
         "settings": [
+          {
+            "type": "text",
+            "id": "custom_class_product_page",
+            "label": "Enter Custom Class for Black Friday Sale"
+          },
           {
             "type": "richtext",
             "id": "richtext",

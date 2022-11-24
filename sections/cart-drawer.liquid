@@ -1,3 +1,18 @@
+<script>
+  theme.promotionalProducts = {
+    "25": [],
+    "50": [],
+    "100": []
+  }
+  {% if section.settings.enable_promotion %}
+    {% for block in section.blocks %}
+      {% for blockSetting in block.settings %}
+        {% assign product = all_products[block.settings[blockSetting]] %}
+        theme.promotionalProducts[{{block.type | replace : "promotion-", ""}}].push({productId: {{ product.id | json }}, variantId: {{ product.first_available_variant.id | json }}, quantity: {{ blockSetting | replace : "product-", "" }}})
+      {% endfor %}
+    {% endfor %}
+  {% endif %}
+</script>
 {% if settings.cart_type contains 'drawer' and template != 'cart' %}
   {% assign has_recharge_subscriptions = false %}
   {% for i in cart.items %}
@@ -95,10 +110,22 @@
             {%- endif -%}
             <form class="cart-drawer-form cart-drawer-summary__section" action="{{ routes.cart_url }}" method="post">
               {% for item in cart.items %}
+                {% if item.product.metafields.subscriptions.original_handle != blank %}
+                  {% assign original_product = all_products[item.product.metafields.subscriptions.original_handle.value] %}
+                {% else %}
+                  {% assign original_product = item.product %}
+                {% endif %}
+
                 {% assign has_subscriptions = false %}
+                {% assign selected_shipping_interval_frequency = blank %}
+                {% assign promotionalLine = false %}
                 {% for p in item.properties %}
                   {% if p.first == 'shipping_interval_frequency' %}
                     {% assign has_subscriptions = true %}
+                    {% assign selected_shipping_interval_frequency = p.last %}
+                  {% endif %}
+                  {% if p.first == 'Product Type' and p.last == 'Promotional' %}
+                    {% assign promotionalLine = true %}
                   {% endif %}
                 {% endfor %}
                 <div class="cart-drawer-summary-item-container" data-product-id="{{ item.id }}">
@@ -129,7 +156,9 @@
                                   {% render 'price', price: finalDiscountedPrice, disable_currency_code: true %}
                                 </span>
                               {% else %}
-                                {% if item.original_line_price != item.final_line_price %}
+                                {% if item.final_line_price == 0 %}
+                                  <span class="cart-drawer-summary-item__price-current theme-money">FREE</span>
+                                {% elsif item.original_line_price != item.final_line_price %}
                                   <span class="reduced-price cart-drawer-summary-item__price-current theme-money">{% render 'price', price: item.final_line_price, disable_currency_code: true %}</span>
                                   <span class="theme-money struck-out-price">{% render 'price', price: item.original_line_price, disable_currency_code: true %}</span>
                                 {% elsif item.variant.compare_at_price != blank and item.variant.price < item.variant.compare_at_price %}
@@ -144,27 +173,37 @@
                               {% endif %}
                             </div>
                           </div>
-                          {% if item.product.variants.size > 1 %}
-                            <span class="variant">{{ item.variant.title }}</span>
-                          {% elsif show_single_variant_details %}
-                            {% unless item.product.has_only_default_variant %}
+
+                          <div class="variant_discount_block_sec">
+                            {% if item.product.variants.size > 1 %}
                               <span class="variant">{{ item.variant.title }}</span>
-                            {% endunless %}
+                            {% elsif show_single_variant_details %}
+                              {% unless item.product.has_only_default_variant %}
+                                <span class="variant">{{ item.variant.title }}</span>
+                              {% endunless %}
+                            {% endif %}
+                            {% if item.selling_plan_allocation %}
+                              <div class="cart-drawer-summary-item__variant">{{ item.selling_plan_allocation.selling_plan.name }}</div>
+                            {% endif %}
+
+                            {% if item.line_level_discount_allocations.size > 0 %}
+                              {% unless promotionalLine %}
+                                <ul class="cart-drawer-discount-list align-right">
+                                {% for discount_allocation in item.line_level_discount_allocations %}
+                                  <li class="cart-drawer-discount cart-drawer-discount--inline cart-drawer-discount--flex">
+                                    <span class="cart-drawer-discount__label">{{ discount_allocation.discount_application.title }}</span>
+                                    <span class="cart-drawer-discount__amount theme-money">{% render 'price', price: discount_allocation.amount, disable_currency_code: true %}</span>
+                                  </li>
+                                {% endfor %}
+                                </ul>
+                              {% endunless %}
+                            {% endif %}
+                          </div>
+                          {% if promotionalLine %}
+                            <div class="line-promotional-banner">Free</div>
                           {% endif %}
-                          {% if item.selling_plan_allocation %}
-                            <div class="cart-drawer-summary-item__variant">{{ item.selling_plan_allocation.selling_plan.name }}</div>
-                          {% endif %}
-                        </div>                        
-                        {% if item.line_level_discount_allocations.size > 0 %}
-                          <ul class="cart-drawer-discount-list align-right">
-                          {% for discount_allocation in item.line_level_discount_allocations %}
-                            <li class="cart-drawer-discount cart-drawer-discount--inline cart-drawer-discount--flex">
-                              <span class="cart-drawer-discount__label">{{ discount_allocation.discount_application.title }}</span>
-                              <span class="cart-drawer-discount__amount theme-money">{% render 'price', price: discount_allocation.amount, disable_currency_code: true %}</span>
-                            </li>
-                          {% endfor %}
-                          </ul>
-                        {% endif %}
+                        </div>
+                        
 
                         {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' and item.variant.inventory_quantity <= item.quantity %}
                           {% assign can_increase = false %}
@@ -173,9 +212,9 @@
                         {% endif %}
                         <div class="cart-item__column cart-item__quantity cart-drawer-summary-item__quantity">
                           <div class="quantity buttoned-input">
-                            <a id="updates_dec_{{ forloop.index }}" class="notabutton quantity-down {% if item.quantity == 1 %}pointer-evt-none{% endif %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.label.decrease' | t | escape }}">{% render 'svg-minus' %}</a>
+                            <a id="updates_dec_{{ forloop.index }}" class="notabutton quantity-down {% if promotionalLine == true %}visibility-hidden{%endif%} {% if item.quantity == 1 %}pointer-evt-none{% endif %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.label.decrease' | t | escape }}">{% render 'svg-minus' %}</a>
                             <input
-                              class="cart-item__quantity-input"
+                              class="cart-item__quantity-input {% if promotionalLine %}promotional-quantity{% endif %}"
                               type="text"
                               size="2"
                               id="updates_{{ forloop.index }}"
@@ -183,13 +222,16 @@
                               value="{{ item.quantity }}"
                               data-initial-value="{{ item.quantity }}"
                               data-line="{{ forloop.index }}"
+                              disabled="disabled"
                               {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' %}data-max="{{ item.variant.inventory_quantity }}"{% endif %}
                               aria-label="{{ 'cart.general.quantity' | t | escape }}" />
-                            <a id="updates_inc_{{ forloop.index }}" class="notabutton quantity-up {% unless can_increase %}unusable{% endunless %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | plus: 1 }}" aria-label="{{ 'cart.label.increase' | t | escape }}">{% render 'svg-plus' %}</a>
+                            <a id="updates_inc_{{ forloop.index }}" class="notabutton quantity-up {% if promotionalLine == true %}visibility-hidden{%endif%} {% unless can_increase %}unusable{% endunless %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | plus: 1 }}" aria-label="{{ 'cart.label.increase' | t | escape }}">{% render 'svg-plus' %}</a>
                           </div>
-                          <a class="remove" data-line="{{ forloop.index }}" href="#">
-                            {{ 'cart.general.remove' | t }}
-                          </a>
+                          {% unless promotionalLine %}
+                            <a class="remove" data-line="{{ forloop.index }}" href="#">
+                              {{ 'cart.general.remove' | t }}
+                            </a>
+                          {% endunless %}
                         </div>
                         
                       </div>
@@ -203,7 +245,7 @@
                             id="drawer-shipping-interval-selector-{{forloop.index}}"
                             class="drawer-shipping-interval"
                             data-shipping_interval_unit_type="{{item.product.metafields.subscriptions.shipping_interval_unit_type}}"
-                            data-line="{{ forloop.index }}"
+                            data-line="{{ forloop.index }}" data-quantity="{{item.quantity}}"
                           >
                             {% for shipping_interval_frequency in shipping_interval_frequencies %}
                               <option value="{{shipping_interval_frequency}}">Delivery every {{shipping_interval_frequency}} {{item.product.metafields.subscriptions.shipping_interval_unit_type}}</option>
@@ -236,12 +278,7 @@
               </div>
             </form>
           </div>
-          <form class="cart-drawer-form cart-drawer-form--checkout cart-drawer-form--checkout--sticky-{{ section.settings.checkout_sticky_form }}"
-            action="{{ routes.cart_url }}" method="post"
-            data-has_recharge_subscriptions="{{has_recharge_subscriptions}}"
-            data-checkout-domain="{{ shop.metafields.subscriptions.checkout_domain | default: 'checkout.rechargeapps.com' }}"
-            data-permanent-domain="{{ shop.permanent_domain }}"
-          >
+          <form class="cart-drawer-form cart-drawer-form--checkout cart-drawer-form--checkout--sticky-{{ section.settings.checkout_sticky_form }}" action="{{ routes.cart_url }}" method="post" data-has_recharge_subscriptions="{{has_recharge_subscriptions}}" data-checkout-domain="{{ shop.metafields.subscriptions.checkout_domain | default: 'checkout.rechargeapps.com' }}" data-permanent-domain="{{ shop.permanent_domain }}">
             <div class="cart-drawer-form--non-stick cart-drawer-summary__section">
               <div class="cart-drawer-summary__subtotal {% if section.settings.enable_cart_notes == blank and section.settings.show_tax_and_shipping == false %}cart-drawer-summary__subtotal--sm-bottom{% endif %}">
                 <span class="cart-drawer-summary__subtotal-label">{{ 'cart.general.subtotal' | t }}</span>
@@ -297,7 +334,8 @@
           </div>
         {% endif %}
       </div>
-    </div><!-- /#cart-drawer-summary -->
+    </div>
+    <!-- /#cart-drawer-summary -->
   </div>
 {% endif %}
 {% schema %}
@@ -317,6 +355,54 @@
         "type": "richtext",
         "id": "shipping_policy_content",
         "label": "Shipping policy content"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_promotion",
+        "label": "Enable Promotion product",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "@app"
+      }, {
+        "type": "promotion-25",
+        "name": "When spend £25",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "product",
+            "id": "product-1",
+            "label": "Spend £25 and get a product as FREE!"
+          }
+        ]
+      }, {
+        "type": "promotion-50",
+        "name": "When spend £50",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "product",
+            "id": "product-2",
+            "label": "Spend £50 and get 2 products as FREE!"
+          }
+        ]
+      }, {
+        "type": "promotion-100",
+        "name": "When spend £100",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "product",
+            "id": "product-1",
+            "label": "Spend £100 and get 1 product as FREE!"
+          }, {
+            "type": "product",
+            "id": "product-2",
+            "label": "Spend £100 and get 2 product as FREE!"
+          }
+        ]
       }
     ]
   }
