@@ -5774,9 +5774,9 @@
         if (this.cartRefreshXhr) {
           this.cartRefreshXhr.abort();
         }
-        $.getJSON(theme.routes.cart_url, function(cart) {
+        this.cartRefreshXhr = $.getJSON(theme.routes.cart_url, function(cart) {          
           let promotionalProducts;
-          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties["Product Type"] == "Promotional")
+          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "Promotional")
           const promotionalLineItemPrice = promotionalLineItems.reduce(function(acc, line) {
             return line.original_line_price + acc
           }, 0)
@@ -5833,7 +5833,7 @@
 
       postRefreshCartDependentContent: function postRefreshCartDependentContent() {
         // fetch new html for the page
-        this.cartRefreshXhr = $.ajax({
+        $.ajax({
           type: 'GET',
           url: theme.routes.cart_url,
           success: function (data) {
@@ -6095,9 +6095,9 @@
           this.cartRefreshXhr.abort();
         }
 
-        $.getJSON(theme.routes.cart_url + ".js", function(cart) {
+        this.cartRefreshXhr = $.getJSON(theme.routes.cart_url + ".js", function(cart) {          
           let promotionalProducts;
-          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties["Product Type"] == "Promotional")
+          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "Promotional")
           const promotionalLineItemPrice = promotionalLineItems.reduce(function(acc, line) {
             return line.original_line_price + acc
           }, 0)
@@ -6149,7 +6149,7 @@
       },
       postRefreshCartDependentContent: function postRefreshCartDependentContent() {
         // fetch new html for the page
-        this.cartRefreshXhr = $.ajax({
+        $.ajax({
           type: 'GET',
           url: location.origin + '?sections=cart-drawer,header',
           success: function (data) {

@@ -156,7 +156,6 @@
                                   {% render 'price', price: finalDiscountedPrice, disable_currency_code: true %}
                                 </span>
                               {% else %}
-                              {{item.final_line_price}}
                                 {% if item.final_line_price == 0 %}
                                   <span class="cart-drawer-summary-item__price-current theme-money">FREE</span>
                                 {% elsif item.original_line_price != item.final_line_price %}
@@ -203,7 +202,7 @@
                           {% if promotionalLine %}
                             <div class="line-promotional-banner">Promotional</div>
                           {% endif %}
-                        </div>                        
+                        </div>
                         
 
                         {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' and item.variant.inventory_quantity <= item.quantity %}
@@ -223,6 +222,7 @@
                               value="{{ item.quantity }}"
                               data-initial-value="{{ item.quantity }}"
                               data-line="{{ forloop.index }}"
+                              disabled="disabled"
                               {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' %}data-max="{{ item.variant.inventory_quantity }}"{% endif %}
                               aria-label="{{ 'cart.general.quantity' | t | escape }}" />
                             <a id="updates_inc_{{ forloop.index }}" class="notabutton quantity-up {% if promotionalLine == true %}visibility-hidden{%endif%} {% unless can_increase %}unusable{% endunless %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | plus: 1 }}" aria-label="{{ 'cart.label.increase' | t | escape }}">{% render 'svg-plus' %}</a>

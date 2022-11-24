@@ -229,8 +229,9 @@ body.cart-drawer-open {
                     display: block;
                     font-weight: 600;
                     line-height: 1.2;
+                    width: 200px;
                     @media(min-width:1200px){
-                        font-size: 18px; 
+                        font-size: 18px;
                     }
                 }
                 .variant{
