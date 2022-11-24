@@ -5777,15 +5777,12 @@
         this.cartRefreshXhr = $.getJSON(theme.routes.cart_url, function(cart) {          
           let promotionalProducts;
           const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "Promotional")
-          const promotionalLineItemPrice = promotionalLineItems.reduce(function(acc, line) {
-            return line.original_line_price + acc
-          }, 0)
 
-          if (cart.original_total_price - promotionalLineItemPrice > 10000) {
+          if (cart.items_subtotal_price > 10000) {
             promotionalProducts = theme.promotionalProducts[100]
-          } else if (cart.original_total_price - promotionalLineItemPrice > 5000) {
+          } else if (cart.items_subtotal_price > 5000) {
             promotionalProducts = theme.promotionalProducts[50]
-          } else if (cart.original_total_price - promotionalLineItemPrice > 2500) {
+          } else if (cart.items_subtotal_price > 2500) {
             promotionalProducts = theme.promotionalProducts[25]
           }
 
@@ -6098,15 +6095,12 @@
         this.cartRefreshXhr = $.getJSON(theme.routes.cart_url + ".js", function(cart) {          
           let promotionalProducts;
           const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "Promotional")
-          const promotionalLineItemPrice = promotionalLineItems.reduce(function(acc, line) {
-            return line.original_line_price + acc
-          }, 0)
 
-          if (cart.original_total_price - promotionalLineItemPrice > 10000) {
+          if (cart.items_subtotal_price > 10000) {
             promotionalProducts = theme.promotionalProducts[100]
-          } else if (cart.original_total_price - promotionalLineItemPrice > 5000) {
+          } else if (cart.items_subtotal_price > 5000) {
             promotionalProducts = theme.promotionalProducts[50]
-          } else if (cart.original_total_price - promotionalLineItemPrice > 2500) {
+          } else if (cart.items_subtotal_price > 2500) {
             promotionalProducts = theme.promotionalProducts[25]
           }
 
