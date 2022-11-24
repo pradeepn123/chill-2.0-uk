@@ -5776,7 +5776,7 @@
         }
         this.cartRefreshXhr = $.getJSON(theme.routes.cart_url, function(cart) {          
           let promotionalProducts;
-          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "Promotional")
+          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "FREE")
 
           if (cart.items_subtotal_price > 10000) {
             promotionalProducts = theme.promotionalProducts[100]
@@ -5815,7 +5815,7 @@
                       id: product.variantId,
                       quantity: product.quantity,
                       properties: {
-                        "Product Type": "Promotional"
+                        "Product Type": "FREE"
                       }
                     }
                   }
@@ -6094,7 +6094,8 @@
 
         this.cartRefreshXhr = $.getJSON(theme.routes.cart_url + ".js", function(cart) {          
           let promotionalProducts;
-          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "Promotional")
+          const paidProducts = cart.items.filter(lineItem => !lineItem.properties || lineItem.properties["Product Type"] != "FREE")
+          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "FREE")
 
           if (cart.items_subtotal_price > 10000) {
             promotionalProducts = theme.promotionalProducts[100]
@@ -6121,7 +6122,7 @@
             },
             dataType: 'json',
             success: function success(response) {
-              if (promotionalProducts && promotionalProducts.length > 0) {
+              if (promotionalProducts && promotionalProducts.length > 0 && paidProducts.length > 0) {
                 // Add the Free products to cart
                 let lineItems = {
                   items: promotionalProducts.map(product => {
@@ -6129,7 +6130,7 @@
                       id: product.variantId,
                       quantity: product.quantity,
                       properties: {
-                        "Product Type": "Promotional"
+                        "Product Type": "FREE"
                       }
                     }
                   }
