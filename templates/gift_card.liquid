@@ -17,7 +17,7 @@
   {% endif %}
 
   <div class="giftcard__illustration">
-  <img src="{{ 'gift-card/card.jpg' | shopify_asset_url }}" alt="Gift card illustration">
+  <img src="{{ 'giftcard.png' | asset_url }}" alt="Gift card illustration">
 
     {%- assign code_size = gift_card.code | format_code | size -%}
     <span id="gift-card-code-digits" class="giftcard__code">{{ gift_card.code | format_code }}</span>
