@@ -104,7 +104,6 @@
           "settings": {
             "announcement_bar_col": "#f7f1f0",
             "announcement_text_col": "#212121",
-            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -322,7 +321,6 @@
           "settings": {
             "announcement_bar_col": "#202020",
             "announcement_text_col": "#ffffff",
-            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -667,7 +665,6 @@
           "settings": {
             "announcement_bar_col": "#001d7c",
             "announcement_text_col": "#ffffff",
-            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
@@ -799,7 +796,6 @@
           "settings": {
             "announcement_bar_col": "#000000",
             "announcement_text_col": "#ffffff",
-            "sliding_text_col": "#fff",
             "show_social_icons": true
           }
         },
