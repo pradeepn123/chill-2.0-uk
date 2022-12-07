@@ -1,0 +1,28 @@
+{% assign uniqueProductIdsString = cart.items | map: 'product_id'| uniq | split: ", " | first | remove_first: "[" | remove_last: "]" %}
+
+<div class="cart-drawer-recommendations" id="mini-cart__recommendations" 
+    data-section-id="drawer-cart__recommendations"
+    data-url="{{ routes.product_recommendations_url }}.json?product_id={{uniqueProductIdsString}}&limit=4&intent=related">
+    <div class="container">
+        <div class="mini-cart__recommendations-inner">
+            <p class="mini-cart__recommendations-heading heading heading--small">You may also like</p>
+            <div class="scroller">
+                <div class="scroller__inner">
+                    <div class="mini-cart__recommendations-list" data-ajax-add-to-cart="true"></div>
+                </div>
+            </div>
+            <div id="cart-drawer-recommendations-backdrop" class="cart-drawer-recommendations-backdrop"></div>
+        </div>
+    </div>
+</div>
+
+<!-- quick-buy-drawer with product variant -->
+<div id="quick-view-product-drawer" class="quick-view-product-drawer">
+    <div class="cart-drawer-summary__header toggle-cart-drawer-summary cart-drawer-summary__section">
+        <h1 class="cart-drawer-summary__title">Choose Options</h1>
+        <a class="quick-view-product__close toggle-cart-summary">
+          {% render 'svg-close' %}
+        </a>
+    </div>
+    <div class="drawer__content" data-ajax-add-to-cart="true"></div>
+</div>
