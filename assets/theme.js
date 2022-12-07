@@ -3391,6 +3391,7 @@
   };
 
   theme.openDrawerCart = function () {
+    theme.drawerRecommendation.render()
     var cartSummary = document.querySelector("#cart-drawer-summary")
     cartSummary.classList.add("cart-drawer-open")
     $('body').addClass("cart-drawer-open")
@@ -3437,12 +3438,168 @@
   theme.closeDrawerCart = function () {
     var cartSummary = document.querySelector("#cart-drawer-summary")
     cartSummary.classList.remove("cart-drawer-open")
+    const cartRecommendationsInner = document.querySelector('#mini-cart__recommendations .mini-cart__recommendations-inner')
+    if (cartRecommendationsInner) {
+      cartRecommendationsInner.classList.remove("open")
+    }
     $('body').removeClass("cart-drawer-open")
 
     $('#cart-drawer-backdrop')
     .fadeOut(100)
     .off("click", theme.closeDrawerCart.bind(theme))
   };
+
+  theme.drawerRecommendation = {
+    selectors: {
+      miniCart: "#mini-cart__recommendations",
+      miniCartRecommendationsInner: ".mini-cart__recommendations-inner",
+      recommendationList : '.mini-cart__recommendations-list',
+      drawerContent: '.drawer__content'
+    },
+    render: function(recommendationURL) {
+      const recommendationContainer = document.querySelector(this.selectors.miniCart)
+      if (!recommendationContainer) {
+        return false;
+      }
+
+      $.getJSON(recommendationURL || recommendationContainer.dataset.url, function(response) {
+        this.products = response.products;
+        const cartRecommendationsInner = recommendationContainer.querySelector(this.selectors.miniCartRecommendationsInner)
+        const miniCartRecommendationsList = cartRecommendationsInner.querySelector(this.selectors.recommendationList)
+        miniCartRecommendationsList.innerHTML = this.products.map(product => {
+          let openingTag = '<div class="cart-product-item">'
+          let closingTag = '</div>'
+          if (product.variants.length == 1) {
+            openingTag = `<form class="cart-product-item product-purchase-form" data-ajax-add-to-cart="true">`
+            closingTag ='</form>'
+          }
+
+          let data = `<div class="product-item__image-wrapper">
+            <a href="${product.url}">
+              <img src="${product.featured_image}" alt="${product.handle}">
+            </a>
+          </div>
+          <div class="product-item__info">
+            <div class="product-item-info-header">
+              <a href="${product.url}" class="product-item-meta__title">${product.title}</a>
+              <p class="product-item__vendor">${product.vendor}</p>
+            </div>
+            <input type="hidden" name="id" value="${product.variants[0].id}" class="original-selector">
+            <input type="hidden" name="quantity" value="1" >
+            <div class="product-item-price-info">
+              <div class="main-product-price">
+                <div class="item-price">${theme.Shopify.formatMoney(product.price, theme.money_format)}</div>
+                  ${product.compare_at_price > 0 ? `<div class="compare-price">${theme.Shopify.formatMoney(product.compare_at_price, theme.money_format)}</div>` : ''}
+                </div>
+                <button
+                  ${product.variants.length == 1 ? `type="submit"` : ``}
+                  class="btn btn_add_to_cart ${product.variants.length > 1 ? `js-addtocart-btn` : ``}"
+                  data-product-id="${product.id}"
+                  data-variant-id="${product.variants[0].id}"
+                >
+                  ${product.variants.length > 1 ? "OPTIONS" : "+ADD"}
+                </button>
+              </div>
+            </div>
+          </div>`
+          return openingTag + data + closingTag
+        }).join("")
+        theme.applyAjaxToProductForm($(miniCartRecommendationsList))
+        cartRecommendationsInner.classList.add("open")
+        this.addEventListeners()
+      }.bind(this))
+    },
+
+    addEventListeners: function() {
+      var cartSummaryAddToCarts = document.querySelectorAll(".js-addtocart-btn")
+      const recommendationContainer = document.querySelector(this.selectors.miniCart)
+      var cartSummaryContainer = document.querySelector(".quick-view-product-drawer")
+      cartSummaryContainer.classList.remove("cart-drawer-open")
+      $('#cart-drawer-recommendations-backdrop').fadeOut(100)
+      recommendationContainer.style.overflow = ""
+
+
+      cartSummaryAddToCarts.forEach(function(element) {
+        element.addEventListener('click', this.updateQuickRecommendationView.bind(this))
+      }.bind(this))
+
+      var cartSummaryClose = document.querySelector('.quick-view-product__close')
+      cartSummaryClose.addEventListener('click', function(e) {
+        cartSummaryContainer.classList.remove("cart-drawer-open")
+        $('#cart-drawer-recommendations-backdrop').fadeOut(100)
+        recommendationContainer.style.overflow = ""
+      }.bind(this))
+    },
+
+    updateQuickRecommendationView: function(evt) {
+      const recommendationContainer = document.querySelector(this.selectors.miniCart)
+      const btn = evt.target
+      const product = this.products.find(product => product.id == btn.dataset.productId)
+
+      const drawerContent = document.querySelector(this.selectors.drawerContent)
+      drawerContent.innerHTML = `<form class="drawer__quick-view__image-wrapper product-purchase-form" data-ajax-add-to-cart="true">
+        <a href="${product.url}">
+          <img src="${product.featured_image}">
+        </a>
+      </div>
+      <div class="drawer__quick-view__info">
+        <div class="drawer__quick-view-info-header">
+          <a href="${product.url}" class="product-item-meta__title">${product.title}</a>
+          <p class="product-item__vendor">${product.vendor}</p>
+        </div>
+        <div class="drawer__quick-view-price-info">
+          <div class="main-product-price">
+            <div class="item-price">${theme.Shopify.formatMoney(product.price, theme.money_format)}</div>
+            ${product.compare_at_price > 0 ? `<div class="compare-price">${theme.Shopify.formatMoney(product.compare_at_price, theme.money_format)}</div>` : ''}
+          </div>
+        </div>
+        <div class="quantity-wrapper">
+          <a href="#" data-quantity="down"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><title>{{ 'general.icon_labels.minus' | t }}</title><line x1="5" y1="12" x2="19" y2="12"></line></svg></a>
+          <input aria-label="quantity" id="quantity" type="text" name="quantity" value="1" />
+          <a href="#" data-quantity="up"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><title>{{ 'general.icon_labels.plus' | t }}</title><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></a>
+        </div>
+        ${product.variants.length == 1 ? 
+          `<input type="hidden" name="id" value="${btn.dataset.variantId}" class="original-selector">`
+        : `<select class="original-selector" name="id" data-product-id="${product.id}">
+          ${product.variants.map(variant => `<option value="${variant.id}">
+            ${variant.title}
+          </option>`).join("")}
+        </select>`}        
+        <div class="custom_button_info">
+          <button class="btn btn-primary custom_sub_button quick__view__addToCartBtn" type="submit">
+            <span>Add to cart</span>
+          </button>
+        </div>
+      </form>`
+
+      recommendationContainer.style.overflow = "hidden"
+      var cartSummary = document.querySelector(".quick-view-product-drawer")
+      cartSummary.classList.add("cart-drawer-open")
+      $('#cart-drawer-recommendations-backdrop').fadeIn(100)
+
+      $(drawerContent).on("change", 'select', function(evt) {
+        const $form = $(evt.target).closest("form")
+        const $itemPrice = $form.find(".item-price")
+        const $comparePrice = $form.find(".compare-price")
+        const $featuredImage = $form.find("img")
+        const product = this.products.find(product => product.id == evt.target.dataset.productId)
+        const variant = product.variants.find(variant => variant.id == evt.target.value)
+
+        $itemPrice.html(theme.Shopify.formatMoney(variant.price, theme.money_format))
+        if ($comparePrice.length) {
+          $comparePrice.html(theme.Shopify.formatMoney(variant.compare_at_price, theme.money_format))
+        }
+
+        if (variant.featured_image) {
+          $featuredImage.attr("src", variant.featured_image.src)
+        } else {
+          $featuredImage.attr("src", product.featured_image)
+        }
+      }.bind(this))
+
+      theme.applyAjaxToProductForm($(drawerContent))
+    }
+  }
 
   theme.removeAddedCartMessage = function () {
     document.querySelectorAll('.cart-summary-overlay').forEach(summary => {
@@ -6148,7 +6305,7 @@
           type: 'GET',
           url: location.origin + '?sections=cart-drawer,header',
           success: function (data) {
-            var toReplace = ['.cart-drawer-summary__item-list', '.cart-drawer-form--checkout', '.cart_item_count'];
+            var toReplace = ['.cart-drawer-summary__item-list', '.cart-drawer-form--checkout', '.cart_item_count', '#mini-cart__recommendations'];
             var $newDom = $(data['cart-drawer'])
             var cartSummarySelectors = ['#pageheader .logo-area__right__inner'];
 
@@ -6170,8 +6327,9 @@
             $newDom.find('.fade-in').removeClass('fade-in');
             $newDom.find('[data-cc-animate]').removeAttr('data-cc-animate');
 
-            var listExists = this.$container.find('.cart-drawer-summary__item-list')
-            if (listExists.length > 0 && $newDom.find(".cart-drawer-summary__item-list").length > 0) {
+            var listExists = this.$container.find('.cart-drawer-summary__item-list-parent')
+            var recommendationURL;
+            if (listExists.length > 0 && $newDom.find(".cart-drawer-summary__item-list-parent").length > 0) {
               for (var i = 0; i < toReplace.length; i++) {
                 this.replacingContent = true; // to avoid triggering change events when focus is lifted before DOM replacement
                 var $toReplace = this.$container.find(toReplace[i]),
@@ -6183,7 +6341,11 @@
                     $(this).replaceWith($match.clone());
                   }
                 });
-                $toReplace.replaceWith($replaceWith);
+                if ($replaceWith.attr("id") === "mini-cart__recommendations") {
+                  recommendationURL = $replaceWith.attr("data-url")
+                } else {
+                  $toReplace.replaceWith($replaceWith);
+                }
                 this.replacingContent = false;
               }
             } else {
@@ -6196,6 +6358,7 @@
                 document.dispatchEvent(new CustomEvent('theme:cartDrawer:close', { bubbles: true, cancelable: false }));
               })
             }
+            theme.drawerRecommendation.render(recommendationURL)
             document.dispatchEvent(new CustomEvent('theme:cartDrawer:open', { bubbles: true, cancelable: false }));
           }.bind(this),
           error: function error(data) {
