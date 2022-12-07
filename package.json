@@ -19,8 +19,9 @@
     "homepage": "https://github.com/shop-trade/chill-2.0#readme",
     "dependencies": {
         "gulp": "^4.0.2",
-        "gulp-sass": "^5.1.0",
-        "node-sass": "^7.0.1",
-        "sass": "^1.54.5"
+        "gulp-sass": "^5.1.0"
+    },
+    "devDependencies": {
+        "sass": "^1.56.1"
     }
 }
