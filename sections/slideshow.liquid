@@ -71,7 +71,7 @@
               <div class="placeholder-image placeholder--banner{% if show_overlay_text %} dark{% endif %}{% if section.settings.height == 'fixed' %} fixed-height-item{% endif %}" {% if section.settings.height == 'adapt' %}style="padding-top: 50%"{% endif %}>
                 {% capture current %}
                   {% cycle 1, 2 %}{% endcapture %}
-                {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                {{- 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' -}}
               </div>
             {%- else -%}
               <div class="rimage-background-wrapper lazyload--placeholder {% if block.settings.mobile_image != blank %}desktop-only{% endif %}">
