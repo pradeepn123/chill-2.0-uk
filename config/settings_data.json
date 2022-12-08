@@ -1168,7 +1168,7 @@
             "type": "text",
             "settings": {
               "title": "Zoetic Corp",
-              "text": "",
+              "text": "<p><\/p>",
               "image": "shopify:\/\/shop_images\/Chill_black.png",
               "image_width": 160,
               "show_social_icons": true,
@@ -1218,7 +1218,7 @@
           "2e941249-38b6-4172-8dea-a0d2e959208f": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Get 10% off on your first order <a href=\"\/collections\/shop\" title=\"\/collections\/shop\"><strong>GET IT NOW<\/strong><\/a><\/p>"
+              "text": "<p>Get 20% off on your first order <a href=\"\/collections\/shop\" title=\"\/collections\/shop\"><strong>GET IT NOW<\/strong><\/a><\/p>"
             }
           }
         },
