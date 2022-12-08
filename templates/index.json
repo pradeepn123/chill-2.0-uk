@@ -73,6 +73,72 @@
         "use_alt_bg": false
       }
     },
+    "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_Group_122.png",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Welcome <br> <strong>Mad Tasty<\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Recreational supplements brand that uses natural functional ingredients to encourage authentic relaxation<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "SHOP MAD TASTY",
+            "button_url_1": "shopify:\/\/collections\/zoetic",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        },
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "Tell your story",
+            "title": "Two line\nslide heading",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>And optional subtext<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "",
+            "button_label_2": "Shop all",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": true,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "16359278676808bea5": {
       "type": "featured-collection",
       "settings": {
@@ -311,7 +377,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
             "collection": "cbd-gummies",
-            "title": "Chill Gummies"
+            "title": "Chill Gummies",
+            "coming_soon_link": ""
           }
         },
         "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
@@ -319,7 +386,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
             "collection": "cbd-smokes",
-            "title": "Chill Smokes"
+            "title": "Chill Smokes",
+            "coming_soon_link": ""
           }
         },
         "3b6372a0-4677-429a-bf82-20402b224607": {
@@ -327,7 +395,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Gummies_Bundle.jpg",
             "collection": "cbd-gummies",
-            "title": "Gummies Bundle"
+            "title": "Gummies Bundle",
+            "coming_soon_link": ""
           }
         },
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
@@ -335,7 +404,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
             "collection": "cbd-smokes",
-            "title": "Smokes Bundle"
+            "title": "Smokes Bundle",
+            "coming_soon_link": ""
           }
         }
       },
@@ -467,7 +537,7 @@
         "title_size_mobile": 46,
         "title_weight_mobile": 800,
         "use_h1": false,
-        "text": "",
+        "text": "<p><\/p>",
         "enlarge_text": true,
         "button_label_1": "Shop Gummies",
         "button_url_1": "shopify:\/\/collections\/cbd-gummies",
@@ -601,6 +671,7 @@
     "1660761564dddf193c",
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "1635927863703110df",
+    "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
     "16359278676808bea5",
     "166149763181cc2acb",
     "1661495934a2300196",
