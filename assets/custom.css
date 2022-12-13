@@ -2822,6 +2822,23 @@ body {
 .section-main-product .product-detail .detail .product-form .not-in-quickbuy .shopify-app-block .okeReviews {
   margin: 16px 0 10px 0;
 }
+.section-main-product .product-detail .detail .product-form .chill_holiday_sale_text {
+  border-radius: 4rem;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: red;
+  font-style: italic;
+}
+.section-main-product .product-detail .detail .product-form .chill_holiday_sale_text:last-child {
+  margin-bottom: 25px;
+}
+.section-main-product .product-detail .detail .product-form .chill_holiday_sale_text.richtext-hidden {
+  display: none;
+}
 .section-main-product .product-detail .detail .product-form .title-row .title {
   font-size: 24px;
   font-weight: 900;
