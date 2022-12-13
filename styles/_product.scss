@@ -129,6 +129,23 @@
                         }
                     }
                 }
+                .chill_holiday_sale_text{
+                    border-radius: 4rem;
+                    font-size: 16px;
+                    font-weight: 900;
+                    font-family: "Open Sans", sans-serif;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: red;
+                    font-style: italic;
+                    &:last-child{
+                        margin-bottom: 25px;
+                    }
+                }
+                .chill_holiday_sale_text.richtext-hidden{
+                    display: none;
+                }
                 .title-row{
                     .title{
                         font-size: 24px;
