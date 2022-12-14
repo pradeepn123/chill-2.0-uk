@@ -82,6 +82,18 @@
             "size_chart_page": ""
           }
         },
+        "b5e3cb6a-2287-4d88-a8fa-bb13e759fdf1": {
+          "type": "richtext",
+          "settings": {
+            "custom_class_product_page": "chill_holiday_sale_text",
+            "richtext": "<p>Extra 20% off at checkout until midnight 24th December<\/p>",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
         "3102f34a-bede-4e71-913e-ac198794cf3f": {
           "type": "accordion",
           "settings": {
@@ -118,18 +130,6 @@
             "show_in_quickbuy": false
           }
         },
-        "b5e3cb6a-2287-4d88-a8fa-bb13e759fdf1": {
-          "type": "richtext",
-          "settings": {
-            "custom_class_product_page": "chill_holiday_sale_text",
-            "richtext": "<p>Extra 20% off at checkout until midnight 24th December<\/p>",
-            "icon": "",
-            "icon_size": "small",
-            "enable_box": false,
-            "box_color": "#e0f4d5",
-            "show_in_quickbuy": false
-          }
-        },
         "5c017c1f-8127-4b80-9140-910ef66994aa": {
           "type": "richtext",
           "settings": {
@@ -154,10 +154,10 @@
         "variant_picker",
         "1072fffa-d0ca-4ea2-83de-da32d08ff8ac",
         "buy_buttons",
+        "b5e3cb6a-2287-4d88-a8fa-bb13e759fdf1",
         "3102f34a-bede-4e71-913e-ac198794cf3f",
         "e59b1427-26d2-4855-83da-5e917a6d964d",
         "f631a81f-1f59-4f8f-9ed7-0d2e00bed3f1",
-        "b5e3cb6a-2287-4d88-a8fa-bb13e759fdf1",
         "5c017c1f-8127-4b80-9140-910ef66994aa"
       ],
       "settings": {
