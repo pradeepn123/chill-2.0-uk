@@ -2,12 +2,12 @@
   .chill-story-section {
     background: {{ section.settings.bg_color }};
   }
-  .chill-story-section .chill-story-section-wrapper .chill-story-left-sec,
+  .chill-story-section .chill-story-section-wrapper .chill-story-left-sec h1,
   .chill-story-section .chill-story-section-wrapper .chill-story-right-sec {
     color: {{ section.settings.text_color }};
   }
   @media(min-width:1200px) {
-    .chill-story-section .chill-story-section-wrapper .chill-story-left-sec p {
+    .chill-story-section .chill-story-section-wrapper .chill-story-left-sec h1 p {
       font-size: {{ section.settings.text_font_size }}px !important;
     }
   }
@@ -38,7 +38,9 @@
   <div class="container">
     <div class="chill-story-section-wrapper">
       <div class="chill-story-left-sec">
-        {{ section.settings.title }}
+        <h1>
+          {{ section.settings.title }}
+        </h1>
       </div>
       <div class="chill-story-right-sec">
         {{ section.settings.text }}

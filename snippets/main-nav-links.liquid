@@ -57,8 +57,8 @@
                 <div class="mega_menu_wrapper">
                   <div class="mega_menu_title">
                     <ul class="menu-mega-nav">
-                      <h4 class="main_coll_title">{{ section.settings.mega_collection_heading }}
-                      </h4>
+                      <h2 class="main_coll_title">{{ section.settings.mega_collection_heading }}
+                      </h2>
                       {%- for block in section.blocks -%}
                         {%- assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip -%}
                         {%- if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-large' -%}
