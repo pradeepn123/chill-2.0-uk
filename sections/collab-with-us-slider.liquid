@@ -1,0 +1,61 @@
+<!-- <div class="slider_wrapper">
+    <div class="slider_images">
+        {% for block in section.blocks %}
+            <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="slider_images">
+        {% endfor %}
+    </div>    
+</div> -->
+<div id="collab_with_us_gallery">
+    {% for block in section.blocks %}
+      {% if block.settings.slider_image != blank %}
+        <img src="{{ block.settings.slider_image | img_url: 'master' }}" alt="slider_images">
+      {% endif %}
+    {% endfor %}
+</div>
+<!-- "max_blocks": 6, -->
+{% schema %}
+{
+    "name": "Collab with us Slider",
+    
+    "blocks": [
+        {
+            "type": "select",
+            "name": "select",
+            "settings": [
+                {
+                    "id": "slider_image",
+                    "type": "image_picker",
+                    "label": "Slider Images"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "AffiliateSlider",
+        "settings": {
+        },
+        "blocks": [
+            {
+                "type": "select"
+            },
+            {
+                "type": "select"
+            },
+            {
+                "type": "select"
+            },
+            {
+                "type": "select"
+            },
+            {
+                "type": "select"
+            },
+            {
+                "type": "select"
+            }
+        ]
+      }
+    ]
+}
+{% endschema %}
