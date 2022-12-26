@@ -3,15 +3,9 @@
     "main": {
       "type": "new_brands",
       "settings": {
-        "banner_image_position_desktop": "center center",
-        "banner_image_position_mobile": "center center",
         "logo_image_bg_color": "#F2F2F3",
-        "brand_name": "",
-        "brand_description": "",
-        "learn_more_button_link": "",
         "learn_more_button_bg_color": "#9792E4",
         "learn_more_button_text_color": "#FFFFFF",
-        "video_button_link": "",
         "video_button_color": "#9792E4",
         "video_button_text_color": "#9792E4",
         "overlay_style": "shadow",
