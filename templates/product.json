@@ -84,6 +84,7 @@
         },
         "b5e3cb6a-2287-4d88-a8fa-bb13e759fdf1": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "custom_class_product_page": "chill_holiday_sale_text",
             "richtext": "<p>Extra 20% off at checkout until midnight 24th December<\/p>",
