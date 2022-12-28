@@ -22,6 +22,26 @@
                 img{
                     width: 100%;
                 }
+                h1{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 24px;
+                    margin-bottom: 18px;
+                    color: #000;
+                    font-weight: 800;
+                    @media(min-width:1200px){
+                        font-size: 42px;
+                    }
+                    p{
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 24px;
+                        color: #000;
+                        font-weight: 800;
+                        margin-bottom: 18px;
+                        @media(min-width:1200px){
+                            font-size: 42px;
+                        }
+                    }
+                }
                 h3{
                     font-family: 'Open Sans', sans-serif;
                     font-size: 24px;
