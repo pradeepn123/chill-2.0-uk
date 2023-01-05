@@ -6588,7 +6588,7 @@ body.cart-drawer-open {
 }
 .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list-parent {
   flex: 1 0 auto;
-  height: 100%;
+  height: calc(100vh - 40%);
   overflow: scroll;
 }
 .cart-drawer-summary .cart-drawer-summary__inner .cart-drawer-summary__item-list-parent .cart-drawer__message {
