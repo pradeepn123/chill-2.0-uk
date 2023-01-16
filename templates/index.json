@@ -28,7 +28,7 @@
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
       "type": "marquee",
       "settings": {
-        "marquee_text": "EXTRA 20% OFF AT CHECKOUT",
+        "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
         "marquee_background_color": "#9792e4",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
@@ -645,7 +645,7 @@
       "type": "apps",
       "blocks": {
         "17bdc8b1-555f-4abb-98d9-dde254415202": {
-          "type": "shopify:\/\/apps\/tikshop-tiktok-insta-feeds\/blocks\/tikshop-shoptrade\/9cc01fbc-7a70-4c25-8768-b96d953c7a70",
+          "type": "shopify:\/\/apps\/checkit-formerly-tikshop\/blocks\/tikshop-shoptrade\/9cc01fbc-7a70-4c25-8768-b96d953c7a70",
           "settings": {
           }
         }
