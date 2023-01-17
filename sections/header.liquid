@@ -86,24 +86,24 @@
                   <ul class="navigation__tier-1">
                     {% for link in linklists[section.settings.menu_linklist].links %}
                       {%- liquid
-                        assign has_dropdown = false
-                        if link.links != blank
-                          assign has_dropdown = true
-                        endif
-                        assign use_columns = false
-                        if link.levels >= 2
-                          assign use_columns = true
-                        else
-                          assign link_title_sanitised = link.title | downcase | strip
-                          for block in section.blocks
-                            assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip
-                            if dropdown_link_title_sanitised == link_title_sanitised
-                              assign use_columns = true
-                              assign has_dropdown = true
-                            endif
-                          endfor
-                        endif
-                      -%}
+                                                                                                                                                                                          assign has_dropdown = false
+                                                                                                                                                                                          if link.links != blank
+                                                                                                                                                                                            assign has_dropdown = true
+                                                                                                                                                                                          endif
+                                                                                                                                                                                          assign use_columns = false
+                                                                                                                                                                                          if link.levels >= 2
+                                                                                                                                                                                            assign use_columns = true
+                                                                                                                                                                                          else
+                                                                                                                                                                                            assign link_title_sanitised = link.title | downcase | strip
+                                                                                                                                                                                            for block in section.blocks
+                                                                                                                                                                                              assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip
+                                                                                                                                                                                              if dropdown_link_title_sanitised == link_title_sanitised
+                                                                                                                                                                                                assign use_columns = true
+                                                                                                                                                                                                assign has_dropdown = true
+                                                                                                                                                                                              endif
+                                                                                                                                                                                            endfor
+                                                                                                                                                                                          endif
+                                                                                                                                                                                        -%}
                       <li class="navigation__item{% if has_dropdown %} navigation__item--with-children {% if use_columns %}navigation__item--with-mega-menu{% else %}navigation__item--with-small-menu{% endif %}{% endif %}{% if featured_links contains link.title %} featured-link{% endif %}{% if link.active %} navigation__item--active{% endif %}">
                         <a href="{{ link.url }}" class="navigation__link" {% if has_dropdown %}aria-haspopup="true"aria-expanded="false"aria-controls="NavigationTier2-{{ forloop.index }}"{% endif %} onclick="$('#coverScreen').show(); document.body.style.overflow='hidden';">
                           {{- link.title | escape -}}
@@ -217,7 +217,7 @@
                 </a>
               {% endif %}
             {% endif %}
-            
+
             <a href="{% if settings.cart_type != "drawer" %}{{ routes.cart_url }}{% else %}#{% endif %}" class="cart-link">
               <span class="cart-link__icon {%if section.settings.cart_icon == 'custom' %}custom_bag{% endif %}">
                 {%- if section.settings.cart_icon == 'basket' -%}
@@ -360,11 +360,27 @@
                       {% for link in suggestions_menu.links %}
                         {% if link.object.products != blank %}
                           <div class="search-suggestions__item search-suggestions__item--with-row">
-                            
+                            {%- comment -%}
+                              <div class="search-suggestions__heading h5-style heading-font">
+                              <a href="{{ link.url }}">{{ link.title | escape }}
+                              </a>
+                              </div>
+                            {%- endcomment -%}
                             <div class="search-suggestions__item-row">
-                              {% for child_link in link.object.products limit:4 %}
+                              {% for child_link in link.object.products limit: 4 %}
                                 <div class="search-suggestions__item">
-                                 
+                                  {%- comment -%}
+                                    {% if child_link.type == 'collection_link' %}
+                                    {% render 'collection-block', collection: child_link, custom_aspect_ratio: collection_aspect_ratio, manual_image_load: true %}
+                                    {% elsif child_link.type == 'product_link' %}
+
+                                    {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
+
+                                    {% else %}
+                                    <a class="search-suggestions__link" href="{{ child_link.url }}">{{ child_link.title | escape }}
+                                    </a>
+                                    {% endif %}
+                                  {%- endcomment -%}
                                   {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
                                 </div>
                               {% endfor %}
@@ -372,13 +388,66 @@
                           </div>
                         {% else %}
                           <div class="search-suggestions__item">
-                            {% if link.type == 'collection_link' %}
+                            {%- for child_link in link.object.products limit: 4 -%}
+                              {% if link.type == 'collection_link' %}
+                                {% render 'collection-block', collection: child_link, custom_aspect_ratio: collection_aspect_ratio, manual_image_load: true %}
+                              {% elsif link.type == 'product_link' %}
+                                {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
+                              {% else %}
+                                <a class="search-suggestions__link" href="{{ link.url }}">{{ link.title | escape }}
+                                </a>
+                              {% endif %}
+                            {%- endfor -%}
+                            {%- comment -%}
+                              {% if link.type == 'collection_link' %}
                               {% render 'collection-block', collection: link.object, custom_aspect_ratio: collection_aspect_ratio, manual_image_load: true %}
-                            {% elsif link.type == 'product_link' %}
+                              {% elsif link.type == 'product_link' %}
                               {% render 'product-block', product: link.object, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
-                            
-                              
-                            {% endif %}
+                              {% else %}
+                              <a class="search-suggestions__link" href="{{ link.url }}">{{ link.title | escape }}
+                              </a>
+                              {% endif %}
+                            {%- endcomment -%}
+                            {%- comment -%}
+                              <div class="ruby-grid ruby-grid-lined desktop-only">
+                              <div class="ruby-row {% if forloop.first %}active{% endif%}">
+                              {% for product in collection.products limit: 4 %}
+                              <div class="ruby-col-3">
+                              {%- assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image -%}
+                              <div class="product_image_wrapper">
+                              <a href="{{ product.url }}">
+                              {%- assign img_url = featured_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
+                              <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}">
+                              </a>
+                              </div>
+
+                              <div class="product_title">
+                              <h4>{{ product.title }}
+                              </h4>
+                              </div>
+
+                              {%- liquid
+                              assign product_vendor_handle = product.vendor | handle
+                              if collections[product_vendor_handle].handle == product_vendor_handle
+                              assign vendor_url = collections[product_vendor_handle].url
+                              else
+                              assign vendor_url = product.vendor | url_for_vendor
+                              endif
+                              -%}
+                              <div class="vendor lightly-spaced-row" {{ block.shopify_attributes }}>
+                              <!-- <span class="product-detail-label">{{ 'products.product.vendor' | t }}</span> -->
+                              {% if product != blank %}
+                              {{ product.vendor | link_to: vendor_url }}
+                              {% else %}
+                              {{ 'onboarding.product.vendor' | t }}
+                              {% endif %}
+                              </div>
+
+                              </div>
+                              {% endfor %}
+                              </div>
+                              </div>
+                            {%- endcomment -%}
                           </div>
                         {% endif %}
                       {% endfor %}
@@ -552,7 +621,7 @@
       }, {
         "type": "text",
         "id": "mega_collection_heading",
-        "label": "Colletion Heading",
+        "label": "Collection Heading",
         "default": "By Collection"
       }, {
         "type": "text",
@@ -709,7 +778,13 @@
             "type": "text",
             "id": "title",
             "label": "Title"
-          }, {
+          }, 
+          {
+            "type": "text",
+            "id": "collection_title",
+            "label": "Collection title"
+          },
+          {
             "type": "url",
             "id": "link_url",
             "label": "Link URL"
@@ -727,7 +802,13 @@
             "id": "dropdown_link_title",
             "label": "Link name",
             "info": "The name of any top-level link"
-          }, {
+          }, 
+          {
+            "type": "text",
+            "id": "collection_title",
+            "label": "Collection title"
+          },
+          {
             "type": "collection",
             "id": "collection",
             "label": "Collection"
