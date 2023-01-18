@@ -13,6 +13,11 @@
           line-height: 1em;
         {%- endif %}
       }
+      #section-id-{{ section.id }} .slide-{{ forloop.index }} .overlay-text__button{
+        background: {{ block.settings.button_background_color }};
+        color: {{ block.settings.button_text_color }};
+        font-size: {{ block.settings.button_text_font_size }}px;
+      }
     {%- endfor -%}
 
     @media(min-width: 768px) {
@@ -30,7 +35,12 @@
             line-height: 1em;
           {%- endif %}
         }
-      {%- endfor -%}
+        #section-id-{{ section.id }} .slide-{{ forloop.index }} .overlay-text__button{
+          background: {{ block.settings.button_background_color }};
+          color: {{ block.settings.button_text_color }};
+          font-size: {{ block.settings.button_text_font_size }}px;
+        }
+      {%- endfor -%} 
     }
 
     @media(min-width: 1100px) {
@@ -41,8 +51,23 @@
             line-height: 1em;
           {%- endif %}
         }
+        #section-id-{{ section.id }} .slide-{{ forloop.index }} .overlay-text__button{
+          background: {{ block.settings.button_background_color }};
+          color: {{ block.settings.button_text_color }};
+          font-size: {{ block.settings.button_text_font_size }}px;
+        }
       {%- endfor -%}
     }
+    {%- for block in section.blocks -%}
+      {% if forloop.length == 1 %}
+        #section-id-{{ section.id }} .overlay-text{
+          margin-left: 0 !important;
+        }
+        #section-id-{{ section.id }} .overlay-text__inner{
+          padding-left: 0 !important;
+        }
+      {% endif %}
+    {%- endfor -%}
   {% endstyle %}
 
   {%- unless section.settings.full_width -%}
@@ -431,7 +456,7 @@
             "step": 2,
             "unit": "px",
             "label": "Mobile heading text size",
-            "default": 46
+            "default": 46 
           }, {
             "type": "checkbox",
             "id": "use_h1",
@@ -476,6 +501,27 @@
             "type": "url",
             "id": "button_url_2",
             "label": "Button 2 link"
+          },
+          {
+            "type": "color",
+            "id": "button_background_color",
+            "label": "Button background color",
+            "default": "#F3B09F"
+          },
+          {
+            "type": "color",
+            "id": "button_text_color",
+            "label": "Button text color",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "range",
+            "id": "button_text_font_size",
+            "label": "Button text font-size",
+            "min": 10,
+            "max": 50,
+            "step": 1,
+            "default": 20
           }, {
             "type": "select",
             "id": "text_alignment",

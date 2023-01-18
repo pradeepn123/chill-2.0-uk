@@ -1052,7 +1052,8 @@
           "721b392b-54e3-4cd9-ae56-3cddef5b2b48": {
             "type": "menu-promotion-large",
             "settings": {
-              "dropdown_link_title": "shop",
+              "dropdown_link_title": "Shop",
+              "collection_title": "",
               "collection": "cbd-gummies",
               "text_alignment": "center"
             }
@@ -1062,6 +1063,7 @@
             "disabled": true,
             "settings": {
               "dropdown_link_title": "shop",
+              "collection_title": "",
               "collection": "all-pouches",
               "text_alignment": "center"
             }
@@ -1069,7 +1071,8 @@
           "55dfc561-5ebf-4ef6-8975-0757fbd445b6": {
             "type": "menu-promotion-large",
             "settings": {
-              "dropdown_link_title": "shop",
+              "dropdown_link_title": "Shop",
+              "collection_title": "",
               "collection": "cbd-smokes",
               "text_alignment": "center"
             }
@@ -1077,7 +1080,26 @@
           "1d7d58fe-2d9c-4b8a-b029-540d37e51ff2": {
             "type": "menu-promotion-large",
             "settings": {
-              "dropdown_link_title": "shop",
+              "dropdown_link_title": "Shop",
+              "collection_title": "",
+              "collection": "shop",
+              "text_alignment": "center"
+            }
+          },
+          "5c8d73e8-47d2-4a09-a9ab-3f6f5381e9a5": {
+            "type": "menu-promotion-large",
+            "settings": {
+              "dropdown_link_title": "Brands",
+              "collection_title": "",
+              "collection": "zoetic",
+              "text_alignment": "center"
+            }
+          },
+          "0cd121c8-2c74-49ac-b55d-87d6dba521a4": {
+            "type": "menu-promotion-large",
+            "settings": {
+              "dropdown_link_title": "Brands",
+              "collection_title": "Chill",
               "collection": "shop",
               "text_alignment": "center"
             }
@@ -1087,7 +1109,9 @@
           "721b392b-54e3-4cd9-ae56-3cddef5b2b48",
           "1b792ef3-cee8-4951-be61-e8cc8c94491c",
           "55dfc561-5ebf-4ef6-8975-0757fbd445b6",
-          "1d7d58fe-2d9c-4b8a-b029-540d37e51ff2"
+          "1d7d58fe-2d9c-4b8a-b029-540d37e51ff2",
+          "5c8d73e8-47d2-4a09-a9ab-3f6f5381e9a5",
+          "0cd121c8-2c74-49ac-b55d-87d6dba521a4"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Chill_logo.png",
@@ -1100,7 +1124,7 @@
           "mega_collection_heading": "By Collection",
           "shop_text": "",
           "shop_link": "",
-          "menu_linklist": "new-main-menu",
+          "menu_linklist": "new-menu",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-left",
           "nav_featured_link": "Sale",

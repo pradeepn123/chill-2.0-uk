@@ -3,11 +3,11 @@
     "main": {
       "type": "new_brands",
       "settings": {
-        "logo_image_bg_color": "#F2F2F3",
-        "learn_more_button_bg_color": "#9792E4",
-        "learn_more_button_text_color": "#FFFFFF",
-        "video_button_color": "#9792E4",
-        "video_button_text_color": "#9792E4",
+        "logo_image_bg_color": "#f2f2f3",
+        "learn_more_button_bg_color": "#9792e4",
+        "learn_more_button_text_color": "#ffffff",
+        "video_button_color": "#9792e4",
+        "video_button_text_color": "#9792e4",
         "overlay_style": "shadow",
         "coll_num_per_page_int": 24,
         "grid": 4,

@@ -75,28 +75,31 @@
     },
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_Group_122.png",
+            "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner_Mobile.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "Welcome <br> <strong>Mad Tasty<\/strong>",
+            "title": "Welcome <br> <strong>Zoetic<\/strong>",
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Recreational supplements brand that uses natural functional ingredients to encourage authentic relaxation<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
+            "text": "<p>Our choice for premium CBD tinctures and cosmetics.<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
             "enlarge_text": true,
-            "button_label_1": "SHOP MAD TASTY",
+            "button_label_1": "SHOP NOW",
             "button_url_1": "shopify:\/\/collections\/zoetic",
             "button_label_2": "",
             "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
             "text_alignment": "center left"
           }
         },
@@ -104,6 +107,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
@@ -120,6 +124,9 @@
             "button_url_1": "",
             "button_label_2": "Shop all",
             "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
             "text_alignment": "center center"
           }
         }
