@@ -80,7 +80,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/zoetic-desktop-banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner_Mobile.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
