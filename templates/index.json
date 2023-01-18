@@ -79,7 +79,7 @@
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
+            "image": "shopify:\/\/shop_images\/zoetic-desktop-banner.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner_Mobile.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
@@ -97,9 +97,6 @@
             "button_url_1": "shopify:\/\/collections\/zoetic",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
             "text_alignment": "center left"
           }
         },
@@ -124,9 +121,6 @@
             "button_url_1": "",
             "button_label_2": "Shop all",
             "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
             "text_alignment": "center center"
           }
         }
