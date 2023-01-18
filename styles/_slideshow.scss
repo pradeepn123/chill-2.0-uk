@@ -1,4 +1,4 @@
-.section-slideshow #section-id-template--15687495385243__11e074f4-f0cf-4c14-809f-ad7bc475a5cc{
+.section-slideshow #section-id-template--15687495385243__11e074f4-f0cf-4c14-809f-ad7bc475a5cc, #section-id-template--15771290828955__11e074f4-f0cf-4c14-809f-ad7bc475a5cc{
     .slick-prev, .slick-next{
         border: 0px;
         background: #fff;
@@ -50,6 +50,9 @@
             background: #F2F2F3;
             margin-left: 0;
             text-align: left;
+            .overlay-text__title, .overlay-text__rte{
+                color: #000000 !important;
+            }
         // .slick-dots{
         //     display: none !important;
         // }
