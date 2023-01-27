@@ -28,7 +28,7 @@
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
       "type": "marquee",
       "settings": {
-        "marquee_text": "EXTRA 20% OFF AT CHECKOUT",
+        "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
         "marquee_background_color": "#9792e4",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
@@ -79,8 +79,8 @@
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner_Mobile.jpg",
+            "image": "shopify:\/\/shop_images\/zoetic-desktop-banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
@@ -90,16 +90,13 @@
             "title_size_mobile": 46,
             "use_h1": false,
             "text": "<p>Our choice for premium CBD tinctures and cosmetics.<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#ffffff",
+            "heading_color": "#171717",
+            "text_color": "#171717",
             "enlarge_text": true,
             "button_label_1": "SHOP NOW",
             "button_url_1": "shopify:\/\/collections\/zoetic",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
             "text_alignment": "center left"
           }
         },
@@ -124,9 +121,6 @@
             "button_url_1": "",
             "button_label_2": "Shop all",
             "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
             "text_alignment": "center center"
           }
         }
