@@ -2627,6 +2627,7 @@ body {
 }
 .section-featured-collection .main_heading_collection .hometitle p {
   margin-bottom: 0;
+  color: #000000;
 }
 .section-featured-collection .main_heading_collection .hometitle strong {
   font-weight: 800;
