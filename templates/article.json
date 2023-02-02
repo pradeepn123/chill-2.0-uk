@@ -13,9 +13,25 @@
         "enable_title_overlay": false,
         "overlay_style": "no_background"
       }
+    },
+
+    "ab044cb5-abb6-419e-930d-c643f48c5baa": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "zoetic",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ab044cb5-abb6-419e-930d-c643f48c5baa"
   ]
 }
