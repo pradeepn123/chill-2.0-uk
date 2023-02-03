@@ -97,6 +97,9 @@
             "button_url_1": "shopify:\/\/collections\/zoetic",
             "button_label_2": "",
             "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
             "text_alignment": "center left"
           }
         },
@@ -121,6 +124,9 @@
             "button_url_1": "",
             "button_label_2": "Shop all",
             "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
             "text_alignment": "center center"
           }
         }
@@ -524,6 +530,7 @@
     },
     "8f5264ca-7f1d-4235-b07d-2de00dd54813": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Recycle_Banner_-_DESKTOP_1.jpg",
         "mobile_image": "shopify:\/\/shop_images\/RECYCLE_Banner_MOBILE.jpg",

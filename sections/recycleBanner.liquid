@@ -1,0 +1,111 @@
+{% style %}
+  .gummies-button {
+    background: {{ section.settings.button-background-color}};
+    color: {{ section.settings.gummies-text-color}};
+    border: 1px solid{{ section.settings.gummies-border-color}};
+    font-size: {{ section.settings.btn_font_size}}px;
+    font-weight: {{ section.settings.btn_font_weight}};
+    border-radius: 29px;
+    padding: 9px 26px;
+  }
+  @media screen and (max-width:768px) {
+    .gummies-button {
+      font-size: {{ section.settings.mobilebtn_font_size }}px !important;
+    }
+  }
+{% endstyle %}
+<div class="metafield-gummies-img-mobile">
+  {% assign image_url = product.metafields.custom.mobile_recycle_banner %}
+  {% if image_url != blank %}
+    <div class="desktop-recycle-img">
+      <img
+        class="lazyload"
+        data-src="{{ image_url }}"
+        data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+        data-aspectratio="{{ image_url.aspect_ratio }}"
+        data-sizes="auto"
+        alt="recycle-img">
+    </div>
+  {% endif %}
+</div>
+<div class="metafield-gummies-img">
+  {% assign image_recycle = product.metafields.custom.gummies_recycle_banner %}
+  {% if image_recycle != blank %}
+    <div class="desktop-recycle-img">
+      <img
+        class="lazyload"
+        data-src="{{ image_recycle }}"
+        data-widths="[180, 220, 300, 360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+        data-aspectratio="{{ image_recycle.aspect_ratio }}"
+        data-sizes="auto"
+        alt="recycle-img">
+    </div>
+    <a href="{{section.settings.btn-link}}" class="gummies-button">{{ section.settings.gummies-img-button }}</a>
+  {% endif %}
+</div>
+{% schema %}
+  {
+    "name": "Recycle Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "gummies-img-button",
+        "label": "gummies-Button",
+        "default": "shop Now"
+      },
+      {
+        "type": "range",
+        "id": "btn_font_size",
+        "label": "Button font size",
+        "min": 14,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "range",
+        "id": "btn_font_weight",
+        "label": "Button font weight",
+        "min": 500,
+        "max": 900,
+        "step": 100,
+        "default": 600
+      },
+      {
+        "type": "range",
+        "id": "mobilebtn_font_size",
+        "label": "Mobile font size",
+        "min": 2,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "default": 10
+      }, {
+        "type": "color",
+        "id": "button-background-color",
+        "label": "Button background color",
+        "default": "#000000"
+      }, {
+        "type": "color",
+        "id": "gummies-text-color",
+        "label": "Button text color",
+        "default": "#FFFFFF"
+      }, {
+        "type": "color",
+        "id": "gummies-border-color",
+        "label": "Button border color"
+      }, {
+        "type": "url",
+        "id": "btn-link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Recycle Banner",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

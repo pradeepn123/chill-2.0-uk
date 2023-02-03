@@ -144,6 +144,7 @@
                                 class="cart-drawer-summary-item__title"
                                 href="{{ item.url }}">
                                 {{ item.product.title | replace: "Auto renew", "" | replace: "10.00% Off", "" }}
+                                <span class="cart-drawer-summary-item__varient_pack">{{ item.product.metafields.custom.product_varient_pack }}</span>
                               </a>
                               <div class="cart-drawer-summary-item__price">
                                 {% if has_subscriptions and item.product.metafields.subscriptions.discount_percentage %}
