@@ -305,3 +305,27 @@
 #template input[type=password]{
     border-radius: 50px;
 }
+
+.blog_product_recommendation{
+    position: relative;
+    .prev{
+        position: absolute;
+        top: 50%;
+        left: -5%;
+    }
+    .next{
+        position: absolute;
+        top: 50%;
+        right: -5%;
+    }
+    .collection-slider{
+        .main_heading_collection{
+            .hometitle{
+
+            }
+        }
+        .collection-listing{
+                             
+        }
+    }
+}

@@ -4975,6 +4975,19 @@ body {
   border-radius: 50px;
 }
 
+.blog_product_recommendation {
+  position: relative;
+}
+.blog_product_recommendation .prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+.blog_product_recommendation .next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+}
 .container.cf {
   max-width: 100%;
   margin: 0 !important;
