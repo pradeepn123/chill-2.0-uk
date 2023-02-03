@@ -32,7 +32,7 @@
     "30e621d1-a9e1-4922-b903-2dc85142e691": {
       "type": "blog-featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Related <strong>Products<\/strong>",
         "collection": "cbd-gummies",
         "show_vendor": false,
         "enable_carousel": true,
