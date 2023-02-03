@@ -36,7 +36,7 @@
         "collection": "cbd-gummies",
         "show_vendor": false,
         "enable_carousel": true,
-        "grid": 4,
+        "grid": 3,
         "rows": 1,
         "use_alt_bg": true,
         "show_view_all": true,
