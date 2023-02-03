@@ -183,6 +183,19 @@
         "heading": ""
       }
     },
+    "c7fd0966-7ada-4861-be05-e24cbfe80551": {
+      "type": "recycleBanner",
+      "settings": {
+        "gummies-img-button": "SHOP GUMMIES",
+        "btn_font_size": 14,
+        "btn_font_weight": 600,
+        "mobilebtn_font_size": 12,
+        "button-background-color": "#9792e4",
+        "gummies-text-color": "#FFFFFF",
+        "gummies-border-color": "#9792e4",
+        "btn-link": "shopify:\/\/collections\/cbd-gummies"
+      }
+    },
     "16639198461c244067": {
       "type": "product-image-with-text",
       "settings": {
@@ -253,6 +266,7 @@
   "order": [
     "main",
     "16639327190d7e5cec",
+    "c7fd0966-7ada-4861-be05-e24cbfe80551",
     "16639198461c244067",
     "16645486535bae9f49",
     "1664344743b1e4a5f5",

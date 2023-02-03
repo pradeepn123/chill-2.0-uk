@@ -371,6 +371,12 @@ body.cart-drawer-open {
                     @media(min-width:1200px){
                         font-size: 18px;
                     }
+                    .cart-drawer-summary-item__varient_pack {
+                        font-size: 12px !important;
+                        font-weight: normal;
+                        padding-top: 10px;
+                        display: block;
+                    }
                 }
                 .variant{
                     font-size: 14px;
