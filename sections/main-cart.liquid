@@ -154,6 +154,7 @@
                   <div class="cart_item_description_container">
                     <a class="name cart_item_title" href="{{ item.url }}">{{ item.product.title }}
                     </a>
+                    <span class="cart-drawer-summary-item__varient_pack">{{ item.product.metafields.custom.product_varient_pack }}</span>
                     <div class="small-text">
                       {% if item.product.variants.size > 1 %}
                         <div class="variant">{{ item.variant.title | replace: '/', '|'}}

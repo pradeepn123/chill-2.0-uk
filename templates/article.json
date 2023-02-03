@@ -14,9 +14,9 @@
         "overlay_style": "no_background"
       }
     },
-
     "ab044cb5-abb6-419e-930d-c643f48c5baa": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "zoetic",
@@ -28,10 +28,25 @@
         "show_view_all": true,
         "full_width": true
       }
+    },
+    "30e621d1-a9e1-4922-b903-2dc85142e691": {
+      "type": "blog-featured-collection",
+      "settings": {
+        "title": "Related <strong>Products<\/strong>",
+        "collection": "cbd-gummies",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 3,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": true,
+        "full_width": false
+      }
     }
   },
   "order": [
     "main",
-    "ab044cb5-abb6-419e-930d-c643f48c5baa"
+    "ab044cb5-abb6-419e-930d-c643f48c5baa",
+    "30e621d1-a9e1-4922-b903-2dc85142e691"
   ]
 }
