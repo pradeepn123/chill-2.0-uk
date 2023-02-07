@@ -4545,7 +4545,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   font-size: 16px;
-  gap: 16px;
+}
+.account_login .opposing-items .btn, .account_login .action_bottom .btn, .account_register .opposing-items .btn, .account_register .action_bottom .btn {
+  margin-bottom: 16px;
 }
 .account_login .opposing-items p, .account_login .opposing-items span, .account_login .action_bottom p, .account_login .action_bottom span, .account_register .opposing-items p, .account_register .opposing-items span, .account_register .action_bottom p, .account_register .action_bottom span {
   color: #000;
@@ -6671,7 +6673,6 @@ body.cart-drawer-open {
   justify-content: space-between;
   font-family: Open Sans;
   border-bottom: 1px solid #E9E9F3;
-  position: sticky;
   top: 0;
   background: #FFF;
   z-index: 999999;
@@ -6800,6 +6801,7 @@ body.cart-drawer-open {
   opacity: 1;
   z-index: 99999999;
   transform: translate3d(0, 0, 0);
+  overflow: auto;
 }
 .cart-drawer-summary .cart-drawer-summary__inner #quick-view-product-drawer {
   position: fixed;

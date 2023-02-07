@@ -73,7 +73,6 @@ body.cart-drawer-open {
             justify-content: space-between;
             font-family: Open Sans;
             border-bottom: 1px solid #E9E9F3;
-            position: sticky;
             top: 0;
             background: #FFF;
             z-index: 999999;
@@ -203,6 +202,7 @@ body.cart-drawer-open {
             opacity: 1;
             z-index: 99999999;                
             transform: translate3d(0, 0, 0);
+            overflow: auto;
         }
 
         #quick-view-product-drawer {
