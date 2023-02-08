@@ -2585,6 +2585,15 @@ body {
   top: -28%;
 }
 
+.ql-editor {
+  font-size: 36px !important;
+}
+@media (min-width: 1200px) {
+  .ql-editor {
+    font-size: 52px !important;
+  }
+}
+
 /* brand_logo_list css here */
 .brand_logo_list .hometitle.spaced-row {
   margin-bottom: 0;
