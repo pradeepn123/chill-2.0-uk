@@ -174,6 +174,7 @@
                 <h2 class="h1-style title">{{ 'onboarding.product.product_title' | t }}</h2>
               {% endif %}
             </div>
+            {{product.metafields.custom.product_varient_pack}}
 
           {% when 'price' %}
             <div class="price-container" {{ block.shopify_attributes }}>
@@ -314,7 +315,7 @@
                   </div>
                 {% endif %}
               </div>
-
+          {% comment %}
           {% when 'vendor' %}
             {%- liquid
               assign product_vendor_handle = product.vendor | handle
@@ -331,7 +332,7 @@
               {% else %}
                 {{ 'onboarding.product.vendor' | t }}
               {% endif %}
-            </div>
+            </div>{% endcomment %}
 
           {% when 'sku' %}
             <div class="sku {% if current_variant and current_variant.sku == blank %}sku--no-sku{% endif %}" {{ block.shopify_attributes }}>
