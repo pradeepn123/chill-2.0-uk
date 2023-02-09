@@ -156,6 +156,14 @@
                 <h1 class="title">{{ product.title }}</h1>
               </div>
 
+              {% if product.metafields.custom.product_varient_pack.value == 'Zoetic' %}
+                <div class="underline "><a href="{{collections.zoetic.url}}">
+                  {{product.metafields.custom.product_varient_pack}}
+                </a></div>
+              {%else%}
+                <div class="underline " style="text-decoration: none;"> {{product.metafields.custom.product_varient_pack}}</div>
+              {%endif%}
+
             {% when 'description' %}
               <div class="{% unless block.settings.show_in_quickbuy %}not-in-quickbuy{% endunless %}{% if block.settings.show_in_tab %} product-detail-accordion{% endif %}" {{ block.shopify_attributes }}>
                 {% if block.settings.show_in_tab %}
@@ -180,8 +188,10 @@
                         </div>
                       {% else %}
                         <div class="product-description-short">
-                          {{ product.description | truncate: 152, "... " }}
-                          <a class="readmore" href="#">Read More</a>
+                          {{ product.description | truncate: 500, "... " }}
+                          {%if product.description.size >=500 %}
+                            <a class="readmore" href="#">Read More</a>
+                           {%endif%}
                         </div>
                         <div class="product-description-full">
                           {{ product.description }}
@@ -197,7 +207,7 @@
                   </div>
                 {% endif %}
               </div>
-
+              {% comment %}
             {% when 'vendor' %}
               {%- liquid
                 assign product_vendor_handle = product.vendor | handle
@@ -209,8 +219,9 @@
               -%}
               <div class="vendor lightly-spaced-row" {{ block.shopify_attributes }}>
                 <!-- <span class="product-detail-label">{{ 'products.product.vendor' | t }}</span> -->
-                 {{ product.vendor | link_to: vendor_url, class: 'underline' }}
-              </div>
+                {{ product.vendor | link_to: vendor_url, class: 'underline' }}
+              </div> {% endcomment %}
+              
 
             {% when 'pro_custom_icon' %}
               {% if product.metafields.settings.product_icons.value != blank %}

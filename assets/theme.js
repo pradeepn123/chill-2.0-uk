@@ -6697,8 +6697,10 @@
         if ($('body').toggleClass('show-search').hasClass('show-search')) {
           setTimeout(function () {$('.main-search__input:first').focus();}, 500);
           $('.main-search__suggestions .lazyload--manual').removeClass('lazyload--manual').addClass('lazyload');
+          theme.ProductBlockManager.loadImages($('.search-suggestions'));
         } else {
           $('.show-search-link:first').focus();
+          theme.ProductBlockManager.loadImages($('.search-suggestions'));
         }
         return false;
       });

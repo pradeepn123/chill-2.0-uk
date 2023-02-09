@@ -156,15 +156,20 @@
                         }
                     }
                 }
-                .vendor{
-                    a.underline{
+                // .vendor{
+                    .underline{
                         text-transform: uppercase;
                         font-size: 16px;
                         font-weight: 600;
                         font-family: 'Open Sans', sans-serif;
-                        text-decoration: none;
+                        text-decoration:underline;
+                        margin-bottom: 1em !important;
+                        .text-decoration{
+                            text-decoration: none !important;
+                        }
                     }
-                }
+                   
+                // }
                 .product_custom_icons{
                     margin: 30px 0;
                     .product_custom_icons_list{
