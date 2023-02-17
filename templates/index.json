@@ -133,7 +133,6 @@
         },
         "a9c60b10-7dcd-483d-829a-b953aa21e538": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/CBD_Homepage_Banner.jpg",
             "mobile_image": "shopify:\/\/shop_images\/CBD_Homepage_Banner_Mobile.jpg",
