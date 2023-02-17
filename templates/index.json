@@ -97,8 +97,8 @@
             "button_url_1": "shopify:\/\/collections\/zoetic",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#F3B09F",
-            "button_text_color": "#FFFFFF",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -108,8 +108,9 @@
           "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
+            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "left center",
             "slide_link": "",
             "subheading": "Tell your story",
             "title": "Two line\nslide heading",
@@ -124,6 +125,34 @@
             "button_url_1": "",
             "button_label_2": "Shop all",
             "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center center"
+          }
+        },
+        "a9c60b10-7dcd-483d-829a-b953aa21e538": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CBD_Homepage_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/CBD_Homepage_Banner_Mobile.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "Tell your story",
+            "title": "What is \n<stroke> CBD? <stroke><\/stroke><\/stroke>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Your questions answered<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "read now",
+            "button_url_1": "shopify:\/\/blogs\/chill-blog\/chill-blog",
+            "button_label_2": "Shop all",
+            "button_url_2": "",
             "button_background_color": "#F3B09F",
             "button_text_color": "#FFFFFF",
             "button_text_font_size": 20,
@@ -133,7 +162,8 @@
       },
       "block_order": [
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1"
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
+        "a9c60b10-7dcd-483d-829a-b953aa21e538"
       ],
       "settings": {
         "height": "fixed",
