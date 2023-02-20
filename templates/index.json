@@ -3,14 +3,14 @@
     "1660761564dddf193c": {
       "type": "background-video",
       "settings": {
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/00c560e103194a97b467b83ddae34b88.mp4",
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
         "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
         "subheading": "",
         "title": "Cool <br> <span>Calm<\/span> &amp; <br>Carefree",
         "title_size": 112,
         "title_size_mobile": 50,
         "use_h1": true,
-        "text": "<p>Find peace with functional products made from all-natural ingredients.<\/p>",
+        "text": "<p>Find peace with functional products <br\/>made from all-natural ingredients.<\/p>",
         "enlarge_text": true,
         "button_label_1": "SHOP NOW",
         "button_url_1": "shopify:\/\/collections\/shop",
@@ -152,8 +152,8 @@
             "button_url_1": "shopify:\/\/blogs\/chill-blog\/chill-blog",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#F3B09F",
-            "button_text_color": "#FFFFFF",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
