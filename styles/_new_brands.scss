@@ -19,8 +19,8 @@
         .logo_area .logo_image{
             border: 4px solid #FFFFFF;
             border-radius: 50%;
-            width: 250px;
-            height: 250px;
+            width: 14.375rem;
+            height: 14.375rem;
             position: absolute;
             top: 30%;
             left: 3%;
@@ -161,6 +161,21 @@
             height: 240px;
         }
     }
-#shopify-section-template--15743870271643__main .utility-bar{
+#shopify-section-template--16050208407710__main .utility-bar{
     padding: 38px 0;
+}
+.custom_collection_main{
+    background: #F2F2F3;
+    .filter-container{
+        .filters{
+            .filters__inner{
+                top: 0;
+            }
+        }
+    } 
+    @media (max-width: 999px){
+        .utility-bar-main{
+            margin-bottom: 0 !important;
+        }
+    }
 }

@@ -7870,8 +7870,8 @@ body.cart-drawer-open {
 .collection_banner_wrapper .new_brand_banner_container .logo_area .logo_image {
   border: 4px solid #FFFFFF;
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 14.375rem;
+  height: 14.375rem;
   position: absolute;
   top: 30%;
   left: 3%;
@@ -8017,8 +8017,20 @@ body.cart-drawer-open {
   }
 }
 
-#shopify-section-template--15743870271643__main .utility-bar {
+#shopify-section-template--16050208407710__main .utility-bar {
   padding: 38px 0;
+}
+
+.custom_collection_main {
+  background: #F2F2F3;
+}
+.custom_collection_main .filter-container .filters .filters__inner {
+  top: 0;
+}
+@media (max-width: 999px) {
+  .custom_collection_main .utility-bar-main {
+    margin-bottom: 0 !important;
+  }
 }
 
 .section-slideshow .slick-prev, .section-slideshow .slick-next {
