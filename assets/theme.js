@@ -3684,7 +3684,6 @@
         });
         // new url
         newUrl = location.pathname + "?" + queryVals.toString();
-        newUrl = newUrl.replace('&', '?');
         // load
         this.functions.ajaxLoadUrl.call(this, newUrl);
       },
