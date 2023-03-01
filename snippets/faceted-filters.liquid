@@ -19,7 +19,7 @@
                   <a class="filter-group__applied-item" href="{{ value.url_to_remove }}">
                     <span class="filter-group__applied-item__text">
                       {% if filter.type == 'boolean' %}
-                        {{ filter.label | escape  }}:
+                        {{ filter.label | escape }}:
                       {% endif %}
                       {{ value.label | escape }}
                     </span>
@@ -139,33 +139,68 @@
             -%}
             {%- if filter_values_to_show_count > 0 -%}
               <div class="filter-group{% if filter_group_is_swatch %} filter-group--swatch filter-group--layout-{{ settings.filter_swatch_layout }}{% elsif section.settings.filter_two_columns %}{% if filter.type == 'boolean' or filter.type == 'list'%} filter-group--layout-two-column{% endif %}{% endif %}">
-                <a href="#" class="filter-group__heading{% if collapse_filters %} toggle-target-toggler--is-hidden{% endif %}" data-toggle-target=".filter-group--{{ forloop.index | plus: 1 }}">
+                <a href="#" class="filter-group__heading" data-toggle-target=".filter-group--{{ forloop.index | plus: 1 }}">
                   <div class="filter-group__heading__text">{{ filter.label | escape }}</div>
                   <span class="filter-group__heading__indicator">{% render 'svg-chevron-down', stroke_width: 1.3 %}</span>
                 </a>
-                <div class="filter-group__items filter-group--{{ forloop.index | plus: 1 }} toggle-target{% if collapse_filters %} toggle-target--hidden{% endif %}">
+                <div class="filter-group__items filter-group--{{ forloop.index | plus: 1 }} toggle-target">
                   <div class="toggle-target-container">
                     {% case filter.type %}
                     {% when 'boolean' or 'list' %}
-                      {%- for value in filter.values -%}
-                        {%- if section.settings.show_disabled_filters or value.count > 0 or value.active -%}
-                          <label class="filter-group__item{% if value.active %} filter-group__item--active{% endif %}{% if value.count == 0 and value.active == false %} filter-group__item--disabled{% endif %}" data-tag="{{ value.label | handle }}"{% if filter_group_is_swatch %} data-swatch="{{ value.label | replace: '"', '' | downcase }}"{% endif %}>
-                            <input class="filter-group__checkbox"
-                              id="Filter-{{ value.param_name }}-{{ value.value | handle }}"
-                              type="checkbox"
-                              name="{{ value.param_name }}"
-                              value="{{ value.value | escape }}"
-                              {% if value.active %}checked{% endif %}
-                              {% if value.count == 0 and value.active == false %}disabled{% endif %}>
-
-                            <span class="filter-group__item__text">{{ value.label }}</span>
-                            {% if section.settings.show_filter_counts and filter_group_is_swatch == false %}
-                              <span class="filter-group__item__count">{{ value.count }}</span>
-                            {% endif %}
-                          </label>
-                        {%- endif -%}
-                      {%- endfor -%}
-
+                      {%- liquid
+                        assign is_any_filter_selected = false
+                        for value in filter.values
+                          if value.active and is_any_filter_selected == false
+                            assign is_any_filter_selected = true
+                          endif
+                        endfor
+                      -%}
+                      {% unless is_any_filter_selected %}
+                        <div class="filter_limited" style="display: block">
+                          {%- for value in filter.values limit: 9 -%}
+                            {%- if section.settings.show_disabled_filters or value.count > 0 or value.active -%}
+                              <label class="filter-group__item{% if value.active %} filter-group__item--active{% endif %}{% if value.count == 0 and value.active == false %} filter-group__item--disabled{% endif %}" data-tag="{{ value.label | handle }}"{% if filter_group_is_swatch %} data-swatch="{{ value.label | replace: '"', '' | downcase }}"{% endif %}>
+                                <input class="filter-group__checkbox"
+                                  id="Filter-{{ value.param_name }}-{{ value.value | handle }}"
+                                  type="checkbox"
+                                  name="{{ value.param_name }}"
+                                  value="{{ value.value | escape }}"
+                                  {% if value.active %}checked{% endif %}
+                                  {% if value.count == 0 and value.active == false %}disabled{% endif %}
+                                >
+                                <span class="filter-group__item__text">{{ value.label }}</span>
+                                {% if section.settings.show_filter_counts and filter_group_is_swatch == false %}
+                                  <span class="filter-group__item__count">{{ value.count }}</span>
+                                {% endif %}
+                              </label>
+                            {%- endif -%}
+                          {%- endfor -%}
+                          {% if filter.values.size > 9 %}
+                            <div class="loadmore" data-forloop="{{ forloop.index | plus: 1 }}">+{{ filter.values.size | minus: 9 }} more </div>
+                          {% endif %}
+                        </div>
+                      {% endunless %}
+                      
+                      <div class="filter_full" {% unless is_any_filter_selected %}style="display: none"{% endunless %}>
+                        {%- for value in filter.values -%}
+                          {%- if section.settings.show_disabled_filters or value.count > 0 or value.active -%}
+                            <label class="filter-group__item{% if value.active %} filter-group__item--active{% endif %}{% if value.count == 0 and value.active == false %} filter-group__item--disabled{% endif %}" data-tag="{{ value.label | handle }}"{% if filter_group_is_swatch %} data-swatch="{{ value.label | replace: '"', '' | downcase }}"{% endif %}>
+                              <input class="filter-group__checkbox"
+                                id="Filter-{{ value.param_name }}-{{ value.value | handle }}"
+                                type="checkbox"
+                                name="{{ value.param_name }}"
+                                value="{{ value.value | escape }}"
+                                {% if value.active %}checked{% endif %}
+                                {% if value.count == 0 and value.active == false %}disabled{% endif %}>
+                              
+                              <span class="filter-group__item__text">{{ value.label }}</span>
+                              {% if section.settings.show_filter_counts and filter_group_is_swatch == false %}
+                                <span class="filter-group__item__count">{{ value.count }}</span>
+                              {% endif %}
+                            </label>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
                     {% when 'price_range' %}
                       {% render 'price-range', filter: filter %}
 
@@ -178,7 +213,7 @@
         {%- endfor -%}
       {%- endif -%}
 
-      {% if section.settings.coll_show_sort %}
+      {% comment %} {% if section.settings.coll_show_sort %}
         <div class="filter-group mobile-only">
           <a href="#" class="filter-group__heading" data-toggle-target=".filter-group--sort">
             <div class="filter-group__heading__text">{{ 'collections.sorting.title' | t }}</div>
@@ -203,7 +238,7 @@
             </div>
           </div>
         </div>
-      {% endif %}
+      {% endif %} {% endcomment %}
 
       <noscript>
         <button type="submit" class="btn">{{ 'collections.filtering.submit' | t }}</button>

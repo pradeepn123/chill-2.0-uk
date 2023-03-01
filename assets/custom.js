@@ -296,6 +296,40 @@ function customFeatureProductSubcriptionEvents (){
       $('.close_card_info').click(function(){
         $(this).closest('.block-inner').find('.block-inner-card-info').removeClass('add_info_sub');
       });
+      const sortDropdownHeading = document.getElementById('sort-dropdown-heading')
+
+    if (sortDropdownHeading) {
+        sortDropdownHeading.addEventListener('click',  function() {
+            if (document.querySelector('.utility-bar .link-dropdown__button').hasAttribute('disabled')) {
+                document.querySelector('.utility-bar .link-dropdown__button').removeAttribute('disabled');
+                document.addEventListener('click', handleDocumentClick);
+            } else {
+                document.querySelector('.utility-bar .link-dropdown__button').setAttribute('disabled', 'disabled');
+                document.removeEventListener('click', handleDocumentClick);
+            }
+
+            document.querySelector('.utility-bar .link-dropdown__button-icon').toggleAttribute('active');
+        })
+    }
+
+    var loadMoreFilters = document.querySelectorAll('.loadmore');
+    if (loadMoreFilters.length) {
+        loadMoreFilters.forEach(el => el.addEventListener('click', function() {
+            var forloopIndex = this.dataset.forloop;
+            document.querySelectorAll('.filter-group--' + forloopIndex + ' .filter_full').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.filter-group--' + forloopIndex + ' .filter_limited').forEach(el => el.style.display = 'none');
+        }))
+    }
+}
+
+function handleDocumentClick(evt) {
+    const utilityBar = evt.target.closest(".utility-bar__right")
+    if (evt.target.closest("#sort-dropdown-heading") || (utilityBar && utilityBar.querySelector(".link-dropdown__button-text"))) {
+        return false
+    }
+    document.querySelector('.utility-bar .link-dropdown__button-icon').toggleAttribute('active');
+    document.querySelector('.utility-bar .link-dropdown__button').setAttribute('disabled', true);
+    document.removeEventListener('click', handleDocumentClick)
 }
 
 
