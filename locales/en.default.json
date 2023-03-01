@@ -257,9 +257,9 @@
     "filtering": {
       "filter": "Filter",
       "all": "All",
-      "heading": "Filter",
+      "heading": "Filter by",
       "applied_filters": "Applied filters",
-      "clear_all": "Clear all",
+      "clear_all": "Clear all filters",
       "out_of_stock_label": "Out of stock",
       "show_label": "Show",
       "hide_label": "Hide",
