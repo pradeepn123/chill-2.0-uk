@@ -541,6 +541,14 @@
                 display: flex;
                 flex-direction: column;
                 flex-basis: fit-content;
+                &.flex-direction{
+                    flex-direction: row;
+                }
+                @media (max-width: 320px){
+                    &.flex-direction{
+                        display: none;
+                    }
+                }
                 .new_in_block{
                     flex-basis: 50%;
                     border-radius: 50%;
