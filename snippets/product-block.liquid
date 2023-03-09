@@ -163,6 +163,7 @@
 
               {% render 'unit-price', variant: cheapest_variant %}
             </a>
+            <a href="/collections/{% if product.vendor == 'CHILL' %}shop {% else %}{{product.vendor }}{% endif %}" class="vendor_redirection">By <span>{{ product.vendor | camelcase }}</span></a>
             <div class="subscription_checkout_button">
               {% comment %}
               <div class="dynamic_checkout_btn">

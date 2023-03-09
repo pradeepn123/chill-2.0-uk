@@ -81,6 +81,13 @@ body.overflow-hidden {
 
                                 }                                        
                             }
+                            .vendor_redirection{
+                                font-size: 18px;
+                                span{
+                                    color: #000;
+                                    font-weight: 600;
+                                }
+                            }
                             .dynamic_checkout_btn{
                                 .shopify-payment-button__button{
                                     border: 1px solid #000000;

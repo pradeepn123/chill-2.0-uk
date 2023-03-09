@@ -69,6 +69,13 @@ body.overflow-hidden {
   white-space: nowrap;
   overflow: hidden;
 }
+.product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .vendor_redirection {
+  font-size: 18px;
+}
+.product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .vendor_redirection span {
+  color: #000;
+  font-weight: 600;
+}
 .product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .dynamic_checkout_btn .shopify-payment-button__button {
   border: 1px solid #000000;
   background: transparent;
