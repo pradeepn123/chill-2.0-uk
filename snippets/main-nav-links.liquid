@@ -49,7 +49,7 @@
 </a>
 
 <div id="NavigationTier2-{{ forloop.index }}{% if mobile %}-mob{% endif %}" class="navigation__tier-2-container navigation__child-tier">
-
+  {% assign forloopIndexOfNavMenu = forloop.index %}
   <div class="navigation__wide-promotion{% if block.settings.enable_fade %} navigation__wide-promotion--with-fade{% endif %}">
     <div class="container container--no-max">
 
@@ -170,99 +170,190 @@
     </div>
     </div>
     </div>
-    {% endcomment%}
+    {% endcomment %}
 
     </div>
   </div>
 
 {%- if link.links != blank or small_promo_count > 0 -%}
-<div class="container">
-<ul class="navigation__tier-2{% if use_columns %} navigation__columns navigation__columns--count-{{ column_count }}{% if column_count == 5 %} navigation__columns--5-cols{% elsif column_count > 5 %} navigation__columns--over-5-cols{% endif %}{% if small_promo_count > 0 %} navigation__columns--with-promos{% endif %}{% endif %}">
-{% if use_columns and link.levels == 1 %}
-<li class="navigation__item navigation__column">
-{% for child_link in link.links %}
-<a href="{{ child_link.url }}" class="navigation__link">
-{{- child_link.title | escape -}}
-</a>
-{% endfor %}
-</li>
-{% else %}
-{% for child_link in link.links %}
-<li class="navigation__item{% if child_link.links != blank %} navigation__item--with-children{% endif %}{% if use_columns %} navigation__column{% endif %}{% if featured_links contains child_link.title %} featured-link{% endif %}">
-<a href="{{ child_link.url }}" class="navigation__link{% if child_link.links != blank %} navigation__column-title{% endif %}" {% if child_link.links != blank %}aria-haspopup="true"aria-expanded="false"{% endif %}>
-{{- child_link.title | escape -}}
-</a>
-{% if child_link.links != blank %}
-<a class="navigation__children-toggle" href="#">{% render 'icon-toggle-menu', stroke_width: 1.3 %}
-</a>
-{% endif %}
-
-{% if child_link.links != blank %}
-<div class="navigation__tier-3-container navigation__child-tier">
-<ul class="navigation__tier-3">
-{% for child_child_link in child_link.links %}
-<li class="navigation__item{% if featured_links contains child_child_link.title %} featured-link{% endif %}">
-<a class="navigation__link" href="{{ child_child_link.url }}">{{ child_child_link.title | escape }}
-</a>
-</li>
-{% endfor %}
-</ul>
-</div>
-{% endif %}
-</li>
-{% endfor %}
-{% endif %}
-
-{%- if small_promo_count > 0 -%}
-{%- if mobile == false -%}
-  {%- for block in section.blocks -%}
-    {%- assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip -%}
-    {%- if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-small' -%}
-      <li class="desktop-only navigation__column navigation__column--promotion">
-        <div class="menu-promotion">
-          {%- if block.settings.link_url != blank -%}
-            <a class="menu-promotion__link" href="{{ block.settings.link_url }}">
-          {%- endif -%}
-          <div class="menu-promotion__image">
-            {%- render 'responsive-image', image: block.settings.image, manual_image_load: true -%}
-          </div>
-          {%- if block.settings.title != blank -%}
-            <div class="menu-promotion__text">{{ block.settings.title | escape }}
-            </div>
-          {%- endif -%}
-          {%- if block.settings.link_url != blank -%}
-            </a>
-          {%- endif -%}
-        </div>
-      </li>
-    {%- endif -%}
-  {%- endfor -%}
-    {%- else -%}
-    <li class="navigation__column navigation__column--promotion{% if section.settings.enable_mobile_promo_carousel and link.links.size > 0 %} navigation__column--promotion-carousel{% endif %}">
-      {%- for block in section.blocks -%}
-        {%- assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip -%}
-        {%- if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-small' -%}
-          <div class="menu-promotion">
-            {%- if block.settings.link_url != blank -%}
-              <a class="menu-promotion__link" href="{{ block.settings.link_url }}">
-            {%- endif -%}
-              <div class="menu-promotion__image">
-                {%- render 'responsive-image', image: block.settings.image, manual_image_load: true -%}
-              </div>
-              {%- if block.settings.title != blank -%}
-                <div class="menu-promotion__text">{{ block.settings.title | escape }}
-                </div>
-              {%- endif -%}
-            {%- if block.settings.link_url != blank -%}
+    <div class="container">
+      <ul class="navigation__tier-2{% if use_columns %} navigation__columns navigation__columns--count-{{ column_count }}{% if column_count == 5 %} navigation__columns--5-cols{% elsif column_count > 5 %} navigation__columns--over-5-cols{% endif %}{% if small_promo_count > 0 %} navigation__columns--with-promos{% endif %}{% endif %}">
+        {% if use_columns and link.levels == 1 %}
+          <li class="navigation__item navigation__column">
+            {% for child_link in link.links %}
+              <a href="{{ child_link.url }}" class="navigation__link">
+                {{- child_link.title | escape -}}
               </a>
+            {% endfor %}
+          </li>
+        {% else %}
+          {% for child_link in link.links %}
+            <li class="navigation__item{% if child_link.links != blank %} navigation__item--with-children{% endif %}{% if use_columns %} navigation__column{% endif %}{% if featured_links contains child_link.title %} featured-link{% endif %}">
+              <a href="{{ child_link.url }}" class="navigation__link{% if child_link.links != blank %} navigation__column-title{% endif %}" {% if child_link.links != blank %}aria-haspopup="true"aria-expanded="false"{% endif %}>
+                {% if forloopIndexOfNavMenu == 2 %}
+                  {%- assign featured_image = child_link.object.featured_image -%}                                   
+                  {%- assign img_url = featured_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
+                  <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}">                                                    
+                  <span class="navbar_collection_link">Shop {{ child_link.title | escape }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"/>
+                    </svg>
+                  </span>
+                {% else %}
+                  {{ child_link.title | escape }}
+                {% endif %}
+              </a> 
+              {% if child_link.links != blank %}
+                <a class="navigation__children-toggle" href="#">
+                  {% comment %} {% render 'icon-toggle-menu', stroke_width: 1.3 %} {% endcomment %}
+                  <svg xmlns="http://www.w3.org/2000/svg" class="plus-toggle-svg" width="24" height="24" viewBox="0 0 24 24">
+                    <g id="Group_8121" data-name="Group 8121" transform="translate(2795 13839) rotate(90)">
+                      <rect id="Rectangle_3447" data-name="Rectangle 3447" width="24" height="24" transform="translate(-13839 2771)" fill="none"/>
+                      <path id="Union_109" data-name="Union 109" d="M-12138,13687.5v-5.5h-5.5a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h5.5v-5.5a.5.5,0,0,1,.5-.5.5.5,0,0,1,.5.5v5.5h5.5a.5.5,0,0,1,.5.5.5.5,0,0,1-.5.5h-5.5v5.5a.5.5,0,0,1-.5.5A.5.5,0,0,1-12138,13687.5Z" transform="translate(-1690 -10899)"/>
+                    </g>
+                  </svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="minus-toggle-svg" width="24" height="24" viewBox="0 0 24 24" style="opacity: 0; display: none;">
+                    <g id="Group_8113" data-name="Group 8113" transform="translate(2795 13839) rotate(90)">
+                      <rect id="Rectangle_3447" data-name="Rectangle 3447" width="24" height="24" transform="translate(-13839 2771)" fill="none"/>
+                      <rect id="Rectangle_3473" data-name="Rectangle 3473" width="13" height="1" rx="0.5" transform="translate(-13827.5 2789) rotate(-90)"/>
+                    </g>
+                  </svg>
+                </a>
+              {% endif %}
+
+              {% if child_link.links != blank %}
+                <div class="navigation__tier-3-container navigation__child-tier">
+                  <ul class="navigation__tier-3">
+                    {% for child_child_link in child_link.links %}
+                      <li class="navigation__item{% if featured_links contains child_child_link.title %} featured-link{% endif %}">
+                        <a class="navigation__link" href="{{ child_child_link.url }}">{{ child_child_link.title | escape }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        {% endif %}
+
+        {%- if small_promo_count > 0 -%}
+            {%- if mobile == false -%}
+              {%- for block in section.blocks -%}
+                {%- assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip -%}
+                  {%- if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-small' -%}
+                    <li class="desktop-only navigation__column navigation__column--promotion">
+                      <div class="menu-promotion">
+                        {%- if block.settings.link_url != blank -%}
+                          <a class="menu-promotion__link" href="{{ block.settings.link_url }}">
+                        {%- endif -%}
+                        <div class="menu-promotion__image">
+                          {%- render 'responsive-image', image: block.settings.image, manual_image_load: true -%}
+                        </div>
+                        {%- if block.settings.title != blank -%}
+                          <div class="menu-promotion__text">{{ block.settings.title | escape }}
+                          </div>
+                        {%- endif -%}
+                        {%- if block.settings.link_url != blank -%}
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    </li>
+                  {%- endif -%}
+              {%- endfor -%}
+            {%- else -%}
+              <li class="navigation__column navigation__column--promotion{% if section.settings.enable_mobile_promo_carousel and link.links.size > 0 %} navigation__column--promotion-carousel{% endif %}">
+                {%- for block in section.blocks -%}
+                  {%- assign dropdown_link_title_sanitised = block.settings.dropdown_link_title | downcase | strip -%}
+                  {%- if dropdown_link_title_sanitised == link_title_sanitised and block.type == 'menu-promotion-small' -%}
+                    <div class="menu-promotion">
+                      {%- if block.settings.link_url != blank -%}
+                        <a class="menu-promotion__link" href="{{ block.settings.link_url }}">
+                      {%- endif -%}
+                        <div class="menu-promotion__image">
+                          {%- render 'responsive-image', image: block.settings.image, manual_image_load: true -%}
+                        </div>
+                        {%- if block.settings.title != blank -%}
+                          <div class="menu-promotion__text">{{ block.settings.title | escape }}
+                          </div>
+                        {%- endif -%}
+                      {%- if block.settings.link_url != blank -%}
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                {%- endfor -%}
+              </li>
             {%- endif -%}
-          </div>
         {%- endif -%}
-      {%- endfor -%}
-    </li>
-    {%- endif -%}
-    {%- endif -%}
-    </ul>
+      </ul>
+      
+      
+
+
+      {% if forloopIndexOfNavMenu == 1 %}
+        {% style %}
+          @media (max-width: 1199px){
+            .first_loop_link{
+              display: none;
+            }
+          }
+        {% endstyle %}
+        {% comment %} Promotion block {% endcomment %}
+        <div class="promotion_container">
+          <div class="highlighted_promotions_container" {% if settings.promotion_banner == blank %} style="flex-direction: row;"{% endif %}>
+            <a href="{{ settings.new_in_link }}">
+            {% if settings.new_in_gif != blank %}
+                <div class="new_in_block" {% if settings.promotion_banner == blank %} style="margin-right: 15px;"{% endif %}>
+                  {{ settings.new_in_gif | replace: "<iframe", "<iframe class='animated_gif'" }}
+                </div>
+            {% elsif settings.new_in_image != blank and collection.product_count > 0 %}
+                <div class="new_in_block" {% if settings.promotion_banner == blank %} style="margin-right: 15px;"{% endif %}>
+                  {%- assign new_in_img_url = settings.new_in_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
+                  <img class="lazyload promotion_banner_img" data-src="{{ new_in_img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}">
+                </div>
+            {% endif %}
+          </a>
+
+            {% if settings.sale_gif != blank %}
+              <a href="{{ settings.sale_link }}">
+                <div class="sale_image_block" {% if settings.promotion_banner == blank %} style="margin-left: 15px;"{% endif %}>
+                  {{ settings.sale_gif | replace: "<iframe", "<iframe class='animated_gif'" }}
+                </div>
+              </a>
+            {% elsif settings.sale_image != blank and collection.product_count > 0 %}
+              <a href="{{ settings.sale_link }}">
+                <div class="sale_image_block" {% if settings.promotion_banner == blank %} style="margin-left: 15px;"{% endif %}>
+                  {%- assign sale_img_url = settings.sale_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
+                  <img class="lazyload promotion_banner_img" data-src="{{ sale_img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}">
+                </div>
+              </a>
+            {% endif %}
+          </div>
+          {% if settings.promotion_banner != blank %}
+            <span class="br"></span>
+            <div class="promotion_banner_container"> 
+              <a href="{{ settings.promotion_banner_link }}">
+                {%- assign img_url = settings.promotion_banner | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
+                <img class="lazyload promotion_banner_img" data-src="{{ img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}"> 
+              </a>
+                {% if mobile %}
+                  <span class="promotion_banner_text_mobile">{{ settings.promotion_banner_text_mobile }}</span>
+                {% else %}
+                  <span class="promotion_banner_text">{{ settings.promotion_banner_text }}</span>
+                {% endif %}
+            </div>
+          {% endif %}
+        </div>
+        <span class="first_loop_link">
+          <a href="/collections/shop-all" class="navbar_collection_link">Shop All
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"/>
+            </svg>
+          </a>
+        </span>
+      {% endif %}
     </div>
     {%- endif -%}
     </div>
@@ -308,6 +399,7 @@
     {% endif %}
   </li>
 </ul>
+
 {%- comment -%}
   <script>
     document.querySelector('.navigation__item .country_selector').addEventListener('click', function(){

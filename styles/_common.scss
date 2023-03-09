@@ -393,10 +393,13 @@ body.overflow-hidden {
                     border-bottom: 1px solid #E6E6F1;
                     .navigation__link{
                         color: #000000;
-                        font-size: 18px;
+                        font-size: 17px;
                         font-weight: 600;
                         padding: 20px;
                         font-family: 'Open Sans', sans-serif;
+                        @media (max-width: 320px){
+                            font-size: 14px;
+                        }
                     }
                     #NavigationTier2-1-mob{
                         .navigation__wide-promotion{

@@ -4201,7 +4201,8 @@
         if (doOpen) {
           $(this).parent().addClass('navigation__item--open');
           var $childContainer = $(this).siblings('.navigation__tier-3-container');
-          $childContainer.css('height', $childContainer.children().outerHeight());
+          // $childContainer.css('height', $childContainer.children().outerHeight());
+          $childContainer.css('height', 'fit-content');
         } else {
           $(this).parent().removeClass('navigation__item--open');
           $(this).siblings('.navigation__tier-3-container').css('height', '');
