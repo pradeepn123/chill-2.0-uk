@@ -305,7 +305,7 @@
         {% assign sale_collection = collections[settings.sale_link] %}
 
         <div class="promotion_container">
-          <div class="highlighted_promotions_container" {% if settings.promotion_banner == blank %} style="flex-direction: row;"{% endif %}>
+          <div class="highlighted_promotions_container {% if settings.promotion_banner == blank %} flex-direction{% endif %}" >
             <a href="/collections/{{ settings.new_in_link }}">
             {% if settings.new_in_gif != blank and new_in_collection != blank %}
                 <div class="new_in_block" {% if settings.promotion_banner == blank %} style="margin-right: 15px;"{% endif %}>
@@ -331,7 +331,7 @@
             {% endif %}
           </a>
           </div>
-          {% if settings.promotion_banner != blank or new_in_collection != blank or sale_collection != blank %}
+          {% if settings.promotion_banner != blank and new_in_collection != blank or sale_collection != blank %}
             <span class="br"></span>
           {% endif %}
           {% if settings.promotion_banner != blank %}
