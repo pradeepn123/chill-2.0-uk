@@ -1046,12 +1046,12 @@
     "product_currency_code_enabled": false,
     "enable_domain_redirect": true,
     "new_in_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/sBOuxu0YKcGFQZXYmt\" width=\"480\" height=\"301\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen=\"\"><\/iframe>",
-    "new_in_link": "shopify:\/\/collections\/new-in",
+    "new_in_link": "new-in",
     "sale_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/LiZa2iGWbYe9aCfIiG\" width=\"480\" height=\"301\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen><\/iframe>",
-    "sale_link": "shopify:\/\/collections\/sales",
+    "sale_link": "sales",
     "promotion_banner": "shopify:\/\/shop_images\/CHILL_BANNER.jpg",
     "promotion_banner_text": "<p>FLAT 20% OFF<\/p><p>ON ALL GUMMIES<\/p>",
-    "promotion_banner_text_mobile": "<p>FLAT 20% <strong>OFF<\/strong><\/p>",
+    "promotion_banner_text_mobile": "<p>FLAT 20% <\/p><p><strong>OFF<\/strong><\/p>",
     "promotion_banner_link": "shopify:\/\/collections\/cbd-gummies",
     "sections": {
       "header": {
