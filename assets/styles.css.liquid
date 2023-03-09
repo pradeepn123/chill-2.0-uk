@@ -2109,16 +2109,18 @@ body {
   .pageheader--layout-inline-permitted + #main-nav .navigation--main .navigation__tier-1 {
     height: 0;
   }
-  .pageheader--layout-inline-permitted + #main-nav .navigation--main .navigation__tier-1 > .navigation__item > .navigation__link,
-.pageheader--layout-inline-permitted + #main-nav .navigation--main .navigation__tier-1 > .navigation__item > .navigation__children-toggle {
-    display: none;
-  }
   .pageheader--layout-inline-permitted + #main-nav .navigation--main .navigation__tier-2-container {
     border-top: 0;
   }
 
   .logo-area__middle--logo-image {
     line-height: 0px;
+  }
+}
+@media (min-width: 1200px){
+  .pageheader--layout-inline-permitted + #main-nav .navigation--main .navigation__tier-1 > .navigation__item > .navigation__link,
+  .pageheader--layout-inline-permitted + #main-nav .navigation--main .navigation__tier-1 > .navigation__item > .navigation__children-toggle {
+    display: none !important;
   }
 }
 .header-disclosures {
@@ -2193,7 +2195,7 @@ body {
   opacity: 0;
   transition: opacity 500ms cubic-bezier(0.55, 0.03, 0.37, 0.96);
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1199px) {
   .page-shade,
 .header-shade {
     z-index: 7000;
@@ -2468,9 +2470,10 @@ body {
   .navigation .navigation__item--with-small-menu > .navigation__tier-2-container {
     display: block;
     left: 0;
-    width: max-content;
+    width: 100%;
+    /* width: max-content;
     min-width: 170px;
-    max-width: 280px;
+    max-width: 280px; */
     border-left: 1px solid {{ head_nav_div_col }};
     border-right: 1px solid {{ head_nav_div_col }};
   }
@@ -2538,12 +2541,9 @@ body {
     font-size: 0.8em;
     line-height: 1.2em;
     font-weight: 500;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     opacity: 0.7;
-  }
-  .navigation .navigation__columns .navigation__column:not(.navigation__column--promotion) .navigation__children-toggle {
-    display: none;
   }
   .navigation .navigation__columns .navigation__column:not(.navigation__column--promotion) .navigation__tier-3 {
     display: block;
@@ -2989,9 +2989,9 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
   transition-delay: 0s;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1199px) {
   .reveal-mobile-nav .page-shade,
-.reveal-mobile-nav .header-shade {
+.reveal-mobile-nav .header-shade{
     height: 100%;
     opacity: 1;
     pointer-events: auto;

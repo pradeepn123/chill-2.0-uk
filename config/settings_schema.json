@@ -1408,5 +1408,62 @@
           "default": true
       }
     ]
+  },
+  {
+    "name": "Navbar promotion block",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "new_in_image",
+        "label": "New-in promotion image"
+      },
+      {
+        "type": "html",
+        "id": "new_in_gif",
+        "info": "Upload .gif file to GIPHY and add the embedded code here. NOTE: Add code from <iframe> to </iframe> only.",
+        "label": "New-in promotion GIF"
+      },
+      {
+        "type": "url",
+        "id": "new_in_link",
+        "label": "New-in link"
+      },
+      {
+        "type": "image_picker",
+        "id": "sale_image",
+        "label": "Sale Image"
+      },
+      {
+        "type": "html",
+        "info": "Upload .gif file to GIPHY and add the embedded code here. NOTE: Add code from <iframe> to </iframe> only.",
+        "id": "sale_gif",
+        "label": "Sale GIF"
+      },
+      {
+        "type": "url",
+        "id": "sale_link",
+        "label": "Sale link"
+      },
+      {
+        "type": "image_picker",
+        "id": "promotion_banner",
+        "label": "Promotion Banner"
+      },
+      {
+        "type": "richtext",
+        "id": "promotion_banner_text",
+        "label": "Promotion banner text"
+      },
+      {
+        "type": "richtext",
+        "id": "promotion_banner_text_mobile",
+        "label": "Promotion banner text for mobile"
+      },
+      {
+        "type": "url",
+        "id": "promotion_banner_link",
+        "label": "Promotion banner link"
+      }
+    ]
   }
 ]
