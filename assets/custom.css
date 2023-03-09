@@ -1703,10 +1703,8 @@ body.overflow-hidden {
     padding: 12px 0 20px 0;
   }
 }
-@media (max-width: 320px) {
-  .filter_coll .utility-bar-main .utility-bar--sticky-mobile-copy {
-    padding: 12px 12px 20px 12px;
-  }
+.filter_coll .utility-bar-main .utility-bar--sticky-mobile-copy {
+  padding: 12px 12px 20px 12px;
 }
 .filter_coll .utility-bar-main .page-header {
   text-align: left;
