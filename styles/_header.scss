@@ -814,17 +814,19 @@
                     display: flex;
                     margin: 54px auto 0 auto;
                     width: 100%;
-                    justify-content: center;
-                    .promotion_banner_img{
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        margin: auto;
+                    justify-content: space-between;
+                    a{
                         flex-basis: 50%;
-                        position: relative;
-                        margin-right: auto 54px auto 0;
-                        @media (max-width: 375px){
-                            margin-right: 20px;
+                        margin-right: 54px;
+                        .promotion_banner_img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                            position: relative;
+                            margin: 0;
+                            @media (max-width: 374px){
+                                margin-right: 20px;
+                            }
                         }
                     }
                     .promotion_banner_text_mobile{
@@ -834,10 +836,10 @@
                         color: #5D93C7;
                         line-height: 1.2;
                         padding-bottom: 20px;
-                        margin: auto 0 auto 54px;
+                        margin: auto;
                         font-family: 'Open Sans';
                         text-align: left;
-                        flex-basis: 25%;
+                        flex-basis: 50%;
                         p{
                             margin: 0;
                         }
