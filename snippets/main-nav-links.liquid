@@ -301,14 +301,17 @@
           }
         {% endstyle %}
         {% comment %} Promotion block {% endcomment %}
+        {% assign new_in_collection = collections[settings.new_in_link] %}
+        {% assign sale_collection = collections[settings.sale_link] %}
+        
         <div class="promotion_container">
           <div class="highlighted_promotions_container" {% if settings.promotion_banner == blank %} style="flex-direction: row;"{% endif %}>
             <a href="{{ settings.new_in_link }}">
-            {% if settings.new_in_gif != blank %}
+            {% if settings.new_in_gif != blank and new_in_collection != blank %}
                 <div class="new_in_block" {% if settings.promotion_banner == blank %} style="margin-right: 15px;"{% endif %}>
                   {{ settings.new_in_gif | replace: "<iframe", "<iframe class='animated_gif'" }}
                 </div>
-            {% elsif settings.new_in_image != blank and collection.product_count > 0 %}
+            {% elsif settings.new_in_image != blank and new_in_collection != blank %}
                 <div class="new_in_block" {% if settings.promotion_banner == blank %} style="margin-right: 15px;"{% endif %}>
                   {%- assign new_in_img_url = settings.new_in_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
                   <img class="lazyload promotion_banner_img" data-src="{{ new_in_img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}">
@@ -316,13 +319,13 @@
             {% endif %}
           </a>
 
-            {% if settings.sale_gif != blank %}
+            {% if settings.sale_gif != blank and sale_collection != blank %}
               <a href="{{ settings.sale_link }}">
                 <div class="sale_image_block" {% if settings.promotion_banner == blank %} style="margin-left: 15px;"{% endif %}>
                   {{ settings.sale_gif | replace: "<iframe", "<iframe class='animated_gif'" }}
                 </div>
               </a>
-            {% elsif settings.sale_image != blank and collection.product_count > 0 %}
+            {% elsif settings.sale_image != blank and sale_collection != blank %}
               <a href="{{ settings.sale_link }}">
                 <div class="sale_image_block" {% if settings.promotion_banner == blank %} style="margin-left: 15px;"{% endif %}>
                   {%- assign sale_img_url = settings.sale_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
@@ -331,8 +334,10 @@
               </a>
             {% endif %}
           </div>
-          {% if settings.promotion_banner != blank %}
+          {% if settings.promotion_banner != blank or new_in_collection != blank or sale_collection != blank %}
             <span class="br"></span>
+          {% endif %}
+          {% if settings.promotion_banner != blank %}
             <div class="promotion_banner_container"> 
               <a href="{{ settings.promotion_banner_link }}">
                 {%- assign img_url = settings.promotion_banner | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
