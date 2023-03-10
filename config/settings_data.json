@@ -1045,7 +1045,7 @@
     "cart_custom_message_text": "",
     "product_currency_code_enabled": false,
     "enable_domain_redirect": true,
-    "new_in_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/sBOuxu0YKcGFQZXYmt\" width=\"480\" height=\"301\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen=\"\"><\/iframe>",
+    "new_in_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/mXy6UdxvWwnkBLiulI\" width=\"480\" height=\"480\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen><\/iframe>",
     "new_in_link": "new-in",
     "sale_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/LiZa2iGWbYe9aCfIiG\" width=\"480\" height=\"301\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen><\/iframe>",
     "sale_link": "sales",
