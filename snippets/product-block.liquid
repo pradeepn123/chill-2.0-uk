@@ -69,14 +69,16 @@
                                              else
                                                if active_media_found
                                                  assign active_media_found = false
-                                                 assign image_state_class = 'product-block__image--show-on-hover product-block__image--inactivated'
+                                                 assign image_state_class = 'product-block__image--show-on-hover'
                                                else
-                                                 assign image_state_class = 'product-block__image--inactivated'
+                                                 assign image_state_class = 'product-block__image--show-on-hover product-block__image--inactivated'
                                                endif
                                              endif
                                            -%}
                     <div class="product-block__image product-block__image--secondary rimage-wrapper lazyload--placeholder {{ image_state_class }}" data-media-id="{{ media.id }}" data-image-index="{{ forloop.index }}">
-                      <div class="lazyload--manual rimage-background fade-in{% if settings.prod_thumb_crop %} cover{% endif %}" data-lazy-bgset-src="{{ media.preview_image | img_url: 'master' }}" data-lazy-bgset-aspect-ratio="{{ media.preview_image.aspect_ratio }}" data-lazy-bgset-width="{{ media.preview_image.width }}" data-sizes="auto" data-parent-fit="{% if settings.prod_thumb_crop %}cover{% else %}contain{% endif %}"></div>
+                      <div class="lazyload--manual rimage-background fade-in{% if settings.prod_thumb_crop %} cover{% endif %}" data-lazy-bgset-src="{{ media.preview_image | img_url: 'master' }}" data-lazy-bgset-aspect-ratio="{{ media.preview_image.aspect_ratio }}" data-lazy-bgset-width="{{ media.preview_image.width }}" data-sizes="auto" data-parent-fit="{% if settings.prod_thumb_crop %}cover{% else %}contain{% endif %}">
+                        {%- render 'responsive-image', image: media.preview_image, manual_image_load: manual_image_load, min_aspect_ratio: 0.6, aspect_ratio: custom_aspect_ratio, no_max_width: true, cover: settings.prod_thumb_crop -%}
+                      </div>
                     </div>
                   {%- endfor -%}
                 {%- else -%}
