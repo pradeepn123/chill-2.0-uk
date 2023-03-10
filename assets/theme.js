@@ -6444,6 +6444,11 @@
 
   theme.CollectionTemplateSection = new function () {
     this.onSectionLoad = function (container) {
+      var $carousels = theme.loadCarousels(container);
+      // carousels load blocks after init
+      if ($carousels.length === 0) {
+        theme.ProductBlockManager.loadImages(container);
+      }
       this.namespace = theme.namespaceFromSection(container);
       this.$container = $(container);
 
@@ -6488,6 +6493,7 @@
     };
 
     this.onSectionUnload = function (container) {
+      theme.ProductBlockManager.unloadImages(container);
       this.filterer.destroy();
       $('.subcollection-links__expander', this.$container).off('click');
       $('.slick-slider', container).slick('unslick').off('init');
