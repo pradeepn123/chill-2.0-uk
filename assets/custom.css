@@ -49,6 +49,9 @@ body.overflow-hidden {
 .product-list .product-block .block-inner .block-inner-inner .product-info {
   padding: 0 20px 20px 20px;
 }
+.product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .product-link {
+  margin-bottom: 12px;
+}
 .product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .product-link .vendor {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -58,6 +61,7 @@ body.overflow-hidden {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0.4em 0 0.4em;
 }
 .product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .product-link .product-block__title {
   font-size: 20px;
@@ -68,6 +72,14 @@ body.overflow-hidden {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+.product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .vendor_redirection {
+  font-size: 18px;
+  color: #707070;
+}
+.product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .vendor_redirection span {
+  color: #000;
+  font-weight: 600;
 }
 .product-list .product-block .block-inner .block-inner-inner .product-info .inner .innerer .dynamic_checkout_btn .shopify-payment-button__button {
   border: 1px solid #000000;
@@ -3648,12 +3660,23 @@ body {
     font-size: 42px;
   }
 }
+.section-main-product .product-detail .detail .product-form .vendor_redirection {
+  font-size: 18px;
+  color: #BBBBBB;
+  display: block;
+  margin: 15px 0;
+}
+.section-main-product .product-detail .detail .product-form .vendor_redirection span {
+  color: #000;
+  font-weight: 600;
+}
 .section-main-product .product-detail .detail .product-form .product_variant {
   font-size: 14px;
-  color: #676869;
+  color: #000;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
-  cursor: none;
+  font-weight: 600;
+  font-size: 16px;
 }
 .section-main-product .product-detail .detail .product-form .product_variant.underline {
   font-size: 16px;

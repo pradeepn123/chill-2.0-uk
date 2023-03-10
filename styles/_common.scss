@@ -57,6 +57,7 @@ body.overflow-hidden {
                     .inner{
                         .innerer{
                             .product-link{
+                                margin-bottom: 12px;
                                 .vendor{
                                     font-size: 14px;
                                     font-family: 'Open Sans', sans-serif;
@@ -66,6 +67,7 @@ body.overflow-hidden {
                                     text-overflow: ellipsis;
                                     white-space: nowrap;
                                     overflow: hidden;
+                                    margin: 0.4em 0 0.4em;
                                 }
                                 .product-block__title{
                                     font-size: 20px;
@@ -76,10 +78,15 @@ body.overflow-hidden {
                                     text-overflow: ellipsis;
                                     white-space: nowrap;
                                     overflow: hidden;
+                                }                                      
+                            }
+                            .vendor_redirection{
+                                font-size: 18px;
+                                color: #707070;
+                                span{
+                                    color: #000;
+                                    font-weight: 600;
                                 }
-                                .product-price{
-
-                                }                                        
                             }
                             .dynamic_checkout_btn{
                                 .shopify-payment-button__button{
