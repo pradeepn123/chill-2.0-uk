@@ -1092,7 +1092,7 @@
             "settings": {
               "dropdown_link_title": "Shop",
               "collection_title": "",
-              "collection": "shop",
+              "collection": "shop-all",
               "text_alignment": "center"
             }
           },
@@ -1112,7 +1112,7 @@
             "settings": {
               "dropdown_link_title": "Brands",
               "collection_title": "Chill",
-              "collection": "shop",
+              "collection": "shop-all",
               "text_alignment": "center"
             }
           }
