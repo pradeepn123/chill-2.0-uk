@@ -156,13 +156,29 @@
                         }
                     }
                 }
-                
+                .vendor_redirection{
+                    font-size: 18px;
+                    color: #707070;
+                    padding-bottom: 3px;
+                    display: block;
+                    margin: 15px 0;
+                    width: fit-content;
+                    transition: border 130ms;
+                    span{
+                        color: #9792e4;
+                        font-weight: 600;
+                        &:hover{
+                            border-bottom: 2px solid #9792e4;
+                        }
+                    }
+                }
                 .product_variant{
                     font-size: 14px;
-                    color: #676869;
+                    color: #000;
                     font-family: 'Open Sans', sans-serif;
                     text-decoration:none;
-                    cursor: none ;
+                    font-weight: 600;
+                    font-size: 16px;
                     &.underline{
                         font-size: 16px;
                         text-decoration: underline !important;

@@ -381,7 +381,7 @@
                                     </a>
                                     {% endif %}
                                   {%- endcomment -%}
-                                  {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
+                                  {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true, show_vendor: false %}
                                 </div>
                               {% endfor %}
                             </div>
@@ -392,7 +392,7 @@
                               {% if link.type == 'collection_link' %}
                                 {% render 'collection-block', collection: child_link, custom_aspect_ratio: collection_aspect_ratio, manual_image_load: true %}
                               {% elsif link.type == 'product_link' %}
-                                {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true %}
+                                {% render 'product-block', product: child_link, custom_aspect_ratio: product_aspect_ratio, manual_image_load: true, show_vendor: false %}
                               {% else %}
                                 <a class="search-suggestions__link" href="{{ link.url }}">{{ link.title | escape }}
                                 </a>
@@ -488,7 +488,7 @@
                 </div>
                 <div class="product-list product-list--scrollarea">
                   {% for product in collections[section.settings.nav_mob_products_collection].products limit: 10 %}
-                    {% render 'product-block', product: product, no_swiping: true, no_quick_buy_markup: true, manual_image_load: true %}
+                    {% render 'product-block', product: product, no_swiping: true, no_quick_buy_markup: true, manual_image_load: true, show_vendor: true %}
                   {% endfor %}
                 </div>
               </div>

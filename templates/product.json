@@ -14,16 +14,21 @@
           "settings": {
           }
         },
+        "vendor": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "fb5cc85a-da40-49a9-b112-9f240263ca6f": {
+          "type": "vendor_redirection",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
             "show_tax_and_shipping": false,
             "enable_product_reviews_by_price": true
-          }
-        },
-        "vendor": {
-          "type": "vendor",
-          "settings": {
           }
         },
         "description": {
@@ -147,8 +152,9 @@
       "block_order": [
         "04ea0ec9-7068-4678-a85a-c3170bb2d27e",
         "title",
-        "price",
         "vendor",
+        "fb5cc85a-da40-49a9-b112-9f240263ca6f",
+        "price",
         "description",
         "divider",
         "26d0afe5-d620-457e-89e4-f23bf6f1e94d",
@@ -191,7 +197,7 @@
         "btn_font_weight": 600,
         "mobilebtn_font_size": 12,
         "button-background-color": "#9792e4",
-        "gummies-text-color": "#FFFFFF",
+        "gummies-text-color": "#ffffff",
         "gummies-border-color": "#9792e4",
         "btn-link": "shopify:\/\/collections\/cbd-gummies"
       }
