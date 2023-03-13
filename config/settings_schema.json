@@ -1413,6 +1413,11 @@
     "name": "Navbar promotion block",
     "settings": [
       {
+        "type": "collection",
+        "id": "shop_all_link",
+        "label": "Shop-all link"
+      },
+      {
         "type": "image_picker",
         "id": "new_in_image",
         "label": "New-in promotion image"

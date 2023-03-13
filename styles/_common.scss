@@ -83,9 +83,13 @@ body.overflow-hidden {
                             .vendor_redirection{
                                 font-size: 18px;
                                 color: #707070;
+                                padding-bottom: 3px;
                                 span{
-                                    color: #000;
+                                    color: #9792e4;
                                     font-weight: 600;
+                                    &:hover{
+                                        border-bottom: 2px solid #9792e4;
+                                    }
                                 }
                             }
                             .dynamic_checkout_btn{
@@ -145,7 +149,7 @@ body.overflow-hidden {
                                             span{
                                                 font-family: 'Open Sans', sans-serif;
                                                 font-weight: 500;
-                                                font-size: 18px;
+                                                font-size: 16px;
                                                 @media(min-width:1200px){
                                                     font-size: 16px;
                                                 }

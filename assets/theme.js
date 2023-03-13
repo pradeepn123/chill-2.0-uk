@@ -3474,6 +3474,19 @@
             closingTag ='</form>'
           }
 
+          let url = "/collections/";
+          let product_vendor = product.vendor.split(' ')
+          .map(a => a[0].toUpperCase() + a.substring(1).toLowerCase())
+          .join("")
+          if (product.vendor == "CHILL") {
+            url += "shop-all"
+          } 
+          else if(product.vendor == 'MAD TASTY') {
+            url = "mad-tasty-sample-pack-wellness-boost"
+          }
+          else{
+            url = product.vendor.replace(' ', '-').toLowerCase();
+          }
           let data = `<div class="product-item__image-wrapper">
             <a href="${product.url}">
               <img src="${product.featured_image}" alt="${product.handle}">
@@ -3482,7 +3495,7 @@
           <div class="product-item__info">
             <div class="product-item-info-header">
               <a href="${product.url}" class="product-item-meta__title">${product.title}</a>
-              <p class="product-item__vendor">${product.vendor}</p>
+              <a href="${url}" class="vendor_redirection">By <span>${product_vendor}<span></a>
             </div>
             <input type="hidden" name="id" value="${product.variants[0].id}" class="original-selector">
             <input type="hidden" name="quantity" value="1" >

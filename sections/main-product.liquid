@@ -159,7 +159,16 @@
               <a class="product_variant{% if product.metafields.custom.product_varient_pack.value == 'Zoetic'  %} underline{% endif %}" {% if product.metafields.custom.product_varient_pack.value == 'Zoetic'  %} href="{{ collections.zoetic.url }}" {% else %} href="#"{% endif %}><span>{{ product.metafields.custom.product_varient_pack }}</span></a>
 
             {% when 'vendor_redirection' %}
-              <a href="/collections/{% if product.vendor == 'CHILL' %}shop {% else %}{{product.vendor }}{% endif %}" class="vendor_redirection">By <span>{{ product.vendor | camelcase }}</span></a>  
+              <a href="/collections/
+                {%- if product.vendor == 'CHILL' -%}
+                  shop-all 
+                {%- elsif product.vendor == 'MAD TASTY' -%}
+                  mad-tasty-sample-pack-wellness-boost
+                {%- else -%}
+                  {{ product.vendor | replace: ' ', '-' | downcase }}
+                {%- endif -%}" 
+                class="vendor_redirection">By <span>{{ product.vendor | camelcase }}</span>
+              </a>
             
               {% when 'description' %}
               <div class="{% unless block.settings.show_in_quickbuy %}not-in-quickbuy{% endunless %}{% if block.settings.show_in_tab %} product-detail-accordion{% endif %}" {{ block.shopify_attributes }}>
@@ -700,7 +709,7 @@
 
                       for related_product in block.settings.product_list
                         echo '<div class="column column--half">'
-                        render 'product-block', product: related_product, no_quick_buy: true, custom_aspect_ratio: chosen_aspect_ratio
+                        render 'product-block', product: related_product, no_quick_buy: true, custom_aspect_ratio: chosen_aspect_ratio, show_vendor: true
                         echo '</div>'
                       endfor
                     -%}

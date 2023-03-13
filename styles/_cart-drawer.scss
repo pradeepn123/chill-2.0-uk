@@ -248,6 +248,23 @@ body.cart-drawer-open {
                             color: #000000;
                             margin-bottom: 16px;
                         }
+                        .vendor_redirection{
+                            font-size: 15px;
+                            color: #707070;
+                            padding-bottom: 1px;
+                            display: block;
+                            margin: 15px 0;
+                            margin-top: 0;
+                            width: fit-content;
+                            transition: border-bottom 130ms;
+                            span{
+                                color: #9792e4;
+                                font-weight: 600;
+                                &:hover{
+                                    border-bottom: 2px solid #9792e4;
+                                }
+                            }
+                        }
                     }
                     .drawer__quick-view-price-info{
                         margin-bottom: 16px;
@@ -779,6 +796,23 @@ body.cart-drawer-open {
                                 width: calc(90% - 10px);
                                 @media (max-width: 701px){
                                     margin-bottom: 5px;
+                                }
+                            }
+                            .vendor_redirection{
+                                font-size: 15px;
+                                color: #707070;
+                                padding-bottom: 1px;
+                                display: block;
+                                margin: 15px 0;
+                                margin-top: 0;
+                                width: fit-content;
+                                transition: border-bottom 130ms;
+                                span{
+                                    color: #9792e4;
+                                    font-weight: 600;
+                                    &:hover{
+                                        border-bottom: 2px solid #9792e4;
+                                    }
                                 }
                             }
                         }
