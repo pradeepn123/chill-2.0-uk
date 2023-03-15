@@ -19,6 +19,9 @@
         .logo-area__right{
             .logo-area__right__inner{
                 height: 90px;
+                @media (max-width: 1199px){
+                    height: fit-content;
+                }
                 a{
                     font-size: 18px;
                     font-weight: 600;
@@ -156,6 +159,15 @@
     .logo-area{
         .logo-area__left{
             .logo-area__left__inner{
+                .logo.mobile-and-tab-only{
+                        padding: 15px 0;
+                        margin-left: 20px;
+                        .logo__link{
+                            svg{
+                                height: 25px;
+                            }
+                        }
+                    }
                 .navigation{
                     .navigation__item{
                         &.navigation__item--with-children.navigation__item--with-mega-menu{
