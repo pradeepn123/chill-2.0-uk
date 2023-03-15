@@ -1797,9 +1797,10 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media(max-width:1023px){
+@media(max-width:1199px){
   .announcement-bar .container{
     flex-direction: column;
+    text-align: center;
     padding: 10px 0 5px;
   }
 }
@@ -1817,7 +1818,7 @@ body {
 }
 
 .announcement-bar__left {
-  flex: 2 0 0;
+  flex: 3 0 0;
 }
 
 .announcement-bar__middle {
@@ -2665,12 +2666,12 @@ body {
   text-align: start;
   background: {{ panel_nav_bg }};
   border-right: 1px solid {{ head_nav_div_col }};
-  left: -1px;
+  right: -1px;
   width: 88%;
   top: 0;
   height: 100%;
   padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 60px);
-  transform: translateX(-100%);
+  transform: translateX(100%);
   will-change: transform;
   z-index: 8001;
   overflow-x: hidden;
@@ -9758,7 +9759,7 @@ table.noborders td {
 }
 
 .overlay-text__button-row {
-  margin: calc(2rem - 10px) -0.5em 0;
+  margin: calc(1.3rem - 10px) -0.5em 0;
 }
 .overlay-text__button-row .overlay-text__button {
   margin: 10px 0.5em 0;
@@ -9800,7 +9801,7 @@ table.noborders td {
 .overlay-text .overlay-text__title {
   line-height: 1.1em;
   color: inherit;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.6rem;
 }
 .overlay-text .overlay-text__title:last-child {
   margin-bottom: 0;
@@ -11287,7 +11288,11 @@ model-viewer .container {
 .disclosure-list--visible {
   z-index: 1;
 }
-
+@media (min-width: 1200px){
+  .mobile-and-tab-only{
+    display: none;
+  }
+}
 /* mobile visibility utilities */
 @media (min-width: 768px) {
   .mobile-only {
@@ -11334,6 +11339,11 @@ model-viewer .container {
 #template textarea {
     max-width: 100%;
     box-sizing: border-box;
+  }
+}
+@media (max-width: 1199px){
+  .show_on_desktop_only{
+      display: none;
   }
 }
 /* Phone sizes typically start here */

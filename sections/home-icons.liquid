@@ -4,6 +4,7 @@
 <div class="icon-with-text-sec">
     <div class="container">
         <div class="icon-with-text-wrapper">
+            <span class="home_icons_title">{{ section.settings.home_icons_title }}</span>
             <div class="icon-list">
                 {%- for block in section.blocks -%}
                     {% case block.type %}
@@ -20,7 +21,18 @@
                                 {% elsif block.settings.icon_image != blank %}
                                         <img src="{{ block.settings.icon_image | img_url: '1920x' }}" alt=""/>
                                 {% endif %}
-                                <h3>{{ block.settings.title }}</h3>
+                                <h3 class="icon_title">{{ block.settings.title }} 
+                                        <svg class="icon_arrow" style="opacity: 0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <g clip-path="url(#clip0_246_1152)">
+                                                <path d="M7.65771 4.58398L13.4276 10.3538L7.65771 16.1237" stroke="black" stroke-width="2" stroke-linecap="square" fill="none"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_246_1152">
+                                                    <rect width="20" height="20" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </h3>
                                 <p>{{ block.settings.subheading }}</p>
                             </div>
                         {% if block.settings.url != blank %}</a>{% endif %}
@@ -36,7 +48,11 @@
         "name": "Home Icons",
         "class": "section-home-icons",
         "settings": [
-            
+            {
+                "type": "richtext",
+                "id": "home_icons_title",
+                "label": "Title"
+            }
         ],
         "blocks": [
             {
