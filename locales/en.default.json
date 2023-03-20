@@ -255,7 +255,7 @@
       "more_swatches": "+ {{ count }} more"
     },
     "filtering": {
-      "filter": "Filter",
+      "filter": "Filters",
       "all": "All",
       "heading": "Filter by",
       "applied_filters": "Applied filters",
