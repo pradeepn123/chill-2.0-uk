@@ -61,7 +61,11 @@
                         font-weight: bold;
                     }
                     &:hover{
-                        background: #000 !important;
+                        background: #fff !important;
+                        border: 2px solid  #9792e4;
+                        a{
+                            color: #9792e4 !important;
+                        }
                     }
                 }
                 .brand_video_btn{
@@ -76,9 +80,14 @@
                     align-items: center;
                     padding: 20px;
                     &:hover{
-                        background: #000;
+                        background: #9792e4 !important;
+                        border: #9792e4;
                         color: #fff !important;
-                        border: #000 !important;
+                        svg{
+                            path{
+                                fill: #fff !important;
+                            }
+                        }
                     }
                 }
             }

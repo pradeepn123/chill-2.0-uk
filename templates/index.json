@@ -29,7 +29,7 @@
       "type": "marquee",
       "settings": {
         "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
-        "marquee_background_color": "#9792e4",
+        "marquee_background_color": "#6ec59f",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
         "marquee_text_font_size_mobile": 16
@@ -220,7 +220,7 @@
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Your questions answered.<\/p>",
+            "text": "<p>Your questions answered.<\/p><p><\/p><p><\/p>",
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "enlarge_text": true,
@@ -262,7 +262,7 @@
         "enable_carousel": false,
         "grid": 4,
         "rows": 1,
-        "use_alt_bg": true,
+        "use_alt_bg": false,
         "show_view_all": true,
         "full_width": false
       }
@@ -276,6 +276,7 @@
             "icon_image": "shopify:\/\/shop_images\/Body.png",
             "animate_image": "shopify:\/\/shop_images\/The_body.webp",
             "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
             "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
             "text_color": "#ffffff",
             "text_alignment": "right"
@@ -287,6 +288,7 @@
             "icon_image": "shopify:\/\/shop_images\/Mind.png",
             "animate_image": "shopify:\/\/shop_images\/The_mind.png",
             "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
             "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
             "text_color": "#ffffff",
             "text_alignment": "left"
