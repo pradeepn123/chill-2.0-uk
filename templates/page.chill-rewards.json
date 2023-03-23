@@ -216,7 +216,7 @@
         "rewards_title_font_size_mobile": 42,
         "add_button": true,
         "button_text": "Shop Now",
-        "button_link": "shopify:\/\/collections\/shop-all",
+        "button_link": "shopify:\/\/collections\/shop",
         "button_font_size": 16,
         "button_color": "#9792e4"
       }

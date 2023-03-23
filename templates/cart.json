@@ -4,7 +4,7 @@
       "type": "main-cart",
       "settings": {
         "show_page_title": true,
-        "continue_shopping_url": "shopify:\/\/collections\/shop-all",
+        "continue_shopping_url": "shopify:\/\/collections\/shop",
         "enable_cart_notes": true,
         "show_tax_and_shipping": true,
         "cart_terms_page": "",
