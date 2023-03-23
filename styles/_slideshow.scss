@@ -44,6 +44,10 @@
             // color: #fff;
             // font-size: 20px;
             font-weight: bold;
+            @media (max-width: 767px){
+                background: #6EC59F !important;
+                color: #fff !important;
+            }
         }
         @media (max-width: 767px){
             width: 100% !important;
