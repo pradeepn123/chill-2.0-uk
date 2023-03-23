@@ -29,9 +29,9 @@
                                 {% when 'image' %}
                                     {% assign mod = forloop.index | modulo: 2 %}                                    
                                     <div class="column--half pos-rel {% if mod == 0 %}even{%else%}odd{%endif %}">
-                                        <div class="text_wrapper mobile-only">
+                                        <div class="text_wrapper title_wrapper mobile-and-tab-only">
                                             <div class="rte align-{{ block.settings.text_alignment }}">
-                                                {{ block.settings.text }}
+                                                {{ block.settings.text_for_mobile_tab }}
                                             </div>
                                         </div>
                                         <div class="image_wrapper">
@@ -46,9 +46,9 @@
                                                 {% endif%}                                               
                                             </div>
                                         </div>
-                                        <div class="text_wrapper">
+                                        <div class="text_wrapper content_wrapper">
                                             <div class="rte align-{{ block.settings.text_alignment }}">
-                                                <span class="desktop-only">{{ block.settings.text }}</span>
+                                                <span class="show_on_desktop_only">{{ block.settings.text }}</span>
                                                 {{ block.settings.text_ordered_list }}
                                             </div>                                            
                                         </div>
@@ -124,6 +124,12 @@
                         "type": "richtext",
                         "id": "text",
                         "label": "Text",
+                        "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text_for_mobile_tab",
+                        "label": "Text for mobile and tab",
                         "default": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>"
                     },
                     {
