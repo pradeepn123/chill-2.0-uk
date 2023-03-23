@@ -91,7 +91,11 @@
                         font-weight: bold;
                     }
                     &:hover{
-                        background: #000 !important;
+                        background: #9792e4 !important;
+                        border: #9792e4;
+                        a{
+                            color: #fff;
+                        }
                     }
                 }
                 .brand_video_btn{
