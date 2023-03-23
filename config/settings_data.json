@@ -1489,7 +1489,7 @@
           "4edb3d68-39a0-45c5-a5c2-ba76bee84412"
         ],
         "settings": {
-          "continue_shopping_url": "",
+          "continue_shopping_url": "shopify:\/\/collections\/shop",
           "shipping_policy_title": "Shipping Hours",
           "shipping_policy_content": "<p>Fulfilment Centre operates <strong>8am-4pm M-F<\/strong> and <strong>8-12pm  Saturday<\/strong>.  <strong>Closed Sundays.<\/strong>  All orders processed prior to 12noon will be shipped that day for delivery between 1-3 days UK (dependant on service and area)<\/p><p>All orders in other countries & inquiries please email <a href=\"mailto:info@chill.com\" target=\"_blank\">info@chill.com<\/a><\/p><p>You will receive an email containing your Tracking Number once your package has been shipped from our distribution center.<\/p>",
           "enable_promotion": false
