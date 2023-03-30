@@ -2,6 +2,14 @@
 {%- comment -%}
 # Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
 {% endcomment %}
+Disallow:/collections/chill.com
+Disallow:/collections/cbd-infused/products/shop-all
+Disallow:/products/shop-all
+Disallow:/products/holiday-bundle
+Disallow:/products/zesty-blood-orange-cbd-oil-1000mg
+Disallow:/web-pixels-manager@0.0.232@2ff43f7dw185ecff3pd4db58f6m3af5829f/sandbox/?location=GB
+Disallow:/sandbox/worker
+Disallow:/blogs/news/10-steps-for-a-chill-2023
 {% for group in robots.default_groups %}
   {{- group.user_agent -}}
 
