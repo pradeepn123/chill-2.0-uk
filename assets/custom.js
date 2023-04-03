@@ -743,7 +743,22 @@ const featureProductSubscriptionUtil = (function () {
     };
 })();
 
+function handleResizeBannerText () {
+    const claimBannerTextDesktop = document.querySelectorAll(".claim_banner_text_desktop")
+    const claimBannerTextMobile = document.querySelectorAll(".claim_banner_text_mobile")
+
+    if (claimBannerTextDesktop && claimBannerTextMobile) {
+        if (window.innerWidth < 768) {
+            claimBannerTextDesktop.forEach(elem => elem.style.display = "none")
+            claimBannerTextMobile.forEach(elem => elem.style.display = "")
+        } else {
+            claimBannerTextDesktop.forEach(elem => elem.style.display = "")
+            claimBannerTextMobile.forEach(elem => elem.style.display = "none")
+        }
+    }
+  }
 
 document.addEventListener('DOMContentLoaded', () => {
     featureProductSubscriptionUtil.EventHandler();
+    handleResizeBannerText ()
 })

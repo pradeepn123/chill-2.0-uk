@@ -1,0 +1,105 @@
+
+.gummies_offer_container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px !important;
+    @media (max-width: 767px){
+        flex-direction: row-reverse;
+        padding: 0 10px !important;
+        border-top: 2px solid #f7f7f8;
+    }
+    .claim_banner_product_page{
+        background-color: #FFFBFA;
+        border: 2px solid #000;
+        box-shadow: 5px 5px var(--snippet_text_color);
+        border-radius: 10px;
+        padding: 11px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        margin: 17px 0;
+        line-height: 1.3;
+        @media (max-width: 767px){
+            width: 100%;
+        }
+        .claim_banner_text{
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            flex-basis: 80%;
+            margin: auto;
+            @media (max-width: 374px){
+                font-size: 8px !important;
+            }
+            @media (max-width: 767px){
+                font-size: 10px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 14px !important;
+            }
+            span{
+                font-size: 18px;
+                font-weight: bold;
+                color: var(--snippet_text_color);
+                @media (max-width: 374px){
+                    font-size: 12px !important;
+                }
+                @media (max-width: 767px){
+                    font-size: 15px;
+                }
+            }
+        }
+        .claim_banner_button{
+            width: 100%;
+            background: #FFAC9A;
+            border: 2px solid #000000; 
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 800;
+            color: #000;
+            padding: 12px 19px;
+            flex-basis: 20%;
+            @media (max-width: 374px){
+                font-size: 8px !important;
+            }
+            @media (max-width: 767px){
+                font-size: 10px;
+                flex-basis: 40%;
+                padding: 9px 7px;
+                margin: auto;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 12px !important;
+                margin: auto;
+            }
+        }
+    }
+}
+.button_container{
+    flex-basis: 20%;
+    @media (max-width: 767px){
+        flex-basis: 40%;
+        margin: auto;
+    }
+    .claim_drawer_button{
+        width: 100%;
+        border: 2px solid #000000;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 800;
+        color: #000;
+        padding: 12px 19px;
+        @media (max-width: 374px){
+            font-size: 8px !important;
+        }
+        @media (max-width: 767px){
+            font-size: 10px;
+            padding: 9px 7px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px){
+            font-size: 12px !important;
+            margin: auto;
+        }
+    }
+}
