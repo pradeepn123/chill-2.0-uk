@@ -126,6 +126,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% section 'age-verification' %}
   {% section 'announcement-bar' %}
   {% section 'header' %}
+  <div class="slider-section {% if request.page_type == 'index' %}slider-section_home_page{% endif %}" >
+    {% if request.page_type == 'index' or request.page_type == 'product' %}
+      {% render 'announce-gummies-offer' %}
+    {% endif %}
+  </div>
   {% section 'store-messages' %}
 
   <main id="content" role="main">

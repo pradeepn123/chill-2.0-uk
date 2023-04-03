@@ -1,0 +1,374 @@
+.claim_drawer_background{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: 5000;
+    @media (max-width: 1023px){
+        z-index: 60000;
+    }
+}
+.claim_drawer_container{
+    z-index: 60000;
+    opacity: 1;
+    width: 40%;
+    overflow: auto;
+    @media (max-width: 1024px) {
+        width: 60%;
+    }
+    @media (max-width: 560px) {
+        width: 95%;
+    }
+    @media (max-width: 1023px){
+        z-index: 60000;
+    }
+    background: #ffffff;
+   
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%; 
+    opacity: 0;
+    visibility: hidden;
+    &.claim-drawer-open {
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        visibility: visible;
+        opacity: 1;
+    }
+    .claim-drawer-summary__close{
+        position: absolute;
+        right: 0;
+        margin: 21px;
+        cursor: pointer;
+    }
+    .how_it_works_wrapper{
+        margin: 12% 65px;
+        @media (max-width: 416px){
+            margin: 30% 10% 10% 10%;
+        }
+        .how_it_works_image{
+            border-radius: 15px;
+        }
+        .how_it_works_title{
+            font-size: 38px;
+            font-weight: 800;
+            margin-top: 26px;
+            @media (max-width: 767px){
+                font-size: 32px;
+            }
+        }
+        .how_it_works_description{
+            ul{
+                list-style-type: none; 
+                margin: 0 1em;
+            }
+            ul li{
+                list-style: none;
+                color: #000;
+                font-weight: 600;
+            }
+            ul li::before {
+                content: "\2022";
+                color: #FFAC9A;
+                font-weight: bold;
+                font-size: 175%;
+                display: inline-block; 
+                width: 13px;
+                margin-left: -1em;
+                margin-right: 16px;
+                transform: translateY(15%);
+              }
+        }
+        .login_signup_button{
+            margin: auto;
+            width: 100%;
+            border-radius: 40px;
+            margin-top: 35px;
+            font-size: 20px;
+            font-weight: 800;
+            @media (max-width: 767px){
+                font-size: 12px;
+            }
+        }
+    }
+
+    .account_login {
+        height: 100%;
+
+        .claim-small-form{
+            #claim-template{
+                .template_header{
+                    margin-bottom: 40px;
+                }
+                #customer_login, #create-customer{
+                    input{
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.button_container{
+    flex-basis: 20%;
+    @media (max-width: 767px){
+        flex-basis: 40%;
+        margin: auto;
+    }
+    .buy-buttons-row{
+        margin: 0;
+        .input-row{
+            margin-bottom: 0;
+            .claim_drawer_button{
+                width: 100%;
+                background: #FFAC9A;
+                border: 2px solid #000000;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: 800;
+                color: #000;
+                padding: 12px 19px;
+                @media (max-width: 374px){
+                    font-size: 8px !important;
+                }
+                @media (max-width: 767px){
+                    font-size: 10px;
+                    padding: 9px 7px;
+                }
+                @media (min-width: 768px) and (max-width: 1023px){
+                    font-size: 12px !important;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+.claim_info_container{
+    display: flex;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #FFFBFA;
+    padding: 13px 20px;
+    width: 38vw;
+    @media (max-width: 767px){
+        width: 90vw
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+        width: 100%;
+    }
+    .offer_content_container{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        .offer_content{
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 1.2;
+            @media (max-width: 767px){
+                font-size: 10px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 14px !important;
+                flex-basis: 60%;
+            }
+            span{
+                font-size: 24px;
+                font-weight: 800;
+                color: #ffac9a;
+                @media (max-width: 1023px){
+                    font-size: 15px;
+                }
+            }
+        }
+        .claim_banner_button{
+            width: 100%;
+            background: #FFAC9A;
+            border: 2px solid #000000; 
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 800;
+            color: #000;
+            padding: 12px 19px;
+            flex-basis: 40%;
+            @media (max-width: 767px){
+                font-size: 10px;
+                padding: 9px 7px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 12px !important;
+                padding: 9px 5px !important;
+            }
+        }
+        .button_container{
+            flex-basis: 40%;
+            height: fit-content;
+            @media (max-width: 767px){
+                margin: auto;
+            }
+            .buy-buttons-row{
+                margin: 0;
+                .input-row{
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    .quantity-submit-row__submit{
+                        margin-bottom: 0;
+                        margin-top: 0;
+                    }
+                    .claim_drawer_button{
+                        width: 100%;
+                        background: #FFAC9A;
+                        border: 2px solid #000000;
+                        border-radius: 5px;
+                        font-size: 18px;
+                        font-weight: 800;
+                        color: #000;
+                        padding: 12px 19px;
+                        @media (max-width: 767px){
+                            font-size: 10px;
+                            padding: 9px 7px;
+                        }
+                        @media (min-width: 768px) and (max-width: 1023px){
+                            font-size: 12px !important;
+                            margin: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.claim_success_message{
+    margin-top: 10px;
+    color: #6EC59F;
+    font-size: 16px;
+    font-weight: 600;
+    @media (max-width: 374px){
+        font-size: 9px !important;
+    }
+    @media (max-width: 767px){
+        font-size: 10px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+        font-size: 14px;
+    }
+    svg{
+        margin-right: 5px;
+    }
+}
+.claim_fail_message{
+    margin-top: 10px;
+    color: #FFAC9A;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+    svg{
+        margin-right: 5px;
+    }
+    &.hideFailMessage{
+        display: none;
+    }
+}
+.claim_banner_product_page_container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px !important;
+
+    @media (max-width: 767px){
+        flex-direction: row-reverse;
+        padding: 0 10px !important;
+
+    }
+
+    .close_banner_button{
+        margin: auto 8px auto 20px;
+        cursor: pointer;
+        @media (max-width: 767px){
+            margin: auto 20px auto 0 !important;
+        }
+    }
+
+    .claim_banner_product_page{
+        background-color: #FFFBFA;
+        border: 2px solid #000;
+        border-radius: 10px;
+        padding: 11px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+        margin: 17px 0;
+        box-shadow: 5px 5px #FFAC9A;
+        @media (max-width: 767px){
+            width: 100%;
+            box-shadow: 3px 3px #FFAC9A;
+        }
+        .claim_banner_text{
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 0;
+            flex-basis: 80%;
+            @media (max-width: 374px){
+                font-size: 8px !important;
+            }
+            @media (max-width: 767px){
+                font-size: 10px;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 14px !important;
+            }
+            span{
+                font-size: 18px;
+                font-weight: bold;
+                color: #ffac9a;
+                @media (max-width: 374px){
+                    font-size: 12px !important;
+                }
+                @media (max-width: 767px){
+                    font-size: 15px;
+                }
+            }
+        }
+        .claim_banner_button{
+            width: 100%;
+            background: #FFAC9A;
+            border: 2px solid #000000; 
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 800;
+            color: #000;
+            padding: 12px 19px;
+            flex-basis: 20%;
+            @media (max-width: 374px){
+                font-size: 8px !important;
+            }
+            @media (max-width: 767px){
+                font-size: 10px;
+                flex-basis: 40%;
+                padding: 9px 7px;
+                margin: auto;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                font-size: 12px !important;
+                margin: auto;
+            }
+        }
+    }
+}
+.claim_banner_home_page{
+    display: none !important;
+    display: flex;
+    justify-content: space-between;
+    .claim_banner_product_page_container{
+        flex-basis: 100%;
+    }
+    .close_banner_button{
+        margin: auto 0 auto 20px;
+    }
+}

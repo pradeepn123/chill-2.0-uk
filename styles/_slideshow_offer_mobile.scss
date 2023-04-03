@@ -1,0 +1,10 @@
+@media(min-width: 768px){
+    .shopify-section.slideshow_offer_mobile{
+        display: none !important;
+    }
+}
+@media (max-width: 767px){
+    .slider-section.slider-section_home_page{
+        display: none !important;
+    }
+}

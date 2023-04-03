@@ -12,7 +12,7 @@
                            assign show_hover_image = false
                          endif
                        
-                         assign cheapest_variant = product.variants | sort: 'price' | first
+                         assign cheapest_variant = product.selected_or_first_available_variant
                        -%}
 
 {%- liquid

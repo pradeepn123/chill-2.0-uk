@@ -1,0 +1,24 @@
+{% style %}
+    .gummies_offer_container{
+        --snippet_text_color: {{ settings.announce_gummies_button_color }}
+    }
+{% endstyle %}
+
+{% if settings.enable_gummies_offer_on_announcement_bar %}
+<div class="gummies_offer_container container container--no-max">
+    <div class="claim_banner_product_page">
+        <p class="claim_banner_text claim_banner_text_desktop" >
+          {{ settings.announce_gummies_offer_text_desktop }}
+        </p>
+        <p class="claim_banner_text claim_banner_text_mobile" >
+          {{ settings.announce_gummies_offer_text_mobile }}
+        </p>
+
+        <div class="button_container">
+            <a href="{{ settings.announce_gummies_button_url }}">
+                <button class="claim_drawer_button" style="background: {{ settings.announce_gummies_button_color }}">{{ settings.announce_gummies_offer_button_text | upcase }}</button>
+            </a>
+        </div>
+    </div>
+</div>
+{% endif %}
