@@ -25,6 +25,11 @@
         "overlay_style": "shadow"
       }
     },
+    "46a02b95-6dea-48f4-b202-8b1797db7374": {
+      "type": "slideshow_announce_mobile",
+      "settings": {
+      }
+    },
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
       "type": "marquee",
       "settings": {
@@ -713,6 +718,7 @@
   },
   "order": [
     "1660761564dddf193c",
+    "46a02b95-6dea-48f4-b202-8b1797db7374",
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "166149763181cc2acb",
     "1635927863703110df",
