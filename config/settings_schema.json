@@ -1488,13 +1488,13 @@
         "type": "text",
         "id": "announce_gummies_offer_text_desktop",
         "label": "Gummies Offer text on desktop",
-        "default": "Get your 25mg gummies for just <span>$5 a pack</span> for the month of April. Save $12.99 per pack! Plus <span>one FREE 10mg gummies</span> with each order"
+        "default": "Get your 25mg gummies for just <span>$5 a pack<\/span> for the month of April. Save $12.99 per pack! Plus <span>one FREE 10mg gummies<\/span> with each order"
       },
       {
         "type": "text",
         "id": "announce_gummies_offer_text_mobile",
         "label": "Gummies Offer text on mobile",
-        "default": "Get Chill's <span>25mg CBD gummies</span> at <span>$5!</span> Don't miss out!"
+        "default": "Get Chill's <span>25mg CBD gummies<\/span> at <span>$5!<\/span> Don't miss out!"
       },
       {
         "type": "text",
