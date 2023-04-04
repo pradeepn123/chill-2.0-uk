@@ -337,6 +337,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Happy_Tuesdays_-_Homepage_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Happy_Tuesdays_-_Homepage_Banner_Mobile.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "left center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Introducing\nHappy Tuesdays",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>The post-rave wellness pack, backed by leading nutritionists and <br\/>packed with 26 scientifically proven ingredients.<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "SHOP HAPPY TUESDAYS",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -347,7 +374,8 @@
         "02986a45-f0bf-4170-a6b2-37db262b7084",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
-        "a9c60b10-7dcd-483d-829a-b953aa21e538"
+        "a9c60b10-7dcd-483d-829a-b953aa21e538",
+        "910838dc-8acc-48d2-a9c9-dda3f47dc712"
       ],
       "settings": {
         "height": "fixed",
