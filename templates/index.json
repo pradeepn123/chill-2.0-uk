@@ -157,6 +157,33 @@
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
+        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chill_Homepage_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Chill_Homepage_Banner_Mobile.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>£5 Gummies<\/strong> \nall April",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Celebrating stress awareness month! Get all single packs <br\/>of Chill Gummies for only £5!!<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "stay mellow sale",
+            "button_url_1": "shopify:\/\/collections\/cbd-gummies",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
           "settings": {
@@ -265,41 +292,14 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
-        },
-        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Chill_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Chill_Homepage_Banner_Mobile.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong>£5 Gummies<\/strong> \nall April",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Celebrating stress awareness month! Get all single packs <br\/>of Chill Gummies for only £5!!<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
-            "enlarge_text": true,
-            "button_label_1": "stay mellow sale",
-            "button_url_1": "shopify:\/\/collections\/cbd-gummies",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#FFFFFF",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
         }
       },
       "block_order": [
+        "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "a9c60b10-7dcd-483d-829a-b953aa21e538",
-        "910838dc-8acc-48d2-a9c9-dda3f47dc712",
-        "adc61783-b87d-4ad1-a437-8b98c06ac308"
+        "910838dc-8acc-48d2-a9c9-dda3f47dc712"
       ],
       "settings": {
         "height": "fixed",
