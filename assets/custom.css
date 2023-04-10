@@ -3902,9 +3902,6 @@ body {
     padding: inherit;
   }
 }
-.section-main-product .product-detail .detail.detail.product-column-right {
-  margin-top: 20px;
-}
 @media (min-width: 1200px) {
   .section-main-product .product-detail .detail.detail.product-column-right {
     margin-top: 0px;
@@ -4154,8 +4151,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 768px) and (max-width: 845px) {
+  .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit .button {
+    font-size: 15px !important;
+  }
+}
 .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit .button .price-container {
   margin-bottom: 0;
+}
+@media (min-width: 768px) and (max-width: 845px) {
+  .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit .button .price-container .price-area .h4-style {
+    font-size: 15px !important;
+  }
 }
 .section-main-product .product-detail .detail .product-form .quantity-submit-row .quantity-submit-row__submit .button .price-container .price-area .current-price {
   color: #ffffff;
@@ -4270,9 +4277,6 @@ body {
   z-index: 9;
 }
 
-.product_ingredients_section {
-  padding-bottom: 20px;
-}
 @media (min-width: 1200px) {
   .product_ingredients_section {
     padding-bottom: 50px;
@@ -4524,6 +4528,7 @@ body {
     border: 1px solid #222222;
     width: 10px;
     height: 10px;
+    transform: translateY(50%);
   }
   .product_ingredients_section .product_ingredients_sec_wrapper .content-section .tab-content-list .slick-dots li button {
     width: 10px;
@@ -4538,11 +4543,11 @@ body {
   flex: 0 0 100%;
   padding: 0 18px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .product_ingredients_section .product_ingredients_sec_wrapper .content-section .tab-content-list .tab-content-item {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1200px) {
@@ -4646,7 +4651,7 @@ body {
 }
 @media (max-width: 699px) and (max-width: 1199px) {
   .metafield-gummies-img-mobile .slider_image_wrapper_mobile .slick-list {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
   .metafield-gummies-img-mobile .slider_image_wrapper_mobile .slick-dots {
     position: absolute;
@@ -4662,6 +4667,7 @@ body {
     height: 10px;
     border-radius: 50%;
     margin: 0 11px !important;
+    transform: translateY(50%);
   }
   .metafield-gummies-img-mobile .slider_image_wrapper_mobile .slick-dots li button {
     width: 10px;
@@ -4692,7 +4698,7 @@ body {
     font-size: 12px;
   }
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 700px) {
   .metafield-gummies-img .gummies-button {
     position: absolute;
     top: 74%;
