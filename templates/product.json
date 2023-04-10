@@ -204,6 +204,24 @@
     },
     "c7fd0966-7ada-4861-be05-e24cbfe80551": {
       "type": "recycleBanner",
+      "blocks": {
+        "6fac4f11-31e6-462a-9399-53067b51389b": {
+          "type": "image",
+          "settings": {
+            "slider_image": "shopify:\/\/shop_images\/Recycle_slide_1.jpg"
+          }
+        },
+        "710a1f33-fe88-44b9-ab3d-403df45f657f": {
+          "type": "image",
+          "settings": {
+            "slider_image": "shopify:\/\/shop_images\/Recycle_slide_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "6fac4f11-31e6-462a-9399-53067b51389b",
+        "710a1f33-fe88-44b9-ab3d-403df45f657f"
+      ],
       "settings": {
         "gummies-img-button": "SHOP GUMMIES",
         "btn_font_size": 14,
