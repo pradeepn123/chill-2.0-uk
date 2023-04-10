@@ -3915,6 +3915,8 @@ body {
 }
 .section-main-product .product-detail .detail .product-form .product-info-block {
   color: #676869;
+  font-size: 13px;
+  font-weight: 700;
 }
 .section-main-product .product-detail .detail .product-form .product-info-block a {
   text-decoration: none;
