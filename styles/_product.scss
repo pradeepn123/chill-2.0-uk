@@ -116,7 +116,6 @@
                 padding: inherit;
             }
             &.detail.product-column-right{
-                margin-top: 20px;
                 @media(min-width:1200px){
                     margin-top: 0px;
                 }
@@ -392,9 +391,17 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            @media (min-width: 768px) and (max-width: 845px){
+                                font-size: 15px !important;
+                            }
                             .price-container{
                                 margin-bottom: 0;
                                 .price-area{
+                                    @media (min-width: 768px) and (max-width: 845px){
+                                        .h4-style{
+                                            font-size: 15px !important;
+                                        }
+                                    }
                                     .current-price {
                                         color: #ffffff;
                                     }
@@ -530,7 +537,6 @@
 }
 
 .product_ingredients_section{
-    padding-bottom: 20px;
     @media(min-width:1200px){
         padding-bottom: 50px;
     }
@@ -747,6 +753,7 @@
                             border: 1px solid #222222;
                             width: 10px;
                             height: 10px;
+                            transform: translateY(50%);
                             button{
                                 width: 10px;
                                 height: 10px;
@@ -762,9 +769,9 @@
                     flex: 0 0 100%;
                     padding: 0 18px;
                     text-align: center;
-                    margin-bottom: 60px;
+                    margin-bottom: 50px;
                     @media(min-width:768px){
-                        margin-bottom: 35px;
+                        margin-bottom: 50px;
                     }
                     @media(min-width:1200px){
                         padding: 0 50px;
@@ -929,7 +936,7 @@
             }
             @media (max-width: 1199px){
                 .slick-list{
-                    margin-bottom: 50px;
+                    margin-bottom: 45px;
                 }
                 .slick-dots{
                     position: absolute;
@@ -944,6 +951,7 @@
                         height: 10px;
                         border-radius: 50%;
                         margin: 0 11px !important;
+                        transform: translateY(50%);
                         button{
                             width: 10px;
                             height: 10px;
@@ -974,7 +982,7 @@
         @media screen and (max-width:920px){
             font-size:12px;
         }
-        @media screen and (min-width: 770px){
+        @media screen and (min-width: 700px){
             position: absolute;
             top: 74%;
             left:10%;

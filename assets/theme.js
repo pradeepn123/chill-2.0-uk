@@ -4632,11 +4632,10 @@
           breakpoint: 768,
           settings: {
             fade: true,
-            arrows: true } }] };
-
-
-
-
+            arrows: true
+          } 
+        }] 
+      };
 
       $slideshow.on('init', function (evt, slick) {
         $('.lazyload--manual', this).removeClass('lazyload--manual').addClass('lazyload');
