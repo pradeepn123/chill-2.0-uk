@@ -3831,6 +3831,11 @@ body {
 .section-main-product .product-detail .gallery .gallery__inner .main-image .product-slideshow .product-media-wrapper .product-media .rimage-outer-wrapper .rimage-wrapper .rimage__image {
   object-fit: cover;
 }
+@media (max-width: 1199px) {
+  .section-main-product .product-detail .gallery .gallery__inner .main-image .slideshow-controls {
+    display: none !important;
+  }
+}
 .section-main-product .product-detail .gallery .gallery__inner .main-image .slideshow-controls .slideshow-controls__arrows .slick-product-prev {
   left: unset;
   top: unset;

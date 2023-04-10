@@ -49,6 +49,9 @@
                         }
                     }
                     .slideshow-controls{
+                        @media (max-width: 1199px){
+                            display: none !important;
+                        }
                         .slideshow-controls__arrows{
                             .slick-product-prev{
                                 left: unset;
