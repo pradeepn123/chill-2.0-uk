@@ -133,7 +133,30 @@ $(document).ready(function () {
             slidesToScroll:1,   
             dots:true
         });
-        
+        $('.slider_image_wrapper_mobile').slick({
+            draggable:true,    
+            arrows:false,  
+            autoplay:false,
+            autoplaySpeed:2500,     
+            slidesToShow:1,     
+            slidesToScroll:1,   
+            dots:true,
+            infinite: false
+        })
+        var tabContentParentProduct = $('.product_ingredients_sec .content-section .content.active')
+        for(i = 0; i< tabContentParentProduct.length; i++){
+            var tabContentList = tabContentParentProduct[i].querySelector('.tab-content-list ');
+            $(tabContentList).slick({
+                draggable:true,    
+                arrows:false,    
+                autoplay:true,
+                autoplaySpeed:3500,     
+                slidesToShow:1,     
+                slidesToScroll:1,   
+                dots:true
+            })
+        }
+
         var tabContentParent = $('.section-home-ingredients .content-section .content.active')
         for(i = 0; i< tabContentParent.length; i++){
             var tabContentList = tabContentParent[i].querySelector('.tab-content-list');
