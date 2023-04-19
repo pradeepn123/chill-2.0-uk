@@ -109,7 +109,9 @@
                         if(!isLocationStored_inSession().hasLocation){
                                     fetchUserLocationData( data => {
                                         let location = data.country_code;
-        
+                                        // RANDY DEBUG 2023-04-18
+                                        console.log("RANDY OUTPUT");
+                                        console.log(location);
                                         _helperFunc.setItem_InSession(_helperVar.storedLocationKey, location);
         
                                         redirecUserAsPerLocation(location);
