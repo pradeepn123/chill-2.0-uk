@@ -1032,7 +1032,7 @@
     "social_vimeo_url": "",
     "social_youtube_url": "",
     "social_linkedin_url": "https:\/\/www.linkedin.com\/company\/chill-brands\/",
-    "social_instagram_url": "https:\/\/www.instagram.com\/chill_cbd\/",
+    "social_instagram_url": "https:\/\/www.instagram.com\/choosechill\/",
     "social_tiktok_url": "https:\/\/www.tiktok.com\/@choose.chill",
     "search_type": "product",
     "enable_live_search": true,
@@ -1210,7 +1210,7 @@
             "type": "text",
             "settings": {
               "title": "Zoetic Corp",
-              "text": "<p><\/p>",
+              "text": "",
               "image": "shopify:\/\/shop_images\/Chill_black.png",
               "image_width": 160,
               "show_social_icons": true,
