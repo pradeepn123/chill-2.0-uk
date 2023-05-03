@@ -785,3 +785,17 @@ document.addEventListener('DOMContentLoaded', () => {
     featureProductSubscriptionUtil.EventHandler();
     handleResizeBannerText ()
 })
+// Open add to cart popup on product page
+var buyButtonContainer = document.querySelector('.buy-buttons-row_container');
+var closeBuyContainer = document.querySelectorAll('.close_buy_container');
+closeBuyContainer.forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+        buyButtonContainer.classList.remove('buy_buttons_show');
+    })
+})
+
+document.querySelectorAll('.mobile_popup_buy_button').forEach(popupButton => {
+    popupButton.addEventListener('click', () => {
+        buyButtonContainer.classList.add('buy_buttons_show');
+    })
+})

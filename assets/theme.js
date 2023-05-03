@@ -3363,6 +3363,8 @@
       $btn = $(this);
       //Set to 'DONE', alter button style, wait a few secs, revert to normal
       $btn.val(theme.strings.products_product_added_to_cart).addClass('inverted');
+      var buyButtonContainer = document.querySelector('.buy-buttons-row_container');
+      buyButtonContainer.classList.remove('buy_buttons_show');
       window.setTimeout(function () {
         $btn.removeClass('inverted').val($btn.data('previous-value'));
       }, 3000);
