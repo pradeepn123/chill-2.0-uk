@@ -255,8 +255,6 @@
 
             {% when 'buy_buttons' %}              
               {%- assign product_form_present = true -%}
-              {{ product.variants.size }}
-              {{ product.options.size }}
               <div class="buy-buttons-row" {{ block.shopify_attributes }}>
                 {% if product.variants.size <= 1 and product.options.size <= 1 %}
                     {% form 'product', product, data-productid: product.id, id: product_form_id, class: 'form product-purchase-form', data-product-handle: product.handle, data-product-id: product.id, data-productid: product.id %}
