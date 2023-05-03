@@ -163,8 +163,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End ReCharge code -->
 
   <!--Gorgias Chat Widget Start-->
-  <script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=22423"></script>
+  {% if request.page_type != 'product' %}
+    <script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=22423"></script>
+  {% endif %}
   <!--Gorgias Chat Widget End-->
 
 </body>
 </html>
+<style>
+  {% if request.page_type == 'product' %}
+    #loyaltyLauncher{
+      z-index: -1 !important;
+      background: transparent !important;
+    }
+    #loyalty_callout_container{
+      z-index: -1 !important;
+    }
+  {% endif %}
+</style>
