@@ -802,10 +802,10 @@ document.querySelectorAll('.mobile_popup_buy_button').forEach(popupButton => {
 window.addEventListener('scroll', () => {
     document.querySelectorAll('.product-recommendations').forEach(product_recommendation => {
         if(window.scrollY + window.innerHeight - 100 > product_recommendation.offsetTop){
-            buyButtonContainer.parentElement.style.display = 'none';
+            document.querySelector('.buy-buttons-row').parentElement.style.display = 'none';
         }
         else{
-            buyButtonContainer.parentElement.style.display = 'block';
+            document.querySelector('.buy-buttons-row').parentElement.style.display = 'block';
         }
     })
 })
