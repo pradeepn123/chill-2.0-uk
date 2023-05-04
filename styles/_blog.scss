@@ -86,6 +86,10 @@
                             color: #C3C3C3;
                             line-height: 1;
                             font-size: 16px;
+                            @media (max-width: 767px){
+                                justify-content: center;
+                                margin-right: 0;
+                            }
                             .author{
                                 font-size: 16px;
                                 color: #000000;
@@ -148,6 +152,10 @@
                             transition: all 0.4s cubic-bezier(0.23, 0.85, 0.61, 0.92);
                             path{
                                 fill:#000000;
+                            }
+                            @media (max-width: 767px){
+                                padding-top: 0;
+                                margin-bottom: 11px;
                             }
                         }
                     }
