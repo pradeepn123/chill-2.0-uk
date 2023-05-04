@@ -799,3 +799,13 @@ document.querySelectorAll('.mobile_popup_buy_button').forEach(popupButton => {
         buyButtonContainer.classList.add('buy_buttons_show');
     })
 })
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('.product-recommendations').forEach(product_recommendation => {
+        if(window.scrollY + window.innerHeight - 100 > product_recommendation.offsetTop){
+            buyButtonContainer.parentElement.style.display = 'none';
+        }
+        else{
+            buyButtonContainer.parentElement.style.display = 'block';
+        }
+    })
+})
