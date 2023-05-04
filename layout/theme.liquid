@@ -10,17 +10,7 @@
 <html lang="{{ request.locale.iso_code }}" dir="{{ lang_dir }}">
 <head>
   <!-- Symmetry 5.5.1 -->
-  <style>
-    {% if request.page_type == 'product' %}
-      #loyaltyLauncher{
-        z-index: -1 !important;
-        background: transparent !important;
-      }
-      #loyalty_callout_container{
-        z-index: -1 !important;
-      }
-    {% endif %} 
-  </style>
+  
   <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style">
   {{ 'custom.css' | asset_url | stylesheet_tag }}
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="all" />
@@ -180,3 +170,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
 </html>
+<style>
+  #loyaltyLauncher{
+    z-index: 3 !important;
+  }
+  #loyalty_callout_container{
+    z-index: 3 !important;
+  }
+  .gorgias-chat-key-1spa6uy{
+    z-index: 3 !important;
+  }
+  {% if request.page_type == 'product' %}
+    #loyaltyLauncher{
+      z-index: -1 !important;
+      background: transparent !important;
+    }
+    #loyaltyLauncher img{
+      display: none;
+    }
+    #loyalty_callout_container{
+      z-index: -1 !important;
+      display: none;
+    }
+  {% endif %} 
+</style>
