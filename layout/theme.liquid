@@ -162,11 +162,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% include 'subscription-theme-footer' %}
   <!-- End ReCharge code -->
 
-  <!--Gorgias Chat Widget Start-->
-  {% if request.page_type != 'product' %}
-    <script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=22423" defer></script>
-  {% endif %}
-  <!--Gorgias Chat Widget End-->
+  
+<!--Gorgias Chat Widget Start-->
+<script id="gorgias-chat-widget-install-v3" 
+    src="https://config.gorgias.chat/bundle-loader/01GYCCMW64VH69RSRQYGK5C7P8?source=shopify1click">
+</script>
+<script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",_.SHOPIFY_CUSTOMER_ID="{{customer.id}}",_.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});
+</script>
+<!--Gorgias Chat Widget End-->
 
 </body>
 </html>
