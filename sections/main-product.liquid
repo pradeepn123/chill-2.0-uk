@@ -439,7 +439,10 @@
                         {%- endunless -%}
       
                       {% else %}
-                        <button class="product-unavailable">{{ 'products.product.product_unavailable' | t }}</button>
+                      <div class="quantity-submit-row__submit input-row">
+                        <button class="button button--large product-unavailable">{{ 'products.product.product_unavailable' | t }}</button>
+                      </div>
+                        
                       {% endif %}
                     {% endform %}
                 {% else %}

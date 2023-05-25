@@ -113,6 +113,13 @@
             {% endunless %}
           {% endif %}
         </div>
+        {% if settings.prod_sold_out_show and product.available == false %}
+          <span class="product-price__item price-label price-label--sold-out">{{ 'products.labels.sold_out' | t }}</span>
+          {% elsif settings.prod_pre_order_label_show and product.template_suffix contains 'preorder' %}
+          <span class="product-price__item price-label price-label--preorder">{{ 'products.product.preorder' | t }}</span>
+          {% elsif settings.prod_sale_show and cheapest_variant.compare_at_price > cheapest_variant.price %}
+          <span class="product-price__item price-label price-label--sale">{{ 'products.labels.sale' | t }}</span>
+        {% endif %}
       {% else %}
         <div class="image-cont">
           <div class="placeholder-image">{{ 'product-1' | placeholder_svg_tag }}
@@ -154,14 +161,6 @@
                   {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
                   <span class="product-price__item product-price__compare theme-money">{{ cheapest_variant.compare_at_price | money }}</span>
                   {% endif %}                
-
-                  {% if settings.prod_sold_out_show and product.available == false %}
-                  <span class="product-price__item price-label price-label--sold-out">{{ 'products.labels.sold_out' | t }}</span>
-                  {% elsif settings.prod_pre_order_label_show and product.template_suffix contains 'preorder' %}
-                  <span class="product-price__item price-label price-label--preorder">{{ 'products.product.preorder' | t }}</span>
-                  {% elsif settings.prod_sale_show and cheapest_variant.compare_at_price > cheapest_variant.price %}
-                  <span class="product-price__item price-label price-label--sale">{{ 'products.labels.sale' | t }}</span>
-                  {% endif %}
                 {% endcomment %}
               </div>
 
@@ -213,24 +212,33 @@
                       </span>
                     </button>
                     {%- else -%}
+                    {% if product.available == true %}
                       <button class="btn btn-primary default_addToCart_btn" form="{{product_form_id}}" direct-addToCart-btn>
-                        <span>
-                            Add to cart
-                        </span>
-                        <span class="product-price price__item_sub">
-                          <span class="product-price__item product-price__amount {% if cheapest_variant.compare_at_price > cheapest_variant.price %}product-price__amount--on-sale{% endif %} theme-money">
-                              {%- if settings.product_currency_code_enabled -%}
-                                {{ cheapest_variant.price | money_with_currency }}
-                              {%- else -%}
-                                {{ cheapest_variant.price | money }}
-                              {%- endif -%}
+                        
+                          <span>
+                              Add to cart
                           </span>
-                          {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
-                            <span class="product-price__item product-price__compare theme-money">{{ cheapest_variant.compare_at_price | money }}
+                          <span class="product-price price__item_sub">
+                            <span class="product-price__item product-price__amount {% if cheapest_variant.compare_at_price > cheapest_variant.price %}product-price__amount--on-sale{% endif %} theme-money">
+                                {%- if settings.product_currency_code_enabled -%}
+                                  {{ cheapest_variant.price | money_with_currency }}
+                                {%- else -%}
+                                  {{ cheapest_variant.price | money }}
+                                {%- endif -%}
                             </span>
-                          {% endif %}
+                            {% if cheapest_variant.compare_at_price > cheapest_variant.price %}
+                              <span class="product-price__item product-price__compare theme-money">{{ cheapest_variant.compare_at_price | money }}
+                              </span>
+                            {% endif %}
+                          </span>
+                      </button>
+                      {% else %}
+                      <button class="btn btn-primary default_addToCart_btn soldout_btn">
+                        <span>
+                            Out of stock
                         </span>
                       </button>
+                    {% endif %}
                    {%- endif -%}
                   </div>
                 </div>
