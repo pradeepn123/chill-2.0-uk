@@ -1080,3 +1080,19 @@
         }
     }
 }
+.price-label--sold-out{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background: #fff;
+    padding: 7px;
+    font-weight: 700;
+}
+.soldout_btn{
+    justify-content: center !important;
+    cursor: default !important;
+    &:hover{
+        background: #9792e4 !important;
+        border: 1px solid #9792e4 !important;
+    }
+}
