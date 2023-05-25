@@ -4822,6 +4822,19 @@ body {
   border: 1px solid #9792e4 !important;
 }
 
+.product-unavailable {
+  width: 100%;
+  font-size: 20px;
+  border-radius: 4rem !important;
+  font-size: 20px !important;
+  font-weight: 900 !important;
+  cursor: default !important;
+}
+.product-unavailable:hover {
+  background: #9792e4 !important;
+  border: 1px solid #9792e4 !important;
+}
+
 .chill-story-section .slider_wrapper {
   width: 100%;
   height: 25%;
