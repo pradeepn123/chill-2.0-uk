@@ -347,6 +347,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "94ff9b3e-cc66-4646-a075-a4a633f6fe97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HEADSTAND_-_Homepage_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HEADSTAND_-_MOBILE_-Homepage_Banner.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Welcome <strong> \nHeadstand <\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Made from coffee leaf, tastes nothing <br\/>like coffee. Caffeine free!<\/p>",
+            "heading_color": "#fffcfc",
+            "text_color": "#fffcfc",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "TRY HEADSTAND",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -356,7 +383,8 @@
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "a9c60b10-7dcd-483d-829a-b953aa21e538",
-        "adc61783-b87d-4ad1-a437-8b98c06ac308"
+        "adc61783-b87d-4ad1-a437-8b98c06ac308",
+        "94ff9b3e-cc66-4646-a075-a4a633f6fe97"
       ],
       "settings": {
         "height": "fixed",
