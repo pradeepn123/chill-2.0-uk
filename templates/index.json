@@ -157,30 +157,29 @@
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
-        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
+        "02986a45-f0bf-4170-a6b2-37db262b7084": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chill_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Chill_Homepage_Banner_Mobile.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
+            "image": "shopify:\/\/shop_images\/Mind_Panda_Homepage_Banner_01233cc5-1199-46b0-b3d4-eb07710b5097.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mind_Panda_Homepage_Banner.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "left center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong>£5 Gummies<\/strong> \nall April",
+            "title": "<strong> MindPanda <\/strong> \nfor better\nmental health",
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>In the spirit of stress awareness month. All <br\/>single packs of 25mg CBD gummies are now only $5!<\/p>",
+            "text": "<p>Ever feel like you're stuck? MindPanda are here to <br\/>empower you to create sustainable change in your life.<\/p>",
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "enlarge_text": true,
-            "button_label_1": "stay mellow sale",
-            "button_url_1": "shopify:\/\/collections\/cbd-gummies",
-            "button_label_2": "",
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "Shop Mind panda",
             "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -294,26 +293,54 @@
             "text_alignment": "center left"
           }
         },
-        "02986a45-f0bf-4170-a6b2-37db262b7084": {
+        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mind_Panda_Homepage_Banner_01233cc5-1199-46b0-b3d4-eb07710b5097.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mind_Panda_Homepage_Banner.jpg",
-            "image_position": "center left",
-            "mobile_image_position": "left center",
+            "image": "shopify:\/\/shop_images\/Chill_Homepage_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Chill_Homepage_Banner_Mobile.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong> MindPanda <\/strong> \nfor better\nmental health",
+            "title": "<strong>£5 Gummies<\/strong> \nall April",
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Ever feel like you're stuck? MindPanda are here to <br\/>empower you to create sustainable change in your life.<\/p>",
+            "text": "<p>In the spirit of stress awareness month. All <br\/>single packs of 25mg CBD gummies are now only $5!<\/p>",
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "enlarge_text": true,
+            "button_label_1": "stay mellow sale",
+            "button_url_1": "shopify:\/\/collections\/cbd-gummies",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "aa79849d-c6d2-4756-a952-72a2b371abe6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Verve_Homepage_Banner2.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Verve_Homepage_Banner2_197bcc27-4732-4666-b33f-e71a81ee112b.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> VERVE <\/strong> Energy\nBoosting Gum",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Verve gum is packed with unique ingredients to <br\/>supercharge your day. So get out there and fuel <br\/>your focus!<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#fffcfc",
+            "enlarge_text": true,
             "button_label_1": "",
             "button_url_1": "",
-            "button_label_2": "Shop Mind panda",
+            "button_label_2": "fuel your focus",
             "button_url_2": "",
             "button_background_color": "#9792e4",
             "button_text_color": "#FFFFFF",
@@ -323,12 +350,13 @@
         }
       },
       "block_order": [
-        "adc61783-b87d-4ad1-a437-8b98c06ac308",
+        "02986a45-f0bf-4170-a6b2-37db262b7084",
         "910838dc-8acc-48d2-a9c9-dda3f47dc712",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "a9c60b10-7dcd-483d-829a-b953aa21e538",
-        "02986a45-f0bf-4170-a6b2-37db262b7084"
+        "adc61783-b87d-4ad1-a437-8b98c06ac308",
+        "aa79849d-c6d2-4756-a952-72a2b371abe6"
       ],
       "settings": {
         "height": "fixed",
