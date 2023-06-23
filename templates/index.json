@@ -400,6 +400,52 @@
         "autoplay_speed": 7
       }
     },
+    "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
+          "type": "image",
+          "settings": {
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "Tell your story",
+            "title": "Two line\nslide heading",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>And optional subtext<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "",
+            "button_label_2": "Shop all",
+            "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
     "16359278676808bea5": {
       "type": "featured-collection",
       "settings": {
@@ -865,6 +911,7 @@
     "166149763181cc2acb",
     "1635927863703110df",
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
+    "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
     "16359278676808bea5",
     "1661508210e5eab38e",
     "1661495934a2300196",
