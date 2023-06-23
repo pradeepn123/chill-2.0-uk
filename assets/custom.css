@@ -1694,7 +1694,7 @@ body.overflow-hidden {
   .featured_blocks_container.navigation__columns.navigation__tier-2 {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
-    max-height: 29rem;
+    max-height: 21rem;
     overflow: auto;
   }
   .featured_blocks_container.navigation__columns.navigation__tier-2.show-only-this-block {
