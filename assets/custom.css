@@ -1257,7 +1257,7 @@ body.overflow-hidden {
   position: relative;
   padding-left: 40px !important;
   padding-right: 40px !important;
-  min-height: 25rem;
+  min-height: 17rem;
 }
 @media (max-width: 1199px) {
   #NavigationTier2-2.navigation__child-tier .container {
