@@ -10475,6 +10475,7 @@ body.cart-drawer-open {
   padding: 15px 60px;
   border: 0;
   margin-top: 20px;
+  font-weight: 600;
 }
 @media (max-width: 767px) {
   .flavour-block-section .flavour_block_wrapper .flavour_block_container .flavour_block .flavour_text_block .flavour_button {
@@ -10493,6 +10494,7 @@ body.cart-drawer-open {
   flex-wrap: nowrap;
   overflow: auto;
   justify-content: space-between;
+  padding: 10px 0 60px 0 !important;
 }
 .flavour-block-section .flavour_block_wrapper .flavour_block_container .slick-dots li {
   width: 100%;

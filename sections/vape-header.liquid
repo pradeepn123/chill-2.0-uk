@@ -1,3 +1,8 @@
+{% style %}
+    .header_button button:hover{
+        background: {{ section.settings.header_button_color }} !important;
+    }
+{% endstyle %}
 <div class="vape_header_wrapper">
     <div class="vape_header_container">
         {% if section.settings.header_icon != blank %}

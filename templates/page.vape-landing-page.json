@@ -10,7 +10,8 @@
     "cbcfe4cd-6f43-4f1b-b7af-bcf13cdc36af": {
       "type": "background-video",
       "custom_css": [
-        ".video-container__video {margin-top: 100px;}"
+        ".video-container__video {margin-top: 100px;}",
+        ".video-container .overlay-text__title {font-weight: 300 !important;}"
       ],
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b35dd28b419c4ac899215dfb3d5bb513.mp4",
@@ -19,13 +20,13 @@
         "title": "<strong>CHILL<\/strong>ZERO",
         "font_weight_head": "normal",
         "title_size": 84,
-        "title_size_mobile": 32,
+        "title_size_mobile": 44,
         "use_h1": false,
         "text": "<p>Find peace with functional products made from all natural ingredients<\/p>",
         "sub_font_size": 20,
         "enlarge_text": true,
         "button_label_1": "JOIN WAITLIST",
-        "btn_font": 16,
+        "btn_font": 20,
         "btn_font_mobile": 16,
         "button_url_1": "#",
         "button_label_2": "",
@@ -164,7 +165,7 @@
             "flavour_image": "shopify:\/\/shop_images\/image_6.jpg",
             "flavour_image_secondary": "shopify:\/\/shop_images\/passion-hover.jpg",
             "image_position": "row",
-            "flavour_title": "<p>Passion Fruit <\/p><p>Grapefruit<\/p>",
+            "flavour_title": "<p>Passion Fruit Grapefruit<\/p>",
             "flavour_title_font_size": 52,
             "flavour_title_font_size_mobile": 32,
             "flavour_description": "Grapefruit flavor vape offers a distinctive taste that is both sweet and slightly bitter, with hints of tanginess.",
