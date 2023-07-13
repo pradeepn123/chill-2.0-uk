@@ -154,6 +154,20 @@
         "use_alt_bg": true
       }
     },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our <strong> Trending Products <\/strong>",
+        "collection": "trending-products",
+        "show_vendor": true,
+        "enable_carousel": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "full_width": false
+      }
+    },
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
@@ -401,6 +415,45 @@
         "autoplay_speed": 7
       }
     },
+    "1661508210e5eab38e": {
+      "type": "home-stress-effect",
+      "blocks": {
+        "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Body.png",
+            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
+            "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
+            "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
+            "text_color": "#ffffff",
+            "text_alignment": "right"
+          }
+        },
+        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Mind.png",
+            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
+            "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
+            "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
+            "text_color": "#ffffff",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
+        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
+      ],
+      "settings": {
+        "color_bg": "#9792e4",
+        "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
+        "text_color": "#ffffff",
+        "text_alignment": "center"
+      }
+    },
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
       "type": "slideshow",
       "blocks": {
@@ -473,59 +526,6 @@
         "slide_navigation": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
-      }
-    },
-    "16359278676808bea5": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our <strong> Trending Products <\/strong>",
-        "collection": "trending-products",
-        "show_vendor": true,
-        "enable_carousel": false,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": false
-      }
-    },
-    "1661508210e5eab38e": {
-      "type": "home-stress-effect",
-      "blocks": {
-        "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
-          "type": "image",
-          "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Body.png",
-            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
-            "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
-            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
-            "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
-            "text_color": "#ffffff",
-            "text_alignment": "right"
-          }
-        },
-        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
-          "type": "image",
-          "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Mind.png",
-            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
-            "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
-            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
-            "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
-            "text_color": "#ffffff",
-            "text_alignment": "left"
-          }
-        }
-      },
-      "block_order": [
-        "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
-        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
-      ],
-      "settings": {
-        "color_bg": "#9792e4",
-        "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
-        "text_color": "#ffffff",
-        "text_alignment": "center"
       }
     },
     "1661495934a2300196": {
@@ -633,59 +633,6 @@
         "text_alignment": "center"
       }
     },
-    "16616836322167cf31": {
-      "type": "home_collections",
-      "disabled": true,
-      "blocks": {
-        "685e6031-5b34-4a0f-83f0-79e29a6ed09f": {
-          "type": "collection-image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
-            "collection": "cbd-gummies",
-            "title": "Chill Gummies",
-            "coming_soon_link": ""
-          }
-        },
-        "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
-          "type": "collection-image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
-            "collection": "cbd-smokes",
-            "title": "Chill Smokes",
-            "coming_soon_link": ""
-          }
-        },
-        "3b6372a0-4677-429a-bf82-20402b224607": {
-          "type": "collection-image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/UK_-Collections-_Gummies_Bundle.jpg",
-            "collection": "cbd-gummies",
-            "title": "Gummies Bundle",
-            "coming_soon_link": ""
-          }
-        },
-        "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
-          "type": "collection-image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
-            "collection": "cbd-smokes",
-            "title": "Smokes Bundle",
-            "coming_soon_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "685e6031-5b34-4a0f-83f0-79e29a6ed09f",
-        "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3",
-        "3b6372a0-4677-429a-bf82-20402b224607",
-        "12b2d340-74f6-4e2b-a23d-d4653ee7e087"
-      ],
-      "settings": {
-        "text": "<p>Our <strong>Collections<\/strong><\/p>",
-        "show_view_all": true,
-        "shop_all_url": "shopify:\/\/collections\/shop-all"
-      }
-    },
     "16618284517e50f27f": {
       "type": "home_testimonials",
       "blocks": {
@@ -782,6 +729,59 @@
         "quote_text_size": 24,
         "quote_text_size_mobile": 20,
         "use_alt_bg": true
+      }
+    },
+    "16616836322167cf31": {
+      "type": "home_collections",
+      "disabled": true,
+      "blocks": {
+        "685e6031-5b34-4a0f-83f0-79e29a6ed09f": {
+          "type": "collection-image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Collections-Gummies.jpg",
+            "collection": "cbd-gummies",
+            "title": "Chill Gummies",
+            "coming_soon_link": ""
+          }
+        },
+        "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3": {
+          "type": "collection-image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UK_-_Collections-_Chill_Smokes.jpg",
+            "collection": "cbd-smokes",
+            "title": "Chill Smokes",
+            "coming_soon_link": ""
+          }
+        },
+        "3b6372a0-4677-429a-bf82-20402b224607": {
+          "type": "collection-image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UK_-Collections-_Gummies_Bundle.jpg",
+            "collection": "cbd-gummies",
+            "title": "Gummies Bundle",
+            "coming_soon_link": ""
+          }
+        },
+        "12b2d340-74f6-4e2b-a23d-d4653ee7e087": {
+          "type": "collection-image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/UK_-Collections-_Smokes_Bundle.jpg",
+            "collection": "cbd-smokes",
+            "title": "Smokes Bundle",
+            "coming_soon_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "685e6031-5b34-4a0f-83f0-79e29a6ed09f",
+        "2419f036-9d7b-4f0b-b113-5c1eaaa9acc3",
+        "3b6372a0-4677-429a-bf82-20402b224607",
+        "12b2d340-74f6-4e2b-a23d-d4653ee7e087"
+      ],
+      "settings": {
+        "text": "<p>Our <strong>Collections<\/strong><\/p>",
+        "show_view_all": true,
+        "shop_all_url": "shopify:\/\/collections\/shop-all"
       }
     },
     "8f5264ca-7f1d-4235-b07d-2de00dd54813": {
@@ -939,14 +939,14 @@
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "166149763181cc2acb",
     "1635927863703110df",
-    "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
-    "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
     "16359278676808bea5",
+    "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
     "1661508210e5eab38e",
+    "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
     "1661495934a2300196",
     "1661759224933bf819",
-    "16616836322167cf31",
     "16618284517e50f27f",
+    "16616836322167cf31",
     "8f5264ca-7f1d-4235-b07d-2de00dd54813",
     "16607619805b81a490",
     "3dee64a8-71bf-4655-926f-2db509dcd6a5",
