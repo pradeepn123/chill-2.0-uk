@@ -510,11 +510,39 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "4538d984-09e9-4bcd-814c-d49bf68fca44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_3f7fa726-3c74-4c74-80e0-92c335160197.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Sipping Sobriety: \nNavigating Social \nSituations Without \nAlcohol<\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>Tips that’ll help you handle staying sober <br\/>one sip at a time.<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "READ NOW",
+            "button_url_1": "shopify:\/\/blogs\/chill-blog\/sipping-sobriety-navigating-social-situations-without-alcohol",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0"
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
+        "4538d984-09e9-4bcd-814c-d49bf68fca44"
       ],
       "settings": {
         "height": "fixed",
