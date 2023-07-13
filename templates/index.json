@@ -267,6 +267,7 @@
         },
         "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Happy_Tuesdays_-_Homepage_Banner.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Happy_Tuesdays_-_Homepage_Banner_Mobile.jpg",
@@ -402,10 +403,10 @@
     },
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image_position": "center center",
             "mobile_image_position": "center center",
@@ -428,10 +429,38 @@
             "button_text_font_size": 20,
             "text_alignment": "center center"
           }
+        },
+        "30f4598b-5a5e-4967-a71c-a4888ada542a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex_d98a95c3-3171-461f-81d3-fdd106d8cb08.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify:\/\/blogs\/chill-blog\/how-quitting-smoking-can-improve-your-sex-life",
+            "subheading": "",
+            "title": "<strong> How Quitting \nSmoking Can \nImprove Your \nSex Life <\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>We unpack the benefits going tobacco-free<br\/>has on your sex life!<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0"
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
+        "30f4598b-5a5e-4967-a71c-a4888ada542a"
       ],
       "settings": {
         "height": "fixed",
