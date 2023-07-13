@@ -557,111 +557,6 @@
         "autoplay_speed": 7
       }
     },
-    "1661495934a2300196": {
-      "type": "featured-background-video",
-      "settings": {
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/38580cf6818f466ebd1582128a8ceb85.mp4",
-        "autoplay": false,
-        "placeholder_image": "shopify:\/\/shop_images\/Homepage_second_video.webp",
-        "video_position": "left",
-        "use_alt_bg": false,
-        "height_desktop": 44,
-        "height_mobile": 100
-      }
-    },
-    "1661759224933bf819": {
-      "type": "home-ingredients",
-      "disabled": true,
-      "blocks": {
-        "748621ad-2492-4f8f-8f16-4036356019f0": {
-          "type": "tabs-heading",
-          "settings": {
-            "title": "Gummies"
-          }
-        },
-        "47e1520e-5903-4d97-9043-85d67aad69a4": {
-          "type": "tabs-heading",
-          "settings": {
-            "title": "Smokes"
-          }
-        },
-        "38100417-1c22-4345-b4ee-5ea663a04829": {
-          "type": "tabs-heading",
-          "disabled": true,
-          "settings": {
-            "title": "Pouches"
-          }
-        },
-        "8aba5ceb-18a7-4f8c-88c4-1088045b910c": {
-          "type": "tabs-content",
-          "settings": {
-            "image_one": "shopify:\/\/shop_images\/Tapioca.jpg",
-            "heading_one": "01. Tapioca Syrup",
-            "text_one": "<p>Organic Tapioca Syrup is what makes our gummies so special. It’s this natural, vegan-friendly binding agent that gives that signature chewy texture.<\/p>",
-            "image_two": "shopify:\/\/shop_images\/Pineapple.png",
-            "heading_two": "02. Natural Pineapple",
-            "text_two": "<p>This delicious and nutrient-rich tropical fruit is the sweet sensation that lends its fresh, juicy flavor to our vegan friendly CBD gummies.<\/p>",
-            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
-            "heading_three": "03. CBD Isolate",
-            "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
-            "button_label": "Explore Products",
-            "button_link": "shopify:\/\/collections\/cbd-gummies",
-            "button_bg_color": "#6ec59f",
-            "button_text_color": "#ffffff"
-          }
-        },
-        "1ee69049-e857-4944-aea9-6f2d8fc5456c": {
-          "type": "tabs-content",
-          "settings": {
-            "image_one": "shopify:\/\/shop_images\/Lavendar.png",
-            "heading_one": "01. Lavender",
-            "text_one": "<p>Our fragrant lavender burns smoothly and produces a sweet floral scent for a perfectly relaxing moment of aromatherapy.<\/p>",
-            "image_two": "shopify:\/\/shop_images\/Lobelia.png",
-            "heading_two": "02. Lobelia",
-            "text_two": "<p>Native to the luscious valleys of North America, Lobelia is also known as Indian Tobacco and is sometimes used as an alternative to nicotine. <\/p>",
-            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
-            "heading_three": "03. CBD Isolate",
-            "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
-            "button_label": "Explore Products",
-            "button_link": "shopify:\/\/collections\/cbd-smokes",
-            "button_bg_color": "",
-            "button_text_color": ""
-          }
-        },
-        "9b1ac47c-d8ea-46b5-be0b-334854a78afe": {
-          "type": "tabs-content",
-          "disabled": true,
-          "settings": {
-            "image_one": "shopify:\/\/shop_images\/monk_fruit.png",
-            "heading_one": "01. Monk fruit",
-            "text_one": "<p>This subtly sweet exotic fruit extract contains natural sugars and a unique antioxidant profile that elevates the delicious flavors of our chew pouches. <\/p>",
-            "image_two": "shopify:\/\/shop_images\/Coconut.png",
-            "heading_two": "02. Coconut Fiber",
-            "text_two": "<p>Often known as coconut coir, this CBD-infused filler provides an unbeatable smooth flavor for a satisfying chew like no other. <\/p>",
-            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
-            "heading_three": "03. CBD Isolate",
-            "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects.<\/p>",
-            "button_label": "Explore Products",
-            "button_link": "shopify:\/\/collections\/cbd-pouches",
-            "button_bg_color": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "748621ad-2492-4f8f-8f16-4036356019f0",
-        "47e1520e-5903-4d97-9043-85d67aad69a4",
-        "38100417-1c22-4345-b4ee-5ea663a04829",
-        "8aba5ceb-18a7-4f8c-88c4-1088045b910c",
-        "1ee69049-e857-4944-aea9-6f2d8fc5456c",
-        "9b1ac47c-d8ea-46b5-be0b-334854a78afe"
-      ],
-      "settings": {
-        "heading_text": "<p><strong>Naturally <\/strong>Sourced,<br\/><strong>Functional <\/strong>Ingredients<\/p>",
-        "subheading_text": "<p>Soothe your soul with naturally-sourced products that are oh so Chill. <\/p>",
-        "text_alignment": "center"
-      }
-    },
     "16618284517e50f27f": {
       "type": "home_testimonials",
       "blocks": {
@@ -760,6 +655,99 @@
         "use_alt_bg": true
       }
     },
+    "1661759224933bf819": {
+      "type": "home-ingredients",
+      "disabled": true,
+      "blocks": {
+        "748621ad-2492-4f8f-8f16-4036356019f0": {
+          "type": "tabs-heading",
+          "settings": {
+            "title": "Gummies"
+          }
+        },
+        "47e1520e-5903-4d97-9043-85d67aad69a4": {
+          "type": "tabs-heading",
+          "settings": {
+            "title": "Smokes"
+          }
+        },
+        "38100417-1c22-4345-b4ee-5ea663a04829": {
+          "type": "tabs-heading",
+          "disabled": true,
+          "settings": {
+            "title": "Pouches"
+          }
+        },
+        "8aba5ceb-18a7-4f8c-88c4-1088045b910c": {
+          "type": "tabs-content",
+          "settings": {
+            "image_one": "shopify:\/\/shop_images\/Tapioca.jpg",
+            "heading_one": "01. Tapioca Syrup",
+            "text_one": "<p>Organic Tapioca Syrup is what makes our gummies so special. It’s this natural, vegan-friendly binding agent that gives that signature chewy texture.<\/p>",
+            "image_two": "shopify:\/\/shop_images\/Pineapple.png",
+            "heading_two": "02. Natural Pineapple",
+            "text_two": "<p>This delicious and nutrient-rich tropical fruit is the sweet sensation that lends its fresh, juicy flavor to our vegan friendly CBD gummies.<\/p>",
+            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
+            "heading_three": "03. CBD Isolate",
+            "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
+            "button_label": "Explore Products",
+            "button_link": "shopify:\/\/collections\/cbd-gummies",
+            "button_bg_color": "#6ec59f",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "1ee69049-e857-4944-aea9-6f2d8fc5456c": {
+          "type": "tabs-content",
+          "settings": {
+            "image_one": "shopify:\/\/shop_images\/Lavendar.png",
+            "heading_one": "01. Lavender",
+            "text_one": "<p>Our fragrant lavender burns smoothly and produces a sweet floral scent for a perfectly relaxing moment of aromatherapy.<\/p>",
+            "image_two": "shopify:\/\/shop_images\/Lobelia.png",
+            "heading_two": "02. Lobelia",
+            "text_two": "<p>Native to the luscious valleys of North America, Lobelia is also known as Indian Tobacco and is sometimes used as an alternative to nicotine. <\/p>",
+            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
+            "heading_three": "03. CBD Isolate",
+            "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects. <\/p>",
+            "button_label": "Explore Products",
+            "button_link": "shopify:\/\/collections\/cbd-smokes",
+            "button_bg_color": "",
+            "button_text_color": ""
+          }
+        },
+        "9b1ac47c-d8ea-46b5-be0b-334854a78afe": {
+          "type": "tabs-content",
+          "disabled": true,
+          "settings": {
+            "image_one": "shopify:\/\/shop_images\/monk_fruit.png",
+            "heading_one": "01. Monk fruit",
+            "text_one": "<p>This subtly sweet exotic fruit extract contains natural sugars and a unique antioxidant profile that elevates the delicious flavors of our chew pouches. <\/p>",
+            "image_two": "shopify:\/\/shop_images\/Coconut.png",
+            "heading_two": "02. Coconut Fiber",
+            "text_two": "<p>Often known as coconut coir, this CBD-infused filler provides an unbeatable smooth flavor for a satisfying chew like no other. <\/p>",
+            "image_three": "shopify:\/\/shop_images\/CBD-isolate.png",
+            "heading_three": "03. CBD Isolate",
+            "text_three": "<p>Our premium CBD isolate is sourced from natural hemp to provide all the benefits of cannabidiol with zero THC and no psychoactive effects.<\/p>",
+            "button_label": "Explore Products",
+            "button_link": "shopify:\/\/collections\/cbd-pouches",
+            "button_bg_color": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "748621ad-2492-4f8f-8f16-4036356019f0",
+        "47e1520e-5903-4d97-9043-85d67aad69a4",
+        "38100417-1c22-4345-b4ee-5ea663a04829",
+        "8aba5ceb-18a7-4f8c-88c4-1088045b910c",
+        "1ee69049-e857-4944-aea9-6f2d8fc5456c",
+        "9b1ac47c-d8ea-46b5-be0b-334854a78afe"
+      ],
+      "settings": {
+        "heading_text": "<p><strong>Naturally <\/strong>Sourced,<br\/><strong>Functional <\/strong>Ingredients<\/p>",
+        "subheading_text": "<p>Soothe your soul with naturally-sourced products that are oh so Chill. <\/p>",
+        "text_alignment": "center"
+      }
+    },
     "16616836322167cf31": {
       "type": "home_collections",
       "disabled": true,
@@ -842,6 +830,18 @@
         "full_width": true,
         "mobile_overlay_under": false,
         "overlay_style": "shadow"
+      }
+    },
+    "1661495934a2300196": {
+      "type": "featured-background-video",
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/38580cf6818f466ebd1582128a8ceb85.mp4",
+        "autoplay": false,
+        "placeholder_image": "shopify:\/\/shop_images\/Homepage_second_video.webp",
+        "video_position": "left",
+        "use_alt_bg": false,
+        "height_desktop": 44,
+        "height_mobile": 100
       }
     },
     "16607619805b81a490": {
@@ -972,11 +972,11 @@
     "16359278676808bea5",
     "1661508210e5eab38e",
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
-    "1661495934a2300196",
-    "1661759224933bf819",
     "16618284517e50f27f",
+    "1661759224933bf819",
     "16616836322167cf31",
     "8f5264ca-7f1d-4235-b07d-2de00dd54813",
+    "1661495934a2300196",
     "16607619805b81a490",
     "3dee64a8-71bf-4655-926f-2db509dcd6a5",
     "166453148629faf25b",
