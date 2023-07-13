@@ -154,20 +154,6 @@
         "use_alt_bg": true
       }
     },
-    "16359278676808bea5": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our <strong> Trending Products <\/strong>",
-        "collection": "trending-products",
-        "show_vendor": true,
-        "enable_carousel": false,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": false
-      }
-    },
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
@@ -413,6 +399,20 @@
         "slide_navigation": "arrows",
         "autoplay": true,
         "autoplay_speed": 7
+      }
+    },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our <strong> Trending Products <\/strong>",
+        "collection": "trending-products",
+        "show_vendor": true,
+        "enable_carousel": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "full_width": false
       }
     },
     "1661508210e5eab38e": {
@@ -939,8 +939,8 @@
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "166149763181cc2acb",
     "1635927863703110df",
-    "16359278676808bea5",
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
+    "16359278676808bea5",
     "1661508210e5eab38e",
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
     "1661495934a2300196",
