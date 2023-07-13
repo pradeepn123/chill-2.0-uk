@@ -3,7 +3,7 @@
     "main": {
       "type": "main-login",
       "settings": {
-        "side_image": "shopify:\/\/shop_images\/SIGN_UP_IMAGE.jpg",
+        "side_image": "shopify:\/\/shop_images\/Customer_Login.jpg",
         "account_subtitle": "<p>Please enter your <strong>e-mail <\/strong>and <strong>password<\/strong>:<\/p>",
         "login_btn_font_size": 20,
         "button_color": "#6ec59f",
