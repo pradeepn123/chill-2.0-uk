@@ -457,32 +457,6 @@
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
       "type": "slideshow",
       "blocks": {
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "Tell your story",
-            "title": "Two line\nslide heading",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>And optional subtext<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "Shop this",
-            "button_url_1": "",
-            "button_label_2": "Shop all",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center center"
-          }
-        },
         "30f4598b-5a5e-4967-a71c-a4888ada542a": {
           "type": "image",
           "settings": {
@@ -509,11 +483,38 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_d4ea4dfe-9b23-45e3-9702-4a791cdaa0fb.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Healthy Ravers\n= Happy Ravers <s><\/s><\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>Did you know that raving can make you <br\/>happier, healthier and more successful?<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ MORE",
+            "button_url_1": "shopify:\/\/blogs\/chill-blog\/healthy-ravers-happy-ravers",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
-        "30f4598b-5a5e-4967-a71c-a4888ada542a"
+        "30f4598b-5a5e-4967-a71c-a4888ada542a",
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0"
       ],
       "settings": {
         "height": "fixed",
