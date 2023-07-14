@@ -116,44 +116,6 @@
         "home_icons_title": "<p>Shop <strong>By Category<\/strong><\/p>"
       }
     },
-    "1635927863703110df": {
-      "type": "rich-text",
-      "blocks": {
-        "1635927863703110df-1": {
-          "type": "heading",
-          "settings": {
-            "title": "<p>Natural <strong>Relaxation<\/strong><\/p>",
-            "use_h1": false
-          }
-        },
-        "1635927863703110df-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Unwind your way with premium natural products crafted to de-stress your daily routine. From wellness gummies to tobacco alternatives, join us and <strong>choose Chill. <\/strong><\/p>",
-            "enlarge_text": true
-          }
-        },
-        "712402e7-c723-4bbb-a1a7-d907a7abf682": {
-          "type": "button",
-          "settings": {
-            "button_label": "LEARN ABOUT CBD",
-            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
-            "button_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "1635927863703110df-1",
-        "1635927863703110df-2",
-        "712402e7-c723-4bbb-a1a7-d907a7abf682"
-      ],
-      "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": true
-      }
-    },
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
@@ -401,6 +363,44 @@
         "autoplay_speed": 7
       }
     },
+    "1635927863703110df": {
+      "type": "rich-text",
+      "blocks": {
+        "1635927863703110df-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Natural <strong>Relaxation<\/strong><\/p>",
+            "use_h1": false
+          }
+        },
+        "1635927863703110df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unwind your way with premium natural products crafted to de-stress your daily routine. From wellness gummies to tobacco alternatives, join us and <strong>choose Chill. <\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "712402e7-c723-4bbb-a1a7-d907a7abf682": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN ABOUT CBD",
+            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "1635927863703110df-1",
+        "1635927863703110df-2",
+        "712402e7-c723-4bbb-a1a7-d907a7abf682"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": true
+      }
+    },
     "16359278676808bea5": {
       "type": "featured-collection",
       "settings": {
@@ -471,15 +471,15 @@
             "title_size_mobile": 36,
             "use_h1": false,
             "text": "<p>We unpack the benefits going tobacco-free<br\/>has on your sex life!<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "READ MORE",
             "button_url_1": "",
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#9792e4",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -525,15 +525,15 @@
             "title_size_mobile": 36,
             "use_h1": false,
             "text": "<p>Tips that’ll help you handle staying sober <br\/>one sip at a time.<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "READ NOW",
             "button_url_1": "shopify:\/\/blogs\/chill-blog\/sipping-sobriety-navigating-social-situations-without-alcohol",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#F3B09F",
-            "button_text_color": "#FFFFFF",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -967,8 +967,8 @@
     "46a02b95-6dea-48f4-b202-8b1797db7374",
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "166149763181cc2acb",
-    "1635927863703110df",
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
+    "1635927863703110df",
     "16359278676808bea5",
     "1661508210e5eab38e",
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
