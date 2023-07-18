@@ -540,7 +540,6 @@
         },
         "c9689645-d1f7-40b8-ada2-22ff4755e741": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner.jpg",
             "mobile_image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_3c1bd4fe-406c-4ea3-ae9d-bf709f9abdd8.jpg",
@@ -554,14 +553,14 @@
             "use_h1": false,
             "text": "<p>Find out more about Zoey's journey<br\/>to creating alcohol-free beer made from<br\/>functional mushrooms!<\/p>",
             "heading_color": "#171717",
-            "text_color": "#000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "READ MORE",
             "button_url_1": "",
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#6ec59f",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
