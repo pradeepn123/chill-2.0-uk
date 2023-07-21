@@ -3,13 +3,11 @@
     .title_container{
         padding: 48px 0;
         .view_all_button{
-            button{
                 border: 0;
                 font-size: 18px;
                 font-weight: 700;
                 text-transform: uppercase;
                 border-radius: 32px;
-            }
         }
     }
     .flavours_wrapper{
@@ -106,7 +104,7 @@
                         font-weight: 600;
                         color: #fff;
                     }
-                    .flavourButton button{
+                    .flavourButton{
                         width: 80%;
                         background: transparent;
                         border: 2px solid #fff;
@@ -125,3 +123,57 @@
         }
     }
 }
+
+#flavourDrawerContainer{
+    .flavour_drawer_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 24px;
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .flavour-drawer-summary__close{
+            position: unset;
+            margin: 0;
+        }
+    }
+    .flavour_drawer_content{
+        .flavour_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-row-gap: 1px;
+            border: 1px solid #E5E5E5;
+            @media (max-width: 767px){
+                grid-template-columns: 1fr 1fr;
+            }
+            .flavour{
+                border: 1px solid #E5E5E5;
+                border-top: 0;
+                border-left: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 20px;
+                justify-content: center;
+                @media (max-width: 767px){
+                    padding: 15px 30px;
+                }
+                img{
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+                .flavour_text{
+                    text-align: center;
+                    margin-top: 1em;
+                    font-size: 15.543px;
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #000;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}
+

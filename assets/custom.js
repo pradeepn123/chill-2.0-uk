@@ -981,6 +981,29 @@ document.querySelectorAll('.marquee_container .marquee_content_wrapper').forEach
 })
 }
 
+
+// Explore flavour drawer on new vape page
+function openFlavourDrawer(){
+    document.getElementById('flavourDrawerContainer').style.display='block'; 
+    document.getElementById('flavourDrawerBackground').style.display='block';
+    document.getElementById('flavourDrawerContainer').classList.add('claim-drawer-open');
+      document.querySelector("body").classList.add("cart-drawer-open")
+      if(document.getElementById('flavourDrawerContainer').classList.contains('claim-drawer-close')){
+        document.getElementById('flavourDrawerContainer').classList.add('claim-drawer-close');
+      }
+}
+
+var flavourDrawerBackgroundClick = document.getElementById('flavourDrawerBackground');
+flavourDrawerBackgroundClick.addEventListener('click', function() {
+    document.querySelector('.flavour-drawer-summary__close').click()
+    document.querySelector("body").classList.remove("cart-drawer-open")
+})
+
+document.querySelector('.view_all_button').addEventListener('click', () =>{
+    openFlavourDrawer();
+})
+
+//Waitlist drawer on old vape page
 function openWaitlistDrawer(){
     document.getElementById('waitlistDrawerContainer').style.display='block'; 
     document.getElementById('waitlistDrawerBackground').style.display='block';

@@ -8,7 +8,7 @@
     .section_subtitle{
         font-size: {{ section.settings.subtitle_font_size }}px
     }
-    .view_all_button button{
+    .view_all_button{
         color: {{ section.settings.view_all_button_text_color}};
         background: {{ section.settings.view_all_button_color }};
     }
@@ -28,12 +28,12 @@
     }
 
 {% endstyle %}
-<div class="section {{ section.class}}">
+<div class="section section-explore-flavours">
     <div class="section_wrapper">
         <div class="title_container">
             <h1 class="section_title">{{ section.settings.section_title}}</h1>
             <h3 class="section_subtitle">{{ section.settings.section_subtitle}}</h3>
-            <a href="{{ section.settings.view_all_button_link }}" class="view_all_button"><button>{{ section.settings.button_text }}</button></a>
+            <button class="view_all_button">{{ section.settings.button_text }}</button>
         </div>
         <div class="flavours_wrapper">
             <div class="flavours_container">
@@ -53,13 +53,34 @@
                             </div>
                             <p class="flavour_title">
                                 {{ block.settings.flavour_title }}</p>
-                            <a href="#" class="flavourButton"><button>{{ block.settings.flavour_button_text }}</button></a>
+                            <button  class="flavourButton">{{ block.settings.flavour_button_text }}</button>
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
     </div>
+</div>
+
+
+<div class="claim_drawer_background" id="flavourDrawerBackground" style="display:none;"></div>
+<div class="claim_drawer_container" id="flavourDrawerContainer" style="display:block;">
+    <div class="flavour_drawer_header">
+        <h1>All Flavours ({{ section.blocks.size }})</h1>
+        <a class="claim-drawer-summary__close flavour-drawer-summary__close toggle-cart-summary" onclick="document.getElementById('flavourDrawerContainer').classList.remove('claim-drawer-open'); document.getElementById('flavourDrawerBackground').style.display = 'none';document.querySelector('body').classList.remove('cart-drawer-open');">
+            {% render 'svg-close' %}
+        </a>
+    </div>
+  <div class="flavour_drawer_content">
+    <div class="flavour_container">
+        {% for block in section.blocks %}
+            <div class="flavour">
+                <img src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" style="background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}')">
+                <p class="flavour_text">{{ block.settings.flavour_title }}</p>
+            </div>
+        {% endfor%}
+    </div>
+  </div>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -84,19 +105,6 @@
                 })
             })
         }
-        
-            // document.querySelector('.description_open_button').addEventListener('click', () => {
-            //     console.log('clicked on open')
-            //     document.querySelector('.description_close_button').style.opacity = '1'
-            //     document.querySelector('.description_open_button').style.opacity = '0'
-            // });
-            // document.querySelector('.description_close_button').addEventListener('click', () => {
-            //     console.log('closed....')
-            //     document.querySelector('.description_open_button').style.opacity = '1'
-            //     document.querySelector('.description_close_button').style.opacity = '0'
-            // })
-        
-        
     })
 </script>
 {% schema %}
@@ -208,6 +216,11 @@
                         "type": "image_picker",
                         "id": "flavour_block_image",
                         "label": "Flavour block image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "flavour_icon",
+                        "label": "Flavour icon"
                     },
                     {
                         "type": "text",

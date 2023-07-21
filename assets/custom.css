@@ -10748,7 +10748,7 @@ body.cart-drawer-open {
 .section-explore-flavours .title_container {
   padding: 48px 0;
 }
-.section-explore-flavours .title_container .view_all_button button {
+.section-explore-flavours .title_container .view_all_button {
   border: 0;
   font-size: 18px;
   font-weight: 700;
@@ -10848,7 +10848,7 @@ body.cart-drawer-open {
   font-weight: 600;
   color: #fff;
 }
-.section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .flavourButton button {
+.section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .flavourButton {
   width: 80%;
   background: transparent;
   border: 2px solid #fff;
@@ -10859,8 +10859,61 @@ body.cart-drawer-open {
   padding: 15px;
 }
 @media (max-width: 767px) {
-  .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .flavourButton button {
+  .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .flavourButton {
     width: 100%;
     font-size: 16px;
   }
+}
+
+#flavourDrawerContainer .flavour_drawer_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+}
+#flavourDrawerContainer .flavour_drawer_header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+#flavourDrawerContainer .flavour_drawer_header .flavour-drawer-summary__close {
+  position: unset;
+  margin: 0;
+}
+#flavourDrawerContainer .flavour_drawer_content .flavour_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1px;
+  border: 1px solid #E5E5E5;
+}
+@media (max-width: 767px) {
+  #flavourDrawerContainer .flavour_drawer_content .flavour_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
+  border: 1px solid #E5E5E5;
+  border-top: 0;
+  border-left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
+    padding: 15px 30px;
+  }
+}
+#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour img {
+  border-radius: 50%;
+  padding: 10px;
+}
+#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour .flavour_text {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 15.543px;
+  font-style: normal;
+  font-weight: 600;
+  color: #000;
+  text-transform: capitalize;
 }
