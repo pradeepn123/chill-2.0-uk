@@ -1,0 +1,127 @@
+
+.section-explore-flavours{
+    .title_container{
+        padding: 48px 0;
+        .view_all_button{
+            button{
+                border: 0;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius: 32px;
+            }
+        }
+    }
+    .flavours_wrapper{
+        .flavours_container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            overflow: auto;
+            position: relative;
+            .slick-arrow{
+                position: absolute;
+                z-index: 10;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                background: #fff;
+                padding: 20px;
+                border: 0;
+                &.slick-flavour-prev{
+                    left: 0;
+                    margin-left: 30px;
+                }
+                &.slick-flavour-next{
+                    right: 0;
+                    margin-right: 30px;
+                }
+                svg{
+                    fill: #000;
+                }
+            }
+            .flavour_block_container{
+                padding: 24px;
+                .flavour_block{
+                    text-align: center;
+                    @media (min-width: 768px){
+                        .description_open_button, .description_close_button{
+                            display: none !important;
+                        }
+                    }
+                    
+                    @media (max-width: 7687px){
+                        .description_close_button{
+                            display: none; 
+                        }
+                        .description_open_button, .description_close_button{
+                            margin-left: auto;
+                        }
+                    }
+                    
+                    .hover_block{
+                        position: relative;
+                        
+                        .flavour_image{
+                            height: 18.125rem;
+                            margin: auto;
+                            @media (max-width: 768px){
+                                height: 13.688rem;
+                            }
+                        }
+                        .flavour_description{
+                            transition: opacity 350ms;
+                            position: absolute;
+                            top: 0;
+                            opacity: 0;
+                            text-align: left;
+                            color: #fff;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px;
+                            max-height: 18rem;
+                            overflow: auto;
+                            @media (max-width: 768px){
+                                font-size: 14px;
+                                max-height: 13rem;
+                                line-height: 23.7px;
+                            }
+                        }
+                    }
+                    @media (min-width: 768px){
+                        &:hover {
+                            .flavour_image{
+                                opacity: 0;
+                            }
+                            .flavour_description{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                    
+                    .flavour_title{
+                        font-size: 20px;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+                    .flavourButton button{
+                        width: 80%;
+                        background: transparent;
+                        border: 2px solid #fff;
+                        border-radius: 32px;
+                        font-size: 24px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        padding: 15px;
+                        @media (max-width: 767px){
+                            width: 100%;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
