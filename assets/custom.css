@@ -11013,3 +11013,63 @@ body.cart-drawer-open {
   font-size: 22px;
   font-weight: 700;
 }
+/*  okendo rating carousel */
+
+/* .oke-stars-foreground svg{
+  width: auto !important;
+} */
+
+.okeReviews[data-oke-container] .oke-reviewCarousel, div.okeReviews .oke-reviewCarousel {
+  max-width: 1440px !important;
+}
+.oke-reviewCard .oke-w-review-footer , .oke-reviewCarousel-reviews-review .oke-reviewCard-container , 
+.oke-reviewCard-product , .oke-reviewCarousel-header .okeReviews{
+  display: none !important;
+}
+
+.oke-reviewCarousel-header .oke-reviewCarousel-header-title{
+  font-size: 52px !important;
+  font-weight: 600 !important;
+}
+
+.oke-reviewCarousel-reviews-review .oke-reviewCard{
+  border-radius: 33px;
+}
+.oke-reviewCarousel-reviews-review .oke-reviewCard{
+  padding: 39px 24px 48px !important ;
+}
+
+.oke-reviewCard-reviewer .oke-w-reviewer-name , .oke-reviewCard-reviewer .oke-w-reviewer-verified{
+  font-size: 16px !important;
+}
+.okeReviews[data-oke-container] .oke-reviewContent-readMore, div.okeReviews .oke-reviewContent-readMore{
+  text-decoration: underline !important;
+}
+.oke-reviewContent-stars{
+  flex: 1 0 20%;
+}
+.oke-stars{
+  width: 100%;
+}
+.oke-stars-foreground svg{
+  width: 134px;
+}
+
+@media(max-width:769px){
+  .oke-reviewCarousel-header .oke-reviewCarousel-header-title{
+    font-size: 39px !important;
+  }
+}
+
+@media(max-width:620px){
+  .oke-reviewCarousel-slider .oke-prevNextButton ,   .oke-reviewCarousel-slider .oke-prevNextButton{
+    display: none;
+  }
+  .okeReviews[data-oke-container] .oke-reviewCarousel-reviews, div.okeReviews .oke-reviewCarousel-reviews {
+    width: auto !important;
+  }
+  .oke-reviewCarousel-header .oke-reviewCarousel-header-title{
+    font-size: 24px !important;
+  }
+}
+

@@ -7,31 +7,29 @@
         "full_width": false
       }
     },
-    "711f9332-7369-423e-a224-037490bbf097": {
-      "type": "background-video",
+    "ac21692e-7e00-4741-9601-7f5608390ffb": {
+      "type": "video-image",
       "settings": {
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "use_alt_bg": true,
-        "subheading": "Tell your story",
-        "title": "Background video",
-        "font_weight_head": "normal",
-        "title_size": 84,
-        "title_size_mobile": 32,
+        "video": "",
+        "subheading": "",
+        "title": "<b>CHILL<\/b>ZERO",
+        "title_size": 88,
+        "title_size_mobile": 44,
         "use_h1": false,
-        "text": "<p>Use a video to get a customer's attention<\/p>",
-        "sub_font_size": 20,
+        "text": "<p>100% Flavor, 0% Nicotine. Puff on<br\/>Your Terms.<\/p>",
+        "heading-color": "#ffffff",
+        "richtext-color": "#ffffff",
         "enlarge_text": true,
-        "button_label_1": "",
-        "btn_font": 16,
-        "btn_font_mobile": 16,
-        "button_url_1": "",
-        "button_label_2": "",
+        "button_label__1": "TRY NOW",
+        "button_url_1": "shopify:\/\/pages\/chillzero",
+        "button_label__2": "",
         "button_url_2": "",
-        "botton_bg": "",
-        "botton_text_color": "",
-        "text_alignment": "center center",
-        "height_desktop": 600,
-        "height_mobile": 500,
+        "botton_bg": "#6ec59f",
+        "botton_text_color": "#ffffff",
+        "text_alignment": "center left",
+        "text_alignment_mobile": "end center",
+        "height_desktop": 620,
+        "height_mobile": 440,
         "full_width": true,
         "overlay_style": "shadow"
       }
@@ -120,11 +118,259 @@
         "view_all_button_color": "#ff4f6c",
         "view_all_button_text_color": "#ffffff"
       }
+    },
+    "4c819307-2d8d-4fff-b903-911986fbbe45": {
+      "type": "marquee-with-cta-text-image",
+      "blocks": {
+        "b6627667-d1a3-4ee0-acbd-1ae7727203fa": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p>0% nicotine<\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Pen_1500_watermelon_4083cecf-6fde-489c-9c81-90e317e8b0ff.png",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        },
+        "4b255f40-6702-46cf-8156-c1772eb370c4": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p>powerful flavours<\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Pen_1500_lemon_6be718b4-af4b-400a-93c1-ab2b04b2a37f.png",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        },
+        "b780e32e-40ec-488e-a74d-b2faac8921d8": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p>total satisfaction<\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Pen_1500_bluerazz_8b2f0cf1-8687-4f5f-b15a-2814ae5cc7f7.png",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        }
+      },
+      "block_order": [
+        "b6627667-d1a3-4ee0-acbd-1ae7727203fa",
+        "4b255f40-6702-46cf-8156-c1772eb370c4",
+        "b780e32e-40ec-488e-a74d-b2faac8921d8"
+      ],
+      "settings": {
+        "animate_marquee_on_scroll": true
+      }
+    },
+    "deec0f8a-8c59-45ae-b34e-9dc49bb1edd3": {
+      "type": "text-image-flex",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
+        "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
+        "image_width": 700,
+        "subheading": "",
+        "title-color": "#ffffff",
+        "text-color": "#ffffff",
+        "button-color": "#ffffff",
+        "button-bg-color": "#f7e57a",
+        "title": "Meet ChillZero",
+        "use_h1": false,
+        "text": "<p>The nicotine-free diffuser that's packed with flavor. Satisfy your senses and escape that nic hit with powerful puffs and superior taste.<\/p>",
+        "button_label": "TRY NOW",
+        "button_link": "shopify:\/\/pages\/chillzero",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_alignment_mobile": "center",
+        "use_alt_bg": true
+      }
+    },
+    "169009606439f03985": {
+      "type": "apps",
+      "blocks": {
+        "6eb3a68d-fbb4-4fb1-8139-146b2cd9b8b3": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": true,
+            "heading": "Over 5000 5-star reviews",
+            "badge_link": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "6eb3a68d-fbb4-4fb1-8139-146b2cd9b8b3"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "f30e484f-f2de-424b-9945-ebaf4a1c0056": {
+      "type": "home-icons",
+      "blocks": {
+        "f964ac6c-7895-4212-80b8-824cfe42d79b": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/nicotine_free_00029b89-7455-4c30-9e64-616b1a7769e2.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "ZERO NICOTINE",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        },
+        "9c34bb05-e586-4332-b226-6bb04e583971": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Frame_16.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "ORGANICALL YDERIVED BASE",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        },
+        "f7e5c25b-ab48-467e-ae77-04f3a296cf66": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/ICON_3.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "NO ARTIFICIAL ADDITIVES",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        },
+        "d08ce9ef-45eb-4fdd-aadb-287e03f12e1d": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/ICON_4.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "BORN IN UK",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        }
+      },
+      "block_order": [
+        "f964ac6c-7895-4212-80b8-824cfe42d79b",
+        "9c34bb05-e586-4332-b226-6bb04e583971",
+        "f7e5c25b-ab48-467e-ae77-04f3a296cf66",
+        "d08ce9ef-45eb-4fdd-aadb-287e03f12e1d"
+      ],
+      "settings": {
+        "home_icons_title": ""
+      }
+    },
+    "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
+      "type": "text-image-flex",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Mind_Panda_Blog6.jpg",
+        "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
+        "image_width": 700,
+        "subheading": "",
+        "title-color": "#ffffff",
+        "text-color": "#ffffff",
+        "button-color": "#ffffff",
+        "button-bg-color": "#98d8ee",
+        "title": "Meet ChillZero",
+        "use_h1": false,
+        "text": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>",
+        "button_label": "TRY NOW",
+        "button_link": "shopify:\/\/pages\/chillzero",
+        "button_style": "primary",
+        "image_position": "right",
+        "text_alignment": "left",
+        "text_alignment_mobile": "center",
+        "use_alt_bg": true
+      }
+    },
+    "b9519508-2bb4-4494-b7a8-2b3d183854b5": {
+      "type": "image-carousel",
+      "blocks": {
+        "bb4486dc-2220-441c-9827-182fc6355e9d": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Rectangle_2_1.png",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "e0a08e06-466e-45ac-8585-6e7138abbaab": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Rectangle_4_1.png",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "0a5e860b-c45f-4744-b1dd-d143e4196496": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Rectangle_3_1.png",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "da03f6d6-a45e-48bd-8a2d-7bfc763111a9": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Rectangle_4_1.png",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        }
+      },
+      "block_order": [
+        "bb4486dc-2220-441c-9827-182fc6355e9d",
+        "e0a08e06-466e-45ac-8585-6e7138abbaab",
+        "0a5e860b-c45f-4744-b1dd-d143e4196496",
+        "da03f6d6-a45e-48bd-8a2d-7bfc763111a9"
+      ],
+      "settings": {
+        "section_redirection_link": "",
+        "carousel_image_width": 390,
+        "carousel_image_height": 400,
+        "carousel_image_border_radius": 33,
+        "carousel_image_width_mobile": 250,
+        "carousel_image_height_mobile": 250
+      }
+    },
+    "4770afc1-db39-4bdd-a530-de84902a9a91": {
+      "type": "newsletter",
+      "settings": {
+        "newsletter_logo": "<svg id=\"Group_6347\" data-name=\"Group 6347\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"136.516\" height=\"136.512\" viewbox=\"0 0 136.516 136.512\">\n  <g id=\"Group_637\" data-name=\"Group 637\" transform=\"translate(0 0)\">\n    <g id=\"Group_636\" data-name=\"Group 636\" transform=\"translate(0 0)\">\n      <g id=\"Group_631\" data-name=\"Group 631\" transform=\"translate(4.578)\">\n        <path id=\"Path_8791\" data-name=\"Path 8791\" d=\"M64.571,191.328a1.477,1.477,0,0,1-1.33-2.08l1.6-3.757a67.074,67.074,0,0,1,123.391-.067l1.53,3.489a1.688,1.688,0,0,1-1.463,2.348h-5.188a1.651,1.651,0,0,1-1.463-.872l-3.725-7.38a58.864,58.864,0,0,0-102.7.067l-3.858,7.447a1.489,1.489,0,0,1-1.264.805Z\" transform=\"translate(-63.124 -144.7)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_632\" data-name=\"Group 632\" transform=\"translate(5.03 89.884)\">\n        <path id=\"Path_8792\" data-name=\"Path 8792\" d=\"M65.462,280.367l122.924-.067a2,2,0,0,1,1.8,2.818l-1.33,3.019a67.072,67.072,0,0,1-123.389.067l-1.53-3.422A1.712,1.712,0,0,1,65.462,280.367Zm110.551,8.185-97.248.067a1.686,1.686,0,0,0-1.4,2.617,58.841,58.841,0,0,0,99.776-.4A1.436,1.436,0,0,0,176.013,288.552Z\" transform=\"translate(-63.798 -280.3)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_633\" data-name=\"Group 633\" transform=\"translate(0 48.762)\">\n        <path id=\"Path_8793\" data-name=\"Path 8793\" d=\"M56.3,237.053c0-9.661,2.063-15.766,2.2-16.1l.532-1.476a10.347,10.347,0,0,0,.6-1.275H182.162c8.453,0,7.987.6,8.187,1.476l.466,1.476a65.242,65.242,0,0,1-.2,32.874l-.333,1.275a2.11,2.11,0,0,1-1.6,1.476l-1.265.2c-15.308,2.549-51.383,1.409-62.9-17.846-16.507,24.354-60.169,18.182-62.632,17.913l-1.464-.2a1.85,1.85,0,0,1-1.6-1.409l-.333-1.476A66.641,66.641,0,0,1,56.3,237.053Zm8.852-8.923a58.863,58.863,0,0,0,.2,19.389,1.984,1.984,0,0,0,1.8,1.677c13.711,1.006,47.656,2.08,53.447-21.4l.333-1.342H67.149A2.016,2.016,0,0,0,65.152,228.13Zm118.741,0a1.947,1.947,0,0,0-1.93-1.677H128.117l.333,1.342c5.591,22.744,42.6,22.408,53.447,21.469a1.989,1.989,0,0,0,1.731-1.543A57.14,57.14,0,0,0,183.893,228.13Z\" transform=\"translate(-56.3 -218.2)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_634\" data-name=\"Group 634\" transform=\"translate(90.018 37.65)\">\n        <path id=\"Path_8794\" data-name=\"Path 8794\" d=\"M192.1,203.244v4.227a2.018,2.018,0,0,0,2.013,2.013h25.226a1.971,1.971,0,0,0,1.744-2.885L219,202.372a1.934,1.934,0,0,0-1.744-1.073H194.18A1.9,1.9,0,0,0,192.1,203.244Z\" transform=\"translate(-192.1 -201.295)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_635\" data-name=\"Group 635\" transform=\"translate(17.693 38.052)\">\n        <path id=\"Path_8795\" data-name=\"Path 8795\" d=\"M111.875,203.913v4.227a2.018,2.018,0,0,1-2.013,2.013H84.636a1.971,1.971,0,0,1-1.744-2.885l2.08-4.227a2,2,0,0,1,1.744-1.141H109.8A1.993,1.993,0,0,1,111.875,203.913Z\" transform=\"translate(-82.671 -201.9)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n    <\/g>\n  <\/g>\n<\/svg>",
+        "title": "Keep Chilling",
+        "subheading": "<p>Stay in the loop + get 20% off your first order<\/p>",
+        "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See privacy policy and terms of service for details.<\/p>",
+        "bg_image": "shopify:\/\/shop_images\/footer_background.jpg",
+        "color_bg": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
-    "711f9332-7369-423e-a224-037490bbf097",
-    "21a1c1cc-0c7d-4deb-9e8b-d1c99938f629"
+    "ac21692e-7e00-4741-9601-7f5608390ffb",
+    "21a1c1cc-0c7d-4deb-9e8b-d1c99938f629",
+    "4c819307-2d8d-4fff-b903-911986fbbe45",
+    "deec0f8a-8c59-45ae-b34e-9dc49bb1edd3",
+    "169009606439f03985",
+    "f30e484f-f2de-424b-9945-ebaf4a1c0056",
+    "753064d1-ae3f-4a27-a74c-1af9b4752c7d",
+    "b9519508-2bb4-4494-b7a8-2b3d183854b5",
+    "4770afc1-db39-4bdd-a530-de84902a9a91"
   ]
 }

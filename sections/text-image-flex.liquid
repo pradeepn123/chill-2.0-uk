@@ -1,0 +1,302 @@
+{% style %}
+    
+    #section-id-{{ section.id }} .background-img-cover .feature-text-paired .majortitle{
+        color:{{ section.settings.title-color }};
+        font-size: 52px;
+        font-weight: 600;
+    }
+    #section-id-{{ section.id }} .background-img-cover .feature-text-paired .rte{
+        color:{{ section.settings.text-color }};
+        font-size: 20px;
+        font-weight: 400;
+    }
+    #section-id-{{ section.id }} .background-img-cover .btn--primary{
+        color:{{ section.settings.button-color }};
+        background:{{section.settings.button-bg-color}};
+        border: 1px solid {{section.settings.button-bg-color}};
+        border-radius: 30px;
+        font-size: 16px;
+        padding: 16px 40px;
+        font-weight: 700;
+    }
+    #section-id-{{ section.id }} .background-img-cover{
+        position: relative;
+        height:600px;
+        /* margin-top: 100px; */
+    }
+    #section-id-{{ section.id }} .flex-wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 94%;
+    }
+    @media(min-width:768px){
+        #section-id-{{ section.id }} .feature-text-paired {
+            margin-left: 9%;
+            margin-right: 9%;
+        }
+    }
+    @media(min-width:768px) and (max-width:1025px){
+        #section-id-{{ section.id }} .background-img-cover{
+            height: 430px !important;
+        }
+    }
+    @media(min-width:1440px){
+        #section-id-{{ section.id }} .rimage-wrapper img{
+            object-fit:cover !important;
+        }
+    }
+    @media(max-width:768px){
+        #section-id-{{ section.id }} .align-{{ section.settings.text_alignment }}{
+            text-align:{{ section.settings.text_alignment_mobile }}
+        }
+        #section-id-{{ section.id }} .background-img-cover .feature-text-paired .rte{
+            font-size:18px;
+        }
+        #section-id-{{ section.id }} .background-img-cover .feature-text-paired .majortitle{
+            font-size:39px;
+        }
+    }
+    @media(max-width:520px){
+        #section-id-{{ section.id }} .background-img-cover .feature-text-paired .majortitle{
+            font-size:24px;
+        } 
+        #section-id-{{ section.id }} .background-img-cover{
+            height:536px;
+        }
+        #section-id-{{ section.id }} .background-img-cover .btn--primary{
+            margin-bottom: 8px;
+        }
+    }
+    
+{% endstyle %}
+
+<div id="section-id-{{ section.id }}">
+    <div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium background-img-cover {% else %}fully-spaced-row--medium{% endif %}" style="background:url({{ section.settings.background_image_2 | img_url: 'master' }});background-size: cover; background-repeat: no-repeat;background-position: center;">
+        <div class="container">
+        <div class="flexible-layout valign-middle flex-wrap">
+            <div class="column column--half {% if section.settings.image_position == 'right' %}column--order-push-desktop{% endif %}">
+            {% if section.settings.button_link != blank %}<a class="block-link" href="{{ section.settings.button_link }}">{% endif %}
+                <div class="image-overlap" style="max-width: {{ section.settings.image_width }}px">
+                <div class="image-overlap__image image-overlap__image-1">
+                    {%- if section.settings.image == blank -%}
+                    <div class="placeholder-image">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                    {%- else -%}
+                    {%- render 'responsive-image', image: section.settings.image, animate: true, animate_delay: "0.1s", animate_type: "cc-fade-in-up" -%}
+                    {%- endif -%}
+                </div>
+    
+                {%- if section.settings.image == blank or section.settings.image_2 != blank -%}
+                    <div class="image-overlap__image image-overlap__image-2">
+                    {%- if section.settings.image_2 == blank -%}
+                        <div class="placeholder-image">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                    {%- else -%}
+                        {%- render 'responsive-image', image: section.settings.image_2, animate: true, animate_delay: "0.3s", animate_type: "cc-fade-in-up" -%}
+                    {%- endif -%}
+                    </div>
+                {%- endif -%}
+                </div>
+            {% if section.settings.button_link != blank %}</a>{% endif %}
+            </div>
+    
+            <div class="column column--half align-{{ section.settings.text_alignment }}" data-cc-animate>
+            <div class="feature-text-paired">
+                {%- if section.settings.subheading != blank -%}
+                <div class="subheading subheading--over">{{ section.settings.subheading | escape }}</div>
+                {%- endif -%}
+    
+                {% if section.settings.title != blank %}
+                {% if section.settings.use_h1 %}
+                    <h1 class="majortitle in-content">{{ section.settings.title | escape }}</h1>
+                {% else %}
+                    <h2 class="majortitle in-content h1-style">{{ section.settings.title | escape }}</h2>
+                {% endif %}
+                {% endif %}
+    
+                <div class="rte">{{ section.settings.text }}</div>
+    
+                {% if section.settings.button_link != blank %}
+                <div class="lightly-spaced-row-above">
+                    <a class="{% if section.settings.button_style != 'link' %}btn btn--{{ section.settings.button_style }}{% else %}small-feature-link{% endif %}" href="{{ section.settings.button_link }}">{{ section.settings.button_label | escape }}</a>
+                </div>
+                {% endif %}
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+  
+  {% schema %}
+    {
+      "name": "Text-image flex",
+      "class": "section-image-with-text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image_2",
+          "label": " background Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 150,
+          "max": 700,
+          "step": 10,
+          "unit": "px",
+          "label": "Image width",
+          "default": 700
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+            "type": "color",
+            "id": "title-color",
+            "label": "title color"
+        },
+        {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text color"
+        },
+        {
+            "type": "color",
+            "id": "button-color",
+            "label": "Button color"
+        },
+        {
+            "type": "color",
+            "id": "button-bg-color",
+            "label": "Button background color"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Image with text"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_h1",
+          "label": "Set as primary page heading",
+          "info": "Use <h1> tag. One per page recommended. [Read more](https://cleancanvas.co.uk/support/symmetry/section-h1-setting)",
+          "default": false
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Pair text with an image to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.<\/p>"
+        },
+          {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button",
+          "default": "Read more"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "select",
+          "id": "button_style",
+          "label": "Button style",
+          "default": "primary",
+          "options": [
+            {
+              "label": "Button - primary",
+              "value": "primary"
+            },
+            {
+              "label": "Button - secondary",
+              "value": "secondary"
+            },
+            {
+              "label": "Link",
+              "value": "link"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image alignment",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ]
+        },
+        {
+            "type": "select",
+            "id": "text_alignment_mobile",
+            "label": "Text alignment Mobile",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          },
+        {
+          "type": "checkbox",
+          "id": "use_alt_bg",
+          "label": "Use alternate section color",
+          "default": false
+        }
+      ],
+      "presets": [
+        {
+          "name": "Text-image flex",
+          "settings": {}
+        }
+      ]
+    }
+  {% endschema %}
+  
