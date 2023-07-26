@@ -10917,3 +10917,99 @@ body.cart-drawer-open {
   color: #000;
   text-transform: capitalize;
 }
+
+.product-drawer-summary__close {
+  z-index: 1;
+}
+
+.vape_product_wrapper {
+  margin-top: 20px;
+}
+.vape_product_wrapper .vape_product_container {
+  padding: 24px;
+}
+.vape_product_wrapper .vape_product_container .product_images img {
+  border-radius: 0 !important;
+}
+.vape_product_wrapper .vape_product_container .vape_product_title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #000;
+}
+@media (max-width: 767px) {
+  .vape_product_wrapper .vape_product_container .vape_product_title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vape_product_wrapper .vape_product_container .vape_product_title {
+    font-size: 28px;
+  }
+}
+.vape_product_wrapper .vape_product_container .vape_product_varient_pack {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.vape_product_wrapper .vape_product_container .vape_product_vendor {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+}
+.vape_product_wrapper .vape_product_container .vape_product_vendor a {
+  color: #9792E4;
+}
+.vape_product_wrapper .vape_product_container .vape_product_vendor a:hover {
+  text-decoration: underline;
+}
+.vape_product_wrapper .vape_product_container .vape_product_description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.vape_product_wrapper .vape_product_container .product-detail .product-column-right {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-inline-start: 0;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .option-selector .label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .option-selector .cc-select__btn {
+  border: 2px solid #000;
+  border-radius: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .option-selector__btns .opt-label {
+  border-radius: 60px;
+  border: 2px solid #d9d9da;
+  padding: 14px 28px;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .option-selector__btns .opt-label .opt-label__text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .option-selector__btns .opt-btn:checked + .opt-label {
+  border: 2.4px solid #000;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .quantity-submit-row__submit .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .quantity-submit-row__submit .button .price-container {
+  margin-bottom: 0;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .quantity-submit-row__submit .button .price-container .current-price {
+  font-size: 22px;
+  font-weight: 700;
+}

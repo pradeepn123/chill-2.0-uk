@@ -7453,7 +7453,6 @@
           var productData = theme.OptionManager.getProductData($(this));
           var optionStatusMap = [];
           var currentSelectedOptionValues = [];
-
           $('.option-selectors[data-disable-unavailable="true"] .option-selector', this).each(function (index) {
             var checkedInput = $(this).find('input:checked');
             var selectedOption = $(this).find('.cc-select__option[aria-selected="true"]');

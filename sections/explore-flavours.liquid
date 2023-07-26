@@ -54,6 +54,7 @@
                             <p class="flavour_title">
                                 {{ block.settings.flavour_title }}</p>
                             <button  class="flavourButton">{{ block.settings.flavour_button_text }}</button>
+                            {% comment %} {% render 'vapeProductDrawer', class: classname , product: all_products[block.settings.product_block], section: section %} {% endcomment %}
                         </div>
                     </div>
                 {% endfor %}
@@ -62,7 +63,7 @@
     </div>
 </div>
 
-
+{% assign flavourTitle = '' %}
 <div class="claim_drawer_background" id="flavourDrawerBackground" style="display:none;"></div>
 <div class="claim_drawer_container" id="flavourDrawerContainer" style="display:block;">
     <div class="flavour_drawer_header">
@@ -71,17 +72,24 @@
             {% render 'svg-close' %}
         </a>
     </div>
-  <div class="flavour_drawer_content">
+  <div class="flavour_drawer_content" id="flavourDrawerContent">
     <div class="flavour_container">
         {% for block in section.blocks %}
-            <div class="flavour">
+            {% assign product = all_products[block.settings.product_block] %}
+            <div class="flavour" data-title={{ block.settings.flavour_title }} data-product='{{ product | json }}'>
                 <img src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" style="background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}')">
                 <p class="flavour_text">{{ block.settings.flavour_title }}</p>
+                {% assign classname = block.settings.flavour_title | replace: ' ', '' | downcase %}
+                {% render 'vapeProductDrawer', class: classname , product: product, section: section %}
             </div>
         {% endfor%}
     </div>
   </div>
 </div>
+{% comment %} {% render 'vapeProductDrawer' %} {% endcomment %}
+
+{% comment %}  {% endcomment %}
+
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         if(window.screen.width < 768){
@@ -194,6 +202,46 @@
                 "type": "color",
                 "id": "view_all_button_text_color",
                 "label": "Button text color"
+            },
+            {
+                "type": "header",
+                "content": "Product settings"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_location_underneath",
+                "label": "Show description below media",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "show_pickup_availability",
+                "label": "Show pickup availability",
+                "default": true,
+                "info": "Show customers where they can pick up the product. [Learn more](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/local-methods/local-pickup)"
+            },
+            {
+                "type": "checkbox",
+                "id": "disable_unavailable_variants",
+                "label": "Show availability in selectors",
+                "info": "When an option is selected, options below it are updated to show their availability",
+                "default": true
+            },
+            {
+                "type": "radio",
+                "id": "variant_style",
+                "label": "Variant style",
+                "options": [
+                  {
+                    "value": "listed",
+                    "label": "Box with label"
+                  },
+                  {
+                    "value": "dropdown",
+                    "label": "Dropdown"
+                  }
+                ],
+                "default": "listed"
             }
 
         ],
@@ -232,6 +280,11 @@
                         "type": "text",
                         "id": "flavour_button_text",
                         "label": "Flavour button text"
+                    },
+                    {
+                        "type":"product",
+                        "id": "product_block",
+                        "label": "Add product"
                     }
                 ]
             }

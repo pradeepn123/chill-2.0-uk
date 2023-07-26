@@ -95,12 +95,12 @@
   </div>
 </div>
 <script>
-  $("select[name='address[province]']").on("change",function(){
+  {% comment %} $("select[name='address[province]']").on("change",function(){
     var currentValue = $(this).val();
     var options = "";
     //switch on currentValue and build options string
     $("select[name='city']").html(options);
-});
+}); {% endcomment %}
 </script> 
 {% schema %}
     {
