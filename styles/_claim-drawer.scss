@@ -37,6 +37,7 @@
         transition: transform 0.5s;
         visibility: visible;
         opacity: 1;
+        overflow-x: hidden;
     }
     .claim-drawer-summary__close{
         position: absolute;
