@@ -29,8 +29,6 @@
         "botton_text_color": "#ffffff",
         "text_alignment": "center left",
         "text_alignment_mobile": "end center",
-        "height_desktop": 620,
-        "height_mobile": 440,
         "full_width": true,
         "overlay_style": "shadow"
       }
@@ -117,7 +115,11 @@
         "button_text": "View all",
         "view_all_button_link": "#flavourDrawerContainer",
         "view_all_button_color": "#ff4f6c",
-        "view_all_button_text_color": "#ffffff"
+        "view_all_button_text_color": "#ffffff",
+        "show_location_underneath": true,
+        "show_pickup_availability": true,
+        "disable_unavailable_variants": true,
+        "variant_style": "listed"
       }
     },
     "4c819307-2d8d-4fff-b903-911986fbbe45": {
@@ -150,7 +152,7 @@
             "marquee_button_color": "",
             "marquee_image-1": "shopify:\/\/shop_images\/Pen_1500_lemon_6be718b4-af4b-400a-93c1-ab2b04b2a37f.png",
             "scroll-duration": 12,
-            "marquee_direction": "scrollRightToLeft"
+            "marquee_direction": "scrollLeftToRight"
           }
         },
         "b780e32e-40ec-488e-a74d-b2faac8921d8": {
@@ -339,6 +341,7 @@
             "marquee_image-2": "shopify:\/\/shop_images\/Pen_1500_lemon_6be718b4-af4b-400a-93c1-ab2b04b2a37f.png",
             "marquee_image-3": "shopify:\/\/shop_images\/Pen_1500_bluerazz_8b2f0cf1-8687-4f5f-b15a-2814ae5cc7f7.png",
             "marquee_image-4": "shopify:\/\/shop_images\/Pen_1500_cherry_c9b29454-2dfa-4a77-9ddf-aaa077875b2a.png",
+            "scroll-duration": 20,
             "marquee_direction": "scrollRightToLeft"
           }
         },
@@ -356,7 +359,8 @@
             "marquee_image-2": "shopify:\/\/shop_images\/Pen_1500_lemon_6be718b4-af4b-400a-93c1-ab2b04b2a37f.png",
             "marquee_image-3": "shopify:\/\/shop_images\/Pen_1500_bluerazz_8b2f0cf1-8687-4f5f-b15a-2814ae5cc7f7.png",
             "marquee_image-4": "shopify:\/\/shop_images\/Pen_1500_cherry_c9b29454-2dfa-4a77-9ddf-aaa077875b2a.png",
-            "marquee_direction": "scrollRightToLeft"
+            "scroll-duration": 21,
+            "marquee_direction": "scrollLeftToRight"
           }
         }
       },

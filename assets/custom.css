@@ -11028,7 +11028,7 @@ body.cart-drawer-open {
   font-weight: 700;
 }
 
-.okeReviews[data-oke-container] .oke-reviewCarousel, div.okeReviews .oke-reviewCarousel {
+.okeReviews[data-oke-container] .oke-reviewCarousel {
   max-width: 1440px !important;
 }
 
