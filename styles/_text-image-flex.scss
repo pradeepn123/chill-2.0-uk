@@ -1,0 +1,93 @@
+.image-text-flex-container{
+    .background-img-cover{
+        height:600px;
+        position: relative;
+        @media (min-width: 767.98px) and (max-width:900px){
+            height:655px;
+        }
+        @media(min-width:768px) and (max-width:1025px){
+            min-height: 430px !important;
+        }
+        @media(max-width:520px){
+            height:536px;
+        }
+        .flex-wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 94%;
+            .feature-text-paired{ 
+                .rte{
+                    font-size: 20px;
+                    font-weight: 400;
+                    @media(max-width:768px){
+                        font-size:18px;
+                    }
+                }
+                .majortitle{
+                    @media(max-width:768px){
+                        font-size:39px !important;
+                    }
+                    @media(max-width:520px){
+                        font-size:24px !important;
+                    }
+                }
+            } 
+        }
+        
+    } 
+} 
+
+.background-img-cover{
+    .feature-text-paired{
+        @media(min-width:620px) and (max-width:768px){
+            margin-left:5% !important;
+        }
+        @media(min-width:768px){
+            margin-left: 9%;
+            margin-right: 9%;
+        }
+        @media(min-width:1025px){
+            padding-top: 90px;
+        }
+    }
+    .flexible-layout{
+        @media (min-width: 767.98px) and (max-width:900px){
+            flex-direction: column-reverse;
+        }
+        .column--half{
+            @media (min-width: 767.98px) and (max-width:900px){
+                width:100%
+            }
+            .rimage-wrapper{
+                img{
+                    @media(min-width:1440px){
+                        object-fit:cover !important;
+                    }
+                    @media (min-width: 767.98px) and (max-width:900px){
+                        height: 293px;
+                        padding-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .align-left{
+        @media(min-width:620px) and (max-width:768px){
+            text-align: left !important;
+        }
+    }
+    .btn--primary{
+        border-radius: 30px;
+        padding: 16px 40px;
+        font-weight: 700;
+        border: none;
+        @media(max-width:520px){
+            margin-bottom: 8px;
+        }
+    }
+}
+
+
+

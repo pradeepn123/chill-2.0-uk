@@ -1,36 +1,21 @@
 <div
   id="section-id-{{ section.id }}"
-  class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %}"
+  class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %} video-image-section"
   data-section-type="background-video"
   data-cc-animate
 >
   {% style %}
-     #section-id-{{ section.id }} .video-container {
-      margin-top:100px;
-    }
     #section-id-{{ section.id }} .overlay-text__title {
       font-size: {{ section.settings.title_size_mobile }}px;
       {%- if section.settings.title_size_mobile >= 90 -%}
       line-height: 1em;
       {%- endif %}
     }
-    #section-id-{{ section.id }} .overlay-text__title b{
-      font-weight:800;
-    }
-    #section-id-{{ section.id }}{
-      position:relative;
-    }
     #section-id-{{ section.id }} .overlay-text__title{
       color: {{section.settings.heading-color}}
     }
     #section-id-{{ section.id }} .overlay-text__rte{
       color: {{section.settings.richtext-color}}
-    }
-    #section-id-{{ section.id }} .overlay-text__button.button:before,#section-id-{{ section.id }} .overlay-text__button:after{
-        background: #6EC59F;
-    }
-    #section-id-{{ section.id }} .default-mob-image{
-          display:none;
     }
     @media (min-width: 768px) {
       #section-id-{{ section.id }} .overlay-text__title {
@@ -41,11 +26,6 @@
         {%- endif %}
       }
     }
-    @media(min-width:769px) and (max-width:821px){
-      #section-id-{{ section.id }} .large-text {
-        font-size: 1.12em;
-      }
-    }
     @media (min-width: 1100px) {
       #section-id-{{ section.id }} .overlay-text__title {
         font-size: {{ section.settings.title_size }}px;
@@ -54,52 +34,17 @@
         {%- endif %}
       }
     }
-    @media(min-width:1024px){
-      #section-id-{{ section.id }} .default-desktop-image img{
-        object-fit:cover !important;
-      }
-    }
     #section-id-{{ section.id }} .overlay-text__button.button{
       background-color: {{ section.settings.botton_bg }};
       color: {{ section.settings.botton_text_color }};
       font-size:{{section.settings.button-font-size}}px;
-      padding:16px 40px;
-      font-weight:700;
-      border-radius:30px;
     }
-    @media(max-width:768px)and (min-width:521px){
-      #section-id-{{ section.id }} .default-mob-image img{
-            object-position: top; 
-        }
-        #section-id-{{ section.id }} .overlay-text__inner{
-          position: absolute;
-          bottom: 80px;
-        }
-    }
-    @media(max-width:768px){
-      #section-id-{{ section.id }} .default-desktop-image{
-          display:none;
-      }
-      #section-id-{{ section.id }} .default-mob-image{
-          display:block;
-      }
-      #section-id-{{ section.id }} .rimage-wrapper .rimage__image {
-        object-fit: cover;
-      }
-    }
-    @media(max-width:768px){
-        
+    @media(max-width:768px){   
       .overlay--v-{{ section.settings.text_alignment | split: ' ' | first }}{
           align-items: {{ section.settings.text_alignment_mobile | split: ' ' | first }} !important;
       }
       .overlay--h-{{ section.settings.text_alignment | split: ' ' | last }}{
           text-align: {{ section.settings.text_alignment_mobile | split: ' ' | last }} !important;
-      }
-      #section-id-{{ section.id }} .overlay-text__rte p{
-          font-size:18px;
-      }
-      #section-id-{{ section.id }} .overlay-text__button{
-          font-size:18px;
       }
     }
   {% endstyle %}

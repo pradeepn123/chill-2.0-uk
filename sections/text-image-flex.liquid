@@ -7,99 +7,21 @@
     }
     #section-id-{{ section.id }} .background-img-cover .feature-text-paired .rte{
         color:{{ section.settings.text-color }};
-        font-size: 20px;
-        font-weight: 400;
     }
     #section-id-{{ section.id }} .background-img-cover .btn--primary{
         color:{{ section.settings.button-color }};
         background:{{section.settings.button-bg-color}};
-        border-radius: 30px;
         font-size:{{section.settings.button-font-size}}px;
-        padding: 16px 40px;
-        font-weight: 700;
-    }
-    #section-id-{{ section.id }} .background-img-cover{
-        position: relative;
-        height:600px;
-        /* margin-top: 100px; */
-    }
-    #section-id-{{ section.id }} .flex-wrap{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        width: 94%;
-    }
-    @media(min-width:768px){
-        #section-id-{{ section.id }} .feature-text-paired {
-            margin-left: 9%;
-            margin-right: 9%;
-        }
-    }
-    @media (min-width: 767.98px) and (max-width:900px){
-      #section-id-{{ section.id }} .flexible-layout{
-          flex-direction: column-reverse;
-      }
-      .flexible-layout .column--half{
-        width:100%
-      }
-      #section-id-{{ section.id }} .background-img-cover{
-        height:655px;
-      }
-      #section-id-{{ section.id }} .rimage-wrapper img{
-        height: 293px;
-        padding-top: 30px;
-      }
-    }
-    @media(min-width:620px) and (max-width:768px){
-      #section-id-{{ section.id }} .align-left {
-          text-align: left !important;
-      }
-      #section-id-{{ section.id }} .feature-text-paired{
-        margin-left:0 !important;
-      }
-    }
-    @media(min-width:768px) and (max-width:1025px){
-        #section-id-{{ section.id }} .background-img-cover{
-            min-height: 430px !important;
-        }
-    }
-    @media(min-width:900px){
-      #section-id-{{ section.id }} .flexible-layout .cc-animate-complete{
-          padding-top: 90px;
-        }
-    }
-    @media(min-width:1440px){
-        #section-id-{{ section.id }} .rimage-wrapper img{
-            object-fit:cover !important;
-        }
     }
     @media(max-width:768px){
-        #section-id-{{ section.id }} .align-{{ section.settings.text_alignment }}{
-            text-align:{{ section.settings.text_alignment_mobile }}
-        }
-        #section-id-{{ section.id }} .background-img-cover .feature-text-paired .rte{
-            font-size:18px;
-        }
-        #section-id-{{ section.id }} .background-img-cover .feature-text-paired .majortitle{
-            font-size:39px;
-        }
-    }
-    @media(max-width:520px){
-        #section-id-{{ section.id }} .background-img-cover .feature-text-paired .majortitle{
-            font-size:24px;
-        } 
-        #section-id-{{ section.id }} .background-img-cover{
-            height:536px;
-        }
-        #section-id-{{ section.id }} .background-img-cover .btn--primary{
-            margin-bottom: 8px;
-        }
+      #section-id-{{ section.id }} .align-{{ section.settings.text_alignment }}{
+          text-align:{{ section.settings.text_alignment_mobile }}
+      }
     }
     
 {% endstyle %}
 
-<div id="section-id-{{ section.id }}">
+<div id="section-id-{{ section.id }}" class="image-text-flex-container">
     <div class="{% if section.settings.use_alt_bg %}use-alt-bg fully-padded-row--medium background-img-cover {% else %}fully-spaced-row--medium{% endif %}" style="background:url({{ section.settings.background_image_2 | img_url: 'master' }});background-size: cover; background-repeat: no-repeat;background-position: center;">
         <div class="container">
         <div class="flexible-layout valign-middle flex-wrap">
