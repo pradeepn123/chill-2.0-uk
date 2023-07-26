@@ -1,0 +1,125 @@
+
+.okeReviews[data-oke-container]{
+    .oke-reviewCarousel {
+        max-width: 1440px !important;
+      }
+} 
+
+div{
+    .okeReviews{
+        .oke-reviewCarousel{
+            max-width: 1440px !important;
+        }
+    }
+}
+
+.oke-reviewCard{
+    .oke-w-review-footer{
+        display: none !important;
+    } 
+}   
+
+.oke-reviewCarousel-reviews-review{
+    .oke-reviewCard-head{
+        .oke-reviewCard-product{
+            display: none !important;
+        }
+    }
+    .oke-reviewCard-container{
+        display: none !important;
+    } 
+}
+
+.okeReviews{
+    .oke-reviewCarousel-header{
+        .oke-reviewCarousel-header-title{
+            font-size: 52px !important;
+            font-weight: 600 !important;
+            @media(max-width:769px){
+                font-size: 39px !important;
+            }
+            @media(max-width:620px){
+                font-size: 24px !important;
+            }
+        }
+        .okeReviews{
+            display: none !important;
+        }
+    } 
+} 
+
+.oke-reviewCarousel-reviews-review{
+    .oke-reviewCard{
+        border-radius: 33px;
+        padding: 39px 24px 48px !important ;
+        @media(max-width:620px){
+            padding:29px 18px 35px !important;
+        }
+        .oke-w-reviewer-name , .oke-w-reviewer-verified{
+            font-size: 16px !important;
+            @media(max-width:620px){
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+
+.oke-reviewCard-content{
+    .oke-reviewContent-top{
+        .oke-reviewContent-stars{
+            flex: 1 0 20%;
+            .oke-stars{
+                width: 100%;
+                .oke-stars-foreground svg{
+                    width: 134px;
+                }
+            }
+        }
+        .oke-reviewContent-date{
+            span{
+                font-size: 13px;
+                @media(max-width:620px){
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+.oke-reviewCarousel-slider{
+    .oke-prevNextButton , .oke-prevNextButton{
+        @media(max-width:620px){
+            display: none;
+        }
+    }
+}
+  
+.okeReviews[data-oke-container]{
+    .oke-reviewCarousel-reviews{
+        @media(max-width:620px){
+            width: auto !important;
+        }
+    }
+}
+  
+
+.oke-reviewCard-content{
+    .oke-reviewContent{
+        .oke-reviewContent-readMore{
+            text-decoration: underline !important;
+        }
+        .oke-reviewContent-body{
+            font-size: 15px !important;
+            @media(max-width:620px){
+                font-size:12px !important;
+            }
+        } 
+    }
+}
+
+.fully-spaced-row--medium{
+    margin-bottom: 40px !important;
+}
+  
+  

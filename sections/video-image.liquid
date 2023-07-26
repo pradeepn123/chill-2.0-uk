@@ -55,17 +55,11 @@
     #section-id-{{ section.id }} .overlay-text__button.button{
       background-color: {{ section.settings.botton_bg }};
       color: {{ section.settings.botton_text_color }};
+      font-size:{{section.settings.button-font-size}}px;
+      padding:16px 40px;
+      font-weight:700;
+      border-radius:30px;
     }
-    #section-id-{{ section.id }} .overlay-text__button{
-          padding:16px 40px;
-          color:#FFFFFF;
-          font-size:16px;
-          font-weight:700;
-          border-radius:30px;
-    }
-    /* .default-desktop-image{
-      margin-top:6%;
-    } */
     @media(max-width:768px)and (min-width:521px){
         .default-mob-image img{
             object-position: top; 
@@ -277,6 +271,16 @@
       "default": 32
     },
     {
+      "type": "range",
+      "id": "button-font-size",
+      "min": 16,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Button text size",
+      "default": 16
+    },
+    {
       "type": "checkbox",
       "id": "use_h1",
       "label": "Set as primary page heading",
@@ -325,6 +329,7 @@
       "id": "button_url_2",
       "label": "Button 2 link"
     },
+
     {
       "type": "color",
       "id": "botton_bg",
