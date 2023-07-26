@@ -11027,11 +11027,6 @@ body.cart-drawer-open {
   font-size: 22px;
   font-weight: 700;
 }
-/*  okendo rating carousel */
-
-/* .oke-stars-foreground svg{
-  width: auto !important;
-} */
 
 .okeReviews[data-oke-container] .oke-reviewCarousel, div.okeReviews .oke-reviewCarousel {
   max-width: 1440px !important;
