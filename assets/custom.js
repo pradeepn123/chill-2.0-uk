@@ -1018,6 +1018,12 @@ function openFlavourDrawer(){
       }
 }
 
+function closeFlavourDrawer() {
+    document.getElementById('flavourDrawerContainer').classList.remove('claim-drawer-open');
+    document.getElementById('flavourDrawerBackground').style.display = 'none';
+    document.querySelector('body').classList.remove('cart-drawer-open');
+}
+
 var flavourDrawerBackgroundClick = document.getElementById('flavourDrawerBackground');
 flavourDrawerBackgroundClick.addEventListener('click', function() {
     document.querySelector('.flavour-drawer-summary__close').click();
@@ -1045,23 +1051,39 @@ document.querySelector('.view_all_button').addEventListener('click', () =>{
 
 
 //Open vape product drawer
-document.querySelectorAll('#flavourDrawerContent .flavour').forEach(flavour => {
-    var flavourTitle = flavour.querySelector('.flavour_text').innerHTML.replace(" ", "").toLowerCase();
-    flavour.querySelector('.flavour_text').addEventListener('click', () => {
-        document.querySelector(`#productDrawerContainer.${ flavourTitle }`).style.display='block'; 
-        document.getElementById('productDrawerBackground').style.display='block';
-        document.querySelector(`#productDrawerContainer.${ flavourTitle }`).classList.add('claim-drawer-open');
-          document.querySelector("body").classList.add("cart-drawer-open")
-          if(document.querySelector(`#productDrawerContainer.${ flavourTitle }`).classList.contains('claim-drawer-close')){
-            document.querySelector(`#productDrawerContainer.${ flavourTitle }`).classList.add('claim-drawer-close');
-          }
+document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
+    element.addEventListener("click", function(e) {
+        let flavourTitle = this.nodeName == "BUTTON" ? this.getAttribute("data-title") : this.innerText
+        flavourTitle = flavourTitle.replace(" ", "").toLowerCase();
+
+        const productDrawerContainer = document.querySelector(`#productDrawerContainer.${ flavourTitle }`)
+        const closeBtn = productDrawerContainer.querySelector(".product-drawer-summary__close")
+        document.getElementById('productDrawerBackground').style.display = 'block';
+        document.querySelector("body").classList.add("cart-drawer-open")
+
+        productDrawerContainer.style.display = 'block';
+        productDrawerContainer.classList.add('claim-drawer-open');
+
+        if(productDrawerContainer.classList.contains('claim-drawer-close')){
+            productDrawerContainer.classList.add('claim-drawer-close');
+        }
+
+        if (this.nodeName == "BUTTON") {
+            closeBtn.setAttribute("data-modal-type", "single")
+            openFlavourDrawer()
+        }
     })
 })
+
 document.querySelectorAll('.product-drawer-summary__close').forEach(closebtn => {
     closebtn.addEventListener('click', () => {
         closebtn.parentElement.classList.remove('claim-drawer-open'); 
         document.getElementById('productDrawerBackground').style.display = 'none';
         document.querySelector('body').classList.remove('cart-drawer-open');
+
+        if (closebtn.getAttribute("data-modal-type") == 'single') {
+            closeFlavourDrawer()
+        }
     })
 })
 

@@ -52,8 +52,17 @@
                                 <p class="flavour_description {{ block.settings.flavour_title }}">{{ block.settings.flavour_block_description }}</p>
                             </div>
                             <p class="flavour_title">
-                                {{ block.settings.flavour_title }}</p>
-                            <button  class="flavourButton">{{ block.settings.flavour_button_text }}</button>
+                                {{ block.settings.flavour_title }}
+                            </p>
+                            {% assign block_product = all_products[block.settings.product_block] %}
+
+                            <button
+                                class="flavourButton"
+                                data-zero-product-modal="{{ block_product.id }}"
+                                data-title="{{ block.settings.flavour_title }}"
+                            >
+                                {{- block.settings.flavour_button_text -}}
+                            </button>
                             {% comment %} {% render 'vapeProductDrawer', class: classname , product: all_products[block.settings.product_block], section: section %} {% endcomment %}
                         </div>
                     </div>
@@ -68,23 +77,29 @@
 <div class="claim_drawer_container" id="flavourDrawerContainer" style="display:block;">
     <div class="flavour_drawer_header">
         <h1>All Flavours ({{ section.blocks.size }})</h1>
-        <a class="claim-drawer-summary__close flavour-drawer-summary__close toggle-cart-summary" onclick="document.getElementById('flavourDrawerContainer').classList.remove('claim-drawer-open'); document.getElementById('flavourDrawerBackground').style.display = 'none';document.querySelector('body').classList.remove('cart-drawer-open');">
+        <a class="claim-drawer-summary__close flavour-drawer-summary__close toggle-cart-summary" onclick="closeFlavourDrawer()">
             {% render 'svg-close' %}
         </a>
     </div>
-  <div class="flavour_drawer_content" id="flavourDrawerContent">
-    <div class="flavour_container">
-        {% for block in section.blocks %}
-            {% assign product = all_products[block.settings.product_block] %}
-            <div class="flavour" data-title={{ block.settings.flavour_title }} data-product='{{ product | json }}'>
-                <img src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" style="background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}')">
-                <p class="flavour_text">{{ block.settings.flavour_title }}</p>
-                {% assign classname = block.settings.flavour_title | replace: ' ', '' | downcase %}
-                {% render 'vapeProductDrawer', class: classname , product: product, section: section %}
-            </div>
-        {% endfor%}
+    <div class="flavour_drawer_content" id="flavourDrawerContent">
+        <div class="flavour_container">
+            {% for block in section.blocks %}
+                {% assign product = all_products[block.settings.product_block] %}
+                <div class="flavour" data-title={{ block.settings.flavour_title }} data-product='{{ product | json }}'>
+                    <img src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" style="background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}')">
+                    <p
+                        class="flavour_text"
+                        role="button"
+                        data-zero-product-modal="{{ block_product.id }}"
+                    >
+                        {{- block.settings.flavour_title -}}
+                    </p>
+                    {% assign classname = block.settings.flavour_title | replace: ' ', '' | downcase %}
+                    {% render 'vapeProductDrawer', class: classname , product: product, section: section %}
+                </div>
+            {% endfor%}
+        </div>
     </div>
-  </div>
 </div>
 {% comment %} {% render 'vapeProductDrawer' %} {% endcomment %}
 
