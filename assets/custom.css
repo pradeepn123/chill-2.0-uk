@@ -11055,6 +11055,7 @@ div .okeReviews .oke-reviewCarousel {
 .okeReviews .oke-reviewCarousel-header .oke-reviewCarousel-header-title {
   font-size: 52px !important;
   font-weight: 600 !important;
+  color: #000000;
 }
 @media (max-width: 769px) {
   .okeReviews .oke-reviewCarousel-header .oke-reviewCarousel-header-title {
@@ -11143,7 +11144,7 @@ div .okeReviews .oke-reviewCarousel {
 
 .fully-spaced-row--medium {
   margin-bottom: 46px !important;
-  margin-top: 75px !important;
+  margin-top: 40px !important;
 }
 
 .oke-reviewContent .oke-reviewContent-title {

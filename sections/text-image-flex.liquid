@@ -13,7 +13,6 @@
     #section-id-{{ section.id }} .background-img-cover .btn--primary{
         color:{{ section.settings.button-color }};
         background:{{section.settings.button-bg-color}};
-        border: 1px solid {{section.settings.button-bg-color}};
         border-radius: 30px;
         font-size:{{section.settings.button-font-size}}px;
         padding: 16px 40px;
@@ -37,9 +36,37 @@
             margin-right: 9%;
         }
     }
+    @media (min-width: 767.98px) and (max-width:900px){
+      #section-id-{{ section.id }} .flexible-layout{
+          flex-direction: column-reverse;
+      }
+      .flexible-layout .column--half{
+        width:100%
+      }
+      #section-id-{{ section.id }} .background-img-cover{
+        height:655px;
+      }
+      #section-id-{{ section.id }} .rimage-wrapper img{
+        height: 293px;
+        padding-top: 30px;
+      }
+    }
+    @media(min-width:620px) and (max-width:768px){
+      #section-id-{{ section.id }} .align-left {
+          text-align: left !important;
+      }
+      #section-id-{{ section.id }} .feature-text-paired{
+        margin-left:0 !important;
+      }
+    }
     @media(min-width:768px) and (max-width:1025px){
         #section-id-{{ section.id }} .background-img-cover{
-            height: 430px !important;
+            min-height: 430px !important;
+        }
+    }
+    @media(min-width:900px){
+      #section-id-{{ section.id }} .flexible-layout .cc-animate-complete{
+          padding-top: 90px;
         }
     }
     @media(min-width:1440px){
@@ -308,7 +335,7 @@
           "type": "checkbox",
           "id": "use_alt_bg",
           "label": "Use alternate section color",
-          "default": false
+          "default": true
         }
       ],
       "presets": [

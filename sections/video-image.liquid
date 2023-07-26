@@ -6,7 +6,6 @@
 >
   {% style %}
      #section-id-{{ section.id }} .video-container {
-      height: {{ section.settings.height_mobile }}px !important;
       margin-top:100px;
     }
     #section-id-{{ section.id }} .overlay-text__title {
@@ -27,19 +26,24 @@
     #section-id-{{ section.id }} .overlay-text__rte{
       color: {{section.settings.richtext-color}}
     }
-    .default-mob-image{
+    #section-id-{{ section.id }} .overlay-text__button.button:before,#section-id-{{ section.id }} .overlay-text__button:after{
+        background: #6EC59F;
+    }
+    #section-id-{{ section.id }} .default-mob-image{
           display:none;
-      }
+    }
     @media (min-width: 768px) {
-      #section-id-{{ section.id }} .video-container {
-        min-height: {{ section.settings.height_desktop }}px;
-      }
       #section-id-{{ section.id }} .overlay-text__title {
         {%- assign title_size_medium = section.settings.title_size | times: 0.7 | at_least: section.settings.title_size_mobile -%}
         font-size: {{ title_size_medium }}px;
         {%- if title_size_medium >= 90 -%}
         line-height: 1em;
         {%- endif %}
+      }
+    }
+    @media(min-width:769px) and (max-width:821px){
+      #section-id-{{ section.id }} .large-text {
+        font-size: 1.12em;
       }
     }
     @media (min-width: 1100px) {
@@ -51,7 +55,7 @@
       }
     }
     @media(min-width:1024px){
-      .default-desktop-image img{
+      #section-id-{{ section.id }} .default-desktop-image img{
         object-fit:cover !important;
       }
     }
@@ -64,20 +68,24 @@
       border-radius:30px;
     }
     @media(max-width:768px)and (min-width:521px){
-        .default-mob-image img{
+      #section-id-{{ section.id }} .default-mob-image img{
             object-position: top; 
+        }
+        #section-id-{{ section.id }} .overlay-text__inner{
+          position: absolute;
+          bottom: 80px;
         }
     }
     @media(max-width:768px){
-      .default-desktop-image{
+      #section-id-{{ section.id }} .default-desktop-image{
           display:none;
       }
-      .default-mob-image{
+      #section-id-{{ section.id }} .default-mob-image{
           display:block;
       }
-      .rimage-wrapper .rimage__image {
-      object-fit: cover;
-    }
+      #section-id-{{ section.id }} .rimage-wrapper .rimage__image {
+        object-fit: cover;
+      }
     }
     @media(max-width:768px){
         
@@ -148,7 +156,7 @@
       <img
         src="https://cdn.shopify.com/s/files/1/0536/9115/4590/files/Group_1000005214.png?v=1689939082"
         alt="vape image"
-        class="rimage__image"
+        class="rimage__image_default"
       >
     </div>
     <div
@@ -158,7 +166,7 @@
       <img
         src="https://cdn.shopify.com/s/files/1/0536/9115/4590/files/Group_1000005215.png?v=1689939874"
         alt="vape image"
-        class="rimage__image"
+        class="rimage__image_default"
       >
     </div>
   {% endif %}
@@ -434,26 +442,6 @@
     {
       "type": "header",
       "content": "Layout"
-    },
-    {
-      "type": "range",
-      "id": "height_desktop",
-      "min": 200,
-      "max": 1000,
-      "step": 20,
-      "unit": "px",
-      "label": "Desktop fixed height",
-      "default": 600
-    },
-    {
-      "type": "range",
-      "id": "height_mobile",
-      "min": 100,
-      "max": 1000,
-      "step": 20,
-      "unit": "px",
-      "label": "Mobile fixed height",
-      "default": 500
     },
     {
       "id": "full_width",

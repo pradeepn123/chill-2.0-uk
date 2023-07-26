@@ -1,4 +1,17 @@
-<div class="marquee marquee-with-cta-text-image marquee--hover-pause enable-animation">
+
+
+{% for i in (1..10)%}
+    {% style %}
+    {% for block in section.blocks %}
+        .section-{{ section.id }} #block-{{ block.id }}  {
+                animation-duration: {{block.settings.scroll-duration}}s ;
+            }
+        {% endfor %}
+    {% endstyle %}
+    
+{% endfor %}
+
+<div class="marquee marquee-with-cta-text-image marquee--hover-pause enable-animation section-{{ section.id }}">
     <div class="marquee__content_" aria-hidden="true">
         <div class="marquee-tag">
             <div class="marquee_wrap">
@@ -6,7 +19,7 @@
                     <div class="marquee_container {{ block.settings.marquee_direction }} {% if section.settings.animate_marquee_on_scroll %}animate-with-scroll{% endif %}" id="container-{{- block.settings.marquee_text | strip_html | replace: ' ', '' -}}">
                         {% for i in (1..10) %}
                             <div class="marquee_content_wrapper" >
-                                <div class="marquee_content">
+                                <div class="marquee_content" id="block-{{ block.id }}">
                                     {% if block.settings.marquee_text != blank %}
                                         {% style %}
                                         @media (max-width: 767px){
@@ -134,6 +147,11 @@
                         "type": "image_picker",
                         "id": "marquee_image-5",
                         "label": "Marquee image"
+                    },
+                    {
+                        "type":"number",
+                        "id": "scroll-duration",
+                        "label": "scroll duration"
                     },
                     {
                         "type": "select",

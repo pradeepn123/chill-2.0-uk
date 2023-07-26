@@ -996,15 +996,9 @@ var remaining = document.documentElement.scrollHeight - document.documentElement
 // clientHeight is the inner height of the element, including padding
 
 var percentage = (topPos / remaining) * 100 * 2;
-    
-document.querySelectorAll('.marquee_container .marquee_content_wrapper').forEach((el, index) => {
-    if (index >= 10 ) {
+document.querySelectorAll('.marquee_container .marquee_content_wrapper').forEach((el) => {
         return el.style.transform = 'translateX(-' + percentage + '%)';
-    }
-    else{
-        return el.style.transform = 'translateX(-' + percentage/2 + '%)';
-    }
-})
+    })
 }
 
 
