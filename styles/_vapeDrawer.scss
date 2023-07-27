@@ -4,7 +4,7 @@
 .vape_product_wrapper{
     margin-top: 20px;
     .vape_product_container{
-        padding: 24px;
+        padding: 35px 24px 24px 24px;
         .product_images{
             display: flex;
             overflow-x: auto;
@@ -53,7 +53,10 @@
                 margin-inline-start: 0;
             }
             .buy-buttons-row{
-                margin: 0 !important;
+                margin-top: 0 !important;
+                form .input-row{
+                    margin: 0 !important;
+                }
                 .quantity-submit-row__submit{
                     margin-bottom: 15px !important;
                 }

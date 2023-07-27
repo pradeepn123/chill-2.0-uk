@@ -10765,10 +10765,12 @@ body.cart-drawer-open {
 }
 .section-explore-flavours .title_container .section_title p {
   margin-bottom: 1rem;
+  color: #000;
 }
 .section-explore-flavours .title_container .section_subtitle p {
   font-weight: 600;
   margin-bottom: 1.5rem;
+  color: #000;
 }
 .section-explore-flavours .title_container .view_all_button {
   border: 0;
@@ -10791,23 +10793,32 @@ body.cart-drawer-open {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
   padding: 20px;
   border: 0;
 }
 .section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow:hover {
   background: #FFAC9A;
+  opacity: 1;
 }
 .section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow.slick-flavour-prev {
   left: 0;
   margin-left: 30px;
 }
+.section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow.slick-flavour-prev.slick-disabled {
+  display: none !important;
+  pointer-events: none;
+}
 .section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow.slick-flavour-next {
   right: 0;
   margin-right: 30px;
 }
+.section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow.slick-flavour-next.slick-disabled {
+  display: none !important;
+  pointer-events: none;
+}
 .section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow svg {
-  fill: #000;
+  fill: #fff;
 }
 .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container {
   padding: 24px;
@@ -10901,6 +10912,12 @@ body.cart-drawer-open {
 #flavourDrawerContainer .flavour_drawer_header h1 {
   font-size: 30px;
   font-weight: 600;
+  color: #000;
+}
+@media (max-width: 767px) {
+  #flavourDrawerContainer .flavour_drawer_header h1 {
+    font-size: 20px;
+  }
 }
 #flavourDrawerContainer .flavour_drawer_header .flavour-drawer-summary__close {
   position: unset;
@@ -10921,6 +10938,7 @@ body.cart-drawer-open {
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
@@ -10928,9 +10946,17 @@ body.cart-drawer-open {
     flex-basis: 50%;
   }
 }
-#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour img {
+#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour:hover {
+  background: #F6F6F6;
+  transition: background 350ms;
+}
+#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour:hover .flavour_icon {
+  background: #6EC59F;
+  transition: background 350ms;
+}
+#flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour .flavour_icon {
   border-radius: 50%;
-  padding: 10px;
+  padding: 6px;
 }
 #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour .flavour_text {
   text-align: center;
@@ -10941,6 +10967,11 @@ body.cart-drawer-open {
   color: #000;
   text-transform: capitalize;
 }
+@media (max-width: 325px) {
+  #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour .flavour_text {
+    font-size: 14px;
+  }
+}
 
 .product-drawer-summary__close {
   z-index: 1;
@@ -10950,7 +10981,7 @@ body.cart-drawer-open {
   margin-top: 20px;
 }
 .vape_product_wrapper .vape_product_container {
-  padding: 24px;
+  padding: 35px 24px 24px 24px;
 }
 .vape_product_wrapper .vape_product_container .product_images {
   display: flex;
@@ -11003,6 +11034,9 @@ body.cart-drawer-open {
   margin-inline-start: 0;
 }
 .vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row {
+  margin-top: 0 !important;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row form .input-row {
   margin: 0 !important;
 }
 .vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .quantity-submit-row__submit {
