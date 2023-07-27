@@ -64,79 +64,7 @@
 
 
             <div data-section-type="main-product" data-components="accordion,custom-select,modal">
-              <div class="product-detail quickbuy-content spaced-row">
-                {% comment %} <div class="gallery gallery--layout-{{ section.settings.gallery_layout }} gallery-size-{{ section.settings.gallery_size }} product-column-left {% if product.media.size > 1 %}has-thumbnails{% endif %}"
-                  data-cc-animate
-                  data-cc-animate-delay="0.2s"
-                  data-variant-image-grouping="{{ section.settings.enable_var_img_grouping }}"
-                  data-variant-image-grouping-option="{{ section.settings.var_img_grouping_option | escape }}"
-                  data-variant-image-grouping-option-index="{{ variant_image_grouping_option_index }}">
-                  <div class="gallery__inner{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}">
-                    <div class="main-image">
-                      {%- liquid
-                        for media in product.media
-                          if media.id == featured_media.id
-                            assign initial_slide = forloop.index0
-                            break
-                          endif
-                        endfor
-                      -%}
-            
-                      <div class="slideshow product-slideshow slideshow--custom-initial" data-slick='{"adaptiveHeight":true,"initialSlide":{{initial_slide}}}'>
-                        {%- for media in product.media -%}
-                          <div class="slide{% if forloop.index0 == initial_slide %} slide--custom-initial{% endif %}" data-media-id="{{ media.id }}">
-                            {%- if media.media_type == 'image' and section.settings.enable_zoom -%}<a class="show-gallery" href="{{ media.preview_image | img_url: zoom_size }}">{%- endif -%}
-                              {%- render 'media', media: media, min_aspect_ratio: min_aspect_ratio -%}
-                            {%- if media.media_type == 'image' and section.settings.enable_zoom -%}</a>{%- endif -%}
-                          </div>
-                        {%- endfor -%}
-                      </div>
-            
-                      <div class="slideshow-controls">
-                          <div class="slideshow-controls__arrows"></div>
-                      </div>
-            
-                      {%- assign models = product.media | where: 'media_type', 'model' -%}
-                      {% if models.size > 0 %}
-                        <script type="application/json" class="model-json">
-                          {{- product.media | where: 'media_type', 'model' | json -}}
-                        </script>
-                        <button
-                          class="view-in-space"
-                          data-shopify-xr
-                          data-shopify-model3d-id="{{ models.first.id }}"
-                          data-shopify-title="{{ product.title | escape }}"
-                          data-shopify-xr-hidden>
-                          {%- render 'icon-3d-badge-full-color' -%}
-                          <span class="view-in-space__text">{{ 'products.product.view_in_space' | t }}</span>
-                        </button>
-                      {% endif %}
-            
-                      {% render 'product-label-detail', product: product, current_variant: current_variant %}
-                    </div>
-            
-                    {% if product.media.size > 1 and section.settings.show_thumbnail != false %}
-                      <div class="thumbnails{% unless section.settings.gallery_layout contains 'carousel' %} mobile-only{% endunless %}">
-                        {% for media in product.media %}
-                          <a class="thumbnail thumbnail--media-{{ media.media_type }}" href="{% if section.settings.enable_zoom %}{{ media.preview_image | img_url: zoom_size }}{% else %}#{% endif %}" data-media-id="{{ media.id }}">
-                            {% render 'responsive-image', image: media.preview_image, min_aspect_ratio: min_aspect_ratio %}
-            
-                            {%- if media.media_type == 'video' or media.media_type =='external_video' -%}
-                              <div class="thumbnail__badge">
-                                {% render 'icon-video-badge-full-color' %}
-                              </div>
-                            {%- endif -%}
-                            {%- if media.media_type == 'model' -%}
-                              <div class="thumbnail__badge">
-                                {% render 'icon-3d-badge-full-color' %}
-                              </div>
-                            {%- endif -%}
-                          </a>
-                        {% endfor %}
-                      </div>
-                    {% endif %}
-                  </div>
-                </div> {% endcomment %}
+              <div class="product-detail quickbuy-content">
                 <div class="detail product-column-right" data-cc-animate data-cc-animate-delay="0.2s">
                   <div class="product-form{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}" data-ajax-add-to-cart="true" data-product-id="{{ product.id }}" data-enable-history-state="true">
                     {% assign product_form_present = false %}
@@ -581,6 +509,7 @@
                         {{- original_select -}}
                       </form>
                     {%- endif -%}
+                    <a href="{{ product.url }}" class="product_page_redirection_link">View details</button>
                     <script type="application/json" id="ProductJson-{{ product.id }}">
                       {{- product | json -}}
                     </script>

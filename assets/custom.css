@@ -10763,12 +10763,20 @@ body.cart-drawer-open {
 .section-explore-flavours .title_container {
   padding: 48px 0;
 }
+.section-explore-flavours .title_container .section_title p {
+  margin-bottom: 1rem;
+}
+.section-explore-flavours .title_container .section_subtitle p {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
 .section-explore-flavours .title_container .view_all_button {
   border: 0;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 32px;
+  padding: 14px 40px;
 }
 .section-explore-flavours .flavours_wrapper .flavours_container {
   display: flex;
@@ -10779,13 +10787,16 @@ body.cart-drawer-open {
 }
 .section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow {
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
   background: #fff;
   padding: 20px;
   border: 0;
+}
+.section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow:hover {
+  background: #FFAC9A;
 }
 .section-explore-flavours .flavours_wrapper .flavours_container .slick-arrow.slick-flavour-prev {
   left: 0;
@@ -10823,6 +10834,7 @@ body.cart-drawer-open {
 .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .hover_block .flavour_image {
   height: 18.125rem;
   margin: auto;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .hover_block .flavour_image {
@@ -10895,17 +10907,12 @@ body.cart-drawer-open {
   margin: 0;
 }
 #flavourDrawerContainer .flavour_drawer_content .flavour_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 1px;
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid #E5E5E5;
 }
-@media (max-width: 767px) {
-  #flavourDrawerContainer .flavour_drawer_content .flavour_container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
+  flex-basis: 33.3333333333%;
   border: 1px solid #E5E5E5;
   border-top: 0;
   border-left: 0;
@@ -10913,10 +10920,12 @@ body.cart-drawer-open {
   flex-direction: column;
   padding: 10px 20px;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
   #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
     padding: 15px 30px;
+    flex-basis: 50%;
   }
 }
 #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour img {
@@ -10942,6 +10951,12 @@ body.cart-drawer-open {
 }
 .vape_product_wrapper .vape_product_container {
   padding: 24px;
+}
+.vape_product_wrapper .vape_product_container .product_images {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 !important;
+  gap: 7px;
 }
 .vape_product_wrapper .vape_product_container .product_images img {
   border-radius: 0 !important;
@@ -10987,6 +11002,12 @@ body.cart-drawer-open {
   max-width: 100% !important;
   margin-inline-start: 0;
 }
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row {
+  margin: 0 !important;
+}
+.vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .quantity-submit-row__submit {
+  margin-bottom: 15px !important;
+}
 .vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .option-selector .label {
   font-size: 16px;
   font-weight: 400;
@@ -11027,6 +11048,13 @@ body.cart-drawer-open {
 .vape_product_wrapper .vape_product_container .product-detail .buy-buttons-row .quantity-submit-row__submit .button .price-container .current-price {
   font-size: 22px;
   font-weight: 700;
+}
+.vape_product_wrapper .vape_product_container .product_page_redirection_link {
+  color: #9792E4;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
 }
 
 .okeReviews[data-oke-container] .oke-reviewCarousel {

@@ -59,13 +59,13 @@ $(document).ready(function () {
         document.documentElement.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }))
     })
     
-    $('.vape_product_wrapper .product_images').slick({
-        slidesToShow: 2.5,
-        slidesToScroll: 1,
-        draggable: true,
-        arrows: false,
-        infinite: false
-    })
+    // $('.vape_product_wrapper .product_images').slick({
+    //     slidesToShow: 2.5,
+    //     slidesToScroll: 1,
+    //     draggable: true,
+    //     arrows: false,
+    //     infinite: false
+    // })
 
     $('.flavours_container').slick({
         slidesToShow: 4,
@@ -1007,7 +1007,7 @@ document.querySelectorAll('.marquee_container .marquee_content_wrapper').forEach
 }
 
 
-// Explore flavour drawer on new vape page
+// Explore flavours drawer on new vape page
 function openFlavourDrawer(){
     document.getElementById('flavourDrawerContainer').style.display='block'; 
     document.getElementById('flavourDrawerBackground').style.display='block';
@@ -1035,21 +1035,6 @@ document.querySelector('.view_all_button').addEventListener('click', () =>{
     openFlavourDrawer();
 })
 
-// document.querySelectorAll('.flavour_block .flavourButton').forEach(btn => {
-//     var flavourTitle = btn.closest('.flavour_block').querySelector('.flavour_title').innerHTML.replace(" ", "").toLowerCase();
-//     btn.addEventListener('click', () => {
-//         document.querySelector(`#productDrawerContainer.${ flavourTitle }`).style.display='block'; 
-//         document.getElementById('productDrawerBackground').style.display='block';
-//         document.querySelector(`#productDrawerContainer.${ flavourTitle }`).classList.add('claim-drawer-open');
-//         document.querySelector("body").classList.add("cart-drawer-open")
-//           if(document.querySelector(`#productDrawerContainer.${ flavourTitle }`).classList.contains('claim-drawer-close')){
-//             document.querySelector(`#productDrawerContainer.${ flavourTitle }`).classList.add('claim-drawer-close');
-//           }
-//     })
-    
-// })
-
-
 //Open vape product drawer
 document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
     element.addEventListener("click", function(e) {
@@ -1058,7 +1043,7 @@ document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
 
         const productDrawerContainer = document.querySelector(`#productDrawerContainer.${ flavourTitle }`)
         const closeBtn = productDrawerContainer.querySelector(".product-drawer-summary__close")
-        document.getElementById('productDrawerBackground').style.display = 'block';
+        document.getElementById('productDrawerBackground').style.display = 'none';
         document.querySelector("body").classList.add("cart-drawer-open")
 
         productDrawerContainer.style.display = 'block';

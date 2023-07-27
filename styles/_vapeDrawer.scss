@@ -6,6 +6,10 @@
     .vape_product_container{
         padding: 24px;
         .product_images{
+            display: flex;
+            overflow-x: auto;
+            padding: 0 !important;
+            gap: 7px;
             img{
                 border-radius: 0 !important;
             }
@@ -49,6 +53,10 @@
                 margin-inline-start: 0;
             }
             .buy-buttons-row{
+                margin: 0 !important;
+                .quantity-submit-row__submit{
+                    margin-bottom: 15px !important;
+                }
                 .option-selector{
                     .label{
                         font-size: 16px;
@@ -99,6 +107,12 @@
                 
             }
         }
-        
+        .product_page_redirection_link{
+            color: #9792E4;
+            font-size: 16px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+        }
     }
 }
