@@ -40,9 +40,9 @@
           "type": "select",
           "settings": {
             "flavour_title": "Blueberry",
-            "flavour_block_background": "shopify:\/\/shop_images\/blueberry.png",
-            "flavour_block_image": "shopify:\/\/shop_images\/Group_Blueberry.png",
-            "flavour_icon": "shopify:\/\/shop_images\/Pen_1500_blueberry.png",
+            "flavour_block_background": "shopify:\/\/shop_images\/CZ-Blueberry_Backgorund_Tile.jpg",
+            "flavour_block_image": "shopify:\/\/shop_images\/CZ_Blueberry_Product.png",
+            "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Blueberry.jpg",
             "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
             "flavour_button_text": "Try now",
             "product_block": "blueberry-nicotine-free-diffuser"
@@ -52,9 +52,9 @@
           "type": "select",
           "settings": {
             "flavour_title": "Watermelon",
-            "flavour_block_background": "shopify:\/\/shop_images\/Watermelon.png",
-            "flavour_block_image": "shopify:\/\/shop_images\/Group_Watermelon_2c8244d5-e0de-4a54-829f-46691675e4d1.png",
-            "flavour_icon": "shopify:\/\/shop_images\/Pen_1500_watermelon_1.png",
+            "flavour_block_background": "shopify:\/\/shop_images\/CZ-Watermelon_Backgorund_Tile.jpg",
+            "flavour_block_image": "shopify:\/\/shop_images\/CZ_Watermelon_Product.png",
+            "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Watermelon.jpg",
             "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
             "flavour_button_text": "Try now",
             "product_block": ""
@@ -64,9 +64,9 @@
           "type": "select",
           "settings": {
             "flavour_title": "Blue Razz",
-            "flavour_block_background": "shopify:\/\/shop_images\/blueRazz.png",
-            "flavour_block_image": "shopify:\/\/shop_images\/Group_Blue_razz.png",
-            "flavour_icon": "shopify:\/\/shop_images\/Pen_1500_bluerazz.png",
+            "flavour_block_background": "shopify:\/\/shop_images\/CZ-Blue_Razz_Backgorund_Tile.jpg",
+            "flavour_block_image": "shopify:\/\/shop_images\/CZ_BlueRazz_Product.png",
+            "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-BlueRazz.jpg",
             "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
             "flavour_button_text": "Try now",
             "product_block": ""
@@ -76,9 +76,9 @@
           "type": "select",
           "settings": {
             "flavour_title": "Lemon",
-            "flavour_block_background": "shopify:\/\/shop_images\/lemon.png",
-            "flavour_block_image": "shopify:\/\/shop_images\/Group_Lemon.png",
-            "flavour_icon": "shopify:\/\/shop_images\/Pen_1500_lemon.png",
+            "flavour_block_background": "shopify:\/\/shop_images\/CZ-Lemon_Backgorund_Tile.jpg",
+            "flavour_block_image": "shopify:\/\/shop_images\/CZ_Lemon_Product.png",
+            "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Lemon.jpg",
             "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
             "flavour_button_text": "Try Now",
             "product_block": ""
@@ -88,9 +88,9 @@
           "type": "select",
           "settings": {
             "flavour_title": "Cherry",
-            "flavour_block_background": "shopify:\/\/shop_images\/cherry.png",
-            "flavour_block_image": "shopify:\/\/shop_images\/Group_Cherry.png",
-            "flavour_icon": "shopify:\/\/shop_images\/Pen_1500_cherry.png",
+            "flavour_block_background": "shopify:\/\/shop_images\/CZ-Cherry_Backgorund_Tile.jpg",
+            "flavour_block_image": "shopify:\/\/shop_images\/CZ_Cherry_Product.png",
+            "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Cherry.jpg",
             "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
             "flavour_button_text": "Try Now",
             "product_block": ""
