@@ -3,17 +3,20 @@
 }
 .vape_product_wrapper{
     margin-top: 20px;
-    .vape_product_container{
-        padding: 35px 24px 24px 24px;
-        .product_images{
-            display: flex;
-            overflow-x: auto;
-            padding: 0 !important;
-            gap: 7px;
-            img{
-                border-radius: 0 !important;
-            }
+    .product_images{
+        display: flex;
+        overflow-x: auto;
+        padding: 0 !important;
+        gap: 7px;
+        margin-left: 24px;
+        margin-top: 55px;
+        img{
+            border-radius: 0 !important;
         }
+    }
+    .vape_product_container{
+        padding: 10px 24px 24px 24px;
+        
         .vape_product_title{
             font-size: 42px;
             font-weight: 800;

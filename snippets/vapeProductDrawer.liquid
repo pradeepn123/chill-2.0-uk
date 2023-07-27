@@ -23,12 +23,13 @@
         </svg>
     </a>
     <div class="vape_product_wrapper">
+      <div class="product_images">
+        {% for img in product.images %}
+            <img src="{{ img | img_url: 'master' }}" alt="images">
+        {% endfor %}
+      </div>
         <div class="vape_product_container">
-            <div class="product_images">
-                {% for img in product.images %}
-                    <img src="{{ img | img_url: 'master' }}" alt="images">
-                {% endfor %}
-            </div>
+            
             <h1 class="vape_product_title">{{ product.title }}</h1>
             <p class="vape_product_varient_pack">{{ product.metafields.custom.product_varient_pack }}</p>
             <p class="vape_product_vendor">By <a href="">Chill</a></p>
