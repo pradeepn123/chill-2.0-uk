@@ -43,7 +43,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Blueberry_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_Blueberry_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Blueberry.jpg",
-            "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
+            "flavour_block_description": "Enjoy the bold and refreshing taste of wild blueberry. This natural berry sensation balances sweet and sharp notes to create a fun, fresh flavour that dances on the tastebuds for a satisfying puff.<br><br>Sweet | Sharp | Floral",
             "flavour_button_text": "Try now",
             "product_block": "blueberry-nicotine-free-diffuser"
           }
@@ -55,7 +55,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Watermelon_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_Watermelon_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Watermelon.jpg",
-            "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
+            "flavour_block_description": "Enjoy the refreshing embrace of ripe watermelon. It’s a summertime icon that’s as juicy and succulent as it is satisfying. A mouthwateringly crisp flavour that tastes just like a slice of the real thing.<br><br>Fresh | Fruity | Tropical",
             "flavour_button_text": "Try now",
             "product_block": ""
           }
@@ -67,7 +67,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Blue_Razz_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_BlueRazz_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-BlueRazz.jpg",
-            "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
+            "flavour_block_description": "Luscious blueberry meets tangy raspberry in this mouthwatering fruit fusion. Blue Razz is perfectly balanced to create a refreshingly delicious flavour that’s as vibrant as it is fun. Enjoy the bold, sweet hit of natural berries in every inhale. <br><br>Sweet | Tangy | Juicy",
             "flavour_button_text": "Try now",
             "product_block": ""
           }
@@ -79,7 +79,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Lemon_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_Lemon_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Lemon.jpg",
-            "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
+            "flavour_block_description": "Savour the taste of freshly squeezed lemons with a flavour that captures the vibrant essence of sun-kissed citrus. Enjoy a tangy taste sensation that gives way to subtle sweetness, creating a fruity fresh flavour that’s always refreshing.<br><br>Sharp | Sweet | Citrus",
             "flavour_button_text": "Try Now",
             "product_block": ""
           }
@@ -91,7 +91,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Cherry_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_Cherry_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Cherry.jpg",
-            "flavour_block_description": "Experience the tantalizing taste of ripe, juicy blueberries with every puff of our Blueberry Vape. Immerse yourself in a sweet and tangy cloud, transporting you to a sun-kissed blueberry orchard. Let the delightful aroma of freshly picked berries enchant your senses.",
+            "flavour_block_description": "Indulge in the taste of dark cherry with this alluring fruity flavour. Matching the sweetness of sun-ripened cherries with a more mature tartness, the rich complexity of fresh cherry gives an indulgent taste of luxury in every puff.<br><br>Sweet | Tart | Tangy",
             "flavour_button_text": "Try Now",
             "product_block": ""
           }
@@ -106,10 +106,10 @@
       ],
       "settings": {
         "title_align": "center",
-        "section_title": "<p>Explore <strong>Flavours<\/strong><\/p>",
+        "section_title": "<p>Explore our 5 delicious <strong>flavours<\/strong><\/p>",
         "title_font_size": 52,
         "title_font_size_mobile": 24,
-        "section_subtitle": "<p>5 Exciting flavours<\/p>",
+        "section_subtitle": "",
         "subtitle_font_size": 32,
         "subtitle_font_size_mobile": 18,
         "button_text": "View all",
@@ -185,6 +185,7 @@
     },
     "deec0f8a-8c59-45ae-b34e-9dc49bb1edd3": {
       "type": "text-image-flex",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
@@ -301,6 +302,7 @@
     },
     "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
       "type": "text-image-flex",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",

@@ -10690,6 +10690,7 @@ body.cart-drawer-open {
 .vape_header_wrapper .vape_header_container .main_header {
   display: flex;
   align-items: center;
+  max-width: 200px;
 }
 @media (max-width: 374px) {
   .vape_header_wrapper .vape_header_container .main_header {
