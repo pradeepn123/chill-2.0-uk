@@ -10,7 +10,7 @@
     "ac21692e-7e00-4741-9601-7f5608390ffb": {
       "type": "video-image",
       "settings": {
-        "video": "",
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/166cce7666de4ae988fca5e1cc5b42ba.mp4",
         "subheading": "",
         "title": "<b>CHILL<\/b>ZERO",
         "title_size": 88,
@@ -45,7 +45,7 @@
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Blueberry.jpg",
             "flavour_block_description": "Enjoy the bold and refreshing taste of wild blueberry. This natural berry sensation balances sweet and sharp notes to create a fun, fresh flavour that dances on the tastebuds for a satisfying puff.<br><br>Sweet | Sharp | Floral",
             "flavour_button_text": "Try now",
-            "product_block": "blueberry-nicotine-free-diffuser"
+            "product_block": ""
           }
         },
         "9d70ef68-0515-4f69-8506-cd85bdc62d50": {
@@ -57,7 +57,7 @@
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Watermelon.jpg",
             "flavour_block_description": "Enjoy the refreshing embrace of ripe watermelon. It’s a summertime icon that’s as juicy and succulent as it is satisfying. A mouthwateringly crisp flavour that tastes just like a slice of the real thing.<br><br>Fresh | Fruity | Tropical",
             "flavour_button_text": "Try now",
-            "product_block": ""
+            "product_block": "watermelon1500"
           }
         },
         "63be2f45-26b2-46bb-8949-47f345c4b580": {

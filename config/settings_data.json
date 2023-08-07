@@ -1647,11 +1647,11 @@
         "type": "vape-header",
         "settings": {
           "header_icon": "shopify:\/\/shop_images\/ChillZER0-Logo-Blk.png",
-          "header_link": "\/",
+          "header_link": "shopify:\/\/collections\/chill-zero",
           "chill_header": "shopify:\/\/shop_images\/Chill_Logo_e6f2f1c3-34ef-4709-81c6-67a3752abf45.png",
           "chill_header_link": "\/",
           "header_button_text": "Buy now",
-          "header_button_link": "\/",
+          "header_button_link": "shopify:\/\/collections\/chill-zero",
           "header_button_color": ""
         }
       }

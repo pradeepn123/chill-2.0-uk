@@ -33,8 +33,7 @@
             <h1 class="vape_product_title">{{ product.title }}</h1>
             <p class="vape_product_varient_pack">{{ product.metafields.custom.product_varient_pack }}</p>
             <p class="vape_product_vendor">By <a href="">Chill</a></p>
-            {% comment %} <p class="vape_product_vendor">By <a href="">{{ product.vendor }}</a></p> {% endcomment %}
-            <p class="vape_product_description">{{ product.description }}</p>
+            <div class="vape_product_description">{{ product.description }}</div>
 
             
             {%- assign product_form_present = true -%}

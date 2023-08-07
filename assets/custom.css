@@ -10990,6 +10990,7 @@ body.cart-drawer-open {
   margin-top: 55px;
 }
 .vape_product_wrapper .product_images img {
+  max-width: 65% !important;
   border-radius: 0 !important;
 }
 .vape_product_wrapper .vape_product_container {

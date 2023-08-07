@@ -39,6 +39,14 @@
       color: {{ section.settings.botton_text_color }};
       font-size:{{section.settings.button-font-size}}px;
     }
+    #section-id-{{ section.id }} .video-container{
+      height: 38.75rem !important;
+    }
+    @media(max-width:520px){
+      #section-id-{{ section.id }} .video-container{
+        height: 28rem !important;
+      }
+    }
     @media(max-width:768px){   
       .overlay--v-{{ section.settings.text_alignment | split: ' ' | first }}{
           align-items: {{ section.settings.text_alignment_mobile | split: ' ' | first }} !important;
@@ -192,7 +200,8 @@
     {
       "id": "herobanner-image",
       "type": "image_picker",
-      "label": "Image"
+      "label": "Image",
+      "info": "This will be the place holder image when there is no video."
     },
     {
       "type": "text",
