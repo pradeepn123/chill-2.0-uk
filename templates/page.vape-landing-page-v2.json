@@ -303,6 +303,7 @@
     },
     "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
       "type": "text-image-flex",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
