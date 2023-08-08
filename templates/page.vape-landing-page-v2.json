@@ -21,7 +21,7 @@
         "heading-color": "#ffffff",
         "richtext-color": "#ffffff",
         "enlarge_text": true,
-        "button_label__1": "TRY NOW",
+        "button_label__1": "BUY NOW",
         "button_url_1": "shopify:\/\/pages\/chillzero",
         "button_label__2": "",
         "button_url_2": "",
@@ -106,7 +106,7 @@
       ],
       "settings": {
         "title_align": "center",
-        "section_title": "<p>Explore our 5 delicious <strong>flavours<\/strong><\/p>",
+        "section_title": "<p>Discover All 5 Delicious <strong>Flavours<\/strong><\/p>",
         "title_font_size": 52,
         "title_font_size_mobile": 24,
         "section_subtitle": "",
@@ -128,7 +128,7 @@
         "b6627667-d1a3-4ee0-acbd-1ae7727203fa": {
           "type": "select",
           "settings": {
-            "marquee_text": "<p>0% nicotine<\/p>",
+            "marquee_text": "<p>0% Nicotine<\/p>",
             "marquee_text_color": "#000000",
             "marquee_text_font_size": 52,
             "marquee_text_font_size_mobile": 39,
@@ -143,7 +143,7 @@
         "4b255f40-6702-46cf-8156-c1772eb370c4": {
           "type": "select",
           "settings": {
-            "marquee_text": "<p>powerful flavours<\/p>",
+            "marquee_text": "<p>Powerful Flavours<\/p>",
             "marquee_text_color": "#000000",
             "marquee_text_font_size": 52,
             "marquee_text_font_size_mobile": 39,
@@ -158,7 +158,7 @@
         "b780e32e-40ec-488e-a74d-b2faac8921d8": {
           "type": "select",
           "settings": {
-            "marquee_text": "<p>total satisfaction<\/p>",
+            "marquee_text": "<p>Total Satisfaction<\/p>",
             "marquee_text_color": "#000000",
             "marquee_text_font_size": 52,
             "marquee_text_font_size_mobile": 39,
@@ -185,7 +185,6 @@
     },
     "deec0f8a-8c59-45ae-b34e-9dc49bb1edd3": {
       "type": "text-image-flex",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
@@ -211,6 +210,7 @@
     },
     "55feb035-6dc7-4e60-9bd0-7ef8fb753168": {
       "type": "Richtext-heading",
+      "disabled": true,
       "settings": {
         "richtext-text": "<p>Over <strong>5000 5-star <\/strong><\/p><p>reviews<\/p>",
         "heading__size": 52,
@@ -221,6 +221,7 @@
     },
     "169009606439f03985": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "6eb3a68d-fbb4-4fb1-8139-146b2cd9b8b3": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
@@ -259,7 +260,7 @@
             "icon_image": "shopify:\/\/shop_images\/Frame_16.svg",
             "icon_svg": "",
             "url": "",
-            "title": "ORGANICALLY  DERIVED BASE",
+            "title": "QUALITY INGREDIENTS",
             "subheading": "",
             "use_alt_bg": false
           }
@@ -270,7 +271,7 @@
             "icon_image": "shopify:\/\/shop_images\/ICON_3.svg",
             "icon_svg": "",
             "url": "",
-            "title": "NO ARTIFICIAL ADDITIVES",
+            "title": "NATURAL FLAVOURS",
             "subheading": "",
             "use_alt_bg": false
           }
@@ -281,7 +282,7 @@
             "icon_image": "shopify:\/\/shop_images\/ICON_4.svg",
             "icon_svg": "",
             "url": "",
-            "title": "BORN IN UK",
+            "title": "DESIGNED IN UK",
             "subheading": "",
             "use_alt_bg": false
           }
@@ -302,7 +303,6 @@
     },
     "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
       "type": "text-image-flex",
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
