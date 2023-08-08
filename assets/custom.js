@@ -1116,8 +1116,8 @@ function validateForm(e){
         }
 }
 
-document.querySelector('.header_button').addEventListener('click', () => openWaitlistDrawer());
-document.querySelectorAll('.flavour_button').forEach(flavourButton => {
-    flavourButton.addEventListener('click', () => openWaitlistDrawer());
-})
+// document.querySelector('.header_button').addEventListener('click', () => openWaitlistDrawer());
+// document.querySelectorAll('.flavour_button').forEach(flavourButton => {
+//     flavourButton.addEventListener('click', () => openWaitlistDrawer());
+// })
 // document.querySelector('.video-container .overlay-text__button').addEventListener('click', () => openWaitlistDrawer())
