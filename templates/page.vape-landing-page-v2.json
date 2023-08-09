@@ -304,6 +304,7 @@
     },
     "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
       "type": "text-image-flex",
+      "disabled": true,
       "custom_css": [
         ".image-text-flex-container {margin-top: 60px;}"
       ],
