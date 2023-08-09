@@ -304,12 +304,11 @@
     },
     "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
       "type": "text-image-flex",
-      "disabled": true,
       "custom_css": [
         ".image-text-flex-container {margin-top: 60px;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
+        "image": "shopify:\/\/shop_images\/Chill-Zero-Siteimages-UK-VP3000_20463642-af08-4129-ae1e-17f18875e601.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
         "image_width": 700,
         "subheading": "",
