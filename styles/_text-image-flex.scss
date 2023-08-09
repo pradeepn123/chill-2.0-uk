@@ -1,15 +1,9 @@
 .image-text-flex-container{
     .background-img-cover{
-        height:600px;
+        height:37.5rem;
         position: relative;
-        @media (min-width: 767.98px) and (max-width:900px){
-            height:655px;
-        }
-        @media(min-width:768px) and (max-width:1025px){
-            min-height: 430px !important;
-        }
-        @media(max-width:520px){
-            height:536px;
+        @media (max-width: 768px){
+            height: 39rem;
         }
         .flex-wrap{
             position: absolute;
@@ -48,9 +42,9 @@
             margin-left: 9%;
             margin-right: 9%;
         }
-        @media(min-width:1025px){
-            padding-top: 90px;
-        }
+        // @media(min-width:1025px){
+        //     padding-top: 90px;
+        // }
     }
     .flexible-layout{
         @media (min-width: 767.98px) and (max-width:900px){

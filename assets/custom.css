@@ -2776,11 +2776,11 @@ body {
 }
 /* home page icon with text */
 .section-home-icons .icon-with-text-sec .icon-with-text-wrapper {
-  padding: 60px 0;
+  padding: 0;
 }
 @media (max-width: 767px) {
   .section-home-icons .icon-with-text-sec .icon-with-text-wrapper {
-    padding: 23px 0 60px 0;
+    padding: 23px 0 0 0;
   }
 }
 .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .home_icons_title {
@@ -11269,22 +11269,12 @@ div .okeReviews .oke-reviewCarousel {
 }
 
 .image-text-flex-container .background-img-cover {
-  height: 600px;
+  height: 37.5rem;
   position: relative;
 }
-@media (min-width: 767.98px) and (max-width: 900px) {
+@media (max-width: 768px) {
   .image-text-flex-container .background-img-cover {
-    height: 655px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1025px) {
-  .image-text-flex-container .background-img-cover {
-    min-height: 430px !important;
-  }
-}
-@media (max-width: 520px) {
-  .image-text-flex-container .background-img-cover {
-    height: 536px;
+    height: 39rem;
   }
 }
 .image-text-flex-container .background-img-cover .flex-wrap {
@@ -11323,11 +11313,6 @@ div .okeReviews .oke-reviewCarousel {
   .background-img-cover .feature-text-paired {
     margin-left: 9%;
     margin-right: 9%;
-  }
-}
-@media (min-width: 1025px) {
-  .background-img-cover .feature-text-paired {
-    padding-top: 90px;
   }
 }
 @media (min-width: 767.98px) and (max-width: 900px) {

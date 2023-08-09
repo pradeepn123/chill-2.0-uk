@@ -304,6 +304,10 @@
     },
     "753064d1-ae3f-4a27-a74c-1af9b4752c7d": {
       "type": "text-image-flex",
+      "disabled": true,
+      "custom_css": [
+        ".image-text-flex-container {margin-top: 60px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/FUNGTN_Blog_4.jpg",
         "background_image_2": "shopify:\/\/shop_images\/CHILLZERO_-Homepage_Banner_1.png",
@@ -372,7 +376,7 @@
         "636931ac-3e2d-4148-94c2-d655adf9466c"
       ],
       "custom_css": [
-
+        "@media (min-width: 768px) {.marquee-with-cta-text-image {margin: 70px 0; }}"
       ],
       "settings": {
         "animate_marquee_on_scroll": true
