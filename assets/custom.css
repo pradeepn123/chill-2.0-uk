@@ -11219,7 +11219,7 @@ div .okeReviews .oke-reviewCarousel {
 .video-image-section .video-container {
   margin-top: 100px;
 }
-@media (max-width: 768px) and (min-width: 521px) {
+@media (max-width: 767px) and (min-width: 521px) {
   .video-image-section .overlay-text__inner {
     position: absolute;
     bottom: 90px;
@@ -11241,6 +11241,27 @@ div .okeReviews .oke-reviewCarousel {
 @media (max-width: 768px) {
   .video-image-section .overlay-text__inner .large-text p {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-container--background video {
+    object-position: 63% !important;
+  }
+}
+@media (max-width: 325px) {
+  .video-container__video video {
+    object-position: 84% 94% !important;
+  }
+}
+@media (min-width: 326px) and (max-width: 376px) {
+  .video-container__video video {
+    object-position: 86% 94% !important;
+  }
+}
+@media (min-width: 378px) and (max-width: 541px) {
+  .video-container__video video {
+    object-position: 87% 50% !important;
   }
 }
 
