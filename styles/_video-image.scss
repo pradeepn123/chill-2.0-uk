@@ -4,7 +4,7 @@
         margin-top: 100px;
     }
     .overlay-text__inner{
-        @media(max-width:768px)and (min-width:521px){
+        @media(max-width:767px)and (min-width:521px){
             position: absolute;
             bottom: 90px;
         }
@@ -27,6 +27,22 @@
             }
         }
     
+    }
+}
+@media(min-width: 768px){
+    .video-container--background video{
+        object-position: 63% !important;
+    }
+}
+.video-container__video video{
+    @media (max-width: 325px){
+        object-position: 84% 94% !important;
+    }
+    @media (min-width: 326px) and (max-width: 376px){
+        object-position: 86% 94% !important;
+    }
+    @media(min-width: 378px) and (max-width: 541px){
+        object-position: 87% 50% !important;
     }
 }
 
