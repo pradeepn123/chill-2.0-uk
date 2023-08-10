@@ -55,7 +55,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Watermelon_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_Watermelon_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-Watermelon.jpg",
-            "flavour_block_description": "Enjoy the refreshing embrace of ripe watermelon. It’s a summertime icon that’s as juicy and succulent as it is satisfying. A mouthwateringly crisp flavour that tastes just like a slice of the real thing.Fresh | Fruity | Tropical",
+            "flavour_block_description": "Enjoy the refreshing embrace of ripe watermelon. It’s a summertime icon that’s as juicy and succulent as it is satisfying. A mouthwateringly crisp flavour that tastes just like a slice of the real thing.<br><br>Fresh | Fruity | Tropical",
             "flavour_button_text": "Try now",
             "product_block": "watermelon1500"
           }
@@ -67,7 +67,7 @@
             "flavour_block_background": "shopify:\/\/shop_images\/CZ-Blue_Razz_Backgorund_Tile.jpg",
             "flavour_block_image": "shopify:\/\/shop_images\/CZ_BlueRazz_Product.png",
             "flavour_icon": "shopify:\/\/shop_images\/AllFalvours-BlueRazz.jpg",
-            "flavour_block_description": "Luscious blueberry meets tangy raspberry in this mouthwatering fruit fusion. Blue Razz is perfectly balanced to create a refreshing, bold flavour with the taste natural berries in every inhale. Sweet | Tangy | Juicy",
+            "flavour_block_description": "Luscious blueberry meets tangy raspberry in this mouthwatering fruit fusion. Blue Razz is perfectly balanced to create a refreshing, bold flavour with the taste natural berries in every inhale. <br><br>Sweet | Tangy | Juicy",
             "flavour_button_text": "Try now",
             "product_block": "bluerazz1500"
           }
