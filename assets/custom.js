@@ -87,7 +87,8 @@ $(document).ready(function () {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 3.5,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    initialSlide: 0.5
                 }
             },
             {
@@ -95,7 +96,8 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2.5,
                     slidesToScroll: 1,
-                    arrows: false
+                    arrows: false,
+                    initialSlide: 0.5
                 }
             },
             {
@@ -103,7 +105,8 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1.5,
                     slidesToScroll: 1,
-                    arrows: false
+                    arrows: false,
+                    initialSlide: 0.5
                 }
             }
         ]
@@ -190,7 +193,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 767,
+                breakpoint: 847,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,

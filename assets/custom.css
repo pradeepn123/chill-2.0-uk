@@ -10827,12 +10827,12 @@ body.cart-drawer-open {
 .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block {
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .description_open_button, .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .description_close_button {
     display: none !important;
   }
 }
-@media (max-width: 7687px) {
+@media (max-width: 1023px) {
   .section-explore-flavours .flavours_wrapper .flavours_container .flavour_block_container .flavour_block .description_close_button {
     display: none;
   }
