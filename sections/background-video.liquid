@@ -1,5 +1,13 @@
 <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %}" data-section-type="background-video" data-cc-animate>
   {% style %}
+  {% if request.path == '/pages/chillzero' %}
+      #section-id-{{ section.id }} .video-container{
+        margin-top: 100px;
+      }
+      #section-id-{{ section.id }} .video-container .video-container__video{
+        margin-top: 0px;
+      }
+    {% endif %}
     #section-id-{{ section.id }} .video-container {
       height: {{ section.settings.height_mobile }}px;
     }
@@ -8,6 +16,15 @@
       {%- if section.settings.title_size_mobile >= 90 -%}
       line-height: 1em;
       {%- endif %}
+    }
+    .overlay-text__inner .overlay-text__text .overlay-text__title{
+        font-weight: {{ section.settings.font_weight_head }} !important;
+    }
+    .overlay-text__inner .overlay-text__text .overlay-text__title.overlay-text__title_vape{
+      font-weight: 300 !important;
+    }
+    .section-background-video .video-container .overlay-text .overlay-text__inner .overlay-text__text .overlay-text__button-row .overlay-text__button.button{
+      font-size: {{ section.settings.btn_font }}px;
     }
     @media (min-width: 768px) {
       #section-id-{{ section.id }} .video-container {
@@ -33,6 +50,14 @@
       background-color: {{ section.settings.botton_bg }};
       color: {{ section.settings.botton_text_color }};
     }
+    @media (max-width:767px){
+      .section-background-video .video-container .overlay-text .overlay-text__inner .overlay-text__rte.rte.large-text p{
+          font-size:{{ section.settings.sub_font_size }}px !important;
+     }
+      .section-background-video .video-container .overlay-text .overlay-text__inner .overlay-text__text .overlay-text__button-row .overlay-text__button.button{
+          font-size: {{ section.settings.btn_font_mobile }}px;
+      }
+      }
   {% endstyle %}
 
   {% if section.settings.video != blank %}
@@ -62,7 +87,7 @@
 
       {%- if show_overlay_text -%}
         <div class="overlay-text overlay-text--for-banner overlay--v-{{ section.settings.text_alignment | split: ' ' | first }} overlay--h-{{ section.settings.text_alignment | split: ' ' | last }} image-overlay__over">
-          <div class="overlay-text__inner">
+          <div class="overlay-text__inner {% if section.settings.use_alt_bg %} use-alt-bg-color{% endif %}">
             <div class="overlay-text__text" data-cc-animate="cc-fade-in-up" data-cc-animate-delay="0.5s">
               {%- if section.settings.subheading != blank -%}
                 <div class="overlay-text__subheading subheading subheading--over">{{ section.settings.subheading | escape }}</div>
@@ -71,11 +96,11 @@
                 {% if section.settings.use_h1 %}
                   <h1 class="overlay-text__title">{{ section.settings.title | newline_to_br }}</h1>
                 {% else %}
-                  <h2 class="overlay-text__title h1-style">{{ section.settings.title | newline_to_br}}</h2>
+                  <h2 class="overlay-text__title h1-style {% if request.path == '/pages/vape' %}overlay-text__title_vape{% endif %}">{{ section.settings.title | newline_to_br}}</h2>
                 {% endif %}
               {%- endif -%}
               {%- if section.settings.text != blank -%}
-                <div class="overlay-text__rte rte {% if section.settings.enlarge_text %}large-text{% endif %}">{{ section.settings.text }}</div>
+                <div class="overlay-text__rte rte {% if request.path == '/pages/vape' %}overlay_text_for_vape_page{% endif %} {% if section.settings.enlarge_text %}large-text{% endif %}">{{ section.settings.text }}</div>
               {%- endif -%}
               {%- if section.settings.button_label_1 != blank or section.settings.button_label_2 != blank -%}
                 <div class="overlay-text__button-row">
@@ -121,6 +146,12 @@
         "info": "Required. Shows while the video is loading, or if it cannot autoplay."
       },
       {
+        "type": "checkbox",
+        "id": "use_alt_bg",
+        "label": "Use alternate section color",
+        "default": true
+      },
+      {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
@@ -131,6 +162,26 @@
         "id": "title",
         "label": "Heading",
         "default": "Background video"
+      },
+      {
+        "type": "select",
+        "id": "font_weight_head",
+        "label": "Font weight",
+        "options": [
+          {
+            "value": "normal",
+            "label": "normal"
+          },
+          {
+            "value": "bold",
+            "label": "bold"
+          },
+          {
+            "value": "lighter",
+            "label": "lighter"
+          }
+        ],
+        "default": "normal"
       },
       {
         "type": "range",
@@ -166,6 +217,16 @@
         "default": "<p>Use a video to get a customer's attention<\/p>"
       },
       {
+        "type": "range",
+        "id": "sub_font_size",
+        "min": 1,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Font size Mobile",
+        "default": 20
+      },
+      {
         "type": "checkbox",
         "id": "enlarge_text",
         "label": "Enlarge text",
@@ -176,6 +237,26 @@
         "id": "button_label_1",
         "label": "Button 1 label"
       },
+      {
+        "type": "range",
+        "id": "btn_font",
+        "min": 12,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Button Font size Desktop",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "btn_font_mobile",
+        "min": 1,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "label": "Button  Font size Mobile",
+        "default": 16
+      }, 
       {
         "type": "url",
         "id": "button_url_1",

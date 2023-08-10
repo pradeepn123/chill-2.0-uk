@@ -1,0 +1,81 @@
+#waitlistDrawerContainer{
+    .waitlist_signup_container{
+        height: 100%;
+        .waitlist_signup{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            form{
+                .form-body{
+                    .signup-form-headline{
+                        font-size: 22px;
+                        font-weight: 400;
+                        p{
+                            margin-bottom: 0 !important;
+                        }
+                    }
+                    .form-input-email{
+                        width: 100%;
+                        border-radius: 40px;
+                        margin: 20px 0;
+                        padding: 1em;
+                    }
+                    .form_checkbox{
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        div{
+                            margin: 5px 20px;
+                        }
+                        label{
+                            font-size: 16px;
+                        }
+                    }
+                    .form-actions{
+                        width: 100%;
+                        text-align: center;
+                        justify-content: center;
+                        border-radius: 40px;
+                        margin: 20px 0;
+                        cursor: pointer;
+                        .join_waitlist_button{
+                            font-size: 20px;
+                            font-weight: 700;
+                            width: 100%;
+                            border-radius: 40px;
+                            &:hover{
+                                background: unset;
+                                border: 1px solid #9792e4;
+                            }
+                        }
+                    }
+                    label{
+                        font-size: 18px;
+                        margin-left: 5px;
+                    }
+                    select{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 40px;
+                        font-size: 16px; 
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        text-indent: 1px;
+                        text-overflow: '';
+                        content: "";
+                        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDE1IDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xNjE3XzY1MykiPgo8cGF0aCBkPSJNMS40MTQwNiAxLjQxNUw3LjQwNDA3IDcuNDA1TDEzLjM5NDEgMS40MTUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDBfMTYxN182NTMiPgo8cmVjdCB3aWR0aD0iMTQuODA5IiBoZWlnaHQ9IjguNDA1IiBmaWxsPSJ3aGl0ZSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=);
+                        background-repeat: no-repeat;
+                        background-position-x: 95%;
+                        background-position-y: 50%;
+                        option:first-child{
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,321 @@
+{% style %}
+    .title_container{
+        text-align: {{ section.settings.title_align }};
+    }
+    .section_title{
+        font-size: {{ section.settings.title_font_size }}px
+    }
+    .section_subtitle{
+        font-size: {{ section.settings.subtitle_font_size }}px
+    }
+    .view_all_button{
+        color: {{ section.settings.view_all_button_text_color}};
+        background: {{ section.settings.view_all_button_color }};
+    }
+    .view_all_button:hover{
+        color: {{ section.settings.view_all_button_text_color}};
+        background: {{ section.settings.view_all_button_color }};
+    }
+    {% for block in section.blocks %}
+        .flavour_block_container.block-{{ block.id }}{
+            background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}') no-repeat;
+            background-size: cover;
+        }
+    {% endfor %}
+    @media (max-width: 768px){
+        .section_title{
+            font-size: {{ section.settings.title_font_size_mobile }}px
+        }
+        .section_subtitle{
+            font-size: {{ section.settings.subtitle_font_size_mobile }}px
+        }
+    }
+
+{% endstyle %}
+<div class="section section-explore-flavours">
+    <div class="section_wrapper">
+        <div class="title_container">
+            <h1 class="section_title">{{ section.settings.section_title}}</h1>
+            <h3 class="section_subtitle">{{ section.settings.section_subtitle}}</h3>
+            <button class="view_all_button">{{ section.settings.button_text }}</button>
+        </div>
+        <div class="flavours_wrapper">
+            <div class="flavours_container">
+                {% for block in section.blocks %}
+                    <div class="flavour_block_container block-{{ block.id }}">
+                        <div class="flavour_block">
+                            {% comment %} <svg class="description_open_button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M10.2898 10.2662C10.4819 9.6723 10.8339 9.1438 11.3071 8.73816C11.7803 8.33251 12.3568 8.06595 12.9716 7.96811C13.5863 7.87028 14.2157 7.94478 14.7909 8.18359C15.366 8.42239 15.8641 8.81631 16.2301 9.32137C16.5961 9.82643 16.8152 10.423 16.8642 11.0454C16.9131 11.6678 16.7893 12.2919 16.5068 12.8482C16.2242 13.4046 15.7943 13.8713 15.2636 14.1976C14.7328 14.5239 14.1225 14.6965 13.5 14.6965V15.8255M13.5 23.7241C7.90812 23.7241 3.375 19.1773 3.375 13.5684C3.375 7.95949 7.90812 3.4126 13.5 3.4126C19.0919 3.4126 23.625 7.95949 23.625 13.5684C23.625 19.1773 19.0919 23.7241 13.5 23.7241ZM13.556 19.2105V19.3233L13.444 19.3235V19.2105H13.556Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> {% endcomment %}
+                                <svg class="description_open_button" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 25 25" fill="none">
+                                    <path d="M10.2898 10.2662C10.4819 9.6723 10.8339 9.1438 11.3071 8.73816C11.7803 8.33251 12.3568 8.06595 12.9716 7.96811C13.5863 7.87028 14.2157 7.94478 14.7909 8.18359C15.366 8.42239 15.8641 8.81631 16.2301 9.32137C16.5961 9.82643 16.8152 10.423 16.8642 11.0454C16.9131 11.6678 16.7893 12.2919 16.5068 12.8482C16.2242 13.4046 15.7943 13.8713 15.2636 14.1976C14.7328 14.5239 14.1225 14.6965 13.5 14.6965V15.8255M13.5 23.7241C7.90812 23.7241 3.375 19.1773 3.375 13.5684C3.375 7.95949 7.90812 3.4126 13.5 3.4126C19.0919 3.4126 23.625 7.95949 23.625 13.5684C23.625 19.1773 19.0919 23.7241 13.5 23.7241ZM13.556 19.2105V19.3233L13.444 19.3235V19.2105H13.556Z" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            <svg class="description_close_button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M15 16L11.5 12.5M11.5 12.5L8 9M11.5 12.5L15 9M11.5 12.5L8 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="11.5" cy="12.5" r="10.5" stroke="white" stroke-width="2"/>
+                            </svg>
+                            <div class="hover_block">
+                                <img class="flavour_image" src="{{ block.settings.flavour_block_image | img_url: 'master' }}" alt="flavour image">
+                                <p class="flavour_description {{ block.settings.flavour_title }}">{{ block.settings.flavour_block_description }}</p>
+                            </div>
+                            <p class="flavour_title">
+                                {{ block.settings.flavour_title }}
+                            </p>
+                            {% assign block_product = all_products[block.settings.product_block] %}
+
+                            <button
+                                class="flavourButton"
+                                data-zero-product-modal="{{ block_product.id }}"
+                                data-title="{{ block.settings.flavour_title }}"
+                            >
+                                {{- block.settings.flavour_button_text -}}
+                            </button>
+                            {% comment %} {% render 'vapeProductDrawer', class: classname , product: all_products[block.settings.product_block], section: section %} {% endcomment %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="claim_drawer_background" id="flavourDrawerBackground" style="display:none;"></div>
+<div class="claim_drawer_container" id="flavourDrawerContainer" style="display:block;">
+    <div class="flavour_drawer_header">
+        <h1>All Flavours ({{ section.blocks.size }})</h1>
+        <a class="claim-drawer-summary__close flavour-drawer-summary__close toggle-cart-summary" onclick="closeFlavourDrawer()">
+            {% render 'svg-close' %}
+        </a>
+    </div>
+    <div class="flavour_drawer_content" id="flavourDrawerContent">
+        <div class="flavour_container">
+            {% for block in section.blocks %}
+                {% assign product = all_products[block.settings.product_block] %}
+                <div class="flavour" data-title={{ block.settings.flavour_title }} data-product='{{ product | json }}'>
+                    {% comment %} <img src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" style="background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}')"> {% endcomment %}
+                    <img class="flavour_icon" src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" data-zero-product-modal="{{ block_poroduct.id }}" data-title="{{ block.settings.flavour_title }}">
+                    <p
+                        class="flavour_text"
+                        role="button"
+                        data-zero-product-modal="{{ block_product.id }}"
+                    >
+                        {{- block.settings.flavour_title -}}
+                    </p>
+                    {% assign classname = block.settings.flavour_title | replace: ' ', '' | downcase %}
+                    {% render 'vapeProductDrawer', class: classname , product: product, section: section %}
+                </div>
+            {% endfor%}
+        </div>
+    </div>
+</div>
+{% comment %} {% render 'vapeProductDrawer' %} {% endcomment %}
+
+{% comment %}  {% endcomment %}
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if(window.screen.width < 768){
+            document.querySelectorAll('.description_open_button').forEach(openDescription => {
+                openDescription.style.display = 'block';
+                openDescription.addEventListener('click', () => {
+                    console.log('open...')
+                    openDescription.closest('.flavour_block').querySelector('.flavour_image').style.opacity = '0'
+                    openDescription.closest('.flavour_block').querySelector('.flavour_description').style.opacity = '1';
+                    openDescription.style.display = 'none'
+                    openDescription.closest('.flavour_block').querySelector('.description_close_button').style.display = 'block'
+                })
+            })
+            document.querySelectorAll('.description_close_button').forEach(closeDescription => {
+                closeDescription.addEventListener('click', () => {
+                    console.log('close...')
+                    closeDescription.closest('.flavour_block').querySelector('.flavour_image').style.opacity = '1'
+                    closeDescription.closest('.flavour_block').querySelector('.flavour_description').style.opacity = '0';
+                    closeDescription.style.display = 'none'
+                    closeDescription.closest('.flavour_block').querySelector('.description_open_button').style.display = 'block'
+                })
+            })
+        }
+    })
+</script>
+{% schema %}
+    {
+        "name": "Explore flavours",
+        "class": "section-explore-flavours",
+        "settings": [
+            {
+                "type": "select",
+                "id": "title_align",
+                "label": "Title align",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Left"
+                    },
+                    {
+                        "value": "center",
+                        "label": "Center"
+                    }
+                ],
+                "default": "center"
+            },
+            {
+                "type": "richtext",
+                "id": "section_title",
+                "label": "Section title"
+            },
+            {
+                "type": "range",
+                "id": "title_font_size",
+                "label": "Title font-size - Desktop",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 52 
+            },
+            {
+                "type": "range",
+                "id": "title_font_size_mobile",
+                "label": "Title font-size - Mobile",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 24
+            },
+            {
+                "type": "richtext",
+                "id": "section_subtitle",
+                "label": "Section title"
+            },
+            {
+                "type": "range",
+                "id": "subtitle_font_size",
+                "label": "Subtitle font-size - Desktop",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 32 
+            },
+            {
+                "type": "range",
+                "id": "subtitle_font_size_mobile",
+                "label": "Subtitle font-size - Mobile",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "default": 18
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button text",
+                "default": "View all"
+            },
+            {
+                "type": "url",
+                "id": "view_all_button_link",
+                "label": "View all button link"
+            },
+            {
+                "type": "color",
+                "id": "view_all_button_color",
+                "label": "Button color"
+            },
+            {
+                "type": "color",
+                "id": "view_all_button_text_color",
+                "label": "Button text color"
+            },
+            {
+                "type": "header",
+                "content": "Product settings"
+            },
+            {
+                "type": "checkbox",
+                "id": "show_location_underneath",
+                "label": "Show description below media",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "show_pickup_availability",
+                "label": "Show pickup availability",
+                "default": true,
+                "info": "Show customers where they can pick up the product. [Learn more](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/local-methods/local-pickup)"
+            },
+            {
+                "type": "checkbox",
+                "id": "disable_unavailable_variants",
+                "label": "Show availability in selectors",
+                "info": "When an option is selected, options below it are updated to show their availability",
+                "default": true
+            },
+            {
+                "type": "radio",
+                "id": "variant_style",
+                "label": "Variant style",
+                "options": [
+                  {
+                    "value": "listed",
+                    "label": "Box with label"
+                  },
+                  {
+                    "value": "dropdown",
+                    "label": "Dropdown"
+                  }
+                ],
+                "default": "listed"
+            }
+
+        ],
+        "blocks": [
+            {
+                "type": "select",
+                "name": "Flavour",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "flavour_title",
+                        "label": "Flavour title"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "flavour_block_background",
+                        "label": "Flavour block background"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "flavour_block_image",
+                        "label": "Flavour block image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "flavour_icon",
+                        "label": "Flavour icon"
+                    },
+                    {
+                        "type": "text",
+                        "id": "flavour_block_description",
+                        "label": "Flavour block description",
+                        "default": "Add description here"
+                    },
+                    {
+                        "type": "text",
+                        "id": "flavour_button_text",
+                        "label": "Flavour button text"
+                    },
+                    {
+                        "type":"product",
+                        "id": "product_block",
+                        "label": "Add product"
+                    }
+                ]
+            }
+        ],
+        "presets":[
+            {
+                "name": "Explore flavours"
+            }
+        ]
+    }
+{% endschema %}

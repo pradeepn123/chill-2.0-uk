@@ -2,12 +2,420 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "full_width": false
+      }
+    },
+    "cbcfe4cd-6f43-4f1b-b7af-bcf13cdc36af": {
+      "type": "background-video",
+      "custom_css": [
+        ".video-container__video {margin-top: 100px;}",
+        ".video-container .overlay-text__title {font-weight: 300 !important;}"
+      ],
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/b35dd28b419c4ac899215dfb3d5bb513.mp4",
+        "use_alt_bg": true,
+        "subheading": "",
+        "title": "<strong>CHILL<\/strong>ZERO",
+        "font_weight_head": "normal",
+        "title_size": 84,
+        "title_size_mobile": 44,
+        "use_h1": false,
+        "text": "<p>Find peace with functional products made from all natural ingredients<\/p>",
+        "sub_font_size": 20,
+        "enlarge_text": true,
+        "button_label_1": "JOIN WAITLIST",
+        "btn_font": 20,
+        "btn_font_mobile": 16,
+        "button_url_1": "#",
+        "button_label_2": "",
+        "button_url_2": "",
+        "botton_bg": "#9792e4",
+        "botton_text_color": "#ffffff",
+        "text_alignment": "bottom left",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "f8c0b121-6fb3-46e9-9f39-990befca6e07": {
+      "type": "marquee-with-cta-text-image",
+      "blocks": {
+        "f50b6163-4b30-4adf-85a3-30fbf022f7ca": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Passion Fruit Grapefruit<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "Try Passion Grapefruit",
+            "button_redirection_link": "#block-PassionFruitGrapefruit",
+            "marquee_button_color": "#ffac9a",
+            "marquee_image-1": "shopify:\/\/shop_images\/vape-grape.jpg",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        },
+        "ed23dfe4-6c52-4eb8-b8c2-10c8e6e707f3": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Lemon<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "Try Lemon",
+            "button_redirection_link": "#block-FreshLemon",
+            "marquee_button_color": "#f2cc0d",
+            "marquee_image-1": "shopify:\/\/shop_images\/vape-lemon1.jpg",
+            "marquee_direction": "scrollLeftToRight"
+          }
+        },
+        "335092b3-0563-4567-9e96-35051cb6d061": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Mint Ice<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "Try mint ice",
+            "button_redirection_link": "#block-Mintice",
+            "marquee_button_color": "#6ec59f",
+            "marquee_image-1": "shopify:\/\/shop_images\/vape-mint.jpg",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        }
+      },
+      "block_order": [
+        "f50b6163-4b30-4adf-85a3-30fbf022f7ca",
+        "ed23dfe4-6c52-4eb8-b8c2-10c8e6e707f3",
+        "335092b3-0563-4567-9e96-35051cb6d061"
+      ],
+      "custom_css": [
+        ".marquee_container:first-child {margin-top: 80px; animation-duration: 120s;}",
+        "@media (max-width: 767px) {.marquee_container:first-child {margin-top: 30px; }}"
+      ],
+      "settings": {
+        "animate_marquee_on_scroll": true
+      }
+    },
+    "bccaf703-4c50-4da3-a02a-79e4010c65e3": {
+      "type": "flavour-block",
+      "blocks": {
+        "a4a175bf-709e-4801-a827-3497c9bc10ce": {
+          "type": "select",
+          "settings": {
+            "flavour_image": "shopify:\/\/shop_images\/Group_8143.png",
+            "image_position": "row-reverse",
+            "flavour_title": "<p>Our <strong>Mission<\/strong><\/p>",
+            "flavour_title_font_size": 52,
+            "flavour_title_font_size_mobile": 32,
+            "flavour_description": "Our mission is to offer a safer alternative to smoking by providing high-quality vaping products. We aim to promote a healthier lifestyle by encouraging smokers to switch to vaping.",
+            "flavour_description_font_size": 20,
+            "flavour_description_font_size_mobile": 16,
+            "button_text": "",
+            "button_url": "",
+            "flavour_button_font_size": 24,
+            "flavour_button_font_size_mobile": 20,
+            "button_text_color": "",
+            "button_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "a4a175bf-709e-4801-a827-3497c9bc10ce"
+      ],
+      "custom_css": [
+        ".flavour_block_container {padding-bottom: 0px !important;}"
+      ],
+      "settings": {
+      }
+    },
+    "06a1f22f-dd06-4017-91eb-b2e4e8af2052": {
+      "type": "marquee-with-cta-text-image",
+      "blocks": {
+        "6d23b78d-d1f6-4a19-89ee-962bfbf98070": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Coming soon<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 79,
+            "marquee_text_font_size_mobile": 59,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Group_636.svg",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        }
+      },
+      "block_order": [
+        "6d23b78d-d1f6-4a19-89ee-962bfbf98070"
+      ],
+      "settings": {
+        "animate_marquee_on_scroll": true
+      }
+    },
+    "86ddb03a-f66d-4947-ad97-afe677efbe09": {
+      "type": "flavour-block",
+      "blocks": {
+        "91511440-f195-45b9-8b9e-abc6e058ec96": {
+          "type": "select",
+          "settings": {
+            "flavour_image": "shopify:\/\/shop_images\/image_6.jpg",
+            "flavour_image_secondary": "shopify:\/\/shop_images\/passion-hover.jpg",
+            "image_position": "row",
+            "flavour_title": "<p>Passion Fruit Grapefruit<\/p>",
+            "flavour_title_font_size": 52,
+            "flavour_title_font_size_mobile": 32,
+            "flavour_description": "Grapefruit flavor vape offers a distinctive taste that is both sweet and slightly bitter, with hints of tanginess.",
+            "flavour_description_font_size": 20,
+            "flavour_description_font_size_mobile": 16,
+            "button_text": "JOIN WAITLIST",
+            "button_url": "#waitlistDrawerContainer",
+            "flavour_button_font_size": 24,
+            "flavour_button_font_size_mobile": 20,
+            "button_text_color": "",
+            "button_color": "#ffac9a",
+            "custom_slick_dot_image": "shopify:\/\/shop_images\/image_6.jpg"
+          }
+        },
+        "a6b7522f-b2c5-4ad5-b8a2-6774b4424524": {
+          "type": "select",
+          "settings": {
+            "flavour_image": "shopify:\/\/shop_images\/image_6_copy_2.jpg",
+            "flavour_image_secondary": "shopify:\/\/shop_images\/lemon-hover.jpg",
+            "image_position": "row-reverse",
+            "flavour_title": "<p>Fresh Lemon<\/p>",
+            "flavour_title_font_size": 52,
+            "flavour_title_font_size_mobile": 32,
+            "flavour_description": "Lemon flavor vape provides a zesty and refreshing taste that is perfect for vapers who enjoy tangy citrus flavors.",
+            "flavour_description_font_size": 20,
+            "flavour_description_font_size_mobile": 16,
+            "button_text": "JOIN WAITLIST",
+            "button_url": "#waitlistDrawerContainer",
+            "flavour_button_font_size": 24,
+            "flavour_button_font_size_mobile": 20,
+            "button_text_color": "",
+            "button_color": "#f2cc0d",
+            "custom_slick_dot_image": "shopify:\/\/shop_images\/image_6_copy_2.jpg"
+          }
+        },
+        "0cb016b4-aa0e-4f72-a0e0-c819a6c37ca4": {
+          "type": "select",
+          "settings": {
+            "flavour_image": "shopify:\/\/shop_images\/image_6_copy.jpg",
+            "flavour_image_secondary": "shopify:\/\/shop_images\/mint-hover.jpg",
+            "image_position": "row",
+            "flavour_title": "<p>Mint ice<\/p>",
+            "flavour_title_font_size": 52,
+            "flavour_title_font_size_mobile": 32,
+            "flavour_description": "Mint flavor vape delivers a cool and refreshing sensation that is perfect for vapers who enjoy a fresh and invigorating vaping experience",
+            "flavour_description_font_size": 20,
+            "flavour_description_font_size_mobile": 16,
+            "button_text": "JOIN WAITLIST",
+            "button_url": "#waitlistDrawerContainer",
+            "flavour_button_font_size": 24,
+            "flavour_button_font_size_mobile": 20,
+            "button_text_color": "",
+            "button_color": "#6ec59f",
+            "custom_slick_dot_image": "shopify:\/\/shop_images\/image_6_copy.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "91511440-f195-45b9-8b9e-abc6e058ec96",
+        "a6b7522f-b2c5-4ad5-b8a2-6774b4424524",
+        "0cb016b4-aa0e-4f72-a0e0-c819a6c37ca4"
+      ],
+      "settings": {
+      }
+    },
+    "f929564a-02b2-450f-a90a-03bffdfe0a63": {
+      "type": "marquee-with-cta-text-image",
+      "blocks": {
+        "7d9068b5-02e6-459e-af75-b5f2367d8fb0": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p>Join <strong>The Movement<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 48,
+            "marquee_text_font_size_mobile": 36,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/vape-grape.jpg",
+            "marquee_image-2": "shopify:\/\/shop_images\/vape-mint.jpg",
+            "marquee_image-3": "shopify:\/\/shop_images\/vape-lemon1.jpg",
+            "marquee_direction": "scrollRightToLeft"
+          }
+        },
+        "7fcb1dfe-6961-41e4-beea-d44cdc80c81e": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>@chillzer0<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 48,
+            "marquee_text_font_size_mobile": 36,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/vape-grape.jpg",
+            "marquee_image-2": "shopify:\/\/shop_images\/vape-lemon1.jpg",
+            "marquee_image-3": "shopify:\/\/shop_images\/vape-mint.jpg",
+            "marquee_direction": "scrollLeftToRight"
+          }
+        }
+      },
+      "block_order": [
+        "7d9068b5-02e6-459e-af75-b5f2367d8fb0",
+        "7fcb1dfe-6961-41e4-beea-d44cdc80c81e"
+      ],
+      "settings": {
+        "animate_marquee_on_scroll": true
+      }
+    },
+    "a3702927-9021-41b2-9167-136f363402a3": {
+      "type": "image-carousel",
+      "blocks": {
+        "2729e93e-6928-4081-b8f5-3aa1b21d4dd3": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/1.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "cba03d13-7b3f-4863-83fb-d8625e08407d": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/E63B5188-2D3C-442B-A568-11BAB8A96056.heic",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "19c28d32-d301-400f-8cd1-d3b60241db0a": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Meme3.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "3f013603-55f2-45e5-a444-f4127adc128d": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Lemon_Cover1.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "1a1b52ed-6488-4965-8585-843338b2ebaa": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Meme1.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "12f2124b-2762-45e2-b67e-9b632a038cf2": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Flavor_Cover_-_Lemon.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "e4b3f8e7-154e-4b0b-9ecc-d8a7eba05c35": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Passion_Cover1.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "eb3d9494-abc3-4b17-bd96-937193d5201e": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Flavor_Cover_-_Mint.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "f0b47397-92bf-487d-b522-1e79507dedea": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Flavor_Cover_-_Grapefruit.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "49cc0fca-165d-4d74-96c8-b58626411ac4": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/IMG_2572.heic",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "d5b5a8d0-e12c-43ee-bbce-619c0a343cf4": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Mint_Cover1.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "da208ddf-334b-4e66-8fd6-5f2952d018d7": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Colorful_Noise_Gradient_Motivational_Quote_Instagram_Post_3.png",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "76509b2c-3073-4f3a-8a4d-04918b9fa480": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/IMG_0459.heic",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        }
+      },
+      "block_order": [
+        "2729e93e-6928-4081-b8f5-3aa1b21d4dd3",
+        "cba03d13-7b3f-4863-83fb-d8625e08407d",
+        "19c28d32-d301-400f-8cd1-d3b60241db0a",
+        "3f013603-55f2-45e5-a444-f4127adc128d",
+        "1a1b52ed-6488-4965-8585-843338b2ebaa",
+        "12f2124b-2762-45e2-b67e-9b632a038cf2",
+        "e4b3f8e7-154e-4b0b-9ecc-d8a7eba05c35",
+        "eb3d9494-abc3-4b17-bd96-937193d5201e",
+        "f0b47397-92bf-487d-b522-1e79507dedea",
+        "49cc0fca-165d-4d74-96c8-b58626411ac4",
+        "d5b5a8d0-e12c-43ee-bbce-619c0a343cf4",
+        "da208ddf-334b-4e66-8fd6-5f2952d018d7",
+        "76509b2c-3073-4f3a-8a4d-04918b9fa480"
+      ],
+      "settings": {
+        "section_redirection_link": "https:\/\/www.instagram.com\/chillzer0\/",
+        "carousel_image_width": 400,
+        "carousel_image_height": 400,
+        "carousel_image_border_radius": 33,
+        "carousel_image_width_mobile": 250,
+        "carousel_image_height_mobile": 250
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "cbcfe4cd-6f43-4f1b-b7af-bcf13cdc36af",
+    "f8c0b121-6fb3-46e9-9f39-990befca6e07",
+    "bccaf703-4c50-4da3-a02a-79e4010c65e3",
+    "06a1f22f-dd06-4017-91eb-b2e4e8af2052",
+    "86ddb03a-f66d-4947-ad97-afe677efbe09",
+    "f929564a-02b2-450f-a90a-03bffdfe0a63",
+    "a3702927-9021-41b2-9167-136f363402a3"
   ]
 }

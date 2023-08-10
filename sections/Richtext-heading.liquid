@@ -1,0 +1,94 @@
+{% style %}
+    #section-id-{{ section.id }} .text-subcontainer{
+        font-size:{{ section.settings.heading__size }}px;
+        color:{{ section.settings.heading_text_color }};
+        text-align:{{ section.settings.text_alignment }};
+        margin-top:79px;
+        line-height: 52px;
+    }
+    #section-id-{{ section.id }} .text-subcontainer p{
+        margin-bottom:0;
+    }
+    @media(max-width:620px){
+        #section-id-{{ section.id }} .text-subcontainer{
+        font-size:{{ section.settings.heading_text_size }}px;
+        margin-top:75px;
+        line-height: 24px;
+    }
+    @media (max-width: 767px){
+      .text-subcontainer p:last-child{
+        font-size: 18px;
+        margin-top: 16px;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+    }
+{% endstyle %}
+
+<div class="richtext-heading" id="section-id-{{ section.id }}">
+    <div class="text-subcontainer">{{section.settings.richtext-text}}</div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Richtext Heading",
+  "class": "section-home-collections",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "richtext-text",
+      "label": "Heading",
+      "default": "<p>Review</p>"
+    },
+    {
+        "type": "range",
+        "id": "heading__size",
+        "min": 20,
+        "max": 80,
+        "step": 1,
+        "unit": "px",
+        "label": "Desktop Heading size",
+        "default": 52
+    },
+    {
+        "type": "range",
+        "id": "heading_text_size",
+        "min": 12,
+        "max": 80,
+        "step": 1,
+        "unit": "px",
+        "label": "Mobile Heading size",
+        "default": 24
+    },
+    {
+      "type": "color",
+      "id": "heading_text_color",
+      "label": "Heading Color"
+    },
+    {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
+      }
+  ],
+  "presets": [
+    {
+      "name": "Richtext Heading",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

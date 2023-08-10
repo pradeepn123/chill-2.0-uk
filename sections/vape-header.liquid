@@ -1,0 +1,66 @@
+{% style %}
+    .header_button button:hover{
+        background: {{ section.settings.header_button_color }} !important;
+    }
+{% endstyle %}
+<div class="vape_header_wrapper">
+    <div class="vape_header_container">
+        {% if section.settings.header_icon != blank %}
+            <a class="main_header" href="{{ section.settings.header_link }}"><img src="{{ section.settings.header_icon | img_url: 'master' }}" alt="header icon"></a>
+        {% endif %}
+        {% if section.settings.chill_header != blank %}
+            <a class="chill_header" href="{{ section.settings.chill_header_link }}"><img src="{{section.settings.chill_header | img_url: 'master' }}" alt="chill header"></a>
+        {% endif %}
+        {% if section.settings.header_button_text != blank %}
+            <a class="header_button" href="{{ section.settings.header_button_link }}"><button style="background:{{ section.settings.header_button_color }};">{{ section.settings.header_button_text | upcase }}</button></a>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Vape - Header",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "header_icon",
+                "label": "Header icon"
+            },
+            {
+                "type": "url",
+                "id": "header_link",
+                "label": "Header link"
+            },
+            {
+                "type": "image_picker",
+                "id": "chill_header",
+                "label": "Chill Header icon"
+            },
+            {
+                "type": "url",
+                "id": "chill_header_link",
+                "label": "Chill Header link"
+            },
+            {
+                "type": "text",
+                "id": "header_button_text",
+                "label": "Header button text"
+            },
+            {
+                "type": "url",
+                "id": "header_button_link",
+                "label": "Header button link"
+            },
+            {
+                "type": "color",
+                "id": "header_button_color",
+                "label": "Header button color"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Vape - Header"
+            }
+        ]
+    }
+{% endschema %}

@@ -1,0 +1,238 @@
+{% for block in section.blocks %}
+    {% style %}
+        .flavour_text_title p{
+            font-size: {{ block.settings.flavour_title_font_size }}px;
+        }
+        .flavour_text_description{
+            font-size: {{ block.settings.flavour_description_font_size }}px;
+        }
+        .flavour_button{
+            font-size: {{ block.settings.flavour_button_font_size}}px;
+        }
+        @media (max-width: 767px){
+            .flavour_text_title p{
+                font-size: {{ block.settings.flavour_title_font_size_mobile }}px;
+            }
+            .flavour_text_description{
+                font-size: {{ block.settings.flavour_description_font_size_mobile }}px;
+            }
+            .flavour_button{
+                font-size: {{ block.settings.flavour_button_font_size_mobile }}px;
+            }
+        }
+        {% if block.settings.flavour_image_secondary != blank %}
+            .flavour_block .block_img_wrapper_{{ block.id }} .secondary-image-wrapper {
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s ease;
+            }
+            .flavour_block .block_img_wrapper_{{ block.id }}:hover .primary-image-wrapper{
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.5s ease;     
+            }
+            .flavour_block .block_img_wrapper_{{ block.id }}:hover .secondary-image-wrapper{
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.5s ease;
+            }
+        {% endif %}
+        .custom-dot-{{ block.id }}:after{
+            background-color: {{ block.settings.button_color }} !important;            
+        }        
+    {% endstyle %}
+{% endfor %}
+{% style %}
+    .flavour-block-section .flavour_block_container{
+        {% if section.blocks.size > 1 %}
+            padding-bottom: 10em !important;
+        {% endif %}
+    }
+    @media(min-width:1200px){
+        .flavour-block-section .flavour_block_container{
+            {% if section.blocks.size > 1 %}
+                padding-bottom: 50px !important;
+            {% endif %}
+        }
+    }
+{% endstyle %}
+<div class="flavour-block-section container">
+    <div class="flavour_block_wrapper">
+        <div class="flavour_block_container">
+            {% for block in section.blocks %}
+                <div class="flavour_block" id="block-{{- block.settings.flavour_title | strip_html | replace: ' ', '' -}}" style="flex-direction: {{ block.settings.image_position }};scroll-margin-top:130px;">
+                    <div class="block_img block_img_wrapper_{{ block.id }}">
+                        <div class="primary-image-wrapper">
+                            <img class="flavour_image" src="{{ block.settings.flavour_image | img_url: 'master' }}" alt="flavour_image" width='100' height='100'>
+                        </div>
+                        {% if block.settings.flavour_image_secondary != blank %}
+                            <div class="secondary-image-wrapper">
+                                <img class="flavour_image" src="{{ block.settings.flavour_image_secondary | img_url: 'master' }}" alt="flavour_image" width='100' height='100'>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="flavour_text_block">
+                        {% if block.settings.flavour_title != blank %}
+                            <span class="flavour_text_title">{{ block.settings.flavour_title }}</span>
+                        {% endif %}
+                        {% if block.settings.flavour_description != blank %}
+                            <p class="flavour_text_description">{{ block.settings.flavour_description }}</p>
+                        {% endif %}
+                        {% if block.settings.button_url != blank or block.settings.button_text != blank %}
+                            <a href="{{ block.settings.button_url }}"><button class="flavour_button" style="background: {{ block.settings.button_color }};">{{ block.settings.button_text | upcase }}</button></a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        {% for block in section.blocks %}
+            {% if block.settings.custom_slick_dot_image != blank %}
+                <div class="custom-dot-{{ block.id }} custom-dot-common" data-color="{{ block.settings.button_color }}" data-flavour-title="{{ block.settings.flavour_title }}">
+                    <img class="customSlickDots image-{{ forloop.index }}" src="{{ block.settings.custom_slick_dot_image | img_url: 'master' }}" width='100' height='100' style="display: none;">
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Flavour blocks",
+        "settings": [
+
+        ],
+        "blocks": [
+            {
+                "name": "Flavour",
+                "type": "select",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "flavour_image",
+                        "label": "Flavour image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "flavour_image_secondary",
+                        "label": "Flavour image - secondary"
+                    },
+                    {
+                        "type": "select",
+                        "id": "image_position",
+                        "label": "Image position",
+                        "default": "row",
+                        "options": [
+                            {
+                                "value": "row-reverse",
+                                "label": "Image position - right"
+                            },
+                            {
+                                "value": "row",
+                                "label": "Image position - left"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "flavour_title",
+                        "label": "Flavour title"
+                    },
+                    {
+                        "type": "range",
+                        "id": "flavour_title_font_size",
+                        "label": "Flavour title font size",
+                        "default": 52,
+                        "min": 10,
+                        "max": 100,
+                        "step": 1
+                    },
+                    {
+                        "type": "range",
+                        "id": "flavour_title_font_size_mobile",
+                        "label": "Flavour title font size for mobile",
+                        "default": 32,
+                        "min": 10,
+                        "max": 100,
+                        "step": 1
+                    },
+                    {
+                        "type": "text",
+                        "id": "flavour_description",
+                        "label": "Flavour description"
+                    },
+                    {
+                        "type": "range",
+                        "id": "flavour_description_font_size",
+                        "label": "Flavour description font size",
+                        "default": 20,
+                        "min": 10,
+                        "max": 70,
+                        "step": 1
+                    },
+                    {
+                        "type": "range",
+                        "id": "flavour_description_font_size_mobile",
+                        "label": "Flavour description font size for mobile",
+                        "default": 16,
+                        "min": 10,
+                        "max": 50,
+                        "step": 1
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_text",
+                        "label": "Button text"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_url",
+                        "label": "Button link"
+                    },
+                    {
+                        "type": "range",
+                        "id": "flavour_button_font_size",
+                        "label": "Flavour button font size",
+                        "default": 24,
+                        "min": 10,
+                        "max": 70,
+                        "step": 1
+                    },
+                    {
+                        "type": "range",
+                        "id": "flavour_button_font_size_mobile",
+                        "label": "Flavour button font size for mobile",
+                        "default": 20,
+                        "min": 10,
+                        "max": 50,
+                        "step": 1
+                    },
+                    {
+                        "type": "color",
+                        "id": "button_text_color",
+                        "label": "Button text color"
+                    },
+                    {
+                        "type": "color",
+                        "id": "button_color",
+                        "label": "Button color"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Custom slideshow dots"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "custom_slick_dot_image",
+                        "label": "Custom image for slideshow indicator"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Flavour blocks"
+            }
+        ]
+    }
+{% endschema %}

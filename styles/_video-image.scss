@@ -1,0 +1,82 @@
+.video-image-section {
+    position: relative;
+    .video-container {
+        margin-top: 100px;
+    }
+    .overlay-text__inner{
+        @media(max-width:767px)and (min-width:521px){
+            position: absolute;
+            bottom: 90px;
+        }
+        .overlay-text__title b {
+            font-weight: 800;
+        }
+        .overlay-text__button{
+            @media(max-width:768px){
+                font-size: 16px !important;
+            }
+        }
+        .large-text{
+            @media(min-width:769px) and (max-width:821px){
+                font-size: 1.12em;
+            }
+            p{
+            @media(max-width:768px){
+                font-size: 18px; 
+            }
+            }
+        }
+    
+    }
+}
+@media(min-width: 768px){
+    .video-container--background video{
+        object-position: 63% !important;
+    }
+}
+.video-container__video video{
+    @media (max-width: 325px){
+        object-position: 84% 94% !important;
+    }
+    @media (min-width: 326px) and (max-width: 376px){
+        object-position: 86% 94% !important;
+    }
+    @media(min-width: 378px) and (max-width: 541px){
+        object-position: 87% 50% !important;
+    }
+}
+
+
+.video-image-section{
+    .default-desktop-image{
+        @media(max-width:768px){
+            display: none;
+        }
+    }
+    .default-mob-image {
+        display: none;
+        @media(max-width:768px){
+            display: block;
+        }
+    }
+}
+
+
+.video-image-section {
+    .button {
+        padding: 16px 40px;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+    .overlay-text__button.button:before,
+    .overlay-text__button:after {
+        background: #6EC59F;
+    }
+}
+
+
+
+
+
+
+

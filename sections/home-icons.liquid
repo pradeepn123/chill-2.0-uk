@@ -1,6 +1,48 @@
 {% liquid 
     assign animation_delay = 150
 %}
+
+{% style %}
+{% if request.path == '/pages/chillzero' %}
+    .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item .icon_title{
+        color:#000000;
+    }
+    .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: default !important;
+    }
+    .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item img{
+        cursor: default !important;
+    }
+    .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item .image-wrap ,
+    .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item .text-wrap{
+        height:100%;
+    }
+    .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item .text-wrap{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    @media(min-width:768px){
+        .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item img {
+            width: 100px;
+            height: 100px;
+        }
+        .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item {
+            margin: 0 53px 10px;
+        }
+    }
+    @media(max-width:520px){
+        .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list{
+            column-gap:32px;
+        }
+    }
+    
+{% endif %}
+{% endstyle %}
+
 <div class="icon-with-text-sec">
     <div class="container">
         <div class="icon-with-text-wrapper">
@@ -16,12 +58,16 @@
                             data-aos-delay="{{ animation_delay }}"
                             {%- assign animation_delay = animation_delay | plus: 150 -%}>
                             {% endcomment %}
-                                {% if block.settings.icon_svg != blank %}
-                                    {{ block.settings.icon_svg }}
-                                {% elsif block.settings.icon_image != blank %}
-                                        <img src="{{ block.settings.icon_image | img_url: '1920x' }}" alt=""/>
-                                {% endif %}
-                                <h3 class="icon_title">{{ block.settings.title }} 
+                                <div class="image-wrap">
+                                    {% if block.settings.icon_svg != blank %}
+                                        {{ block.settings.icon_svg }}
+                                    {% elsif block.settings.icon_image != blank %}
+                                            <img src="{{ block.settings.icon_image | img_url: '1920x' }}" alt=""/>
+                                    {% endif %}
+                                </div>
+                                <div class="text-wrap">
+                                    <h3 class="icon_title">{{ block.settings.title }} 
+                                    {% if block.settings.url != blank %}
                                         <svg class="icon_arrow" style="opacity: 0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <g clip-path="url(#clip0_246_1152)">
                                                 <path d="M7.65771 4.58398L13.4276 10.3538L7.65771 16.1237" stroke="black" stroke-width="2" stroke-linecap="square" fill="none"/>
@@ -32,7 +78,9 @@
                                                 </clipPath>
                                             </defs>
                                         </svg>
+                                    {% endif %}
                                     </h3>
+                                </div>
                                 <p>{{ block.settings.subheading }}</p>
                             </div>
                         {% if block.settings.url != blank %}</a>{% endif %}
