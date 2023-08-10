@@ -32,7 +32,14 @@
             
             <h1 class="vape_product_title">{{ product.title }}</h1>
             <p class="vape_product_varient_pack">{{ product.metafields.custom.product_varient_pack }}</p>
-            <p class="vape_product_vendor">By <a href="">Chill</a></p>
+            <p class="vape_product_vendor">By <a href="/collections/
+              {%- if product.vendor == 'CHILL' -%}
+                chill
+              {%- elsif product.vendor == 'MAD TASTY' -%}
+                mad-tasty-sample-pack-wellness-boost
+              {%- else -%}
+                {{ product.vendor | replace: ' ', '-' | downcase }}
+              {%- endif -%}">{{ product.vendor | camelcase }}</a></p>
             <div class="vape_product_description">{{ product.description }}</div>
 
             

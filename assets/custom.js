@@ -1053,7 +1053,7 @@ document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
             productDrawerContainer.classList.add('claim-drawer-close');
         }
 
-        if (this.nodeName != "P") {
+        if (this.nodeName == "BUTTON") {
             closeBtn.setAttribute("data-modal-type", "single")
             openFlavourDrawer()
         }

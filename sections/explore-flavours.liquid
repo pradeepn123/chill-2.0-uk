@@ -94,7 +94,7 @@
                 {% assign product = all_products[block.settings.product_block] %}
                 <div class="flavour" data-title={{ block.settings.flavour_title }} data-product='{{ product | json }}'>
                     {% comment %} <img src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" style="background: url('{{ block.settings.flavour_block_background | img_url: 'master' }}')"> {% endcomment %}
-                    <img class="flavour_icon" src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" data-zero-product-modal="{{ block_poroduct.id }}" data-title="{{ block.settings.flavour_title }}">
+                    <img role="button" class="flavour_icon" src="{{ block.settings.flavour_icon | img_url: 'master' }}" alt="flavour icon" data-zero-product-modal="{{ block_product.id }}" data-title="{{ block.settings.flavour_title }}">
                     <p
                         class="flavour_text"
                         role="button"
