@@ -64,13 +64,13 @@
                 padding: 24px;
                 .flavour_block{
                     text-align: center;
-                    @media (min-width: 768px){
+                    @media (min-width: 1024px){
                         .description_open_button, .description_close_button{
                             display: none !important;
                         }
                     }
                     
-                    @media (max-width: 7687px){
+                    @media (max-width: 1023px){
                         .description_close_button{
                             display: none; 
                         }
