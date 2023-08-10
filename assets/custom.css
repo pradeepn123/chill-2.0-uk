@@ -10939,6 +10939,7 @@ body.cart-drawer-open {
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
@@ -10966,7 +10967,6 @@ body.cart-drawer-open {
   font-weight: 600;
   color: #000;
   text-transform: capitalize;
-  cursor: pointer;
 }
 @media (max-width: 325px) {
   #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour .flavour_text {
@@ -11018,7 +11018,7 @@ body.cart-drawer-open {
 }
 .vape_product_wrapper .vape_product_container .vape_product_vendor {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   color: #000;
 }
 .vape_product_wrapper .vape_product_container .vape_product_vendor a {
