@@ -1038,7 +1038,7 @@ document.querySelector('.view_all_button').addEventListener('click', () =>{
 //Open vape product drawer
 document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
     element.addEventListener("click", function(e) {
-        let flavourTitle = this.nodeName == "BUTTON" ? this.getAttribute("data-title") : this.innerText
+        let flavourTitle = this.nodeName == "P" ? this.innerText : this.getAttribute("data-title")
         flavourTitle = flavourTitle.replace(" ", "").toLowerCase();
 
         const productDrawerContainer = document.querySelector(`#productDrawerContainer.${ flavourTitle }`)
@@ -1053,7 +1053,7 @@ document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
             productDrawerContainer.classList.add('claim-drawer-close');
         }
 
-        if (this.nodeName == "BUTTON") {
+        if (this.nodeName != "P") {
             closeBtn.setAttribute("data-modal-type", "single")
             openFlavourDrawer()
         }
