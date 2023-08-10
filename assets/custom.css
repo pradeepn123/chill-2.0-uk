@@ -10939,7 +10939,6 @@ body.cart-drawer-open {
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 @media (max-width: 767px) {
   #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour {
@@ -10967,6 +10966,7 @@ body.cart-drawer-open {
   font-weight: 600;
   color: #000;
   text-transform: capitalize;
+  cursor: pointer;
 }
 @media (max-width: 325px) {
   #flavourDrawerContainer .flavour_drawer_content .flavour_container .flavour .flavour_text {
