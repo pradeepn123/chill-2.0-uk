@@ -1634,6 +1634,26 @@
         ],
         "settings": {
         }
+      },
+      "waitlist-drawer": {
+        "type": "waitlist-drawer",
+        "settings": {
+          "waitlist_message": "<p>Interested in trying CHILLZERO? We'll let you know when we're shipping in your area and send you 20% off your favourite flavor!<\/p>",
+          "join_text": "Join Now",
+          "join_button_color": "#9792e4"
+        }
+      },
+      "vape-header": {
+        "type": "vape-header",
+        "settings": {
+          "header_icon": "shopify:\/\/shop_images\/CHILLZERO.jpg",
+          "header_link": "\/",
+          "chill_header": "shopify:\/\/shop_images\/Chill_Logo_e6f2f1c3-34ef-4709-81c6-67a3752abf45.png",
+          "chill_header_link": "\/",
+          "header_button_text": "Join Waitlist",
+          "header_button_link": "#",
+          "header_button_color": ""
+        }
       }
     },
     "content_for_index": [

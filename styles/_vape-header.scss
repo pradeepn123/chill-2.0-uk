@@ -1,0 +1,80 @@
+.vape_header_wrapper{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background: #fff;
+    .vape_header_container{
+        display: flex;
+        justify-content: space-between;
+        height: 6.25rem;
+        padding: 0 70px;
+        align-items: center;
+        @media (max-width: 330px){
+            padding: 0 10px !important;
+        }
+        @media (max-width: 767px){
+            padding: 0 10px;
+        }
+        @media (min-width: 768px) and (max-width: 1199px){
+            padding: 0 40px;
+        }
+        .main_header{
+            display: flex;
+            align-items: center;
+            @media (max-width: 374px){
+                width: 90px;
+            }
+            @media (min-width: 375px) and (max-width: 520px){
+                width: 6.625rem;
+            }
+            @media (min-width: 521px) and (max-width: 767px){
+                width: 9.375rem;
+            }
+            
+            @media (min-width: 768px) and (max-width: 1023px){
+                width: 12.5rem;
+            }
+        }
+        .header_button button{
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 40px;
+            padding: 15px 50px;
+            border: none;
+            @media (max-width: 374px){
+                font-size: 10px;
+                padding: 10px 17px;
+            }
+            @media (min-width: 375px) and (max-width: 520px){
+                font-size: 11px;
+                padding: 10px 17px;
+            }
+            @media (min-width: 521px) and (max-width: 767px){
+                font-size: 13px;
+                padding: 15px 40px;
+            }
+            // @media (max-width: 330px){
+            //     font-size: 10px;
+            //     padding: 7px 15px;
+            // }
+            &:hover{
+                border: none;
+            }
+        }
+        .chill_header{
+            width: 200px;
+            height: auto;
+            display: flex;
+            @media (max-width: 520px){
+                width: 84px;
+            }
+            @media (min-width: 521px) and (max-width: 767px){
+                width: 8.75rem;
+            }
+            @media (min-width: 768px) and (max-width: 1023px){
+                width: 11.25rem;
+            }
+        }
+    }
+}

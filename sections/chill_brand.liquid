@@ -171,11 +171,11 @@
                                 <ul class="tag-filters">
                                     {% for tag in collection.all_tags %}
                                             {% if current_tags contains tag %}
-                                                {% if tag == 'cbd-gummies' or tag == 'cbd-smokes' or tag == 'cbd-pouches' %}
+                                                {% if tag == 'cbd-gummies' or tag == 'cbd-smokes' or tag == 'cbd-pouches' or tag == 'diffusers' %}
                                                     <li class="tag-filters__item active">{{ tag | upcase | replace: '-', ' ' | link_to_tag: tag }}</li>
                                                 {% endif %}
                                             {% else %}
-                                                {% if tag == 'cbd-gummies' or tag == 'cbd-smokes' or tag == 'cbd-pouches' %}
+                                                {% if tag == 'cbd-gummies' or tag == 'cbd-smokes' or tag == 'cbd-pouches' or tag == 'diffusers' %}
                                                     <li class="tag-filters__item">{{ tag | upcase | replace: '-', ' ' | link_to_tag: tag }}</li>
                                                 {% endif %}
                                             {% endif %}

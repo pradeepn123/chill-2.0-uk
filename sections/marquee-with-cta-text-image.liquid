@@ -1,0 +1,163 @@
+<div class="marquee marquee-with-cta-text-image marquee--hover-pause enable-animation">
+    <div class="marquee__content_" aria-hidden="true">
+        <div class="marquee-tag">
+            <div class="marquee_wrap">
+                {% for block in section.blocks %}
+                    <div class="marquee_container {{ block.settings.marquee_direction }} {% if section.settings.animate_marquee_on_scroll %}animate-with-scroll{% endif %}" id="container-{{- block.settings.marquee_text | strip_html | replace: ' ', '' -}}">
+                        {% for i in (1..10) %}
+                            <div class="marquee_content_wrapper" >
+                                <div class="marquee_content">
+                                    {% if block.settings.marquee_text != blank %}
+                                        {% style %}
+                                        @media (max-width: 767px){
+                                            #blockText-{{ block.id }}{
+                                                font-size: {{ block.settings.marquee_text_font_size_mobile }}px !important;
+                                            }
+                                        }
+                                        {% endstyle %}
+                                        <span class="marquee_content_text" id="blockText-{{ block.id }}" style="font-size: {{ block.settings.marquee_text_font_size}}px; color: {{ block.settings.marquee_text_color }};">{{ block.settings.marquee_text }}</span>
+                                    {% endif %}
+                                    {% if block.settings.marquee_cta_text != blank %}
+                                        {% style %}
+                                            #block-{{ block.id }}-{{ forloop.index }}:hover{
+                                                background: {{ block.settings.marquee_button_color }} !important;
+                                                color: #fff !important;
+                                            }
+                                        {% endstyle %}
+                                        <a href="{{ block.settings.button_redirection_link }}"><button class="marquee_content_button" id="block-{{ block.id }}-{{ forloop.index }}" style="border: 2px solid {{ block.settings.marquee_button_color }}; color: {{ block.settings.marquee_button_color }}">{{ block.settings.marquee_cta_text }}</button></a>
+                                    {% endif %}
+                                    {% if block.settings.marquee_image-1 != blank %}
+                                        <img class="marquee_content_image" src="{{ block.settings.marquee_image-1 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
+                                    {% endif %}
+                                    {% if block.settings.marquee_image-2 != blank %}
+                                        <img class="marquee_content_image" src="{{ block.settings.marquee_image-2 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
+                                    {% endif %}
+                                    {% if block.settings.marquee_image-3 != blank %}
+                                        <img class="marquee_content_image" src="{{ block.settings.marquee_image-3 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
+                                    {% endif %}
+                                    {% if block.settings.marquee_image-4 != blank %}
+                                        <img class="marquee_content_image" src="{{ block.settings.marquee_image-4 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
+                                    {% endif %}
+                                    {% if block.settings.marquee_image-5 != blank %}
+                                        <img class="marquee_content_image" src="{{ block.settings.marquee_image-5 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+       "name": "Marquee-cta-text-image",
+       "settings": [
+            {
+                "type": "checkbox",
+                "id": "animate_marquee_on_scroll",
+                "label": "Animate marquee on scroll",
+                "default": true
+            }
+       ],
+       "blocks": [
+            {
+                "name": "Add marquee block",
+                "type": "select",
+                "settings": [
+                    {
+                        "type": "richtext",
+                        "id": "marquee_text",
+                        "label": "Marquee text"
+                    },
+                    {
+                        "type": "color",
+                        "id": "marquee_text_color",
+                        "label": "Marque text color",
+                        "default": "#000"
+                    },
+                    {
+                        "type": "range",
+                        "id": "marquee_text_font_size",
+                        "label": "Marquee text font size",
+                        "default": 79,
+                        "min": 10,
+                        "max": 100,
+                        "step": 1
+                    },
+                    {
+                        "type": "range",
+                        "id": "marquee_text_font_size_mobile",
+                        "label": "Marquee text font size",
+                        "default": 59,
+                        "min": 10,
+                        "max": 100,
+                        "step": 1
+                    },
+                    {
+                        "type": "text",
+                        "id": "marquee_cta_text",
+                        "label": "Marquee CTA text"
+                    },
+                    {
+                        "type": "url",
+                        "id": "button_redirection_link",
+                        "label": "Button redirection link"
+                    },
+                    {
+                        "type": "color",
+                        "id": "marquee_button_color",
+                        "label": "Marque button color"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "marquee_image-1",
+                        "label": "Marquee image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "marquee_image-2",
+                        "label": "Marquee image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "marquee_image-3",
+                        "label": "Marquee image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "marquee_image-4",
+                        "label": "Marquee image"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "marquee_image-5",
+                        "label": "Marquee image"
+                    },
+                    {
+                        "type": "select",
+                        "id": "marquee_direction",
+                        "label": "Marquee direction",
+                        "default": "scrollRightToLeft",
+                        "options": [
+                            {
+                                "value": "scrollLeftToRight",
+                                "label": "Scroll left to right"
+                            },
+                            {
+                                "value": "scrollRightToLeft",
+                                "label": "Scroll right to left"
+                            }
+                        ]
+                    }
+                ]
+            }
+       ],
+       "presets": [
+            {
+                "name": "Marquee-cta-text-image"
+            }
+       ]
+    }
+{% endschema %}

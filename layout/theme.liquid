@@ -123,9 +123,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <a class="skip-link visually-hidden" href="#content">{{ 'general.accessibility_labels.skip_to_content' | t }}</a>
   {% section 'cart-drawer' %}
+  {% if request.path == '/pages/chillzero' %}
+    {% section 'waitlist-drawer' %}
+  {% endif %}
   {% section 'age-verification' %}
-  {% section 'announcement-bar' %}
-  {% section 'header' %}
+  {% if request.path == '/pages/chillzero' %}
+    {% section 'vape-header' %}
+  {% else %}
+    {% section 'announcement-bar' %}
+    {% section 'header' %}
+  {% endif %}
   <div class="slider-section {% if request.page_type == 'index' %}slider-section_home_page{% endif %}" >
     {% if request.page_type == 'index' or request.page_type == 'product' %}
       {% render 'announce-gummies-offer' %}

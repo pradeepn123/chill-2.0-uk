@@ -1,0 +1,132 @@
+<div class="claim_drawer_background" id="waitlistDrawerBackground" style="display:none;"></div>
+<div class="claim_drawer_container" id="waitlistDrawerContainer" style="display:block;">
+  <a class="claim-drawer-summary__close waitlist-drawer-summary__close toggle-cart-summary" onclick="document.getElementById('waitlistDrawerContainer').classList.remove('claim-drawer-open'); document.getElementById('waitlistDrawerBackground').style.display = 'none';document.querySelector('body').classList.remove('cart-drawer-open');">
+    {% render 'svg-close' %}
+  </a>
+  <div class="waitlist_signup_container">
+    <div class="waitlist_signup">
+        <form id="email-form" name="email-form" method="post" class="email_form" onsubmit="validateForm(); return false;">
+            <div class="form-body">
+                <span class="signup-form-headline">{{ section.settings.waitlist_message }}</span>
+                <input type="email" id="form_email" class="form-input-email" name="email" placeholder="Email Address" id="email" required>
+
+                <label for="AddressProvinceNew">State: </label>
+                <select
+                  name="address[province]"
+                  class="address_form"
+                  id="customer_province" required>
+                  <option value="" disabled selected>Select state</option>
+                  <option value="Alabama">Alabama</option>
+                  <option value="Alaska">Alaska</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Arizona">Arizona</option>
+                  <option value="Arkansas">Arkansas</option>
+                  <option value="California">California</option>
+                  <option value="Colorado">Colorado</option>
+                  <option value="Connecticut">Connecticut</option>
+                  <option value="Delaware">Delaware</option>
+                  <option value="Washington DC">Washington DC</option>
+                  <option value="Micronesia">Micronesia</option>
+                  <option value="Florida">Florida</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Guam">Guam</option>
+                  <option value="Hawaii">Hawaii</option>
+                  <option value="Idaho">Idaho</option>
+                  <option value="Illinois">Illinois</option>
+                  <option value="Indiana">Indiana</option>
+                  <option value="Iowa">Iowa</option>
+                  <option value="Kansas">Kansas</option>
+                  <option value="Kentucky">Kentucky</option>
+                  <option value="Louisiana">Louisiana</option>
+                  <option value="Maine">Maine</option>
+                  <option value="Marshall Islands">Marshall Islands</option>
+                  <option value="Maryland">Maryland</option>
+                  <option value="Massachusetts">Massachusetts</option>
+                  <option value="Michigan">Michigan</option>
+                  <option value="Minnesota">Minnesota</option>
+                  <option value="Mississippi">Mississippi</option>
+                  <option value="Missouri">Missouri</option>
+                  <option value="Montana">Montana</option>
+                  <option value="Nebraska">Nebraska</option>
+                  <option value="Nevada">Nevada</option>
+                  <option value="New Hampshire">New Hampshire</option>
+                  <option value="New Jersey">New Jersey</option>
+                  <option value="New Mexico">New Mexico</option>
+                  <option value="New York">New York</option>
+                  <option value="North Carolina">North Carolina</option>
+                  <option value="North Dakota">North Dakota</option>
+                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                  <option value="Ohio">Ohio</option>
+                  <option value="Oklahoma">Oklahoma</option>
+                  <option value="Oregon">Oregon</option>
+                  <option value="Palau">Palau</option>
+                  <option value="Pennsylvania">Pennsylvania</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Rhode Island">Rhode Island</option>
+                  <option value="South Carolina">South Carolina</option>
+                  <option value="South Dakota">South Dakota</option>
+                  <option value="Tennessee">Tennessee</option>
+                  <option value="Texas">Texas</option>
+                  <option value="Utah">Utah</option>
+                  <option value="Vermont">Vermont</option>
+                  <option value="Virginia">Virginia</option>
+                  <option value="Washington">Washington</option>
+                  <option value="West Virginia">West Virginia</option>
+                  <option value="Wisconsin">Wisconsin</option>
+                  <option value="Wyoming">Wyoming</option>
+                  <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+                  <option value="Armed Forces Americas">Armed Forces Americas</option>
+                  <option value="Armed Forces Europe">Armed Forces Europe</option>
+                  <option value="Armed Forces Pacific">Armed Forces Pacific</option>
+                </select>
+
+                <div class="form-actions" style="background: {{ section.settings.join_button_color }}; border: 1px solid {{ section.settings.join_button_color }};">
+                    <input type="submit" value="{{ section.settings.join_text | upcase }}" class="join_waitlist_button">
+                </div>
+            </div>
+            <div class="waitlist_success_message" style="display: none;">
+                <h1>
+                    Thank you !!!
+                </h1>
+            </div>
+        </form>
+        
+    </div>
+  </div>
+</div>
+<script>
+  $("select[name='address[province]']").on("change",function(){
+    var currentValue = $(this).val();
+    var options = "";
+    //switch on currentValue and build options string
+    $("select[name='city']").html(options);
+});
+</script> 
+{% schema %}
+    {
+        "name": "Waitlist drawer",
+        "settings": [
+            {
+                "type": "richtext",
+                "id": "waitlist_message",
+                "label": "Waitlist message"
+            },
+            {
+                "type": "text",
+                "id": "join_text",
+                "label": "Join text"
+            },
+            {
+                "type": "color",
+                "id": "join_button_color",
+                "label": "Join button color"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Waitlist drawer"
+            }
+        ]
+    }
+{% endschema %}
+
