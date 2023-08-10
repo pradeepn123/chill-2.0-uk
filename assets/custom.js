@@ -1027,7 +1027,7 @@ function closeFlavourDrawer() {
 var flavourDrawerBackgroundClick = document.getElementById('flavourDrawerBackground');
 flavourDrawerBackgroundClick.addEventListener('click', function() {
     document.querySelector('.flavour-drawer-summary__close').click();
-    document.querySelector('.product-drawer-summary__close').click();
+    document.querySelectorAll('.product-drawer-summary__close').forEach(closeBtn => closeBtn.click());
     document.querySelector("body").classList.remove("cart-drawer-open")
 })
 
