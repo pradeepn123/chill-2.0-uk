@@ -169,7 +169,7 @@
             "text_color": "#ffffff",
             "enlarge_text": true,
             "button_label_1": "nutrition you deserve",
-            "button_url_1": "shopify:\/\/collections\/hux",
+            "button_url_1": "shopify:\/\/collections\/hux-health",
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#6ec59f",
@@ -689,7 +689,6 @@
     },
     "1661759224933bf819": {
       "type": "home-ingredients",
-      "disabled": true,
       "blocks": {
         "748621ad-2492-4f8f-8f16-4036356019f0": {
           "type": "tabs-heading",
@@ -774,6 +773,7 @@
         "1ee69049-e857-4944-aea9-6f2d8fc5456c",
         "9b1ac47c-d8ea-46b5-be0b-334854a78afe"
       ],
+      "disabled": true,
       "settings": {
         "heading_text": "<p><strong>Naturally <\/strong>Sourced,<br\/><strong>Functional <\/strong>Ingredients<\/p>",
         "subheading_text": "<p>Soothe your soul with naturally-sourced products that are oh so Chill. <\/p>",
@@ -782,7 +782,6 @@
     },
     "16616836322167cf31": {
       "type": "home_collections",
-      "disabled": true,
       "blocks": {
         "685e6031-5b34-4a0f-83f0-79e29a6ed09f": {
           "type": "collection-image",
@@ -827,6 +826,7 @@
         "3b6372a0-4677-429a-bf82-20402b224607",
         "12b2d340-74f6-4e2b-a23d-d4653ee7e087"
       ],
+      "disabled": true,
       "settings": {
         "text": "<p>Our <strong>Collections<\/strong><\/p>",
         "show_view_all": true,
@@ -878,7 +878,6 @@
     },
     "16607619805b81a490": {
       "type": "logo-list",
-      "disabled": true,
       "blocks": {
         "15de9db7-b491-41e3-9563-da240363bc42": {
           "type": "logo",
@@ -937,6 +936,7 @@
         "9ff6370d-ec5c-4109-964b-471a3e4aabdb",
         "97b2dc03-0af6-4b4a-8d86-1b97f4fca109"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "#ffac9a",
         "title": "",
@@ -946,7 +946,6 @@
     },
     "3dee64a8-71bf-4655-926f-2db509dcd6a5": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--15968033865886__3dee64a8-71bf-4655-926f-2db509dcd6a5-1664953474fa2ec11e-0": {
           "type": "heading",
@@ -959,6 +958,7 @@
       "block_order": [
         "template--15968033865886__3dee64a8-71bf-4655-926f-2db509dcd6a5-1664953474fa2ec11e-0"
       ],
+      "disabled": true,
       "settings": {
         "height": "small",
         "text_alignment": "center",
