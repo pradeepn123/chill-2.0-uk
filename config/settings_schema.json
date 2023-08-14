@@ -1472,46 +1472,46 @@
     ]
   },
   {
-    "name": "Announce Gummies Offer",
+    "name": "Announce Offer",
     "settings": [
       {
         "type": "header",
-        "content": "Announce Gummies offer"
+        "content": "Announce offer"
       },
       {
         "type": "checkbox",
         "id": "enable_gummies_offer_on_announcement_bar",
-        "label": "Enable gummies offer on announcement bar",
+        "label": "Enable offer banner",
         "default": true
       },
       {
         "type": "text",
         "id": "announce_gummies_offer_text_desktop",
-        "label": "Gummies Offer text on desktop",
+        "label": "Offer text on desktop",
         "default": "Get your 25mg gummies for just <span>$5 a pack<\/span> for the month of April. Save $12.99 per pack! Plus <span>one FREE 10mg gummies<\/span> with each order"
       },
       {
         "type": "text",
         "id": "announce_gummies_offer_text_mobile",
-        "label": "Gummies Offer text on mobile",
+        "label": "Offer text on mobile",
         "default": "Get Chill's <span>25mg CBD gummies<\/span> at <span>$5!<\/span> Don't miss out!"
       },
       {
         "type": "text",
         "id": "announce_gummies_offer_button_text",
-        "label": "Gummies Offer button text",
+        "label": "Offer button text",
         "default": "Claim it now"
       },
       {
         "type": "color",
         "id": "announce_gummies_button_color",
-        "label": "Claim button color for Gummies offer",
+        "label": "Claim button color for offer",
         "default": "#6EC59F"
       },
       {
         "type": "url",
         "id": "announce_gummies_button_url",
-        "label": "URL for Gummies offer button"
+        "label": "URL for offer button"
       }
     ]
   }
