@@ -58,6 +58,33 @@
             "text_alignment": "center left"
           }
         },
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP-Homepagebanner-Quanna.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE-Homepagebanner-Quanna.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Find Your Oomf <br> with <strong>Quanna<\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>All-natural sexual wellness products and supplements<br\/>to help your find your oomf in or out of the bedroom!<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "SIGN ME UP!",
+            "button_url_1": "shopify:\/\/collections\/zoetic",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "adc61783-b87d-4ad1-a437-8b98c06ac308": {
           "type": "image",
           "settings": {
@@ -168,40 +195,11 @@
             "text_alignment": "center left"
           }
         },
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/zoetic-desktop-banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Welcome <br> <strong>Zoetic<\/strong>",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Our choice for premium CBD tinctures and cosmetics.<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#171717",
-            "enlarge_text": true,
-            "button_label_1": "SHOP NOW",
-            "button_url_1": "shopify:\/\/collections\/zoetic",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
+            "image": "shopify:\/\/shop_images\/DESKTOP-Homepagebanner-Quanna.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE-Homepagebanner-Quanna.jpg",
             "image_position": "center left",
             "mobile_image_position": "left center",
             "slide_link": "",
@@ -228,11 +226,11 @@
       "block_order": [
         "910838dc-8acc-48d2-a9c9-dda3f47dc712",
         "a9c60b10-7dcd-483d-829a-b953aa21e538",
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "94ff9b3e-cc66-4646-a075-a4a633f6fe97",
         "aa79849d-c6d2-4756-a952-72a2b371abe6",
         "02986a45-f0bf-4170-a6b2-37db262b7084",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1"
       ],
       "settings": {
