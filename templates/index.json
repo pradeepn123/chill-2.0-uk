@@ -257,6 +257,58 @@
         "marquee_text_font_size_mobile": 16
       }
     },
+    "1635927863703110df": {
+      "type": "rich-text",
+      "blocks": {
+        "1635927863703110df-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Natural <strong>Relaxation<\/strong><\/p>",
+            "use_h1": false
+          }
+        },
+        "1635927863703110df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unwind your way with premium natural products crafted to de-stress your daily routine. From wellness gummies to tobacco alternatives, join us and <strong>choose Chill. <\/strong><\/p>",
+            "enlarge_text": true
+          }
+        },
+        "712402e7-c723-4bbb-a1a7-d907a7abf682": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN ABOUT CBD",
+            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "1635927863703110df-1",
+        "1635927863703110df-2",
+        "712402e7-c723-4bbb-a1a7-d907a7abf682"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": true
+      }
+    },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our <strong> Trending Products <\/strong>",
+        "collection": "trending-products",
+        "show_vendor": true,
+        "enable_carousel": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "full_width": false
+      }
+    },
     "166149763181cc2acb": {
       "type": "home-icons",
       "blocks": {
@@ -331,132 +383,6 @@
       ],
       "settings": {
         "home_icons_title": "<p>Shop <strong>By Category<\/strong><\/p>"
-      }
-    },
-    "1660761564dddf193c": {
-      "type": "background-video",
-      "settings": {
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
-        "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
-        "use_alt_bg": true,
-        "subheading": "",
-        "title": "Cool <br> <span>Calm<\/span> &amp; <br>Carefree",
-        "font_weight_head": "normal",
-        "title_size": 104,
-        "title_size_mobile": 40,
-        "use_h1": true,
-        "text": "<p>Find peace with functional products <br\/>made from all-natural ingredients.<\/p>",
-        "sub_font_size": 20,
-        "enlarge_text": true,
-        "button_label_1": "SHOP NOW",
-        "btn_font": 16,
-        "btn_font_mobile": 16,
-        "button_url_1": "shopify:\/\/collections\/shop",
-        "button_label_2": "",
-        "button_url_2": "",
-        "botton_bg": "#ffac9a",
-        "botton_text_color": "#ffffff",
-        "text_alignment": "center left",
-        "height_desktop": 700,
-        "height_mobile": 500,
-        "full_width": true,
-        "overlay_style": "shadow"
-      }
-    },
-    "46a02b95-6dea-48f4-b202-8b1797db7374": {
-      "type": "slideshow_announce_mobile",
-      "settings": {
-      }
-    },
-    "1635927863703110df": {
-      "type": "rich-text",
-      "blocks": {
-        "1635927863703110df-1": {
-          "type": "heading",
-          "settings": {
-            "title": "<p>Natural <strong>Relaxation<\/strong><\/p>",
-            "use_h1": false
-          }
-        },
-        "1635927863703110df-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Unwind your way with premium natural products crafted to de-stress your daily routine. From wellness gummies to tobacco alternatives, join us and <strong>choose Chill. <\/strong><\/p>",
-            "enlarge_text": true
-          }
-        },
-        "712402e7-c723-4bbb-a1a7-d907a7abf682": {
-          "type": "button",
-          "settings": {
-            "button_label": "LEARN ABOUT CBD",
-            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
-            "button_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "1635927863703110df-1",
-        "1635927863703110df-2",
-        "712402e7-c723-4bbb-a1a7-d907a7abf682"
-      ],
-      "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": true
-      }
-    },
-    "16359278676808bea5": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our <strong> Trending Products <\/strong>",
-        "collection": "trending-products",
-        "show_vendor": true,
-        "enable_carousel": false,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": false
-      }
-    },
-    "1661508210e5eab38e": {
-      "type": "home-stress-effect",
-      "blocks": {
-        "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
-          "type": "image",
-          "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Body.png",
-            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
-            "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
-            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
-            "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
-            "text_color": "#ffffff",
-            "text_alignment": "right"
-          }
-        },
-        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
-          "type": "image",
-          "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Mind.png",
-            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
-            "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
-            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
-            "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
-            "text_color": "#ffffff",
-            "text_alignment": "left"
-          }
-        }
-      },
-      "block_order": [
-        "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
-        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
-      ],
-      "settings": {
-        "color_bg": "#9792e4",
-        "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
-        "text_color": "#ffffff",
-        "text_alignment": "center"
       }
     },
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
@@ -590,17 +516,61 @@
         "autoplay_speed": 7
       }
     },
+    "46a02b95-6dea-48f4-b202-8b1797db7374": {
+      "type": "slideshow_announce_mobile",
+      "settings": {
+      }
+    },
+    "1661508210e5eab38e": {
+      "type": "home-stress-effect",
+      "blocks": {
+        "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Body.png",
+            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
+            "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
+            "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
+            "text_color": "#ffffff",
+            "text_alignment": "right"
+          }
+        },
+        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Mind.png",
+            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
+            "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
+            "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
+            "text_color": "#ffffff",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
+        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
+      ],
+      "settings": {
+        "color_bg": "#9792e4",
+        "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
+        "text_color": "#ffffff",
+        "text_alignment": "center"
+      }
+    },
     "16618284517e50f27f": {
       "type": "home_testimonials",
       "blocks": {
         "1661828451bf6865ce-1": {
           "type": "testimonial",
           "settings": {
-            "product": "tropical-cbd-gummies",
-            "testimonial": "“ A must have product! I love using these gummies when i'm trying to relax. chill or sleep”",
-            "author": "Tyleen",
-            "author_designation": "02\/09\/2022",
-            "image": "shopify:\/\/shop_images\/6407987561299968-1.jpg",
+            "product": "the-goodrays-4-flavour-mixpack",
+            "testimonial": "“My first time trying Goodrays and I wasn't disappointed. Delicious flavours and I felt so calm after”",
+            "author": "Phil",
+            "author_designation": "10\/08\/2023",
+            "image": "shopify:\/\/shop_images\/IMG_0258.heic",
             "link": ""
           }
         },
@@ -686,6 +656,36 @@
         "quote_text_size": 24,
         "quote_text_size_mobile": 20,
         "use_alt_bg": true
+      }
+    },
+    "1660761564dddf193c": {
+      "type": "background-video",
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
+        "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
+        "use_alt_bg": true,
+        "subheading": "",
+        "title": "Cool <br> <span>Calm<\/span> &amp; <br>Carefree",
+        "font_weight_head": "normal",
+        "title_size": 104,
+        "title_size_mobile": 40,
+        "use_h1": true,
+        "text": "<p>Find peace with functional products <br\/>made from all-natural ingredients.<\/p>",
+        "sub_font_size": 20,
+        "enlarge_text": true,
+        "button_label_1": "SHOP NOW",
+        "btn_font": 16,
+        "btn_font_mobile": 16,
+        "button_url_1": "shopify:\/\/collections\/shop",
+        "button_label_2": "",
+        "button_url_2": "",
+        "botton_bg": "#ffac9a",
+        "botton_text_color": "#ffffff",
+        "text_alignment": "center left",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
       }
     },
     "1661759224933bf819": {
@@ -867,6 +867,7 @@
     },
     "1661495934a2300196": {
       "type": "featured-background-video",
+      "disabled": true,
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/38580cf6818f466ebd1582128a8ceb85.mp4",
         "autoplay": false,
@@ -998,14 +999,14 @@
   "order": [
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
-    "166149763181cc2acb",
-    "1660761564dddf193c",
-    "46a02b95-6dea-48f4-b202-8b1797db7374",
     "1635927863703110df",
     "16359278676808bea5",
-    "1661508210e5eab38e",
+    "166149763181cc2acb",
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
+    "46a02b95-6dea-48f4-b202-8b1797db7374",
+    "1661508210e5eab38e",
     "16618284517e50f27f",
+    "1660761564dddf193c",
     "1661759224933bf819",
     "16616836322167cf31",
     "8f5264ca-7f1d-4235-b07d-2de00dd54813",
