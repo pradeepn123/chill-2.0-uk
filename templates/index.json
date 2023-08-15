@@ -516,50 +516,6 @@
         "autoplay_speed": 7
       }
     },
-    "46a02b95-6dea-48f4-b202-8b1797db7374": {
-      "type": "slideshow_announce_mobile",
-      "settings": {
-      }
-    },
-    "1661508210e5eab38e": {
-      "type": "home-stress-effect",
-      "blocks": {
-        "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
-          "type": "image",
-          "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Body.png",
-            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
-            "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
-            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
-            "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
-            "text_color": "#ffffff",
-            "text_alignment": "right"
-          }
-        },
-        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
-          "type": "image",
-          "settings": {
-            "icon_image": "shopify:\/\/shop_images\/Mind.png",
-            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
-            "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
-            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
-            "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
-            "text_color": "#ffffff",
-            "text_alignment": "left"
-          }
-        }
-      },
-      "block_order": [
-        "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
-        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
-      ],
-      "settings": {
-        "color_bg": "#9792e4",
-        "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
-        "text_color": "#ffffff",
-        "text_alignment": "center"
-      }
-    },
     "16618284517e50f27f": {
       "type": "home_testimonials",
       "blocks": {
@@ -668,6 +624,50 @@
         "quote_text_size": 24,
         "quote_text_size_mobile": 20,
         "use_alt_bg": true
+      }
+    },
+    "46a02b95-6dea-48f4-b202-8b1797db7374": {
+      "type": "slideshow_announce_mobile",
+      "settings": {
+      }
+    },
+    "1661508210e5eab38e": {
+      "type": "home-stress-effect",
+      "blocks": {
+        "473706dc-3bb3-426c-9fd8-6232d55ac8fb": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Body.png",
+            "animate_image": "shopify:\/\/shop_images\/The_body.webp",
+            "text": "<p>How to Relax <\/p><p>Your <\/p><p><strong>Body?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Relax <\/p><p>Your <strong>Body?<\/strong><\/p>",
+            "text_ordered_list": "<ul>\n<li>Spend time in nature<\/li>\n<li>Get enough sleep<\/li>\n<li>Go for a walk<\/li>\n<li>Try yoga<\/li>\n<li>Slow down and stretch<\/li>\n<\/ul>",
+            "text_color": "#ffffff",
+            "text_alignment": "right"
+          }
+        },
+        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df": {
+          "type": "image",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/Mind.png",
+            "animate_image": "shopify:\/\/shop_images\/The_mind.png",
+            "text": "<p>How to Calm <\/p><p>Your <\/p><p><strong>Mind?<\/strong><\/p>",
+            "text_for_mobile_tab": "<p>How to Calm <\/p><p>Your <strong>Mind?<\/strong><\/p>",
+            "text_ordered_list": "<ul>\n<li>Focus on your breathing <\/li>\n<li>Talk about your problems<\/li>\n<li>Listen to your favorite songs<\/li>\n<li>Try meditation<\/li>\n<li>Do more of what you love<\/li>\n<\/ul>",
+            "text_color": "#ffffff",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
+        "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
+      ],
+      "settings": {
+        "color_bg": "#9792e4",
+        "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
+        "text_color": "#ffffff",
+        "text_alignment": "center"
       }
     },
     "1660761564dddf193c": {
@@ -1015,9 +1015,9 @@
     "16359278676808bea5",
     "166149763181cc2acb",
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
+    "16618284517e50f27f",
     "46a02b95-6dea-48f4-b202-8b1797db7374",
     "1661508210e5eab38e",
-    "16618284517e50f27f",
     "1660761564dddf193c",
     "1661759224933bf819",
     "16616836322167cf31",
