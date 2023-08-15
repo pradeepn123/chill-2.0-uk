@@ -465,6 +465,17 @@
             "link": "shopify:\/\/products\/your-vff-vaginal-health-support"
           }
         },
+        "2ff372a9-4f79-4398-9629-f8ba8afd1be9": {
+          "type": "testimonial",
+          "settings": {
+            "product": "full-stack-bundle",
+            "testimonial": "Effective gummies for every mood. The CBD gummies are really tasty and they work! The Nootropics work wonders however expect a very slight earthy matcha taste. I'm a convert!",
+            "author": "James",
+            "author_designation": "15\/08\/2023",
+            "image": "shopify:\/\/shop_images\/IMG_0260.heic",
+            "link": "shopify:\/\/products\/full-stack-bundle"
+          }
+        },
         "1661828451bf6865ce-0": {
           "type": "testimonial",
           "disabled": true,
@@ -536,6 +547,7 @@
       "block_order": [
         "1661828451bf6865ce-1",
         "e201be51-95ba-43bc-84fa-48bf50c1feeb",
+        "2ff372a9-4f79-4398-9629-f8ba8afd1be9",
         "1661828451bf6865ce-0",
         "66d12521-04ad-452b-9ac3-f2f734c9b3b9",
         "59ecb584-0553-4021-97f2-d4749dbff8ef",
