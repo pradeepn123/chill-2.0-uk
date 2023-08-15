@@ -574,6 +574,17 @@
             "link": ""
           }
         },
+        "e201be51-95ba-43bc-84fa-48bf50c1feeb": {
+          "type": "testimonial",
+          "settings": {
+            "product": "your-vff-vaginal-health-support",
+            "testimonial": "I have tried other Quanna products and have been really happy with them so I am giving this a go. I am just a week in, and already feeling results!",
+            "author": "Hanna",
+            "author_designation": "Author's Designation{{ block.settings.product.metafields.product_accordion.product_custom_url.value }}",
+            "image": "shopify:\/\/shop_images\/IMG_0259.heic",
+            "link": "shopify:\/\/products\/your-vff-vaginal-health-support"
+          }
+        },
         "1661828451bf6865ce-0": {
           "type": "testimonial",
           "disabled": true,
@@ -644,6 +655,7 @@
       },
       "block_order": [
         "1661828451bf6865ce-1",
+        "e201be51-95ba-43bc-84fa-48bf50c1feeb",
         "1661828451bf6865ce-0",
         "66d12521-04ad-452b-9ac3-f2f734c9b3b9",
         "59ecb584-0553-4021-97f2-d4749dbff8ef",
