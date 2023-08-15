@@ -5,6 +5,7 @@
       "blocks": {
         "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/ChillZER0-Banner-1_2.jpg",
             "mobile_image": "shopify:\/\/shop_images\/ChillZER0-Banner-1_2.jpg",
