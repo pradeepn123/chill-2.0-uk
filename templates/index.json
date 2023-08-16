@@ -682,6 +682,7 @@
     },
     "1660761564dddf193c": {
       "type": "background-video",
+      "disabled": true,
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
         "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
