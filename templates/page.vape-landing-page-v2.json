@@ -446,7 +446,6 @@
         },
         "a392cb99-c66a-43f9-bafa-7695417427b7": {
           "type": "select",
-          "disabled": true,
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_0353.jpg",
             "image_redirection_link": "",
@@ -455,7 +454,6 @@
         },
         "f3ba8ee0-0897-4997-bd67-80ccea7a8ef3": {
           "type": "select",
-          "disabled": true,
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_24111.jpg",
             "image_redirection_link": "",
@@ -464,7 +462,6 @@
         },
         "d92f497b-a16a-4987-b3fa-e0cc08f493a8": {
           "type": "select",
-          "disabled": true,
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_9273_1.jpg",
             "image_redirection_link": "",
@@ -475,6 +472,7 @@
           "type": "select",
           "disabled": true,
           "settings": {
+            "image_block": "shopify:\/\/shop_images\/People1.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
