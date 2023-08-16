@@ -391,7 +391,7 @@
         "bb4486dc-2220-441c-9827-182fc6355e9d": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_2_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_9172_2.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -399,7 +399,7 @@
         "e0a08e06-466e-45ac-8585-6e7138abbaab": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_4_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_3168_1_2fba7be1-33aa-44a5-baa8-a6f9af38886b.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -407,7 +407,7 @@
         "0a5e860b-c45f-4744-b1dd-d143e4196496": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_3_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_4104_2_22ff9be2-c69b-4be9-838e-1f91243fe974.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -415,7 +415,7 @@
         "da03f6d6-a45e-48bd-8a2d-7bfc763111a9": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_4_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_4701_2_6e3e0de8-a539-4e7d-bde6-1fcea3c4ef16.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -423,7 +423,7 @@
         "e7ac4601-999d-4b03-8fc6-b89a193ed847": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_2_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_0379_2.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -431,7 +431,7 @@
         "5e8417aa-51f2-4078-8bdb-d2b10c700525": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_3_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_9002_1_fee26fe9-9a64-45bc-a48a-a79d0efac5da.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -439,7 +439,7 @@
         "c9f3ebd9-7bee-48cc-8ae5-d94b9680fc7b": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_4_1.png",
+            "image_block": "shopify:\/\/shop_images\/image_507366411.jpg",
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -447,7 +447,30 @@
         "a392cb99-c66a-43f9-bafa-7695417427b7": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/Rectangle_2_1.png",
+            "image_block": "shopify:\/\/shop_images\/IMG_0353.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "f3ba8ee0-0897-4997-bd67-80ccea7a8ef3": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/IMG_24111.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "d92f497b-a16a-4987-b3fa-e0cc08f493a8": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/IMG_9273_1.jpg",
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
+        "32d36b9a-14bc-4493-8de7-784e794c17a5": {
+          "type": "select",
+          "settings": {
             "image_redirection_link": "",
             "carousel_image_background": ""
           }
@@ -461,7 +484,10 @@
         "e7ac4601-999d-4b03-8fc6-b89a193ed847",
         "5e8417aa-51f2-4078-8bdb-d2b10c700525",
         "c9f3ebd9-7bee-48cc-8ae5-d94b9680fc7b",
-        "a392cb99-c66a-43f9-bafa-7695417427b7"
+        "a392cb99-c66a-43f9-bafa-7695417427b7",
+        "f3ba8ee0-0897-4997-bd67-80ccea7a8ef3",
+        "d92f497b-a16a-4987-b3fa-e0cc08f493a8",
+        "32d36b9a-14bc-4493-8de7-784e794c17a5"
       ],
       "settings": {
         "section_redirection_link": "https:\/\/instagram.com\/chillzer0?igshid=MzRlODBiNWFlZA==",
