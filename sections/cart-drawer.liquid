@@ -97,7 +97,7 @@
                     data-aos="fade-up"
                     data-aos-delay="{{ animation_delay }}"
                     {%- assign animation_delay = animation_delay | plus: 100 -%}
-                  {% endif %}>
+                  {% endif %} style="display: none;">
                   <span class="cart__message__default{{ is_default_message_hidden }}" data-message-default>{{ free_shipping_message }}</span>
               
                   {%- if qualified_shipping_message != blank -%}

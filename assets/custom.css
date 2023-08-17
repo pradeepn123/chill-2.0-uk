@@ -1128,6 +1128,13 @@ body.overflow-hidden {
   color: #000 !important;
   opacity: 1 !important;
 }
+#NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column .navigation__child-tier .navigation__tier-3 {
+  max-height: 17.688rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
 #NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column .navigation__child-tier .navigation__link {
   font-size: 16px;
   font-weight: normal;
@@ -1257,7 +1264,7 @@ body.overflow-hidden {
   position: relative;
   padding-left: 40px !important;
   padding-right: 40px !important;
-  min-height: 25rem;
+  min-height: 17rem;
 }
 @media (max-width: 1199px) {
   #NavigationTier2-2.navigation__child-tier .container {
@@ -4205,6 +4212,42 @@ body {
 }
 .section-main-product .product-detail .detail .product-form .vendor_redirection span:hover {
   border-bottom: 2px solid #9792e4;
+}
+.section-main-product .product-detail .detail .product-form .free_shipping_tag {
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #FFFBFA;
+  box-shadow: 5px 5px 0px 0px #FFAC9A;
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  gap: 22px;
+  align-items: center;
+  padding: 13px 16px;
+  margin-bottom: 46px;
+}
+.section-main-product .product-detail .detail .product-form .free_shipping_tag svg {
+  width: 37px;
+}
+.section-main-product .product-detail .detail .product-form .free_shipping_tag p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .section-main-product .product-detail .detail .product-form .free_shipping_tag {
+    gap: 13px;
+    padding: 13px;
+    margin-bottom: 35px;
+  }
+  .section-main-product .product-detail .detail .product-form .free_shipping_tag svg {
+    width: 33px;
+  }
+  .section-main-product .product-detail .detail .product-form .free_shipping_tag p {
+    font-size: 16px;
+  }
 }
 .section-main-product .product-detail .detail .product-form .product_variant {
   font-size: 14px;

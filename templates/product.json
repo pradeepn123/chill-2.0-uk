@@ -24,6 +24,11 @@
           "settings": {
           }
         },
+        "7ed039b2-8f74-4226-8017-9218b985c731": {
+          "type": "free_shipping",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -166,6 +171,7 @@
         "title",
         "vendor",
         "fb5cc85a-da40-49a9-b112-9f240263ca6f",
+        "7ed039b2-8f74-4226-8017-9218b985c731",
         "price",
         "description",
         "divider",

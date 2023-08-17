@@ -525,6 +525,13 @@
                     opacity: 1 !important;
                 }
                 .navigation__child-tier{
+                    .navigation__tier-3{
+                        max-height: 17.688rem;
+                        display: flex;    
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        column-gap: 100px;
+                    }
                     .navigation__link{
                         font-size: 16px;
                         font-weight: normal;
@@ -659,7 +666,7 @@
         padding-left: 40px !important;
         padding-right: 40px !important;
         // padding-bottom: 40px;
-        min-height: 25rem;
+        min-height: 17rem;
         @media (max-width: 1199px){
             max-width: 100%;
         }
