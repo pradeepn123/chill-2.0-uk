@@ -170,6 +170,15 @@
                 class="vendor_redirection">By <span>{{ product.vendor | camelcase }}</span>
               </a>
             
+            {% when 'free_shipping' %}
+              {% if product.type == 'Vape' %}
+                <div class="free_shipping_tag">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27" fill="none">
+                    <path d="M3.4023 1H24.2414V3.33908M34.023 10.1437H24.2414V3.33908M34.023 10.1437L37 13.1207V20.9885C37 20.9885 34.1488 20.9885 32.3218 20.9885M34.023 10.1437L30.408 3.33908H24.2414M32.3218 20.9885C32.3218 18.8746 30.6082 17.1609 28.4943 17.1609C26.3803 17.1609 24.6667 18.8746 24.6667 20.9885M32.3218 20.9885C32.3218 23.1024 30.6082 24.8161 28.4943 24.8161C26.3803 24.8161 24.6667 23.1024 24.6667 20.9885M24.6667 20.9885C21.2619 20.9885 19.353 20.9885 15.9483 20.9885M15.9483 20.9885C15.9483 18.8746 14.2346 17.1609 12.1207 17.1609C10.0068 17.1609 8.2931 18.8746 8.2931 20.9885M15.9483 20.9885C15.9483 24.8161 12.3333 25.0287 12.3333 25.0287C12.3333 25.0287 8.50575 24.8161 8.2931 20.9885M8.2931 20.9885C6.38313 20.9885 3.4023 20.9885 3.4023 20.9885M1.91379 5.89081H14.4598M0 10.569H12.546M1.91379 15.2471H9.78161" stroke="#FE6060" stroke-width="2"/>
+                  </svg>
+                  <p>Free Shipping</p>
+                </div>
+              {% endif %}
               {% when 'description' %}
               <div class="{% unless block.settings.show_in_quickbuy %}not-in-quickbuy{% endunless %}{% if block.settings.show_in_tab %} product-detail-accordion{% endif %}" {{ block.shopify_attributes }}>
                 {% if block.settings.show_in_tab %}
@@ -1123,6 +1132,11 @@
       {
         "type": "vendor_redirection",
         "name": "Vendor redirection",
+        "limit": 1
+      },
+      {
+        "type": "free_shipping",
+        "name": "Free Shipping tag",
         "limit": 1
       },
       {

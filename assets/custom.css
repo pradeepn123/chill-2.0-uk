@@ -4213,6 +4213,42 @@ body {
 .section-main-product .product-detail .detail .product-form .vendor_redirection span:hover {
   border-bottom: 2px solid #9792e4;
 }
+.section-main-product .product-detail .detail .product-form .free_shipping_tag {
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #FFFBFA;
+  box-shadow: 5px 5px 0px 0px #FFAC9A;
+  display: flex;
+  justify-content: space-around;
+  width: fit-content;
+  gap: 22px;
+  align-items: center;
+  padding: 13px 16px;
+  margin-bottom: 46px;
+}
+.section-main-product .product-detail .detail .product-form .free_shipping_tag svg {
+  width: 37px;
+}
+.section-main-product .product-detail .detail .product-form .free_shipping_tag p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .section-main-product .product-detail .detail .product-form .free_shipping_tag {
+    gap: 13px;
+    padding: 13px;
+    margin-bottom: 35px;
+  }
+  .section-main-product .product-detail .detail .product-form .free_shipping_tag svg {
+    width: 33px;
+  }
+  .section-main-product .product-detail .detail .product-form .free_shipping_tag p {
+    font-size: 16px;
+  }
+}
 .section-main-product .product-detail .detail .product-form .product_variant {
   font-size: 14px;
   color: #000;
