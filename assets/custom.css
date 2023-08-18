@@ -1683,7 +1683,7 @@ body.overflow-hidden {
   }
   .featured_blocks_container.navigation__columns .navigation__item .navigation__link img {
     width: 148px !important;
-    height: 77px;
+    height: 100%;
     object-fit: cover;
   }
   .featured_blocks_container.navigation__columns .navigation__item .navigation__link .navbar_collection_link {
