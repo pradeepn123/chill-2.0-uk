@@ -16,14 +16,14 @@
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Discover the best brands and<br\/>natural products to help you<br\/>feel more Chill.<\/p>",
+            "text": "<p>Our selection of brands using all-natural, <br\/>functional ingredients to help you feel more Chill.<\/p>",
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "enlarge_text": true,
             "button_label_1": "",
             "button_url_1": "",
             "button_label_2": "Choose Your CHILL",
-            "button_url_2": "shopify:\/\/collections\/all",
+            "button_url_2": "shopify:\/\/collections",
             "button_background_color": "#9792e4",
             "button_text_color": "#ffffff",
             "button_text_font_size": 20,
@@ -194,23 +194,22 @@
         },
         "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/ChillZER0-Banner-1_2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/ChillZER0-Banner-1_2.jpg",
+            "image": "shopify:\/\/shop_images\/CHILLZER0_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/CHILLZER0_Banner_MOBILE.jpg",
             "image_position": "center left",
             "mobile_image_position": "left center",
             "slide_link": "shopify:\/\/pages\/chillzero",
             "subheading": "",
-            "title": "",
+            "title": "<strong>CHILL<\/strong>ZER0\n0% Nicotine \n100% Flavour",
             "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "",
-            "heading_color": "#000000",
-            "text_color": "#000000",
+            "text": "<p>Join us on our mission: Ditch the nicotine <br\/>and say hello to the new generation <\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
             "enlarge_text": true,
-            "button_label_1": "",
+            "button_label_1": "TRY CHILLZER0",
             "button_url_1": "shopify:\/\/collections\/chill-zero",
             "button_label_2": "",
             "button_url_2": "",
@@ -260,22 +259,22 @@
         "1635927863703110df-1": {
           "type": "heading",
           "settings": {
-            "title": "<p>Stressed? <strong>Just Chill<\/strong><\/p>",
+            "title": "<p>Natural <strong>Relaxation<\/strong><\/p>",
             "use_h1": false
           }
         },
         "1635927863703110df-2": {
           "type": "text",
           "settings": {
-            "text": "<p>Embrace the power of nature and rediscover a healthier, happier  you with the best hemp, nootropics and other natural products to help you refresh, recharge and unwind.<\/p>",
+            "text": "<p>Unwind your way with premium natural products crafted to de-stress your daily routine. From wellness gummies to tobacco alternatives, join us and <strong>choose Chill. <\/strong><\/p>",
             "enlarge_text": true
           }
         },
         "712402e7-c723-4bbb-a1a7-d907a7abf682": {
           "type": "button",
           "settings": {
-            "button_label": "LEARN ABOUT CHILL.com",
-            "button_link": "shopify:\/\/pages\/about-us",
+            "button_label": "LEARN ABOUT CBD",
+            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
             "button_style": "link"
           }
         }
@@ -617,7 +616,7 @@
           "settings": {
             "icon_svg": "<svg id=\"Layer_1\" data-name=\"Layer 1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 124 124\">\n  <defs>\n    <style>\n      .cls-1 {\n        fill: #6ec59f;\n      }\n    <\/style>\n  <\/defs>\n  <path class=\"cls-1\" d=\"M62,0C27.76,0,0,27.76,0,62s27.76,62,62,62,62-27.76,62-62C123.96,27.77,96.23,.04,62,0Zm0,120C29.97,120,4,94.03,4,62S29.97,4,62,4s58,25.97,58,58c-.04,32.02-25.98,57.96-58,58Z\"><\/path>\n  <g>\n    <path class=\"cls-1\" d=\"M97.78,29.58l-1.82-.15c-13.43-1.06-23.82,2.08-30.89,9.32-11.66,11.94-9.89,30.51-9.81,31.3l.32,3.11,2.69-1.6c1.96-1.16,5.02-2,8.58-2.98,12.48-3.42,31.34-8.6,30.95-37.18l-.02-1.82Zm-31.99,35.14c-1.53,.42-2.97,.82-4.31,1.24,2.06-1.85,4.02-3.82,5.86-5.89,3.16-3.41,5.92-7.16,8.22-11.2-6.67,3.05-12.72,9.05-16.38,15.75,.29-5.98,1.87-16.04,8.77-23.09,5.39-5.52,13.14-8.3,23.08-8.3,.91,0,1.83,.03,2.77,.07-.43,23.86-15.69,28.04-28.01,31.42h0Z\"><\/path>\n    <path class=\"cls-1\" d=\"M58.55,83.76c-.07-.56-1.71-13.68-11.64-20.16-6.04-3.94-13.72-4.52-22.84-1.72l-1.74,.53,.37,1.79c4.15,19.88,17.98,20.55,27.14,21,2.05,0,4.1,.23,6.1,.69l2.97,.98-.36-3.11h0Zm-8.52-2.56c-8.53-.41-19.08-.93-22.99-16.01,7.12-1.84,13.05-1.25,17.66,1.75,4.98,3.24,7.53,8.7,8.77,12.62-3.67-4.46-9.07-7.15-14.84-7.4,2.1,2.55,4.64,4.7,7.5,6.35,1.83,1.11,3.76,2.05,5.77,2.79-.6-.04-1.22-.07-1.87-.1h0Z\"><\/path>\n    <path class=\"cls-1\" d=\"M59.2,103.5h-4.01c-.54-14.17,0-35.96,.02-36.12l4,.11c0,.17-.57,21.8,0,36.01h0Z\"><\/path>\n  <\/g>\n<\/svg>",
             "url": "shopify:\/\/collections\/vegan",
-            "title": "Vegan",
+            "title": "Vegan Friendly",
             "subheading": "",
             "use_alt_bg": false
           }
@@ -682,7 +681,6 @@
     },
     "1660761564dddf193c": {
       "type": "background-video",
-      "disabled": true,
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
         "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
@@ -1012,7 +1010,7 @@
       "settings": {
         "newsletter_logo": "<svg id=\"Group_6347\" data-name=\"Group 6347\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"136.516\" height=\"136.512\" viewbox=\"0 0 136.516 136.512\">\n  <g id=\"Group_637\" data-name=\"Group 637\" transform=\"translate(0 0)\">\n    <g id=\"Group_636\" data-name=\"Group 636\" transform=\"translate(0 0)\">\n      <g id=\"Group_631\" data-name=\"Group 631\" transform=\"translate(4.578)\">\n        <path id=\"Path_8791\" data-name=\"Path 8791\" d=\"M64.571,191.328a1.477,1.477,0,0,1-1.33-2.08l1.6-3.757a67.074,67.074,0,0,1,123.391-.067l1.53,3.489a1.688,1.688,0,0,1-1.463,2.348h-5.188a1.651,1.651,0,0,1-1.463-.872l-3.725-7.38a58.864,58.864,0,0,0-102.7.067l-3.858,7.447a1.489,1.489,0,0,1-1.264.805Z\" transform=\"translate(-63.124 -144.7)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_632\" data-name=\"Group 632\" transform=\"translate(5.03 89.884)\">\n        <path id=\"Path_8792\" data-name=\"Path 8792\" d=\"M65.462,280.367l122.924-.067a2,2,0,0,1,1.8,2.818l-1.33,3.019a67.072,67.072,0,0,1-123.389.067l-1.53-3.422A1.712,1.712,0,0,1,65.462,280.367Zm110.551,8.185-97.248.067a1.686,1.686,0,0,0-1.4,2.617,58.841,58.841,0,0,0,99.776-.4A1.436,1.436,0,0,0,176.013,288.552Z\" transform=\"translate(-63.798 -280.3)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_633\" data-name=\"Group 633\" transform=\"translate(0 48.762)\">\n        <path id=\"Path_8793\" data-name=\"Path 8793\" d=\"M56.3,237.053c0-9.661,2.063-15.766,2.2-16.1l.532-1.476a10.347,10.347,0,0,0,.6-1.275H182.162c8.453,0,7.987.6,8.187,1.476l.466,1.476a65.242,65.242,0,0,1-.2,32.874l-.333,1.275a2.11,2.11,0,0,1-1.6,1.476l-1.265.2c-15.308,2.549-51.383,1.409-62.9-17.846-16.507,24.354-60.169,18.182-62.632,17.913l-1.464-.2a1.85,1.85,0,0,1-1.6-1.409l-.333-1.476A66.641,66.641,0,0,1,56.3,237.053Zm8.852-8.923a58.863,58.863,0,0,0,.2,19.389,1.984,1.984,0,0,0,1.8,1.677c13.711,1.006,47.656,2.08,53.447-21.4l.333-1.342H67.149A2.016,2.016,0,0,0,65.152,228.13Zm118.741,0a1.947,1.947,0,0,0-1.93-1.677H128.117l.333,1.342c5.591,22.744,42.6,22.408,53.447,21.469a1.989,1.989,0,0,0,1.731-1.543A57.14,57.14,0,0,0,183.893,228.13Z\" transform=\"translate(-56.3 -218.2)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_634\" data-name=\"Group 634\" transform=\"translate(90.018 37.65)\">\n        <path id=\"Path_8794\" data-name=\"Path 8794\" d=\"M192.1,203.244v4.227a2.018,2.018,0,0,0,2.013,2.013h25.226a1.971,1.971,0,0,0,1.744-2.885L219,202.372a1.934,1.934,0,0,0-1.744-1.073H194.18A1.9,1.9,0,0,0,192.1,203.244Z\" transform=\"translate(-192.1 -201.295)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_635\" data-name=\"Group 635\" transform=\"translate(17.693 38.052)\">\n        <path id=\"Path_8795\" data-name=\"Path 8795\" d=\"M111.875,203.913v4.227a2.018,2.018,0,0,1-2.013,2.013H84.636a1.971,1.971,0,0,1-1.744-2.885l2.08-4.227a2,2,0,0,1,1.744-1.141H109.8A1.993,1.993,0,0,1,111.875,203.913Z\" transform=\"translate(-82.671 -201.9)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n    <\/g>\n  <\/g>\n<\/svg>",
         "title": "Keep Chilling",
-        "subheading": "<p>Stay in the loop + get <strong>15<\/strong><a href=\"#\" title=\"#\"><strong>% off<\/strong><\/a><strong> <\/strong>your first order<\/p>",
+        "subheading": "<p>Stay in the loop + get <a href=\"#\" title=\"#\"><strong>20% off<\/strong><\/a><strong> <\/strong>your first order<\/p>",
         "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See <a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">privacy policy<\/a> and <a href=\"\/policies\/terms-of-service\" title=\"Terms of Service\">terms of service<\/a> for details.<\/p>",
         "bg_image": "shopify:\/\/shop_images\/Newsletter_clouds_106350f6-cd43-43cc-b754-cd671bee987f.jpg",
         "color_bg": "#ffffff"
