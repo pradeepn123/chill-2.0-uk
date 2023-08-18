@@ -1053,10 +1053,10 @@
     "promotion_banner_text": "<p>FLAT 20% OFF<\/p><p>ON ALL GUMMIES<\/p>",
     "promotion_banner_text_mobile": "<p>FLAT 20% <\/p><p><strong>OFF<\/strong><\/p>",
     "promotion_banner_link": "shopify:\/\/collections\/cbd-gummies",
-    "enable_gummies_offer_on_announcement_bar": true,
-    "announce_gummies_offer_text_desktop": "Join the nicotine free revolution with <span>ChillZER0<\/span> and get <span>FREE SHIPPING<\/span> on your favourite flavours.",
-    "announce_gummies_offer_text_mobile": "Join the nicotine free revolution with <span>ChillZER0<\/span> and get <span>FREE SHIPPING<\/span> on your favourite flavours.",
-    "announce_gummies_button_url": "shopify:\/\/pages\/chillzero",
+    "enable_gummies_offer_on_announcement_bar": false,
+    "announce_gummies_offer_text_desktop": "Get your 25mg gummies for just <span>£5 a pack<\/span> for the month of April. Save £9.99 per pack!",
+    "announce_gummies_offer_text_mobile": "Get Chill's <span>25mg CBD gummies<\/span> at <span>£5!<\/span> Don't miss out!",
+    "announce_gummies_button_url": "shopify:\/\/collections\/gummies-offer",
     "shop_all_link": "shop-all",
     "sections": {
       "header": {

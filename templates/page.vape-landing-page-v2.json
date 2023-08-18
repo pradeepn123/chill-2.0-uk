@@ -229,9 +229,9 @@
         "6eb3a68d-fbb4-4fb1-8139-146b2cd9b8b3": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
-            "show_heading": false,
-            "heading": "Over 5000 5-star reviews",
-            "badge_link": "",
+            "show_heading": true,
+            "heading": "Check out what people are saying!",
+            "badge_link": "shopify:\/\/collections\/chill-zero",
             "product": ""
           }
         }
@@ -239,7 +239,6 @@
       "block_order": [
         "6eb3a68d-fbb4-4fb1-8139-146b2cd9b8b3"
       ],
-      "disabled": true,
       "settings": {
         "full_width": false
       }
