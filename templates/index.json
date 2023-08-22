@@ -1,38 +1,246 @@
 {
   "sections": {
-    "1660761564dddf193c": {
-      "type": "background-video",
+    "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
+      "type": "slideshow",
+      "blocks": {
+        "02986a45-f0bf-4170-a6b2-37db262b7084": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CHILL.COM_HP_BannerMEDIUM.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/CHILL.COM_HP_MOBILE_Banner.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "left center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Step into the <strong> \nHome of \nRelaxation <\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Our selection of brands using all-natural, <br\/>functional ingredients to help you feel more Chill.<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "Choose Your CHILL",
+            "button_url_2": "shopify:\/\/collections",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CHILLZER0_Banner_MEDIUM_88a6fa7f-f613-44a4-8f7e-d22b0632b0bb.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/CHILLZER0_Banner_MOBILE.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "left center",
+            "slide_link": "shopify:\/\/pages\/chillzero",
+            "subheading": "",
+            "title": "<strong>CHILL<\/strong>ZER0\n0% Nicotine \n100% Flavour",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Join us on our mission to ditch nicotine <br\/>and say hello to the new generation <\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "TRY CHILLZER0",
+            "button_url_1": "shopify:\/\/pages\/chillzero",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP-HomepageBanner-GoodRays_MEDUIUM.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE_-_Goodrays_Homepage.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "left center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Chill Days\n<strong> Goodrays <\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Need to relax? We've got your covered with<br\/>Goodrays range of CBD drinks, gummies <br\/>and tinctures<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "get goodrays",
+            "button_url_1": "shopify:\/\/collections\/goodrays",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP-Homepagebanner-Quanna_MEDIUM_34eee06d-79d0-401a-af73-a4e2d82d4fe8.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE-Homepagebanner-Quanna.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Find Your Oomf <br> with <strong>Quanna<\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>All-natural sexual wellness products and supplements<br\/>to help your find your oomf in or out of the bedroom!<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "SIGN ME UP!",
+            "button_url_1": "shopify:\/\/collections\/quanna",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "a9c60b10-7dcd-483d-829a-b953aa21e538": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Clarity_Blend_Homepage_Banner_MEDIUM_936d3f5a-f5a4-4ffa-b64a-9217da43aba7.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Clarity-Blend_0441_1.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "left center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Where do you \nneed <b> <stroke> Clarity?<\/stroke><\/b>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>No matter what mood you're in, Clarity Blend <br\/>has something to help you return to a calm<br\/>more balanced version of you!<\/p><p><\/p><p><\/p>",
+            "heading_color": "#171717",
+            "text_color": "#171717",
+            "enlarge_text": true,
+            "button_label_1": "CHOOSE YOUR BLEND",
+            "button_url_1": "shopify:\/\/collections\/clarity-blend-aromatherapy",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HUX_-_Homepage_Banner_MEDIUM_aa7f90e1-8a02-4bb4-9f8c-467935590032.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE-HUX_-_Homepage_Banner.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>HUX<\/strong> Superfoods\n& Supplements",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Making complex nutrition simple<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "nutrition you deserve",
+            "button_url_1": "shopify:\/\/collections\/hux-health",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "94ff9b3e-cc66-4646-a075-a4a633f6fe97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HEADSTAND_-_Homepage_Banner_MEDIUM_4eec0527-59c8-4f37-b11b-ffd07eac024b.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HEADSTAND_-_MOBILE_-Homepage_Banner.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Welcome <strong> \nHeadstand <\/strong>",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Made from coffee leaf, tastes nothing <br\/>like coffee. Caffeine free!<\/p>",
+            "heading_color": "#fffcfc",
+            "text_color": "#fffcfc",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "TRY HEADSTAND",
+            "button_url_2": "shopify:\/\/collections\/headstand-1",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "aa79849d-c6d2-4756-a952-72a2b371abe6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blooming_Blends_Groupshot_banner_MEDIUM_85a46f79-6161-4647-bc26-396bd6d7c291.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE_-_Blooming_Blends_Homepage_Banner_b89dded0-5605-4dc0-bbf6-fe2e9e943298.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Blooming \nBlends <\/strong> \nBotanical \nTinctures",
+            "title_size": 70,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>A collection of alcohol-free, botanical tinctures<br\/>fusing ancient herbal wisdom with modern methods<br\/>to support, strengthen and balance.<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#fffcfc",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "FIND YOUR BLEND",
+            "button_url_2": "shopify:\/\/collections\/blooming-blends",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        }
+      },
+      "block_order": [
+        "02986a45-f0bf-4170-a6b2-37db262b7084",
+        "910838dc-8acc-48d2-a9c9-dda3f47dc712",
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
+        "a9c60b10-7dcd-483d-829a-b953aa21e538",
+        "adc61783-b87d-4ad1-a437-8b98c06ac308",
+        "94ff9b3e-cc66-4646-a075-a4a633f6fe97",
+        "aa79849d-c6d2-4756-a952-72a2b371abe6"
+      ],
       "settings": {
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
-        "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
-        "use_alt_bg": true,
-        "subheading": "",
-        "title": "Cool <br> <span>Calm<\/span> &amp; <br>Carefree",
-        "font_weight_head": "normal",
-        "title_size": 104,
-        "title_size_mobile": 40,
-        "use_h1": true,
-        "text": "<p>Find peace with functional products <br\/>made from all-natural ingredients.<\/p>",
-        "sub_font_size": 20,
-        "enlarge_text": true,
-        "button_label_1": "SHOP NOW",
-        "btn_font": 16,
-        "btn_font_mobile": 16,
-        "button_url_1": "shopify:\/\/collections\/shop",
-        "button_label_2": "",
-        "button_url_2": "",
-        "botton_bg": "#ffac9a",
-        "botton_text_color": "#ffffff",
-        "text_alignment": "center left",
-        "height_desktop": 700,
-        "height_mobile": 500,
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
         "full_width": true,
-        "overlay_style": "shadow"
-      }
-    },
-    "46a02b95-6dea-48f4-b202-8b1797db7374": {
-      "type": "slideshow_announce_mobile",
-      "settings": {
+        "mobile_overlay_under": true,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
       }
     },
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
@@ -43,6 +251,312 @@
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
         "marquee_text_font_size_mobile": 16
+      }
+    },
+    "1635927863703110df": {
+      "type": "rich-text",
+      "blocks": {
+        "1635927863703110df-1": {
+          "type": "heading",
+          "settings": {
+            "title": "<p>Stressed? <strong>Just Chill.<\/strong><\/p>",
+            "use_h1": false
+          }
+        },
+        "1635927863703110df-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Embrace the power of nature and rediscover a healthier, happier you with the best hemp, nootropics and other natural products to help you refresh, recharge and unwind.<\/p>",
+            "enlarge_text": true
+          }
+        },
+        "712402e7-c723-4bbb-a1a7-d907a7abf682": {
+          "type": "button",
+          "settings": {
+            "button_label": "LEARN ABOUT CHILL.COM",
+            "button_link": "shopify:\/\/pages\/about-us",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "1635927863703110df-1",
+        "1635927863703110df-2",
+        "712402e7-c723-4bbb-a1a7-d907a7abf682"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "use_alt_bg": true
+      }
+    },
+    "16359278676808bea5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our <strong> Trending Products <\/strong>",
+        "collection": "trending-products",
+        "show_vendor": true,
+        "enable_carousel": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": false,
+        "show_view_all": true,
+        "full_width": false
+      }
+    },
+    "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
+      "type": "slideshow",
+      "blocks": {
+        "30f4598b-5a5e-4967-a71c-a4888ada542a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex_MEDIUM_2cee2ae4-e156-4b28-a797-b8cf1a217b5e.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex_MEDIUM_ed5c1af7-8aa0-4d5b-945d-6aa1b30d0a0d.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "shopify:\/\/blogs\/chill-blog\/how-quitting-smoking-can-improve-your-sex-life",
+            "subheading": "",
+            "title": "<strong> How Quitting \nSmoking Can \nImprove Your \nSex Life <\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>We unpack the benefits going tobacco-free<br\/>has on your sex life!<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ MORE",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "c9689645-d1f7-40b8-ada2-22ff4755e741": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_MEDIUM_6c079c2d-0bb0-4fa3-a226-ab974b49876d.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_MEDIUM_30faf9d7-3fe0-4e08-a035-7050428add4b.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Meet Zoey \nHenderson: <\/strong>\nThe queen\nof mushrooms",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>Find out more about Zoey's journey<br\/>to creating alcohol-free beer made from<br\/>functional mushrooms!<\/p>",
+            "heading_color": "#171717",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ MORE",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_MEDIUM_8586d869-1c19-41fe-8e28-70970126aba0.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_MEDIUM_011f539a-f48c-47b5-85ca-25a8d3f37881.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Healthy Ravers\n= Happy Ravers <s><\/s><\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>Did you know that raving can make you <br\/>happier, healthier and more successful?<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ MORE",
+            "button_url_1": "shopify:\/\/blogs\/chill-blog\/healthy-ravers-happy-ravers",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "4538d984-09e9-4bcd-814c-d49bf68fca44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_MEDIUM_ef4a6f48-4b10-4283-b36c-59ddd009444e.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_MEDIUM_1013fa0c-c328-45f0-bb5c-71436349d208.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Sipping Sobriety: \nNavigating Social \nSituations Without \nAlcohol<\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>Tips that’ll help you handle staying sober <br\/>one sip at a time.<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ NOW",
+            "button_url_1": "shopify:\/\/blogs\/chill-blog\/sipping-sobriety-navigating-social-situations-without-alcohol",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        }
+      },
+      "block_order": [
+        "30f4598b-5a5e-4967-a71c-a4888ada542a",
+        "c9689645-d1f7-40b8-ada2-22ff4755e741",
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
+        "4538d984-09e9-4bcd-814c-d49bf68fca44"
+      ],
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "slide_transition": "fade",
+        "slide_navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "16618284517e50f27f": {
+      "type": "home_testimonials",
+      "blocks": {
+        "1661828451bf6865ce-1": {
+          "type": "testimonial",
+          "settings": {
+            "product": "the-goodrays-4-flavour-mixpack",
+            "testimonial": "“My first time trying Goodrays and I wasn't disappointed. Delicious flavours and I felt so calm after”",
+            "author": "Phil",
+            "author_designation": "11\/08\/2023",
+            "image": "shopify:\/\/shop_images\/IMG_0258.heic",
+            "link": ""
+          }
+        },
+        "e201be51-95ba-43bc-84fa-48bf50c1feeb": {
+          "type": "testimonial",
+          "settings": {
+            "product": "your-vff-vaginal-health-support",
+            "testimonial": "I have tried other Quanna products and have been really happy with them so I am giving this a go. I am just a week in, and already feeling results!",
+            "author": "Hanna",
+            "author_designation": "9\/08\/2023",
+            "image": "shopify:\/\/shop_images\/IMG_0259.heic",
+            "link": "shopify:\/\/products\/your-vff-vaginal-health-support"
+          }
+        },
+        "2ff372a9-4f79-4398-9629-f8ba8afd1be9": {
+          "type": "testimonial",
+          "settings": {
+            "product": "full-stack-bundle",
+            "testimonial": "Effective gummies for every mood. The CBD gummies are really tasty and they work! The Nootropics work wonders however expect a very slight earthy matcha taste. I'm a convert!",
+            "author": "James",
+            "author_designation": "15\/08\/2023",
+            "image": "shopify:\/\/shop_images\/IMG_0260.heic",
+            "link": "shopify:\/\/products\/full-stack-bundle"
+          }
+        },
+        "1661828451bf6865ce-0": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "product": "chill-cbd-isolate-chew-pouches",
+            "testimonial": "“ Love these CBD pouches! I started off using the Cool Mint and loved it! So I thought I'd try some new flavors. The peach is nice and my new fave is Rich Vanilla! I pop one in about 45 minutes before bed and it helps me relax and sleep better. Plus, they help with feeling better after a workout. The oils are good as well but you should give these a try!”",
+            "author": "Joe N.",
+            "author_designation": "09\/29\/2022",
+            "image": "shopify:\/\/shop_images\/Shop-Products-PouchesBundle2_1.jpg",
+            "link": ""
+          }
+        },
+        "66d12521-04ad-452b-9ac3-f2f734c9b3b9": {
+          "type": "testimonial",
+          "settings": {
+            "product": "chill-cbd-smokes-mint",
+            "testimonial": "“ Chill smokes are great and I'm so glad you can buy them in a carton of 10. It's really convenient. Delivery is quick and they really are a smooth smoke!”",
+            "author": "Dan O.",
+            "author_designation": "15\/12\/2021",
+            "image": "shopify:\/\/shop_images\/Dan_O.jpg",
+            "link": ""
+          }
+        },
+        "59ecb584-0553-4021-97f2-d4749dbff8ef": {
+          "type": "testimonial",
+          "settings": {
+            "product": "chill-cbd-gummies",
+            "testimonial": "“ I've tried a lot of gummies and these are some of the best on the market. They taste great and always help me to feel a little more me and a litte more Chill”",
+            "author": "Chantelle",
+            "author_designation": "5\/10\/2022",
+            "image": "shopify:\/\/shop_images\/Chantelle.jpg",
+            "link": ""
+          }
+        },
+        "2ec17fa9-16ae-491a-a993-9cdd3c5d2419": {
+          "type": "testimonial",
+          "settings": {
+            "product": "chill-cbd-smokes-calm",
+            "testimonial": "“ As a non-smoker I was a little apprehensive to try, but I had read how smokes can be a good way to get the benefits of CBD. \n\nI’ve tried various CBD tinctures and CBD gummies without any noticeable benefits. The first night after smoking two, I scored my first ever excellent for sleep on my Fitbit! It could have been a coincidence but the second night I had a great sleep too! Will have to try the mint ones next!”",
+            "author": "Rich",
+            "author_designation": "06\/07\/2021",
+            "image": "shopify:\/\/shop_images\/rich.jpg",
+            "link": ""
+          }
+        },
+        "2189170f-243a-4c77-917d-afc4b6a18280": {
+          "type": "testimonial",
+          "settings": {
+            "product": "tropical-cbd-gummies",
+            "testimonial": "“ Absolutely love these gummies! They taste amazing, they're vegan but mostly they really work. Really helps with my anxiety and love to take one before bed for a better nights sleep”",
+            "author": "Tom K.",
+            "author_designation": "05\/27\/2022",
+            "image": "shopify:\/\/shop_images\/Tom_k.jpg",
+            "link": ""
+          }
+        },
+        "44667fab-9174-47d0-8c52-14f688eccdf9": {
+          "type": "testimonial",
+          "settings": {
+            "product": "chill-cbd-smokes-calm",
+            "testimonial": "“Really smooth and love the biodegradable filters”",
+            "author": "Chantelle",
+            "author_designation": "04\/22\/2022",
+            "image": "shopify:\/\/shop_images\/IMG_6703_1.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661828451bf6865ce-1",
+        "e201be51-95ba-43bc-84fa-48bf50c1feeb",
+        "2ff372a9-4f79-4398-9629-f8ba8afd1be9",
+        "1661828451bf6865ce-0",
+        "66d12521-04ad-452b-9ac3-f2f734c9b3b9",
+        "59ecb584-0553-4021-97f2-d4749dbff8ef",
+        "2ec17fa9-16ae-491a-a993-9cdd3c5d2419",
+        "2189170f-243a-4c77-917d-afc4b6a18280",
+        "44667fab-9174-47d0-8c52-14f688eccdf9"
+      ],
+      "settings": {
+        "title": "<p>Our <strong>Customer Stories<\/strong><\/p>",
+        "quote_text_size": 24,
+        "quote_text_size_mobile": 20,
+        "use_alt_bg": true
       }
     },
     "166149763181cc2acb": {
@@ -121,302 +635,9 @@
         "home_icons_title": "<p>Shop <strong>By Category<\/strong><\/p>"
       }
     },
-    "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
-      "type": "slideshow",
-      "blocks": {
-        "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ChillZER0-Banner-1_2.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/ChillZER0-Banner-1_2.jpg",
-            "image_position": "center left",
-            "mobile_image_position": "left center",
-            "slide_link": "shopify:\/\/pages\/chillzero",
-            "subheading": "",
-            "title": "",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "shopify:\/\/collections\/chill-zero",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HUX_-_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/MOBILE-HUX_-_Homepage_Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong>HUX<\/strong> Superfoods\n& Supplements",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Making complex nutrition simple<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#ffffff",
-            "enlarge_text": true,
-            "button_label_1": "nutrition you deserve",
-            "button_url_1": "shopify:\/\/collections\/hux-health",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "94ff9b3e-cc66-4646-a075-a4a633f6fe97": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HEADSTAND_-_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HEADSTAND_-_MOBILE_-Homepage_Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Welcome <strong> \nHeadstand <\/strong>",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Made from coffee leaf, tastes nothing <br\/>like coffee. Caffeine free!<\/p>",
-            "heading_color": "#fffcfc",
-            "text_color": "#fffcfc",
-            "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "",
-            "button_label_2": "TRY HEADSTAND",
-            "button_url_2": "shopify:\/\/collections\/headstand-1",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "aa79849d-c6d2-4756-a952-72a2b371abe6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Verve_Homepage_Banner2_85aad07e-9cc5-42dc-839c-ac28ba4dbb2e.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/MOBILE_Verve_Homepage_Banner2.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> VERVE <\/strong> Energy\nBoosting Gum",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Verve gum is packed with unique ingredients to <br\/>supercharge your day. So get out there and fuel <br\/>your focus!<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#fffcfc",
-            "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "",
-            "button_label_2": "fuel your focus",
-            "button_url_2": "shopify:\/\/collections\/verve-1",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "02986a45-f0bf-4170-a6b2-37db262b7084": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Mind_Panda_Homepage_Banner_01233cc5-1199-46b0-b3d4-eb07710b5097.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mind_Panda_Homepage_Banner.jpg",
-            "image_position": "center left",
-            "mobile_image_position": "left center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> MindPanda <\/strong> \nfor better\nmental health",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Ever feel like you're stuck? MindPanda are here to <br\/>empower you to create sustainable change in your life.<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#ffffff",
-            "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "",
-            "button_label_2": "Shop Mind panda",
-            "button_url_2": "shopify:\/\/collections\/mindpanda",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/zoetic-desktop-banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Welcome <br> <strong>Zoetic<\/strong>",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Our choice for premium CBD tinctures and cosmetics.<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#171717",
-            "enlarge_text": true,
-            "button_label_1": "SHOP NOW",
-            "button_url_1": "shopify:\/\/collections\/zoetic",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Zoetic_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Zoetic-Mobile-Banner.jpg",
-            "image_position": "center left",
-            "mobile_image_position": "left center",
-            "slide_link": "",
-            "subheading": "Tell your story",
-            "title": "Two line\nslide heading",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>And optional subtext<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "Shop this",
-            "button_url_1": "",
-            "button_label_2": "Shop all",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center center"
-          }
-        },
-        "a9c60b10-7dcd-483d-829a-b953aa21e538": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CBD_Homepage_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/CBD_Homepage_Banner_Mobile.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "left center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "What is <b>\n<stroke> CBD? <\/stroke><\/b>",
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Your questions answered.<\/p><p><\/p><p><\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#ffffff",
-            "enlarge_text": true,
-            "button_label_1": "read now",
-            "button_url_1": "shopify:\/\/blogs\/chill-blog\/chill-blog",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        }
-      },
-      "block_order": [
-        "910838dc-8acc-48d2-a9c9-dda3f47dc712",
-        "adc61783-b87d-4ad1-a437-8b98c06ac308",
-        "94ff9b3e-cc66-4646-a075-a4a633f6fe97",
-        "aa79849d-c6d2-4756-a952-72a2b371abe6",
-        "02986a45-f0bf-4170-a6b2-37db262b7084",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
-        "a9c60b10-7dcd-483d-829a-b953aa21e538"
-      ],
+    "46a02b95-6dea-48f4-b202-8b1797db7374": {
+      "type": "slideshow_announce_mobile",
       "settings": {
-        "height": "fixed",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "full_width": true,
-        "mobile_overlay_under": true,
-        "overlay_style": "shadow",
-        "slide_transition": "fade",
-        "slide_navigation": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "1635927863703110df": {
-      "type": "rich-text",
-      "blocks": {
-        "1635927863703110df-1": {
-          "type": "heading",
-          "settings": {
-            "title": "<p>Natural <strong>Relaxation<\/strong><\/p>",
-            "use_h1": false
-          }
-        },
-        "1635927863703110df-2": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Unwind your way with premium natural products crafted to de-stress your daily routine. From wellness gummies to tobacco alternatives, join us and <strong>choose Chill. <\/strong><\/p>",
-            "enlarge_text": true
-          }
-        },
-        "712402e7-c723-4bbb-a1a7-d907a7abf682": {
-          "type": "button",
-          "settings": {
-            "button_label": "LEARN ABOUT CBD",
-            "button_link": "shopify:\/\/blogs\/chill-blog\/chill-blog",
-            "button_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "1635927863703110df-1",
-        "1635927863703110df-2",
-        "712402e7-c723-4bbb-a1a7-d907a7abf682"
-      ],
-      "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "use_alt_bg": true
-      }
-    },
-    "16359278676808bea5": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Our <strong> Trending Products <\/strong>",
-        "collection": "trending-products",
-        "show_vendor": true,
-        "enable_carousel": false,
-        "grid": 4,
-        "rows": 1,
-        "use_alt_bg": false,
-        "show_view_all": true,
-        "full_width": false
       }
     },
     "1661508210e5eab38e": {
@@ -451,6 +672,7 @@
         "473706dc-3bb3-426c-9fd8-6232d55ac8fb",
         "c0fca2a3-6164-43d3-b0bd-cb72f6d2d0df"
       ],
+      "disabled": true,
       "settings": {
         "color_bg": "#9792e4",
         "text": "<p><strong>Chill Check-In:<\/strong><\/p><p>How to <strong>Practice Self-Care <\/strong><\/p>",
@@ -458,233 +680,35 @@
         "text_alignment": "center"
       }
     },
-    "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
-      "type": "slideshow",
-      "blocks": {
-        "30f4598b-5a5e-4967-a71c-a4888ada542a": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex_d98a95c3-3171-461f-81d3-fdd106d8cb08.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "shopify:\/\/blogs\/chill-blog\/how-quitting-smoking-can-improve-your-sex-life",
-            "subheading": "",
-            "title": "<strong> How Quitting \nSmoking Can \nImprove Your \nSex Life <\/strong>",
-            "title_size": 56,
-            "title_size_mobile": 36,
-            "use_h1": false,
-            "text": "<p>We unpack the benefits going tobacco-free<br\/>has on your sex life!<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "READ MORE",
-            "button_url_1": "",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "c9689645-d1f7-40b8-ada2-22ff4755e741": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_3c1bd4fe-406c-4ea3-ae9d-bf709f9abdd8.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> Meet Zoey \nHenderson: <\/strong>\nThe queen\nof mushrooms",
-            "title_size": 56,
-            "title_size_mobile": 36,
-            "use_h1": false,
-            "text": "<p>Find out more about Zoey's journey<br\/>to creating alcohol-free beer made from<br\/>functional mushrooms!<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "READ MORE",
-            "button_url_1": "",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_d4ea4dfe-9b23-45e3-9702-4a791cdaa0fb.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> Healthy Ravers\n= Happy Ravers <s><\/s><\/strong>",
-            "title_size": 56,
-            "title_size_mobile": 36,
-            "use_h1": false,
-            "text": "<p>Did you know that raving can make you <br\/>happier, healthier and more successful?<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "READ MORE",
-            "button_url_1": "shopify:\/\/blogs\/chill-blog\/healthy-ravers-happy-ravers",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "4538d984-09e9-4bcd-814c-d49bf68fca44": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_46a780d0-1e34-4ca5-a13d-2c7c0f6866d8.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_7d47e213-15f4-4d26-a047-72be5f1ea5f3.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> Sipping Sobriety: \nNavigating Social \nSituations Without \nAlcohol<\/strong>",
-            "title_size": 56,
-            "title_size_mobile": 36,
-            "use_h1": false,
-            "text": "<p>Tips that’ll help you handle staying sober <br\/>one sip at a time.<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "READ NOW",
-            "button_url_1": "shopify:\/\/blogs\/chill-blog\/sipping-sobriety-navigating-social-situations-without-alcohol",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        }
-      },
-      "block_order": [
-        "30f4598b-5a5e-4967-a71c-a4888ada542a",
-        "c9689645-d1f7-40b8-ada2-22ff4755e741",
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
-        "4538d984-09e9-4bcd-814c-d49bf68fca44"
-      ],
+    "1660761564dddf193c": {
+      "type": "background-video",
+      "disabled": true,
       "settings": {
-        "height": "fixed",
-        "height_desktop": 600,
-        "height_mobile": 460,
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c9cd61d33bfa4070956e29fce5acd7cd.mp4",
+        "placeholder_image": "shopify:\/\/shop_images\/home_banner_placeholder.png",
+        "use_alt_bg": true,
+        "subheading": "",
+        "title": "Cool <br> <span>Calm<\/span> &amp; <br>Carefree",
+        "font_weight_head": "normal",
+        "title_size": 104,
+        "title_size_mobile": 40,
+        "use_h1": true,
+        "text": "<p>Find peace with functional products <br\/>made from all-natural ingredients.<\/p>",
+        "sub_font_size": 20,
+        "enlarge_text": true,
+        "button_label_1": "SHOP NOW",
+        "btn_font": 16,
+        "btn_font_mobile": 16,
+        "button_url_1": "shopify:\/\/collections\/shop",
+        "button_label_2": "",
+        "button_url_2": "",
+        "botton_bg": "#ffac9a",
+        "botton_text_color": "#ffffff",
+        "text_alignment": "center left",
+        "height_desktop": 700,
+        "height_mobile": 500,
         "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow",
-        "slide_transition": "fade",
-        "slide_navigation": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7
-      }
-    },
-    "16618284517e50f27f": {
-      "type": "home_testimonials",
-      "blocks": {
-        "1661828451bf6865ce-1": {
-          "type": "testimonial",
-          "settings": {
-            "product": "tropical-cbd-gummies",
-            "testimonial": "“ A must have product! I love using these gummies when i'm trying to relax. chill or sleep”",
-            "author": "Tyleen",
-            "author_designation": "02\/09\/2022",
-            "image": "shopify:\/\/shop_images\/6407987561299968-1.jpg",
-            "link": ""
-          }
-        },
-        "1661828451bf6865ce-0": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "product": "chill-cbd-isolate-chew-pouches",
-            "testimonial": "“ Love these CBD pouches! I started off using the Cool Mint and loved it! So I thought I'd try some new flavors. The peach is nice and my new fave is Rich Vanilla! I pop one in about 45 minutes before bed and it helps me relax and sleep better. Plus, they help with feeling better after a workout. The oils are good as well but you should give these a try!”",
-            "author": "Joe N.",
-            "author_designation": "09\/29\/2022",
-            "image": "shopify:\/\/shop_images\/Shop-Products-PouchesBundle2_1.jpg",
-            "link": ""
-          }
-        },
-        "66d12521-04ad-452b-9ac3-f2f734c9b3b9": {
-          "type": "testimonial",
-          "settings": {
-            "product": "chill-cbd-smokes-mint",
-            "testimonial": "“ Chill smokes are great and I'm so glad you can buy them in a carton of 10. It's really convenient. Delivery is quick and they really are a smooth smoke!”",
-            "author": "Dan O.",
-            "author_designation": "15\/12\/2021",
-            "image": "shopify:\/\/shop_images\/Dan_O.jpg",
-            "link": ""
-          }
-        },
-        "59ecb584-0553-4021-97f2-d4749dbff8ef": {
-          "type": "testimonial",
-          "settings": {
-            "product": "chill-cbd-gummies",
-            "testimonial": "“ I've tried a lot of gummies and these are some of the best on the market. They taste great and always help me to feel a little more me and a litte more Chill”",
-            "author": "Chantelle",
-            "author_designation": "5\/10\/2022",
-            "image": "shopify:\/\/shop_images\/Chantelle.jpg",
-            "link": ""
-          }
-        },
-        "2ec17fa9-16ae-491a-a993-9cdd3c5d2419": {
-          "type": "testimonial",
-          "settings": {
-            "product": "chill-cbd-smokes-calm",
-            "testimonial": "“ As a non-smoker I was a little apprehensive to try, but I had read how smokes can be a good way to get the benefits of CBD. \n\nI’ve tried various CBD tinctures and CBD gummies without any noticeable benefits. The first night after smoking two, I scored my first ever excellent for sleep on my Fitbit! It could have been a coincidence but the second night I had a great sleep too! Will have to try the mint ones next!”",
-            "author": "Rich",
-            "author_designation": "06\/07\/2021",
-            "image": "shopify:\/\/shop_images\/rich.jpg",
-            "link": ""
-          }
-        },
-        "2189170f-243a-4c77-917d-afc4b6a18280": {
-          "type": "testimonial",
-          "settings": {
-            "product": "tropical-cbd-gummies",
-            "testimonial": "“ Absolutely love these gummies! They taste amazing, they're vegan but mostly they really work. Really helps with my anxiety and love to take one before bed for a better nights sleep”",
-            "author": "Tom K.",
-            "author_designation": "05\/27\/2022",
-            "image": "shopify:\/\/shop_images\/Tom_k.jpg",
-            "link": ""
-          }
-        },
-        "44667fab-9174-47d0-8c52-14f688eccdf9": {
-          "type": "testimonial",
-          "settings": {
-            "product": "chill-cbd-smokes-calm",
-            "testimonial": "“Really smooth and love the biodegradable filters”",
-            "author": "Chantelle",
-            "author_designation": "04\/22\/2022",
-            "image": "shopify:\/\/shop_images\/IMG_6703_1.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1661828451bf6865ce-1",
-        "1661828451bf6865ce-0",
-        "66d12521-04ad-452b-9ac3-f2f734c9b3b9",
-        "59ecb584-0553-4021-97f2-d4749dbff8ef",
-        "2ec17fa9-16ae-491a-a993-9cdd3c5d2419",
-        "2189170f-243a-4c77-917d-afc4b6a18280",
-        "44667fab-9174-47d0-8c52-14f688eccdf9"
-      ],
-      "settings": {
-        "title": "<p>Our <strong>Customer Stories<\/strong><\/p>",
-        "quote_text_size": 24,
-        "quote_text_size_mobile": 20,
-        "use_alt_bg": true
+        "overlay_style": "shadow"
       }
     },
     "1661759224933bf819": {
@@ -866,6 +890,7 @@
     },
     "1661495934a2300196": {
       "type": "featured-background-video",
+      "disabled": true,
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/38580cf6818f466ebd1582128a8ceb85.mp4",
         "autoplay": false,
@@ -995,16 +1020,16 @@
     }
   },
   "order": [
-    "1660761564dddf193c",
-    "46a02b95-6dea-48f4-b202-8b1797db7374",
-    "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
-    "166149763181cc2acb",
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc",
+    "dcce8db9-f5ca-4b3c-a666-66fce19608bb",
     "1635927863703110df",
     "16359278676808bea5",
-    "1661508210e5eab38e",
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c",
     "16618284517e50f27f",
+    "166149763181cc2acb",
+    "46a02b95-6dea-48f4-b202-8b1797db7374",
+    "1661508210e5eab38e",
+    "1660761564dddf193c",
     "1661759224933bf819",
     "16616836322167cf31",
     "8f5264ca-7f1d-4235-b07d-2de00dd54813",
