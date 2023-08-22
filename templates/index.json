@@ -312,7 +312,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex_MEDIUM_2cee2ae4-e156-4b28-a797-b8cf1a217b5e.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-Nic_Sex_MEDIUM_ed5c1af7-8aa0-4d5b-945d-6aa1b30d0a0d.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "shopify:\/\/blogs\/chill-blog\/how-quitting-smoking-can-improve-your-sex-life",
@@ -338,8 +338,8 @@
         "c9689645-d1f7-40b8-ada2-22ff4755e741": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_3c1bd4fe-406c-4ea3-ae9d-bf709f9abdd8.jpg",
+            "image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_MEDIUM_6c079c2d-0bb0-4fa3-a226-ab974b49876d.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_MEDIUM_30faf9d7-3fe0-4e08-a035-7050428add4b.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
