@@ -1710,7 +1710,7 @@ body.overflow-hidden {
 }
 @media (min-width: 1200px) {
   .featured_blocks_container.navigation__columns .slick-list {
-    padding: 0 30px;
+    margin: 0 45px;
   }
 }
 .featured_blocks_container.navigation__columns .slick-header-prev {
