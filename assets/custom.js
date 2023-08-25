@@ -59,6 +59,21 @@ $(document).ready(function () {
         document.documentElement.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }))
     })
     
+        //when mobile navigation is active body should not overflow  
+        const HeaderButton = document.querySelector("#HeaderButton");
+        const HiddenBody = document.querySelector("body");
+        const mobileHeader = document.querySelector("#mobileNavClose");
+        const pageShade = document.querySelector(".page-shade");
+      
+        function toggleOverflow() {
+          HiddenBody.style.overflow = HiddenBody.style.overflow === "hidden" ? "auto" : "hidden";
+        }
+      
+        HeaderButton.addEventListener("click", toggleOverflow);
+        mobileHeader.addEventListener("click", toggleOverflow);
+        pageShade.addEventListener("click", toggleOverflow);
+    
+
     // $('.vape_product_wrapper .product_images').slick({
     //     slidesToShow: 2.5,
     //     slidesToScroll: 1,
@@ -235,7 +250,7 @@ $(document).ready(function () {
         ]
     });
     $('.featured_blocks_container').slick({
-        slidesToShow: 8.1,
+        slidesToShow: 8,
         slidesToScroll: 1,
         arrows: true,
         draggable:true,
