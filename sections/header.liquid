@@ -302,7 +302,7 @@
                 {{- 'layout.header.cart' | t | escape -}}
               </span>
             </a>
-            <button class="button notabutton mobile-nav-toggle" aria-label="{{ 'general.navigation.menu_toggle_aria_label' | t | escape }}" aria-controls="main-nav">
+            <button class="button notabutton mobile-nav-toggle" aria-label="{{ 'general.navigation.menu_toggle_aria_label' | t | escape }}" aria-controls="main-nav" id = "HeaderButton">
               {%- render 'svg-menu' -%}
             </button>
           </div>
@@ -542,7 +542,7 @@
         <div class="navigation navigation--main" role="navigation" aria-label="{{ 'general.navigation.main_navigation_aria_label' | t | escape }}">
           <div class="navigation__tier-1-container">
             <div class="navigation__mobile-header">
-              <a href="#" class="mobile-nav-toggle" aria-label="{{ 'general.accessibility_labels.close' | t }}">{% render 'svg-x', stroke_width: 1.3 %}
+              <a href="#" class="mobile-nav-toggle" id ="mobileNavClose" aria-label="{{ 'general.accessibility_labels.close' | t }}">{% render 'svg-x', stroke_width: 1.3 %}
               </a>
               <span class="mobile-nav-title"></span>
               <a href="#" class="mobile-nav-back ltr-icon" aria-label="{{ 'layout.navigation.back' | t }}">{% render 'svg-chevron-left', stroke_width: 1.3 %}
