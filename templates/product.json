@@ -144,7 +144,7 @@
         "74ba130d-54be-4ae7-8834-3dbbfeee3e5c": {
           "type": "accordion",
           "settings": {
-            "title": "Directions to use",
+            "title": "Directions for use",
             "icon": "",
             "content": "<p>{{ product.metafields.custom.direction_to_use | metafield_tag }}<\/p>",
             "test_result_link": "",

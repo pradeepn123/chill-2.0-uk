@@ -155,6 +155,7 @@ $(document).ready(function () {
         ]
     });
 
+    // product description
     $('.readmore').click(function (event) {
         event.preventDefault();
         var descriptionFull = document.querySelector('.product-description-full');
@@ -170,6 +171,22 @@ $(document).ready(function () {
         descriptionShort.style.display = 'block';
     });
     
+
+    // collection description
+    $('.readmore_btn').click(function (event) {
+        event.preventDefault();
+        var descriptionFull = document.querySelector('.collection-description-full');
+        descriptionFull.style.display = 'block';
+        var descriptionShort = document.querySelector('.collection-description-short');
+        descriptionShort.style.display = 'none';
+    });
+    $('.readless_btn').click(function (event) {
+        event.preventDefault();
+        var descriptionFull = document.querySelector('.collection-description-full');
+        descriptionFull.style.display = 'none';
+        var descriptionShort = document.querySelector('.collection-description-short');
+        descriptionShort.style.display = 'block';
+    });  
     let items = document.querySelectorAll('.menu-mega-nav li');
 
     items.forEach( item => item.addEventListener('mouseenter', handleHover))
