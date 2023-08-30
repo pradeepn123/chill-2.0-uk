@@ -1,0 +1,21 @@
+.collection_description{
+    margin-top: 1em !important;
+    max-width: fit-content !important;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: #000000;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 7.5rem;
+    .collection-description-full{
+        display: none;
+        span{
+            font-weight: 400;
+        }
+    }
+    .readmore_btn, .readless_btn{
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
