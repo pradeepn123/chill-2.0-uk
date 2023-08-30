@@ -37,9 +37,27 @@
         "subcoll_gall_text_alignment": "center center",
         "subcoll_gall_mobile_layout": "2"
       }
+    },
+    "c3c695da-af7c-4a6a-988f-a63dead0721f": {
+      "type": "collection-description",
+      "settings": {
+      }
+    },
+    "3dd431d3-30b2-4b77-ac5a-af4a677738cf": {
+      "type": "newsletter",
+      "settings": {
+        "newsletter_logo": "<svg id=\"Group_6347\" data-name=\"Group 6347\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"136.516\" height=\"136.512\" viewbox=\"0 0 136.516 136.512\">\n  <g id=\"Group_637\" data-name=\"Group 637\" transform=\"translate(0 0)\">\n    <g id=\"Group_636\" data-name=\"Group 636\" transform=\"translate(0 0)\">\n      <g id=\"Group_631\" data-name=\"Group 631\" transform=\"translate(4.578)\">\n        <path id=\"Path_8791\" data-name=\"Path 8791\" d=\"M64.571,191.328a1.477,1.477,0,0,1-1.33-2.08l1.6-3.757a67.074,67.074,0,0,1,123.391-.067l1.53,3.489a1.688,1.688,0,0,1-1.463,2.348h-5.188a1.651,1.651,0,0,1-1.463-.872l-3.725-7.38a58.864,58.864,0,0,0-102.7.067l-3.858,7.447a1.489,1.489,0,0,1-1.264.805Z\" transform=\"translate(-63.124 -144.7)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_632\" data-name=\"Group 632\" transform=\"translate(5.03 89.884)\">\n        <path id=\"Path_8792\" data-name=\"Path 8792\" d=\"M65.462,280.367l122.924-.067a2,2,0,0,1,1.8,2.818l-1.33,3.019a67.072,67.072,0,0,1-123.389.067l-1.53-3.422A1.712,1.712,0,0,1,65.462,280.367Zm110.551,8.185-97.248.067a1.686,1.686,0,0,0-1.4,2.617,58.841,58.841,0,0,0,99.776-.4A1.436,1.436,0,0,0,176.013,288.552Z\" transform=\"translate(-63.798 -280.3)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_633\" data-name=\"Group 633\" transform=\"translate(0 48.762)\">\n        <path id=\"Path_8793\" data-name=\"Path 8793\" d=\"M56.3,237.053c0-9.661,2.063-15.766,2.2-16.1l.532-1.476a10.347,10.347,0,0,0,.6-1.275H182.162c8.453,0,7.987.6,8.187,1.476l.466,1.476a65.242,65.242,0,0,1-.2,32.874l-.333,1.275a2.11,2.11,0,0,1-1.6,1.476l-1.265.2c-15.308,2.549-51.383,1.409-62.9-17.846-16.507,24.354-60.169,18.182-62.632,17.913l-1.464-.2a1.85,1.85,0,0,1-1.6-1.409l-.333-1.476A66.641,66.641,0,0,1,56.3,237.053Zm8.852-8.923a58.863,58.863,0,0,0,.2,19.389,1.984,1.984,0,0,0,1.8,1.677c13.711,1.006,47.656,2.08,53.447-21.4l.333-1.342H67.149A2.016,2.016,0,0,0,65.152,228.13Zm118.741,0a1.947,1.947,0,0,0-1.93-1.677H128.117l.333,1.342c5.591,22.744,42.6,22.408,53.447,21.469a1.989,1.989,0,0,0,1.731-1.543A57.14,57.14,0,0,0,183.893,228.13Z\" transform=\"translate(-56.3 -218.2)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_634\" data-name=\"Group 634\" transform=\"translate(90.018 37.65)\">\n        <path id=\"Path_8794\" data-name=\"Path 8794\" d=\"M192.1,203.244v4.227a2.018,2.018,0,0,0,2.013,2.013h25.226a1.971,1.971,0,0,0,1.744-2.885L219,202.372a1.934,1.934,0,0,0-1.744-1.073H194.18A1.9,1.9,0,0,0,192.1,203.244Z\" transform=\"translate(-192.1 -201.295)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n      <g id=\"Group_635\" data-name=\"Group 635\" transform=\"translate(17.693 38.052)\">\n        <path id=\"Path_8795\" data-name=\"Path 8795\" d=\"M111.875,203.913v4.227a2.018,2.018,0,0,1-2.013,2.013H84.636a1.971,1.971,0,0,1-1.744-2.885l2.08-4.227a2,2,0,0,1,1.744-1.141H109.8A1.993,1.993,0,0,1,111.875,203.913Z\" transform=\"translate(-82.671 -201.9)\" fill=\"#9792e4\"><\/path>\n      <\/g>\n    <\/g>\n  <\/g>\n<\/svg>",
+        "title": "Keep Chilling",
+        "subheading": "<p>Stay in the loop + get <strong>20% off <\/strong>on your first order<\/p>",
+        "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See privacy policy and terms of service for details.<\/p>",
+        "bg_image": "shopify:\/\/shop_images\/pexels-magda-ehlers-2114014_1.jpg",
+        "color_bg": "#ffffff"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c3c695da-af7c-4a6a-988f-a63dead0721f",
+    "3dd431d3-30b2-4b77-ac5a-af4a677738cf"
   ]
 }
