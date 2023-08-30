@@ -93,7 +93,7 @@
             }
         }
         .utility-bar--sticky-mobile-copy{
-            padding: 12px 12px 20px 12px;
+            padding: 12px 28px 20px 28px;
         }
         .page-header{
             text-align: left;
@@ -121,6 +121,9 @@
                 }
                 .cf{
                     color: #000;
+                    @media(max-width: 768px){
+                        font-size: 16px;
+                    }
                 }
             }
         }

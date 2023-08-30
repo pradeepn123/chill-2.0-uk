@@ -1994,7 +1994,7 @@ body.overflow-hidden {
   }
 }
 .filter_coll .utility-bar-main .utility-bar--sticky-mobile-copy {
-  padding: 12px 12px 20px 12px;
+  padding: 12px 28px 20px 28px;
 }
 .filter_coll .utility-bar-main .page-header {
   text-align: left;
@@ -2026,6 +2026,11 @@ body.overflow-hidden {
 }
 .filter_coll .utility-bar-main .utility-bar__left .page-header .cf {
   color: #000;
+}
+@media (max-width: 768px) {
+  .filter_coll .utility-bar-main .utility-bar__left .page-header .cf {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .filter_coll .utility-bar-main .utility-bar__left, .filter_coll .utility-bar-main .utility-bar__right {
