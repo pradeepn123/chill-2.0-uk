@@ -1,0 +1,17 @@
+
+{% for collection in collections %}
+    {% if collection.template_suffix == 'new_brands' %}
+    {% endif %}
+{% endfor%}
+{% schema %}
+{
+    "name": "All brands",
+    "settings": [
+    ],
+    "presets": [
+        {
+            "name": "All brands"
+        }
+    ]
+}
+{% endschema %}

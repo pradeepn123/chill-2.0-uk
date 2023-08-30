@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "3cdab1c6-2750-43c6-b100-bc4ae0818920": {
+      "type": "all-brands",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3cdab1c6-2750-43c6-b100-bc4ae0818920"
+  ]
+}
