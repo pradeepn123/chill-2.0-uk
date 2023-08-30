@@ -1,8 +1,20 @@
+{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" %}
+{% assign alphabet = alphabet | split:',' %}
+{% for letter in alphabet %}
+    {{ letter }}
+{% endfor %}
 
-{% for collection in collections %}
-    {% if collection.template_suffix == 'new_brands' %}
-    {% endif %}
-{% endfor%}
+{% for letter in alphabet %}
+    -{{ letter }}   
+    {% for brand in collections %}
+        {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
+            {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
+            {% if letter == firstletter %}
+                --{{ brand.handle }}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
 {% schema %}
 {
     "name": "All brands",
