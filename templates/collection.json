@@ -95,6 +95,11 @@
         "subcoll_gall_mobile_layout": "2"
       }
     },
+    "3e7361ad-a448-4165-bb81-e6b4c9a907fd": {
+      "type": "collection-description",
+      "settings": {
+      }
+    },
     "b945e235-7d41-434e-b5fe-29643f50d8a6": {
       "type": "newsletter",
       "settings": {
@@ -109,6 +114,7 @@
   },
   "order": [
     "main",
+    "3e7361ad-a448-4165-bb81-e6b4c9a907fd",
     "b945e235-7d41-434e-b5fe-29643f50d8a6"
   ]
 }
