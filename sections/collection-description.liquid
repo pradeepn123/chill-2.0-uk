@@ -3,13 +3,13 @@
     <div class="collection_description container">
     {% assign collection_description = collection.metafields.custom.seo_text | metafield_tag %}
         <div class="collection-description-short">
-            {{ collection_description | truncate: 100, "... " }}
+            <span>{{ collection_description | strip_html | truncate: 100, "... " }}</span>
             {% if collection_description.size >= 100 %}
             <a class="readmore_btn" href="#">Read More</a>
             {% endif %}
         </div>
         <div class="collection-description-full">
-            {{ collection_description }}
+            <span>{{ collection_description }}</span>
             <br><a class="readless_btn" href="#">Read Less</a>
         </div>
     </div>
