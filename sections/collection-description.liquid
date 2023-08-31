@@ -1,0 +1,28 @@
+{% comment %} Show collection description {% endcomment %}
+{% if collection.metafields.custom.seo_text %}
+    <div class="collection_description container">
+    {% assign collection_description = collection.metafields.custom.seo_text | metafield_tag %}
+        <div class="collection-description-short">
+            <span>{{ collection_description | strip_html | truncate: 100, "... " }}</span>
+            {% if collection_description.size >= 100 %}
+            <a class="readmore_btn" href="#">Read More</a>
+            {% endif %}
+        </div>
+        <div class="collection-description-full">
+            <span>{{ collection_description }}</span>
+            <br><a class="readless_btn" href="#">Read Less</a>
+        </div>
+    </div>
+{% endif %}
+
+{% schema %}
+    {
+        "name": "Collection description",
+        "settings": [],
+        "presets": [
+            {
+                "name": "Collection description"
+            }
+        ]
+    }
+{% endschema %}
