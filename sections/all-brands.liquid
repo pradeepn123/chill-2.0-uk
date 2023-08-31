@@ -1,24 +1,79 @@
-{% assign alphabet = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" %}
-{% assign alphabet = alphabet | split:',' %}
-{% for letter in alphabet %}
-    {{ letter }}
-{% endfor %}
+{% style %}
+    .all_brands_title{
+        font-size: {{ section.settings.title_font_size }}px;
+    }
+    @media (max-width: 768px){
+        .all_brands_title{
+            font-size: {{ section.settings.title_font_size_mobile }}px;
+        }
+    }
+{% endstyle %}
 
-{% for letter in alphabet %}
-    -{{ letter }}   
-    {% for brand in collections %}
-        {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
-            {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
-            {% if letter == firstletter %}
-                --{{ brand.handle }}
-            {% endif %}
+{% assign alphabet = "#,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
+
+
+<div class="all_brands_container container">
+    <div class="all_brands_title">{{ section.settings.title }}</div>
+    <div class="alphabet-index">
+        <ul class="alphabet_list">
+            {% for letter in alphabet %}
+                <li>{{ letter }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="brands_wrapper">
+        {% assign hasValue = true %}
+        {% if hasValue %}
+            {% for letter in alphabet %}
+                <div class="brand_buy_alphabet" id="letter-{{ letter }}">
+                    {{ letter }}  
+                    <ul>
+                    {% for brand in collections %}
+                        {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
+                            {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
+                            {% if letter == firstletter and brand.handle %}
+                                {% assign hasValue = true %}
+                                <li>{{ brand.handle }}</li>
+                            {% else %}
+                                {% assign hasValue = false %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                </div>
+            {% endfor %}
         {% endif %}
-    {% endfor %}
-{% endfor %}
+    </div>
+</div>
 {% schema %}
 {
     "name": "All brands",
     "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Page title",
+            "default": "<p>Page title</p>"
+        },
+        {
+            "type": "range",
+            "id": "title_font_size",
+            "label": "Title font size - Desktop",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "default": 52
+        },
+        {
+            "type": "range",
+            "id": "title_font_size_mobile",
+            "label": "Title font size - mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "default": 28
+        }
     ],
     "presets": [
         {

@@ -11455,3 +11455,31 @@ div .okeReviews .oke-reviewCarousel {
   font-weight: bold;
   cursor: pointer;
 }
+
+.all_brands_container {
+  color: #000;
+  height: 100%;
+}
+.all_brands_container .all_brands_title p {
+  margin-bottom: 25px;
+}
+.all_brands_container .alphabet-index {
+  position: sticky;
+  top: 91px;
+  padding: 24px 0;
+  border-bottom: 1px solid #D4D4D4;
+  background: #fff;
+}
+.all_brands_container .alphabet-index .alphabet_list {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+.all_brands_container .alphabet-index .alphabet_list li {
+  list-style: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.all_brands_container .brands_wrapper {
+  margin-top: 88px;
+}
