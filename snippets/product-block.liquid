@@ -132,7 +132,7 @@
           <div class="innerer">
             <a class="product-link{% if settings.quickbuy_style == 'whole' %} quickbuy-toggle{% endif %}" href="{{ product_url }}">
 
-              <div class="product-block__title">{{ product.title }}
+              <div class="product-block__title">{{ product.title | truncate: 35 }}
               </div>
 
               {% if product.metafields.custom.product_varient_pack != blank %}

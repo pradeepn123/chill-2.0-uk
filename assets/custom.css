@@ -1985,12 +1985,25 @@ body.overflow-hidden {
 @media (min-width: 768px) {
   .filter_coll .utility-bar-main .utility-bar {
     padding: 12px 0;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 @media (max-width: 320px) {
   .filter_coll .utility-bar-main .utility-bar {
     padding: 12px 0 20px 0;
+  }
+}
+@media (max-width: 1023px) {
+  .filter_coll .utility-bar-main .utility-bar:has(.collection-description) {
+    flex-direction: column !important;
+  }
+  .filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__right {
+    width: 100%;
+    justify-content: flex-end !important;
+    margin-top: 20px;
+  }
+  .filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__right .utility-bar__item {
+    margin: auto 0 auto 10px;
   }
 }
 .filter_coll .utility-bar-main .utility-bar--sticky-mobile-copy {
@@ -2031,9 +2044,6 @@ body.overflow-hidden {
   .filter_coll .utility-bar-main .utility-bar__left, .filter_coll .utility-bar-main .utility-bar__right {
     flex: 2 0 50%;
   }
-}
-.filter_coll .utility-bar-main .utility-bar__right {
-  margin: auto 0;
 }
 @media (max-width: 457px) {
   .filter_coll .utility-bar-main .utility-bar__right {
