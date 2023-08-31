@@ -1993,18 +1993,20 @@ body.overflow-hidden {
     padding: 12px 0 20px 0;
   }
 }
-@media (max-width: 1023px) {
-  .filter_coll .utility-bar-main .utility-bar:has(.collection-description) {
-    flex-direction: column !important;
-  }
-  .filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__right {
-    width: 100%;
-    justify-content: flex-end !important;
-    margin-top: 20px;
-  }
-  .filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__right .utility-bar__item {
-    margin: auto 0 auto 10px;
-  }
+.filter_coll .utility-bar-main .utility-bar:has(.collection-description) {
+  flex-direction: column !important;
+}
+.filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__left {
+  margin: 0;
+  width: 100%;
+}
+.filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__right {
+  width: 100%;
+  justify-content: flex-end !important;
+  margin-top: 20px;
+}
+.filter_coll .utility-bar-main .utility-bar:has(.collection-description) .utility-bar__right .utility-bar__item {
+  margin: auto 0 auto 10px;
 }
 .filter_coll .utility-bar-main .utility-bar--sticky-mobile-copy {
   padding: 12px 28px 20px 28px;
