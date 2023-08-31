@@ -2027,11 +2027,6 @@ body.overflow-hidden {
 .filter_coll .utility-bar-main .utility-bar__left .page-header .cf {
   color: #000;
 }
-@media (max-width: 768px) {
-  .filter_coll .utility-bar-main .utility-bar__left .page-header .cf {
-    font-size: 16px;
-  }
-}
 @media (min-width: 1200px) {
   .filter_coll .utility-bar-main .utility-bar__left, .filter_coll .utility-bar-main .utility-bar__right {
     flex: 2 0 50%;
@@ -11432,6 +11427,11 @@ div .okeReviews .oke-reviewCarousel {
   line-height: 1.6;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 7.5rem;
+}
+@media (max-width: 768px) {
+  .collection_description .collection-description-full, .collection_description .collection-description-short {
+    font-size: 16px;
+  }
 }
 .collection_description .collection-description-full {
   display: none;

@@ -8,6 +8,11 @@
     line-height: 1.6;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 7.5rem;
+    @media (max-width: 768px){
+        .collection-description-full, .collection-description-short{
+            font-size: 16px;
+        }
+    }
     .collection-description-full{
         display: none;
         span{
