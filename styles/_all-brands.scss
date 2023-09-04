@@ -23,13 +23,13 @@
       }
       .alphabet_list{
         display: flex;
-        gap: 20px;
+        gap: 30px;
         margin: 0;
         a.active{
             width: fit-content;
             color: #9792E4;
             li{
-                border-bottom: 3px solid #9792E4;
+                border-bottom: 2px solid #9792E4;
             }
             
         }

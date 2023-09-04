@@ -11489,7 +11489,7 @@ div .okeReviews .oke-reviewCarousel {
 }
 .all_brands_container .alphabet-index .alphabet_list {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   margin: 0;
 }
 .all_brands_container .alphabet-index .alphabet_list a.active {
@@ -11497,7 +11497,7 @@ div .okeReviews .oke-reviewCarousel {
   color: #9792E4;
 }
 .all_brands_container .alphabet-index .alphabet_list a.active li {
-  border-bottom: 3px solid #9792E4;
+  border-bottom: 2px solid #9792E4;
 }
 .all_brands_container .alphabet-index .alphabet_list li {
   list-style: none;
