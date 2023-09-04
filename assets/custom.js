@@ -60,18 +60,18 @@ $(document).ready(function () {
     })
     
         //when mobile navigation is active body should not overflow  
-        const HeaderButton = document.querySelector("#HeaderButton");
-        const HiddenBody = document.querySelector("body");
-        const mobileHeader = document.querySelector("#mobileNavClose");
-        const pageShade = document.querySelector(".page-shade");
+        // const HeaderButton = document.querySelector("#HeaderButton");
+        // const HiddenBody = document.querySelector("body");
+        // const mobileHeader = document.querySelector("#mobileNavClose");
+        // const pageShade = document.querySelector(".page-shade");
       
-        function toggleOverflow() {
-          HiddenBody.style.overflow = HiddenBody.style.overflow === "hidden" ? "auto" : "hidden";
-        }
+        // function toggleOverflow() {
+        //   HiddenBody.style.overflow = HiddenBody.style.overflow === "hidden" ? "auto" : "hidden";
+        // }
       
-        HeaderButton.addEventListener("click", toggleOverflow);
-        mobileHeader.addEventListener("click", toggleOverflow);
-        pageShade.addEventListener("click", toggleOverflow);
+        // HeaderButton.addEventListener("click", toggleOverflow);
+        // mobileHeader.addEventListener("click", toggleOverflow);
+        // pageShade.addEventListener("click", toggleOverflow);
     
 
     // $('.vape_product_wrapper .product_images').slick({
