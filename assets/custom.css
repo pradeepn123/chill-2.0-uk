@@ -11472,14 +11472,47 @@ div .okeReviews .oke-reviewCarousel {
 }
 .all_brands_container .alphabet-index .alphabet_list {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   margin: 0;
+}
+.all_brands_container .alphabet-index .alphabet_list a.active {
+  width: fit-content;
+  color: #9792E4;
+}
+.all_brands_container .alphabet-index .alphabet_list a.active li {
+  border-bottom: 3px solid #9792E4;
 }
 .all_brands_container .alphabet-index .alphabet_list li {
   list-style: none;
   font-size: 20px;
-  padding: 5px 10px;
 }
 .all_brands_container .brands_wrapper {
-  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+}
+.all_brands_container .brands_wrapper .brand_by_alphabet {
+  display: flex;
+  flex-direction: column-reverse;
+  scroll-margin-top: 182px;
+}
+.all_brands_container .brands_wrapper .brand_by_alphabet h1 {
+  font-size: 52px;
+  font-weight: 600;
+}
+.all_brands_container .brands_wrapper .brand_by_alphabet ul {
+  margin: 0;
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.all_brands_container .brands_wrapper .brand_by_alphabet ul .brand {
+  grid-area: 1/1/2/2;
+  list-style: none;
+  font-size: 16px;
+}
+.all_brands_container .brands_wrapper .brand_by_alphabet.active h1 {
+  color: #9792E4;
+}
+.all_brands_container .brands_wrapper .brand_by_alphabet.inactive {
+  display: none;
 }

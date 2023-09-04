@@ -12,17 +12,53 @@
       background: #fff;
       .alphabet_list{
         display: flex;
-        gap: 10px;
+        gap: 20px;
         margin: 0;
+        a.active{
+            width: fit-content;
+            color: #9792E4;
+            li{
+                border-bottom: 3px solid #9792E4;
+            }
+            
+        }
         li{
             list-style: none;
             font-size: 20px;
-            padding: 5px 10px;
         }
       }
     }
     .brands_wrapper{
-        margin-top: 88px;
+        display: flex;
+        flex-direction: column;
+        .brand_by_alphabet{
+            display: flex;
+            flex-direction: column-reverse;
+            scroll-margin-top: 182px;
+            h1{
+                font-size: 52px;
+                font-weight: 600;
+            }
+            ul{
+                margin: 0;
+                margin: 40px 0;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+
+                .brand{
+                    grid-area: 1 / 1 / 2 / 2;
+                    list-style: none;
+                    font-size: 16px;
+                }
+            }
+            &.active h1{
+                color: #9792E4;
+            }
+            &.inactive{
+                display: none;
+            }
+            
+        }
     }
 }
 
