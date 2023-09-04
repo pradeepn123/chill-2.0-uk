@@ -11459,9 +11459,20 @@ div .okeReviews .oke-reviewCarousel {
 .all_brands_container {
   color: #000;
   height: 100%;
+  margin: 60px auto;
+}
+@media (max-width: 767px) {
+  .all_brands_container {
+    margin: 24px 0;
+  }
 }
 .all_brands_container .all_brands_title p {
   margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .all_brands_container .all_brands_title p {
+    margin-bottom: 0;
+  }
 }
 .all_brands_container .alphabet-index {
   position: sticky;
@@ -11469,6 +11480,12 @@ div .okeReviews .oke-reviewCarousel {
   padding: 24px 0;
   border-bottom: 1px solid #D4D4D4;
   background: #fff;
+  overflow: auto;
+}
+@media (max-width: 767px) {
+  .all_brands_container .alphabet-index {
+    top: 53px;
+  }
 }
 .all_brands_container .alphabet-index .alphabet_list {
   display: flex;
@@ -11489,21 +11506,43 @@ div .okeReviews .oke-reviewCarousel {
 .all_brands_container .brands_wrapper {
   display: flex;
   flex-direction: column;
+  margin: 36px 0;
+}
+@media (max-width: 767px) {
+  .all_brands_container .brands_wrapper {
+    margin: 24px 0;
+  }
 }
 .all_brands_container .brands_wrapper .brand_by_alphabet {
   display: flex;
   flex-direction: column-reverse;
   scroll-margin-top: 182px;
 }
+@media (max-width: 767px) {
+  .all_brands_container .brands_wrapper .brand_by_alphabet {
+    scroll-margin-top: 150px;
+  }
+}
 .all_brands_container .brands_wrapper .brand_by_alphabet h1 {
   font-size: 52px;
   font-weight: 600;
+}
+@media (max-width: 767px) {
+  .all_brands_container .brands_wrapper .brand_by_alphabet h1 {
+    font-size: 32px;
+  }
 }
 .all_brands_container .brands_wrapper .brand_by_alphabet ul {
   margin: 0;
   margin: 40px 0;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 767px) {
+  .all_brands_container .brands_wrapper .brand_by_alphabet ul {
+    grid-template-columns: 1fr 1fr;
+    margin: 24px 0;
+  }
 }
 .all_brands_container .brands_wrapper .brand_by_alphabet ul .brand {
   grid-area: 1/1/2/2;

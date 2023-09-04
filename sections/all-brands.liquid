@@ -7,6 +7,20 @@
             font-size: {{ section.settings.title_font_size_mobile }}px;
         }
     }
+    .brands_desktop{
+        display: grid !important;
+    }
+    .brands_mobile{
+        display: none !important;
+    }
+    @media (max-width: 768px){
+        .brands_desktop{
+            display: none !important;
+        }
+        .brands_mobile{
+            display: grid !important;
+        }
+    }
 {% endstyle %}
 
 {% assign alphabet = "#,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
@@ -31,8 +45,10 @@
             {% for letter in alphabet %}
                 {% assign brandStartsWith = "" %}
                     <div class="brand_by_alphabet" id="{% unless letter == "#" %}letter-{{ letter }}{% else %}letter-hash{% endunless %}">
-                        <ul>
+
+                        <ul class="brands_desktop">
                             {% assign count = 0 %}
+                            
                             {% for brand in collections %}
                                     {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
                                         {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
@@ -43,7 +59,6 @@
                                             {% assign count = count | plus: 1 %}
                                             <li class="brand"><a href="/collections/{{ brand.handle }}">{{ brand.handle }}</a></li>
                                             {% assign brandStartsWith = letter %}
-                                            
                                             {% if count == 5 %}
                                                 <br>
                                             {% endif %}
@@ -57,6 +72,33 @@
                                 {% endfor %}
                             
                         </ul>
+
+                        <ul class="brands_mobile">
+                            {% assign count = 0 %}
+                            {% for brand in collections %}
+                                    {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
+                                        {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
+                                        {% if letter == firstletter and brand.handle %}
+                                            {% if count == 0 %}
+                                                <div class="rows">
+                                            {% endif %}
+                                            {% assign count = count | plus: 1 %}
+                                            <li class="brand"><a href="/collections/{{ brand.handle }}">{{ brand.handle | truncate: 20 }}</a></li>
+                                            {% assign brandStartsWith = letter %}
+                                            {% if count == 10 %}
+                                                <br>
+                                            {% endif %}
+                                            {% if count == 10 %}
+                                                {% assign count = 0 %}
+                                            </div>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                    
+                                {% endfor %}
+                            
+                        </ul>
+
                         <h1>{{ brandStartsWith }}</h1>
                     </div>
             {% endfor %}
@@ -82,7 +124,6 @@
                 }
             })
         } 
-
 
 
         document.querySelectorAll(".alphabet_list a").forEach(el => {
