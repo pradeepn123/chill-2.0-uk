@@ -663,12 +663,12 @@
     }
 }
 #NavigationTier2-1.navigation__child-tier, #NavigationTier2-1-mob.navigation__child-tier{
-    .navigation__child-tier{
+    .navigation__column{
         &:last-child{
             .view_all_brands{
                 display: block !important;
                 a{
-                    color: #83C3A1;
+                    color: #83C3A1 !important;
                     font-weight: 700;
                     @media (max-width: 1199px){
                         color: #9792e4;
