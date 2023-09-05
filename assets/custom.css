@@ -11529,6 +11529,11 @@ div .okeReviews .oke-reviewCarousel {
     margin-bottom: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .all_brands_container .all_brands_title p {
+    font-size: 46px;
+  }
+}
 .all_brands_container .alphabet-index {
   position: sticky;
   top: 91px;
@@ -11540,6 +11545,11 @@ div .okeReviews .oke-reviewCarousel {
 @media (max-width: 767px) {
   .all_brands_container .alphabet-index {
     top: 53px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .all_brands_container .alphabet-index {
+    top: 60px;
   }
 }
 .all_brands_container .alphabet-index .alphabet_list {
@@ -11597,6 +11607,11 @@ div .okeReviews .oke-reviewCarousel {
   .all_brands_container .brands_wrapper .brand_by_alphabet ul {
     grid-template-columns: 1fr 1fr;
     margin: 24px 0;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .all_brands_container .brands_wrapper .brand_by_alphabet ul {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .all_brands_container .brands_wrapper .brand_by_alphabet ul .brand {

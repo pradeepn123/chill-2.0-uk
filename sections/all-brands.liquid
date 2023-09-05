@@ -13,7 +13,7 @@
     .brands_mobile{
         display: none !important;
     }
-    @media (max-width: 768px){
+    @media (max-width: 1023px){
         .brands_desktop{
             display: none !important;
         }
@@ -57,7 +57,7 @@
                                                 <div class="rows">
                                             {% endif %}
                                             {% assign count = count | plus: 1 %}
-                                            <li class="brand"><a href="/collections/{{ brand.handle }}">{{ brand.handle }}</a></li>
+                                            <li class="brand"><a href="/collections/{{ brand.handle }}">{{ brand.title | truncate: 20 }}</a></li>
                                             {% assign brandStartsWith = letter %}
                                             {% if count == 5 %}
                                                 <br>
@@ -83,7 +83,7 @@
                                                 <div class="rows">
                                             {% endif %}
                                             {% assign count = count | plus: 1 %}
-                                            <li class="brand"><a href="/collections/{{ brand.handle }}">{{ brand.handle | truncate: 20 }}</a></li>
+                                            <li class="brand brand_mobile"><a href="/collections/{{ brand.handle }}">{{ brand.title | truncate: 15 }}</a></li>
                                             {% assign brandStartsWith = letter %}
                                             {% if count == 10 %}
                                                 <br>
@@ -129,8 +129,8 @@
         document.querySelectorAll(".alphabet_list a").forEach(el => {
             const target = el.getAttribute('href');
             if (!document.querySelector(target + ' h1').innerHTML) {
-                el.style.opacity = '.5';
-                el.style.cursor = 'default';
+                el.style.opacity = '.4';
+                el.style.pointerEvents = 'none';
             }
             else{
                 el.setAttribute('active','active');
