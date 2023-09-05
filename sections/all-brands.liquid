@@ -138,6 +138,7 @@
             }
 
             el.addEventListener('click', () => {
+                console.log("clicked")
                 removeActiveClassFromContent();
                 removeActiveClassFromIndex();
                 el.classList.add('active');
@@ -163,9 +164,11 @@
             }
         })
 
-
+        // Highlight the respective index on scroll
         const sections = [...document.querySelectorAll('.brand_by_alphabet')];
         const link = (id) => document.querySelector(`.alphabet_list a[href="#${id}"]`);
+
+        
 
         const inView = (element) => {
             var top = element.offsetTop;
@@ -184,11 +187,19 @@
 
             const init = () => {
             function update() {
+                console.log("update called")
                 let next = false;
-                
+
+                let activeAlphabet = document.querySelector(`.alphabet_list a.active`);
+                if (activeAlphabet) {
+                    const width = document.querySelector(`.alphabet_list`).offsetWidth;
+                    let activeOffsetLeft = activeAlphabet.offsetLeft;
+                    let diff = activeOffsetLeft - width;
+                    document.querySelector('.alphabet-index').scrollTo(diff + 30, 0)
+                }
+
                 sections.forEach(section => {
                 const current = link(section.id);
-                
                 if (inView(section) && !next){
                     current.classList.add('active');
                     section.classList.add('active');
@@ -200,14 +211,16 @@
                 });
             }
             update();
-            window.addEventListener('scroll', update);
+            
+            window.addEventListener('wheel', (e) => {
+                if(e.deltaY){
+                    update()
+                }
+            });
             }
 
-init();
-
-
-
-        
+            init()
+        document.querySelector('.alphabet_list a.active')
     })
 </script> 
 {% schema %}
