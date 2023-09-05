@@ -214,8 +214,13 @@
             
             window.addEventListener('wheel', (e) => {
                 if(e.deltaY){
-                    update()
+                    update();
                 }
+            });
+            window.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+                    update();
             });
             }
 
