@@ -1139,21 +1139,6 @@ body.overflow-hidden {
   font-weight: normal;
   color: #000;
 }
-#NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column:last-child .view_all_brands {
-  display: block !important;
-}
-#NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column:last-child .view_all_brands a {
-  color: #83C3A1;
-  font-weight: 700;
-}
-#NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column:last-child .view_all_brands a .view_all_brands_arrow {
-  opacity: 1 !important;
-  position: relative;
-  right: 0;
-}
-#NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column:last-child .view_all_brands a .view_all_brands_arrow path {
-  fill: #83C3A1 !important;
-}
 @media (min-width: 768px) and (max-width: 1199px) {
   #NavigationTier2-1.navigation__child-tier .container .navigation__columns {
     flex-direction: column;
@@ -1274,6 +1259,32 @@ body.overflow-hidden {
 }
 #NavigationTier2-1.navigation__child-tier .container .first_loop_link a svg {
   margin-top: 3px;
+}
+
+#NavigationTier2-1.navigation__child-tier .navigation__child-tier:last-child .view_all_brands, #NavigationTier2-1-mob.navigation__child-tier .navigation__child-tier:last-child .view_all_brands {
+  display: block !important;
+}
+#NavigationTier2-1.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a, #NavigationTier2-1-mob.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a {
+  color: #83C3A1;
+  font-weight: 700;
+}
+@media (max-width: 1199px) {
+  #NavigationTier2-1.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a, #NavigationTier2-1-mob.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a {
+    color: #9792e4;
+  }
+}
+#NavigationTier2-1.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a .view_all_brands_arrow, #NavigationTier2-1-mob.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a .view_all_brands_arrow {
+  opacity: 1 !important;
+  position: relative;
+  right: 0;
+}
+#NavigationTier2-1.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a .view_all_brands_arrow path, #NavigationTier2-1-mob.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a .view_all_brands_arrow path {
+  fill: #83C3A1;
+}
+@media (max-width: 1199px) {
+  #NavigationTier2-1.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a .view_all_brands_arrow path, #NavigationTier2-1-mob.navigation__child-tier .navigation__child-tier:last-child .view_all_brands a .view_all_brands_arrow path {
+    fill: #9792e4;
+  }
 }
 
 #NavigationTier2-2.navigation__child-tier .container {
@@ -1757,19 +1768,25 @@ body.overflow-hidden {
   height: 10px;
 }
 
-#NavigationTier2-2 .container .view_all_brands {
+#NavigationTier2-2 .container .view_all_brands, #NavigationTier2-2-mob .container .view_all_brands {
   color: #9792e4 !important;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 40px;
 }
-#NavigationTier2-2 .container .view_all_brands svg {
+@media (max-width: 1199px) {
+  #NavigationTier2-2 .container .view_all_brands, #NavigationTier2-2-mob .container .view_all_brands {
+    display: block;
+    text-align: center;
+  }
+}
+#NavigationTier2-2 .container .view_all_brands svg, #NavigationTier2-2-mob .container .view_all_brands svg {
   position: relative;
   margin-top: 5px;
   right: -7px;
 }
-#NavigationTier2-2 .container .view_all_brands svg path {
+#NavigationTier2-2 .container .view_all_brands svg path, #NavigationTier2-2-mob .container .view_all_brands svg path {
   fill: #9792e4;
 }
 
