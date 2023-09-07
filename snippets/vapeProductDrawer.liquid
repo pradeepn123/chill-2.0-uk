@@ -514,13 +514,13 @@
                               </button>
                           </div> {% endcomment %}
                       {% endif %}
+                      <a href="{{ product.url }}" class="product_page_redirection_link">View details</a>
                     </div> 
                     {%- if product_form_present == false -%}
                       <form class="product-purchase-form hidden" data-product-id="{{ product.id }}">
                         {{- original_select -}}
                       </form>
                     {%- endif -%}
-                    <a href="{{ product.url }}" class="product_page_redirection_link">View details</a>
                     <script type="application/json" id="ProductJson-{{ product.id }}">
                       {{- product | json -}}
                     </script>
