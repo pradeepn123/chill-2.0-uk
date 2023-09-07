@@ -60,18 +60,18 @@ $(document).ready(function () {
     })
     
         //when mobile navigation is active body should not overflow  
-        const HeaderButton = document.querySelector("#HeaderButton");
-        const HiddenBody = document.querySelector("body");
-        const mobileHeader = document.querySelector("#mobileNavClose");
-        const pageShade = document.querySelector(".page-shade");
+        // const HeaderButton = document.querySelector("#HeaderButton");
+        // const HiddenBody = document.querySelector("body");
+        // const mobileHeader = document.querySelector("#mobileNavClose");
+        // const pageShade = document.querySelector(".page-shade");
       
-        function toggleOverflow() {
-          HiddenBody.style.overflow = HiddenBody.style.overflow === "hidden" ? "auto" : "hidden";
-        }
+        // function toggleOverflow() {
+        //   HiddenBody.style.overflow = HiddenBody.style.overflow === "hidden" ? "auto" : "hidden";
+        // }
       
-        HeaderButton.addEventListener("click", toggleOverflow);
-        mobileHeader.addEventListener("click", toggleOverflow);
-        pageShade.addEventListener("click", toggleOverflow);
+        // HeaderButton.addEventListener("click", toggleOverflow);
+        // mobileHeader.addEventListener("click", toggleOverflow);
+        // pageShade.addEventListener("click", toggleOverflow);
     
 
     // $('.vape_product_wrapper .product_images').slick({
@@ -83,45 +83,28 @@ $(document).ready(function () {
     // })
 
     $('.flavours_container').slick({
-        slidesToShow: 4,
+        slidesToShow: 3.5,
         slidesToScroll: 1,
         arrows: true,
         draggable:true,
-        infinite: true,
+        infinite: false,
         prevArrow: '<button type="button" class="slick-flavour-prev" aria-label=""><svg xmlns="http://www.w3.org/2000/svg" width="23.827" height="23.827" viewBox="0 0 23.827 23.827"><path id="arrow_forward_FILL0_wght400_GRAD0_opsz48" d="M11.913,23.827l-1.564-1.6,9.2-9.2H0V10.8H19.545l-9.2-9.2L11.913,0,23.827,11.913Z" transform="translate(23.827 23.827) rotate(180)"/></svg></button>',
         nextArrow: '<button type="button" class="slick-flavour-next" aria-label=""><svg xmlns="http://www.w3.org/2000/svg" width="23.827" height="23.827" viewBox="0 0 23.827 23.827"><path id="arrow_forward_FILL0_wght400_GRAD0_opsz48" d="M19.913,31.827l-1.564-1.6,9.2-9.2H8V18.8H27.545l-9.2-9.2L19.913,8,31.827,19.913Z" transform="translate(-8 -8)"/></svg></button>',
         responsive: [
             {
-                breakpoint: 1440,
-                settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3.5,
-                    slidesToScroll: 1,
-                    initialSlide: 0.5
-                }
-            },
-            {
-                breakpoint: 1023,
+                breakpoint: 770,
                 settings: {
                     slidesToShow: 2.5,
                     slidesToScroll: 1,
-                    arrows: false,
-                    initialSlide: 0.5
+                    arrows: false
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 425,
                 settings: {
                     slidesToShow: 1.5,
                     slidesToScroll: 1,
-                    arrows: false,
-                    initialSlide: 0.5
+                    arrows: false
                 }
             }
         ]
