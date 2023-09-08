@@ -9794,6 +9794,13 @@ body.cart-drawer-open {
   }
 }
 
+.claim_drawer_container.claim-drawer-open.claim-drawer-overflow {
+  overflow: hidden;
+}
+.claim_drawer_container.claim-drawer-open.claim-drawer-overflow .claim_drawer_container {
+  overflow: scroll;
+}
+
 .claim_drawer_container {
   z-index: 60000;
   opacity: 1;
