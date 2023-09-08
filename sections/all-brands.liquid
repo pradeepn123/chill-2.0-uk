@@ -13,6 +13,27 @@
     .brands_mobile{
         display: none !important;
     }
+    .brand a {
+        border-bottom: 2px solid transparent;
+    }
+    .brand svg {
+        opacity: 0;
+        width: 10px;
+        height: 10px;
+    }
+    .brand a:hover {
+        border-bottom: 2px solid #9792e4;
+        transition: 0.3s ease;
+    }
+    .brand a:hover + svg {
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+    .brand a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
     @media (max-width: 1023px){
         .brands_desktop{
             display: none !important;
@@ -57,7 +78,10 @@
                                                 <div class="rows">
                                             {% endif %}
                                             {% assign count = count | plus: 1 %}
-                                            <li class="brand"><a href="/collections/{{ brand.handle }}">{{ brand.title | truncate: 20 }}</a></li>
+                                            <li class="brand">
+                                                <a href="/collections/{{ brand.handle }}">{{ brand.title }}</a>
+                                                {% render 'svg-brands-arrow' %}
+                                            </li>
                                             {% assign brandStartsWith = letter %}
                                             {% if count == 5 %}
                                                 <br>
@@ -83,7 +107,7 @@
                                                 <div class="rows">
                                             {% endif %}
                                             {% assign count = count | plus: 1 %}
-                                            <li class="brand brand_mobile"><a href="/collections/{{ brand.handle }}">{{ brand.title | truncate: 15 }}</a></li>
+                                            <li class="brand brand_mobile"><a href="/collections/{{ brand.handle }}">{{ brand.title }}</a></li>
                                             {% assign brandStartsWith = letter %}
                                             {% if count == 10 %}
                                                 <br>
