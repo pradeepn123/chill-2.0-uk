@@ -100,7 +100,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 425,
+                breakpoint: 430,
                 settings: {
                     slidesToShow: 1.5,
                     slidesToScroll: 1,
@@ -1053,6 +1053,10 @@ flavourDrawerBackgroundClick.addEventListener('click', function() {
 
 document.querySelector('.view_all_button').addEventListener('click', () =>{
     openFlavourDrawer();
+    const flavourDrawerContainer = document.querySelector(`#flavourDrawerContainer`);
+    if(flavourDrawerContainer.classList.contains('claim-drawer-overflow')) {
+        flavourDrawerContainer.classList.remove('claim-drawer-overflow');
+    }
 })
 
 //Open vape product drawer
@@ -1062,15 +1066,18 @@ document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
         flavourTitle = flavourTitle.replace(" ", "").toLowerCase();
 
         const productDrawerContainer = document.querySelector(`#productDrawerContainer.${ flavourTitle }`)
+        const flavourDrawerContainer = document.querySelector(`#flavourDrawerContainer`)
         const closeBtn = productDrawerContainer.querySelector(".product-drawer-summary__close")
         document.getElementById('productDrawerBackground').style.display = 'none';
         document.querySelector("body").classList.add("cart-drawer-open")
 
         productDrawerContainer.style.display = 'block';
         productDrawerContainer.classList.add('claim-drawer-open');
+        flavourDrawerContainer.classList.add('claim-drawer-overflow');
 
         if(productDrawerContainer.classList.contains('claim-drawer-close')){
             productDrawerContainer.classList.add('claim-drawer-close');
+            flavourDrawerContainer.classList.add('claim-drawer-overflow');
         }
 
         if (this.nodeName == "BUTTON") {
