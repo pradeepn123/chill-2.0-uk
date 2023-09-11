@@ -652,6 +652,40 @@
             height: fit-content;
             width: fit-content;
             margin-bottom: 40px;
+            a{
+                color: #83C3A1;
+                gap: 10px;
+                svg{
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+#NavigationTier2-1.navigation__child-tier, #NavigationTier2-1-mob.navigation__child-tier{
+    .navigation__column{
+        &:last-child{
+            .view_all_brands{
+                display: block !important;
+                a{
+                    color: #83C3A1 !important;
+                    font-weight: 700;
+                    @media (max-width: 1199px){
+                        color: #9792e4;
+                    }
+                    .view_all_brands_arrow{
+                        opacity: 1 !important;
+                        position: relative;
+                        right: 0;
+                        path{
+                            fill: #83C3A1;
+                            @media (max-width: 1199px){
+                                fill: #9792e4;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -1144,6 +1178,28 @@
             fill: #6EC59F !important;
             width: 10px;
             height: 10px;            
+        }
+    }
+    
+}
+#NavigationTier2-2 .container, #NavigationTier2-2-mob .container{
+    .view_all_brands{
+        color: #9792e4 !important;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 40px;
+        @media (max-width: 1199px){
+            display: block;
+            text-align: center;
+        }
+        svg{
+            position: relative;
+            margin-top: 5px;
+            right: -7px;
+            path{
+                fill: #9792e4;
+            }
         }
     }
 }

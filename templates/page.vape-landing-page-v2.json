@@ -136,7 +136,7 @@
             "button_redirection_link": "",
             "marquee_button_color": "",
             "marquee_image-1": "shopify:\/\/shop_images\/Pen_1500_watermelon_4083cecf-6fde-489c-9c81-90e317e8b0ff.png",
-            "scroll-duration": 10,
+            "scroll-duration": 12,
             "marquee_direction": "scrollRightToLeft"
           }
         },
@@ -368,7 +368,7 @@
             "marquee_image-2": "shopify:\/\/shop_images\/Pen_1500_lemon_6be718b4-af4b-400a-93c1-ab2b04b2a37f.png",
             "marquee_image-3": "shopify:\/\/shop_images\/Pen_1500_bluerazz_8b2f0cf1-8687-4f5f-b15a-2814ae5cc7f7.png",
             "marquee_image-4": "shopify:\/\/shop_images\/Pen_1500_cherry_c9b29454-2dfa-4a77-9ddf-aaa077875b2a.png",
-            "scroll-duration": 21,
+            "scroll-duration": 20,
             "marquee_direction": "scrollLeftToRight"
           }
         }

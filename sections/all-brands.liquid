@@ -1,0 +1,288 @@
+{% style %}
+    .all_brands_title{
+        font-size: {{ section.settings.title_font_size }}px;
+    }
+    @media (max-width: 768px){
+        .all_brands_title{
+            font-size: {{ section.settings.title_font_size_mobile }}px;
+        }
+    }
+    .brands_desktop{
+        display: grid !important;
+    }
+    .brands_mobile{
+        display: none !important;
+    }
+    .brand a {
+        border-bottom: 2px solid transparent;
+    }
+    .brand svg {
+        opacity: 0;
+        width: 10px;
+        height: 10px;
+    }
+    .brand a:hover {
+        border-bottom: 2px solid #9792e4;
+        transition: 0.3s ease;
+    }
+    .brand a:hover + svg {
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+    .brand a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
+    @media (max-width: 1023px){
+        .brands_desktop{
+            display: none !important;
+        }
+        .brands_mobile{
+            display: grid !important;
+        }
+    }
+{% endstyle %}
+
+{% assign alphabet = "#,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: ',' %}
+
+{% assign brandStartsWith = "" %}
+<div class="all_brands_container container">
+    <div class="all_brands_title">{{ section.settings.title }}</div>
+    <div class="alphabet-index">
+        <ul class="alphabet_list">
+            {% for letter in alphabet %}
+                {% unless letter == '#' %}
+                <a href="#letter-{{ letter }}"><li data-letter={{ letter }}>{{ letter }}</li></a>
+                {% else %}
+                <a href="#letter-hash"><li data-letter={{ letter }}>{{ letter }}</li></a>
+                {% endunless %}
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="brands_wrapper">
+        
+            {% for letter in alphabet %}
+                {% assign brandStartsWith = "" %}
+                    <div class="brand_by_alphabet" id="{% unless letter == "#" %}letter-{{ letter }}{% else %}letter-hash{% endunless %}">
+
+                        <ul class="brands_desktop">
+                            {% assign count = 0 %}
+                            
+                            {% for brand in collections %}
+                                    {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
+                                        {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
+                                        {% if letter == firstletter and brand.handle %}
+                                            {% if count == 0 %}
+                                                <div class="rows">
+                                            {% endif %}
+                                            {% assign count = count | plus: 1 %}
+                                            <li class="brand">
+                                                <a href="/collections/{{ brand.handle }}">{{ brand.title }}</a>
+                                                {% render 'svg-brands-arrow' %}
+                                            </li>
+                                            {% assign brandStartsWith = letter %}
+                                            {% if count == 5 %}
+                                                <br>
+                                            {% endif %}
+                                            {% if count == 5 %}
+                                                {% assign count = 0 %}
+                                            </div>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                    
+                                {% endfor %}
+                            
+                        </ul>
+
+                        <ul class="brands_mobile">
+                            {% assign count = 0 %}
+                            {% for brand in collections %}
+                                    {% if brand.template_suffix == 'new_brands' or brand.template_suffix == 'chill_brand' %}
+                                        {% assign firstletter = brand.handle | truncate: 1, '' | upcase %}
+                                        {% if letter == firstletter and brand.handle %}
+                                            {% if count == 0 %}
+                                                <div class="rows">
+                                            {% endif %}
+                                            {% assign count = count | plus: 1 %}
+                                            <li class="brand brand_mobile"><a href="/collections/{{ brand.handle }}">{{ brand.title }}</a></li>
+                                            {% assign brandStartsWith = letter %}
+                                            {% if count == 10 %}
+                                                <br>
+                                            {% endif %}
+                                            {% if count == 10 %}
+                                                {% assign count = 0 %}
+                                            </div>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                    
+                                {% endfor %}
+                            
+                        </ul>
+
+                        <h1>{{ brandStartsWith }}</h1>
+                    </div>
+            {% endfor %}
+    </div>
+</div>
+
+<script>
+    
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        function removeActiveClassFromIndex(){
+            document.querySelectorAll('[data-letter]').forEach(elem => {
+                if(elem.parentElement.classList.contains('active')){
+                    elem.parentElement.classList.remove('active')
+                }
+            })
+        } 
+        function removeActiveClassFromContent(){
+            document.querySelectorAll('.brand_by_alphabet').forEach(elem => {
+                if(elem.classList.contains('active')){
+                    elem.classList.remove('active')
+                }
+            })
+        } 
+
+
+        document.querySelectorAll(".alphabet_list a").forEach(el => {
+            const target = el.getAttribute('href');
+            if (!document.querySelector(target + ' h1').innerHTML) {
+                el.style.opacity = '.4';
+                el.style.pointerEvents = 'none';
+            }
+            else{
+                el.setAttribute('active','active');
+                document.querySelector(target).setAttribute('active', 'active')
+            }
+
+            el.addEventListener('click', () => {
+                console.log("clicked")
+                removeActiveClassFromContent();
+                removeActiveClassFromIndex();
+                el.classList.add('active');
+                document.querySelector(target).classList.add('active');
+            })
+        })
+        document.querySelectorAll(".alphabet_list a[active]")[0].classList.add('active');
+        document.querySelectorAll('.brand_by_alphabet[active]')[0].classList.add('active');
+        
+        
+        
+        var brandByAlphabet = document.querySelectorAll('.brand_by_alphabet');
+        brandByAlphabet.forEach(brandList => {
+            if(brandList.innerText.trim().length == 0){
+                brandList.classList.add('inactive')
+            }
+        })
+
+        var rows = document.querySelectorAll('.rows');
+        rows.forEach(row => {
+            if(row.innerText.trim().length == 0){
+                row.style.display = 'none';
+            }
+        })
+
+        // Highlight the respective index on scroll
+        const sections = [...document.querySelectorAll('.brand_by_alphabet')];
+        const link = (id) => document.querySelector(`.alphabet_list a[href="#${id}"]`);
+
+        
+
+        const inView = (element) => {
+            var top = element.offsetTop;
+            var height = element.offsetHeight - 270;
+            
+            while(element.offsetParent){
+                element = element.offsetParent;
+                top += element.offsetTop;
+            }
+            
+            return (
+                top < (window.pageYOffset + window.innerHeight) && 
+                (top + height) > window.pageYOffset
+            );
+        };
+
+            const init = () => {
+            function update() {
+                console.log("update called")
+                let next = false;
+
+                let activeAlphabet = document.querySelector(`.alphabet_list a.active`);
+                if (activeAlphabet) {
+                    const width = document.querySelector(`.alphabet_list`).offsetWidth;
+                    let activeOffsetLeft = activeAlphabet.offsetLeft;
+                    let diff = activeOffsetLeft - width;
+                    document.querySelector('.alphabet-index').scrollTo(diff + 30, 0)
+                }
+
+                sections.forEach(section => {
+                const current = link(section.id);
+                if (inView(section) && !next){
+                    current.classList.add('active');
+                    section.classList.add('active');
+                    next = true;
+                } else {
+                    current.classList.remove('active');
+                    section.classList.remove('active');
+                }
+                });
+            }
+            update();
+            
+            window.addEventListener('wheel', (e) => {
+                if(e.deltaY){
+                    update();
+                }
+            });
+            window.addEventListener('touchmove', (e) => {
+                    update();
+            });
+            }
+
+            init()
+        document.querySelector('.alphabet_list a.active')
+    })
+</script> 
+{% schema %}
+{
+    "name": "All brands",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Page title",
+            "default": "<p>Page title</p>"
+        },
+        {
+            "type": "range",
+            "id": "title_font_size",
+            "label": "Title font size - Desktop",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "default": 52
+        },
+        {
+            "type": "range",
+            "id": "title_font_size_mobile",
+            "label": "Title font size - mobile",
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "default": 28
+        }
+    ],
+    "presets": [
+        {
+            "name": "All brands"
+        }
+    ]
+}
+{% endschema %}

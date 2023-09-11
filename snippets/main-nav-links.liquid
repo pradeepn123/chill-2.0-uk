@@ -259,8 +259,9 @@
                 {% endfor %}
               {% endif%}
             {% endfor %}
+            
           {% endif %}
-
+          
           {%- if small_promo_count > 0 -%}
               {%- if mobile == false -%}
                 {%- for block in section.blocks -%}
@@ -311,6 +312,11 @@
               {%- endif -%}
           {%- endif -%}
         </ul>
+        <a class="view_all_brands" href="/pages/all-brands">View All Brands 
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1" class="view_all_brands_arrow">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"></path>
+          </svg>
+        </a>
       {% endif %}
       
       {% if link.links.size != 1 %}
@@ -369,6 +375,13 @@
                             </a>
                           </li>
                         {% endfor %}
+                        <li class="navigation__item view_all_brands" style="display: none;">
+                          <a class="navigation__link" href="/pages/all-brands">View All Brands 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1" class="view_all_brands_arrow">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"></path>
+                          </svg>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   {% endif %}
