@@ -10,6 +10,20 @@
     .brands_desktop{
         display: grid !important;
     }
+    .brands_desktop .brand{
+        white-space: nowrap; 
+        width: 267px; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    @media (max-width: 390px){
+        .brands_mobile .brand{
+            width: 165px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
     .brands_mobile{
         display: none !important;
     }
@@ -28,11 +42,6 @@
     .brand a:hover + svg {
         opacity: 1;
         transition: 0.5s ease;
-    }
-    .brand a {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; 
     }
     @media (max-width: 1023px){
         .brands_desktop{
