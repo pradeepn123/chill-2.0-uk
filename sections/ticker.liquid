@@ -1,0 +1,317 @@
+{{ 'ticker.css' | asset_url | stylesheet_tag }}
+
+{%- capture section_styles -%}
+{%- if section.settings.background != 'hide' -%}
+    {%- liquid
+        capture color
+            if section.settings.background == 'color'
+                echo section.settings.color_background
+            else
+                echo section.settings.gradient
+            endif
+        endcapture
+    -%}
+    {%- if color != "rgba(0,0,0,0)" and color != blank -%}
+        #ticker-{{ section.id }}{
+            --color-section-background: {{ color }};
+        }
+    {%- endif -%}
+    {%- if section.settings.remove_bottom_spacing -%}
+        #ticker-{{ section.id }}.section-background,
+        #ticker-{{ section.id }} .section-background{
+            padding-bottom: 0;
+        }
+    {%- endif -%}
+{%- endif -%}
+{%- if section.settings.color_svg != "rgba(0,0,0,0)" -%}
+    #ticker-{{ section.id }} .ticker__icon svg path{
+        fill: {{ section.settings.color_svg }};
+    }
+{%- endif -%}
+{%- if section.settings.color_text != "rgba(0,0,0,0)" -%}
+    #ticker-{{ section.id }} p{
+        color:{{section.settings.color_text}};
+    }
+    {%- endif -%}
+{%- endcapture -%}
+{%- if section_styles != blank -%}
+    <style>{{ section_styles }}</style>
+{%- endif -%}
+
+{%- if section.settings.url != blank -%}
+    {%- assign html_tag_open = '<a' | append: ' href="' | append: section.settings.url | append:'"' -%}
+    {%- assign html_tag_close = '</a>' -%}
+{%- else -%}
+    {%- assign html_tag_open = '<div' -%}
+    {%- assign html_tag_close = '</div>' -%}
+{%- endif -%}
+
+{% style %}
+    .section-background{
+        background: {{ section.settings.gradient }};
+        color: {{ section.settings.color_text }};
+    }
+    {% if section.settings.background == 'color' %}
+        .section-background{
+            background: {{ section.settings.color_background }};           
+        }
+    {% endif %}
+
+    .ticker__icon img {
+        width: {{ section.settings.carousel_image_width }}px !important; 
+        height: {{ section.settings.carousel_image_height }}px !important;
+        border-radius: {{ section.settings.carousel_image_border_radius }}px;
+    }
+    @media (min-width: 768px) and (max-width: 1199px){
+        .ticker__icon img{
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+    @media screen and (max-width: 767px){
+        .ticker__icon img{
+            width: {{ section.settings.carousel_image_width_mobile }}px;
+            height: {{ section.settings.carousel_image_height_mobile }}px;
+        }
+    }
+    @media screen and (max-width: 578px){
+        .ticker__icon img{
+            width: 226px !important; 
+            height: 226px !important;
+        }
+    }
+{% endstyle %}
+
+{{ html_tag_open }} id="ticker-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
+     data-section-name="ticker">  
+    {%- capture content -%}
+    {% for block in section.blocks %}
+            <div class="ticker__icon">
+                {%- assign image = block.settings.image_block -%}
+                {%- assign imagesize = block.settings.image_block.width | append: 'x' -%}
+                {%- capture srcset -%}{{ block.settings.image_block | img_url: imagesize }} 1x, {{ block.settings.image_block | img_url: imagesize, scale: 2 }} 2x{%- endcapture -%}
+                {{
+                image
+                | image_url: width: image.width
+                | image_tag:
+                    loading: 'lazy',
+                    width: image.width,
+                    height: image.height,
+                    srcset: srcset
+                }}
+            </div>
+    {% endfor %}
+    {%- endcapture -%}
+
+    <div class="desktop_mobile">
+        {% if section.settings.section_redirection_link != blank %}<a href="{{ section.settings.section_redirection_link }}" target="_blank">{% endif %}
+        <ticker-section class="ticker {{ section.settings.text_size }}" style="--ticker-delay:{{ section.settings.ticker_time }}s">
+            <div class="ticker__container {{ section.settings.direction }}">
+                {{ content }}
+            </div>
+        </ticker-section>
+        <noscript>
+            <div class="ticker {{ section.settings.text_size }}" style="--ticker-delay:{{ section.settings.ticker_time }}s">
+                {%- for i in (1..9) -%}
+                    <div class="ticker__container ticker--animation {{ section.settings.direction }}">
+                        {% if block.settings.image_redirection_link != blank %}
+                            <a href="{{ block.settings.image_redirection_link }}">
+                        {% endif %}
+                            {{ content }}
+                        {% if block.settings.image_redirection_link != blank %}
+                        </a>
+                        {% endif %}
+                    </div>
+                {%- endfor -%}
+            </div>
+        </noscript>
+        {% if section.settings.section_redirection_link != blank %}</a>{% endif %}
+    </div>
+
+    {{ html_tag_close }}
+
+<script>
+    class tickerHandler extends HTMLElement {
+        constructor() {
+            super();
+            this.width = 0;
+            this.ticker = this.querySelector('.ticker__container');
+            Shopify.designMode ? setTimeout(this.resizeHandler.bind(this), 100) : this.resizeHandler();
+            window.addEventListener("resize", this.resizeHandler.bind(this), false);
+        }
+        resizeHandler(){
+            if(this.width == window.innerWidth) return;
+                this.width = window.innerWidth;
+                this.ticker.classList.remove('ticker--animation');
+                var boxes = this.querySelectorAll('.ticker--clone');
+                if(boxes.length){
+                    boxes.forEach(e => e.remove());
+                }
+                var length = window.innerWidth / this.ticker.offsetWidth,
+                clone = false;
+                length = length==Infinity?5:length;
+                for(var i=0; i < length; i++){
+                    clone = this.ticker.cloneNode(true);
+                    clone.classList.add('ticker--clone');
+                    clone.classList.add('ticker--animation');
+                    this.append(clone);
+                }
+            this.ticker.classList.add('ticker--animation');
+        }
+    }
+    customElements.define('ticker-section', tickerHandler);
+</script>
+
+{% schema %}
+    {
+        "name": "ticker marquee",
+        "tag": "section",
+        "disabled_on": {
+            "groups": ["header"]
+        },
+        "settings": [
+            {
+                "type": "header",
+                "content": "LAYOUT"
+            },
+            { 
+                "type": "url",
+                "id": "section_redirection_link",
+                "label": "Section redirection link"
+            },
+            {
+                "type": "range",
+                "id": "carousel_image_width",
+                "label": "Carousel image width",
+                "default": 400,
+                "min": 100,
+                "max": 500,
+                "step": 10
+            },
+            {
+                "type": "range",
+                "id": "carousel_image_height",
+                "label": "Carousel image height",
+                "default": 400,
+                "min": 100,
+                "max": 500,
+                "step": 10
+            },
+            {
+                "type": "range",
+                "id": "carousel_image_border_radius",
+                "label": "Carousel image - Border radius",
+                "default": 33,
+                "min": 0,
+                "max": 100,
+                "step": 1
+            },
+            {
+                "type": "range",
+                "id": "carousel_image_width_mobile",
+                "label": "Carousel image width for mobile",
+                "default": 250,
+                "min": 100,
+                "max": 500,
+                "step": 10
+            },
+            {
+                "type": "range",
+                "id": "carousel_image_height_mobile",
+                "label": "Carousel image height for mobile",
+                "default": 250,
+                "min": 100,
+                "max": 500,
+                "step": 10
+            },
+            {
+                "type": "range",
+                "id": "ticker_time",
+                "min": 20,
+                "max": 50,
+                "step": 1,
+                "unit": "s",
+                "label": "Ticker time",
+                "default": 20
+            },
+            {
+                "type": "select",
+                "id": "direction",
+                "options": [
+                {
+                    "value": "ticker-to-left",
+                    "label": "Left"
+                },
+                {
+                    "value": "ticker-to-right",
+                    "label": "Right"
+                }        
+                ],
+                "default": "ticker-to-left",
+                "label": "Left"
+            },
+            {
+                "type": "select",
+                "id": "background_spacing",
+                "options": [
+                {
+                    "value": "none",
+                    "label": "None"
+                },
+                {
+                    "value": "xsmall",
+                    "label": "Extra small"
+                },          
+                {
+                    "value": "small",
+                    "label": "Small"
+                },
+                {
+                    "value": "medium",
+                    "label": "Medium"
+                },
+                {
+                    "value": "normal",
+                    "label": "Normal"
+                }
+                ],
+                "default": "small",
+                "label": "Top, bottom spacing"
+            },
+            {
+                "type": "checkbox",
+                "id": "remove_bottom_spacing",
+                "default": false,
+                "label": "Remove bottom spacing"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Image block",
+                "type": "select",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image_block",
+                        "label": "Image block"
+                    },
+                    {
+                        "type": "url",
+                        "id": "image_redirection_link",
+                        "label": "Image redirection link"
+                    },
+                    {
+                        "type": "color",
+                        "id": "carousel_image_background",
+                        "label": "Carousel image - Background color"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Ticker Marquee"
+            }
+        ]
+    }
+{% endschema %}

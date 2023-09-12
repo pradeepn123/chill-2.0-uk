@@ -1094,7 +1094,6 @@ document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
 
         if(productDrawerContainer.classList.contains('claim-drawer-close')){
             productDrawerContainer.classList.add('claim-drawer-close');
-            flavourDrawerContainer.classList.add('claim-drawer-overflow');
         }
 
         if (this.nodeName == "BUTTON") {
@@ -1109,6 +1108,7 @@ document.querySelectorAll('.product-drawer-summary__close').forEach(closebtn => 
         closebtn.parentElement.classList.remove('claim-drawer-open'); 
         document.getElementById('productDrawerBackground').style.display = 'none';
         document.querySelector('body').classList.remove('cart-drawer-open');
+        document.getElementById('flavourDrawerContainer').classList.remove('claim-drawer-overflow');
 
         if (closebtn.getAttribute("data-modal-type") == 'single') {
             closeFlavourDrawer()
