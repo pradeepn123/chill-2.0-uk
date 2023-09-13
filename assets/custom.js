@@ -1049,7 +1049,8 @@ function openFlavourDrawer(){
     document.getElementById('flavourDrawerContainer').style.display='block'; 
     document.getElementById('flavourDrawerBackground').style.display='block';
     document.getElementById('flavourDrawerContainer').classList.add('claim-drawer-open');
-      document.querySelector("body").classList.add("cart-drawer-open")
+    document.querySelector('body').style.overflow = 'hidden';
+      document.querySelector("body").classList.add("cart-drawer-open");
       if(document.getElementById('flavourDrawerContainer').classList.contains('claim-drawer-close')){
         document.getElementById('flavourDrawerContainer').classList.add('claim-drawer-close');
       }
@@ -1057,6 +1058,7 @@ function openFlavourDrawer(){
 
 function closeFlavourDrawer() {
     document.getElementById('flavourDrawerContainer').classList.remove('claim-drawer-open');
+    document.querySelector('body').style.overflow = 'scroll';
     document.getElementById('flavourDrawerBackground').style.display = 'none';
     document.querySelector('body').classList.remove('cart-drawer-open');
 }
@@ -1086,7 +1088,8 @@ document.querySelectorAll('[data-zero-product-modal]').forEach(element => {
         const flavourDrawerContainer = document.querySelector(`#flavourDrawerContainer`)
         const closeBtn = productDrawerContainer.querySelector(".product-drawer-summary__close")
         document.getElementById('productDrawerBackground').style.display = 'none';
-        document.querySelector("body").classList.add("cart-drawer-open")
+        document.querySelector("body").classList.add("cart-drawer-open");
+        flavourDrawerContainer.scrollTop = 0;
 
         productDrawerContainer.style.display = 'block';
         productDrawerContainer.classList.add('claim-drawer-open');
