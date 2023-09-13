@@ -654,6 +654,11 @@ body.overflow-hidden {
   }
 }
 
+body.reveal-mobile-nav--revealed {
+  overflow-y: hidden !important;
+  overflow: hidden;
+}
+
 /* header css here */
 .pageheader .logo-area .logo-area__left .navigation ul li a {
   font-weight: 600;

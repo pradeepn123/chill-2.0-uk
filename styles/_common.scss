@@ -719,3 +719,8 @@ div#main-nav{
         font-size: 52px !important;
     }
 }
+
+body.reveal-mobile-nav--revealed {
+    overflow-y: hidden !important;
+    overflow: hidden;
+}
