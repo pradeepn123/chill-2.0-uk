@@ -1,0 +1,106 @@
+[id*="ticker-"]{
+    display: block;
+    text-decoration: none;
+    color:var(--color-base);
+}
+.no-js ticker-section{
+    display: none;
+}
+.ticker{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+.ticker__container{
+    display: flex;
+    align-items: center;
+}
+.ticker--animation{
+    animation: ticker var(--ticker-delay, 15s) infinite linear;
+}
+.ticker--animation.ticker-to-right{
+    animation-direction: reverse;
+}
+/* [id*=ticker]:hover .ticker__container {
+    animation-play-state: paused;
+} */
+.ticker__icon{
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: 40px;
+}
+.ticker__icon img{
+    max-width: unset;
+    object-fit: cover;
+}
+.section-background--xsmall .ticker.ticker-text-2{
+   line-height: 130%;
+}
+.section-background.section-background--small{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.section-background.section-background--xsmall{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.section-background.section-background--medium{
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.section-background.section-background--normal{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.section-background.section-background--none{
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.hidden{
+    display: none;
+}
+.show-on--mobile{
+    display: none;
+}
+.desktop_mobile{
+    display: block;
+    cursor: pointer;
+}
+.desktop_mobile .ticker-to-left {
+    text-align: center;
+}
+@media (max-width:767px){
+    .show-on--mobile{
+        display: block;
+    }
+}
+@media (max-width:576px){
+    .ticker__icon,
+    .ticker__container p{
+      margin-left: 28px;
+    }
+    .section-background.section-background--medium{
+        margin-top: 70px;
+        margin-bottom: 110px;
+    }
+}
+@-moz-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+}
+@-o-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+}
+@keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+}
