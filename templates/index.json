@@ -240,7 +240,7 @@
         "slide_transition": "fade",
         "slide_navigation": "arrows",
         "autoplay": true,
-        "autoplay_speed": 7
+        "autoplay_speed": 15
       }
     },
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
