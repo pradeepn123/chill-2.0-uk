@@ -59,11 +59,22 @@
         "show_excerpts": true,
         "crop_ratio": "1.78"
       }
+    },
+    "13942b05-404d-4b2f-8952-306e8fcd4772": {
+      "type": "newsletter",
+      "settings": {
+        "newsletter_logo": "",
+        "title": "Subscribe to our newsletter",
+        "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+        "terms_cond": "<p>By signing up via email, you expressly consent to receive marketing communications from Chill Corp. See privacy policy and terms of service for details.<\/p>",
+        "color_bg": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
     "3ea2fac5-be86-481d-abfe-8fe100c63ad4",
-    "ad4971a7-756b-4813-8ab0-c6d09493eb89"
+    "ad4971a7-756b-4813-8ab0-c6d09493eb89",
+    "13942b05-404d-4b2f-8952-306e8fcd4772"
   ]
 }
