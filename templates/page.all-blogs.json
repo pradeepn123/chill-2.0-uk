@@ -1,0 +1,69 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "3ea2fac5-be86-481d-abfe-8fe100c63ad4": {
+      "type": "search-page",
+      "blocks": {
+        "1f7c45c5-0d0b-48b4-9829-25d3deea5c14": {
+          "type": "select",
+          "settings": {
+            "article": "chill-blog\/meditation-changes-lives-here-s-how"
+          }
+        },
+        "a98fca6a-c121-42bd-86f9-98a192051dd5": {
+          "type": "select",
+          "settings": {
+            "article": "chill-blog\/meet-fungtn-alcohol-free-beer-made-from-functional-mushrooms"
+          }
+        },
+        "c7e66884-3748-4f4f-8078-e6ca0f41c091": {
+          "type": "select",
+          "settings": {
+            "article": "chill-blog\/introducing-josh-tarlo-revolutionizing-the-beverage-industry-with-headstand"
+          }
+        }
+      },
+      "block_order": [
+        "1f7c45c5-0d0b-48b4-9829-25d3deea5c14",
+        "a98fca6a-c121-42bd-86f9-98a192051dd5",
+        "c7e66884-3748-4f4f-8078-e6ca0f41c091"
+      ],
+      "settings": {
+        "search_title": "<p>Search<strong> Blogs<\/strong><\/p>"
+      }
+    },
+    "ad4971a7-756b-4813-8ab0-c6d09493eb89": {
+      "type": "all-blogs",
+      "blocks": {
+        "d023a729-b30d-4bab-bf19-a802beacf8b7": {
+          "type": "select",
+          "settings": {
+            "blog": "chill-blog"
+          }
+        }
+      },
+      "block_order": [
+        "d023a729-b30d-4bab-bf19-a802beacf8b7"
+      ],
+      "settings": {
+        "title": "Blog posts",
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3ea2fac5-be86-481d-abfe-8fe100c63ad4",
+    "ad4971a7-756b-4813-8ab0-c6d09493eb89"
+  ]
+}

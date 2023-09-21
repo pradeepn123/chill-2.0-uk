@@ -266,6 +266,38 @@ $(document).ready(function () {
             }
         ]
     });
+
+
+
+    if(window.screen.width < 1024){
+        $('.blog-category-list-wrap').slick({
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+            draggable: true,
+            arrows: false,
+            infinite: false,
+            responsive:[
+                {
+                    breakpoint: 768,
+                    settings:{
+                        slidesToShow: 1.2
+                    }
+                }
+            ]
+        })
+        var $slider = $('.blog-category-list-wrap');
+      
+        $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
+            var $progressBar = $(this).siblings()[1];
+            console.log($progressBar)
+        var calc = ((nextSlide) / (slick.slideCount-1)) * 100;
+        
+        $progressBar.style.backgroundSize = calc + '% 100%'
+        $progressBar.setAttribute('aria-valuenow', calc);
+      });
+    }
+    
+
     $('.featured_blocks_container').slick({
         slidesToShow: 8,
         slidesToScroll: 1,

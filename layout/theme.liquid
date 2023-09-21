@@ -165,6 +165,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Begin loadMoreArticles code -->
+  {% if template contains 'blog' %}
+    <script src="{{ 'load_more_cards.js' | asset_url }}" defer="defer" ></script>
+  {% endif %}
+  <!-- End loadMoreArticles code -->
   <!-- Begin ReCharge code -->
   {% include 'subscription-theme-footer' %}
   <!-- End ReCharge code -->
