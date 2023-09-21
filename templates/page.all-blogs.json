@@ -46,10 +46,17 @@
           "settings": {
             "blog": "chill-blog"
           }
+        },
+        "50aacb72-8c8f-48b9-96ec-c6a77bab9313": {
+          "type": "select",
+          "settings": {
+            "blog": "news"
+          }
         }
       },
       "block_order": [
-        "d023a729-b30d-4bab-bf19-a802beacf8b7"
+        "d023a729-b30d-4bab-bf19-a802beacf8b7",
+        "50aacb72-8c8f-48b9-96ec-c6a77bab9313"
       ],
       "settings": {
         "title": "Blog posts",
