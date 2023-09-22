@@ -577,6 +577,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "36a3bf99-5af7-4f7c-8adc-323ccc14bc85": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Quanna-HP-Ban-Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Quanna-HP-Ban-Mobile.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>Quanna: Where \nScience and Medicine\nget the Chance to\nbe Candid<\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>1\/10 women experience painful sex and more<br\/>than 50% of women in the UK are not satisfied<br\/>with their sex lives. Quanna are here to change that!<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "LEARN HOW",
+            "button_url_1": "https:\/\/uk.chill.com\/blogs\/chill-blog\/discovering-quanna-redefining-pleasure-and-wellness",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -586,7 +613,8 @@
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
         "4538d984-09e9-4bcd-814c-d49bf68fca44",
         "200ca125-cf5d-4260-9a88-958b49fc402c",
-        "4bb6e3ea-5c7f-4890-be97-169ada953323"
+        "4bb6e3ea-5c7f-4890-be97-169ada953323",
+        "36a3bf99-5af7-4f7c-8adc-323ccc14bc85"
       ],
       "settings": {
         "height": "fixed",
