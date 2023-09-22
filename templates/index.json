@@ -564,7 +564,7 @@
             "title_size": 56,
             "title_size_mobile": 36,
             "use_h1": false,
-            "text": "<p>Why meditation isn't just for yogi's,<br\/>and why it's the ultimate stress buster!<\/p>",
+            "text": "<p>Why meditation isn't just for yogi's, and<br\/>why it's the ultimate stress buster!<\/p>",
             "heading_color": "#000",
             "text_color": "#000",
             "enlarge_text": true,
