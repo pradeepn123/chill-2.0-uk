@@ -245,9 +245,12 @@
     },
     "dcce8db9-f5ca-4b3c-a666-66fce19608bb": {
       "type": "marquee",
+      "custom_css": [
+
+      ],
       "settings": {
         "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
-        "marquee_background_color": "#6ec59f",
+        "marquee_background_color": "#9792e4",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
         "marquee_text_font_size_mobile": 16
@@ -491,13 +494,41 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "8cbd6ac0-87e3-4168-9393-58d9ae864208": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Mobile.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>Sneaky Effects \nof Stress You \nMight Not Notice<\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>We’ve unpacked ten ways stress is<br\/>sneaking up on you, so you can <br\/>watch your back!<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "HAVE A READ!",
+            "button_url_2": "shopify:\/\/blogs\/chill-blog",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
         "c9689645-d1f7-40b8-ada2-22ff4755e741",
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
-        "4538d984-09e9-4bcd-814c-d49bf68fca44"
+        "4538d984-09e9-4bcd-814c-d49bf68fca44",
+        "8cbd6ac0-87e3-4168-9393-58d9ae864208"
       ],
       "settings": {
         "height": "fixed",
