@@ -414,8 +414,36 @@
             "text_alignment": "center left"
           }
         },
+        "8cbd6ac0-87e3-4168-9393-58d9ae864208": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Mobile.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>Sneaky Effects \nof Stress You \nMight Not Notice<\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>We’ve unpacked ten ways stress is<br\/>sneaking up on you, so you can <br\/>watch your back!<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "HAVE A READ!",
+            "button_url_2": "shopify:\/\/blogs\/chill-blog",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "c9689645-d1f7-40b8-ada2-22ff4755e741": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_MEDIUM_6c079c2d-0bb0-4fa3-a226-ab974b49876d.jpg",
             "mobile_image": "shopify:\/\/shop_images\/FUNGTN_Blog_Banner_MEDIUM_30faf9d7-3fe0-4e08-a035-7050428add4b.jpg",
@@ -443,6 +471,7 @@
         },
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_MEDIUM_8586d869-1c19-41fe-8e28-70970126aba0.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_MEDIUM_011f539a-f48c-47b5-85ca-25a8d3f37881.jpg",
@@ -495,27 +524,27 @@
             "text_alignment": "center left"
           }
         },
-        "8cbd6ac0-87e3-4168-9393-58d9ae864208": {
+        "200ca125-cf5d-4260-9a88-958b49fc402c": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Desktop.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Mobile.jpg",
+            "image": "shopify:\/\/shop_images\/HeadStand-HP-Ban-Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Headstand-HP-Ban-Mobile.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong>Sneaky Effects \nof Stress You \nMight Not Notice<\/strong>",
+            "title": "<strong>How Headstand is \nMade From Coffee \nLeaf But Tastes \nNothing Like Coffee!<\/strong>",
             "title_size": 56,
             "title_size_mobile": 36,
             "use_h1": false,
-            "text": "<p>We’ve unpacked ten ways stress is<br\/>sneaking up on you, so you can <br\/>watch your back!<\/p>",
+            "text": "<p>How Josh Tarlo is transforming the<br\/>beverage industry with Headstand.<\/p>",
             "heading_color": "#000",
             "text_color": "#000",
             "enlarge_text": true,
-            "button_label_1": "",
+            "button_label_1": "INTRIGUING RIGHT?",
             "button_url_1": "",
-            "button_label_2": "HAVE A READ!",
-            "button_url_2": "shopify:\/\/blogs\/chill-blog",
+            "button_label_2": "",
+            "button_url_2": "",
             "button_background_color": "#9792e4",
             "button_text_color": "#FFFFFF",
             "button_text_font_size": 20,
@@ -525,10 +554,11 @@
       },
       "block_order": [
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
+        "8cbd6ac0-87e3-4168-9393-58d9ae864208",
         "c9689645-d1f7-40b8-ada2-22ff4755e741",
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
         "4538d984-09e9-4bcd-814c-d49bf68fca44",
-        "8cbd6ac0-87e3-4168-9393-58d9ae864208"
+        "200ca125-cf5d-4260-9a88-958b49fc402c"
       ],
       "settings": {
         "height": "fixed",
