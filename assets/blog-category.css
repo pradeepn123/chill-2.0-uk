@@ -64,7 +64,7 @@ a.view_all_link svg{
 }
 @media (max-width: 1023px){
     .blog_breadcrumb{
-        margin-top: -150px;
+        margin-top: -77px;
         position: absolute;
     }
 }
