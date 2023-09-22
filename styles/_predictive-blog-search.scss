@@ -158,6 +158,7 @@ predictive-search{
         margin: 0 auto 100px 0;
         @media (max-width: 1199px){
             width: 100%;
+            gap: 50px;
         }
         .blog-category-item{
             flex-basis: calc(100% / 3 - 50px);

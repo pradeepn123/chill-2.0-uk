@@ -121,11 +121,15 @@ span.author:after {
     font-size: 16px;
     font-weight: 600;
     max-height: 100px;
-    font-weight: 600;
     max-width: 100%;
     word-wrap: break-word;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+@media(max-width: 767px){
+    .article_description{
+        font-weight: 400;
+    }
 }
 .slick-slide{
     margin: 0 20px 0 0;
