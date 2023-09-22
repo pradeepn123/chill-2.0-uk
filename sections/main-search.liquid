@@ -15,7 +15,7 @@
     <div class="container">
       <h1 class="visually-hidden">{{ 'general.search.title' | t }}</h1>
 
-      <div class="main-search">
+      <div class="main-search search-page">
         <div class="main-search__container">
           <form class="main-search__form" action="{{ routes.search_url }}" method="get" autocomplete="off">
             <input type="hidden" name="type" value="{{ settings.search_type }}" />
@@ -209,12 +209,11 @@
 {% endpaginate %}
 <script>
   if(window.location.search.includes('?type=article')){
+    let searchTerm = "{{ search.terms }}"
+    document.querySelector('.main-search.search-page').style.display = 'none';
     document.querySelector('.utility-bar__left').innerHTML = '<a href="/pages/blog" class="blog_breadcrumb">< All Blogs</a>';
     document.querySelector('.utility-bar__right').style.opacity = '0';
-    if(window.screen.width < 1024){
-      document.querySelector('.utility-bar__left .blog_breadcrumb').style.marginTop = '-150px'
-    }
-  }
+  
   let blog_titles = [];
   document.querySelectorAll(".blog-category-section .product-block").forEach(item => {
     const title = item.getAttribute("data-title")
@@ -224,14 +223,12 @@
   document.querySelectorAll(".blog-category-section .product-block").forEach(item => {
     item.style.display = "none";
   })
-  
-  console.log(blog_titles)
+
   blog_titles.forEach(blog => {
-    console.log(blog, document.querySelector(`[data-title="${blog}"]`))
     document.querySelector(`[data-title="${blog}"]`).style.display = 'block';
   })
-  document.querySelector('.utility-bar__centre .utility-bar__item').innerHTML = `We found <strong>${blog_titles.length} results</strong>`
-  
+  document.querySelector('.utility-bar__centre .utility-bar__item').innerHTML = `We found <strong>${blog_titles.length} results</strong> for <strong>'${searchTerm}'</strong>`
+}
 </script>
 {% schema %}
   {

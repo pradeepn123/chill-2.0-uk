@@ -67,7 +67,7 @@ class PredictiveSearch extends HTMLElement {
     removeDuplicates(){
       let blog_titles = [];
       document.querySelectorAll("#predictive-search-results .blog-category-item").forEach(item => {
-        const title = item.querySelector('.title_wrap_before a').innerHTML
+        const title = item.getAttribute("data-title")
         blog_titles.push(title.trim())
       })
       blog_titles = [...new Set(blog_titles)]
@@ -83,7 +83,7 @@ class PredictiveSearch extends HTMLElement {
     }
     getSearchResults(searchTerm) {
       // this.predictiveSearchResults.innerHTML = '<div class="blog_loader"></div>'
-      fetch(`/search/suggest?q=${searchTerm}&resources[type]=article&resources[options][fields]=body,title,author,tag&section_id=predictive-search&_limit=20`)
+      fetch(`/search/suggest?q=${searchTerm}&resources[type]=article&resources[options][fields]=body,title,author,tag&section_id=predictive-search`)
         .then((response) => {
           if (!response.ok) {
             var error = new Error(response.status);
@@ -102,6 +102,7 @@ class PredictiveSearch extends HTMLElement {
           this.open();
           this.predictiveSearchResults.querySelector('#search_results_blogs').href = `/search?type=article&q=${searchTerm}`
           this.input.addEventListener("keypress", function(event) {
+            console.log('event.key', event.key)
             if (event.key === "Enter") {
               event.preventDefault();
               window.location = `/search?type=article&q=${searchTerm}`
