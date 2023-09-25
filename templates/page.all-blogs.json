@@ -52,11 +52,32 @@
           "settings": {
             "blog": "news"
           }
+        },
+        "176d4e23-390d-472d-8cba-180a7dce0cee": {
+          "type": "select",
+          "settings": {
+            "blog": "brands"
+          }
+        },
+        "13d4f8a6-062e-48d4-92e7-98ce2504d6e0": {
+          "type": "select",
+          "settings": {
+            "blog": "lifestyle"
+          }
+        },
+        "cf3fb118-7194-45cb-97d1-bb936cfb00c6": {
+          "type": "select",
+          "settings": {
+            "blog": "ingredients"
+          }
         }
       },
       "block_order": [
         "d023a729-b30d-4bab-bf19-a802beacf8b7",
-        "50aacb72-8c8f-48b9-96ec-c6a77bab9313"
+        "50aacb72-8c8f-48b9-96ec-c6a77bab9313",
+        "176d4e23-390d-472d-8cba-180a7dce0cee",
+        "13d4f8a6-062e-48d4-92e7-98ce2504d6e0",
+        "cf3fb118-7194-45cb-97d1-bb936cfb00c6"
       ],
       "settings": {
         "title": "Blog posts",
