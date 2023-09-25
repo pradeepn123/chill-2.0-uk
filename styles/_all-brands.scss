@@ -1,0 +1,97 @@
+.all_brands_container{
+    color: #000;
+    height: 100%;
+    margin: 60px auto;
+    @media (max-width: 767px){
+        margin: 24px 0;
+    }
+    .all_brands_title p{
+        margin-bottom: 25px;
+        @media (max-width: 767px){
+            margin-bottom: 0;
+        }
+        @media (min-width: 768px) and (max-width: 1023px){
+            font-size: 46px;
+        }
+    }
+    .alphabet-index{
+      position: sticky;
+      top: 91px;
+      padding: 24px 0;
+      border-bottom: 1px solid #D4D4D4;
+      background: #fff;
+      overflow: auto;
+      @media (max-width: 767px){
+        top: 53px;
+      }
+      @media (min-width: 768px) and (max-width: 1199px){
+        top: 60px;
+      }
+      .alphabet_list{
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        a.active{
+            width: fit-content;
+            color: #9792E4;
+            li{
+                border-bottom: 2px solid #9792E4;
+            }
+            
+        }
+        li{
+            list-style: none;
+            font-size: 20px;
+        }
+      }
+    }
+    .brands_wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 36px 0;
+        @media(max-width: 767px){
+            margin: 24px 0;
+        }
+        .brand_by_alphabet{
+            display: flex;
+            flex-direction: column-reverse;
+            scroll-margin-top: 182px;
+            @media(max-width: 767px){
+                scroll-margin-top: 150px;
+            }
+            h1{
+                font-size: 52px;
+                font-weight: 600;
+                @media (max-width: 767px){
+                    font-size: 32px;
+                }
+            }
+            ul{
+                margin: 0;
+                margin: 40px 0;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                @media (max-width: 767px){
+                    grid-template-columns: 1fr 1fr;
+                    margin: 24px 0;
+                }
+                @media (min-width: 767px) and (max-width: 1023px){
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+                .brand{
+                    grid-area: 1 / 1 / 2 / 2;
+                    list-style: none;
+                    font-size: 16px;
+                }
+            }
+            &.active h1{
+                color: #9792E4;
+            }
+            &.inactive{
+                display: none;
+            }
+            
+        }
+    }
+}
+

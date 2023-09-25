@@ -1,0 +1,129 @@
+{{ 'blog-category.css' | asset_url | stylesheet_tag }}
+
+{% capture blog_handles %}
+    {% for block in section.blocks %}
+        {{ block.settings.blog }}
+    {% endfor %}
+{% endcapture %}
+{% assign blog_list = blog_handles | split: ' ' %}
+<div class="blog-category-section">
+    <div class="container">
+        {%- for handle in blog_list -%}
+            {% if blogs[handle].articles.size > 0 %}
+                <div class="blog_each_handle">
+                    <div class="blog_each_handle_wrapper_info">
+                        <h4 class="category_title"> {{handle | replace: '-', ' ' | capitalize}}</h4>
+                        <a class="view_all_link" href="/blogs/{{handle}}">
+                            ({{ blogs[handle].articles.size }})   View All
+                            {% render 'svg-up-icon' %}
+                        </a>
+                    </div>
+                    <div class="blog-category-list-wrap" data-handle= {{ handle }}>
+                        {%- for article in blogs[handle].articles limit: 3 -%}
+                            <div class="blog-category-item">
+                                {% render 'blog-tile', article: article %}
+                            </div>
+                        {%- endfor -%}
+                    </div>
+                    {% if blogs[handle].articles.size > 1 %}
+                        <div class="progress" role="progressbar" data-handle={{ handle }} aria-valuemin="0" aria-valuemax="100" style="background-size: 20% 100%;">
+                            <span class="slider__label sr-only">
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {%- endfor -%}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "All blogs",
+        "class": "section-featured-blog",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Heading",
+                "default": "Blog posts"
+            },
+            {
+                "type": "range",
+                "id": "post_limit",
+                "label": "Posts",
+                "min": 3,
+                "max": 12,
+                "step": 3,
+                "default": 3
+            },
+            {
+                "type": "checkbox",
+                "id": "show_author",
+                "label": "Show author",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "show_date",
+                "label": "Show date",
+                "default": true
+            },
+            {
+                "type": "checkbox",
+                "id": "show_excerpts",
+                "label": "Show excerpt",
+                "info": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)",
+                "default": true
+            },
+            {
+                "type": "select",
+                "id": "crop_ratio",
+                "label": "Image size",
+                "options": [
+                    {
+                        "value": "",
+                        "label": "Natural (no crop)"
+                    },
+                    {
+                        "value": "0.67",
+                        "label": "Portrait (2:3)"
+                    },
+                    {
+                        "value": "1.0",
+                        "label": "Square (1:1)"
+                    },
+                    {
+                        "value": "1.33",
+                        "label": "Landscape (4:3)"
+                    },
+                    {
+                        "value": "1.78",
+                        "label": "Wide (16:9)"
+                    }
+                ],
+                "default": "1.78"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Select blogs",
+                "type":"select",
+                "settings": [
+                    {
+                        "type": "blog",
+                        "id": "blog",
+                        "label": "Blog"
+                    }
+                ]
+            }
+
+        ],
+        "presets": [
+            {
+                "name": "All blogs",
+                "settings": {
+                }
+            }
+        ]
+    }
+{% endschema %}

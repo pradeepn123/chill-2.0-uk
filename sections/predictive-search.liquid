@@ -1,4 +1,11 @@
+{{ 'blog-category.css' | asset_url | stylesheet_tag }}
+
 {%- if predictive_search.performed -%}
+  <div>
+    {% comment %} {% if predictive_search.resources.articles != blank %}
+      We found <strong>{{ predictive_search.resources.articles.size }} {% if predictive_search.resources.articles.size == 1 %}result{% else %} results {% endif %}</strong>
+    {% endif %} {% endcomment %}
+  </div>
   <div id="predictive-search-results" class="product-list product-list--per-row-4 product-list--per-row-mob-{{ settings.prod_thumb_mob_per_row }} product-list--image-shape-{{ settings.prod_thumb_shape }}">
     {%- liquid
       if settings.prod_thumb_shape == 'portrait-23'
@@ -68,10 +75,17 @@
       </div>
     {%- endfor -%}
 
-    {%- for article in predictive_search.resources.articles -%}
-      <div class="product-block page-block">
-        <div class="page-block__title"><a href="{{ article.url }}">{{ article.title }}</a></div>
-      </div>
+    {%- for article in predictive_search.resources.articles limit: 6 -%}
+
+      {% comment %} <div class="product-block page-block"> {% endcomment %}
+        {% comment %} <div class="page-block__title"><a href="{{ article.url }}">{{ article.title }}</a></div> {% endcomment %}
+        <div class="blog-category-item" data-title="{{ article.title }}">
+          {% render 'blog-tile', article: article %}
+        </div>
+      {% comment %} </div> {% endcomment %}
     {%- endfor -%}
   </div>
+  {%- if predictive_search.resources.articles != blank -%}
+    <a href="/" id="search_results_blogs"><span>See All results</span></a>
+  {% endif %}
 {%- endif -%}

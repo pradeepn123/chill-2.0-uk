@@ -1,0 +1,133 @@
+{{ 'blog-category.css' | asset_url | stylesheet_tag }}
+{% assign banner = blog.metafields.custom %}
+{% style %}
+    .blog_banner {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), url({{ banner.blog_banner | image_url }}), lightgray 50% / cover no-repeat;
+    }
+    @media (max-width: 1023px){
+      .blog_breadcrumb{
+        margin-top: -38px;
+      }
+    }
+{% endstyle %}
+
+<div class="main_blog_container container">
+    <a href="/pages/blog" class="blog_breadcrumb">{{ '< All Blogs' }}</a>
+    {% if section.settings.show_page_banner %}
+    <div class="blog_banner">
+            <div class="blog_banner_text">
+                <h2>{{ blog.title }}</h2>
+                {% if banner.blog_banner_text != blank %}
+                    <p>{{ banner.blog_banner_text }}</p>
+                {% endif %}
+            </div>
+    </div>
+    {% endif %}
+
+    <div data-section-type="blog-template" class="article_blog_section" id="article_blog">
+    {% paginate blog.articles by section.settings.no_of_blogs %}
+            {% if section.settings.crop_image and section.settings.layout == 'columns' %}
+                {% assign aspect_ratio_split = section.settings.crop_style | split: '-' %}
+                {% assign aspect_ratio = 1.0 | times: aspect_ratio_split[0] | divided_by: aspect_ratio_split[1] %}
+            {% else %}
+                {% assign aspect_ratio = false %}
+            {% endif %}
+    
+            <div class="articles-on-page blog-category-section">
+                {% for article in blog.articles %}
+                    <div class="blog-category-item">
+                        {% render 'blog-tile', article: article %}
+                    </div>
+                {% endfor %}
+            </div>
+            <input type="hidden" value="{{ paginate.next.url }}" data-next-url>
+            <input type="hidden" value="{{ paginate.pages }}" data-total-pages>
+            <input type="hidden" value="{{ paginate.current_page  }}" data-current-page>
+            {% if paginate.pages > 1 %}
+                <div class="blog_load_more">
+                <a class="blog_load_more_btn" blog_load_more_btn onclick="showMoreCards()">
+                    <span load-more-text>SHOW MORE</span>
+                    <span loader class="blog_load_more_spinner"></span>
+                </a>
+                </div>
+            {% endif %}
+    {% endpaginate %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog category pages",
+  "class": "page-section-spacing",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_page_banner",
+      "label": "Show page banner",
+      "default": true
+    },
+    {
+        "type": "range",
+        "id": "no_of_blogs",
+        "label": "No. of blogs per page",
+        "default": 6,
+        "min": 3,
+        "max": 50,
+        "step": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    }, {
+      "type": "checkbox",
+      "id": "show_excerpts",
+      "label": "Show excerpt",
+      "info": "Change excerpts by editing your blog posts. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/blogs\/writing-blogs#display-an-excerpt-from-a-blog-post)",
+      "default": true
+    }, {
+      "type": "checkbox",
+      "id": "show_article_tags",
+      "label": "Show tags underneath articles",
+      "default": true
+    }, {
+      "type": "header",
+      "content": "Grid layout"
+    }, {
+      "type": "checkbox",
+      "id": "crop_image",
+      "label": "Crop featured images",
+      "default": true
+    }, {
+      "type": "select",
+      "id": "crop_style",
+      "label": "Crop style",
+      "options": [
+        {
+          "value": "1-1",
+          "label": "Square"
+        }, {
+          "value": "3-4",
+          "label": "Portrait"
+        }, {
+          "value": "16-9",
+          "label": "Landscape"
+        }
+      ],
+      "default": "16-9"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog category pages"
+    }
+  ]
+}
+{% endschema %}

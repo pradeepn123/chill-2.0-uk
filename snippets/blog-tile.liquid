@@ -1,0 +1,26 @@
+<div class="blog-category-item-wrap">
+    {% if article.image %}
+        <div class="article-image">
+            <a href="{{ article.url }}">
+                {%- render 'responsive-image', image: article.image, aspect_ratio: settings.crop_ratio, cover: true -%}
+            </a>
+        </div>
+    {% endif %}
+    <h3 class="title_wrap_before">
+        <a href="{{ article.url }}">
+            {{ article.title }}
+        </a>
+    </h3>
+</div>
+<div class="blog_content">
+    <div>
+        <span class="author">{{ article.author }}</span>
+        <span class="published_date">{{ article.published_at | date: format: 'month_date_year' }}</span>
+    </div>
+    <h3 class="title_wrap_after"><a href="{{ article.url }}">{{ article.title | truncate: 50, '...' }}</a></h3>
+    {% if article.except != blank %}
+        <div class="article_description">{{ article.excerpt | strip_html | truncate: 55, '...' }}</div>
+    {% else %}
+        <div class="article_description">{{ article.content | strip_html | truncate: 55, '...' }}</div>
+    {% endif %}
+</div>

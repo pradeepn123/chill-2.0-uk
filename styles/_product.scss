@@ -1038,6 +1038,7 @@
         z-index: 4;
         width: 100vw;
         margin: 31px 0;
+        height: 0;
         .without-variants{
             .quantity-submit-row__submit{
                 margin-bottom: 0px !important;
@@ -1082,7 +1083,10 @@
 
         .mobile_popup_buy_button{
             display: block !important;
-            margin: 0 20px;
+            // margin: 0 20px;
+            position: absolute;
+            bottom: 15px;
+            width: 100vw;
             .mobile_popup_add_to_cart{
                 display: flex;
                 border-radius: 4rem;
@@ -1092,7 +1096,8 @@
                 font-family: "Open Sans", sans-serif;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
                 @media (max-width: 767px){
                     font-size: 18px;
                 }

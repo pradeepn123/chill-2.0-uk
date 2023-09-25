@@ -3303,7 +3303,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
 .main-search__form {
   position: relative;
   margin: 20px auto;
-  max-width: 650px;
+  max-width: 517px;
 }
 .section-header .main-search__form {
   margin: 60px auto;
@@ -3316,7 +3316,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
 
 .main-search__button {
   position: absolute;
-  right: 20px;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -3344,17 +3344,19 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
 }
 
 .main-search__input-container {
-  background: rgba(0, 0, 0, 0.05);
+  background: none;
   border-radius: 3px;
   padding: 0;
 }
 
 input[type=text].main-search__input {
   width: 100%;
-  background: transparent;
-  border: none;
+  background: #fff;
+  border: 1.5px solid #000;
+  color: #000;
+  border-radius: 32px;
   box-shadow: none;
-  color: inherit;
+  color: #000 !important;
   font-size: inherit;
   line-height: 1.5em;
   padding: 12px 12px 12px 24px;
@@ -5078,6 +5080,8 @@ input[type=text].main-search__input {
 }
 .utility-bar__centre .utility-bar__item {
   margin: 10px 0;
+  font-size: 18px;
+  color: #000;
 }
 
 .utility-bar__right {
