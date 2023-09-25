@@ -1518,33 +1518,33 @@
   {
     "name": "Blog category",
     "settings": [
-        {
-          "type": "select",
-          "id": "crop_ratio",
-          "label": "Image size",
-          "options": [
-              {
-                  "value": "",
-                  "label": "Natural (no crop)"
-              },
-              {
-                  "value": "0.67",
-                  "label": "Portrait (2:3)"
-              },
-              {
-                  "value": "1.0",
-                  "label": "Square (1:1)"
-              },
-              {
-                  "value": "1.33",
-                  "label": "Landscape (4:3)"
-              },
-              {
-                  "value": "1.78",
-                  "label": "Wide (16:9)"
-              }
-          ],
-          "default": "1.78"
+      {
+        "type": "select",
+        "id": "crop_ratio",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "",
+            "label": "Natural (no crop)"
+          },
+          {
+            "value": "0.67",
+            "label": "Portrait (2:3)"
+          },
+          {
+            "value": "1.0",
+            "label": "Square (1:1)"
+          },
+          {
+            "value": "1.33",
+            "label": "Landscape (4:3)"
+          },
+          {
+            "value": "1.78",
+            "label": "Wide (16:9)"
+          }
+        ],
+        "default": "1.78"
       }
     ]
   }
