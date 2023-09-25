@@ -659,6 +659,50 @@ body.reveal-mobile-nav--revealed {
   overflow: hidden;
 }
 
+@media (min-width: 300px) and (max-width: 400px) {
+  .blog-category-list-wrap {
+    width: 95vw !important;
+  }
+}
+@media (min-width: 400px) and (max-width: 1000px) {
+  .blog-category-list-wrap {
+    width: 96vw !important;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .blog-category-list-wrap {
+    width: 97vw !important;
+  }
+}
+.search_open .blog-category-section {
+  overflow: hidden;
+  display: none;
+}
+
+.search_open .section-signup {
+  overflow: hidden;
+  display: none;
+}
+
+.search_open .footer_wrapper_middle {
+  overflow: hidden;
+  display: none;
+}
+
+.search_open .section-footer {
+  overflow: hidden;
+  display: none;
+}
+
+predictive-search .search_section input {
+  appearance: none;
+  background-color: white;
+}
+
+.blog-category-section a {
+  margin-bottom: 20px;
+}
+
 /* header css here */
 .pageheader .logo-area .logo-area__left .navigation ul li a {
   font-weight: 600;
@@ -11947,6 +11991,7 @@ predictive-search #featured_blogs .featured_blogs_content .blog-category-item .a
 @media (max-width: 1199px) {
   #predictive-search #predictive-search-results {
     width: 100%;
+    gap: 50px;
   }
 }
 #predictive-search #predictive-search-results .blog-category-item {

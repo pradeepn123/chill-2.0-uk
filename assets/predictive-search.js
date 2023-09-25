@@ -3,6 +3,7 @@ class PredictiveSearch extends HTMLElement {
       super();
   
       this.input = this.querySelector('input[type="search"]');
+      this.form = this.querySelector('.predictive-search-form');
       this.predictiveSearchResults = this.querySelector('#predictive-search');
       this.closeIcon = this.querySelector('.blog_search_close_icon');
 
@@ -39,6 +40,10 @@ class PredictiveSearch extends HTMLElement {
         this.hideFeaturedBlogs()
         this.onChange(event);
       }, 300).bind(this));
+
+      this.form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+      })
     }
   
     showFeaturedBlogs(){
@@ -51,7 +56,7 @@ class PredictiveSearch extends HTMLElement {
       this.querySelector('#featured_blogs').innerHTML = '';
     }
 
-    onChange() {
+    onChange(event) {
       const searchTerm = this.input.value.trim();
   
       if (!searchTerm.length) {

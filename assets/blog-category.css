@@ -194,9 +194,9 @@ span.author:after {
     .title_wrap_after{
         margin: 12px 0;
     }
-    .blog-category-list-wrap{
+    /* .blog-category-list-wrap{
         width: 97vw !important;
-    }
+    } */
     .title_wrap_before{
         display: none !important;
     }

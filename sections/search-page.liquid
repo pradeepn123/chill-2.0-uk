@@ -2,7 +2,7 @@
 <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
 
 <predictive-search>
-    <form action="{{ routes.search_url }}" method="get" role="search" class="search_section container" autocomplete="off">
+    <form action="{{ routes.search_url }}?type=article" method="get" role="search" class="search_section container predictive-search-form" autocomplete="off">
         <span for="Search" class="search_title container">{{ section.settings.search_title }}</span>
         <div class="search_block">
             <div class="search_input">

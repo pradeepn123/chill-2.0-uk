@@ -724,3 +724,47 @@ body.reveal-mobile-nav--revealed {
     overflow-y: hidden !important;
     overflow: hidden;
 }
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .blog-category-list-wrap {
+      width: 95vw !important;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 1000px) {
+    .blog-category-list-wrap {
+      width: 96vw !important;
+    }
+  }
+  @media (min-width: 1000px) and (max-width: 1199px) {
+    .blog-category-list-wrap {
+      width: 97vw !important;
+    }
+  }
+  .search_open .blog-category-section {
+    overflow: hidden;
+    display: none;
+  }
+  
+  .search_open .section-signup {
+    overflow: hidden;
+    display: none;
+  }
+  
+  .search_open .footer_wrapper_middle {
+    overflow: hidden;
+    display: none;
+  }
+  
+  .search_open .section-footer {
+    overflow: hidden;
+    display: none;
+  }
+  
+  predictive-search .search_section input {
+    appearance: none;
+    background-color: white;
+  }
+
+  .blog-category-section a {
+    margin-bottom: 20px;
+  }

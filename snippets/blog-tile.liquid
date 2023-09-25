@@ -17,10 +17,10 @@
         <span class="author">{{ article.author }}</span>
         <span class="published_date">{{ article.published_at | date: format: 'month_date_year' }}</span>
     </div>
-    <h3 class="title_wrap_after"><a href="{{ article.url }}">{{ article.title | truncate: 55, '...' }}</a></h3>
+    <h3 class="title_wrap_after"><a href="{{ article.url }}">{{ article.title | truncate: 50, '...' }}</a></h3>
     {% if article.except != blank %}
-        <div class="article_description">{{ article.excerpt | strip_html | truncate: 60, '...' }}</div>
+        <div class="article_description">{{ article.excerpt | strip_html | truncate: 55, '...' }}</div>
     {% else %}
-        <div class="article_description">{{ article.content | strip_html | truncate: 60, '...' }}</div>
+        <div class="article_description">{{ article.content | strip_html | truncate: 55, '...' }}</div>
     {% endif %}
 </div>
