@@ -1046,7 +1046,7 @@
     "product_currency_code_enabled": false,
     "enable_domain_redirect": true,
     "nav_shop_all_link": "shopify:\/\/collections\/shop",
-    "new_in_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/sBOuxu0YKcGFQZXYmt\" width=\"480\" height=\"301\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen=\"\"><\/iframe>",
+    "new_in_gif": "",
     "new_in_link": "new-in",
     "sale_gif": "<iframe src=\"https:\/\/giphy.com\/embed\/icFGEbvxjoGMIBuzaj\" width=\"480\" height=\"480\" frameborder=\"0\" class=\"giphy-embed\" allowfullscreen=\"\"><\/iframe>",
     "sale_link": "sales",
