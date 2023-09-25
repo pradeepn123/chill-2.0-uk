@@ -1054,9 +1054,10 @@
     "promotion_banner_text_mobile": "<p>FLAT 20% <\/p><p><strong>OFF<\/strong><\/p>",
     "promotion_banner_link": "shopify:\/\/collections\/cbd-gummies",
     "enable_gummies_offer_on_announcement_bar": false,
-    "announce_gummies_offer_text_desktop": "Get your 25mg gummies for just <span>£5 a pack<\/span> for the month of April. Save £9.99 per pack!",
-    "announce_gummies_offer_text_mobile": "Get Chill's <span>25mg CBD gummies<\/span> at <span>£5!<\/span> Don't miss out!",
-    "announce_gummies_button_url": "shopify:\/\/collections\/gummies-offer",
+    "announce_gummies_offer_text_desktop": "Get your <span>FREE GUMMIES.<\/span> When you buy 2 get 1 free on all Yield gummies!",
+    "announce_gummies_offer_text_mobile": "Get your <span>FREE GUMMIES.<\/span> When you buy 2 get 1 free on all Yield gummies!",
+    "announce_gummies_offer_button_text": "GET YOURS NOW",
+    "announce_gummies_button_url": "https:\/\/uk.chill.com\/collections\/yield",
     "shop_all_link": "shop-all",
     "sections": {
       "header": {
@@ -1247,7 +1248,7 @@
         ],
         "settings": {
           "lower_menu": "",
-          "text_bottom": "<p>These statements have not been evaluated or approved by the Food and Drug Administration or any other regulatory body. The products shown on this website are lifestyle products and are not intended to diagnose, treat, cure, or prevent any disease. The information contained on this website is not intended to replace information from medical professionals. Please consult your doctor if you are concerned about using any product. <\/p><p><\/p><p>All CBD products on this website contain .03% THC or less. Chill products are made using premium CBD isolate only. <\/p>",
+          "text_bottom": "<p>These statements have not been evaluated or approved by the Food and Drug Administration or any other regulatory body. The products shown on this website are lifestyle products and are not intended to diagnose, treat, cure, or prevent any disease. The information contained on this website is not intended to replace information from medical professionals. Please consult your doctor if you are concerned about using any product. <\/p><p><\/p><p>All CBD products on this website contain .03% THC or less.<\/p>",
           "wide_container": true,
           "show_payment_icons": true,
           "show_country_selector": true,
