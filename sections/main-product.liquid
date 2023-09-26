@@ -203,15 +203,15 @@
                         </div>
                       {% else %}
                       <div class="product-description-short">
-                        <span>{{ product.description | truncate: 300, "... " }}</span>
-                        {%if product.description.size >=300 %}
-                          <a class="readmore" href="#">Read More</a>
-                         {%endif%}
+                        <span>{{ product.description | truncate: 200, "... " | strip_html }}</span>
+                        {% if product.description.size >= 200 %}
+                        <a class="readmore" href="#">Read More</a>
+                        {% endif %}
                       </div>
-                        <div class="product-description-full">
-                          {{ product.description }}
-                          <br><a class="readless" href="#">Read Less</a>
-                        </div>
+                      <div class="product-description-full">
+                        {{ product.description }}
+                        <br><a class="readless" href="#">Read Less</a>
+                      </div>
                       {% endif %}
                     {%- else -%}
                       <div class="with-icon">
