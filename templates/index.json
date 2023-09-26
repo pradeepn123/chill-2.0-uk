@@ -113,6 +113,7 @@
         },
         "94ff9b3e-cc66-4646-a075-a4a633f6fe97": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/HEADSTAND_-_Homepage_Banner_MEDIUM_4eec0527-59c8-4f37-b11b-ffd07eac024b.jpg",
             "mobile_image": "shopify:\/\/shop_images\/HEADSTAND_-_MOBILE_-Homepage_Banner.jpg",
@@ -192,29 +193,29 @@
             "text_alignment": "center left"
           }
         },
-        "aa79849d-c6d2-4756-a952-72a2b371abe6": {
+        "6973fb3c-05e0-4873-9295-21841f3fcc36": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Blooming_Blends_Groupshot_banner_MEDIUM_85a46f79-6161-4647-bc26-396bd6d7c291.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/MOBILE_-_Blooming_Blends_Homepage_Banner_b89dded0-5605-4dc0-bbf6-fe2e9e943298.jpg",
+            "image": "shopify:\/\/shop_images\/Punchy_Homepage_Banner_MEDIUM_32a25998-6caa-483e-bcaa-c1bef640c046.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE_Punchy_Homepage_Banner.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong> Blooming \nBlends <\/strong> \nBotanical \nTinctures",
-            "title_size": 70,
+            "title": "Catch some rays \nwith <strong>punchy!<\/strong>",
+            "title_size": 84,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>A collection of alcohol-free, botanical tinctures<br\/>fusing ancient herbal wisdom with modern methods<br\/>to support, strengthen and balance.<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#fffcfc",
+            "text": "<p>Premium, low-calorie, all-natural soft drinks <br\/>with 50% of your daily vitamin D, to help you <br\/>catch the sun all year round.<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
             "enlarge_text": true,
-            "button_label_1": "",
+            "button_label_1": "try punchy",
             "button_url_1": "",
-            "button_label_2": "FIND YOUR BLEND",
-            "button_url_2": "shopify:\/\/collections\/blooming-blends",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -228,7 +229,7 @@
         "94ff9b3e-cc66-4646-a075-a4a633f6fe97",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "a9c60b10-7dcd-483d-829a-b953aa21e538",
-        "aa79849d-c6d2-4756-a952-72a2b371abe6"
+        "6973fb3c-05e0-4873-9295-21841f3fcc36"
       ],
       "settings": {
         "height": "fixed",
@@ -401,15 +402,15 @@
             "title_size_mobile": 36,
             "use_h1": false,
             "text": "<p>We’ve unpacked ten ways stress is sneaking<br\/>up on you, so you can watch your back!<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "",
             "button_url_1": "",
             "button_label_2": "HAVE A READ!",
             "button_url_2": "shopify:\/\/blogs\/chill-blog",
             "button_background_color": "#9792e4",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -428,15 +429,15 @@
             "title_size_mobile": 36,
             "use_h1": false,
             "text": "<p>1\/10 women experience painful sex and more<br\/>than 50% of women in the UK are not satisfied<br\/>with their sex lives. Quanna are here to change that!<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "LEARN HOW",
             "button_url_1": "https:\/\/uk.chill.com\/blogs\/chill-blog\/discovering-quanna-redefining-pleasure-and-wellness",
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#9792e4",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -509,15 +510,15 @@
             "title_size_mobile": 36,
             "use_h1": false,
             "text": "<p>Why meditation isn't just for yogi's, and<br\/>why it's the ultimate stress buster!<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "Let's chill",
             "button_url_1": "https:\/\/uk.chill.com\/blogs\/chill-blog\/meditation-changes-lives-here-s-howx",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#F3B09F",
-            "button_text_color": "#FFFFFF",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -536,15 +537,15 @@
             "title_size_mobile": 36,
             "use_h1": false,
             "text": "<p>How Josh Tarlo is transforming the beverage<br\/>industry with Headstand.<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "INTRIGUING RIGHT?",
             "button_url_1": "https:\/\/uk.chill.com\/blogs\/chill-blog\/introducing-josh-tarlo-revolutionizing-the-beverage-industry-with-headstand",
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#9792e4",
-            "button_text_color": "#FFFFFF",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
