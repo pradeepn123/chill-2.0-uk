@@ -4633,6 +4633,12 @@ body {
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 1199px) {
+  .product-image-with-text-section .product-image-text-section-wrapper .product-image-text-list {
+    position: relative;
+    z-index: -1;
+  }
+}
 @media (min-width: 1200px) {
   .product-image-with-text-section .product-image-text-section-wrapper .product-image-text-list {
     flex-direction: row;
@@ -4915,6 +4921,9 @@ body {
   display: none;
 }
 @media (max-width: 1199px) {
+  .product_ingredients_section .product_ingredients_sec_wrapper .content-section .tab-content-list {
+    z-index: -1;
+  }
   .product_ingredients_section .product_ingredients_sec_wrapper .content-section .tab-content-list .slick-dots {
     position: absolute;
     bottom: 0;
@@ -5000,6 +5009,12 @@ body {
 
 .section-apps .tikhop-shoptrade-block {
   padding-bottom: 20px;
+}
+@media (max-width: 1199px) {
+  .section-apps .shopify-app-block .okeReviews {
+    position: relative;
+    z-index: -1;
+  }
 }
 .section-apps .shopify-app-block .okeReviews .oke-w-header .oke-w-header-content .oke-w-header-content-block .oke-w-header-content-module .oke-w-ratingAverageModule .oke-w-ratingAverageModule-rating .oke-w-ratingAverageModule-rating-stars .oke-stars svg {
   width: 90px;
@@ -5115,6 +5130,15 @@ body {
     margin: 18px auto 28px;
     display: inline-block;
   }
+}
+
+.buy-buttons-row:has(.without-variants) {
+  bottom: 81px !important;
+  z-index: 100;
+}
+.buy-buttons-row:has(.without-variants) .buy-buttons-row_container {
+  transform: translateY(0);
+  box-shadow: none;
 }
 
 @media (max-width: 767px) {

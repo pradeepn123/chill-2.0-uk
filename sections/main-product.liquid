@@ -203,15 +203,15 @@
                         </div>
                       {% else %}
                       <div class="product-description-short">
-                        <span>{{ product.description | truncate: 300, "... " }}</span>
-                        {%if product.description.size >=300 %}
-                          <a class="readmore" href="#">Read More</a>
-                         {%endif%}
+                        <span>{{ product.description | truncate: 190, "... " | strip_html }}</span>
+                        {% if product.description.size >= 190 %}
+                        <a class="readmore" href="#">Read More</a>
+                        {% endif %}
                       </div>
-                        <div class="product-description-full">
-                          {{ product.description }}
-                          <br><a class="readless" href="#">Read Less</a>
-                        </div>
+                      <div class="product-description-full">
+                        {{ product.description }}
+                        <br><a class="readless" href="#">Read Less</a>
+                      </div>
                       {% endif %}
                     {%- else -%}
                       <div class="with-icon">
@@ -266,6 +266,7 @@
               {%- assign product_form_present = true -%}
               <div class="buy-buttons-row" {{ block.shopify_attributes }}>
                 {% if product.variants.size <= 1 and product.options.size <= 1 %}
+                  <div class="buy-buttons-row_container">
                     {% form 'product', product, data-productid: product.id, id: product_form_id, class: 'form product-purchase-form without-variants', data-product-handle: product.handle, data-product-id: product.id, data-productid: product.id %}
                       {{- original_select -}}
       
@@ -454,6 +455,7 @@
                         
                       {% endif %}
                     {% endform %}
+                  </div>
                 {% else %}
                     {% assign add_to_cart_price_final = 0 %}
                     <div class="buy-buttons-row_container">

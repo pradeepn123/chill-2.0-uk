@@ -512,6 +512,10 @@
             display: flex;
             align-items: center;
             flex-direction: row;
+            @media (max-width: 1199px){
+                position: relative;
+                z-index: -1;
+            }
             @media(min-width:1200px){
                 flex-direction: row;
             }
@@ -772,6 +776,7 @@
                     display: none;
                 }
                 @media (max-width: 1199px){
+                    z-index: -1;
                     .slick-dots{
                         position: absolute;
                         bottom: 0;
@@ -858,6 +863,10 @@
     }
     .shopify-app-block{
         .okeReviews{
+            @media (max-width: 1199px){
+                position: relative;
+                z-index: -1;
+            }
             .oke-w-header{
                 .oke-w-header-content{
                     .oke-w-header-content-block{
@@ -1027,6 +1036,14 @@
             margin: 18px auto 28px;
             display: inline-block;
         }
+    }
+}
+.buy-buttons-row:has(.without-variants){
+    bottom: 81px !important;
+    z-index: 100;
+    .buy-buttons-row_container{
+        transform: translateY(0);
+        box-shadow: none;
     }
 }
 .buy-buttons-row{
