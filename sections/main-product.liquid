@@ -203,8 +203,8 @@
                         </div>
                       {% else %}
                       <div class="product-description-short">
-                        <span>{{ product.description | truncate: 200, "... " | strip_html }}</span>
-                        {% if product.description.size >= 200 %}
+                        <span>{{ product.description | truncate: 190, "... " | strip_html }}</span>
+                        {% if product.description.size >= 190 %}
                         <a class="readmore" href="#">Read More</a>
                         {% endif %}
                       </div>
