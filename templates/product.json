@@ -191,7 +191,7 @@
         "show_breadcrumbs": false,
         "show_location_underneath": false,
         "inventory_transfers_enable": true,
-        "enable_sticky_columns": false,
+        "enable_sticky_columns": true,
         "show_thumbnail": false,
         "gallery_size": "medium",
         "gallery_layout": "carousel-under",
