@@ -1125,6 +1125,14 @@
                         font-size: 20px;
                     }
                 }
+                &.soldout_btn{
+                    justify-content: center !important;
+                    cursor: default !important;
+                    &:hover{
+                        background: #9792e4 !important;
+                        border: 1px solid #9792e4 !important;
+                    }
+                }
             }
         }
     }

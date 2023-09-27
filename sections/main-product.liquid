@@ -656,12 +656,16 @@
                                 {{ add_to_cart_price_final }} - {{ 'products.product.add_to_cart' | t }}
                               {%- endif -%}
                         {%- endcapture -%}
-                        <button
-                          class="button button--large mobile_popup_add_to_cart"
-                          type="submit"
-                          data-add-to-cart-text="{{ add_to_cart_text | escape }}">
-                          {{- add_to_cart_text -}}
-                        </button>
+                        {% if product.available %}
+                          <button
+                            class="button button--large mobile_popup_add_to_cart"
+                            type="submit"
+                            data-add-to-cart-text="{{ add_to_cart_text | escape }}">
+                            {{- add_to_cart_text -}}
+                          </button>
+                        {% else %}
+                          <button class="button button--large mobile_popup_add_to_cart soldout_btn">Out of Stock</button>
+                      {% endif %}
                     </div>
                 {% endif %}
               </div>

@@ -1033,9 +1033,12 @@ closeBuyContainer.forEach(closeBtn => {
 
 if(location.pathname != '/pages/chillzero '){
     document.querySelectorAll('.mobile_popup_buy_button').forEach(popupButton => {
-        popupButton.addEventListener('click', () => {
-            buyButtonContainer.classList.add('buy_buttons_show');
-        })
+        if(!popupButton.querySelector('.soldout_btn')){
+            popupButton.addEventListener('click', () => {
+                buyButtonContainer.classList.add('buy_buttons_show');
+            })
+        }
+        
     })
 }
 
