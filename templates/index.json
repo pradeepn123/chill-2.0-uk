@@ -211,10 +211,10 @@
             "text_color": "#f7f7f8",
             "enlarge_text": true,
             "button_label_1": "Shop this",
-            "button_url_1": "",
+            "button_url_1": "https:\/\/uk.chill.com\/collections\/oto",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#F3B09F",
+            "button_background_color": "#9792e4",
             "button_text_color": "#FFFFFF",
             "button_text_font_size": 20,
             "text_alignment": "center left"
