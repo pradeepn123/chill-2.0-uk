@@ -1261,14 +1261,16 @@
         "blocks": {
           "2e941249-38b6-4172-8dea-a0d2e959208f": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "<p>Get<strong> 20% off<\/strong> on your first CHILL order <a href=\"\/collections\/shop\" title=\"Shop\"><strong>GET IT NOW<\/strong><\/a><\/p>"
+              "text": "<p>Get<strong> 10% off <\/strong>CHILLZER0 Lemon<strong> <\/strong><a href=\"\/products\/lemon3000\" title=\"Lemon Vape - 3000 Puffs\"><strong>TANGY10<\/strong><\/a><\/p>"
             }
           }
         },
         "block_order": [
           "2e941249-38b6-4172-8dea-a0d2e959208f"
+        ],
+        "custom_css": [
+
         ],
         "settings": {
           "announcement_bar_col": "#000000",
