@@ -563,6 +563,11 @@
                 &.flex-direction{
                     flex-direction: row;
                 }
+                @media (max-width: 767px){
+                    &.flex-direction{
+                        flex-direction: column;
+                    }
+                }
                 @media (max-width: 320px){
                     &.flex-direction{
                         display: none;
@@ -593,9 +598,10 @@
                     border-radius: 50%;
                     -webkit-mask-image: -webkit-radial-gradient(white, black);
                     width: 10rem;
+                    display: flex;
                     min-height: 10rem;
                     overflow: hidden;
-                    margin-top: 8px;
+                    // margin-top: 8px;
                     .animated_gif{
                         pointer-events: none;
                         width: 100%;
@@ -904,7 +910,7 @@
                         flex-direction: column;
                     }
                     @media (min-width: 321px) and (max-width: 375px){
-                        gap: 10px;
+                        gap: 0px;
                     }
                     @media (min-width: 531px) and (max-width: 1199px){
                         margin: auto;
@@ -914,9 +920,12 @@
                         border-radius: 50%;
                         -webkit-mask-image: -webkit-radial-gradient(white, black);
                         display: flex;
-                        max-width: 9rem;
-                        max-height: 9rem;
+                        width: 130px;
+                        min-height: 130px;
                         overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
                         @media (min-width: 531px) and (max-width: 1199px){
                             max-width: 10rem;
                             max-height: 10rem;
@@ -935,10 +944,14 @@
                     .sale_image_block{
                         flex-basis: 50%;
                         border-radius: 50%;
+                        display: flex;
                         -webkit-mask-image: -webkit-radial-gradient(white, black);
-                        max-width: 9rem;
-                        max-height: 9rem;
+                        width: 130px;
+                        min-height: 130px;
                         overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
                         @media (min-width: 531px) and (max-width: 1199px){
                             max-width: 10rem;
                             max-height: 10rem;

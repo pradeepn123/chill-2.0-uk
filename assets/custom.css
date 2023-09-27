@@ -1215,6 +1215,11 @@ predictive-search .search_section input {
 #NavigationTier2-1.navigation__child-tier .container .promotion_container .highlighted_promotions_container.flex-direction {
   flex-direction: row;
 }
+@media (max-width: 767px) {
+  #NavigationTier2-1.navigation__child-tier .container .promotion_container .highlighted_promotions_container.flex-direction {
+    flex-direction: column;
+  }
+}
 @media (max-width: 320px) {
   #NavigationTier2-1.navigation__child-tier .container .promotion_container .highlighted_promotions_container.flex-direction {
     display: none;
@@ -1245,9 +1250,9 @@ predictive-search .search_section input {
   border-radius: 50%;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   width: 10rem;
+  display: flex;
   min-height: 10rem;
   overflow: hidden;
-  margin-top: 8px;
 }
 #NavigationTier2-1.navigation__child-tier .container .promotion_container .highlighted_promotions_container .sale_image_block .animated_gif {
   pointer-events: none;
@@ -1536,7 +1541,7 @@ predictive-search .search_section input {
 }
 @media (min-width: 321px) and (max-width: 375px) {
   .mobile-navigation-drawer .navigation__child-tier .container .promotion_container .highlighted_promotions_container {
-    gap: 10px;
+    gap: 0px;
   }
 }
 @media (min-width: 531px) and (max-width: 1199px) {
@@ -1549,9 +1554,12 @@ predictive-search .search_section input {
   border-radius: 50%;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   display: flex;
-  max-width: 9rem;
-  max-height: 9rem;
+  width: 130px;
+  min-height: 130px;
   overflow: hidden;
+}
+.mobile-navigation-drawer .navigation__child-tier .container .promotion_container .highlighted_promotions_container .new_in_block img {
+  width: 100%;
 }
 @media (min-width: 531px) and (max-width: 1199px) {
   .mobile-navigation-drawer .navigation__child-tier .container .promotion_container .highlighted_promotions_container .new_in_block {
@@ -1572,10 +1580,14 @@ predictive-search .search_section input {
 .mobile-navigation-drawer .navigation__child-tier .container .promotion_container .highlighted_promotions_container .sale_image_block {
   flex-basis: 50%;
   border-radius: 50%;
+  display: flex;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
-  max-width: 9rem;
-  max-height: 9rem;
+  width: 130px;
+  min-height: 130px;
   overflow: hidden;
+}
+.mobile-navigation-drawer .navigation__child-tier .container .promotion_container .highlighted_promotions_container .sale_image_block img {
+  width: 100%;
 }
 @media (min-width: 531px) and (max-width: 1199px) {
   .mobile-navigation-drawer .navigation__child-tier .container .promotion_container .highlighted_promotions_container .sale_image_block {
