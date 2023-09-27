@@ -1023,7 +1023,7 @@
     "prod_new_show": false,
     "prod_new_method": "collection",
     "prod_new_limit_int": 100,
-    "prod_sale_show": true,
+    "prod_sale_show": false,
     "prod_sold_out_show": true,
     "enable_product_reviews_collection": false,
     "prod_thumb_show_options": false,
