@@ -1048,6 +1048,7 @@
     "nav_shop_all_link": "shopify:\/\/collections\/shop",
     "new_in_gif": "",
     "new_in_link": "new-in",
+    "sale_image": "shopify:\/\/shop_images\/Mask_group_3.png",
     "sale_gif": "",
     "sale_link": "sales",
     "promotion_banner": "shopify:\/\/shop_images\/NEW_IN_-_Violet.jpg",
@@ -1202,7 +1203,7 @@
           "1478526647261"
         ],
         "settings": {
-          "visibility": ""
+          "visibility": "all"
         }
       },
       "footer": {
