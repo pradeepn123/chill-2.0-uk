@@ -118,8 +118,8 @@ span.author:after {
     color: #808080;
 }
 .article_description{
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     max-height: 100px;
     max-width: 100%;
     word-wrap: break-word;
