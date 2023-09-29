@@ -1165,6 +1165,7 @@
         "blocks": {
           "1478526632862": {
             "type": "icon",
+            "disabled": true,
             "settings": {
               "icon": "box",
               "text": "Free delivery!",
@@ -1173,6 +1174,7 @@
           },
           "1478527611164": {
             "type": "icon",
+            "disabled": true,
             "settings": {
               "icon": "percent",
               "text": "Student discount",
@@ -1181,6 +1183,7 @@
           },
           "1478526645605": {
             "type": "icon",
+            "disabled": true,
             "settings": {
               "icon": "map_pin",
               "text": "Your nearest store",
@@ -1189,6 +1192,7 @@
           },
           "1478526647261": {
             "type": "icon",
+            "disabled": true,
             "settings": {
               "icon": "gift",
               "text": "Gift cards",
