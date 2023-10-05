@@ -2196,6 +2196,7 @@ predictive-search .search_section input {
 @media (max-width: 457px) {
   .filter_coll .utility-bar-main .utility-bar__right {
     align-items: end;
+    margin: auto;
   }
   .filter_coll .utility-bar-main .utility-bar__right .filter_text {
     display: none;
@@ -2270,7 +2271,7 @@ predictive-search .search_section input {
     font-size: 14px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .filter_coll .utility-bar-main .utility-bar__right .utility-bar__item .link-dropdown #sort-dropdown-heading .link-dropdown__sort_text {
     font-size: 12px;
   }
