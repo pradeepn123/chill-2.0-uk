@@ -30,6 +30,7 @@
         },
         "fac87674-63b1-4d5c-b99f-89a14c55a525": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "slider_image": "shopify:\/\/shop_images\/Our_Story-7.jpg"
           }
