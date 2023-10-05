@@ -38,7 +38,7 @@ function hoverVideo(index, e) {
   this.querySelector('.play_overlay').style.display = "block";
   var num = index+1;
   var iframes = $('#player-'+num)[0];
-  var player = $f(iframes); 
+  var player = $f(iframes) ? $f(iframes) : ''; 
   player.api('play');  
 }
 
@@ -47,14 +47,11 @@ function hideVideo(index, e) {
   this.querySelector('.play_overlay').style.display = "none";
   var num = index+1;
   var iframes = $('#player-'+num)[0];
-  var player = $f(iframes);     
+  var player = $f(iframes) ? $f(iframes) : '';     
   player.api('pause');
 }
 
 $(document).ready(function () {
-    AOS.init({
-        duration: 1200,
-    })
     document.addEventListener("TikShop:cart:updated", function(e) {
         document.documentElement.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }))
     })
@@ -1033,7 +1030,7 @@ closeBuyContainer.forEach(closeBtn => {
 
 if(location.pathname != '/pages/chillzero '){
     document.querySelectorAll('.mobile_popup_buy_button').forEach(popupButton => {
-        if(!popupButton.querySelector('.soldout_btn')){
+        if(!popupButton.querySelector('.outOfStock_btn')){
             popupButton.addEventListener('click', () => {
                 buyButtonContainer.classList.add('buy_buttons_show');
             })

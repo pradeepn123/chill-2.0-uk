@@ -99,6 +99,13 @@
                 }
                 .banner_buttons{
                     justify-content: space-evenly;
+                    @media (max-width: 365px){
+                        flex-direction: column;
+                        gap: 20px;
+                        .brand_video_btn{
+                            width: 166px;
+                        }
+                    }
                 }
             }
             @media (min-width: 1024px) and (max-width: 1300px){

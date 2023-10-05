@@ -11,7 +11,8 @@
 <head>
   <!-- Symmetry 5.5.1 -->
   
-  <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style">
+  <link href="{{'styles.css' | asset_url}}" rel="stylesheet" type="text/css" media="all" />
+  <link href="{{'custom.css' | asset_url}}" rel="stylesheet" type="text/css" media="all" />
   {{ 'custom.css' | asset_url | stylesheet_tag }}
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" rel="stylesheet" type="text/css" media="all" />
   {% render 'head-tag' %}
@@ -25,11 +26,9 @@
   </title>
 
   {% render 'social-meta-tags' %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> {% endcomment %}
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  {{ 'styles.css' | asset_url | stylesheet_tag }}
 
   <script>
     window.theme = window.theme || {};
@@ -95,12 +94,13 @@
   {{ content_for_header }}
   
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script type="sT_lazyLoad__init">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5RK8VHS');</script>
 <!-- End Google Tag Manager -->
+{% render 'speed-optimization' %}
 </head>
 
 <body class="template-{{ template | split: '.' | first | handle }}
@@ -161,10 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {{ 'theme.js'  | asset_url | script_tag }}
   {{ 'custom.js'  | asset_url | script_tag }}
 
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="sT_lazyLoad__init" data-src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js" defer></script>
   <!-- Begin loadMoreArticles code -->
   {% if template contains 'blog' %}
     <script src="{{ 'load_more_cards.js' | asset_url }}" defer="defer" ></script>
@@ -178,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!--Gorgias Chat Widget Start-->
 <script id="gorgias-chat-widget-install-v3" 
-    src="https://config.gorgias.chat/bundle-loader/01GYCC0M073ZSGW1AV8MMKNDJB?source=shopify1click">
+  type="sT_lazyLoad__init" data-src="https://config.gorgias.chat/bundle-loader/01GYCC0M073ZSGW1AV8MMKNDJB?source=shopify1click">
 </script>
 <script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="{{shop.permanent_domain}}",_.SHOPIFY_CUSTOMER_ID="{{customer.id}}",_.SHOPIFY_CUSTOMER_EMAIL="{{customer.email}}"}(window||{});
 </script>

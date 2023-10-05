@@ -5223,7 +5223,7 @@ input[type=text].main-search__input {
   display: flex;
   align-items: center;
   padding: 9px 15px;
-  color: inherit;
+  color: #000;
   cursor: pointer;
 }
 .cc-select__option > span {
@@ -5237,10 +5237,10 @@ input[type=text].main-search__input {
 }
 .cc-select__option.is-unavailable > em {
   display: block;
+  color: inherit;
 }
 .cc-select__option.is-focused {
   background-color: {{ font_col_base | color_mix: bg_col, 15 | color_modify: "alpha", 0.3 }};
-  color: inherit;
 }
 
 [dir=rtl] .cc-select__btn {
@@ -7789,8 +7789,10 @@ ul.inline li {
 }
 
 .product-label--stock > span {
-  background: {{ prod_over_low_bg }};
-  color: {{ prod_over_low_text }};
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .product-label--new-in > span {
@@ -9623,6 +9625,7 @@ table.noborders td {
 }
 
 .simple-popup {
+  display: none !important;
   position: absolute;
   width: 140px;
   padding: 10px 15px;
