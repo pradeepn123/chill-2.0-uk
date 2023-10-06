@@ -1,4 +1,9 @@
 .section-slideshow{
+    .slideshow{
+        @media(max-width: 767px){
+            background:#F2F2F3;
+        }
+    }
     .slick-prev, .slick-next{
         border: 0px;
         background: #fff;
