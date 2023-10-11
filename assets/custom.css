@@ -9527,6 +9527,11 @@ body.cart-drawer-open {
   }
 }
 
+@media (max-width: 767px) {
+  .section-slideshow .slideshow {
+    background: #F2F2F3;
+  }
+}
 .section-slideshow .slick-prev, .section-slideshow .slick-next {
   border: 0px;
   background: #fff;

@@ -3,6 +3,7 @@
 %}
 
 {% style %}
+
 {% if request.path == '/pages/chillzero' %}
     .section-home-icons .icon-with-text-sec .icon-with-text-wrapper .icon-list .icon-item .icon_title{
         color:#000000;
@@ -39,7 +40,10 @@
             column-gap:32px;
         }
     }
-    
+{% elsif request.page_type == 'index' %}   
+    .section-home-icons{
+        margin: 30px 0 60px 0;
+    }
 {% endif %}
 {% endstyle %}
 

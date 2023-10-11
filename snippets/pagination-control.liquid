@@ -2,7 +2,7 @@
   <div class="pagination">
     {% if paginate.previous %}
       <a class="prev" href="{{ paginate.previous.url }}">&laquo; {{ 'general.pagination.previous' | t }}</a>
-      <span class="pagination__sep">&middot;</span>
+      {% comment %} <span class="pagination__sep">&middot;</span> {% endcomment %}
     {% endif %}
 
     {% for part in paginate.parts %}
@@ -16,7 +16,7 @@
     {% endfor %}
 
     {% if paginate.next %}
-      <span class="pagination__sep">&middot;</span>
+      {% comment %} <span class="pagination__sep">&middot;</span> {% endcomment %}
       <a class="next" href="{{ paginate.next.url }}">{{ 'general.pagination.next' | t }} &raquo;</a>
     {% endif %}
   </div>
