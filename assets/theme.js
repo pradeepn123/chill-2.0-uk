@@ -3600,6 +3600,11 @@
         const product = this.products.find(product => product.id == evt.target.dataset.productId)
         const variant = product.variants.find(variant => variant.id == evt.target.value)
 
+        if(variant.available){
+          $('.quick__view__addToCartBtn span').html('Add to cart');
+        } else{
+          $('.quick__view__addToCartBtn span').html('Out of stock');
+        }
         $itemPrice.html(theme.Shopify.formatMoney(variant.price, theme.money_format))
         if ($comparePrice.length) {
           $comparePrice.html(theme.Shopify.formatMoney(variant.compare_at_price, theme.money_format))

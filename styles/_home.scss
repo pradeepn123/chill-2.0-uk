@@ -200,7 +200,7 @@ body{
         margin-bottom: 12px;
         color: #000000;
         @media (max-width: 768px){
-            font-size: 35px;
+            font-size: 35px !important;
         }
         @media(min-width:1200px){
             font-size: 52px;

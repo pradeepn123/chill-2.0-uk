@@ -267,14 +267,14 @@
             {% if shop.customer_accounts_enabled %}
               {% if customer %}
                 <a class="header-account-link" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
-                  <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}" style="display: none;">{% render 'svg-custom-user' %}
+                  <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}">{% render 'svg-custom-user' %}
                   </span>
                   <span class="header-account-link__text desktop-only{% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">{{ 'layout.customer.account' | t | escape }}
                   </span>
                 </a>
               {% else %}
                 <a class="header-account-link" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
-                  <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}" style="display: none;">{% render 'svg-custom-user' %}
+                  <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}">{% render 'svg-custom-user' %}
                   </span>
                   <span class="header-account-link__text desktop-only{% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">{{ 'layout.customer.account' | t | escape }}
                   </span>
