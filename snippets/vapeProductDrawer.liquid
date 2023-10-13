@@ -223,10 +223,10 @@
                                     {% render 'store-availability', product: product, current_variant: current_variant %}
                                   {%- endunless -%}
             
-                            {% else %}
+                            {% comment %} {% else %}
                                   <div class="quantity-submit-row__submit input-row">
                                     <button class="button button--large product-unavailable">{{ 'products.product.product_unavailable' | t }}</button>
-                                  </div>
+                                  </div> {% endcomment %}
                               
                             {% endif %}
                           {% endform %}
@@ -493,8 +493,8 @@
                                         {% render 'store-availability', product: product, current_variant: current_variant %}
                                       {%- endunless -%}
                     
-                              {% else %}
-                                      <button class="product-unavailable">{{ 'products.product.product_unavailable' | t }}</button>
+                              {% comment %} {% else %}
+                                      <button class="product-unavailable">{{ 'products.product.product_unavailable' | t }}</button> {% endcomment %}
                               {% endif %}
                             {% endform %}
                           </div>
