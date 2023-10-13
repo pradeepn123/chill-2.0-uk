@@ -199,9 +199,9 @@
           {%- endcomment -%}
           <div class="popup_overlay" id="play_popup" style="display: none;">
             <div class="play_overlay_popup">
-              <div class="video_popup">
-                <video id="video_player" width="100%" itemtype="2" controls>
-                  <source src="{{ item.video_link }}" type="video/mp4">
+              <div class="video_popup" style="position: fixed;">
+                <video id="video_player" width="100%" itemtype="2" controls src= "{{ item.video_link }}" type="video/mp4">
+                  {% comment %} <picture><source src="{{ item.video_link | append: '#t=0.001'}}" type="video/mp4"><img src="gorsel.mp4"></picture> {% endcomment %}
                 </video>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135" class="video_play_button">
                   <defs>

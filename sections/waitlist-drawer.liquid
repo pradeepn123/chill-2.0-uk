@@ -1,8 +1,8 @@
 <div class="claim_drawer_background" id="waitlistDrawerBackground" style="display:none;"></div>
 <div class="claim_drawer_container" id="waitlistDrawerContainer" style="display:block;">
-  <a class="claim-drawer-summary__close waitlist-drawer-summary__close toggle-cart-summary" onclick="document.getElementById('waitlistDrawerContainer').classList.remove('claim-drawer-open'); document.getElementById('waitlistDrawerBackground').style.display = 'none';document.querySelector('body').classList.remove('cart-drawer-open');">
+  <span class="claim-drawer-summary__close waitlist-drawer-summary__close toggle-cart-summary" onclick="document.getElementById('waitlistDrawerContainer').classList.remove('claim-drawer-open'); document.getElementById('waitlistDrawerBackground').style.display = 'none';document.querySelector('body').classList.remove('cart-drawer-open');">
     {% render 'svg-close' %}
-  </a>
+  </span>
   <div class="waitlist_signup_container">
     <div class="waitlist_signup">
         <form id="email-form" name="email-form" method="post" class="email_form" onsubmit="validateForm(); return false;">

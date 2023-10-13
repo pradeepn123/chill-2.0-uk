@@ -49,6 +49,18 @@
         
     </form>
 </predictive-search>
+<script>
+    var searchInput = document.getElementById('Search');
+    var blogSearchCloseIcon = document.querySelector('.blog_search_close_icon');
+    searchInput.addEventListener('focus', () => {
+        document.querySelector('body').style.position = 'fixed';
+        document.querySelector('body').style.width = '100%';
+    })
+    blogSearchCloseIcon.addEventListener('click', () => {
+        document.querySelector('body').style.position = 'relative';
+    })
+
+</script>
 {% schema %}
 {
     "name": "Predictive search",

@@ -72,6 +72,7 @@ predictive-search{
                 }
                 #Search{
                     width: 100%;
+                    -webkit-overflow-scrolling: hidden;
                 }
                 .search_icon{
                     position: absolute;
