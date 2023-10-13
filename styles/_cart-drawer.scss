@@ -50,7 +50,8 @@ body.cart-drawer-open {
     .cart-drawer-form--checkout {
         padding: 1em 25px;
         background: #F2F2F3;
-        position: sticky;
+        position: fixed;
+        width: 100%;
         bottom: 0;
     }
 
@@ -150,6 +151,9 @@ body.cart-drawer-open {
             flex: 1 0 auto;
             height: calc(100vh - 40%); 
             overflow: scroll;
+            @media(min-width: 1200px){
+                margin-bottom: 154px;
+            }
             .cart-drawer__message{
                 padding: 1em 25px;
                 &.cart__message {
@@ -651,6 +655,7 @@ body.cart-drawer-open {
 .cart-drawer-recommendations{
     display: block;
     overflow: hidden;
+    margin-bottom: 154px;
     @media (min-width:1200px){
         position: absolute;
         top: 0;
