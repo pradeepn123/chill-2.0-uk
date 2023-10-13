@@ -108,7 +108,7 @@
         <div class="popup_overlay" id="play_popup" style="display: none;">
           <div class="play_overlay_popup">
             <div class="video_popup">
-              <video id="video_player" width="100%" itemtype="2" controls>
+              <video id="video_player" width="100%" itemtype="2" controls poster="{{ item.logo_image }}">
                 <source src="{{ item.video_link }}" type="video/mp4">
               </video>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135" class="video_play_button">
@@ -342,7 +342,13 @@
     document.getElementById('play_popup').style.display = 'block';
     document.body.style.overflow = 'hidden';
   })
-  var vid = document.getElementById('video_player')
+  var vid = document.getElementById('video_player');
+  document.addEventListener('DOMContentLoaded', () => {
+    if(vid){
+      vid.pause();
+    }
+  })
+  
   document.querySelector('.video_play_button').addEventListener('click', function() {
     vid.play();
     document.querySelector('.video_play_button').style.display = 'none';

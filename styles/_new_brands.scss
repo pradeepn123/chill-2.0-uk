@@ -133,6 +133,10 @@
         width: 90%;
         transform: translateY(25%);
         height: 70%;
+        @media (max-width: 767px){
+            max-height: 240px;
+            height: 100%;
+        }
         .video_popup{
             max-width: 1600px;
             margin: auto;
@@ -173,8 +177,8 @@
         
         @media (max-width: 767px){
             width: 100%;
-            top: 15%;
-            height: 240px;
+            top: 7% !important;
+            height: 100% !important;
         }
     }
 #shopify-section-template--16050208407710__main .utility-bar{
