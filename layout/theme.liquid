@@ -126,7 +126,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% if request.path == '/pages/chillzero' %}
     {% section 'waitlist-drawer' %}
   {% endif %}
-  {% section 'age-verification' %}
+  {% if settings.show_age_verification_popup %}
+    {% section 'age-verification' %}
+  {% endif %}
   {% if request.path == '/pages/chillzero' %}
     {% section 'vape-header' %}
   {% else %}
