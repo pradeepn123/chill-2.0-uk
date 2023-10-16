@@ -1008,6 +1008,7 @@
     "font_size_logo_int": 24,
     "button_style": "normal",
     "button_shape": "slightlyrounded",
+    "show_age_verification_popup": false,
     "coll_grid_image_shape": "shortest",
     "prod_thumb_shape": "square",
     "prod_thumb_crop": true,
