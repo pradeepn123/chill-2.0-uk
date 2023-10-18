@@ -3407,6 +3407,11 @@
     evt.preventDefault();
     $(this).find(":submit").attr("disabled", "disabled")
     .find(".button-text").html(`<span class="loading-spinner" style="width: 16px; height: 16px;"></span>`)
+
+    setTimeout(() => {
+      $(this).find(":submit").removeAttr('disabled')
+      .find(".button-text").html(`checkout`)
+    }, 4000)
     var checkoutUrl = '/checkout'
     if (this.dataset.has_recharge_subscriptions == "true") {
       // Do this in case of recharge only
