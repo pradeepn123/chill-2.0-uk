@@ -4400,6 +4400,47 @@ body {
     font-size: 16px;
   }
 }
+.section-main-product .product-detail .detail .product-form .mystery_gift_offer {
+  border-radius: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  gap: 6px;
+  align-items: flex-start;
+  padding: 13px 16px 21px 16px;
+  margin-bottom: 46px;
+}
+.section-main-product .product-detail .detail .product-form .mystery_gift_offer svg {
+  width: 37px;
+  height: 37px;
+}
+.section-main-product .product-detail .detail .product-form .mystery_gift_offer .offer_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-main-product .product-detail .detail .product-form .mystery_gift_offer .offer_title .title {
+  margin-bottom: 0;
+}
+.section-main-product .product-detail .detail .product-form .mystery_gift_offer .offer_title .title p {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.section-main-product .product-detail .detail .product-form .mystery_gift_offer .offer_description p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .section-main-product .product-detail .detail .product-form .mystery_gift_offer {
+    gap: 6px;
+    padding: 13px;
+    margin-bottom: 35px;
+  }
+}
 .section-main-product .product-detail .detail .product-form .product_variant {
   font-size: 14px;
   color: #000;

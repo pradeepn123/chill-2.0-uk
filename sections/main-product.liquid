@@ -179,7 +179,44 @@
                   <p>Free Shipping</p>
                 </div>
               {% endif %}
-              {% when 'description' %}
+            
+              {% comment %} Offers involving mystery gift {% endcomment %}
+            {% when 'mystery_gift' %}
+              {% liquid
+                assign offer_product = false
+                for coll in product.collections
+                  if coll == block.settings.offer_collection
+                    assign offer_product = true
+                  endif
+                endfor
+              %}
+              {% style %}
+                .mystery_gift_offer{
+                  background: {{ block.settings.offer_background_color }};
+                  box-shadow: 5px 5px 0px 0px {{ block.settings.offer_shadow_color }};
+                }
+                .mystery_gift_offer .offer_title p, .mystery_gift_offer .offer_description p{
+                  color: {{ block.settings.offer_text_color }} !important;
+                }
+              {% endstyle %}
+              {% if settings.start_mystery_gift_offer %}
+                {% if offer_product == true %}
+                  <div class="mystery_gift_offer">
+                    <div class="offer_title">
+                      {% if block.settings.offer_svg != blank %}
+                        {{ block.settings.offer_svg }}
+                      {% endif %}
+                      <span class="title">{{ block.settings.offer_title }}</span>
+                    </div>
+                    <div class="offer_description">
+                      <span class="description">{{ block.settings.offer_description }}</span>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endif %}
+
+
+            {% when 'description' %}
               <div class="{% unless block.settings.show_in_quickbuy %}not-in-quickbuy{% endunless %}{% if block.settings.show_in_tab %} product-detail-accordion{% endif %}" {{ block.shopify_attributes }}>
                 {% if block.settings.show_in_tab %}
                   {%- capture accordion_title -%}
@@ -1144,6 +1181,54 @@
         "type": "free_shipping",
         "name": "Free Shipping tag",
         "limit": 1
+      },
+      {
+        "type": "mystery_gift",
+        "name": "Announce - Mystery gift",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "collection",
+            "id": "offer_collection",
+            "label": "Offer collection",
+            "info": "Select collection to which this offer will be applied."
+          },
+          {
+            "type": "html",
+            "id": "offer_svg",
+            "label": "Offer icon"
+          },
+          {
+            "type": "richtext",
+            "id": "offer_title",
+            "label": "Offer title",
+            "default": "<p>Add title here</p>"
+          },
+          {
+            "type": "richtext",
+            "id": "offer_description",
+            "label": "Offer description",
+            "default": "<p>Add offer description here</p>"
+          },
+          {
+            "type": "color",
+            "id": "offer_background_color",
+            "label": "offer background color",
+            "default": "#000"
+          },
+          {
+            "type": "color",
+            "id": "offer_text_color",
+            "label": "offer text color",
+            "default": "#FFF"
+          },
+          {
+            "type": "color",
+            "id": "offer_shadow_color",
+            "label": "offer shadow color",
+            "default": "#FFAC9A"
+          }
+        ]
       },
       {
         "type": "price",

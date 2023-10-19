@@ -1483,6 +1483,21 @@
     ]
   },
   {
+    "name": "Mystery Gift",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Announce - Mystery gift"
+      },
+      {
+        "type": "checkbox",
+        "id": "start_mystery_gift_offer",
+        "label": "Start Mystery gift offer",
+        "default": true
+      }
+    ]
+  },
+  {
     "name": "Announce Offer",
     "settings": [
       {
