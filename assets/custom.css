@@ -12235,6 +12235,7 @@ body.search_open {
 .product_page_offer .offer_cta .offer_terms_and_conditions, .mystery_gift_offer .offer_cta .offer_terms_and_conditions {
   font-size: 12px;
   color: #797979;
+  margin-bottom: 0;
 }
 @media (max-width: 841px) {
   .product_page_offer .offer_cta, .mystery_gift_offer .offer_cta {

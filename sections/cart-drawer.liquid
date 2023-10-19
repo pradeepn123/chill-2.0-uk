@@ -114,17 +114,17 @@
             {% assign cost_difference_to_avail_offer = 5000 %}
             {% liquid 
               assign offer_on_product = false
-              assign total_offer_product_price = 0
+              assign total_offerProduct_price = 0
               for item in cart.items
                  for coll in item.product.collections 
                    if coll == settings.offer_collection 
                      assign offer_on_product = true
-                     assign total_offer_product_price = total_offer_product_price | plus: item.final_line_price
+                     assign total_offerProduct_price = total_offerProduct_price | plus: item.final_line_price
                    endif 
                   endfor 
                endfor 
             %}
-            {% assign cost_difference_to_avail_offer = cost_difference_to_avail_offer | minus: total_offer_product_price %}
+            {% assign cost_difference_to_avail_offer = cost_difference_to_avail_offer | minus: total_offerProduct_price %}
             {% if settings.start_mystery_gift_offer %}
               {% if offer_on_product == true %}
                 {% if cost_difference_to_avail_offer > 0 %}
