@@ -1056,7 +1056,7 @@
     "promotion_banner_text": "<p><\/p><p><\/p>",
     "promotion_banner_text_mobile": "",
     "promotion_banner_link": "shopify:\/\/collections\/new-in",
-    "enable_gummies_offer_on_announcement_bar": true,
+    "enable_gummies_offer_on_announcement_bar": false,
     "announce_gummies_offer_text_desktop": "The <span>CHILL SALE<\/span> is here! Up to <span>30% OFF<\/span> on selected items",
     "announce_gummies_offer_text_mobile": "The <span>CHILL SALE<\/span> is here! Up to <span>30% OFF<\/span> on selected items",
     "announce_gummies_offer_button_text": "SHOP SALE",
@@ -1267,6 +1267,7 @@
         "blocks": {
           "2e941249-38b6-4172-8dea-a0d2e959208f": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "<p>Get<strong> 10% off <\/strong>CHILLZER0 Lemon<strong> <\/strong><a href=\"\/products\/lemon3000\" title=\"Lemon Vape - 3000 Puffs\"><strong>TANGY10<\/strong><\/a><\/p>"
             }
