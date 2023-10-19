@@ -1540,19 +1540,19 @@
       {
         "type": "color",
         "id": "offer_background_color",
-        "label": "offer background color",
+        "label": "Offer background color",
         "default": "#000"
       },
       {
         "type": "color",
         "id": "offer_text_color",
-        "label": "offer text color",
+        "label": "Offer text color",
         "default": "#FFF"
       },
       {
         "type": "color",
         "id": "offer_shadow_color",
-        "label": "offer shadow color",
+        "label": "Offer shadow color",
         "default": "#FFAC9A"
       }
     ]

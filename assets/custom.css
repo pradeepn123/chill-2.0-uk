@@ -12178,7 +12178,7 @@ body.search_open {
 
 .product_page_offer, .mystery_gift_offer {
   border-radius: 10px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -12186,7 +12186,6 @@ body.search_open {
   gap: 6px;
   align-items: flex-start;
   padding: 13px 16px 21px 16px;
-  margin-bottom: 46px;
 }
 .product_page_offer svg, .mystery_gift_offer svg {
   width: 37px;
@@ -12228,7 +12227,7 @@ body.search_open {
   text-transform: uppercase;
   font-weight: 700;
 }
-@media (max-width: 767px) {
+@media (max-width: 841px) {
   .product_page_offer .offer_cta .redirection_cta button, .mystery_gift_offer .offer_cta .redirection_cta button {
     width: 100%;
   }
@@ -12237,7 +12236,7 @@ body.search_open {
   font-size: 12px;
   color: #797979;
 }
-@media (max-width: 767px) {
+@media (max-width: 841px) {
   .product_page_offer .offer_cta, .mystery_gift_offer .offer_cta {
     flex-direction: column;
     align-items: flex-start;
@@ -12245,6 +12244,9 @@ body.search_open {
   }
   .product_page_offer .offer_cta .redirection_cta, .mystery_gift_offer .offer_cta .redirection_cta {
     width: 100%;
+  }
+  .product_page_offer .offer_cta .offer_terms_and_conditions, .mystery_gift_offer .offer_cta .offer_terms_and_conditions {
+    font-size: 10px;
   }
 }
 
@@ -12255,4 +12257,8 @@ body.search_open {
 }
 .mystery_gift_offer .offer_title .title p {
   font-size: 18px;
+}
+
+.product_page_offer {
+  margin: 0 0 36px 0 !important;
 }
