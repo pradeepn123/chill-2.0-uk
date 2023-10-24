@@ -113,6 +113,7 @@
         },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DESKTOP-Homepagebanner-Quanna_MEDIUM_34eee06d-79d0-401a-af73-a4e2d82d4fe8.jpg",
             "mobile_image": "shopify:\/\/shop_images\/MOBILE-Homepagebanner-Quanna.jpg",
@@ -218,6 +219,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "41559766-2511-4321-a759-ff9014c6f7f7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP_YUMI_Homepage_Banner_MEDIUM_1_9de6e427-03dd-40fa-9a09-d1ed40961950.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE_YUMI_Homepage_Banner.png",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Yumi: The UK's \nLeading Chewable\nSupplement<\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>All-natural, tasty, vegan supplements for<br\/>sleep, digestion, health and more<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "choose yumi",
+            "button_url_1": "https:\/\/uk.chill.com\/collections\/yumi-nutrition",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -228,7 +256,8 @@
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "94ff9b3e-cc66-4646-a075-a4a633f6fe97",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1"
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
+        "41559766-2511-4321-a759-ff9014c6f7f7"
       ],
       "settings": {
         "height": "fixed",
