@@ -1523,6 +1523,12 @@
         "content": "Offer on cart drawer"
       },
       {
+        "type": "text",
+        "id": "offer_product_subtext",
+        "label": "Offer product - subtext",
+        "default": "Happy Halloween"
+      },
+      {
         "type": "color",
         "id": "offer_cta_background_color",
         "label": "Offer CTA button background color",

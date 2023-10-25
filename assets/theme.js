@@ -6039,7 +6039,7 @@
           type: 'GET',
           url: theme.routes.cart_url,
           success: function (data) {
-            var toReplace = ['.cart-item-list', '.checkout-subtotal-container__dynamic', '.cart__message'];
+            var toReplace = ['.cart-item-list', '.checkout-subtotal-container__dynamic', '.cart__message', '.mystery_gift_offer'];
             var $newDom = $('<div>' + data + '</div>');
 
             // remove any transitions
@@ -6110,7 +6110,7 @@
           url: theme.routes.cart_change_url + '.js',
           data: params,
           dataType: 'json',
-          success: function success() {
+          success: function success(response) {
             document.documentElement.dispatchEvent(
             new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }));
 
