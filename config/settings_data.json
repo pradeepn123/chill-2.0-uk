@@ -1019,7 +1019,7 @@
     "prod_block_label_loc": "top left",
     "prod_reduction_show": false,
     "prod_reduction_type": "percent",
-    "prod_stock_warn_show": true,
+    "prod_stock_warn_show": false,
     "prod_stock_warn_limit_int": 10,
     "prod_new_show": false,
     "prod_new_method": "collection",
