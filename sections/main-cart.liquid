@@ -119,6 +119,10 @@
           {% for item in cart.items %}
             {% assign has_subscriptions = false %}
             {% assign promotionalLine = false %}
+            {% comment %}  offer only for 'Mystery gift' {% endcomment %}
+            {% if item.title == 'Mystery Gift' %}
+              {% assign promotionalLine = true %}
+            {% endif %}
             {% for p in item.properties %}
               {% if p.first == 'shipping_interval_frequency' %}
                 {% assign has_subscriptions = true %}
