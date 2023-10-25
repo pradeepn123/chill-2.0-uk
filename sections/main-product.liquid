@@ -301,7 +301,7 @@
 
             {% when 'buy_buttons' %}              
               {%- assign product_form_present = true -%}
-              {% unless product.id == 7742189273243 %} {% comment %} Disable add-to-cart button on 'Mystery gift' product page {% endcomment %}
+              {% unless product.id == 7742189273243 and settings.start_mystery_gift_offer %} {% comment %} Disable add-to-cart button on 'Mystery gift' product page {% endcomment %}
                 <div class="buy-buttons-row" {{ block.shopify_attributes }}>
                   {% if product.variants.size <= 1 and product.options.size <= 1 %}
                     <div class="buy-buttons-row_container">

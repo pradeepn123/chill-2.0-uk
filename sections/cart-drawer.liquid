@@ -182,7 +182,7 @@
                   {% assign selected_shipping_interval_frequency = blank %}
                   {% assign promotionalLine = false %}
                   {% comment %}  offer only for 'Mystery gift' {% endcomment %}
-                  {% if item.title == 'Mystery Gift' %}
+                  {% if settings.start_mystery_gift_offer and item.title == 'Mystery Gift' %}
                     {% assign promotionalLine = true %}
                   {% endif %}
                   {% for p in item.properties %}
