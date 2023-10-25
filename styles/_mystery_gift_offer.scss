@@ -16,6 +16,9 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        svg{
+            visibility: visible;
+        }
         .title{
             margin-bottom: 0;
             p{

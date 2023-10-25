@@ -5960,21 +5960,42 @@
         if (this.cartRefreshXhr) {
           this.cartRefreshXhr.abort();
         }
-        this.cartRefreshXhr = $.getJSON(theme.routes.cart_url, function(cart) {          
-          let promotionalProducts;
-          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "FREE")
+        this.cartRefreshXhr = $.getJSON(theme.routes.cart_url, function(cart) {
+          let promotionalProducts = []
+          const paidProducts = cart.items.filter(lineItem => lineItem.title != "Mystery Gift")
+          const promotionalLineItems = cart.items.filter(lineItem => lineItem.title == "Mystery Gift")          
 
-          if (cart.items_subtotal_price > 10000) {
-            promotionalProducts = theme.promotionalProducts[100]
-          } else if (cart.items_subtotal_price > 5000) {
-            promotionalProducts = theme.promotionalProducts[50]
-          } else if (cart.items_subtotal_price > 2500) {
+          // if (cart.items_subtotal_price > 10000) {
+          //   promotionalProducts = theme.promotionalProducts[100]
+          // } else if (cart.items_subtotal_price > 5000) {
+          //   promotionalProducts = theme.promotionalProducts[50]
+          // } else if (cart.items_subtotal_price > 2500) {
+          //   promotionalProducts = theme.promotionalProducts[25]
+          // }
+          
+          let vape_product_total_in_cart = 0;
+          cart.items.forEach(cartItem => {
+            if(cartItem.product_type === "Vape"){
+              vape_product_total_in_cart += cartItem.final_line_price
+            }
+          })
+          
+          if (vape_product_total_in_cart > 5000) {
             promotionalProducts = theme.promotionalProducts[25]
           }
+          
+          paidProducts.forEach((lineItem) => {
+            if (theme.promotionalProducts[lineItem.id]) {
+              promotionalProducts = promotionalProducts.concat(theme.promotionalProducts[lineItem.id].map((product) => {
+                product.quantity = lineItem.quantity
+                return product
+              }))
+            }
+          })
 
           let updateParams = {}
           if (this.cartXhr) {
-            this.functions.postRefreshCartDependentContent.call(this)
+            return this.functions.postRefreshCartDependentContent.call(this)
           } else {
             promotionalLineItems.forEach(promotionalLine => {
               updateParams[promotionalLine.key] = 0
@@ -5999,13 +6020,12 @@
                   items: promotionalProducts.map(product => {
                     return {
                       id: product.variantId,
-                      quantity: product.quantity,
-                      properties: {
-                        "Product Type": "FREE"
-                      }
+                      quantity: 1,
+                      productId: product.productId
                     }
                   }
                 )}
+                
                 return this.functions.addItemsToCart.call(this, lineItems);
               }
               this.functions.postRefreshCartDependentContent.call(this)
@@ -6013,7 +6033,6 @@
           });
         }.bind(this))
       },
-
       postRefreshCartDependentContent: function postRefreshCartDependentContent() {
         // fetch new html for the page
         $.ajax({
@@ -6055,6 +6074,7 @@
       },
 
       addItemsToCart: function addItemToCart(params) {
+        console.log('.....params', params)
         if (this.cartXhr) {
           this.cartXhr.abort();
         }
@@ -6277,19 +6297,39 @@
         if (this.cartRefreshXhr) {
           this.cartRefreshXhr.abort();
         }
+        this.cartRefreshXhr = $.getJSON(theme.routes.cart_url, function(cart) {
+          let promotionalProducts = []
+          const paidProducts = cart.items.filter(lineItem => lineItem.title != "Mystery Gift")
+          const promotionalLineItems = cart.items.filter(lineItem => lineItem.title == "Mystery Gift")          
 
-        this.cartRefreshXhr = $.getJSON(theme.routes.cart_url + ".js", function(cart) {          
-          let promotionalProducts;
-          const paidProducts = cart.items.filter(lineItem => !lineItem.properties || lineItem.properties["Product Type"] != "FREE")
-          const promotionalLineItems = cart.items.filter(lineItem => lineItem.properties && lineItem.properties["Product Type"] == "FREE")
-
-          if (cart.items_subtotal_price > 10000) {
-            promotionalProducts = theme.promotionalProducts[100]
-          } else if (cart.items_subtotal_price > 5000) {
-            promotionalProducts = theme.promotionalProducts[50]
-          } else if (cart.items_subtotal_price > 2500) {
+          // if (cart.items_subtotal_price > 10000) {
+          //   promotionalProducts = theme.promotionalProducts[100]
+          // } else if (cart.items_subtotal_price > 5000) {
+          //   promotionalProducts = theme.promotionalProducts[50]
+          // } else if (cart.items_subtotal_price > 2500) {
+          //   promotionalProducts = theme.promotionalProducts[25]
+          // }
+          
+          // Check if total cart value of vape products is more than 50
+          let vape_product_total_in_cart = 0;
+          cart.items.forEach(cartItem => {
+            if(cartItem.product_type === "Vape"){
+              vape_product_total_in_cart += cartItem.final_line_price
+            }
+          })
+          
+          if (vape_product_total_in_cart > 5000) {
             promotionalProducts = theme.promotionalProducts[25]
           }
+          
+          paidProducts.forEach((lineItem) => {
+            if (theme.promotionalProducts[lineItem.id]) {
+              promotionalProducts = promotionalProducts.concat(theme.promotionalProducts[lineItem.id].map((product) => {
+                product.quantity = lineItem.quantity
+                return product
+              }))
+            }
+          })
 
           let updateParams = {}
           if (this.cartXhr) {
@@ -6308,19 +6348,22 @@
             },
             dataType: 'json',
             success: function success(response) {
-              if (promotionalProducts && promotionalProducts.length > 0 && paidProducts.length > 0) {
+              if (response.items.length === 0) {
+                window.location.reload()
+                return false
+              }
+              if (promotionalProducts && promotionalProducts.length > 0) {
                 // Add the Free products to cart
                 let lineItems = {
                   items: promotionalProducts.map(product => {
                     return {
-                      id: product.variantId,
-                      quantity: product.quantity,
-                      properties: {
-                        "Product Type": "FREE"
-                      }
+                      id: product.variantId, // variant id is 'null' when the quantity of product is 0
+                      quantity: 1,
+                      productId: product.productId
                     }
                   }
                 )}
+                
                 return this.functions.addItemsToCart.call(this, lineItems);
               }
               this.functions.postRefreshCartDependentContent.call(this)

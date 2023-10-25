@@ -12196,6 +12196,9 @@ body.search_open {
   align-items: center;
   gap: 10px;
 }
+.product_page_offer .offer_title svg, .mystery_gift_offer .offer_title svg {
+  visibility: visible;
+}
 .product_page_offer .offer_title .title, .mystery_gift_offer .offer_title .title {
   margin-bottom: 0;
 }

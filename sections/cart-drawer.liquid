@@ -4,6 +4,7 @@
     "50": [],
     "100": []
   }
+  {% comment %}  Enable theme settings to view the promotional offer  {% endcomment %}
   {% if section.settings.enable_promotion %}
     {% for block in section.blocks %}
       {% for blockSetting in block.settings %}
@@ -180,6 +181,10 @@
                   {% assign has_subscriptions = false %}
                   {% assign selected_shipping_interval_frequency = blank %}
                   {% assign promotionalLine = false %}
+                  {% comment %}  offer only for 'Mystery gift' {% endcomment %}
+                  {% if item.title == 'Mystery Gift' %}
+                    {% assign promotionalLine = true %}
+                  {% endif %}
                   {% for p in item.properties %}
                     {% if p.first == 'shipping_interval_frequency' %}
                       {% assign has_subscriptions = true %}
@@ -274,6 +279,7 @@
                           {% else %}
                             {% assign can_increase = true %}
                           {% endif %}
+                          
                           <div class="cart-item__column cart-item__quantity cart-drawer-summary-item__quantity">
                             <div class="quantity buttoned-input">
                               <a id="updates_dec_{{ forloop.index }}" class="notabutton quantity-down {% if promotionalLine == true %}visibility-hidden{%endif%} {% if item.quantity == 1 %}pointer-evt-none{% endif %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.label.decrease' | t | escape }}">{% render 'svg-minus' %}</a>
