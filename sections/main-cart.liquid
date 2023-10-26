@@ -195,7 +195,7 @@
                 {% assign promotionalLine = true %}
               {% endif %}
             {% endfor %}
-            <div class="cart-item product-{{ item.product.handle }}" data-cc-animate>
+            <div class="cart-item product-{{ item.product.handle }}" data-cc-animate {% if item.url == '/products/mystery-gift?variant=43675963687067' %} style="pointer-events: none;"{% endif %}>
               {%- comment -%}
                 Determining the handle of the collection that was last seen for the 'continue shopping' link.
               {%- endcomment -%}
