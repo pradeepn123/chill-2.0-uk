@@ -6039,7 +6039,7 @@
           type: 'GET',
           url: theme.routes.cart_url,
           success: function (data) {
-            var toReplace = ['.cart-item-list', '.checkout-subtotal-container__dynamic', '.cart__message', '.mystery_gift_offer'];
+            var toReplace = ['.cart-item-list', '.checkout-subtotal-container__dynamic', '.cart__message', '.mystery_gift_offer_container'];
             var $newDom = $('<div>' + data + '</div>');
 
             // remove any transitions
