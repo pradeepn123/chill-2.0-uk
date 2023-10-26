@@ -25,14 +25,22 @@
                 margin-bottom: 0;
                 font-size: 14px;
                 font-weight: 700;
+                @media (max-width: 375px){
+                    font-size: 13px !important;
+                }
             }
+            
         }
+        
     }
     .offer_description{
         p{
             font-size: 14px;
             font-weight: 400;
             margin-bottom: 0;
+            @media (max-width: 375px){
+                font-size: 12px;
+            }
         }
     }
     @media (max-width: 768px){

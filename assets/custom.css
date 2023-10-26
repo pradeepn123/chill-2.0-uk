@@ -12207,10 +12207,20 @@ body.search_open {
   font-size: 14px;
   font-weight: 700;
 }
+@media (max-width: 375px) {
+  .product_page_offer .offer_title .title p, .mystery_gift_offer .offer_title .title p {
+    font-size: 13px !important;
+  }
+}
 .product_page_offer .offer_description p, .mystery_gift_offer .offer_description p {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 0;
+}
+@media (max-width: 375px) {
+  .product_page_offer .offer_description p, .mystery_gift_offer .offer_description p {
+    font-size: 12px;
+  }
 }
 @media (max-width: 768px) {
   .product_page_offer, .mystery_gift_offer {
