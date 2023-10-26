@@ -222,6 +222,9 @@
                   <div class="cart_item_description_container">
                     <a class="name cart_item_title" href="{{ item.url }}">{{ item.product.title }}
                     </a>
+                    {% if promotionalLine %}
+                      <div class="line-promotional-banner">{{ settings.offer_product_subtext }}</div>
+                    {% endif %}
                     <span class="cart-drawer-summary-item__varient_pack">{{ item.product.metafields.custom.product_varient_pack }}</span>
                     <div class="small-text">
                       {% if item.product.variants.size > 1 %}
@@ -311,9 +314,7 @@
                   {% endif %}
 
                   {% render 'unit-price', variant: item %}
-                  {% if promotionalLine %}
-                    <div class="line-promotional-banner">{{ settings.offer_product_subtext }}</div>
-                  {% endif %}
+                  
                   
                 </div>
 
