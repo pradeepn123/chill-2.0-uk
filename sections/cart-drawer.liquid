@@ -204,7 +204,7 @@
                     <div class="cart-drawer-summary-item-wrapper">
                       <div class="cart-drawer-summary-item">
                         <div class="cart-drawer-summary-item__image" id="cart-drawer-item-image-{{ item.id }}">
-                          <a href="{{ item.url }}">
+                          <a href="{{ item.url }}" {% if item.url == '/products/mystery-gift?variant=43675963687067' %} style="pointer-events: none;"{% endif %}>
                             {% render 'responsive-image', image: item.image %}
                           </a>
                         </div>
@@ -231,7 +231,7 @@
                                   </span>
                                 {% else %}
                                   {% if item.final_line_price == 0 %}
-                                    <span class="cart-drawer-summary-item__price-current theme-money">FREE</span>
+                                    <span class="cart-drawer-summary-item__price-current theme-money">Free</span>
                                   {% elsif item.original_line_price != item.final_line_price %}
                                     <span class="reduced-price cart-drawer-summary-item__price-current theme-money">{% render 'price', price: item.final_line_price, disable_currency_code: true %}</span>
                                     <span class="theme-money struck-out-price">{% render 'price', price: item.original_line_price, disable_currency_code: true %}</span>
@@ -286,7 +286,7 @@
                           {% endif %}
                           
                           <div class="cart-item__column cart-item__quantity cart-drawer-summary-item__quantity">
-                            <div class="quantity buttoned-input">
+                            <div class="quantity buttoned-input" {% if promotionalLine == true %} style="visibility: hidden;"{%endif%}>
                               <a id="updates_dec_{{ forloop.index }}" class="notabutton quantity-down {% if promotionalLine == true %}visibility-hidden{%endif%} {% if item.quantity == 1 %}pointer-evt-none{% endif %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.label.decrease' | t | escape }}">{% render 'svg-minus' %}</a>
                               <input
                                 class="cart-item__quantity-input {% if promotionalLine %}promotional-quantity{% endif %}"

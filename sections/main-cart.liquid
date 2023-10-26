@@ -323,7 +323,7 @@
                   {% assign can_increase = true %}
                 {% endif %}
                 <div class="cart-item__column cart-item__quantity">
-                  <div class="quantity buttoned-input">
+                  <div class="quantity buttoned-input" {% if promotionalLine == true %} style="visibility: hidden;"{% endif %}>
                     <a id="updates_dec_{{ forloop.index }}" class="notabutton quantity-down {% if promotionalLine == true %}visibility-hidden{%endif%}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.label.decrease' | t | escape }}">{% render 'svg-minus' %}
                     </a>
                     <input class="cart-item__quantity-input" type="text" size="2" id="updates_{{ forloop.index }}" name="updates[]" value="{{ item.quantity }}" data-initial-value="{{ item.quantity }}" data-line="{{ forloop.index }}" {% if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' %}data-max="{{ item.variant.inventory_quantity }}"{% endif %}
