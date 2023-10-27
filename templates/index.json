@@ -1141,6 +1141,7 @@
       "blocks": {
         "17bdc8b1-555f-4abb-98d9-dde254415202": {
           "type": "shopify:\/\/apps\/checkit-formerly-tikshop\/blocks\/tikshop-shoptrade\/9cc01fbc-7a70-4c25-8768-b96d953c7a70",
+          "disabled": true,
           "settings": {
           }
         }
