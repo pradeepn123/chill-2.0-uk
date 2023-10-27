@@ -4,6 +4,7 @@
     "50": [],
     "100": []
   }
+  {% comment %}  Enable theme settings to view the promotional offer  {% endcomment %}
   {% if section.settings.enable_promotion %}
     {% for block in section.blocks %}
       {% for blockSetting in block.settings %}
@@ -97,7 +98,7 @@
                     data-aos="fade-up"
                     data-aos-delay="{{ animation_delay }}"
                     {%- assign animation_delay = animation_delay | plus: 100 -%}
-                  {% endif %} style="display: none;">
+                  {% endif %}>
                   <span class="cart__message__default{{ is_default_message_hidden }}" data-message-default>{{ free_shipping_message }}</span>
               
                   {%- if qualified_shipping_message != blank -%}
@@ -109,6 +110,71 @@
                   {%- endunless -%}
                 </p>
               {%- endif -%}
+
+            {% comment %} Mystery gift Offer  ----->  start {% endcomment %}
+            {% assign cost_difference_to_avail_offer = 5000 %}
+            {% liquid 
+              assign offer_on_product = false
+              assign total_offerProduct_price = 0
+              for item in cart.items
+                 for coll in item.product.collections 
+                   if coll == settings.offer_collection 
+                     assign offer_on_product = true
+                     assign total_offerProduct_price = total_offerProduct_price | plus: item.final_line_price
+                   endif 
+                  endfor 
+               endfor 
+            %}
+            {% assign cost_difference_to_avail_offer = cost_difference_to_avail_offer | minus: total_offerProduct_price %}
+            {% if settings.start_mystery_gift_offer %}
+              {% if offer_on_product == true %}
+                {% if cost_difference_to_avail_offer > 0 %}
+                  {% style %}
+                    .mystery_gift_offer{
+                      margin: 1em 25px;
+                    }
+                  {% endstyle %}
+                  <div class="mystery_gift_offer">
+                    <div class="offer_title">
+                      {% if settings.offer_svg != blank %}
+                        {{ settings.offer_svg }}
+                      {% endif %}
+                      <span class="title"><p>Don’t miss your Free Mystery Gift</p></span>
+                    </div>
+                    <div class="offer_description">
+                      <span class="description"><p>Purchase chill vapes for <strong>{{ cost_difference_to_avail_offer | money }}</strong> more to avail your free mystery gift. </p></span>
+                    </div>
+                    <div class="offer_cta">
+                      {% if settings.offer_cta_url != blank %}
+                        <a href="{{ settings.offer_cta_url }}" class="redirection_cta"><button style="background: {{ settings.offer_cta_background_color }}; border: 1px solid {{settings.offer_cta_background_color}};">Get it now</button></a>
+                      {% endif %}
+                      <p class="offer_terms_and_conditions">*offer valid only for chill vape products cart value</p>
+                    </div>
+                  </div>
+                {% endif %}
+              {% else %}
+                <div class="mystery_gift_offer">
+                    <div class="offer_title">
+                      {% if settings.offer_svg != blank %}
+                        {{ settings.offer_svg }}
+                      {% endif %}
+                      <span class="title">{{ settings.offer_title }}</span>
+                    </div>
+                    <div class="offer_description">
+                      <span class="description">{{ settings.offer_description }}</span>
+                    </div>
+                    <div class="offer_cta">
+                      {% if settings.offer_cta_url != blank %}
+                        <a href="{{ settings.offer_cta_url }}" class="redirection_cta"><button style="background: {{ settings.offer_cta_background_color }}; border: 1px solid {{settings.offer_cta_background_color}};">Get it now</button></a>
+                      {% endif %}
+                      <p class="offer_terms_and_conditions">*offer valid only for chill vape products cart value</p>
+                    </div>
+                </div>
+              {% endif %}
+          {% endif %}
+            {% comment %} Mystery gift Offer  ----->  end {% endcomment %}
+
+
               <form class="cart-drawer-form cart-drawer-summary__section" action="{{ routes.cart_url }}" method="post">
                 {% for item in cart.items %}
                   {% if item.product.metafields.subscriptions.original_handle != blank %}
@@ -120,6 +186,10 @@
                   {% assign has_subscriptions = false %}
                   {% assign selected_shipping_interval_frequency = blank %}
                   {% assign promotionalLine = false %}
+                  {% comment %}  offer only for 'Mystery gift' {% endcomment %}
+                  {% if settings.start_mystery_gift_offer and item.title == 'Mystery Gift' %}
+                    {% assign promotionalLine = true %}
+                  {% endif %}
                   {% for p in item.properties %}
                     {% if p.first == 'shipping_interval_frequency' %}
                       {% assign has_subscriptions = true %}
@@ -129,20 +199,22 @@
                       {% assign promotionalLine = true %}
                     {% endif %}
                   {% endfor %}
+                  
                   <div class="cart-drawer-summary-item-container" data-product-id="{{ item.id }}">
                     <div class="cart-drawer-summary-item-wrapper">
                       <div class="cart-drawer-summary-item">
                         <div class="cart-drawer-summary-item__image" id="cart-drawer-item-image-{{ item.id }}">
-                          <a href="{{ item.url }}">
+                          <a href="{{ item.url }}" {% if item.url == '/products/mystery-gift?variant=43675963687067' %} style="pointer-events: none;"{% endif %}>
                             {% render 'responsive-image', image: item.image %}
                           </a>
                         </div>
+                        
                         <div class="cart-drawer-summary-item__detail">
                           <div class="cart-drawer-summary-item__title-variant">
                             <div class="cart-drawer-summary-item_title_price_total">
                               <a
                                 class="cart-drawer-summary-item__title"
-                                href="{{ item.url }}">
+                                href="{{ item.url }}" {% if item.url == '/products/mystery-gift?variant=43675963687067' %} style="pointer-events: none;"{% endif %}>
                                 {{ item.product.title | replace: "Auto renew", "" | replace: "10.00% Off", "" }}
                                 <span class="cart-drawer-summary-item__varient_pack">{{ item.product.metafields.custom.product_varient_pack }}</span>
                               </a>
@@ -159,7 +231,7 @@
                                   </span>
                                 {% else %}
                                   {% if item.final_line_price == 0 %}
-                                    <span class="cart-drawer-summary-item__price-current theme-money">FREE</span>
+                                    <span class="cart-drawer-summary-item__price-current theme-money">Free</span>
                                   {% elsif item.original_line_price != item.final_line_price %}
                                     <span class="reduced-price cart-drawer-summary-item__price-current theme-money">{% render 'price', price: item.final_line_price, disable_currency_code: true %}</span>
                                     <span class="theme-money struck-out-price">{% render 'price', price: item.original_line_price, disable_currency_code: true %}</span>
@@ -202,7 +274,7 @@
                               {% endif %}
                             </div>
                             {% if promotionalLine %}
-                              <div class="line-promotional-banner">Free</div>
+                              <div class="line-promotional-banner">{{ settings.offer_product_subtext }}</div>
                             {% endif %}
                           </div>
                           
@@ -212,8 +284,9 @@
                           {% else %}
                             {% assign can_increase = true %}
                           {% endif %}
+                          
                           <div class="cart-item__column cart-item__quantity cart-drawer-summary-item__quantity">
-                            <div class="quantity buttoned-input">
+                            <div class="quantity buttoned-input" {% if promotionalLine == true %} style="visibility: hidden;"{%endif%}>
                               <a id="updates_dec_{{ forloop.index }}" class="notabutton quantity-down {% if promotionalLine == true %}visibility-hidden{%endif%} {% if item.quantity == 1 %}pointer-evt-none{% endif %}" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity={{ item.quantity | minus: 1 }}" aria-label="{{ 'cart.label.decrease' | t | escape }}">{% render 'svg-minus' %}</a>
                               <input
                                 class="cart-item__quantity-input {% if promotionalLine %}promotional-quantity{% endif %}"

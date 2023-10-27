@@ -1,0 +1,100 @@
+.product_page_offer, .mystery_gift_offer{
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    gap: 6px;
+    align-items: flex-start;
+    padding: 13px 16px 21px 16px;
+    svg{
+        width: 37px;
+        height: 37px;
+    }
+    .offer_title{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg{
+            visibility: visible;
+        }
+        .title{
+            margin-bottom: 0;
+            p{
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 700;
+                @media (max-width: 375px){
+                    font-size: 13px !important;
+                }
+            }
+            
+        }
+        
+    }
+    .offer_description{
+        p{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+            @media (max-width: 375px){
+                font-size: 12px;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        gap: 6px;
+        padding: 13px;
+        margin-bottom: 35px;
+    }
+    .offer_cta{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        .redirection_cta button{
+            border-radius: 45px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 700;
+            @media (max-width: 841px){
+                width: 100%;
+            }
+        }
+        .offer_terms_and_conditions{
+            font-size: 12px;
+            color: #797979;
+            margin-bottom: 0;
+        }
+        @media (max-width: 841px){
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            .redirection_cta{
+                width: 100%;
+            }
+            .offer_terms_and_conditions{
+                font-size: 10px;
+            }
+        }
+    }
+}
+.mystery_gift_offer{
+    width: unset;
+    margin: 1em 25px;
+    color: #000;
+    .offer_title{
+        .title{
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+} 
+.product_page_offer{
+    margin: 0 0 36px 0 !important;
+}
+.line-promotional-banner{
+    font-size: 14px;
+    color: #171717;
+}

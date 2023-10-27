@@ -1483,6 +1483,87 @@
     ]
   },
   {
+    "name": "Mystery Gift",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Announce - Mystery gift"
+      },
+      {
+        "type": "checkbox",
+        "id": "start_mystery_gift_offer",
+        "label": "Start Mystery gift offer",
+        "default": true
+      },
+      {
+        "type": "collection",
+        "id": "offer_collection",
+        "label": "Collection for offer",
+        "info": "Select collection to which this offer will be applied."
+      },
+      {
+        "type": "html",
+        "id": "offer_svg",
+        "label": "Offer icon"
+      },
+      {
+        "type": "richtext",
+        "id": "offer_title",
+        "label": "Offer title",
+        "default": "<p>Add title here</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "offer_description",
+        "label": "Offer description",
+        "default": "<p>Add offer description here</p>"
+      },
+      {
+        "type": "header",
+        "content": "Offer on cart drawer"
+      },
+      {
+        "type": "text",
+        "id": "offer_product_subtext",
+        "label": "Offer product - subtext",
+        "default": "Happy Halloween"
+      },
+      {
+        "type": "color",
+        "id": "offer_cta_background_color",
+        "label": "Offer CTA button background color",
+        "default": "#000"
+      },
+      {
+        "type": "url",
+        "id": "offer_cta_url",
+        "label": "Offer CTA button - URL"
+      },
+      {
+        "type": "header",
+        "content": "Offer on product page"
+      },
+      {
+        "type": "color",
+        "id": "offer_background_color",
+        "label": "Offer background color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "offer_text_color",
+        "label": "Offer text color",
+        "default": "#FFF"
+      },
+      {
+        "type": "color",
+        "id": "offer_shadow_color",
+        "label": "Offer shadow color",
+        "default": "#FFAC9A"
+      }
+    ]
+  },
+  {
     "name": "Announce Offer",
     "settings": [
       {
