@@ -24,6 +24,11 @@
           "settings": {
           }
         },
+        "8b9b788a-6ad8-4b21-9a6b-e8091caa6919": {
+          "type": "mystery_gift",
+          "settings": {
+          }
+        },
         "7ed039b2-8f74-4226-8017-9218b985c731": {
           "type": "free_shipping",
           "disabled": true,
@@ -165,11 +170,6 @@
             "box_color": "#e0f4d5",
             "show_in_quickbuy": false
           }
-        },
-        "8b9b788a-6ad8-4b21-9a6b-e8091caa6919": {
-          "type": "mystery_gift",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -177,6 +177,7 @@
         "title",
         "vendor",
         "fb5cc85a-da40-49a9-b112-9f240263ca6f",
+        "8b9b788a-6ad8-4b21-9a6b-e8091caa6919",
         "7ed039b2-8f74-4226-8017-9218b985c731",
         "price",
         "description",
@@ -190,8 +191,7 @@
         "e59b1427-26d2-4855-83da-5e917a6d964d",
         "f631a81f-1f59-4f8f-9ed7-0d2e00bed3f1",
         "74ba130d-54be-4ae7-8834-3dbbfeee3e5c",
-        "5c017c1f-8127-4b80-9140-910ef66994aa",
-        "8b9b788a-6ad8-4b21-9a6b-e8091caa6919"
+        "5c017c1f-8127-4b80-9140-910ef66994aa"
       ],
       "settings": {
         "show_breadcrumbs": false,
