@@ -1149,7 +1149,8 @@
         "4a9ff722-9c39-4a3d-b3f7-de368844b606": {
           "type": "select",
           "settings": {
-            "image_redirection_link": "",
+            "image_block": "shopify:\/\/shop_images\/Relax_Quote.jpg",
+            "image_redirection_link": "https:\/\/www.instagram.com\/p\/Cq3Ff_drptU\/",
             "carousel_image_background": ""
           }
         },
