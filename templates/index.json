@@ -1185,6 +1185,14 @@
             "image_redirection_link": "https:\/\/www.instagram.com\/p\/CwkuYM-uw3m\/",
             "carousel_image_background": ""
           }
+        },
+        "de209d6f-8a93-4538-b5b7-cd2ce7230bed": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Marketplace_-_Mock_Up_-_Meme2.jpg",
+            "image_redirection_link": "https:\/\/www.instagram.com\/p\/CpiRotwq0zh\/",
+            "carousel_image_background": ""
+          }
         }
       },
       "block_order": [
@@ -1193,7 +1201,8 @@
         "3c7a8c22-7e98-48a7-a1dd-68437113dd2e",
         "51c3f74a-4bc4-407c-b6e0-5e16c86d9fe4",
         "3c4db93c-22eb-4db8-a7af-e119e50efaea",
-        "b4f493e3-3ded-4f49-a045-d42bfdaf1a5a"
+        "b4f493e3-3ded-4f49-a045-d42bfdaf1a5a",
+        "de209d6f-8a93-4538-b5b7-cd2ce7230bed"
       ],
       "settings": {
         "section_redirection_link": "",
