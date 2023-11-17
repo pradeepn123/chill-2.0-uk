@@ -1157,7 +1157,8 @@
         "3c7a8c22-7e98-48a7-a1dd-68437113dd2e": {
           "type": "select",
           "settings": {
-            "image_redirection_link": "",
+            "image_block": "shopify:\/\/shop_images\/CHILLXSHOWY1023_1006_of_1_darker1-Edit_1.jpg",
+            "image_redirection_link": "https:\/\/www.instagram.com\/p\/CzGhlhluXh3\/",
             "carousel_image_background": ""
           }
         }
