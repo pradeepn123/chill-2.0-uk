@@ -1146,6 +1146,13 @@
             "carousel_image_background": ""
           }
         },
+        "4a9ff722-9c39-4a3d-b3f7-de368844b606": {
+          "type": "select",
+          "settings": {
+            "image_redirection_link": "",
+            "carousel_image_background": ""
+          }
+        },
         "3c7a8c22-7e98-48a7-a1dd-68437113dd2e": {
           "type": "select",
           "settings": {
@@ -1228,6 +1235,7 @@
       },
       "block_order": [
         "271d71b3-48a0-4fdd-a3c8-22da053e29f5",
+        "4a9ff722-9c39-4a3d-b3f7-de368844b606",
         "3c7a8c22-7e98-48a7-a1dd-68437113dd2e",
         "ee48e798-ae36-454e-a761-bec3222d0c16",
         "325baf50-61d2-411e-be91-8ced864741a9",
