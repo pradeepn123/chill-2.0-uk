@@ -1217,6 +1217,14 @@
             "image_redirection_link": "https:\/\/www.instagram.com\/p\/CvcWbipstiH\/?img_index=1",
             "carousel_image_background": ""
           }
+        },
+        "dd7646b9-19c5-40a0-89a8-009021c2e818": {
+          "type": "select",
+          "settings": {
+            "image_block": "shopify:\/\/shop_images\/Blog_Covers_SOBRIETY.jpg",
+            "image_redirection_link": "https:\/\/www.instagram.com\/p\/CvNdJaWux6Y\/",
+            "carousel_image_background": ""
+          }
         }
       },
       "block_order": [
@@ -1229,7 +1237,8 @@
         "de209d6f-8a93-4538-b5b7-cd2ce7230bed",
         "a6eeb90a-36e1-4fea-b8ff-fbdfdd5db403",
         "e6bfc775-c978-4f62-8e3a-e435cc7d41be",
-        "954ee961-9220-4350-b50d-c230b5515fa2"
+        "954ee961-9220-4350-b50d-c230b5515fa2",
+        "dd7646b9-19c5-40a0-89a8-009021c2e818"
       ],
       "settings": {
         "section_redirection_link": "",
