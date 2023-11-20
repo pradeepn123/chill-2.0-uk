@@ -2718,11 +2718,11 @@ body {
     font-size: 35px !important;
   }
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .section-rich-text .majortitle {
     font-size: 52px;
   }
-}
+} */
 .section-rich-text .majortitle p {
   margin-bottom: 0;
 }

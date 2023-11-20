@@ -38,7 +38,7 @@
 }
 .section-background.section-background--small{
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 130px;
 }
 .section-background.section-background--xsmall{
     margin-top: 10px;
@@ -104,3 +104,20 @@
       transform: translateX(-100%);
     }
 }
+[id*="ticker-"] .container .section_heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 42px;
+    text-transform: inherit;
+    margin-bottom: 12px;
+    color: #000000;
+  }
+  @media (max-width: 768px) {
+    [id*="ticker-"] .container .section_heading {
+      font-size: 35px;
+    }
+  }
+  @media (min-width: 1200px) {
+    [id*="ticker-"] .container .section_heading {
+      font-size: 52px;
+    }
+  }
