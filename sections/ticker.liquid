@@ -84,6 +84,11 @@
 
 {{ html_tag_open }} id="ticker-{{ section.id }}" class="top-spacing-{{ section.settings.top_spacing }}{% if section.settings.background != 'hide' %} section-background section-background--{{ section.settings.background_spacing }}{% endif %}"
      data-section-name="ticker">  
+     {% if section.settings.section_heading != blank %} 
+        <div class="container">
+            <h1 class="section_heading">{{ section.settings.section_heading }}</h1>
+        </div>
+    {% endif %}
     {%- capture content -%}
     {% for block in section.blocks %}
             <div class="ticker__icon">
@@ -104,7 +109,7 @@
     {%- endcapture -%}
 
     <div class="desktop_mobile">
-        {% if section.settings.section_redirection_link != blank %}<a href="{{ section.settings.section_redirection_link }}" target="_blank">{% endif %}
+        {% if section.settings.section_redirection_link != blank %}<a href="{{ section.settings.section_redirection_link }}" {% if block.settings.open_link_in_new_tab %} target="_blank" {% endif %}>{% endif %}
         <ticker-section class="ticker {{ section.settings.text_size }}" style="--ticker-delay:{{ section.settings.ticker_time }}s">
             <div class="ticker__container {{ section.settings.direction }}">
                 {{ content }}
@@ -170,6 +175,16 @@
             "groups": ["header"]
         },
         "settings": [
+            {
+                "type": "header",
+                "content": "Heading"
+            },
+            {
+                "type": "richtext",
+                "id": "section_heading",
+                "label": "Section heading",
+                "default": "<p>Section heading</p>"
+            },
             {
                 "type": "header",
                 "content": "LAYOUT"
@@ -304,6 +319,12 @@
                         "type": "color",
                         "id": "carousel_image_background",
                         "label": "Carousel image - Background color"
+                    },
+                    {
+                        "type": "checkbox",
+                        "id": "open_link_in_new_tab",
+                        "label": "Open link in new tab",
+                        "default": true
                     }
                 ]
             }
