@@ -1114,39 +1114,18 @@
         "use_alt_bg": false
       }
     },
-    "3dee64a8-71bf-4655-926f-2db509dcd6a5": {
-      "type": "rich-text",
+    "ba16470f-0dc8-4159-836b-5154c00a902b": {
+      "type": "ticker",
       "blocks": {
-        "template--15968033865886__3dee64a8-71bf-4655-926f-2db509dcd6a5-1664953474fa2ec11e-0": {
-          "type": "heading",
-          "settings": {
-            "title": "<p>Discover <strong>@choosechill<\/strong><\/p>",
-            "use_h1": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15968033865886__3dee64a8-71bf-4655-926f-2db509dcd6a5-1664953474fa2ec11e-0"
-      ],
-      "settings": {
-        "height": "small",
-        "text_alignment": "left",
-        "full_width": true,
-        "use_alt_bg": false
-      }
-    },
-    "be54a0c5-3093-4443-b364-15f5cddcfdf8": {
-      "type": "image-carousel",
-      "blocks": {
-        "271d71b3-48a0-4fdd-a3c8-22da053e29f5": {
+        "cf05908d-7002-4005-b7ee-a3d85a2c5912": {
           "type": "select",
           "settings": {
-            "image_block": "shopify:\/\/shop_images\/IMG_3168_1_db4fe026-744e-4db2-9081-4c2149c7e636.jpg",
+            "image_block": "shopify:\/\/shop_images\/IMG_3168_1_2fba7be1-33aa-44a5-baa8-a6f9af38886b.jpg",
             "image_redirection_link": "https:\/\/www.instagram.com\/p\/Ct_3gaRsJE7\/",
             "carousel_image_background": ""
           }
         },
-        "4a9ff722-9c39-4a3d-b3f7-de368844b606": {
+        "e9716202-9dd9-4649-87b2-9e0dfcc76950": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/Relax_Quote.jpg",
@@ -1154,7 +1133,7 @@
             "carousel_image_background": ""
           }
         },
-        "3c7a8c22-7e98-48a7-a1dd-68437113dd2e": {
+        "96949b26-4943-405f-9b14-7f2134f27bde": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/CHILLXSHOWY1023_1006_of_1_darker1-Edit_1.jpg",
@@ -1162,7 +1141,7 @@
             "carousel_image_background": ""
           }
         },
-        "51c3f74a-4bc4-407c-b6e0-5e16c86d9fe4": {
+        "c7a8bb98-4a2d-4d93-82b3-f2eb0a6bad0d": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/1-Stop_Burning_-_Social.jpg",
@@ -1170,7 +1149,7 @@
             "carousel_image_background": ""
           }
         },
-        "3c4db93c-22eb-4db8-a7af-e119e50efaea": {
+        "c463ff2f-bb87-4bb9-9dcb-295bf388aa59": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/4A_s-Carousel-Slide1.png",
@@ -1178,7 +1157,7 @@
             "carousel_image_background": ""
           }
         },
-        "b4f493e3-3ded-4f49-a045-d42bfdaf1a5a": {
+        "9c233999-1d4f-496d-8b6e-843a02a0342f": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/Screenshot_2023-11-15_at_14.44.50.png",
@@ -1186,7 +1165,7 @@
             "carousel_image_background": ""
           }
         },
-        "de209d6f-8a93-4538-b5b7-cd2ce7230bed": {
+        "e3db6bd0-f4c8-4fac-b1a2-3ff814b01199": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/Marketplace_-_Mock_Up_-_Meme2.jpg",
@@ -1194,7 +1173,7 @@
             "carousel_image_background": ""
           }
         },
-        "a6eeb90a-36e1-4fea-b8ff-fbdfdd5db403": {
+        "8f6cdc95-ad12-40a8-8c97-91b4416bb9ba": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/ChillXShowy0823_411_of_1_-Edit.jpg",
@@ -1202,7 +1181,7 @@
             "carousel_image_background": ""
           }
         },
-        "e6bfc775-c978-4f62-8e3a-e435cc7d41be": {
+        "ccbe4d38-2534-4687-a4cf-236909fa9dcb": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/StressEffects-Social-Blog.jpg",
@@ -1210,7 +1189,7 @@
             "carousel_image_background": ""
           }
         },
-        "954ee961-9220-4350-b50d-c230b5515fa2": {
+        "82dfdd2c-9f0e-4d33-8c9d-332e61f51303": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/Mood1.jpg",
@@ -1218,7 +1197,7 @@
             "carousel_image_background": ""
           }
         },
-        "dd7646b9-19c5-40a0-89a8-009021c2e818": {
+        "ae36b696-da0b-4f7b-ae80-d7f41670bae6": {
           "type": "select",
           "settings": {
             "image_block": "shopify:\/\/shop_images\/Blog_Covers_SOBRIETY.jpg",
@@ -1228,42 +1207,30 @@
         }
       },
       "block_order": [
-        "271d71b3-48a0-4fdd-a3c8-22da053e29f5",
-        "4a9ff722-9c39-4a3d-b3f7-de368844b606",
-        "3c7a8c22-7e98-48a7-a1dd-68437113dd2e",
-        "51c3f74a-4bc4-407c-b6e0-5e16c86d9fe4",
-        "3c4db93c-22eb-4db8-a7af-e119e50efaea",
-        "b4f493e3-3ded-4f49-a045-d42bfdaf1a5a",
-        "de209d6f-8a93-4538-b5b7-cd2ce7230bed",
-        "a6eeb90a-36e1-4fea-b8ff-fbdfdd5db403",
-        "e6bfc775-c978-4f62-8e3a-e435cc7d41be",
-        "954ee961-9220-4350-b50d-c230b5515fa2",
-        "dd7646b9-19c5-40a0-89a8-009021c2e818"
+        "cf05908d-7002-4005-b7ee-a3d85a2c5912",
+        "e9716202-9dd9-4649-87b2-9e0dfcc76950",
+        "96949b26-4943-405f-9b14-7f2134f27bde",
+        "c7a8bb98-4a2d-4d93-82b3-f2eb0a6bad0d",
+        "c463ff2f-bb87-4bb9-9dcb-295bf388aa59",
+        "9c233999-1d4f-496d-8b6e-843a02a0342f",
+        "e3db6bd0-f4c8-4fac-b1a2-3ff814b01199",
+        "8f6cdc95-ad12-40a8-8c97-91b4416bb9ba",
+        "ccbe4d38-2534-4687-a4cf-236909fa9dcb",
+        "82dfdd2c-9f0e-4d33-8c9d-332e61f51303",
+        "ae36b696-da0b-4f7b-ae80-d7f41670bae6"
       ],
       "settings": {
+        "section_heading": "<p>Discover <strong>@choosechill<\/strong><\/p>",
         "section_redirection_link": "",
         "carousel_image_width": 400,
         "carousel_image_height": 400,
         "carousel_image_border_radius": 33,
         "carousel_image_width_mobile": 250,
-        "carousel_image_height_mobile": 250
-      }
-    },
-    "166453148629faf25b": {
-      "type": "apps",
-      "blocks": {
-        "17bdc8b1-555f-4abb-98d9-dde254415202": {
-          "type": "shopify:\/\/apps\/checkit-formerly-tikshop\/blocks\/tikshop-shoptrade\/9cc01fbc-7a70-4c25-8768-b96d953c7a70",
-          "disabled": true,
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "17bdc8b1-555f-4abb-98d9-dde254415202"
-      ],
-      "settings": {
-        "full_width": false
+        "carousel_image_height_mobile": 250,
+        "ticker_time": 40,
+        "direction": "ticker-to-left",
+        "background_spacing": "small",
+        "remove_bottom_spacing": false
       }
     },
     "16607637867e64e5b3": {
@@ -1294,9 +1261,7 @@
     "8f5264ca-7f1d-4235-b07d-2de00dd54813",
     "1661495934a2300196",
     "16607619805b81a490",
-    "3dee64a8-71bf-4655-926f-2db509dcd6a5",
-    "be54a0c5-3093-4443-b364-15f5cddcfdf8",
-    "166453148629faf25b",
+    "ba16470f-0dc8-4159-836b-5154c00a902b",
     "16607637867e64e5b3"
   ]
 }
