@@ -193,33 +193,6 @@
             "text_alignment": "center left"
           }
         },
-        "94ff9b3e-cc66-4646-a075-a4a633f6fe97": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HEADSTAND_-_Homepage_Banner_MEDIUM_4eec0527-59c8-4f37-b11b-ffd07eac024b.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HEADSTAND_-_MOBILE_-Homepage_Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Welcome <strong> \nHeadstand <\/strong>",
-            "title_size": 74,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Made from coffee leaf, tastes nothing <br\/>like coffee. Caffeine free!<\/p>",
-            "heading_color": "#fffcfc",
-            "text_color": "#fffcfc",
-            "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "",
-            "button_label_2": "TRY HEADSTAND",
-            "button_url_2": "shopify:\/\/collections\/headstand",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
           "type": "image",
           "settings": {
@@ -246,6 +219,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "0ee65477-2b53-43d3-81b0-07a72ca3cd04": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Wild-HP_DESKTOP_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Wild-HP_MOBILE_1.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Are you\n<strong> Wild <\/strong> by\nNature?",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>24hr protection with Wild refillable natural deodorant. <br\/>Great for your skin and the environment<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "SHOP WILD",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "bottom left"
+          }
         }
       },
       "block_order": [
@@ -256,8 +256,8 @@
         "910838dc-8acc-48d2-a9c9-dda3f47dc712",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "adc61783-b87d-4ad1-a437-8b98c06ac308",
-        "94ff9b3e-cc66-4646-a075-a4a633f6fe97",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1"
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
+        "0ee65477-2b53-43d3-81b0-07a72ca3cd04"
       ],
       "settings": {
         "height": "fixed",
