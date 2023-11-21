@@ -59,6 +59,7 @@
         },
         "5b64812e-9295-4645-9cd2-e2bac629be70": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/CellularGoods-HP-DESKTOP.jpg",
             "mobile_image": "shopify:\/\/shop_images\/CellularGoods-HP-MOBILE.jpg",
@@ -300,6 +301,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "a66df7d6-8a48-4e6c-abd5-96e86aa343a1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP_AWKN_Homepage_Banner_MEDIUM_1_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE_AWKN_Homepage_Banner_MEDIUM_1_1.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Refresh and \nrecover\nwith <strong> AWKN<\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>A science-backed liquid supplement with natural superfoods <br\/>and vitamins to help your body rebalance and recover.<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "CHOOSE RECOVERY",
+            "button_url_1": "https:\/\/uk.chill.com\/collections\/awkn",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -313,7 +341,8 @@
         "910838dc-8acc-48d2-a9c9-dda3f47dc712",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "adc61783-b87d-4ad1-a437-8b98c06ac308",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1"
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
+        "a66df7d6-8a48-4e6c-abd5-96e86aa343a1"
       ],
       "settings": {
         "height": "fixed",
