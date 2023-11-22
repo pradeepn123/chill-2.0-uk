@@ -140,6 +140,7 @@
         },
         "41559766-2511-4321-a759-ff9014c6f7f7": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DESKTOP_YUMI_Homepage_Banner_MEDIUM_1_9de6e427-03dd-40fa-9a09-d1ed40961950.jpg",
             "mobile_image": "shopify:\/\/shop_images\/MOBILE_YUMI_Homepage_Banner.png",
@@ -248,7 +249,6 @@
         },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DESKTOP-Homepagebanner-Quanna_MEDIUM_34eee06d-79d0-401a-af73-a4e2d82d4fe8.jpg",
             "mobile_image": "shopify:\/\/shop_images\/MOBILE-Homepagebanner-Quanna.jpg",
@@ -303,6 +303,7 @@
         },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DESKTOP-HomepageBanner-GoodRays_MEDUIUM.jpg",
             "mobile_image": "shopify:\/\/shop_images\/MOBILE_-_Goodrays_Homepage.jpg",
