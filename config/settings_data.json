@@ -1069,6 +1069,7 @@
     "announce_gummies_offer_text_desktop": "The <span>CHILL BLACK FRIDAY SALE<\/span> is here! Up to <span>40% OFF<\/span> on selected items",
     "announce_gummies_offer_text_mobile": "The <span>CHILL BLACK FRIDAY SALE<\/span> is here! Up to <span>40% OFF<\/span> on selected items",
     "announce_gummies_offer_button_text": "SHOP SALE",
+    "announce_gummies_button_color": "#9792e4",
     "announce_gummies_button_url": "shopify:\/\/collections\/sales",
     "shop_all_link": "shop-all",
     "sections": {
