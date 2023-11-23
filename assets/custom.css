@@ -1211,7 +1211,6 @@ predictive-search .search_section input {
   opacity: 1 !important;
 }
 #NavigationTier2-1.navigation__child-tier .container .navigation__columns .navigation__column .navigation__child-tier .navigation__tier-3 {
-  max-height: 17.688rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -2718,11 +2717,11 @@ body {
     font-size: 35px !important;
   }
 }
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
   .section-rich-text .majortitle {
     font-size: 52px;
   }
-} */
+}
 .section-rich-text .majortitle p {
   margin-bottom: 0;
 }
