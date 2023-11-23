@@ -3,6 +3,33 @@
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
+        "0d58b166-3642-4849-840b-915397a2a9f1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DT_BF_Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOB_BF_Banner.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "The CHILL \n<strong> Black Friday <\/strong>\nSale is <strong>here!<\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Up to 40% off on selected brands<\/p>",
+            "heading_color": "#171717",
+            "text_color": "#171717",
+            "enlarge_text": true,
+            "button_label_1": "SHOP BLACK FRIDAY",
+            "button_url_1": "shopify:\/\/collections\/sales",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#171717",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "02986a45-f0bf-4170-a6b2-37db262b7084": {
           "type": "image",
           "settings": {
@@ -106,33 +133,6 @@
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "0d58b166-3642-4849-840b-915397a2a9f1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DT_BF_Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/MOB_BF_Banner.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "The CHILL \n<strong> Black Friday <\/strong>\nSale is <strong>here!<\/strong>",
-            "title_size": 64,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Up to 40% off on selected brands<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#171717",
-            "enlarge_text": true,
-            "button_label_1": "SHOP BLACK FRIDAY",
-            "button_url_1": "shopify:\/\/collections\/sales",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#171717",
             "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
@@ -331,11 +331,11 @@
         }
       },
       "block_order": [
+        "0d58b166-3642-4849-840b-915397a2a9f1",
         "02986a45-f0bf-4170-a6b2-37db262b7084",
         "0ee65477-2b53-43d3-81b0-07a72ca3cd04",
         "a66df7d6-8a48-4e6c-abd5-96e86aa343a1",
         "5b64812e-9295-4645-9cd2-e2bac629be70",
-        "0d58b166-3642-4849-840b-915397a2a9f1",
         "41559766-2511-4321-a759-ff9014c6f7f7",
         "6973fb3c-05e0-4873-9295-21841f3fcc36",
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1",
