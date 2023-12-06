@@ -1166,7 +1166,7 @@
           "nav_mob_products_collection": "",
           "enable_search": true,
           "search_suggestions_title": "<p>Popular <strong>Products<\/strong><\/p>",
-          "search_suggestions_menu": "shop",
+          "search_suggestions_menu": "popular-products",
           "icon_strategy": "icons_all",
           "cart_icon": "custom"
         }
