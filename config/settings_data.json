@@ -1281,10 +1281,17 @@
             "settings": {
               "text": "<p><strong>BLACK FRIDAY SALE<\/strong> Up to <strong>40% off <\/strong><\/p>"
             }
+          },
+          "fe60e3a3-515c-4f85-8a5b-936fad16b31b": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>Free shipping for whole of December<\/p>"
+            }
           }
         },
         "block_order": [
-          "2e941249-38b6-4172-8dea-a0d2e959208f"
+          "2e941249-38b6-4172-8dea-a0d2e959208f",
+          "fe60e3a3-515c-4f85-8a5b-936fad16b31b"
         ],
         "custom_css": [
 
