@@ -37,7 +37,7 @@
             "image": "shopify:\/\/shop_images\/DESKTOP_Multibrand_Homepage_Banner_MEDIUM_1_1_b5aa1948-7a79-407c-b606-eb13295e350e.jpg",
             "mobile_image": "shopify:\/\/shop_images\/MOBILE_Multibrand_Homepage_Banner_MEDIUM_15c0bd94-6a1b-41ba-9c48-56eaaa3ae682.jpg",
             "image_position": "center left",
-            "mobile_image_position": "left center",
+            "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
             "title": "Step into the <strong> \nHome of \nRelaxation <\/strong>",
@@ -368,7 +368,7 @@
 
       ],
       "settings": {
-        "marquee_text": "FREE SHIPPING Free shipping FOR WHOLE OF DECEMBER",
+        "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
         "marquee_background_color": "#9792e4",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
