@@ -570,10 +570,10 @@
             "slide_link": "",
             "subheading": "",
             "title": "<strong> Sipping Sobriety: \nNavigating Social \nSituations Without \nAlcohol<\/strong>",
-            "title_size": 56,
+            "title_size": 46,
             "title_size_mobile": 36,
             "use_h1": false,
-            "text": "<p>Tips that’ll help you handle staying sober <br\/>one sip at a time.<\/p>",
+            "text": "<p>Tips that’ll help you handle staying <br\/>sober one sip at a time.<\/p>",
             "heading_color": "#000000",
             "text_color": "#000000",
             "enlarge_text": true,
@@ -582,7 +582,7 @@
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
+            "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
