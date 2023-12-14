@@ -533,29 +533,56 @@
             "text_alignment": "center left"
           }
         },
-        "8cbd6ac0-87e3-4168-9393-58d9ae864208": {
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Desktop.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Mobile.jpg",
+            "image": "shopify:\/\/shop_images\/ColdTurkey-Blog-Banner-DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/ColdTurkey-Blog-Banner-MOBILE.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong>Sneaky Effects \nof Stress You \nMight Not Notice<\/strong>",
+            "title": "<strong> Cold Turkey or \nSlow Roast? <s><\/s><\/strong>",
             "title_size": 46,
             "title_size_mobile": 36,
             "use_h1": false,
-            "text": "<p>We’ve unpacked 10 ways stress is sneaking<br\/>up on you, so you can watch your back!<\/p>",
+            "text": "<p>Find You Quitting Nicotine Recipe!<\/p>",
             "heading_color": "#000000",
             "text_color": "#000000",
             "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "",
-            "button_label_2": "HAVE A READ!",
-            "button_url_2": "shopify:\/\/blogs\/lifestyle\/10-sneaky-effects-of-stress-you-might-not-notice",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
+            "button_label_1": "READ MORE",
+            "button_url_1": "shopify:\/\/blogs\/chill-blog\/healthy-ravers-happy-ravers",
+            "button_label_2": "",
+            "button_url_2": "https:\/\/uk.chill.com\/blogs\/lifestyle\/cold-turkey-or-slow-roast-finding-your-quitting-nicotine-recipe",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#171717",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "4538d984-09e9-4bcd-814c-d49bf68fca44": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_MEDIUM_ef4a6f48-4b10-4283-b36c-59ddd009444e.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_MEDIUM_1013fa0c-c328-45f0-bb5c-71436349d208.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> Sipping Sobriety: \nNavigating Social \nSituations Without \nAlcohol<\/strong>",
+            "title_size": 46,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>Tips that’ll help you handle staying <br\/>sober one sip at a time.<\/p>",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ NOW",
+            "button_url_1": "shopify:\/\/blogs\/lifestyle\/sipping-sobriety-navigating-social-situations-without-alcohol",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -587,29 +614,29 @@
             "text_alignment": "center left"
           }
         },
-        "4538d984-09e9-4bcd-814c-d49bf68fca44": {
+        "8cbd6ac0-87e3-4168-9393-58d9ae864208": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_MEDIUM_ef4a6f48-4b10-4283-b36c-59ddd009444e.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-SippingSobriety_MEDIUM_1013fa0c-c328-45f0-bb5c-71436349d208.jpg",
+            "image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/StressEffects-HP-Ban-Mobile.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong> Sipping Sobriety: \nNavigating Social \nSituations Without \nAlcohol<\/strong>",
+            "title": "<strong>Sneaky Effects \nof Stress You \nMight Not Notice<\/strong>",
             "title_size": 46,
             "title_size_mobile": 36,
             "use_h1": false,
-            "text": "<p>Tips that’ll help you handle staying <br\/>sober one sip at a time.<\/p>",
+            "text": "<p>We’ve unpacked 10 ways stress is sneaking<br\/>up on you, so you can watch your back!<\/p>",
             "heading_color": "#000000",
             "text_color": "#000000",
             "enlarge_text": true,
-            "button_label_1": "READ NOW",
-            "button_url_1": "shopify:\/\/blogs\/lifestyle\/sipping-sobriety-navigating-social-situations-without-alcohol",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#171717",
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "HAVE A READ!",
+            "button_url_2": "shopify:\/\/blogs\/lifestyle\/10-sneaky-effects-of-stress-you-might-not-notice",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -694,44 +721,17 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
-        },
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/ColdTurkey-Blog-Banner-DESKTOP.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/ColdTurkey-Blog-Banner-MOBILE.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> Cold Turkey or \nSlow Roast? <s><\/s><\/strong>",
-            "title_size": 46,
-            "title_size_mobile": 36,
-            "use_h1": false,
-            "text": "<p>Find You Quitting Nicotine Recipe!<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "READ MORE",
-            "button_url_1": "shopify:\/\/blogs\/chill-blog\/healthy-ravers-happy-ravers",
-            "button_label_2": "",
-            "button_url_2": "https:\/\/uk.chill.com\/blogs\/lifestyle\/cold-turkey-or-slow-roast-finding-your-quitting-nicotine-recipe",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#171717",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
         }
       },
       "block_order": [
         "c9689645-d1f7-40b8-ada2-22ff4755e741",
-        "8cbd6ac0-87e3-4168-9393-58d9ae864208",
-        "36a3bf99-5af7-4f7c-8adc-323ccc14bc85",
+        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0",
         "4538d984-09e9-4bcd-814c-d49bf68fca44",
+        "36a3bf99-5af7-4f7c-8adc-323ccc14bc85",
+        "8cbd6ac0-87e3-4168-9393-58d9ae864208",
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
         "4bb6e3ea-5c7f-4890-be97-169ada953323",
-        "200ca125-cf5d-4260-9a88-958b49fc402c",
-        "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0"
+        "200ca125-cf5d-4260-9a88-958b49fc402c"
       ],
       "settings": {
         "height": "fixed",
