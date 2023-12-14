@@ -368,7 +368,7 @@
 
       ],
       "settings": {
-        "marquee_text": "FREE SHIPPING FOR WHOLE OF DECEMBER",
+        "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
         "marquee_background_color": "#9792e4",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
@@ -601,8 +601,8 @@
             "title_size_mobile": 46,
             "use_h1": false,
             "text": "<p>How the Gratitude Attitude can boost<br\/>your happiness!<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
+            "heading_color": "#000",
+            "text_color": "#000",
             "enlarge_text": true,
             "button_label_1": "LEARN HOW",
             "button_url_1": "",
@@ -748,6 +748,32 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "96d857f0-f4f4-4a10-b9ee-4967694ddcdc": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "Tell your story",
+            "title": "Two line\nslide heading",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>And optional subtext<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "",
+            "button_label_2": "Shop all",
+            "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center center"
+          }
         }
       },
       "block_order": [
@@ -759,7 +785,8 @@
         "8cbd6ac0-87e3-4168-9393-58d9ae864208",
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
         "4bb6e3ea-5c7f-4890-be97-169ada953323",
-        "200ca125-cf5d-4260-9a88-958b49fc402c"
+        "200ca125-cf5d-4260-9a88-958b49fc402c",
+        "96d857f0-f4f4-4a10-b9ee-4967694ddcdc"
       ],
       "settings": {
         "height": "fixed",

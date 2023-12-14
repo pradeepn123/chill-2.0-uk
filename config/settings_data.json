@@ -1156,7 +1156,7 @@
           "mega_collection_heading": "By Collection",
           "shop_text": "Shop-All",
           "shop_link": "https:\/\/uk.chill.com\/collections\/shop-all",
-          "menu_linklist": "mega-menu-final",
+          "menu_linklist": "mega-menu-updated",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-left",
           "nav_featured_link": "Sale",
@@ -1285,7 +1285,7 @@
           "70d98327-63aa-4239-9fe2-539cceb04294": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Free shipping for whole of December<\/p>"
+              "text": "<p>Join CLUB CHILL for exclusive rewards - First 100 members receive £15 voucher<\/p>"
             }
           }
         },
