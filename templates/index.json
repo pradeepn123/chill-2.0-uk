@@ -697,19 +697,18 @@
         },
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_MEDIUM_8586d869-1c19-41fe-8e28-70970126aba0.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Blog-HP-Banner-HealthyRavers_MEDIUM_011f539a-f48c-47b5-85ca-25a8d3f37881.jpg",
+            "image": "shopify:\/\/shop_images\/ColdTurkey-Blog-Banner-DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/ColdTurkey-Blog-Banner-MOBILE.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "<strong> Healthy Ravers\n= Happy Ravers <s><\/s><\/strong>",
+            "title": "<strong> Cold Turkey or \nSlow Roast? <s><\/s><\/strong>",
             "title_size": 56,
             "title_size_mobile": 36,
             "use_h1": false,
-            "text": "<p>Did you know that raving can make you <br\/>happier, healthier and more successful?<\/p>",
+            "text": "<p>Find You Quitting Nicotine Recipe!<\/p>",
             "heading_color": "#000000",
             "text_color": "#000000",
             "enlarge_text": true,
@@ -718,7 +717,7 @@
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
+            "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
