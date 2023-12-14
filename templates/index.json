@@ -721,6 +721,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "23ac7178-f99c-4f73-b6ef-5f88615bfaa2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gratitude-Blog-Banner.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Gratitude-Blog-Banner-MOBILE.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>The Science of \nThankfulness<\/strong>",
+            "title_size": 54,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>How the Gratitude Attitude can boost<br\/>your happiness!<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "LEARN HOW",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#F3B09F",
+            "button_text_color": "#171717",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -731,7 +758,8 @@
         "8cbd6ac0-87e3-4168-9393-58d9ae864208",
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
         "4bb6e3ea-5c7f-4890-be97-169ada953323",
-        "200ca125-cf5d-4260-9a88-958b49fc402c"
+        "200ca125-cf5d-4260-9a88-958b49fc402c",
+        "23ac7178-f99c-4f73-b6ef-5f88615bfaa2"
       ],
       "settings": {
         "height": "fixed",
