@@ -506,6 +506,33 @@
     "2b70b496-4b03-4b3b-924a-8b77ee251e9c": {
       "type": "slideshow",
       "blocks": {
+        "c9689645-d1f7-40b8-ada2-22ff4755e741": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HolidayNav-Ban-DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/HolidayNav-Ban-MOBILE.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong>Navigating \nStress Through\nthe Holidays <\/strong>",
+            "title_size": 56,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "<p>The Holidays aren't always fun and games.<br\/>We've got some handy tips to keep you CHILL.<\/p>",
+            "heading_color": "#171717",
+            "text_color": "#000000",
+            "enlarge_text": true,
+            "button_label_1": "READ MORE",
+            "button_url_1": "https:\/\/uk.chill.com\/blogs\/lifestyle\/reframing-the-meaning-of-the-holidays",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#ffffff",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "8cbd6ac0-87e3-4168-9393-58d9ae864208": {
           "type": "image",
           "settings": {
@@ -668,33 +695,6 @@
             "text_alignment": "center left"
           }
         },
-        "c9689645-d1f7-40b8-ada2-22ff4755e741": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/HolidayNav-Ban-DESKTOP.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/HolidayNav-Ban-MOBILE.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong>Navigating \nStress Through\nthe Holidays <\/strong>",
-            "title_size": 56,
-            "title_size_mobile": 36,
-            "use_h1": false,
-            "text": "<p>The Holidays aren't always fun and games.<br\/>We've got some handy tips to keep you CHILL.<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#000000",
-            "enlarge_text": true,
-            "button_label_1": "READ MORE",
-            "button_url_1": "https:\/\/uk.chill.com\/blogs\/lifestyle\/reframing-the-meaning-of-the-holidays",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0": {
           "type": "image",
           "disabled": true,
@@ -725,13 +725,13 @@
         }
       },
       "block_order": [
+        "c9689645-d1f7-40b8-ada2-22ff4755e741",
         "8cbd6ac0-87e3-4168-9393-58d9ae864208",
         "36a3bf99-5af7-4f7c-8adc-323ccc14bc85",
         "4538d984-09e9-4bcd-814c-d49bf68fca44",
         "30f4598b-5a5e-4967-a71c-a4888ada542a",
         "4bb6e3ea-5c7f-4890-be97-169ada953323",
         "200ca125-cf5d-4260-9a88-958b49fc402c",
-        "c9689645-d1f7-40b8-ada2-22ff4755e741",
         "template--15783537705115__2b70b496-4b03-4b3b-924a-8b77ee251e9c-168751829985785efb-0"
       ],
       "settings": {
