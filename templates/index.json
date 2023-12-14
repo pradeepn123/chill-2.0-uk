@@ -368,7 +368,7 @@
 
       ],
       "settings": {
-        "marquee_text": "FREE SHIPPING ON ORDERS OVER £50",
+        "marquee_text": "FREE SHIPPING FOR WHOLE OF DECEMBER",
         "marquee_background_color": "#9792e4",
         "marquee_text_color": "#ffffff",
         "marquee_text_font_size": 24,
@@ -601,8 +601,8 @@
             "title_size_mobile": 46,
             "use_h1": false,
             "text": "<p>How the Gratitude Attitude can boost<br\/>your happiness!<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
+            "heading_color": "#000000",
+            "text_color": "#000000",
             "enlarge_text": true,
             "button_label_1": "LEARN HOW",
             "button_url_1": "",
