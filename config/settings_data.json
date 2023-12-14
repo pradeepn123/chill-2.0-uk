@@ -1065,7 +1065,7 @@
     "offer_description": "<p>Shop chill vapes and avail a free mystery gift for cart value above <strong>£50 <\/strong><\/p>",
     "offer_cta_url": "shopify:\/\/collections\/chill-zero",
     "offer_shadow_color": "#9792e4",
-    "enable_gummies_offer_on_announcement_bar": true,
+    "enable_gummies_offer_on_announcement_bar": false,
     "announce_gummies_offer_text_desktop": "The <span>12 Days of CHILLMAS<\/span> is here! Get <span>20% OFF<\/span> on CHILLZER0 Cherry",
     "announce_gummies_offer_text_mobile": "The <span>12 Days of CHILLMAS<\/span> is here! Get <span>20% OFF<\/span> on CHILLZER0 Cherry",
     "announce_gummies_offer_button_text": "SHOP CHILLMAS",
@@ -1156,7 +1156,7 @@
           "mega_collection_heading": "By Collection",
           "shop_text": "Shop-All",
           "shop_link": "https:\/\/uk.chill.com\/collections\/shop-all",
-          "menu_linklist": "mega-menu-final",
+          "menu_linklist": "mega-menu-updated",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-left",
           "nav_featured_link": "Sale",
@@ -1228,7 +1228,7 @@
             "type": "text",
             "settings": {
               "title": "Zoetic Corp",
-              "text": "",
+              "text": "<p>Contact<br\/>ukinfo@chill.com<\/p>",
               "image": "shopify:\/\/shop_images\/Chill_black.png",
               "image_width": 160,
               "show_social_icons": true,
@@ -1282,16 +1282,16 @@
               "text": "<p><strong>BLACK FRIDAY SALE<\/strong> Up to <strong>40% off <\/strong><\/p>"
             }
           },
-          "fe60e3a3-515c-4f85-8a5b-936fad16b31b": {
+          "70d98327-63aa-4239-9fe2-539cceb04294": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Free shipping for whole of December<\/p>"
+              "text": "<p>Join CLUB CHILL for exclusive rewards - First 100 members receive £15 voucher<\/p>"
             }
           }
         },
         "block_order": [
           "2e941249-38b6-4172-8dea-a0d2e959208f",
-          "fe60e3a3-515c-4f85-8a5b-936fad16b31b"
+          "70d98327-63aa-4239-9fe2-539cceb04294"
         ],
         "custom_css": [
 
