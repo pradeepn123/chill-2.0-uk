@@ -392,7 +392,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_0379_2.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "c13dab0c-a319-4c33-9e91-048613792ea3": {
@@ -400,7 +401,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_0353.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "fccde99d-fdd6-4680-9848-8fcda4fb1305": {
@@ -408,7 +410,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/image_507366411.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "1841e86d-be4a-459b-b88a-01d304f505d3": {
@@ -416,7 +419,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_4701_2_6e3e0de8-a539-4e7d-bde6-1fcea3c4ef16.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "a3a302fd-33e0-43fc-9675-a58fad642e69": {
@@ -424,7 +428,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_9273_1.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "9459104c-8d34-4ba2-a0ec-c3c715cec7a9": {
@@ -432,7 +437,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_9002_1_fee26fe9-9a64-45bc-a48a-a79d0efac5da.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "549f05fa-fa4e-4d71-b375-9cf9c5cd8d89": {
@@ -440,7 +446,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_3168_1_2fba7be1-33aa-44a5-baa8-a6f9af38886b.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "fbda0ba4-cde1-4eba-a9c1-0ec5e1001d4d": {
@@ -448,7 +455,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_9172_2.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "1f183033-cb6a-48ac-ae23-e0ed85099175": {
@@ -456,7 +464,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_4104_2_22ff9be2-c69b-4be9-838e-1f91243fe974.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         },
         "25f74c1c-7358-4f79-a106-6e4ea7364933": {
@@ -464,7 +473,8 @@
           "settings": {
             "image_block": "shopify:\/\/shop_images\/IMG_24111.jpg",
             "image_redirection_link": "",
-            "carousel_image_background": ""
+            "carousel_image_background": "",
+            "open_link_in_new_tab": true
           }
         }
       },
@@ -481,13 +491,14 @@
         "25f74c1c-7358-4f79-a106-6e4ea7364933"
       ],
       "settings": {
+        "section_heading": "",
         "section_redirection_link": "https:\/\/instagram.com\/chillzer0?igshid=MzRlODBiNWFlZA==",
         "carousel_image_width": 400,
         "carousel_image_height": 400,
         "carousel_image_border_radius": 33,
         "carousel_image_width_mobile": 250,
         "carousel_image_height_mobile": 250,
-        "ticker_time": 22,
+        "ticker_time": 50,
         "direction": "ticker-to-left",
         "background_spacing": "medium",
         "remove_bottom_spacing": false
