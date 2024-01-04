@@ -7,12 +7,12 @@
   assign collection = collections[section.settings.collection]
 -%}
 
-<div class="section-id-{{ section.id }} collection-slider-row {% if section.settings.use_alt_bg %}use-alt-bg{% endif %}" data-section-type="featured-collection" data-components="accordion,modal,price-range">
+<div class="section-id-{{ section.id }} collection-slider-row {% if section.settings.use_alt_bg %}use-alt-bg{% endif %} {% if request.path contains '/reward' %} reward-info__trending-products {% endif %}" data-section-type="featured-collection" data-components="accordion,modal,price-range">
   <div class="container{% if section.settings.enable_carousel %} container--not-mobile{% endif %}{% if section.settings.full_width %} container--no-max{% endif %}">
     <div class="{% if section.settings.enable_carousel %}collection-slider{% endif %}">
 
       <div class="main_heading_collection">
-        <h2 class="hometitle h4-style align-center has-paging" data-cc-animate data-cc-animate-delay="0.3s">
+        <h2 class="hometitle h4-style align-center has-paging {% if request.path contains '/reward' %} reward-info__trending-products-heading {% endif %}" data-cc-animate data-cc-animate-delay="0.3s">
           {% if section.settings.enable_carousel %}<a class="prev ltr-icon" href="#">{% render 'svg-chevron-left' %}</a>{% endif %}
           <a class="has-paging__title" href="{{ collection.url }}"><span>{{ section.settings.title }}</span></a>
           {% if section.settings.enable_carousel %}<a class="next ltr-icon" href="#">{% render 'svg-chevron-right' %}</a>{% endif %}

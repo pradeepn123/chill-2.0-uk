@@ -1796,6 +1796,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 42px;
 }
 @media(max-width:1199px){
   .announcement-bar .container{
@@ -1818,12 +1819,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1199px){
   .announcement-bar .container{
-    padding-left: 60px !important;
+    padding-left: 0px !important;
   }
 }
 @media (max-width: 767px){
   .announcement-bar .container{
-    padding-left: 20px !important;
+    padding-left: 0px !important;
   }
 }
 @media(max-width: 1199px){
@@ -2498,7 +2499,6 @@ body {
   .navigation .navigation__item--with-small-menu > .navigation__tier-2-container {
     display: block;
     left: 0;
-    width: 100%;
     /* width: max-content;
     min-width: 170px;
     max-width: 280px; */
@@ -2509,9 +2509,7 @@ body {
     left: auto;
     right: 0;
   }
-  .navigation .navigation__item--with-small-menu > .navigation__tier-2-container .container {
-    padding: 22px 30px 22px 20px;
-  }
+  
   .navigation .navigation__item--with-small-menu > .navigation__tier-2-container .navigation__tier-2 .navigation__item {
     display: block;
   }
@@ -2778,9 +2776,9 @@ body {
   opacity: 1;
   visibility: visible;
 }
-.mobile-navigation-drawer .navigation__tier-2 {
+/* .mobile-navigation-drawer .navigation__tier-2 {
   padding-top: 12px;
-}
+} */
 .mobile-navigation-drawer .navigation__tier-2 > .navigation__item > .navigation__link {
   font-weight: {{ mobile_nav_weight }};
 }
@@ -11918,7 +11916,15 @@ textarea {
   padding-top: 60px;
   padding-bottom: 40px;
 }
-
+@media(min-width: 1200px) {
+  .navigation .navigation__item--with-small-menu > .navigation__tier-2-container {
+    width: fit-content;
+    left: 200px;
+  }
+  .navigation .navigation__item--with-small-menu > .navigation__tier-2-container .container {
+    padding: 20px 45px 20px 40px
+  }
+}
 /*************    ---                   ---                   ---   *************/
 /*************    |     ENTER YOUR CUSTOM CODE BELOW HERE       |   *************/
 /*************    ---                   ---                   ---   *************/

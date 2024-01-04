@@ -17,9 +17,9 @@
     padding: 15px 0;
   }
 }
-@keyframes scroll {
+@keyframes scrollNav {
   from {
-      transform: translateX(0);
+      transform: translateX(30%);
   }
   to {
       transform: translateX(calc(-100% - var(--gap)));
@@ -41,7 +41,7 @@
 }
 /* Enable animation */
 .enable-animation .marquee__content {
-  animation: scroll 10s linear infinite;
+  animation: scrollNav 10s linear infinite;
 }
 .enable-animation-v .marquee__content {
   animation: scroll 10s linear infinite;

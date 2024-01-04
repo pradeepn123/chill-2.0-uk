@@ -1,8 +1,6 @@
 .video-image-section {
     position: relative;
-    .video-container {
-        margin-top: 100px;
-    }
+   
     .overlay-text__inner{
         @media(max-width:767px)and (min-width:521px){
             position: absolute;
@@ -50,13 +48,13 @@
 .video-image-section{
     .default-desktop-image{
         @media(max-width:768px){
-            display: none;
+            display: none !important;
         }
     }
     .default-mob-image {
         display: none;
         @media(max-width:768px){
-            display: block;
+            display: block !important;
         }
     }
 }
@@ -73,7 +71,23 @@
         background: #6EC59F;
     }
 }
-
+.video-image-section{
+    img.rimage__image.rimage__image-desktop{
+        display: block;
+        object-fit: cover;
+        object-position: right;
+        @media(max-width:767px){
+            display: none !important;
+        }
+    }
+    img.rimage__image.rimage__image-mob{
+        object-fit: cover;
+        display: none;
+        @media(max-width:767px){
+            display: block !important;
+        }
+    }
+}
 
 
 

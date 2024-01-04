@@ -1,0 +1,59 @@
+<section class="reward-info__newsletter-banner">
+    <div class="reward-info__newsbanner-wrap">
+        <div class="reward-info__newsletter-banner Desktop">
+            <img class="reward-info__newsletter-bannerdesktop-img" src="{{section.settings.banner_image| image_url}}" alt="Banner Image" />
+        </div>
+        <div class="reward-info__newsletter-bannermob Mobile">
+            <img class="reward-info__newsletter-bannermob-img" src="{{section.settings.banner_image_mob| image_url}}" alt="Banner Image" />
+        </div>
+        <div class="reward-info__news-text-wrap">
+            <span class="reward-info__news-heading">{{ section.settings.heading }}</span>
+            <h1 class="reward-info__news-subtext">{{ section.settings.subtext }}</h1>
+            <a href="{{ section.settings.bannerBtnlink }}" class="reward-info__news-button" target="_blank">{{ section.settings.bannerBtn }}</a>   
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+"name": "Reward Newsletter Block",
+"tag": "section",
+"class": "section",
+"settings": [
+            {
+                "type":"image_picker",
+                "label":"Banner Image",
+                "id":"banner_image"
+            },
+            {
+                "type":"image_picker",
+                "label":"Banner Image Mobile",
+                "id":"banner_image_mob"
+            },
+            {
+                "type": "richtext",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "text",
+                "id": "subtext",
+                "label": "Sub text"
+            },
+            {
+                "type": "text",
+                "id": "bannerBtn",
+                "label": "Button label"
+            },
+            {
+                "type": "url",
+                "id": "bannerBtnlink",
+                "label": "Button link"
+            }
+        ],
+"presets": [
+            {
+            "name": "Reward Newsletter Block"
+            }
+        ]
+}
+{% endschema %}

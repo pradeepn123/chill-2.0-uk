@@ -11,7 +11,7 @@
     
 {% endfor %}
 
-<div class="marquee marquee-with-cta-text-image marquee--hover-pause enable-animation section-{{ section.id }}">
+<div class="marquee marquee-with-cta-text-image {% if request.path contains '/reward' %} reward-info__marquee-margin {% endif %} marquee--hover-pause enable-animation section-{{ section.id }}">
     <div class="marquee__content_" aria-hidden="true">
         <div class="marquee-tag">
             <div class="marquee_wrap">
@@ -40,7 +40,7 @@
                                         <a href="{{ block.settings.button_redirection_link }}"><button class="marquee_content_button" id="block-{{ block.id }}-{{ forloop.index }}" style="border: 2px solid {{ block.settings.marquee_button_color }}; color: {{ block.settings.marquee_button_color }}">{{ block.settings.marquee_cta_text }}</button></a>
                                     {% endif %}
                                     {% if block.settings.marquee_image-1 != blank %}
-                                        <img class="marquee_content_image" src="{{ block.settings.marquee_image-1 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
+                                        <img class="marquee_content_image {% if request.path contains '/reward' %} reward-info__marquee-img {% endif %}" src="{{ block.settings.marquee_image-1 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>
                                     {% endif %}
                                     {% if block.settings.marquee_image-2 != blank %}
                                         <img class="marquee_content_image" src="{{ block.settings.marquee_image-2 | img_url: 'master' }}" alt="marquee_image" loading='lazy'>

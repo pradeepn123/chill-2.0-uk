@@ -1,0 +1,85 @@
+<section class="reward-info__HowItWorks">
+    <div class="reward-info__wrapper">
+        <h1 class="reward-info__works-heading">{{ section.settings.works-heading }}</h1>     
+            <div class="reward-info__steps_wrapper">
+                {% for block in section.blocks %}
+                    <div class="reward-info__steps-flex">
+                        <div class="reward-info__steps-inner-flex">
+                            <div class="reward-info__step-count">
+                                <h1 class="reward-info__steps-number">{{block.settings.steps-number}}</h3>
+                                <div class="reward-info__steps-icon-wrapper">
+                                    <img class="reward-info__steps_icon clockwiseSpin" src="{{block.settings.steps_icon| image_url}}" alt="Number" />
+                                </div>
+                            </div>
+
+                            <div class="reward-info__steps-content">
+                                <h3 class="reward-info__steps-heading">{{block.settings.steps-heading}}</h3>
+                                <p class="reward-info__steps-desc">{{block.settings.steps-desc}}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="reward-info__joinnow-button">
+                <a href="{{ section.settings.worksBtnlink }}" class="reward-info__works-btn" target="_blank">{{ section.settings.worksBtn }}</a>
+            </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+"name": "How it works Block",
+"settings": [
+{
+"id": "works-heading",
+"label": "Heading",
+"type": "richtext"
+},
+{
+"type":"text",
+"label":"Button text",
+"id":"worksBtn"
+},
+{
+"type":"url",
+"label":"link",
+"id":"worksBtnlink"
+}
+
+],
+"blocks": [
+{
+"name": "Steps Block",
+"type": "cardType",
+"settings": [
+{
+"type": "image_picker",
+"id": "steps_icon",
+"label": "Number-Icon"
+},
+{
+"type": "number",
+"id": "steps-number",
+"label": "Steps Number"
+},
+{
+"type": "text",
+"id": "steps-heading",
+"label": "Heading"
+},
+{
+"type": "text",
+"id": "steps-desc",
+"label": "Description"
+}
+]
+}
+],
+"presets": [
+{
+"name": "How it works Block"
+}
+]
+}
+{% endschema %}

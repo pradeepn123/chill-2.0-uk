@@ -102,8 +102,13 @@
       <img
         src="{{ section.settings.herobanner-image | img_url: '1024x1024' }}"
         alt="{{ section.settings.herobanner-image.alt | escape }}"
-        class="rimage__image"
+        class="rimage__image rimage__image-desktop"
       >
+      <img
+      src="{{ section.settings.herobanner-image-mob | img_url: '1024x1024' }}"
+      alt="{{ section.settings.herobanner-image-mob.alt | escape }}"
+      class="rimage__image rimage__image-mob"
+    >
     </div>
 
   {% else %}
@@ -156,14 +161,14 @@
             {% endif %}
           {%- endif -%}
           {%- if section.settings.text != blank -%}
-            <div class="overlay-text__rte rte {% if section.settings.enlarge_text %}large-text{% endif %}">
-              {{ section.settings.text }}
+            <div class="overlay-text__rte {% if request.path contains '/reward' %} reward-info__banner-subtext {% endif %} rte {% if section.settings.enlarge_text %}large-text{% endif %}">
+              {{- section.settings.text | strip -}}
             </div>
           {%- endif -%}
           {%- if section.settings.button_label__1 != blank or section.settings.button_label__2 != blank -%}
             <div class="overlay-text__button-row">
               {%- if section.settings.button_label__1 != blank -%}
-                <a class="overlay-text__button button altcolour" href="{{ section.settings.button_url_1 }}">
+                <a class="overlay-text__button button altcolour {% if request.path contains '/reward' %} reward-info__banner-button {% endif %}" {% if request.path contains '/reward' %} target="_blank" {% endif %}" href="{{ section.settings.button_url_1 }}">
                   {{- section.settings.button_label__1 -}}
                 </a>
               {%- endif -%}
@@ -205,7 +210,13 @@
     {
       "id": "herobanner-image",
       "type": "image_picker",
-      "label": "Image",
+      "label": "Image Desktop",
+      "info": "This will be the place holder image when there is no video."
+    },
+    {
+      "id": "herobanner-image-mob",
+      "type": "image_picker",
+      "label": "Image Mobile",
       "info": "This will be the place holder image when there is no video."
     },
     {
@@ -223,7 +234,7 @@
     {
       "type": "range",
       "id": "title_size",
-      "min": 20,
+      "min": 16,
       "max": 150,
       "step": 2,
       "unit": "px",

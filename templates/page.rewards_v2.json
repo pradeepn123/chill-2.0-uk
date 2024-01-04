@@ -1,0 +1,231 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "full_width": false
+      }
+    },
+    "6af81076-abb5-4703-bb01-54434e96b74c": {
+      "type": "video-image",
+      "settings": {
+        "video": "",
+        "herobanner-image": "shopify:\/\/shop_images\/chill_banner_01.webp",
+        "herobanner-image-mob": "shopify:\/\/shop_images\/chill_banner_mob_01.webp",
+        "subheading": "",
+        "title": "<b>Join<\/b> our\nnew <b>club.<\/b>",
+        "title_size": 70,
+        "title_size_mobile": 32,
+        "button-font-size": 16,
+        "use_h1": false,
+        "text": "<p>Unlock exclusive benefits with <strong>Club Chill!<\/strong><\/p>",
+        "heading-color": "#171717",
+        "richtext-color": "#171717",
+        "enlarge_text": true,
+        "button_label__1": "JOIN NOW",
+        "button_url_1": "https:\/\/portal.rarecircles.com\/access\/chill-uk\/sign-up",
+        "button_label__2": "",
+        "button_url_2": "",
+        "botton_bg": "#9792e4",
+        "botton_text_color": "#ffffff",
+        "text_alignment": "center left",
+        "text_alignment_mobile": "end center",
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "b983ea55-f402-4072-9ee1-e10ff0a8c62b": {
+      "type": "home-icons",
+      "blocks": {
+        "940b71b8-c06f-47b6-977e-38fa2e976a0a": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/01.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "10% off all purchaseson Chill.com",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        },
+        "50240f9b-4400-43ee-bd67-74469140d14c": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/02.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "Free Shipping on Qualifying Purchases",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        },
+        "d6b27bfd-27dd-4e91-a6f7-10cb6a93702c": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/03.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "Exclusive members-only deals",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        },
+        "c1558e4f-e301-467c-9737-31e717274eab": {
+          "type": "icon-text",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/04.svg",
+            "icon_svg": "",
+            "url": "",
+            "title": "Priority access to Chill events",
+            "subheading": "",
+            "use_alt_bg": false
+          }
+        }
+      },
+      "block_order": [
+        "940b71b8-c06f-47b6-977e-38fa2e976a0a",
+        "50240f9b-4400-43ee-bd67-74469140d14c",
+        "d6b27bfd-27dd-4e91-a6f7-10cb6a93702c",
+        "c1558e4f-e301-467c-9737-31e717274eab"
+      ],
+      "settings": {
+        "home_icons_title": "<p>Why Join <strong>Club CHILL?<\/strong><\/p>"
+      }
+    },
+    "286b5db2-61d8-4cfb-879f-7d168e683c4a": {
+      "type": "rewards-how-it-works",
+      "blocks": {
+        "778203d6-8bc1-44a6-9c07-0de8541d379a": {
+          "type": "cardType",
+          "settings": {
+            "steps_icon": "shopify:\/\/shop_images\/Group_642.svg",
+            "steps-number": 1,
+            "steps-heading": "Sign Up",
+            "steps-desc": "Create an account to start saving"
+          }
+        },
+        "0b93dae7-0a98-4783-960f-39ffe1eafa40": {
+          "type": "cardType",
+          "settings": {
+            "steps_icon": "shopify:\/\/shop_images\/Group_641.svg",
+            "steps-number": 2,
+            "steps-heading": "Unlock Rewards",
+            "steps-desc": "Instantly unlock exclusive events and discounts"
+          }
+        },
+        "42eac72c-dd68-4b3e-8cf8-d4d8b8d0f614": {
+          "type": "cardType",
+          "settings": {
+            "steps_icon": "shopify:\/\/shop_images\/Group_640.svg",
+            "steps-number": 3,
+            "steps-heading": "Join the Community",
+            "steps-desc": "Be part of a wellness wave with like-minded members"
+          }
+        }
+      },
+      "block_order": [
+        "778203d6-8bc1-44a6-9c07-0de8541d379a",
+        "0b93dae7-0a98-4783-960f-39ffe1eafa40",
+        "42eac72c-dd68-4b3e-8cf8-d4d8b8d0f614"
+      ],
+      "settings": {
+        "works-heading": "<p>How <strong>it works<\/strong><\/p>",
+        "worksBtn": "JOIN NOW",
+        "worksBtnlink": "https:\/\/portal.rarecircles.com\/access\/chill-uk\/sign-up"
+      }
+    },
+    "af5b4685-af65-4182-bda0-b1a88b023daa": {
+      "type": "marquee-with-cta-text-image",
+      "blocks": {
+        "12b3d545-371f-44fa-961d-bb1d109ae8d9": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Member Pricing<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 48,
+            "marquee_text_font_size_mobile": 32,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Union_7.svg",
+            "scroll-duration": 10,
+            "marquee_direction": "scrollRightToLeft"
+          }
+        },
+        "0e8a1295-774e-42ae-8e00-2bbcce9567c7": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Exclusive Brand Offers<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 48,
+            "marquee_text_font_size_mobile": 32,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Union_7.svg",
+            "scroll-duration": 10,
+            "marquee_direction": "scrollLeftToRight"
+          }
+        },
+        "904d0580-0464-4933-ade0-2524a77334f4": {
+          "type": "select",
+          "settings": {
+            "marquee_text": "<p><strong>Priority access<\/strong><\/p>",
+            "marquee_text_color": "#000000",
+            "marquee_text_font_size": 48,
+            "marquee_text_font_size_mobile": 32,
+            "marquee_cta_text": "",
+            "button_redirection_link": "",
+            "marquee_button_color": "",
+            "marquee_image-1": "shopify:\/\/shop_images\/Union_7.svg",
+            "scroll-duration": 10,
+            "marquee_direction": "scrollRightToLeft"
+          }
+        }
+      },
+      "block_order": [
+        "12b3d545-371f-44fa-961d-bb1d109ae8d9",
+        "0e8a1295-774e-42ae-8e00-2bbcce9567c7",
+        "904d0580-0464-4933-ade0-2524a77334f4"
+      ],
+      "settings": {
+        "animate_marquee_on_scroll": true
+      }
+    },
+    "6826fbfc-fabc-4125-960a-0d36bd30f7f0": {
+      "type": "reward-newsletter",
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/footer_background.jpg",
+        "banner_image_mob": "shopify:\/\/shop_images\/keep_chilling_1.jpg",
+        "heading": "<p><strong>Join<\/strong> our<br\/>new <strong>club.<\/strong><\/p>",
+        "subtext": "As a Member, enjoy exclusive benefits, perks, and unforgettable CBD experiences.",
+        "bannerBtn": "JOIN NOW",
+        "bannerBtnlink": "https:\/\/portal.rarecircles.com\/access\/chill-uk\/sign-up"
+      }
+    },
+    "8065a55b-3419-4eaa-b76d-7dec221975d4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Our <b>trending products<\/b>",
+        "collection": "chill-zero",
+        "show_vendor": false,
+        "enable_carousel": false,
+        "grid": 4,
+        "rows": 1,
+        "use_alt_bg": true,
+        "show_view_all": false,
+        "full_width": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6af81076-abb5-4703-bb01-54434e96b74c",
+    "b983ea55-f402-4072-9ee1-e10ff0a8c62b",
+    "286b5db2-61d8-4cfb-879f-7d168e683c4a",
+    "af5b4685-af65-4182-bda0-b1a88b023daa",
+    "6826fbfc-fabc-4125-960a-0d36bd30f7f0",
+    "8065a55b-3419-4eaa-b76d-7dec221975d4"
+  ]
+}

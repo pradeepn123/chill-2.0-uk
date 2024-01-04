@@ -449,7 +449,14 @@ $(document).ready(function () {
         ]
     });
     $(".subcollection_slider").show();
-    $('.navigation__item .country_selector').click(() => {
+    $('.navigation__item .country_selector').click((ev) => {
+        if(ev.target.closest('[data-url]')) {
+            const href =  ev.target.closest('[data-url]').href;
+            if(href) {
+                window.location.href = href;
+                return;
+            }
+        }
         $('.navigation__item .country_selector').toggleClass('active');
         $('.navigation__item .country_selector #dropdown_linebreak').toggleClass('show');
     })

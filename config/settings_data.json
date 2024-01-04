@@ -1156,7 +1156,7 @@
           "mega_collection_heading": "By Collection",
           "shop_text": "Shop-All",
           "shop_link": "https:\/\/uk.chill.com\/collections\/shop-all",
-          "menu_linklist": "mega-menu-final",
+          "menu_linklist": "mega-menu-updated",
           "menu_linklist_mobile": "",
           "menu_layout": "inline-menu-left",
           "nav_featured_link": "Sale",
@@ -1279,20 +1279,36 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "<p><strong>BLACK FRIDAY SALE<\/strong> Up to <strong>40% off <\/strong><\/p>"
+              "text": "<p><strong>BLACK FRIDAY SALE<\/strong> Up to <strong>40% off <\/strong><\/p>",
+              "bannerBtn": "",
+              "bannerBtnlink": "",
+              "enable_animation": false
             }
           },
           "70d98327-63aa-4239-9fe2-539cceb04294": {
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "<p>Free shipping for whole of December<\/p>"
+              "text": "<p>Free shipping for whole of December<\/p>",
+              "bannerBtn": "",
+              "bannerBtnlink": "",
+              "enable_animation": true
+            }
+          },
+          "411388c9-4ea9-45ed-9c86-22eb029499fb": {
+            "type": "announcement",
+            "settings": {
+              "text": "<p>Join CLUB CHILL for exclusive rewards - First 100 members receive £15 voucher<\/p>",
+              "bannerBtn": "Join now",
+              "bannerBtnlink": "https:\/\/portal.rarecircles.com\/access\/chill-uk\/sign-up",
+              "enable_animation": true
             }
           }
         },
         "block_order": [
           "2e941249-38b6-4172-8dea-a0d2e959208f",
-          "70d98327-63aa-4239-9fe2-539cceb04294"
+          "70d98327-63aa-4239-9fe2-539cceb04294",
+          "411388c9-4ea9-45ed-9c86-22eb029499fb"
         ],
         "custom_css": [
 

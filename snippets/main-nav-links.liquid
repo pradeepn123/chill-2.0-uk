@@ -312,11 +312,13 @@
               {%- endif -%}
           {%- endif -%}
         </ul>
-        <a class="view_all_brands" href="/pages/all-brands">View All Brands 
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1" class="view_all_brands_arrow">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"></path>
-          </svg>
-        </a>
+        {% unless forloopIndexOfNavMenu == 3 %}
+          <a class="view_all_brands" href="/pages/all-brands">View All Brands 
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1" class="view_all_brands_arrow">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"></path>
+            </svg>
+          </a>
+        {% endunless %}
       {% endif %}
       
       {% if link.links.size != 1 %}
@@ -335,14 +337,15 @@
                 <li class="navigation__item{% if child_link.links != blank %} navigation__item--with-children{% endif %}{% if use_columns %} navigation__column{% endif %}{% if featured_links contains child_link.title %} featured-link{% endif %}">
                   <a href="{{ child_link.url }}" class="navigation__link{% if child_link.links != blank %} navigation__column-title{% endif %}" {% if child_link.links != blank %}aria-haspopup="true"aria-expanded="false"{% endif %}>
                     {% if forloopIndexOfNavMenu == 3 %}
-                      {%- assign featured_image = child_link.object.featured_image -%}                                   
-                      {%- assign img_url = featured_image | img_url: '2x2' | replace: '_2x2.', '_{width}x.' -%}
-                      <img class="lazyload" data-src="{{ img_url }}" data-widths="[360, 460, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-aspectratio="{{ featured_image.aspect_ratio }}" data-sizes="auto" alt="{{ featured_image.alt | escape }}">                                                    
-                      <span class="navbar_collection_link">Shop {{ child_link.title | escape }}
+                      {%- if mobile == false -%}
+                      <span class="navbar_collection_link">{{ child_link.title | escape }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 28 28" fill="#83C3A1">
                           <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0H1.5C0.671573 0 0 0.671573 0 1.5C0 2.32843 0.671573 3 1.5 3H11.3787L0.93934 13.4393L3.06066 15.5607L13.5 5.12132V15C13.5 15.8284 14.1716 16.5 15 16.5C15.8284 16.5 16.5 15.8284 16.5 15V1.5C16.5 0.671573 15.8284 0 15 0Z" fill="#83C3A1"/>
                         </svg>
                       </span>
+                      {%else %}
+                        {{ child_link.title | escape }}
+                      {% endif %}
                     {% else %}
                       {{ child_link.title | escape }}
                     {% endif %}
@@ -524,7 +527,7 @@
       {% render 'icon-toggle-menu', stroke_width: 1.3 %}
       <hr id="dropdown_linebreak" style="display: none;">
       <div class="dropdown-content">
-        <a href="http://chill.com?location=GB">
+        <a href="http://chill.com?location=GB" data-url>
           <img src="https://cdn.shopify.com/s/files/1/0536/9115/4590/files/USA_Flag_icon.svg?v=1665047699" alt="." width="24" height="24" loading="lazy">
           <span>USA</span>
         </a>
@@ -534,14 +537,14 @@
   <li class="navigation__item{% if has_dropdown %} navigation__item--with-children {% if use_columns %}navigation__item--with-mega-menu{% else %}navigation__item--with-small-menu{% endif %}{% endif %}{% if featured_links contains link.title %} featured-link{% endif %}{% if link.active %} navigation__item--active{% endif %}">
     {% if shop.customer_accounts_enabled %}
       {% if customer %}
-        <a class="navigation__link" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
+        <a class="navigation__link_custom" href="{{ routes.account_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
           <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}">{% render 'svg-custom-user' %}
           </span>
           <span class="header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">{{ 'layout.customer.account' | t | escape }}
           </span>
         </a>
       {% else %}
-        <a class="navigation__link" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
+        <a class="navigation__link_custom" href="{{ routes.account_login_url }}" aria-label="{{ 'layout.customer.account' | t | escape }}">
           <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}">{% render 'svg-custom-user' %}
           </span>
           <span class="header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %} visually-hidden{% endif %}">{{ 'layout.customer.account' | t | escape }}
