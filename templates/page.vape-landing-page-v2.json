@@ -9,6 +9,9 @@
     },
     "ac21692e-7e00-4741-9601-7f5608390ffb": {
       "type": "video-image",
+      "custom_css": [
+        ".video-image-section .video-container {margin-top: 100px;}"
+      ],
       "settings": {
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/166cce7666de4ae988fca5e1cc5b42ba.mp4",
         "subheading": "",
