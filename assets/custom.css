@@ -693,11 +693,6 @@ body.overflow-hidden {
   }
 }
 
-body.reveal-mobile-nav--revealed {
-  overflow-y: hidden !important;
-  overflow: hidden;
-}
-
 @media (min-width: 300px) and (max-width: 400px) {
   .blog-category-list-wrap {
     width: 95vw !important;
