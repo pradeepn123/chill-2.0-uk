@@ -308,7 +308,6 @@
         },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/HipPop-HP_DESKTOP.jpg",
             "mobile_image": "shopify:\/\/shop_images\/HipPop-HP_MOBILE.jpg",
@@ -320,9 +319,9 @@
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Kombucha with no artificial additives – just honest ingredients, authentic beverages that taste good and do good for you too.<\/p>",
-            "heading_color": "#000000",
-            "text_color": "#000000",
+            "text": "<p>Authentic Kombucha with no artificial additives – just honest<br\/>ingredients that taste good and do good for you too.<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
             "enlarge_text": true,
             "button_label_1": "try hip pop",
             "button_url_1": "https:\/\/uk.chill.com\/collections\/hip-pop",
