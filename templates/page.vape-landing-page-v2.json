@@ -230,7 +230,7 @@
       "type": "apps",
       "blocks": {
         "6eb3a68d-fbb4-4fb1-8139-146b2cd9b8b3": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "show_heading": true,
             "heading": "What People Are Saying",

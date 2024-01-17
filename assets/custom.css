@@ -12824,3 +12824,103 @@ body.search_open {
   animation-name: clockwiseSpin;
   animation-timing-function: linear;
 }
+
+.video-image-section {
+  position: relative;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .video-image-section .overlay-text__inner {
+    position: absolute !important;
+    bottom: 0px;
+  }
+}
+.video-image-section .overlay-text__inner .overlay-text__title b {
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .video-image-section .overlay-text__inner .overlay-text__button {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 821px) {
+  .video-image-section .overlay-text__inner .large-text {
+    font-size: 1.12em;
+  }
+}
+@media (max-width: 768px) {
+  .video-image-section .overlay-text__inner .large-text p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .reward-banner__video-desktop video {
+    object-position: 70% !important;
+  }
+}
+@media (max-width: 768px) {
+  .video-image-section .default-desktop-image {
+    display: none !important;
+  }
+}
+.video-image-section .default-mob-image {
+  display: none;
+}
+@media (max-width: 768px) {
+  .video-image-section .default-mob-image {
+    display: block !important;
+  }
+}
+
+.video-image-section .button {
+  padding: 16px 40px;
+  font-weight: 700;
+  border-radius: 30px;
+}
+.video-image-section .overlay-text__button.button:before,
+.video-image-section .overlay-text__button:after {
+  background: #6EC59F;
+}
+
+.video-image-section img.rimage__image.rimage__image-desktop {
+  display: block;
+  object-fit: cover;
+  object-position: right;
+}
+@media (max-width: 767px) {
+  .video-image-section img.rimage__image.rimage__image-desktop {
+    display: none !important;
+  }
+}
+.video-image-section img.rimage__image.rimage__image-mob {
+  object-fit: cover;
+  display: none;
+}
+@media (max-width: 767px) {
+  .video-image-section img.rimage__image.rimage__image-mob {
+    display: block !important;
+  }
+}
+
+.reward-banner__video-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .reward-banner__video-desktop {
+    display: block;
+  }
+  .reward-banner__video-mobile {
+    display: none;
+  }
+}
+.reward-banner__banner-heading {
+  display: none;
+}
+@media (min-width: 768px) {
+  .reward-banner__banner-heading {
+    display: block;
+  }
+}
+.reward-banner__video-mobile video {
+  object-position: unset !important;
+}

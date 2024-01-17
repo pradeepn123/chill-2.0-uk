@@ -1,0 +1,113 @@
+.video-image-section {
+    position: relative;
+
+    .overlay-text__inner{
+        @media(max-width:767px)and (min-width:320px){
+            position: absolute !important;
+            bottom: 0px;
+        }
+        .overlay-text__title b {
+            font-weight: 800;
+        }
+        .overlay-text__button{
+            @media(max-width:768px){
+                font-size: 16px !important;
+            }
+        }
+        .large-text{
+            @media(min-width:769px) and (max-width:821px){
+                font-size: 1.12em;
+            }
+            p{
+            @media(max-width:768px){
+                font-size: 18px; 
+            }
+            }
+        }
+
+    }
+}
+@media(min-width: 768px){
+    .reward-banner__video-desktop video{
+        object-position: 70% !important;
+    }
+}
+
+
+
+.video-image-section{
+    .default-desktop-image{
+        @media(max-width:768px){
+            display: none !important;
+        }
+    }
+    .default-mob-image {
+        display: none;
+        @media(max-width:768px){
+            display: block !important;
+        }
+    }
+}
+
+
+.video-image-section {
+    .button {
+        padding: 16px 40px;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+    .overlay-text__button.button:before,
+    .overlay-text__button:after {
+        background: #6EC59F;
+    }
+}
+
+.video-image-section{
+    img.rimage__image.rimage__image-desktop{
+        display: block;
+        object-fit: cover;
+        object-position: right;
+        @media(max-width:767px){
+            display: none !important;
+        }
+    }
+    img.rimage__image.rimage__image-mob{
+        object-fit: cover;
+        display: none;
+        @media(max-width:767px){
+            display: block !important;
+        }
+    }
+}
+
+
+.reward-banner{
+&__video-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    &__video-desktop{
+        display: block;
+    }
+
+    &__video-mobile{
+        display: none;
+    }
+}
+
+&__banner-heading{
+    display: none;
+
+    @media(min-width:768px){
+        display: block;
+    }
+}
+
+&__video-mobile video{
+
+    object-position:unset !important;
+
+}
+
+}
