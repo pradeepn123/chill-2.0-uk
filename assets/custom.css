@@ -12824,3 +12824,26 @@ body.search_open {
   animation-name: clockwiseSpin;
   animation-timing-function: linear;
 }
+
+.reward-banner__video-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .reward-banner__video-desktop {
+    display: block;
+  }
+  .reward-banner__video-mobile {
+    display: none;
+  }
+}
+.reward-banner__banner-heading {
+  display: none;
+}
+@media (min-width: 768px) {
+  .reward-banner__banner-heading {
+    display: block;
+  }
+}
+.reward-banner__video-mobile video {
+  object-position: unset !important;
+}

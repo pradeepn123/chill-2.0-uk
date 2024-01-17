@@ -1,0 +1,32 @@
+
+
+.reward-banner{
+&__video-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    &__video-desktop{
+        display: block;
+    }
+
+    &__video-mobile{
+        display: none;
+    }
+}
+
+&__banner-heading{
+    display: none;
+
+    @media(min-width:768px){
+        display: block;
+    }
+}
+
+&__video-mobile video{
+
+    object-position:unset !important;
+
+}
+
+}

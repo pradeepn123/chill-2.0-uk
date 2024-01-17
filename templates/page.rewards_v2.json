@@ -9,6 +9,7 @@
     },
     "6af81076-abb5-4703-bb01-54434e96b74c": {
       "type": "video-image",
+      "disabled": true,
       "settings": {
         "video": "",
         "herobanner-image": "shopify:\/\/shop_images\/Club-Chill-Banner-2.jpg",
@@ -31,6 +32,35 @@
         "botton_text_color": "#ffffff",
         "text_alignment": "center left",
         "text_alignment_mobile": "end center",
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "reward_banner_x8U6Vz": {
+      "type": "reward-banner",
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/6efb00e650db4f85820a1bdfaeaf500e.mp4",
+        "video_mobile": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/187e23b0a22c401e989164356a5c71c9.mp4",
+        "herobanner-image": "shopify:\/\/shop_images\/Club-Chill-Banner-2.jpg",
+        "herobanner-image-mob": "shopify:\/\/shop_images\/ClubCHILL-Ban-MOBILE-1.jpg",
+        "subheading": "",
+        "title": "<b>Join<\/b> our\nnew <b>club.<\/b>",
+        "title_size": 84,
+        "title_size_mobile": 32,
+        "button-font-size": 16,
+        "use_h1": false,
+        "text": "<p>Unlock exclusive benefits with <strong>Club Chill!<\/strong><\/p>",
+        "heading-color": "#171717",
+        "richtext-color": "#171717",
+        "enlarge_text": true,
+        "button_label__1": "JOIN NOW",
+        "button_url_1": "https:\/\/portal.rarecircles.com\/access\/chill-uk\/sign-up",
+        "button_label__2": "",
+        "button_url_2": "",
+        "botton_bg": "#9792e4",
+        "botton_text_color": "#171717",
+        "text_alignment": "center left",
+        "text_alignment_mobile": "center center",
         "full_width": true,
         "overlay_style": "shadow"
       }
@@ -222,6 +252,7 @@
   "order": [
     "main",
     "6af81076-abb5-4703-bb01-54434e96b74c",
+    "reward_banner_x8U6Vz",
     "b983ea55-f402-4072-9ee1-e10ff0a8c62b",
     "286b5db2-61d8-4cfb-879f-7d168e683c4a",
     "af5b4685-af65-4182-bda0-b1a88b023daa",
