@@ -60,7 +60,7 @@
         "botton_bg": "#9792e4",
         "botton_text_color": "#171717",
         "text_alignment": "center left",
-        "text_alignment_mobile": "center center",
+        "text_alignment_mobile": "end center",
         "full_width": true,
         "overlay_style": "shadow"
       }
