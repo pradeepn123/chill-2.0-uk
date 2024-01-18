@@ -12832,6 +12832,9 @@ body.search_open {
   .reward-banner__video-desktop {
     display: block;
   }
+  .reward-banner__video-desktop video {
+    object-position: 70% !important;
+  }
   .reward-banner__video-mobile {
     display: none;
   }
