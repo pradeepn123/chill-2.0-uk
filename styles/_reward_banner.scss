@@ -10,7 +10,11 @@
         display: block;
     }
 
-    &__video-mobile{
+    &__video-desktop video{
+        object-position: 70% !important;
+    }
+
+    &__video-mobile{ 
         display: none;
     }
 }
