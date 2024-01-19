@@ -1298,7 +1298,7 @@
           "411388c9-4ea9-45ed-9c86-22eb029499fb": {
             "type": "announcement",
             "settings": {
-              "text": "<p>Join CLUB CHILL for exclusive rewards - First 100 members receive £15 voucher<\/p>",
+              "text": "<p>Join CLUB CHILL for exclusive rewards<\/p>",
               "bannerBtn": "Join now",
               "bannerBtnlink": "https:\/\/portal.rarecircles.com\/access\/chill-uk\/sign-up",
               "enable_animation": true
