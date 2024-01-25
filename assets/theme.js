@@ -5980,7 +5980,7 @@
             }
           })
           
-          if (vape_product_total_in_cart > 5000) {
+          if (vape_product_total_in_cart > 3500) {
             promotionalProducts = theme.promotionalProducts[25]
           }
           
@@ -6310,7 +6310,7 @@
           //   promotionalProducts = theme.promotionalProducts[25]
           // }
           
-          // Check if total cart value of vape products is more than 50
+          // Check if total cart value of vape products is more than 35
           let vape_product_total_in_cart = 0;
           cart.items.forEach(cartItem => {
             if(cartItem.product_type === "Vape"){
@@ -6318,7 +6318,7 @@
             }
           })
           
-          if (vape_product_total_in_cart > 5000) {
+          if (vape_product_total_in_cart > 3500) {
             promotionalProducts = theme.promotionalProducts[25]
           }
           
