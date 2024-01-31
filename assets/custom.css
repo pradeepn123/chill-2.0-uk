@@ -12434,6 +12434,11 @@ body.search_open {
   margin: 1em 25px;
   color: #000;
 }
+@media (max-width: 767px) {
+  .mystery_gift_offer {
+    margin: 1em !important;
+  }
+}
 .mystery_gift_offer .offer_title .title p {
   font-size: 18px;
 }
