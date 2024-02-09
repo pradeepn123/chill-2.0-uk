@@ -7,7 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/SELF_LOVEUK-HP_DESKTOP.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/BAVE-HPUK_MOBILE.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/SELF_LOVEUK-HP_Mobile.jpg",
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
