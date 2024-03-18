@@ -5,6 +5,7 @@
       "blocks": {
         "0d58b166-3642-4849-840b-915397a2a9f1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/CHILLZER0_1.jpg",
             "mobile_image": "shopify:\/\/shop_images\/CHILLZER0_1A.jpg",
