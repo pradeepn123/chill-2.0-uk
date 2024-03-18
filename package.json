@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch": "gulp watch",
-        "dev":"shopify theme dev --store the-chill-way-uk.myshopify.com --port=9393"
+        "dev":"shopify theme dev --theme-editor-sync --store the-chill-way-uk.myshopify.com --port=9393"
     },
     "repository": {
         "type": "git",

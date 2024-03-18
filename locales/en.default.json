@@ -202,8 +202,8 @@
       "sold_out": "Sold Out",
       "sale": "Sale",
       "new_in": "New in",
-      "percent_reduction": "{{ amount }}% off",
-      "value_reduction_html": "{{ amount }} off"
+      "percent_reduction": "{{ amount }}%",
+      "value_reduction_html": "{{ amount }}"
     }
   },
   "layout": {

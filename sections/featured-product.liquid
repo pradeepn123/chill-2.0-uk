@@ -82,7 +82,6 @@
             </button>
           {% endif %}
 
-          {% render 'product-label-detail', product: product, current_variant: current_variant %}
         </div>
 
         {% if product.media.size > 1 %}
@@ -287,6 +286,8 @@
                 {%- endif -%}
               {%- endif -%}
             </div>
+
+            {% render 'product-label-detail', product: product, variant: current_variant %}
 
             {% when 'description' %}
               <div class="{% if block.settings.show_in_tab %}product-detail-accordion{% endif %}" {{ block.shopify_attributes }}>

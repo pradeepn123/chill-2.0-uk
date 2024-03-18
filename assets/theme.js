@@ -7452,7 +7452,7 @@
       $(this).on('variantChanged', function (evt, variant, product) {
         // change variant status classes
         var $labelCont = $productDetail.find('.product-label-list');
-        $labelCont.find('.product-label-container').remove();
+        $labelCont.find('.product-tags').remove();
         if (variant) {
           $labelCont.append($("#variant-label-".concat(product.id, "-").concat(variant.id)).html());
         } else {

@@ -804,3 +804,88 @@ div#main-nav{
   .blog-category-section a {
     margin-bottom: 20px;
   }
+
+
+//product-tags in collection page
+
+.product-tags {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 20px;
+    pointer-events: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .product-tags__wrapper {
+        height: 64px;
+        width: 64px;
+        display: flex;
+        justify-content: center;
+
+        .product-tag {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            width: 100%;
+
+            span {
+                font-size: 16px;
+                line-height: 17px;
+                font-family: 'Open Sans';
+                font-weight: 600;
+            }
+
+            &.product-tag--sold-out {
+                border-radius: 45px;
+
+                .bold_text {
+                    font-size: 16px;
+                    line-height: 17px;
+                    font-family: 'Open Sans';
+                    font-weight: 800;
+                }
+            }
+
+            &.product-tag--sale {
+                text-transform: uppercase;
+                border-radius: 45px;
+
+                .bold_text {
+                    font-size: 16px;
+                    line-height: 17px;
+                    font-family: 'Open Sans';
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+//product-tags in PDP page
+.product-form {
+    .product-label-list {
+        width: fit-content;
+        display: block;
+        margin-bottom: 20px;
+
+        .product-tags {
+            position: unset;
+            flex-direction: row;
+
+            .product-tags__wrapper {
+                height: 33px;
+                width: 100%;
+
+                .product-tag--sale {
+                    gap: 3px;
+                    flex-direction: row;
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+}

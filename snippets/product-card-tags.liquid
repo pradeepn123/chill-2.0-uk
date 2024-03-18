@@ -1,0 +1,41 @@
+{%- liquid
+    if settings.prod_reduction_show and variant.compare_at_price > variant.price
+        if settings.prod_reduction_type == 'percent'
+            assign amount = 1.0 | times: variant.price | divided_by: variant.compare_at_price
+            assign amount = 1.0 | minus: amount
+            assign amount = amount | times: 100.0 | round
+            assign sale_label_text = 'products.labels.percent_reduction' | t: amount: amount
+        else
+            assign amount = variant.compare_at_price | minus: variant.price | money
+            assign sale_label_text = 'products.labels.value_reduction_html' | t: amount: amount
+        endif
+            assign label_count = label_count | plus: 1
+    endif
+-%}
+<div class="product-tags">
+    {% if settings.prod_sold_out_show and product.available == false %}
+        <div class="product-tags__wrapper">
+            <span class="product-tag product-tag--sold-out">
+                <span>Out of </span>
+                <span class="bold_text">stock</span>
+            </span>
+        </div>
+    {% else %}
+        {%- if sale_label_text -%}
+            <div class="product-tags__wrapper">
+                <span class="product-tag product-tag--sale">
+                    <span>{{ sale_label_text }}</span>
+                    <span class="bold_text"> OFF</span>
+                </span>
+            </div>
+        {%- endif -%}
+    {% endif %}
+</div>
+
+<div class="product_sale-tag">
+ <div class="product-tags__wrapper product-sale-valu-bg">
+      {%- if product.metafields.custom.product_sale_tag != blank -%}
+        <span class="product-sale-value">{{ product.metafields.custom.product_sale_tag }}</span>
+      {% endif %}
+  </div>
+ </div>
