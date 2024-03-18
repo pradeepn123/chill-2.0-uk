@@ -1512,6 +1512,7 @@
         "blocks": {
           "5d546e3a-5c93-4445-885b-3e31f6919abf": {
             "type": "promotion-25",
+            "disabled": true,
             "settings": {
               "product-1": "mystery-gift"
             }
