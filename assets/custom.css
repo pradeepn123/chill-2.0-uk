@@ -773,7 +773,7 @@ predictive-search .search_section input {
   color: #000 !important;
 }
 .product-tags .product-tags__wrapper .product-tag.product-tag--sold-out .bold_text {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 17px;
   font-family: "Open Sans";
   font-weight: 800;
@@ -788,12 +788,18 @@ predictive-search .search_section input {
   font-family: "Open Sans";
   font-weight: 800;
 }
+.product-form .product-tags .product-tags__wrapper .product-tag.product-tag--sale .bold_text{
+  font-size: 14px;
+}
 .product-form .product-label-list {
   width: fit-content;
   display: flex;
   flex-direction: row-reverse;
   column-gap: 16px;
   margin-bottom: 20px;
+}
+.product-form .product-tags .product-tags__wrapper .product-tag span {
+  font-size: 14px;
 }
 .product-form .product-label-list .product-tags {
   position: unset;
@@ -12968,4 +12974,9 @@ body.search_open {
   background: #3B56FB;
   padding: 5px;
   width: 100%;
+}
+.product-tags .product-tags__wrapper .product-tag.product-tag--sold-out span {
+  border-radius: 45px;
+  font-size:12px;
+  font-weight:600px !important;
 }
