@@ -43,7 +43,7 @@
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Discover the best brands & products using all-natural<br\/>ingredients to help you look, think & feel better.<\/p>",
+            "text": "<p>Discover the best brands using all-natural<br\/>ingredients to help you look, think & feel better.<\/p>",
             "heading_color": "#171717",
             "text_color": "#171717",
             "enlarge_text": true,
@@ -51,8 +51,8 @@
             "button_url_1": "",
             "button_label_2": "Choose Your CHILL",
             "button_url_2": "shopify:\/\/collections\/all",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#ffffff",
+            "button_background_color": "#ffbeac",
+            "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
