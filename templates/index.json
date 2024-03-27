@@ -5,6 +5,7 @@
       "blocks": {
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/SALE_BANNER.jpg",
             "mobile_image": "shopify:\/\/shop_images\/SALE_BANNER_Mobile.jpg",
