@@ -305,7 +305,6 @@
         },
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/AllReal-HP_DESKTOP-V1_7e8a62d5-1030-4a0e-b06b-80ec89d20f19.jpg",
             "mobile_image": "shopify:\/\/shop_images\/AllReal-HP_MOBILE_d756ccd6-1072-4d43-a1da-be710b141816.jpg",
@@ -325,7 +324,7 @@
             "button_url_1": "shopify:\/\/collections\/all-real-nutrition",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#60a57e",
+            "button_background_color": "#6ec59f",
             "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
