@@ -58,8 +58,36 @@
             "text_alignment": "center left"
           }
         },
+        "0d58b166-3642-4849-840b-915397a2a9f1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/InTune-HP_DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/InTune-HP_MOBILE.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Get \n<strong>INTUNE<\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>All-natural, premium CBD drinks and mixers<br\/>to help you focus and feel present<\/p>",
+            "heading_color": "#171717",
+            "text_color": "#171717",
+            "enlarge_text": true,
+            "button_label_1": "SHOP INTUNE",
+            "button_url_1": "shopify:\/\/collections\/intune",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#9792e4",
+            "button_text_color": "#171717",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/HipPop-HP_DESKTOP.jpg",
             "mobile_image": "shopify:\/\/shop_images\/HipPop-HP_MOBILE-1.jpg",
@@ -276,36 +304,8 @@
             "text_alignment": "center left"
           }
         },
-        "0d58b166-3642-4849-840b-915397a2a9f1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/InTune-HP_DESKTOP.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/InTune-HP_MOBILE.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Get \n<strong>INTUNE<\/strong>",
-            "title_size": 64,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>All-natural, premium CBD drinks and mixers<br\/>to help you focus and feel present<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#171717",
-            "enlarge_text": true,
-            "button_label_1": "SHOP INTUNE",
-            "button_url_1": "shopify:\/\/collections\/intune",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#9792e4",
-            "button_text_color": "#171717",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/AllReal-HP_DESKTOP-V1_7e8a62d5-1030-4a0e-b06b-80ec89d20f19.jpg",
             "mobile_image": "shopify:\/\/shop_images\/AllReal-HP_MOBILE_d756ccd6-1072-4d43-a1da-be710b141816.jpg",
@@ -313,7 +313,7 @@
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "Discover\n<strong>All Real Nutrition<\/strong>",
+            "title": "Discover\n<strong>All Real \nNutrition<\/strong>",
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
@@ -335,6 +335,7 @@
       "block_order": [
         "02986a45-f0bf-4170-a6b2-37db262b7084",
         "41559766-2511-4321-a759-ff9014c6f7f7",
+        "0d58b166-3642-4849-840b-915397a2a9f1",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "a66df7d6-8a48-4e6c-abd5-96e86aa343a1",
         "6973fb3c-05e0-4873-9295-21841f3fcc36",
@@ -343,7 +344,6 @@
         "0ee65477-2b53-43d3-81b0-07a72ca3cd04",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
         "adc61783-b87d-4ad1-a437-8b98c06ac308",
-        "0d58b166-3642-4849-840b-915397a2a9f1",
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1"
       ],
       "settings": {
