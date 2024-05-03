@@ -304,17 +304,16 @@
         },
         "adc61783-b87d-4ad1-a437-8b98c06ac308": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "Feel empowered with\n<strong>Never Go Alone<\/strong>",
+            "title": "Feel empowered:\n<strong>Never Go Alone<\/strong>",
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Travel-friendly essentials<br\/>for daily wellness<\/p>",
+            "text": "<p>Travel-friendly essentials for daily wellness<\/p>",
             "heading_color": "#171717",
             "text_color": "#171717",
             "enlarge_text": true,
@@ -322,7 +321,7 @@
             "button_url_1": "",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#6ec59f",
+            "button_background_color": "#9792e4",
             "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
