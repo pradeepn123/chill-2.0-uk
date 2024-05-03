@@ -288,7 +288,7 @@
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Natural and vegan<br\/>mushroom coffee and<br\/>hot cocoa fusions<\/p>",
+            "text": "<p>Natural, vegan<br\/>mushroom coffee<br\/>and hot cocoa fusions<\/p>",
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "enlarge_text": true,
@@ -296,7 +296,7 @@
             "button_url_1": "",
             "button_label_2": "",
             "button_url_2": "",
-            "button_background_color": "#6ec59f",
+            "button_background_color": "#ffbeac",
             "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
