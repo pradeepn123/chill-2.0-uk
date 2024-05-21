@@ -194,6 +194,7 @@
         },
         "0ee65477-2b53-43d3-81b0-07a72ca3cd04": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Wild-HP_DESKTOP_1_1c16c2cd-8eb6-422e-84ac-9842c2cf30b5.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Wild-HP_MOBILE-sq-1.jpg",
@@ -248,6 +249,7 @@
         },
         "6973fb3c-05e0-4873-9295-21841f3fcc36": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Punchy_Homepage_Banner_MEDIUM_32a25998-6caa-483e-bcaa-c1bef640c046.jpg",
             "mobile_image": "shopify:\/\/shop_images\/MOBILE_Punchy_Homepage_Banner.jpg",
