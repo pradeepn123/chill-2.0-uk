@@ -273,33 +273,6 @@
             "text_alignment": "center left"
           }
         },
-        "910838dc-8acc-48d2-a9c9-dda3f47dc712": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CHILLZER0_Banner_MEDIUM_88a6fa7f-f613-44a4-8f7e-d22b0632b0bb.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/CHILLZER0_Banner_MOBILE.jpg",
-            "image_position": "center left",
-            "mobile_image_position": "left center",
-            "slide_link": "shopify:\/\/pages\/chillzero",
-            "subheading": "",
-            "title": "<strong>CHILL<\/strong>ZER0:\n<strong>0% Nicotine \n100% Flavour<\/strong>",
-            "title_size": 64,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Join us on our mission to ditch nicotine. <br\/>It's vaping, but not as you know it!<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#ffffff",
-            "enlarge_text": true,
-            "button_label_1": "CHOOSE CHILL",
-            "button_url_1": "shopify:\/\/pages\/chillzero",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
           "type": "image",
           "disabled": true,
@@ -327,6 +300,33 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
+        },
+        "image_6xdgqA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PunchyNEW-HP_DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/PunchyNEW-HP_MOBILE.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> punchy: <\/strong> 20% off \neveryday hydration",
+            "title_size": 54,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Just launched - punchy's new range of hydration drinks <br\/>packed with vitamins, electrolytes & minerals<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "get hydrated",
+            "button_url_1": "shopify:\/\/collections\/punchy-drinks",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#ffac9a",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
         }
       },
       "block_order": [
@@ -340,8 +340,8 @@
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "6973fb3c-05e0-4873-9295-21841f3fcc36",
         "5b64812e-9295-4645-9cd2-e2bac629be70",
-        "910838dc-8acc-48d2-a9c9-dda3f47dc712",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0"
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
+        "image_6xdgqA"
       ],
       "settings": {
         "height": "fixed",
