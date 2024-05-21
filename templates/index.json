@@ -3,6 +3,60 @@
     "11e074f4-f0cf-4c14-809f-ad7bc475a5cc": {
       "type": "slideshow",
       "blocks": {
+        "image_6xdgqA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PunchyNEW-HP_DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/PunchyNEW-HP_MOBILE.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "<strong> punchy: <\/strong> 20% off \neveryday hydration",
+            "title_size": 54,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Just launched - punchy's new range of hydration drinks <br\/>packed with vitamins, electrolytes & minerals<\/p>",
+            "heading_color": "#000",
+            "text_color": "#000",
+            "enlarge_text": true,
+            "button_label_1": "get hydrated",
+            "button_url_1": "shopify:\/\/collections\/punchy-drinks",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#ffac9a",
+            "button_text_color": "#FFFFFF",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NvrGoAlone-HP_DESKTOP.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/NvrGoAlone-HP_MOBILE.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Feel Empowered:\n<strong>Never Go Alone<\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Travel-friendly essentials for daily wellness<\/p>",
+            "heading_color": "#171717",
+            "text_color": "#171717",
+            "enlarge_text": true,
+            "button_label_1": "Try Never Go Alone",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#6ec59f",
+            "button_text_color": "#171717",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "02986a45-f0bf-4170-a6b2-37db262b7084": {
           "type": "image",
           "settings": {
@@ -52,33 +106,6 @@
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#ffbeac",
-            "button_text_color": "#171717",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "adc61783-b87d-4ad1-a437-8b98c06ac308": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/NvrGoAlone-HP_DESKTOP.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/NvrGoAlone-HP_MOBILE.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Feel Empowered:\n<strong>Never Go Alone<\/strong>",
-            "title_size": 64,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Travel-friendly essentials for daily wellness<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#171717",
-            "enlarge_text": true,
-            "button_label_1": "Try Never Go Alone",
-            "button_url_1": "",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#6ec59f",
             "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
@@ -300,39 +327,13 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
-        },
-        "image_6xdgqA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/PunchyNEW-HP_DESKTOP.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/PunchyNEW-HP_MOBILE.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "<strong> punchy: <\/strong> 20% off \neveryday hydration",
-            "title_size": 54,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Just launched - punchy's new range of hydration drinks <br\/>packed with vitamins, electrolytes & minerals<\/p>",
-            "heading_color": "#000",
-            "text_color": "#000",
-            "enlarge_text": true,
-            "button_label_1": "get hydrated",
-            "button_url_1": "shopify:\/\/collections\/punchy-drinks",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#ffac9a",
-            "button_text_color": "#FFFFFF",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
         }
       },
       "block_order": [
+        "image_6xdgqA",
+        "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "02986a45-f0bf-4170-a6b2-37db262b7084",
         "41559766-2511-4321-a759-ff9014c6f7f7",
-        "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "0d58b166-3642-4849-840b-915397a2a9f1",
         "a66df7d6-8a48-4e6c-abd5-96e86aa343a1",
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1",
@@ -340,8 +341,7 @@
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "6973fb3c-05e0-4873-9295-21841f3fcc36",
         "5b64812e-9295-4645-9cd2-e2bac629be70",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
-        "image_6xdgqA"
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0"
       ],
       "settings": {
         "height": "fixed",
