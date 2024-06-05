@@ -30,29 +30,56 @@
             "text_alignment": "center left"
           }
         },
-        "02986a45-f0bf-4170-a6b2-37db262b7084": {
+        "41559766-2511-4321-a759-ff9014c6f7f7": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DESKTOP_Multibrand_Homepage_Banner_MEDIUM_1_1_b5aa1948-7a79-407c-b606-eb13295e350e.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/MOBILE_Multibrand_Homepage_Banner_MEDIUM_15c0bd94-6a1b-41ba-9c48-56eaaa3ae682.jpg",
-            "image_position": "center left",
+            "image": "shopify:\/\/shop_images\/Fhirst-HP_DESKTOP_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Fhirst-HP_MOBILE_1.jpg",
+            "image_position": "center center",
             "mobile_image_position": "center center",
             "slide_link": "",
             "subheading": "",
-            "title": "Step into the <strong> \nHome of \nRelaxation <\/strong>",
+            "title": "Quench your <strong>\nFHIRST <\/strong>",
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>Discover the best brands using all-natural<br\/>ingredients to help you look, think & feel better.<\/p>",
+            "text": "<p>A soda that’s not only refreshing & indulgent, but also good<br\/>for you. All-natural, zero sugar or anything artificial & <br\/>good for your gut.<\/p>",
+            "heading_color": "#ffffff",
+            "text_color": "#ffffff",
+            "enlarge_text": true,
+            "button_label_1": "choose fhirst",
+            "button_url_1": "https:\/\/uk.chill.com\/collections\/fhirst",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#ffbeac",
+            "button_text_color": "#171717",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nutrivore-HP_DESKTOP_7b0d4f85-ffe8-4974-accd-c5bbc4b7f02d.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Nutrivore-HP_MOBILE_06afd606-76ee-459e-98f9-d47b73214d71.jpg",
+            "image_position": "center center",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "We Are <br> <strong>Nutrivores<\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Organic, bioavailable products made from the<br\/>most nutrient-dense ingredients on the planet<br\/>to help you thrive!<\/p>",
             "heading_color": "#171717",
             "text_color": "#171717",
             "enlarge_text": true,
-            "button_label_1": "",
-            "button_url_1": "",
-            "button_label_2": "Choose Your CHILL",
-            "button_url_2": "shopify:\/\/collections\/all",
-            "button_background_color": "#ffbeac",
-            "button_text_color": "#171717",
+            "button_label_1": "discover nutrivore",
+            "button_url_1": "https:\/\/uk.chill.com\/collections\/nutrivore",
+            "button_label_2": "",
+            "button_url_2": "",
+            "button_background_color": "#f3b09f",
+            "button_text_color": "#ffffff",
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
@@ -84,6 +111,33 @@
             "text_alignment": "center left"
           }
         },
+        "02986a45-f0bf-4170-a6b2-37db262b7084": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DESKTOP_Multibrand_Homepage_Banner_MEDIUM_1_1_b5aa1948-7a79-407c-b606-eb13295e350e.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MOBILE_Multibrand_Homepage_Banner_MEDIUM_15c0bd94-6a1b-41ba-9c48-56eaaa3ae682.jpg",
+            "image_position": "center left",
+            "mobile_image_position": "center center",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Step into the <strong> \nHome of \nRelaxation <\/strong>",
+            "title_size": 64,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "<p>Discover the best brands using all-natural<br\/>ingredients to help you look, think & feel better.<\/p>",
+            "heading_color": "#171717",
+            "text_color": "#171717",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "Choose Your CHILL",
+            "button_url_2": "shopify:\/\/collections\/all",
+            "button_background_color": "#ffbeac",
+            "button_text_color": "#171717",
+            "button_text_font_size": 20,
+            "text_alignment": "center left"
+          }
+        },
         "adc61783-b87d-4ad1-a437-8b98c06ac308": {
           "type": "image",
           "settings": {
@@ -106,33 +160,6 @@
             "button_label_2": "",
             "button_url_2": "",
             "button_background_color": "#6ec59f",
-            "button_text_color": "#171717",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
-        },
-        "41559766-2511-4321-a759-ff9014c6f7f7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Fhirst-HP_DESKTOP_1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Fhirst-HP_MOBILE_1.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "Quench your <strong>\nFHIRST <\/strong>",
-            "title_size": 64,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>A soda that’s not only refreshing & indulgent, but also good<br\/>for you. All-natural, zero sugar or anything artificial & <br\/>good for your gut.<\/p>",
-            "heading_color": "#ffffff",
-            "text_color": "#ffffff",
-            "enlarge_text": true,
-            "button_label_1": "choose fhirst",
-            "button_url_1": "https:\/\/uk.chill.com\/collections\/fhirst",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#ffbeac",
             "button_text_color": "#171717",
             "button_text_font_size": 20,
             "text_alignment": "center left"
@@ -303,48 +330,21 @@
             "button_text_font_size": 20,
             "text_alignment": "center left"
           }
-        },
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Nutrivore-HP_DESKTOP_7b0d4f85-ffe8-4974-accd-c5bbc4b7f02d.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Nutrivore-HP_MOBILE_06afd606-76ee-459e-98f9-d47b73214d71.jpg",
-            "image_position": "center center",
-            "mobile_image_position": "center center",
-            "slide_link": "",
-            "subheading": "",
-            "title": "We Are <br> <strong>Nutrivores<\/strong>",
-            "title_size": 64,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>Organic, bioavailable products made from the<br\/>most nutrient-dense ingredients on the planet<br\/>to help you thrive!<\/p>",
-            "heading_color": "#171717",
-            "text_color": "#171717",
-            "enlarge_text": true,
-            "button_label_1": "discover nutrivore",
-            "button_url_1": "https:\/\/uk.chill.com\/collections\/nutrivore",
-            "button_label_2": "",
-            "button_url_2": "",
-            "button_background_color": "#f3b09f",
-            "button_text_color": "#ffffff",
-            "button_text_font_size": 20,
-            "text_alignment": "center left"
-          }
         }
       },
       "block_order": [
         "0d58b166-3642-4849-840b-915397a2a9f1",
-        "02986a45-f0bf-4170-a6b2-37db262b7084",
-        "image_6xdgqA",
-        "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "41559766-2511-4321-a759-ff9014c6f7f7",
+        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0",
+        "image_6xdgqA",
+        "02986a45-f0bf-4170-a6b2-37db262b7084",
+        "adc61783-b87d-4ad1-a437-8b98c06ac308",
         "5b64812e-9295-4645-9cd2-e2bac629be70",
         "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-1",
         "a66df7d6-8a48-4e6c-abd5-96e86aa343a1",
         "abd43eea-6cff-4da9-bf29-0c0b56e2d5f1",
         "0ee65477-2b53-43d3-81b0-07a72ca3cd04",
-        "6973fb3c-05e0-4873-9295-21841f3fcc36",
-        "template--15741428072603__11e074f4-f0cf-4c14-809f-ad7bc475a5cc-16703221955259598d-0"
+        "6973fb3c-05e0-4873-9295-21841f3fcc36"
       ],
       "settings": {
         "height": "fixed",
