@@ -43,7 +43,7 @@
             "title_size": 64,
             "title_size_mobile": 46,
             "use_h1": false,
-            "text": "<p>A soda that’s not only refreshing & indulgent, but also good<br\/>for you. All-natural, zero sugar or anything artificial & <br\/>good for your gut.<\/p>",
+            "text": "<p>A soda that’s not only refreshing & indulgent, but also<br\/>good for you. All-natural, zero sugar or anything artificial<br\/>& good for your gut.<\/p>",
             "heading_color": "#ffffff",
             "text_color": "#ffffff",
             "enlarge_text": true,
