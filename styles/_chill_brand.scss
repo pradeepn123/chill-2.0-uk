@@ -262,14 +262,7 @@
     padding: 38px 0;
 }
 .custom_collection_main{
-    background: #F2F2F3;
-    .filter-container{
-        .filters{
-            .filters__inner{
-                // top: 0;
-            }
-        }
-    } 
+    background: #F2F2F3;    
     @media (max-width: 999px){
         .utility-bar-main{
             margin-bottom: 0 !important;
