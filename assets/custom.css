@@ -747,7 +747,7 @@ predictive-search .search_section input {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.product-tags .product-tags__wrapper , .product_sale-tag .product-tags__wrapper{
+.product-tags .product-tags__wrapper {
   height: 64px;
   width: 64px;
   display: flex;
@@ -769,11 +769,9 @@ predictive-search .search_section input {
 }
 .product-tags .product-tags__wrapper .product-tag.product-tag--sold-out {
   border-radius: 45px;
-   background: #EFEBDA !important;
-  color: #000 !important;
 }
 .product-tags .product-tags__wrapper .product-tag.product-tag--sold-out .bold_text {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 17px;
   font-family: "Open Sans";
   font-weight: 800;
@@ -788,18 +786,11 @@ predictive-search .search_section input {
   font-family: "Open Sans";
   font-weight: 800;
 }
-.product-form .product-tags .product-tags__wrapper .product-tag.product-tag--sale .bold_text{
-  font-size: 14px;
-}
+
 .product-form .product-label-list {
   width: fit-content;
-  display: flex;
-  flex-direction: row-reverse;
-  column-gap: 16px;
+  display: block;
   margin-bottom: 20px;
-}
-.product-form .product-tags .product-tags__wrapper .product-tag span {
-  font-size: 14px;
 }
 .product-form .product-label-list .product-tags {
   position: unset;
@@ -812,7 +803,7 @@ predictive-search .search_section input {
 .product-form .product-label-list .product-tags .product-tags__wrapper .product-tag--sale {
   gap: 3px;
   flex-direction: row;
-  padding: 18px 16px;
+  padding: 8px 16px;
 }
 
 /* header css here */
@@ -2533,13 +2524,19 @@ predictive-search .search_section input {
 .custom_collection_block .filter-container .filters {
   color: #000;
 }
+.custom_collection_block .filter-container .filters .filters__inner.sticky-content-container {
+  height: 100vh;
+}
+@media (min-width: 1000px) {
+  .custom_collection_block .filter-container .filters .filters__inner.sticky-content-container {
+    overflow: scroll;
+  }
+}
 .custom_collection_block .filter-container .filters .filters__inner {
   height: 100%;
   background: #fff;
   padding-inline-end: 0;
   padding: 30px 40px;
-  position: relative;
-  top: 0;
 }
 .custom_collection_block .filter-container .filters .filters__inner .filters__heading {
   text-transform: uppercase;
@@ -9826,9 +9823,6 @@ body.cart-drawer-open {
 .custom_collection_main {
   background: #F2F2F3;
 }
-.custom_collection_main .filter-container .filters .filters__inner {
-  top: 0;
-}
 @media (max-width: 999px) {
   .custom_collection_main .utility-bar-main {
     margin-bottom: 0 !important;
@@ -10188,9 +10182,6 @@ body.cart-drawer-open {
 
 .custom_collection_main {
   background: #F2F2F3;
-}
-.custom_collection_main .filter-container .filters .filters__inner {
-  top: 0;
 }
 @media (max-width: 999px) {
   .custom_collection_main .utility-bar-main {
@@ -11292,9 +11283,6 @@ body.cart-drawer-open {
 @media (max-width: 520px) {
   .vape_header_wrapper .vape_header_container .chill_header {
     width: 84px;
-  }
-  .product-form .product-label-list {
-    column-gap: 8px;
   }
 }
 @media (min-width: 521px) and (max-width: 767px) {
@@ -12935,48 +12923,4 @@ body.search_open {
 }
 .reward-banner__video-mobile video {
   object-position: unset !important;
-}
-
-.product_sale-tag-pdp{
-  border-radius: 45px;
-  background: #3B56FB;
-  padding: 12px;
-  font-size: 14px;
-  line-height: 12px;
-  color: #fff;
-  font-weight: 800;
-  font-family: "Open Sans";
-}
-
-.product-form .product-label-list .product_sale-tag {
-  position: unset;
-}
-.product_sale-tag{
-  position: absolute;
-  display: flex;
-  top: 20px;
-  right: 20px;
-  pointer-events: none;
-  justify-content: space-between;
-  align-items: center;
-}
-.product-sale-value{
-  font-size: 11px;
-  line-height: 12px;
-  font-family: "Open Sans";
-  font-weight: 800;
-  font-size: 11px;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #3B56FB;
-  padding: 5px;
-  width: 100%;
-}
-.product-tags .product-tags__wrapper .product-tag.product-tag--sold-out span {
-  border-radius: 45px;
-  font-size:12px;
-  font-weight:600px !important;
 }

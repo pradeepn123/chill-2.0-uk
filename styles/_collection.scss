@@ -401,13 +401,18 @@
         }
         .filters{
             color: #000;
+            .filters__inner.sticky-content-container{
+                // position: relative;
+                height: 100vh;
+                @media (min-width: 1000px){
+                    overflow: scroll;
+                }
+            }
             .filters__inner{
                 height: 100%;
                 background: #fff;
                 padding-inline-end: 0;
                 padding: 30px 40px;
-                position: relative;
-                top: 0;
                 .filters__heading{
                     text-transform: uppercase;
                     .filters__heading-text{
