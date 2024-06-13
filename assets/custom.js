@@ -624,7 +624,12 @@ function customFeatureProductSubcriptionEvents (){
     if (loadMoreFilters.length) {
         loadMoreFilters.forEach(el => el.addEventListener('click', function() {
             var forloopIndex = this.dataset.forloop;
-            document.querySelectorAll('.filter-group--' + forloopIndex + ' .filter_full').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.filter-group--' + forloopIndex + ' .filter_full').forEach(
+                el => {
+                  el.style.display = 'block'
+                  el.parentElement.classList.add('scroller_height')
+                }
+            );
             document.querySelectorAll('.filter-group--' + forloopIndex + ' .filter_limited').forEach(el => el.style.display = 'none');
         }))
     }

@@ -401,11 +401,9 @@
         }
         .filters{
             color: #000;
-            .filters__inner.sticky-content-container{                
-                height: 100vh;
-                @media (min-width: 1000px){
-                    overflow: scroll;
-                }
+            .filters__inner.sticky-content-container{
+                height: calc(100vh - 10vh);
+                overflow-y: scroll;
             }
             .filters__inner{
                 height: 100%;
@@ -417,6 +415,10 @@
                     .filters__heading-text{
                         font-weight: 900;
                     }
+                }
+                .toggle-target-container.scroller_height {
+                    height: 32vh;
+                    overflow-y: scroll;
                 }
                 .filter-group--applied{
                     @media (min-width: 1300px){

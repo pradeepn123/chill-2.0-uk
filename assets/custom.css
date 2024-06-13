@@ -2525,12 +2525,8 @@ predictive-search .search_section input {
   color: #000;
 }
 .custom_collection_block .filter-container .filters .filters__inner.sticky-content-container {
-  height: 100vh;
-}
-@media (min-width: 1000px) {
-  .custom_collection_block .filter-container .filters .filters__inner.sticky-content-container {
-    overflow: scroll;
-  }
+  height: 90vh;
+  overflow-y: scroll;
 }
 .custom_collection_block .filter-container .filters .filters__inner {
   height: 100%;
@@ -2543,6 +2539,10 @@ predictive-search .search_section input {
 }
 .custom_collection_block .filter-container .filters .filters__inner .filters__heading .filters__heading-text {
   font-weight: 900;
+}
+.custom_collection_block .filter-container .filters .filters__inner .toggle-target-container.scroller_height {
+  height: 32vh;
+  overflow-y: scroll;
 }
 .custom_collection_block .filter-container .filters .filters__inner .filter-group--applied {
   width: fit-content;
